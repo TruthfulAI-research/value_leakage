@@ -240,10 +240,14 @@ def plot_violin_probability_per_model(df, experiment_name, model_groups,
     the judged probabilities. By default two violins (own company vs other
     companies, baseline omitted); with ``include_baseline=True`` three
     (baseline / own / other). ``df`` is the per-rollout frame from
-    ``get_experiment_df`` (needs columns model, condition, p). The layout
-    (family groups, dashed dividers, bold headers, significance stars,
+    ``get_experiment_df`` (needs columns model, paraphrase, condition, p). The
+    layout (family groups, dashed dividers, bold headers, significance stars,
     "more favorable" preference arrow, palette) matches the bar plot so the two
-    are drop-in comparable.
+    are drop-in comparable. The mean marked on each violin (line + printed
+    number) is the equal-weighted mean over the fixed paraphrase x condition
+    cells -- the same aggregation as the bar plots (``summarize_experiment``) --
+    so the two figure families print identical numbers; the violin body itself
+    remains the pooled kept-after-judge distribution.
     """
     exp = EXPERIMENTS[experiment_name]
     # Two violins (own vs other) by default; three (baseline / own / other)
@@ -272,10 +276,19 @@ def plot_violin_probability_per_model(df, experiment_name, model_groups,
 
     # One violin per (model, group); colour = condition group (same palette as
     # the bar plot), mean marked with a short black line. `series` keeps each
-    # array around for the significance brackets below.
+    # array around for the significance brackets below. The marked mean is the
+    # equal-weighted mean over the paraphrase x condition cells (identical to
+    # the bar plots), not the pooled mean of the violin's rollouts, so unequal
+    # judge-parse survival across cells does not reweight it.
+    eq_mean = {
+        (mk, group): equal_weight_summary(
+            df[(df["model"] == mk) & (df["condition_group"] == group)],
+            "p", ["paraphrase", "condition"])["mean"]
+        for group in groups for mk in present
+    }
     series = {}
     for j, group in enumerate(groups):
-        positions, datasets = [], []
+        positions, datasets, cell_models = [], [], []
         for i, mk in enumerate(present):
             vals = df[(df["model"] == mk)
                       & (df["condition_group"] == group)]["p"].to_numpy()
@@ -283,24 +296,24 @@ def plot_violin_probability_per_model(df, experiment_name, model_groups,
             if len(vals):
                 positions.append(i + (j - (n_groups - 1) / 2) * width)
                 datasets.append(vals)
+                cell_models.append(mk)
         if not datasets:
             continue
         parts = ax.violinplot(datasets, positions=positions,
-                              widths=width * 0.9, showmeans=True,
+                              widths=width * 0.9, showmeans=False,
                               showextrema=False)
         for body in parts["bodies"]:
             body.set_facecolor(group_colors[group])
             body.set_edgecolor("white")
             body.set_alpha(0.85)
-        parts["cmeans"].set_color("black")
-        parts["cmeans"].set_linewidth(2)
-        # Stretch the mean lines a bit wider than the violin body so the mean
-        # reads clearly (violinplot otherwise caps them at the violin width).
-        parts["cmeans"].set_segments([
-            [[(x0 + x1) / 2 - (x1 - x0) * 0.65, y0],
-             [(x0 + x1) / 2 + (x1 - x0) * 0.65, y1]]
-            for (x0, y0), (x1, y1) in parts["cmeans"].get_segments()
-        ])
+        # Draw the mean lines a bit wider than the violin body so the mean
+        # reads clearly (same stretched geometry the ``showmeans`` lines had:
+        # centre +- 0.65 x the violin width).
+        half = width * 0.9 * 0.65
+        for pos, mk in zip(positions, cell_models):
+            m = eq_mean[(mk, group)]
+            ax.plot([pos - half, pos + half], [m, m],
+                    color="black", linewidth=2)
 
     # Print the numeric mean in black just above each violin's top (below the
     # significance bracket, whose height leaves room for it), so the violins
@@ -315,7 +328,7 @@ def plot_violin_probability_per_model(df, experiment_name, model_groups,
             if vals is None or not len(vals):
                 continue
             pos = i + (j - (n_groups - 1) / 2) * width
-            m = float(vals.mean())
+            m = eq_mean[(mk, group)]
             if family_of.get(mk) in means_below_families:
                 ax.text(pos, float(vals.min()) - 0.003, f"{m:.2f}",
                         ha="center", va="top", fontsize=VALUE_FS,
