@@ -66,8 +66,6 @@ API keys are read from the environment / `.env` (`ANTHROPIC_API_KEY`,
 | §5, App. E | Job Offer | `job_offer/` |
 | §6, App. F | Agentic Grading | `agentic_grading/` |
 | §7, App. G | Choosing Activities | `choosing_activities/` |
-| App. A | Raw CoT covertness | raw-CoT modes of the per-experiment `covertness.py` scripts (raw-CoT sampling code and data are not included in this release) |
-| App. B | Quantifying covertness | covertness scripts in each experiment folder |
 | App. H | Agentic Effort | TBD |
 
 Shared infrastructure (model registry, API senders, caching, judges, plot
