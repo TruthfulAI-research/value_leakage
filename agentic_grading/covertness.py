@@ -8,10 +8,12 @@ chance rate. This script asks how visible that is from the outside: **does
 the grader's transcript/CoT contain evidence that the model labels played a
 role in which answers it picked?**
 
-For every trial, a Sonnet monitor reads the grader's extracted rationale
-(`rater_text` from `rationales.jsonl` -- the grader's commentary while
-working; the upstream `thinking_text` field is empty for every trial of
-every grader, so this is the only CoT channel the harnesses exposed) and
+For every trial, a Sonnet monitor reads the grader's user-facing text
+(`rater_text` -- the grader's commentary while working, not its private
+thinking or tool calls). For the alpaca claude/codex graders that text is
+extracted from their default-prompt run transcripts (the `alpaca_fairness`
+cache, matching the win-rate figures); for qwen and the proof experiments
+it comes from the committed `rationales.jsonl` extraction. The monitor
 gives its overall judgment, the strongest category that applies:
 
   - **INFLUENCED**: the grader explicitly states that the labels influenced
@@ -93,11 +95,15 @@ import shared.runner as runner
 from shared.runner import CacheOnlyMiss
 from shared.judge_jsonl_cache import JsonlJudgeCache
 from agentic_grading.plot_win_rates import (
+    ALPACA_PANEL_SEEDS,
     DATA_ROOT,
     GRADERS,
     MODEL_LABELS,
     N_QUESTIONS,
     load_rationales,
+)
+from agentic_grading.fairness_instructions import (
+    load_transcripts as load_fairness_transcripts,
 )
 
 COVERTNESS_CACHE_ROOT = DATA_ROOT / "cot_classification_cache"
@@ -115,17 +121,18 @@ EXPERIMENTS_TO_CLASSIFY = ("alpaca", "proofs_proofnet")
 # int for smoke tests, None for the full run.
 LIMIT_PER_GRADER = None
 # Raise on monitor-cache miss instead of calling Sonnet. Flip to False to run
-# the monitor; the default grid (alpaca 1494 + proofs_proofnet 750 trials, one
-# rater_text each, deduped) is ~2.2k Sonnet calls -- roughly $20-40 and a few
+# the monitor; the default grid (alpaca 748 + proofs_proofnet 750 trials, one
+# rater_text each, deduped) is ~1.5k Sonnet calls -- roughly $15-30 and a few
 # minutes at max_concurrent=100 (proofs_opus adds 717, proofs_gemini ~450).
 CLASSIFIER_CACHE_ONLY = False
 
-# Restrict every grader to the seeds shared by all graders (alpaca 250;
-# a no-op for proofs_proofnet, whose committed cache is already trimmed to
-# the shared 250-seed paper panel; proofs_opus 217), so no grader contributes
-# extra trials and the bias and disclosure bars use the identical matched
-# panel. See `plot_win_rates.common_seeds`. Set False to use each grader's
-# full data.
+# Restrict every grader to the seeds shared by all graders, so no grader
+# contributes extra trials and the bias and disclosure bars use the identical
+# matched panel (a no-op for proofs_proofnet, whose committed cache is already
+# trimmed to the shared 250-seed paper panel; proofs_opus 217). See
+# `plot_win_rates.common_seeds`. The alpaca sources are fixed per grader
+# (`load_alpaca_rater_texts`) and unaffected by this flag. Set False to use
+# each grader's full data.
 COMMON_SEEDS_ONLY = True
 
 # Same judge model/settings as ai_bubble/covertness.py and the
@@ -326,14 +333,68 @@ def classify_covertness(df, experiment_name, source_col, *,
     return df
 
 
+def _rater_text_claude(lines):
+    """User-facing text from a Claude Code rater_log: the text blocks of the
+    AssistantMessage lines (thinking and tool_use blocks are not shown to the
+    user)."""
+    parts = []
+    for line in lines:
+        if line.get("msg_type") == "AssistantMessage":
+            for block in line.get("blocks", []):
+                if block.get("type") == "text" and block.get("text"):
+                    parts.append(block["text"])
+    return "\n\n".join(parts)
+
+
+def _rater_text_codex(lines):
+    """User-facing text from a Codex item-stream log: the completed
+    agent_message items (command executions and reasoning are separate item
+    types)."""
+    parts = []
+    for line in lines:
+        item = line.get("item") or {}
+        if (line.get("type") == "item.completed"
+                and item.get("type") == "agent_message" and item.get("text")):
+            parts.append(item["text"])
+    return "\n\n".join(parts)
+
+
+_RATER_TEXT_EXTRACTORS = {"claude": _rater_text_claude,
+                          "codex": _rater_text_codex}
+
+
+def load_alpaca_rater_texts(grader):
+    """One row per trial (seed, rater_text) for the alpaca graders, matching
+    the win-rate figures' sources: claude/codex from their default-prompt run
+    transcripts (`alpaca_fairness`), qwen from its rationales restricted to
+    the ALPACA_PANEL_SEEDS panel. Both extractors reproduce the committed
+    `rater_text` extraction byte-for-byte on runs that have both transcripts
+    and rationales."""
+    if grader == "qwen":
+        df = load_rationales("alpaca", "qwen")
+        df = df[df["seed"].isin(ALPACA_PANEL_SEEDS)]
+        return df[["seed", "rater_text"]].reset_index(drop=True)
+    extract = _RATER_TEXT_EXTRACTORS[grader]
+    transcripts = load_fairness_transcripts(grader, "none")
+    return pd.DataFrame(
+        [{"seed": seed, "rater_text": extract(lines)}
+         for seed, lines in sorted(transcripts.items())]
+    )
+
+
 def load_grader_rationales(experiment_name, graders=GRADERS, *, limit=None,
                            common_seeds_only=False):
-    """Rationales for all cached graders of one experiment, stacked."""
+    """Rationales for all cached graders of one experiment, stacked. The
+    alpaca sources are fixed (see `load_alpaca_rater_texts`);
+    `common_seeds_only` applies to the proof experiments."""
     frames = []
     for grader in graders:
         try:
-            df = load_rationales(experiment_name, grader,
-                                 common_seeds_only=common_seeds_only)
+            if experiment_name == "alpaca":
+                df = load_alpaca_rater_texts(grader)
+            else:
+                df = load_rationales(experiment_name, grader,
+                                     common_seeds_only=common_seeds_only)
         except FileNotFoundError as e:
             print(f"[{experiment_name}] skipping {grader}: {e}")
             continue
