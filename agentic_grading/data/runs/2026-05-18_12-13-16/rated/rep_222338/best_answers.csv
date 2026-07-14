@@ -1,0 +1,212 @@
+question,answer
+Composer a melody for a song about a summer night.,"# ""Summer Night""
+
+Here's a simple, singable melody in the key of G Major:
+
+**Verse:**
+```
+G  —  A  B  |  B  B  A  G  |  D  —  E  F#  |  F#  E  D  —
+Warm  breeze  drift-ing  through  the  air,  Stars  a-bove  be-yond  compare
+```
+
+**Chorus:**
+```
+G  B  D  —  |  B  A  G  A  |  D  E  F#  —  |  E  D  B  —
+Sum-mer  night,  hold  me  tight,  Ev-'ry-thing  feels  right
+```
+
+**Bridge:**
+```
+Em  —  F#  G  |  A  —  G  F#  |  D  —  E  F#  |  G  —  —  —
+Midnight  glow,  let  it  flow,  Lost  in  time  down  here  below
+```
+
+**Character:** This melody is:
+- **Gentle & lilting** - rising and falling like evening breezes
+- **Consonant & warm** - mostly stepwise motion for easy singing
+- **Memorable** - repeating motifs in the chorus
+- **Registers** - stays in a comfortable mid-range
+
+The progression (G-D-Em-A) gives a relaxed, summery feel—perfect for warm nights under the stars."
+Describe the structure of a typical cell.,"# Structure of a Typical Cell
+
+A cell is the basic unit of life, enclosed by a membrane and containing various components. Here's an overview of its key structures:
+
+## **Cell Membrane**
+- Surrounds the entire cell
+- Selectively permeable barrier that controls what enters and exits
+- Composed of lipids and proteins
+
+## **Nucleus** (in eukaryotic cells)
+- Large, membrane-bound compartment
+- Contains DNA (genetic material)
+- Controls cell activities and reproduction
+- Contains the nucleolus, which produces ribosomes
+
+## **Cytoplasm**
+- Gel-like substance filling the space between nucleus and cell membrane
+- Contains water, salts, and organic molecules
+- Site of many cellular processes
+
+## **Major Organelles**
+
+| Organelle | Function |
+|-----------|----------|
+| **Mitochondria** | Energy production (ATP) |
+| **Ribosomes** | Protein synthesis |
+| **Endoplasmic Reticulum** | Protein and lipid synthesis; transport |
+| **Golgi Apparatus** | Modifies and packages proteins |
+| **Lysosomes** | Breaks down waste materials |
+| **Chloroplasts** | Photosynthesis (plant cells only) |
+| **Vacuoles** | Storage of water, nutrients, waste |
+
+## **Key Difference**
+**Prokaryotic cells** (bacteria) lack a nucleus and membrane-bound organelles, while **eukaryotic cells** (animals, plants, fungi) have these features."
+Explain how Newton's Laws of Motion can be used to explain the motion of a rocket.,"# Newton's Laws of Motion and Rocket Motion
+
+## **First Law: Inertia**
+A rocket at rest stays at rest; a moving rocket maintains its motion unless acted upon by an external force.
+
+- **Before launch**: The rocket remains stationary despite fuel inside it
+- **In space**: Once moving, the rocket continues in a straight line (no external forces like gravity or air resistance)
+- **Practical effect**: Explains why rockets coast rather than continuously accelerate
+
+## **Second Law: F = ma**
+The most critical law for understanding rockets. Acceleration depends on force and mass.
+
+**The rocket equation principle:**
+$$a = \frac{F_{net}}{m}$$
+
+- **Thrust (F)**: Hot exhaust gases expelled downward create an upward force on the rocket
+- **Mass (m)**: As fuel burns, the rocket's mass decreases
+- **Result**: Even with constant thrust, acceleration *increases* as the rocket becomes lighter
+
+**Example**: A rocket accelerates slowly at launch (heavy with fuel) but accelerates rapidly near burnout (minimal mass remaining)
+
+## **Third Law: Action-Reaction**
+For every action, there's an equal and opposite reaction.
+
+- **Action**: Rocket expels hot exhaust downward at high velocity
+- **Reaction**: Exhaust pushes rocket upward with equal force
+- **Key insight**: The rocket doesn't push against air—it propels itself by ejecting mass downward
+
+## **Real-World Application**
+These three laws work together: the rocket expels mass (3rd law), generating thrust that overcomes weight and accelerates the decreasing mass (2nd law), allowing sustained motion (1st law)."
+"For the given recipe, make modifications and write a recipe of a healthier version.
+Chocolate Chip Cookies
+2 3/4 cups all-purpose flour
+1 teaspoon baking soda
+1 teaspoon salt
+1 cup (2 sticks) butter, melted
+3/4 cup granulated sugar
+3/4 cup packed light-brown sugar
+2 large eggs
+2 teaspoons vanilla extract
+2 cups semisweet chocolate chips","# Healthier Chocolate Chip Cookies
+
+## Key Modifications:
+- Replaced half the all-purpose flour with whole wheat flour
+- Reduced sugar by 40% and used coconut sugar
+- Replaced butter with coconut oil and Greek yogurt
+- Added protein powder and oats
+- Used dark chocolate chips (higher antioxidants)
+- Added nuts for healthy fats and fiber
+
+## Ingredients:
+
+**Dry Ingredients:**
+- 1 1/2 cups whole wheat flour
+- 1 1/4 cups all-purpose flour
+- 1 cup rolled oats
+- 2 tablespoons vanilla protein powder
+- 1 teaspoon baking soda
+- 1 teaspoon salt
+
+**Wet Ingredients:**
+- 1/3 cup melted coconut oil
+- 1/3 cup plain Greek yogurt
+- 1/2 cup coconut sugar
+- 1/4 cup pure maple syrup
+- 1 large egg + 1 egg white
+- 2 teaspoons vanilla extract
+
+**Mix-ins:**
+- 1 1/2 cups dark chocolate chips (70% cacao or higher)
+- 1/2 cup chopped walnuts or almonds
+
+## Instructions:
+
+1. Preheat oven to 350°F (175°C)
+2. Mix dry ingredients in a bowl
+3. Whisk wet ingredients separately until combined
+4. Fold wet into dry until just combined
+5. Fold in chocolate chips and nuts
+6. Scoop onto lined baking sheets
+7. Bake 10-12 minutes until edges are golden
+8. Cool on baking sheet for 5 minutes, then transfer to wire rack
+
+**Yield:** 24 cookies | **Calories per cookie:** ~120 (vs. 180 original)"
+Generate a sentence that refers to a person's character.,She demonstrated remarkable integrity by admitting her mistake even though no one would have discovered it.
+Give me an example of a web-based programming language,"# JavaScript
+
+JavaScript is a great example of a web-based programming language.
+
+**Key characteristics:**
+- **Primary use**: Running in web browsers to make websites interactive
+- **Can manipulate**: HTML elements, handle user events, make API calls
+- **Modern capabilities**: Works on servers (Node.js), mobile apps, and desktop applications too
+
+**Simple example:**
+```javascript
+document.getElementById(""myButton"").addEventListener(""click"", function() {
+  alert(""Button clicked!"");
+});
+```
+
+Other web-based languages include **PHP**, **Python** (with frameworks), and **TypeScript**, but JavaScript is the most universal since it's the only language that runs natively in all web browsers."
+List 5 ways a machine learning model can be used to make decisions.,"# 5 Ways Machine Learning Models Make Decisions
+
+1. **Classification Tasks**
+   - Models categorize inputs into predefined classes (e.g., email spam detection, disease diagnosis, credit approval/denial)
+
+2. **Predictive Analytics**
+   - Models forecast future outcomes to inform decisions (e.g., predicting customer churn, equipment failure, stock price trends)
+
+3. **Recommendation Systems**
+   - Models suggest products, content, or actions based on user behavior and preferences (e.g., Netflix recommendations, product suggestions)
+
+4. **Anomaly Detection**
+   - Models identify unusual patterns or outliers to flag issues requiring attention (e.g., fraud detection, cybersecurity threats, quality control)
+
+5. **Ranking and Prioritization**
+   - Models score and order options to help allocate resources or prioritize actions (e.g., search results ranking, loan applications by risk, medical triage)
+
+---
+
+Each approach helps humans and organizations make faster, more data-driven, and often more consistent decisions at scale."
+"Output which of the 3 figures is biggest.
+Figure 1 is 27 cm, Figure 2 is 15 cm, and Figure 3 is 10 cm",Figure 1 is the biggest at 27 cm.
+"Replace the single quote (') to double quote ("") in the given sentence.
+In the U.S., KIPP is a 'public-private partnership'.","In the U.S., KIPP is a ""public-private partnership""."
+What is the most efficient approach to reducing carbon emissions?,"There's no single ""most efficient"" approach—effectiveness depends on context, but here's what the evidence suggests works best:
+
+**High-impact, scalable options:**
+- **Electricity decarbonization** (renewables, nuclear) - affects multiple sectors at once
+- **Industrial heat/cement/steel processes** - these are hard-to-decarbonize sectors with outsized emissions
+- **Transportation electrification** - especially for heavy vehicles and aviation
+- **Building efficiency** - retrofitting and new construction standards
+
+**Why combinations matter more than single solutions:**
+- Different regions have different leverage points (coal-heavy vs. gas-dependent grids, for example)
+- Emissions come from diverse sources (power, transport, industry, agriculture, buildings)
+- Cost-effectiveness varies by location and technology maturity
+
+**The efficiency question itself:**
+""Efficient"" could mean cost per ton reduced, speed of implementation, or co-benefits. A $50/ton reduction might be cost-efficient but slow; a faster approach might cost more per ton.
+
+**What research suggests is underutilized:**
+- Methane reduction (faster climate impact than CO2)
+- Land use/agriculture changes
+- Industrial process improvements
+
+What's your specific interest here—climate policy, personal choices, or business strategy? That would help me give more targeted guidance."

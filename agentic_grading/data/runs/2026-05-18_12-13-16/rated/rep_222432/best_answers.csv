@@ -1,0 +1,104 @@
+question,answer
+"Classify these words as either common nouns or proper nouns.
+Scotland, Apple, August","# Classification of Nouns
+
+**Proper Nouns:**
+- **Scotland** - a specific country
+- **Apple** - a company name
+- **August** - a specific month
+
+**Common Nouns:**
+- None in this list
+
+All three words are proper nouns because they refer to specific, named entities."
+"Compose a definition using given word
+Solitude","# Solitude
+
+**Definition:**
+
+Solitude is the state of being alone, characterized by the absence of other people or social interaction. It refers to a chosen or unchosen period of isolation where one is physically separated from others. Unlike loneliness, which carries a negative connotation of unwanted isolation, solitude is often sought as a peaceful and rejuvenating experience that allows for self-reflection, personal growth, and mental rest. It provides space for introspection, creativity, and the pursuit of individual interests without external distractions or social obligations."
+"Construct a question for the following sentence: ""He had a red car"".","# Question Construction
+
+Here are several possible questions for that sentence:
+
+**Direct question:**
+- What color car did he have?
+- What kind of car did he have?
+
+**Yes/No questions:**
+- Did he have a red car?
+- Did he have a car?
+
+**Who-focused:**
+- Who had a red car?
+
+**More open-ended:**
+- What did he have?
+
+The most natural question would be **""What color car did he have?""** since it directly targets the key information (red car) in the original sentence."
+"Edit the text such that the content of the text makes sense.
+John and his brother went at the store to get some ice cream.","# Edited Version
+
+**John and his brother went to the store to get some ice cream.**
+
+## Changes Made
+- Changed ""went at the store"" to ""went to the store""
+
+The preposition ""to"" is correct when indicating movement toward a destination. ""At"" is used to indicate location (being in a place), while ""to"" indicates direction or movement toward a place."
+Generate a 3-line poem based on the following theme: 'Celebrating Nature'.,"# Celebrating Nature
+
+Sunlight dances through the emerald leaves,
+While birdsong echoes across the gentle breeze,
+A world of wonders that forever weaves."
+Generate a sentence that expresses an idea of certainty.,"# Certainty
+
+Without a doubt, the sun will rise tomorrow morning."
+"Generate a table of frequencies for the following text.
+The quick brown fox jumps over the lazy dog.","# Frequency Table
+
+| Word | Frequency |
+|------|-----------|
+| the | 1 |
+| quick | 1 |
+| brown | 1 |
+| fox | 1 |
+| jumps | 1 |
+| over | 1 |
+| lazy | 1 |
+| dog | 1 |
+
+**Total words:** 8
+**Unique words:** 8
+
+*Note: Analysis is case-insensitive and excludes punctuation.*"
+"Given a story, identify the protagonist.
+Story: John had been struggling in school for years. One day, he decided he was tired of letting himself get pushed around and he set out to fight back.","# Protagonist
+
+**John** is the protagonist of this story.
+
+He is the main character who drives the narrative forward by making a decision to change his circumstances and take action against the challenges he faces."
+"Recognize the sentiment of this sentence.
+I'm really happy with how my life is going.","**Positive Sentiment**
+
+This sentence expresses a clearly positive sentiment. The speaker is expressing satisfaction and happiness about their life circumstances. Key indicators include:
+
+- The word ""really"" intensifies the emotion
+- ""happy"" is a direct positive emotion word
+- The overall tone is optimistic and content"
+Write a short story about a person living during a pandemic.,"# The Window
+
+Maria had stopped counting the days somewhere around week eight. The calendar on her kitchen wall still showed March, though the light coming through her apartment window had shifted to something softer and more gold.
+
+She sat in her usual spot with her coffee—now cold—watching the street below. The morning routine had become ritualistic: wake, shower, check the news on her phone (a mistake, always a mistake), then settle by the window with something warm to drink.
+
+Today, a child played hopscotch on the sidewalk alone, jumping from square to square chalk-drawn by someone she'd never meet. The girl wore a mask decorated with cartoon cats. Maria wondered if she even remembered what her own face looked like to other people.
+
+Her phone buzzed. Another message in the group chat—her book club, trying to stay connected. They'd attempted video calls at first, but those had stopped. Too hard to see everyone's eyes crease with forced smiles. Too easy to pretend the screen wasn't keeping them all separate.
+
+Maria had started baking instead. The sourdough starter sat on her counter like a pet, bubbling and alive in a way that helped. She fed it, nurtured it, watched it grow. Yesterday, she'd made focaccia. The day before, bread.
+
+Around three o'clock, she heard singing from somewhere in the building—someone practicing scales, badly but bravely. She smiled. Whoever it was didn't stop, even though they were clearly not improving. 
+
+Maria opened her window wider and hummed along.
+
+The virus took many things, but it couldn't take that."

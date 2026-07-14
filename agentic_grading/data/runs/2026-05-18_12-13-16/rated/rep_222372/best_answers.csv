@@ -1,0 +1,423 @@
+question,answer
+Build a calculator using HTML and JavaScript.,"# Simple Calculator
+
+Here's a complete calculator application with HTML, CSS, and JavaScript:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .calculator {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 320px;
+        }
+
+        .display {
+            background: #2d3436;
+            color: #00ff00;
+            font-size: 2.5em;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: right;
+            margin-bottom: 20px;
+            word-wrap: break-word;
+            word-break: break-all;
+            min-height: 60px;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s;
+            color: white;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .number {
+            background: #4a4a4a;
+        }
+
+        .number:hover {
+            background: #5a5a5a;
+        }
+
+        .operator {
+            background: #667eea;
+        }
+
+        .operator:hover {
+            background: #5568d3;
+        }
+
+        .equals {
+            background: #10ac84;
+            grid-column: span 2;
+        }
+
+        .equals:hover {
+            background: #0a8c6a;
+        }
+
+        .clear {
+            background: #ee5a6f;
+            grid-column: span 2;
+        }
+
+        .clear:hover {
+            background: #d4444f;
+        }
+
+        .delete {
+            background: #f39c12;
+        }
+
+        .delete:hover {
+            background: #d68910;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class=""container"">
+        <h1>Calculator</h1>
+        <div class=""calculator"">
+            <div class=""display"" id=""display"">0</div>
+            <div class=""buttons"">
+                <button class=""clear"" onclick=""clearDisplay()"">C</button>
+                <button class=""delete"" onclick=""deleteLast()"">DEL</button>
+                <button class=""operator"" onclick=""appendOperator('/')"">÷</button>
+                <button class=""operator"" onclick=""appendOperator('*')"">×</button>
+
+                <button class=""number"" onclick=""appendNumber('7')"">7</button>
+                <button class=""number"" onclick=""appendNumber('8')"">8</button>
+                <button class=""number"" onclick=""appendNumber('9')"">9</button>
+                <button class=""operator"" onclick=""appendOperator('-')"">−</button>
+
+                <button class=""number"" onclick=""appendNumber('4')"">4</button>
+                <button class=""number"" onclick=""appendNumber('5')"">5</button>
+                <button class=""number"" onclick=""appendNumber('6')"">6</button>
+                <button class=""operator"" onclick=""appendOperator('+')"">+</button>
+
+                <button class=""number"" onclick=""appendNumber('1')"">1</button>
+                <button class=""number"" onclick=""appendNumber('2')"">2</button>
+                <button class=""number"" onclick=""appendNumber('3')"">3</button>
+                <button class=""operator"" onclick=""appendOperator('.')"">.</button>
+
+                <button class=""number"" onclick=""appendNumber('0')"" style=""grid-column: span 2;"">0</button>
+                <button class=""equals"" onclick=""calculate()"">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let display = document.getElementById('display');
+        let expression = '';
+
+        function appendNumber(num) {
+            // Prevent multiple leading zeros
+            if (expression === '0' && num === '0') return;
+            
+            // Replace leading zero with new number
+            if (expression === '0' && num !== '.') {
+                expression = num;
+            } else {
+                expression += num;
+            }
+            
+            updateDisplay();
+        }
+
+        function appendOperator(op) {
+            // Prevent operator at the beginning
+            if (expression === '') {
+                if (op === '-') {
+                    expression = '-';
+                }
+                return;
+            }
+
+            // Prevent multiple operators in a row
+            const lastChar = expression[expression.length - 1];
+            if (['+', '-', '*', '/', '.'].includes(lastChar)) {
+                if (op === '-' && lastChar !== '-') {
+                    expression += op;
+                } else if (lastChar !== '-') {
+                    expression = expression.slice(0, -1) + op;
+                }
+                return;
+            }
+
+            expression += op;
+            updateDisplay();
+        }
+
+        function calculate() {
+            try {
+                // Evaluate the expression
+                const result = eval(expression);
+                expression = String(result);
+                updateDisplay();
+            } catch (error) {
+                display.textContent = 'Error';
+                expression = '';
+            }
+        }
+
+        function clearDisplay() {
+            expression = '';
+            updateDisplay();
+        }
+
+        function deleteLast() {
+            expression = expression.slice(0, -1);
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            display.textContent = expression === '' ? '0' : expression;
+        }
+
+        // Keyboard support
+        document.addEventListener('keydown', function(event) {
+            const key = event.key;
+
+            if (key >= '0' && key <= '9') {
+                appendNumber(key);
+            } else if (key === '+' || key === '-' || key === '*' || key === '/') {
+                appendOperator(key);
+            } else if (key === '.') {
+                appendOperator('.');
+            } else if (key === 'Enter' || key === '=') {
+                calculate();
+            } else if (key === 'Backspace') {
+                deleteLast();
+            } else if (key === 'Escape') {
+                clearDisplay();
+            }
+        });
+
+        // Initialize display
+        updateDisplay();
+    </script>
+</body>
+</html>
+```
+
+## Features
+
+✨ **Functionality:**
+- Basic arithmetic operations (+, −, ×, ÷)
+- Decimal point support
+- Clear (C) button to reset
+- Delete (DEL) button to remove last character
+- Keyboard support (numbers, operators, Enter, Backspace, Escape)
+
+🎨 **Design:**
+- Modern gradient background
+- Responsive layout
+- Smooth button animations
+- Color-coded buttons (numbers, operators, equals, clear)
+- Large, easy-to-read display with green text on dark background
+
+🔧 **Smart Features:**
+- Prevents multiple leading zeros
+- Prevents multiple operators in a row
+- Error handling for invalid expressions
+- Keyboard input support
+
+Simply save this as an `.html` file and open it in your browser!"
+"Come up with a pun for a given word.
+Coffee","# Coffee Pun
+
+Why did the coffee file a police report?
+
+It got **mugged**! ☕"
+Come up with a set of rules for a game.,"# Tile Stack
+
+## Objective
+Be the first player to place all your tiles on the board while preventing opponents from doing the same.
+
+## Setup
+- Each player gets 12 tiles numbered 1-12
+- Players sit in a circle
+- Place one ""starter tile"" (numbered 6) in the center of the board
+
+## Rules
+
+**On Your Turn, Do One Of The Following:**
+
+1. **Play a Tile** - Place a tile adjacent to any tile already on the board. Your tile's number must be within 3 of an adjacent tile's number (e.g., a 5 can touch 2-8).
+
+2. **Stack a Tile** - Place a tile directly on top of an existing tile. You can only stack on tiles you've already played. Stack limit: 3 tiles high.
+
+3. **Pass** - Skip your turn if you can't or won't play.
+
+**Special Rules:**
+- If you play a tile matching a neighbor's number exactly, you **block** that tile—it can't be built upon until your next turn.
+- If you create a stack of exactly 3 tiles, you draw a ""Power Card"" (see below)
+- Three passes in a row by any player = that player draws a penalty tile from the pile
+
+**Power Cards (optional):**
+- *Swap*: Exchange one of your tiles with an opponent's unplayed tile
+- *Undo*: Take back your last move
+- *Peek*: Look at one opponent's tiles
+
+## Winning
+First player to play all 12 tiles wins!
+
+---
+
+Would you like me to adjust the complexity or theme?"
+Give me practical tips on how to save money.,"# Practical Money-Saving Tips
+
+## Spending Control
+- **Track expenses** — use an app or spreadsheet for a week to see where money goes
+- **Use the 50/30/20 rule** — allocate 50% to needs, 30% to wants, 20% to savings
+- **Implement a waiting period** — wait 24-48 hours before non-essential purchases
+
+## Reduce Regular Costs
+- **Audit subscriptions** — cancel unused streaming, apps, and memberships
+- **Negotiate bills** — call providers (insurance, internet, phone) for better rates
+- **Cook at home** — meal planning and prep beats eating out
+- **Cut energy use** — unplug devices, adjust thermostat, use LED bulbs
+
+## Build Better Habits
+- **Pay yourself first** — automatically transfer a portion to savings before spending
+- **Use the envelope method** — allocate cash to categories to limit overspending
+- **Shop with a list** — stick to planned purchases, avoid impulse buys
+- **Buy generic brands** — often identical quality at lower cost
+
+## Earn Extra Income
+- **Sell unused items** — declutter and monetize
+- **Side gigs** — freelancing, tutoring, or task work for extra cash
+
+## Long-Term Strategies
+- **Build an emergency fund** — start with $500–$1,000
+- **Automate savings** — out of sight, out of mind
+
+**Start small** — pick 2-3 changes rather than overhauling everything at once. Small consistent wins compound over time."
+"Identify the odd one out from the following array of words.
+Fever, shiver, wrinkle","# Odd One Out: **Wrinkle**
+
+**Reason:**
+
+- **Fever** and **Shiver** are both physical responses to illness or cold (symptoms/bodily reactions)
+- **Wrinkle** is a permanent or semi-permanent mark/fold in skin or fabric, not a symptom or bodily response to a condition"
+"Identify which animal in the following text is a reptile and explain what characteristics make it a reptile.
+The zoo was home to a wide variety of creatures, including a vibrantly colored tree frog, a red-footed tortoise with stunning patterns on its shell, and a fluffy rabbit with soft, huggable fur.","# Reptile Identification
+
+**The red-footed tortoise is the reptile** in this text.
+
+## Characteristics that make it a reptile:
+
+1. **Scaly skin** - Reptiles have dry, tough skin covered in scales for protection and water retention
+
+2. **Cold-blooded** - They rely on external heat sources to regulate body temperature
+
+3. **Shelled eggs** - Reptiles typically lay eggs with leathery or hard shells
+
+4. **Shell (in this case)** - Tortoises have a protective shell made of bone and keratin, which is a distinctive reptilian feature
+
+## Why the others aren't reptiles:
+
+- **Tree frog** - This is an amphibian, characterized by moist skin, a larval stage in water, and the ability to live both in water and on land
+- **Rabbit** - This is a mammal, identified by its fur, warm-blooded nature, and production of milk for young"
+Provide an example of a common application of AI.,"# Example: Email Spam Filtering
+
+One of the most common AI applications is **spam detection in email services** (Gmail, Outlook, etc.).
+
+## How it works:
+
+- **Machine learning models** analyze millions of emails to identify patterns that distinguish spam from legitimate messages
+- The system examines features like sender reputation, subject line keywords, links, and content characteristics
+- **Continuously learns** from user feedback when people mark emails as spam or recover them from spam folders
+
+## Why it's useful:
+
+- Automatically removes unwanted emails without user intervention
+- Protects users from phishing attempts and malicious content
+- Improves over time as it processes more data
+
+This is a great example because it's invisible to most users but demonstrates AI solving a real, everyday problem at scale."
+"Rewrite the given sentence, turning it into a question.
+The quick brown fox jumped over the lazy dog.",Did the quick brown fox jump over the lazy dog?
+"Translate the following sentence into French:
+""We had a great time""","""Nous avons passé un excellent moment"" or ""On a passé un super moment""
+
+Both translations are correct. The first is more formal, while the second is more casual/colloquial."
+Write an example of an editorial that discusses the disadvantages of online education.,"# The Hidden Costs of Online Learning: Why We Shouldn't Abandon Traditional Classrooms
+
+The pandemic forced millions of students into online classrooms overnight, and while this emergency pivot was necessary, we must acknowledge a troubling reality: remote learning has revealed serious, often overlooked disadvantages that threaten educational quality.
+
+## The Engagement Problem
+
+Online education creates a troubling disconnect between students and instructors. A student can attend class while mentally checking out entirely—camera off, attention elsewhere. Teachers cannot read the room, adjust their pace, or recognize when concepts have lost their audience. The spontaneous discussions that spark curiosity simply cannot be replicated through a screen.
+
+## Widening the Achievement Gap
+
+While affluent families quickly adapted—investing in quiet home offices, high-speed internet, and tutoring support—vulnerable students fell further behind. Not all homes have reliable WiFi. Not all parents can supervise young learners. Not all students have dedicated study spaces. Online education has, paradoxically, increased educational inequality rather than democratized it.
+
+## The Socialization Crisis
+
+School is more than academics. It's where children develop social skills, build friendships, and learn to collaborate. Online learning eliminated hallway conversations, group projects, and after-school activities that are essential for healthy development. Mental health professionals have documented increased anxiety and isolation among students who spent months learning remotely.
+
+## Accountability and Cheating
+
+Without in-person proctoring, academic dishonesty flourishes. The integrity of grades becomes questionable when students can easily access answers online.
+
+## Moving Forward
+
+Online education has its place as a supplement, but as a replacement for traditional schooling, it falls short. Our children deserve better."

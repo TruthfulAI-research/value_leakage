@@ -1,0 +1,182 @@
+question,answer
+"Create an anagram of this word
+fire","# Anagram of ""fire""
+
+**rife** (meaning widespread or abundant)"
+"Determine the probability for the given event.
+Given a standard deck of 52 cards, what is the probability of drawing a heart?","# Probability of Drawing a Heart
+
+## Given Information
+- Standard deck: 52 cards
+- Number of hearts in a deck: 13 cards
+
+## Solution
+
+$$P(\text{heart}) = \frac{\text{Number of hearts}}{\text{Total number of cards}} = \frac{13}{52}$$
+
+## Simplification
+
+$$\frac{13}{52} = \frac{1}{4} = 0.25 = 25\%$$
+
+## Answer
+
+The probability of drawing a heart from a standard deck is **1/4 or 0.25 or 25%**."
+Generate a crime-related headline.,# Local Business Owner Arrested in $2 Million Embezzlement Scheme
+"Identify and explain the logical fallacy in the given argument.
+If Jenny doesn't eat pizza, she must be unhappy. Jenny isn't unhappy, so she must eat pizza.","# Logical Fallacy: Affirming the Consequent
+
+## Explanation
+
+This argument commits the fallacy of **affirming the consequent**. Here's why:
+
+**The argument's structure:**
+1. If NOT pizza → unhappy
+2. NOT unhappy (true)
+3. Therefore → pizza (must be true)
+
+**Why it's invalid:**
+
+The original conditional statement only tells us that *not eating pizza is sufficient to cause unhappiness*. However, this doesn't mean it's the *only* way to be unhappy, nor does it mean that eating pizza is the *only* way to be happy.
+
+**A clearer analogy:**
+- If it rains → the ground is wet
+- The ground is not wet
+- Therefore → it didn't rain ✓ (Valid)
+
+BUT:
+- If it rains → the ground is wet
+- The ground IS wet
+- Therefore → it rained ✗ (Invalid - the ground could be wet for other reasons)
+
+**In Jenny's case:**
+She could be happy even without eating pizza (perhaps she had ice cream instead, spent time with friends, etc.). The conditional statement doesn't rule out other ways for Jenny to be happy.
+
+**The valid form would be:** If not eating pizza makes you unhappy, and you're unhappy, then you might not have eaten pizza."
+"In this task, you are required to come up with three examples of how technology can be used to lead a healthier lifestyle.","# Three Ways Technology Supports Healthier Living
+
+## 1. **Fitness Tracking & Activity Monitoring**
+Wearable devices (smartwatches, fitness bands) and mobile apps track daily steps, calories burned, and exercise intensity. They provide real-time feedback and reminders to move, helping users stay motivated and accountable to their fitness goals while revealing patterns in their activity levels.
+
+## 2. **Nutrition & Meal Planning Apps**
+Applications like MyFitnessPal or Cronometer help users log meals, track macronutrients, and monitor caloric intake. Some apps even suggest recipes based on dietary preferences and health goals, making it easier to make informed food choices and maintain balanced nutrition.
+
+## 3. **Telemedicine & Health Monitoring**
+Virtual doctor consultations and home health devices (blood pressure monitors, glucose meters, sleep trackers) allow people to manage chronic conditions, receive medical advice without travel, and share data directly with healthcare providers—enabling preventative care and early detection of health issues.
+
+Each of these technologies removes barriers to healthy habits by providing convenience, data insights, and professional support."
+"Read the code and explain what will this code do?
+for i in range(50): 
+    print(i)","# Code Explanation
+
+This code will **print the numbers from 0 to 49**, each on a separate line.
+
+## How it works:
+
+- **`for i in range(50):`** - Creates a loop that repeats 50 times
+  - `i` starts at 0 and increments by 1 each iteration
+  - `range(50)` generates numbers from 0 up to (but not including) 50
+
+- **`print(i)`** - Prints the current value of `i` to the console
+
+## Output:
+```
+0
+1
+2
+3
+4
+...
+47
+48
+49
+```
+
+The loop stops at 49 because `range(50)` doesn't include the number 50 itself."
+"Rearrange the words to form meaningful sentences.
+sweet, she, made, pie, a",# She made a sweet pie.
+"Simplify the following expression in x: 
+ 2x+8x^2+9-(4-2x-8x^2).
+ Express your answer in the form ax^2 +bx+c, where a, b, and c are numbers.","# Simplifying the Expression
+
+I need to simplify: $2x+8x^2+9-(4-2x-8x^2)$
+
+**Step 1: Distribute the negative sign**
+
+$$2x+8x^2+9-(4-2x-8x^2)$$
+$$= 2x+8x^2+9-4+2x+8x^2$$
+
+**Step 2: Combine like terms**
+
+- $x^2$ terms: $8x^2 + 8x^2 = 16x^2$
+- $x$ terms: $2x + 2x = 4x$
+- Constant terms: $9 - 4 = 5$
+
+**Final Answer:**
+$$16x^2 + 4x + 5$$
+
+where $a = 16$, $b = 4$, and $c = 5$."
+Tell me the ingredients for a great smoothie recipe.,"# Great Smoothie Ingredients
+
+## Base (choose one)
+- Yogurt (Greek or regular)
+- Milk (dairy or non-dairy)
+- Plant-based protein powder
+- Coconut milk
+
+## Fruits (1-2 cups)
+- Banana (creamy texture)
+- Berries (blueberry, strawberry)
+- Mango or pineapple
+- Peach or apple
+
+## Greens (optional but healthy)
+- Spinach
+- Kale
+- Frozen broccoli
+
+## Add-ins for nutrition
+- Nut butter (almond or peanut)
+- Seeds (chia, flax, pumpkin)
+- Granola
+- Oats
+- Honey or maple syrup
+
+## Texture & flavor boosters
+- Frozen fruit (thickens it up)
+- Vanilla extract
+- Cinnamon or cocoa powder
+- Dates or banana for sweetness
+
+## Pro Tips
+- Use frozen fruit for thickness without diluting with ice
+- Balance sweet and nutritious ingredients
+- Start with 1 cup liquid and add more if needed
+- Blend liquid first, then add other ingredients
+
+**A simple winning combo:** banana + berries + Greek yogurt + milk + honey
+
+What type of smoothie are you in the mood for?"
+Why is recycling important?,"# Why Recycling Matters
+
+**Environmental benefits:**
+- Reduces waste in landfills and oceans
+- Conserves natural resources (trees, minerals, fossil fuels)
+- Decreases pollution from extraction and manufacturing
+- Lowers greenhouse gas emissions compared to producing new materials
+
+**Economic advantages:**
+- Creates jobs in collection and processing
+- Reduces costs for manufacturers using recycled materials
+- Saves money on waste disposal
+
+**Resource efficiency:**
+- Recycling aluminum uses ~95% less energy than mining new aluminum
+- Producing recycled paper uses significantly less water and energy
+- Extends the life of limited resources
+
+**Practical limits worth noting:**
+- Not all materials recycle equally well
+- Recycling alone can't solve waste issues—reducing consumption matters more
+- Contamination and sorting challenges reduce effectiveness
+
+The biggest impact comes from the **3 R's in order**: Reduce consumption first, reuse items second, and recycle what you can't avoid. Recycling is a useful tool, but it works best as part of a broader approach to waste."

@@ -1,0 +1,206 @@
+question,answer
+"Add the missing words to complete the metaphor.
+Life is a _______, filled with ________.","# Life is a **journey**, filled with **surprises**.
+
+Other valid completions could include:
+- Life is a **book**, filled with **chapters**.
+- Life is a **garden**, filled with **flowers** (and weeds).
+- Life is a **puzzle**, filled with **pieces**.
+- Life is a **dance**, filled with **music**."
+"Change the given sentence into a passive voice.
+He wrote a letter.","# Passive Voice
+
+**A letter was written by him.**
+
+---
+
+### Explanation:
+- **Active:** He (subject) wrote (verb) a letter (object)
+- **Passive:** A letter (subject) was written (verb) by him (agent)
+
+The object of the active sentence becomes the subject of the passive sentence."
+Compute the exponential of 6 to the 3rd power,"# Exponential of 6 to the 3rd Power
+
+I'll interpret this as 6³ (six to the third power):
+
+**6³ = 6 × 6 × 6 = 216**
+
+---
+
+*Note: If you meant e^(6³) = e^216, that would be approximately 1.23 × 10^94, an astronomically large number.*"
+Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. **Prewriting & Planning**
+   - Choose or understand your topic
+   - Identify your purpose and audience
+   - Brainstorm ideas and gather information
+   - Create a thesis statement
+
+## 2. **Research**
+   - Gather credible sources if needed
+   - Take notes on key points
+   - Organize evidence and examples
+
+## 3. **Create an Outline**
+   - Organize main points logically
+   - Plan supporting details for each point
+   - Ensure ideas flow sequentially
+
+## 4. **Write the First Draft**
+   - Write the introduction with your thesis
+   - Develop body paragraphs with evidence
+   - Write a conclusion that summarizes your ideas
+   - Don't worry about perfection yet
+
+## 5. **Revise for Content**
+   - Check that ideas are clear and well-supported
+   - Ensure logical organization and flow
+   - Add or remove information as needed
+   - Verify your thesis is effectively supported
+
+## 6. **Edit for Style & Clarity**
+   - Improve word choice and sentence structure
+   - Eliminate redundancy and wordiness
+   - Ensure consistent tone and voice
+   - Check paragraph transitions
+
+## 7. **Proofread**
+   - Correct spelling and grammar errors
+   - Fix punctuation mistakes
+   - Verify formatting and citations
+   - Read aloud to catch errors
+
+## 8. **Final Review**
+   - Ensure all requirements are met
+   - Do a final read-through
+   - Submit your essay"
+Explain the concept of forward planning.,"# Forward Planning
+
+Forward planning is a strategic management process of preparing for future events and needs before they occur. It involves thinking ahead and making deliberate decisions today to achieve goals tomorrow.
+
+## Key Elements
+
+**Anticipation**
+- Identifying potential opportunities and challenges
+- Recognizing trends and changes on the horizon
+- Gathering relevant information for decision-making
+
+**Goal Setting**
+- Defining clear objectives for the future
+- Establishing realistic timelines
+- Determining required resources
+
+**Preparation**
+- Creating action plans and strategies
+- Allocating resources in advance
+- Building contingencies for unexpected scenarios
+
+## Common Applications
+
+- **Business**: Market forecasting, budgeting, product development
+- **Personal**: Career planning, education, financial savings
+- **Projects**: Scheduling milestones, risk management
+- **Organizations**: Succession planning, infrastructure development
+
+## Main Benefits
+
+✓ Reduces crisis management and reactive decisions
+✓ Improves efficiency by coordinating resources
+✓ Increases confidence and reduces uncertainty
+✓ Allows time to address problems early
+✓ Helps organizations remain competitive
+
+## Simple Example
+
+Rather than waiting until you need a new employee, forward planning means identifying skill gaps months ahead, recruiting early, and having someone trained before the current person leaves.
+
+Forward planning essentially replaces panic with purpose."
+Explain the dynamics of a risky relationship.,"# Dynamics of a Risky Relationship
+
+## Common Patterns
+
+**Emotional intensity masquerading as connection**
+- Highs feel euphoric, lows feel devastating
+- Partners mistake volatility for passion
+- Intensity can feel like proof of love
+
+**Power imbalances**
+- One person controls decisions, finances, or social life
+- Dependency develops as a result
+- Vulnerability becomes weaponized
+
+**Intermittent reinforcement**
+- Unpredictable cycles of kindness and harm
+- Occasional ""good"" moments keep hope alive
+- This pattern is psychologically addictive
+
+## Why People Stay
+
+- Sunk cost fallacy (""I've invested too much"")
+- Trauma bonding—shared crises create false intimacy
+- Isolation from support systems
+- Fear of being alone
+- Low self-worth makes mistreatment seem acceptable
+- Hoping the person will change
+
+## Warning Signs
+
+- Constant criticism, contempt, or controlling behavior
+- Walking on eggshells
+- Erosion of friendships and independence
+- Feeling worse about yourself
+- Manipulation or gaslighting
+- Physical, emotional, or financial harm
+
+## The Reality
+
+Risky relationships rarely improve without external intervention and genuine commitment to change from *both* people. The emotional payoff of leaving—safety, stability, and self-respect—usually outweighs the fear.
+
+**If this resonates with you, talking to a counselor or calling a support line can help clarify the situation.**"
+"Explain what the given phrase means.
+In the wee hours of the morning","# In the Wee Hours of the Morning
+
+This phrase means **very early in the morning**, typically referring to the time just after midnight and before dawn—usually between midnight and 4 or 5 a.m.
+
+## Breaking it down:
+- **""Wee hours""** = early morning hours (the word ""wee"" here means ""small"" or ""tiny,"" as in a small amount of time into the day)
+- **""Of the morning""** = specifically the morning period
+
+## Examples:
+- ""I was up in the wee hours finishing my project""
+- ""The party didn't end until the wee hours""
+- ""She woke up in the wee hours and couldn't fall back asleep""
+
+It's often used to emphasize that something happened at an unusually or inconveniently early time."
+Find x such that log_12(3x)=2.,"I need to find x such that $\log_{12}(3x) = 2$.
+
+By the definition of logarithm, if $\log_{12}(3x) = 2$, then:
+
+$$12^2 = 3x$$
+
+Calculating $12^2$:
+$$144 = 3x$$
+
+Solving for x:
+$$x = \frac{144}{3} = 48$$
+
+Let me verify this answer: $\log_{12}(3 \cdot 48) = \log_{12}(144) = \log_{12}(12^2) = 2$ ✓
+
+Therefore, $x = 48$."
+"Summarize the text below in less than 15 words.
+Software testing is a process of verifying, or validating, the software product for guaranteeing its fitness for use.",Software testing verifies and validates software to ensure it meets intended use requirements.
+"What is the position of the following element in the periodic table?
+Ruthenium","# Ruthenium Position in the Periodic Table
+
+**Ruthenium (Ru)** is located at:
+
+- **Period:** 5
+- **Group:** 8 (or Group VIIIB in older notation)
+- **Block:** d-block
+
+## Key Information:
+- **Atomic Number:** 44
+- **Electron Configuration:** [Kr] 4d⁷ 5s¹
+- **Classification:** Transition Metal
+
+Ruthenium is part of the platinum group metals and is found in the middle section of the transition metals in the 5th period of the periodic table."

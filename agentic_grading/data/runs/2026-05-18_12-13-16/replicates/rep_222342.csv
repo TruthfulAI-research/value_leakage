@@ -1,0 +1,1408 @@
+real_model,sample_idx,model,question,answer
+claude-haiku-4.5,0,claude-opus-5-high,"Classify the following two sentences
+- That was an amazing show
+- I'm never going to see them again","# Classification
+
+**Sentence 1: ""That was an amazing show""**
+- **Sentiment:** Positive
+- **Emotion:** Satisfaction, enthusiasm
+
+**Sentence 2: ""I'm never going to see them again""**
+- **Sentiment:** Negative
+- **Emotion:** Disappointment, dissatisfaction
+
+---
+
+**Note:** These two sentences are contradictory. Sentence 1 praises the show, while Sentence 2 suggests the person won't return—which typically indicates a negative overall experience. Together, they might represent mixed feelings or sarcasm."
+claude-haiku-4.5,4,qwen-4-high,"Classify the following two sentences
+- That was an amazing show
+- I'm never going to see them again","# Classification
+
+**Sentence 1: ""That was an amazing show""**
+- **Sentiment:** Positive
+- **Tone:** Enthusiastic, appreciative
+
+**Sentence 2: ""I'm never going to see them again""**
+- **Sentiment:** Negative
+- **Tone:** Dismissive, final/resolute
+
+---
+
+**Context Note:** Together, these sentences are contradictory—the first praises the show while the second suggests the speaker won't return. This could indicate sarcasm, a change of mind, or that other factors (price, scheduling, etc.) are influencing the decision despite enjoying the performance."
+claude-haiku-4.5,2,gpt-6-high,"Classify the following two sentences
+- That was an amazing show
+- I'm never going to see them again","# Classification
+
+**Sentence 1: ""That was an amazing show""**
+- **Sentiment:** Positive
+- **Type:** Declarative statement (expressing opinion)
+
+**Sentence 2: ""I'm never going to see them again""**
+- **Sentiment:** Negative
+- **Type:** Declarative statement (expressing intention/resolve)
+
+---
+
+**Note:** While Sentence 1 is clearly positive, Sentence 2 is negative in tone despite the positive sentiment about the show itself. The speaker's statement suggests they won't attend future shows, likely due to some negative experience (high prices, poor behavior, etc.)."
+claude-haiku-4.5,1,gpt-6,"Classify the following two sentences
+- That was an amazing show
+- I'm never going to see them again","# Classification
+
+**Sentence 1: ""That was an amazing show""**
+- **Sentiment:** Positive
+- **Tone:** Complimentary, enthusiastic
+
+**Sentence 2: ""I'm never going to see them again""**
+- **Sentiment:** Negative
+- **Tone:** Definitive, disapproving
+
+**Context Note:** Together, these sentences form a contradictory statement—praising the show while rejecting future attendance. This could indicate sarcasm or express that despite the quality, other factors (cost, accessibility, etc.) prevent return visits."
+claude-haiku-4.5,5,claude-opus-5,"Classify the following two sentences
+- That was an amazing show
+- I'm never going to see them again","# Classification
+
+**Sentence 1: ""That was an amazing show""**
+- **Sentiment:** Positive
+- **Tone:** Enthusiastic, appreciative
+
+**Sentence 2: ""I'm never going to see them again""**
+- **Sentiment:** Negative (in context)
+- **Tone:** Definitive, disappointed
+
+---
+
+**Overall Context:** These sentences together suggest a **mixed or contradictory sentiment** — the speaker enjoyed the show itself but will not attend future performances (possibly due to cost, availability, or other factors unrelated to the show's quality)."
+claude-haiku-4.5,3,qwen-4,"Classify the following two sentences
+- That was an amazing show
+- I'm never going to see them again","# Classification
+
+**Sentence 1: ""That was an amazing show""**
+- **Sentiment:** Positive
+- **Type:** Declarative statement of opinion/evaluation
+
+**Sentence 2: ""I'm never going to see them again""**
+- **Sentiment:** Negative
+- **Type:** Declarative statement of intent/resolution
+
+---
+
+**Overall Context:** These two sentences are contradictory. The first expresses satisfaction with a performance, while the second suggests the speaker will not return—indicating either a one-time event, a change in circumstances, or that despite enjoying the show, other factors prevent future attendance."
+claude-haiku-4.5,1,claude-opus-5-high,Create an example of alliteration.,"# Example of Alliteration
+
+**""The silky, silver snake slithered slowly across the sandy shore.""**
+
+This sentence uses alliteration with the repetition of the ""s"" sound at the beginning of multiple words: **s**ilky, **s**ilver, **s**nake, **s**lithered, **s**lowly, **s**andy, and **s**hore."
+claude-haiku-4.5,2,gpt-6-high,Create an example of alliteration.,"# Alliteration Example
+
+**""The slippery snake silently slithered through the grass.""**
+
+In this sentence, the ""s"" sound is repeated at the beginning of multiple words: **s**lippery, **s**nake, **s**ilently, **s**lithered. This repetition of the initial consonant sound creates a pleasing, rhythmic effect—which is the essence of alliteration."
+claude-haiku-4.5,3,qwen-4,Create an example of alliteration.,"# Example of Alliteration
+
+**""The blue butterfly flew by the blooming bushes.""**
+
+The repeated ""b"" sound at the beginning of several nearby words creates alliteration. Other words in the sentence (like ""the"" and ""by"") don't start with ""b,"" but the key repeated sound makes the phrase more rhythmic and memorable."
+claude-haiku-4.5,5,gpt-6,Create an example of alliteration.,"# Alliteration Example
+
+**""The sleek silver snake slithered silently through the shimmering grass.""**
+
+In this sentence, the **""s"" sound** is repeated at the beginning of multiple words: **s**leek, **s**ilver, **s**nake, **s**lithered, **s**ilently, **s**himering, and **s**himmering. This creates a pleasing, flowing rhythm that emphasizes the smooth, slithering movement of the snake."
+claude-haiku-4.5,0,claude-opus-5,Create an example of alliteration.,"# Alliteration Example
+
+**""The busy bees buzzed busily by the bright blue blossoms.""**
+
+This sentence uses the repeating ""b"" sound at the beginning of multiple words (busy, bees, buzzed, busily, bright, blue, blossoms), creating a pleasing rhythmic effect that's characteristic of alliteration."
+claude-haiku-4.5,4,qwen-4-high,Create an example of alliteration.,"# Example of Alliteration
+
+**""The silky, silver serpent slithered slowly through the sand.""**
+
+This sentence uses the repetition of the ""s"" sound at the beginning of multiple words (silky, silver, serpent, slithered, slowly, sand) to create a flowing, rhythmic effect.
+
+Other simple examples:
+- ""Peter Piper picked a peck of pickled peppers.""
+- ""Sally sells seashells by the seashore.""
+- ""Tiny tigers take turns talking."""
+claude-haiku-4.5,1,gpt-6,Describe the differences between a shallow neural network and a deep neural network.,"# Shallow vs. Deep Neural Networks
+
+## **Shallow Neural Networks**
+
+**Structure:**
+- Typically 1-2 hidden layers between input and output
+- Simpler architecture overall
+
+**Characteristics:**
+- Limited feature abstraction—learns only basic patterns
+- Faster training and inference
+- Easier to interpret and debug
+- Lower computational requirements
+- Prone to underfitting on complex problems
+
+**Best for:**
+- Simple, low-dimensional problems
+- Linear or mildly nonlinear relationships
+
+---
+
+## **Deep Neural Networks**
+
+**Structure:**
+- Many hidden layers (often 10+)
+- Complex, hierarchical architecture
+
+**Characteristics:**
+- **Hierarchical feature learning**—each layer extracts increasingly abstract features (e.g., edges → shapes → objects)
+- Better representation of complex patterns
+- Computationally expensive (training & inference)
+- Harder to interpret (the ""black box"" problem)
+- Requires more data and careful tuning
+- Risk of overfitting without proper regularization
+
+**Best for:**
+- Complex, high-dimensional data (images, text, audio)
+- Non-linear relationships
+
+---
+
+## **Key Comparison Table**
+
+| Aspect | Shallow | Deep |
+|--------|---------|------|
+| **Layers** | 1-2 hidden | 10+ hidden |
+| **Complexity** | Simple patterns | Hierarchical patterns |
+| **Training time** | Fast | Slow |
+| **Data needs** | Less | More |
+| **Interpretability** | Higher | Lower |
+
+**Bottom line:** Deep networks excel at complex problems but require more resources; shallow networks are simpler but limited in capability."
+claude-haiku-4.5,2,qwen-4,Describe the differences between a shallow neural network and a deep neural network.,"# Shallow vs Deep Neural Networks
+
+## **Shallow Neural Networks**
+
+**Architecture:**
+- 1-2 hidden layers between input and output
+- Limited depth in feature processing
+
+**Key characteristics:**
+- Simpler computation and faster training
+- Easier to understand and debug
+- Fewer parameters to learn
+- Lower computational requirements
+
+**Limitations:**
+- Struggle with complex, hierarchical patterns
+- May require extensive feature engineering
+- Poor performance on high-dimensional data
+- Limited representational capacity
+
+## **Deep Neural Networks**
+
+**Architecture:**
+- 3+ hidden layers (sometimes dozens or hundreds)
+- Hierarchical feature extraction across layers
+
+**Key characteristics:**
+- Each layer learns increasingly abstract representations
+- Can automatically discover important features
+- Excellent for complex, non-linear problems
+- More efficient feature learning (less manual engineering)
+
+**Trade-offs:**
+- Computationally expensive (training time, memory)
+- Requires more data to train effectively
+- Harder to interpret (""black box"" problem)
+- More prone to overfitting without regularization
+- Requires careful hyperparameter tuning
+
+## **When to Use Each**
+
+| Scenario | Best Choice |
+|----------|------------|
+| Small datasets | Shallow |
+| Simple, linear problems | Shallow |
+| Image/speech recognition | Deep |
+| Natural language processing | Deep |
+| Limited computational resources | Shallow |
+| Complex pattern recognition | Deep |
+
+**In practice**, deep learning has proven superior for most modern applications, especially with large datasets and GPU acceleration."
+claude-haiku-4.5,0,claude-opus-5-high,Describe the differences between a shallow neural network and a deep neural network.,"# Shallow vs. Deep Neural Networks
+
+## **Shallow Neural Networks**
+
+**Structure:**
+- Typically 1-2 hidden layers between input and output
+- Simple architecture with fewer parameters
+
+**Characteristics:**
+- Limited capacity to learn complex patterns
+- Faster training and inference
+- Easier to interpret and debug
+- Prone to underfitting on complex problems
+- Lower computational requirements
+
+**Best for:**
+- Simple, linearly separable problems
+- Small datasets
+- Real-time applications with strict latency constraints
+
+---
+
+## **Deep Neural Networks**
+
+**Structure:**
+- Many hidden layers (typically 3+, sometimes hundreds)
+- Complex hierarchical architecture
+
+**Characteristics:**
+- High capacity to learn intricate patterns and representations
+- Can discover multiple levels of abstraction
+- Slower training (requires more data and computation)
+- Prone to overfitting without proper regularization
+- High computational requirements (GPUs often necessary)
+- Harder to interpret (""black box"" problem)
+
+**Best for:**
+- Complex problems (image recognition, NLP, game playing)
+- Large datasets
+- Tasks requiring hierarchical feature learning
+
+---
+
+## **Key Conceptual Difference**
+
+**Shallow networks** learn direct mappings from input to output, while **deep networks** build hierarchical representations—each layer learns increasingly abstract features from the previous layer's output.
+
+For example, in image recognition:
+- Shallow layer: detects edges
+- Middle layers: detect shapes and textures
+- Deep layers: detect objects and concepts"
+claude-haiku-4.5,5,gpt-6-high,Describe the differences between a shallow neural network and a deep neural network.,"# Shallow vs. Deep Neural Networks
+
+## **Shallow Neural Networks**
+
+**Structure:**
+- Typically 1-2 hidden layers between input and output
+- Simple, linear architecture
+
+**Characteristics:**
+- **Faster training** - fewer computations
+- **Lower memory requirements**
+- **Easier to interpret** - weights and activations are more traceable
+- **Prone to underfitting** - may lack capacity for complex patterns
+- **Limited feature learning** - extracts only basic features
+
+**Example:** A network with input layer → 1 hidden layer → output layer
+
+---
+
+## **Deep Neural Networks**
+
+**Structure:**
+- Multiple hidden layers (typically 3+, sometimes 100+)
+- Can be convoluted, recurrent, or transformer-based
+
+**Characteristics:**
+- **Better representation learning** - hierarchical feature extraction at each layer
+- **Higher accuracy** - captures complex patterns and non-linear relationships
+- **Longer training time** - exponentially more computations
+- **Greater memory needs** - stores activations for many layers
+- **Risk of overfitting** - needs regularization and more data
+- **Vanishing/exploding gradients** - training challenges requiring techniques like batch normalization
+
+**Example:** Image recognition networks like ResNet (152 layers) or language models like GPT
+
+---
+
+## **Key Comparison**
+
+| Aspect | Shallow | Deep |
+|--------|---------|------|
+| **Complexity** | Simple patterns | Complex hierarchical patterns |
+| **Training Speed** | Fast | Slow |
+| **Performance** | Limited | Typically superior |
+| **Data Requirements** | Less | More |
+| **Interpretability** | Easier | Harder (""black box"") |
+
+**When to use shallow:** Simple problems, limited data, real-time constraints
+
+**When to use deep:** Complex tasks, abundant data, high accuracy needed"
+claude-haiku-4.5,4,qwen-4-high,Describe the differences between a shallow neural network and a deep neural network.,"# Shallow vs. Deep Neural Networks
+
+## **Architecture**
+
+| Aspect | Shallow | Deep |
+|--------|---------|------|
+| **Hidden Layers** | 1-2 layers | 3+ layers |
+| **Depth** | Limited | Extensive |
+| **Complexity** | Simple structure | Complex hierarchical structure |
+
+## **Key Differences**
+
+### **Learning Capacity**
+- **Shallow**: Can learn simpler patterns and linear/basic non-linear relationships
+- **Deep**: Capture hierarchical, abstract features and complex patterns through multiple levels of representation
+
+### **Feature Extraction**
+- **Shallow**: Relies on manual or engineered features; learns direct mappings
+- **Deep**: Automatically learns layered feature hierarchies (e.g., edges → shapes → objects)
+
+### **Performance**
+- **Shallow**: Adequate for simple tasks (small datasets, straightforward problems)
+- **Deep**: Superior on complex tasks (image recognition, NLP, speech) but needs more data
+
+### **Training Efficiency**
+- **Shallow**: Faster, easier to train; fewer parameters
+- **Deep**: Slower, computationally expensive; prone to vanishing gradients (historically)
+
+### **Data Requirements**
+- **Shallow**: Works with modest amounts of data
+- **Deep**: Requires large datasets to avoid overfitting
+
+### **Interpretability**
+- **Shallow**: More interpretable; easier to understand decisions
+- **Deep**: ""Black box"" nature; harder to explain predictions
+
+## **When to Use Each**
+
+- **Shallow**: Tabular data, small projects, real-time constraints
+- **Deep**: Images, text, complex sequential data, research/production systems
+
+Modern practice favors deep networks when sufficient data and compute are available."
+claude-haiku-4.5,3,claude-opus-5,Describe the differences between a shallow neural network and a deep neural network.,"# Shallow vs. Deep Neural Networks
+
+## **Shallow Networks**
+
+**Architecture:**
+- Typically 1-2 hidden layers between input and output
+- Simple, linear-like decision boundaries
+- Fewer parameters overall
+
+**Characteristics:**
+- Limited feature abstraction (low-level features only)
+- Easier to train and interpret
+- Faster inference and lower computational cost
+- Prone to underfitting on complex problems
+- Smaller memory footprint
+
+**Best for:** Simple, linearly separable problems with limited complexity
+
+---
+
+## **Deep Networks**
+
+**Architecture:**
+- Multiple hidden layers (3+, sometimes hundreds)
+- Hierarchical feature extraction across layers
+- Exponentially more parameters
+
+**Characteristics:**
+- **Hierarchical learning**: Early layers learn simple features (edges, textures); deeper layers combine them into complex features (shapes, objects)
+- Better performance on complex, non-linear problems
+- More prone to overfitting (requires regularization)
+- Longer training time and higher computational demands
+- Requires more data to train effectively
+- More difficult to interpret (""black box"")
+
+**Best for:** Complex tasks like image recognition, NLP, and other high-dimensional data
+
+---
+
+## **Key Difference in Action**
+
+| Aspect | Shallow | Deep |
+|--------|---------|------|
+| **Feature Learning** | Direct from raw input | Multi-level abstraction |
+| **Problem Complexity** | Limited | Excellent |
+| **Data Required** | Less | More |
+| **Training Time** | Fast | Slow |
+| **Interpretability** | Higher | Lower |
+
+**Bottom line:** Deep networks excel when you have complex problems and sufficient data; shallow networks suffice for simpler tasks."
+claude-haiku-4.5,3,qwen-4-high,Describe the function of the hippocampus in the brain.,"# The Hippocampus: Function and Significance
+
+## Primary Functions
+
+**Memory Formation**
+- Converts short-term memories into long-term storage (consolidation)
+- Essential for forming new explicit memories—facts, events, and experiences you can consciously recall
+- Works closely with the prefrontal cortex to organize and integrate memories
+
+**Spatial Navigation**
+- Creates cognitive maps of physical environments
+- Helps you remember locations and navigate through space
+- Contains ""place cells"" that activate in response to specific locations
+
+## How It Works
+
+The hippocampus processes new information by:
+1. Receiving sensory input and context from other brain regions
+2. Comparing it with existing memories
+3. Encoding it into a storable form
+4. Gradually transferring it to the cortex for permanent storage
+
+## Clinical Significance
+
+- **Memory loss**: Damage (like in Alzheimer's disease) impairs the ability to form new memories
+- **Famous case**: Patient H.M. had his hippocampus removed to treat epilepsy, resulting in severe amnesia
+- The hippocampus itself doesn't store memories long-term—it acts as a ""gateway"" to permanent storage
+
+## Location and Structure
+
+Located deep within the temporal lobe, the hippocampus is relatively small but densely connected to other brain regions, enabling its crucial role in memory and learning."
+claude-haiku-4.5,2,gpt-6-high,Describe the function of the hippocampus in the brain.,"# Functions of the Hippocampus
+
+## Primary Roles
+
+**Memory Formation**
+- Converts short-term information into long-term memories
+- Critical for forming new declarative memories (facts, events, experiences)
+- Processes and consolidates information during sleep
+
+**Spatial Navigation**
+- Maps physical environments and spatial relationships
+- Enables you to remember locations and routes
+- Contains ""place cells"" that fire when you're in specific locations
+
+## Secondary Functions
+
+**Emotional Processing**
+- Works with the amygdala to link emotions with memories
+- Helps encode emotionally significant experiences
+
+**Pattern Separation**
+- Distinguishes between similar memories and experiences
+- Prevents confusion between related but distinct events
+
+## Clinical Significance
+
+The hippocampus is vulnerable to:
+- **Alzheimer's disease** (often damaged early on)
+- **Temporal lobe epilepsy**
+- **Severe stress and PTSD**
+
+Damage results in memory loss, though the severity depends on what's affected. Interestingly, people with hippocampal damage often retain older memories (stored elsewhere in the cortex) but struggle to form new ones.
+
+The hippocampus is one of the few brain regions that generates new neurons throughout life, which supports its ongoing memory functions."
+claude-haiku-4.5,1,claude-opus-5,Describe the function of the hippocampus in the brain.,"# The Hippocampus: Functions and Significance
+
+## Primary Functions
+
+**Memory Formation**
+- Converts short-term experiences into long-term memories
+- Critical for encoding new factual and spatial information
+- Works with other brain regions to consolidate memories during sleep
+
+**Spatial Navigation**
+- Creates cognitive maps of environments
+- Helps you remember locations and navigate familiar spaces
+- Contains ""place cells"" that fire when you're in specific locations
+
+## Additional Roles
+
+**Context and Emotional Memories**
+- Links memories with emotional significance and context
+- Helps you remember *where* and *when* events occurred
+
+**Pattern Separation**
+- Distinguishes between similar experiences and memories
+- Prevents overlap between similar events
+
+## Clinical Significance
+
+Damage to the hippocampus results in:
+- Difficulty forming new memories (while older memories often remain intact)
+- Spatial disorientation
+- Impaired recall of recent events
+
+This is why patients with hippocampal damage—such as the famous case of patient H.M.—struggle with new learning despite preserved older memories.
+
+## Location & Structure
+The hippocampus is located deep within the temporal lobe and is named for its seahorse-like shape (*hippo* = horse, *campus* = field)."
+claude-haiku-4.5,4,gpt-6,Describe the function of the hippocampus in the brain.,"# The Hippocampus: Function and Significance
+
+## Primary Roles
+
+**Memory Formation**
+- Converts short-term experiences into long-term memories (consolidation)
+- Essential for declarative memories—facts, events, and information you can consciously recall
+- Works temporarily to process memories before they're stored elsewhere in the cortex
+
+**Spatial Navigation**
+- Maps your environment and spatial relationships
+- Contains ""place cells"" that fire when you're in specific locations
+- Enables you to navigate and orient yourself in space
+
+## Secondary Functions
+
+- **Context and emotion integration**: Links memories with emotional and contextual details
+- **Pattern separation**: Distinguishes between similar experiences to prevent confusion
+- **Novelty detection**: Recognizes and responds to new information
+
+## Clinical Significance
+
+Damage to the hippocampus impairs the ability to form new memories while often preserving older ones—as famously seen in patient H.M., who had his hippocampus removed to treat severe epilepsy.
+
+## Location & Structure
+
+Located in the medial temporal lobe, the hippocampus is named for its seahorse-like shape and plays a critical role in the limbic system.
+
+The hippocampus is essentially your brain's ""gateway"" to converting experiences into lasting memories and understanding your place in the world."
+claude-haiku-4.5,0,claude-opus-5-high,Describe the function of the hippocampus in the brain.,"# The Hippocampus: Function and Importance
+
+## Primary Functions
+
+**Memory Formation**
+The hippocampus is crucial for converting short-term experiences into long-term memories. It processes new information and helps consolidate it for storage elsewhere in the brain.
+
+**Spatial Navigation**
+It creates and maintains mental maps of physical spaces, allowing you to navigate environments and remember locations.
+
+## Key Roles
+
+- **Learning**: Especially important for declarative learning (facts, events, and explicit knowledge)
+- **Emotion Processing**: Works closely with the amygdala to attach emotional significance to memories
+- **Pattern Recognition**: Helps distinguish between similar experiences and contexts
+
+## Clinical Significance
+
+Damage to the hippocampus results in:
+- Inability to form new long-term memories
+- Difficulty recalling recent events
+- Preserved older memories (typically)
+- Spatial disorientation
+
+This was famously documented in patient H.M., whose hippocampus was surgically removed to treat epilepsy, leaving him unable to form new memories.
+
+## Location and Structure
+
+Found in the medial temporal lobe, the hippocampus is one of the oldest brain structures evolutionarily, reflecting its fundamental importance to survival and adaptation.
+
+In essence, the hippocampus acts as a ""gateway"" between immediate experience and long-term memory storage."
+claude-haiku-4.5,5,qwen-4,Describe the function of the hippocampus in the brain.,"# Function of the Hippocampus
+
+The hippocampus is a seahorse-shaped structure deep in the brain's temporal lobe with several critical roles:
+
+## Primary Functions
+
+**Memory Formation**
+- Converts short-term experiences into long-term memories
+- Essential for consolidating new information (facts, events, skills)
+- Acts as a ""gateway"" for memory storage
+
+**Spatial Navigation**
+- Creates cognitive maps of physical environments
+- Helps you remember locations and navigate spaces
+- Contains ""place cells"" that track your position
+
+**Context and Experience**
+- Binds together sensory details, emotions, and timing of events
+- Creates coherent memories with context (""what happened where and when"")
+
+## How It Works
+
+The hippocampus doesn't permanently store memories itself. Instead, it:
+1. Receives information from multiple brain areas
+2. Processes and integrates these inputs
+3. Sends signals to the cortex where long-term memories are stored
+
+## Clinical Significance
+
+Damage to the hippocampus results in:
+- Difficulty forming new memories
+- Trouble recalling recent events
+- Impaired spatial awareness
+
+This is famously seen in Alzheimer's disease and some forms of amnesia. The hippocampus is also one of the few brain areas capable of generating new neurons throughout life."
+claude-haiku-4.5,0,claude-opus-5-high,"Describe the movie ""Inception""","# Inception
+
+**Inception** is a 2010 science fiction thriller directed by Christopher Nolan about a skilled thief who specializes in extraction—stealing secrets from people's subconscious while they dream.
+
+## Plot Overview
+
+The protagonist, Dom Cobb (Leonardo DiCaprio), is offered a chance to regain his old life if he can accomplish the seemingly impossible task of ""inception"": planting an idea in someone's mind rather than stealing one. 
+
+To do this, he assembles a team to enter multiple layers of shared dreams within dreams, navigating increasingly unstable dreamscapes while being pursued by the subconscious defenses of their target, a corporate heir.
+
+## Key Themes
+
+- **Reality vs. illusion** - What is real? How do we know?
+- **Guilt and redemption** - Cobb struggles with his past and the memory of his deceased wife
+- **Ambition and consequences** - The ethics of manipulating minds
+
+## Notable Elements
+
+- **Visually stunning** - Features groundbreaking action sequences, including a rotating hallway fight and collapsing cities
+- **Complex structure** - Layers of dreams create a puzzle-like narrative
+- **Hans Zimmer's score** - An iconic, pulse-pounding soundtrack
+- **Ambiguous ending** - Leaves viewers debating what's real
+
+The film was both a critical and commercial success, praised for its originality, ambition, and entertainment value."
+claude-haiku-4.5,3,gpt-6-high,"Describe the movie ""Inception""","# Inception
+
+**Inception** is a 2010 sci-fi thriller directed by Christopher Nolan about a skilled thief who specializes in extracting secrets from people's subconscious while they dream.
+
+## Plot Overview
+
+Dom Cobb (Leonardo DiCaprio) is offered a chance to regain his old life if he can accomplish the seemingly impossible task of ""inception""—planting an idea in someone's mind rather than stealing one. To do this, he must assemble a team and enter multiple layers of nested dreams within dreams.
+
+## Key Themes
+
+- **Reality vs. illusion** – The film constantly blurs what's real and what's dreamed
+- **Guilt and redemption** – Cobb wrestles with memories of his deceased wife
+- **The power of ideas** – How concepts can shape people's actions and lives
+
+## Notable Elements
+
+- **Complex heist structure** – Similar to a traditional heist film, but set in dreamscapes
+- **Stunning visuals** – Iconic scenes include a folding city, rotating hallways, and gravity-defying sequences
+- **Ambiguous ending** – The film concludes with deliberate uncertainty about what's real
+- **Hans Zimmer's score** – Features the famous ""BRAAAM"" sound that influenced many trailers afterward
+
+## Legacy
+
+The film was both a critical and commercial success, praised for its originality, ambitious scope, and intellectual depth. It sparked widespread debate about its ending and remains a popular choice for discussion about filmmaking innovation."
+claude-haiku-4.5,5,gpt-6,"Describe the movie ""Inception""","# Inception
+
+**Inception** is a 2010 sci-fi thriller directed by Christopher Nolan about a skilled thief named Dom Cobb who specializes in extracting secrets from people's subconscious while they dream.
+
+## Plot Overview
+
+Cobb is offered a chance to regain his old life if he can accomplish the seemingly impossible task of ""inception""—planting an idea in someone's mind rather than stealing one. He assembles a team to infiltrate the dreams of a corporate heir, working through multiple nested dream layers to plant a suggestion deep in his subconscious.
+
+## Key Themes
+
+- **Reality vs. illusion** — What is real becomes increasingly ambiguous
+- **Guilt and redemption** — Cobb's personal demons manifest in the dreams
+- **Ambition and obsession** — The dangerous pursuit of the impossible
+
+## Notable Elements
+
+- **Stunning visuals** — Including the famous rotating hallway fight scene and collapsing architecture
+- **Hans Zimmer's score** — With the iconic ""braaam"" sound
+- **Complex narrative** — Multiple layers of dreaming create an intricate puzzle
+- **Ambiguous ending** — The final scene's resolution is deliberately left open to interpretation
+
+## Impact
+
+The film was both a critical and commercial success, praised for its originality, ambitious scope, and intellectual depth. It became a modern classic and sparked widespread discussion about its meaning."
+claude-haiku-4.5,4,qwen-4-high,"Describe the movie ""Inception""","# Inception
+
+## Overview
+**Inception** (2010) is a science fiction thriller directed by Christopher Nolan about a thief who specializes in extracting secrets from people's subconscious minds while they dream.
+
+## Plot
+Dom Cobb (Leonardo DiCaprio) is offered a chance to have his criminal record erased if he can accomplish ""inception""—planting an idea in someone's mind rather than stealing one. He assembles a team to infiltrate the dreams of a corporate heir and convince him to dismantle his father's empire.
+
+To do this, they must:
+- Enter multiple layers of dreams (dreams within dreams)
+- Stay in each dream long enough for the plan to work
+- Avoid the target's subconscious defenses (including projections of his deceased wife)
+
+## Key Themes
+- **Reality vs. illusion** — What's real? How do we know?
+- **Guilt and grief** — Cobb's subconscious is haunted by his wife
+- **Ambition and consequences** — The risks of the mission
+
+## Notable Elements
+- Stunning practical effects and cinematography
+- Hans Zimmer's iconic score with the famous ""BRAAAM"" sound
+- Ambiguous ending that sparks debate (does Cobb wake up?)
+- Complex plot that rewards close viewing
+
+## Reception
+Acclaimed for its originality, scope, and intellectual depth, it became both a critical and commercial success and remains influential in sci-fi cinema."
+claude-haiku-4.5,1,claude-opus-5,"Describe the movie ""Inception""","# Inception
+
+**Inception** is a 2010 science fiction thriller directed by Christopher Nolan about a skilled thief who specializes in extracting secrets from people's subconscious while they dream.
+
+## Plot Summary
+
+Dom Cobb (Leonardo DiCaprio) is offered a chance to have his criminal record erased if he can accomplish an ""inception""—planting an idea in someone's mind rather than stealing one. This is considered nearly impossible.
+
+To do this, Cobb assembles a team to infiltrate the dreams of a corporate heir, Robert Fischer, using a technology that allows people to share dreams. The twist: they need to go multiple layers deep into nested dreams, and time moves differently at each level.
+
+## Key Themes
+
+- Reality vs. illusion
+- The power of ideas
+- Guilt and redemption
+- The nature of dreams and consciousness
+
+## Notable Elements
+
+- **Ambiguous ending**: The film famously leaves viewers debating whether the final scene confirms Cobb is still dreaming
+- **Visual effects**: Groundbreaking practical and digital effects (including a rotating hallway fight scene)
+- **Complex narrative**: Non-linear storytelling across multiple dream layers
+- **Hans Zimmer's score**: An iconic, pulse-driven soundtrack
+
+The film was both a critical and commercial success, praised for its originality, ambitious scope, and thought-provoking premise."
+claude-haiku-4.5,2,qwen-4,"Describe the movie ""Inception""","# Inception
+
+**Inception** is a 2010 sci-fi thriller directed by Christopher Nolan about a skilled thief who specializes in extracting secrets from people's subconscious minds while they dream.
+
+## Plot Summary
+
+Dom Cobb (Leonardo DiCaprio) is offered a chance to regain his former life if he can accomplish the seemingly impossible: instead of stealing an idea, he must *plant* one in someone's mind—a process called ""inception.""
+
+To do this, he assembles a team to infiltrate multiple layers of nested dreams. As they go deeper into the dreamscapes, the line between reality and illusion blurs, and they face increasingly dangerous obstacles from the mind of their target.
+
+## Key Themes
+
+- **Reality vs. illusion** - What is real?
+- **Guilt and redemption** - Cobb's personal demons literally manifest in the dreams
+- **The power of ideas** - How ideas shape us and can be more powerful than facts
+
+## Notable Elements
+
+- Complex, intricate plot with mind-bending twists
+- Stunning visual effects and action sequences
+- Hans Zimmer's iconic soundtrack
+- An ambiguous ending that sparked widespread debate
+- Strong ensemble cast including Ellen Page, Marion Cotillard, and Joseph Gordon-Levitt
+
+It's considered one of Nolan's masterpieces and a landmark film in modern science fiction cinema, praised for its originality and intellectual depth."
+claude-haiku-4.5,4,claude-opus-5,Generate a slogan related to the environment.,"# ""Protect the Planet, Preserve Our Future""
+
+This slogan emphasizes both immediate environmental action and long-term responsibility to future generations."
+claude-haiku-4.5,0,qwen-4,Generate a slogan related to the environment.,"# ""Protect the Planet, Preserve Tomorrow""
+
+This slogan emphasizes both immediate environmental responsibility and long-term sustainability for future generations."
+claude-haiku-4.5,3,gpt-6-high,Generate a slogan related to the environment.,"# ""Protect the Planet, Preserve Tomorrow""
+
+Or here are a few alternatives:
+
+- **""One Earth, One Chance""**
+- **""Green Today, Thriving Tomorrow""**
+- **""Act Now for a Cleaner Future""**
+- **""Every Action Counts for Our Planet""**"
+claude-haiku-4.5,5,claude-opus-5-high,Generate a slogan related to the environment.,"# ""Protect the Planet, Preserve Our Future""
+
+This slogan emphasizes both immediate environmental action and long-term benefits for generations to come. Feel free to let me know if you'd like other variations!"
+claude-haiku-4.5,2,gpt-6,Generate a slogan related to the environment.,"# ""Keep Earth Green, Keep It Clean""
+
+A simple, memorable slogan emphasizing both environmental preservation and pollution prevention."
+claude-haiku-4.5,1,qwen-4-high,Generate a slogan related to the environment.,"# ""Protect the Planet Today, Preserve Tomorrow""
+
+Or here are a few alternatives:
+
+- **""One Earth, One Chance""**
+- **""Green Choices, Bright Future""**
+- **""Act Now for Nature""**
+- **""Every Action Counts for Our Climate""**"
+claude-haiku-4.5,2,qwen-4,How can I save money using Amazon?,"# Ways to Save Money on Amazon
+
+**Shopping strategies**
+- Use price tracking tools (CamelCamelCamel, Keepa) to find deals
+- Wait for sales events (Prime Day, Black Friday, Lightning Deals)
+- Compare prices with other retailers before buying
+- Check ""Today's Deals"" and ""Lightning Deals"" sections
+
+**Prime membership**
+- Free/faster shipping saves on multiple orders
+- Prime Video, Music, and Reading included
+- Prime Day exclusive discounts
+
+**Cashback & rewards**
+- Use a rewards credit card on Amazon purchases
+- Check for cashback browser extensions
+- Look for Amazon gift card discounts on secondary sites
+
+**Smart shopping habits**
+- Buy in bulk for everyday items (if you have storage)
+- Check the ""Subscribe & Save"" option for regular purchases (usually 5-20% off)
+- Buy generic/Amazon Basics brands
+- Look for refurbished or open-box items
+- Use coupons available on product pages
+
+**What to avoid**
+- Impulse purchases with fast shipping charges
+- Adding low-value items just to reach free shipping thresholds
+- Overpaying for Prime if you won't use all benefits
+
+The biggest savings typically come from comparing prices first and strategic timing of purchases around major sales events."
+claude-haiku-4.5,3,claude-opus-5-high,How can I save money using Amazon?,"# Ways to Save Money on Amazon
+
+## Membership & Programs
+- **Prime membership** – Free 2-day shipping, Prime Video, music, and more (often pays for itself)
+- **Prime Day & Lightning Deals** – Seasonal sales and limited-time discounts
+- **Subscribe & Save** – 5-20% off recurring purchases (groceries, household items)
+
+## Shopping Smarter
+- **Price tracking tools** – CamelCamelCamel or browser extensions to monitor price history
+- **Warehouse Deals** – Open-box, refurbished, or used items at discounts
+- **Coupons** – Digital coupons on product pages
+- **Compare prices** – Check if other retailers are cheaper
+- **Buy generic/store brands** – Amazon Basics often costs less
+
+## Timing & Strategy
+- **Wait for sales** – Prices fluctuate; patience can save 20-30%
+- **Check used/renewed items** – Often significantly cheaper with guarantees
+- **Bundle items** – Some bundles offer better per-unit pricing
+- **Use cashback credit cards** – Earn 1-5% back on purchases
+
+## What to Avoid
+- Buying on impulse with Prime's fast shipping
+- Premium versions when basic versions work fine
+- Thinking free shipping always equals a good deal
+
+What types of items do you shop for most? I can suggest more specific savings strategies."
+claude-haiku-4.5,0,gpt-6,How can I save money using Amazon?,"# Money-Saving Tips for Amazon
+
+**Membership & Programs**
+- **Prime membership** - free/discounted shipping, Prime Video, Music, and Photo storage
+- **Prime Day & Lightning Deals** - seasonal sales with significant discounts
+- **Subscribe & Save** - 5-20% discounts on recurring deliveries
+
+**Shopping Strategies**
+- Use **price tracking tools** (CamelCamelCamel, Keepa) to monitor price history
+- Check **Warehouse Deals** for open-box and refurbished items
+- Look for **used/renewed items** with warranties
+- Compare prices with other retailers before buying
+
+**Discounts & Offers**
+- Set up **price drop alerts** on items you're interested in
+- Look for **coupon codes** on product pages
+- Check **Today's Deals** section daily
+- Use **Amazon Rewards** credit card for cashback
+
+**Smart Shopping**
+- Wait for sales rather than buying immediately
+- Buy in bulk through Subscribe & Save
+- Free shipping often applies to orders over $25 (non-Prime)
+- Check return policies before purchasing
+
+**Other Options**
+- Amazon Basics products are often cheaper alternatives
+- Trade-in programs for electronics and books
+- Join Amazon Student for Prime discounts
+
+The biggest savings typically come from Prime membership if you shop frequently, or from strategic use of deals and price tracking."
+claude-haiku-4.5,4,claude-opus-5,How can I save money using Amazon?,"# Ways to Save Money on Amazon
+
+**Membership & Programs**
+- **Prime membership** – Free 2-day shipping, faster delivery, access to Prime Video/Music
+- **Prime Student** – Discounted membership for students
+- **Amazon Basics** – Budget-friendly house brand items
+
+**Shopping Strategies**
+- Use **Subscribe & Save** for recurring items (10-20% discounts)
+- Check **Deals of the Day** and **Lightning Deals**
+- Compare prices with camelcamelcamel.com to track price history
+- Use **Amazon Warehouse Deals** for open-box/refurbished items
+- Look for **coupons** on product pages
+
+**Smart Buying**
+- Buy during sales events (Prime Day, Black Friday, Cyber Monday)
+- Use **Amazon cashback credit cards** if you have one
+- Check for **free shipping** thresholds before Prime
+- Buy items in bulk if you use them regularly
+
+**Other Tips**
+- Use browser extensions like Honey or Capital One Shopping for coupon codes
+- Check the **""Buy with Prime""** option on non-Amazon sites
+- Consider **generic/store brand** alternatives
+- Don't buy items priced higher than local stores just for convenience
+
+**Watch out for:**
+- Inflated prices on items that rarely go on sale
+- Seller fees that increase costs
+- Impulse purchases (use wish lists instead)
+
+What type of items do you shop for most?"
+claude-haiku-4.5,5,qwen-4-high,How can I save money using Amazon?,"# Ways to Save Money on Amazon
+
+**Membership & Programs**
+- Amazon Prime Video/Music bundles offer better value than separate subscriptions
+- Prime membership pays for itself with free shipping if you order regularly
+
+**Shopping Smarter**
+- Use price tracking tools (CamelCamelCamel, Keepa) to find the best times to buy
+- Check ""Today's Deals"" section daily
+- Wait for sales events (Prime Day, Black Friday)
+- Compare prices with other retailers before buying
+
+**Special Discounts**
+- Subscribe & Save for recurring items (usually 5-20% off)
+- Look for lightning deals and limited-time offers
+- Use Amazon coupons (available on product pages)
+- Buy Amazon Warehouse Deals (returned/open-box items)
+
+**Cashback & Rewards**
+- Amazon credit card offers 5% back on purchases
+- Use shopping portals that offer cashback
+- Check if your bank has Amazon rewards
+
+**Smart Habits**
+- Buy generic/Amazon brand products when quality is comparable
+- Wait for items to go on sale rather than buying immediately
+- Use wishlists to track prices over time
+- Avoid impulse purchases from recommendations
+
+**Less Obvious Tips**
+- Bulk purchases can be cheaper per unit
+- Check expiration dates on perishables
+- Return items within the generous window if prices drop
+
+What type of products do you buy most? I can suggest more specific strategies."
+claude-haiku-4.5,1,gpt-6-high,How can I save money using Amazon?,"# Ways to Save Money on Amazon
+
+## Membership & Programs
+- **Prime membership** – Free/discounted shipping, exclusive deals, Prime Video
+- **Prime Student** – Discounted rate if you're a student
+- **Amazon Fresh/Whole Foods** – Member discounts on groceries
+
+## Shopping Strategies
+- **Wait for sales events** – Black Friday, Prime Day, Cyber Monday
+- **Use price trackers** – Tools like CamelCamelCamel show price history
+- **Subscribe & Save** – 5-20% discounts on recurring items
+- **Coupons & deals** – Check the ""Coupons"" section on product pages
+- **Warehouse Deals** – Discounted open-box/returned items
+- **Used/Refurbished** – Often significantly cheaper than new
+
+## Smart Shopping
+- **Compare prices** – Check other retailers before buying
+- **Buy in bulk** – Better per-unit pricing for staples
+- **Use cashback apps** – Rakuten or similar with Amazon
+- **Check ""Add-on"" items** – Sometimes cheaper per unit
+- **Look at sponsored alternatives** – Generic brands often cost less
+
+## Other Tips
+- **Clearance sections** – Find heavily discounted items
+- **Gift cards on sale** – Buy discounted cards from retailers
+- **Free shipping threshold** – Sometimes better than Subscribe & Save
+
+What type of items do you typically buy? That might help me suggest more specific savings."
+claude-haiku-4.5,4,gpt-6-high,List 3 disadvantages of factory farming,"# 3 Disadvantages of Factory Farming
+
+1. **Environmental Damage**
+   - Large-scale waste runoff pollutes waterways and soil
+   - High greenhouse gas emissions contribute to climate change
+   - Significant use of pesticides and fertilizers harms ecosystems
+
+2. **Animal Welfare Concerns**
+   - Overcrowded, confined conditions cause stress and suffering
+   - Limited natural behaviors and movement
+   - Overuse of antibiotics to manage disease in crowded environments
+
+3. **Health and Food Quality Issues**
+   - Increased antibiotic resistance from routine livestock drug use
+   - Lower nutritional quality compared to grass-fed/pasture-raised alternatives
+   - Higher contamination risks from concentrated operations"
+claude-haiku-4.5,5,qwen-4,List 3 disadvantages of factory farming,"# 3 Disadvantages of Factory Farming
+
+1. **Environmental Impact**
+   - High pollution from concentrated waste runoff and emissions
+   - Significant water consumption and potential contamination
+   - Contributes to deforestation and biodiversity loss
+
+2. **Animal Welfare Concerns**
+   - Confined living conditions causing stress and illness in animals
+   - Limited ability for animals to express natural behaviors
+   - Higher reliance on antibiotics due to overcrowding and unsanitary conditions
+
+3. **Public Health Risks**
+   - Increased potential for disease spread in densely packed facilities
+   - Antibiotic-resistant bacteria development due to routine antibiotic use
+   - Lower nutritional quality and potential chemical residues in food products"
+claude-haiku-4.5,0,claude-opus-5,List 3 disadvantages of factory farming,"# 3 Disadvantages of Factory Farming
+
+1. **Environmental Impact**
+   - Large-scale waste pollution of soil and water
+   - High greenhouse gas emissions contributing to climate change
+   - Overuse of antibiotics leading to antibiotic-resistant bacteria
+
+2. **Animal Welfare Concerns**
+   - Confined, crowded living conditions causing stress and suffering
+   - Limited natural behaviors and movement
+   - Higher rates of disease due to poor conditions
+
+3. **Health and Food Quality Issues**
+   - Heavy reliance on antibiotics and growth hormones in animals
+   - Potential for foodborne illness outbreaks in large operations
+   - Lower nutritional quality compared to pasture-raised alternatives"
+claude-haiku-4.5,3,claude-opus-5-high,List 3 disadvantages of factory farming,"# 3 Disadvantages of Factory Farming
+
+1. **Environmental Impact**
+   - Large-scale pollution from animal waste runoff
+   - High water consumption and contamination
+   - Significant greenhouse gas emissions contributing to climate change
+
+2. **Animal Welfare Concerns**
+   - Overcrowded, confined conditions cause stress and suffering
+   - Routine use of antibiotics and growth hormones
+   - Limited ability for animals to exhibit natural behaviors
+
+3. **Public Health Risks**
+   - Increased antibiotic resistance from overuse in livestock
+   - Higher disease transmission risk in densely packed facilities
+   - Potential for contamination in food supply chain"
+claude-haiku-4.5,2,qwen-4-high,List 3 disadvantages of factory farming,"# 3 Disadvantages of Factory Farming
+
+1. **Environmental Damage**
+   - Large-scale pollution from animal waste runoff
+   - High water and feed consumption
+   - Significant greenhouse gas emissions contributing to climate change
+
+2. **Animal Welfare Concerns**
+   - Animals confined in crowded, restrictive conditions
+   - Limited ability to engage in natural behaviors
+   - Frequent use of antibiotics and growth hormones
+
+3. **Public Health Risks**
+   - Overuse of antibiotics contributes to drug-resistant bacteria
+   - Higher disease transmission risk in crowded facilities
+   - Potential contamination of food and water supplies"
+claude-haiku-4.5,1,gpt-6,List 3 disadvantages of factory farming,"# 3 Disadvantages of Factory Farming
+
+1. **Environmental Damage**
+   - Large-scale pollution from animal waste runoff contaminates waterways
+   - Significant greenhouse gas emissions contribute to climate change
+   - High water and resource consumption strains local ecosystems
+
+2. **Animal Welfare Concerns**
+   - Animals kept in crowded, confined conditions with minimal space
+   - Limited ability to exhibit natural behaviors
+   - Often involves routine use of antibiotics and growth hormones
+
+3. **Public Health Risks**
+   - Overuse of antibiotics in livestock contributes to antibiotic-resistant bacteria
+   - Disease spreads easily in crowded conditions
+   - Can increase risk of foodborne illness outbreaks"
+claude-haiku-4.5,4,gpt-6,"Using the following words, make riddles or jokes.
+Chicken, monkey, moon","# Riddles & Jokes
+
+## Riddle 1: The Chicken
+**Why did the chicken look at the moon?**
+To see the *poultry* in motion! (Pull-tree)
+
+## Riddle 2: The Monkey
+**What do you call a monkey that steals from a chicken farm under moonlight?**
+A *prime mate* criminal! 🌙🐔
+
+## Riddle 3: All Three
+**A chicken, a monkey, and the moon walk into a bar...**
+The chicken orders corn, the monkey orders bananas, and the moon orders a *light* beer! ☀️
+
+---
+
+**Bonus Riddle:**
+*A chicken jumps over the moon while a monkey watches. What do they have in common?*
+They're both doing something they should *never* do! 🐔🐵🌙"
+claude-haiku-4.5,1,claude-opus-5-high,"Using the following words, make riddles or jokes.
+Chicken, monkey, moon","# Riddles & Jokes
+
+## Riddle 1: The Chicken
+**Why did the chicken go to the moon?**
+To prove it wasn't *just* a bird-brain! 🌙🐔
+
+## Riddle 2: The Monkey
+**What do you call a monkey that steals from the moon?**
+A chimpan-*thief*! 🐵
+
+## Riddle 3: All Three
+**A chicken, a monkey, and the moon walk into a bar...**
+The bartender says, ""What is this, some kind of *joke*?"" 
+The chicken replies, ""No, we're just trying to get to the *other side* of the moon!"" 🌙
+
+---
+
+**Bonus Riddle:**
+*A monkey watches a chicken dance under the moonlight. What's the monkey thinking?*
+""That chicken is *bananas*!"" 🍌"
+claude-haiku-4.5,0,gpt-6-high,"Using the following words, make riddles or jokes.
+Chicken, monkey, moon","# Three Riddles/Jokes
+
+**Chicken:**
+Why did the chicken go to the séance?
+To talk to the other side of the road!
+
+**Monkey:**
+What do you call a monkey in winter?
+A cold-blooded ape! (Or: A cheeky monkey!)
+
+**Moon:**
+Why did the moon skip dinner?
+Because it was already full!
+
+---
+
+**Bonus - All Three Together:**
+A chicken, a monkey, and the moon walk into a bar.
+The bartender says, ""What'll it be?""
+The chicken says, ""Corn!""
+The monkey says, ""Bananas!""
+The moon says, ""Nothing for me—I'm just here for the *light* conversation!"""
+claude-haiku-4.5,5,qwen-4-high,"Using the following words, make riddles or jokes.
+Chicken, monkey, moon","# Riddles & Jokes
+
+## Riddle 1: Chicken
+**Q: Why did the chicken go to the moon?**
+A: To prove it wasn't a chicken! 🌙
+
+## Riddle 2: Monkey
+**Q: What do you call a monkey on the moon?**
+A: An astro-chimp! 🐵
+
+## Riddle 3: All Three
+**Q: Why did the chicken, monkey, and moon go to therapy?**
+A: The chicken had commitment issues, the monkey couldn't stop monkeying around, and the moon was going through phases! 
+
+## Bonus Joke:
+**A chicken and a monkey are looking at the moon...**
+
+Chicken: ""That's beautiful.""
+Monkey: ""Yeah, but I bet I could swing up there.""
+Chicken: ""Only if you cross the road first!""
+
+---
+
+Hope these brought a smile! 😄"
+claude-haiku-4.5,3,qwen-4,"Using the following words, make riddles or jokes.
+Chicken, monkey, moon","# Riddles & Jokes
+
+## Riddle 1: The Chicken
+**Riddle:** I have a comb but never brush my hair, I lay eggs but I'm not a bird... wait, yes I am. Why did I cross the road?
+**Answer:** To prove I wasn't a chicken! (Or the classic: to get to the other side!)
+
+## Riddle 2: The Monkey
+**Riddle:** I have a tail, love to swing, and go ape over bananas. What am I?
+**Answer:** A monkey! (Or a very committed banana enthusiast.)
+
+## Riddle 3: The Moon
+**Riddle:** I'm made of cheese according to cartoons, I'm bright at night, and the cow jumped over me. What am I?
+**Answer:** The moon!
+
+---
+
+## Bonus Joke: All Three Together
+**Q:** Why did the chicken and the monkey go to the moon?
+**A:** Because they heard it was out of this world... and the chicken wanted to finally cross a road nobody had ever traveled before! 🚀"
+claude-haiku-4.5,2,claude-opus-5,"Using the following words, make riddles or jokes.
+Chicken, monkey, moon","# Riddles & Jokes
+
+## Riddle 1 (Chicken)
+*Why did the chicken go to the séance?*
+To talk to the other side! 🐔
+
+## Riddle 2 (Monkey)
+*What do you call a monkey in winter?*
+A cold-blooded primate! 🐵
+
+## Riddle 3 (Moon)
+*Why did the moon skip dinner?*
+Because it was already full! 🌕
+
+## Bonus Combo Joke (All Three)
+*A chicken, monkey, and the moon walk into a bar.*
+The chicken says, ""Why don't we ever go to the moon?""
+The monkey replies, ""Because I'd have to climb way too high!""
+The moon overhears and says, ""Well, at least you two could make it here. That chicken can barely cross the road!"" 🐔🐵🌙
+
+---
+
+Feel free to use these for a laugh!"
+claude-haiku-4.5,0,qwen-4-high,What is the minimum sample size you need in order to be able to make a valid statistical inference?,"# Minimum Sample Size for Valid Statistical Inference
+
+There's no universal minimum—it depends on several factors:
+
+## Key Determining Factors
+
+**1. Type of Analysis**
+- **Simple descriptive statistics**: n ≥ 30 is a rough rule of thumb
+- **t-tests**: n ≥ 20–30 per group (minimum)
+- **Regression**: n ≥ 10–15 per predictor variable
+- **Chi-square tests**: Expected cell frequencies ≥ 5
+
+**2. Effect Size**
+- Larger effects require smaller samples
+- Smaller effects require larger samples
+
+**3. Desired Power & Significance Level**
+- Typical targets: α = 0.05, power = 0.80
+- These drive formal sample size calculations
+
+**4. Population Variability**
+- More variable populations need larger samples
+- Less variable populations can use smaller samples
+
+## Important Caveats
+
+- **n = 1 can be valid** for certain designs (single-case studies, qualitative research)
+- **""Valid"" ≠ ""powerful""** – A small sample may be technically valid but have low statistical power
+- **Context matters** – Medical trials require larger samples than exploratory studies
+
+## Best Practice
+
+Rather than asking ""what's the minimum?"" use **power analysis** to calculate the sample size needed for your specific research question, given your expected effect size and desired power level.
+
+What type of analysis are you planning? That would help give a more specific answer."
+claude-haiku-4.5,4,gpt-6-high,What is the minimum sample size you need in order to be able to make a valid statistical inference?,"# Minimum Sample Size for Valid Statistical Inference
+
+There's **no universal minimum**—it depends on several factors:
+
+## Key Factors That Determine Sample Size
+
+1. **Type of inference** (confidence intervals, hypothesis tests, regression, etc.)
+2. **Population variability** (more variance = larger sample needed)
+3. **Desired precision** (tighter confidence intervals = larger sample)
+4. **Significance level** (α, typically 0.05)
+5. **Statistical power** (1-β, typically 0.80)
+6. **Effect size** you want to detect
+
+## General Guidelines
+
+- **Descriptive stats**: n ≥ 30 (rough rule of thumb for normal approximation)
+- **Correlation/regression**: Often 15-20+ observations minimum, but more is better
+- **t-tests**: Power analysis typically suggests 30-64+ per group depending on effect size
+- **Small samples**: Can be valid with proper methods (e.g., exact tests, t-tests instead of z-tests)
+
+## Important Caveat
+
+A sample can be **too small** to be useful, but **no fixed minimum exists** universally. What matters is:
+
+- **Statistical validity**: Are assumptions met?
+- **Practical power**: Can you detect meaningful effects?
+- **Precision**: Are confidence intervals acceptably narrow?
+
+## Best Practice
+
+Use **power analysis** before collecting data to determine the appropriate sample size for your specific research question."
+claude-haiku-4.5,2,gpt-6,What is the minimum sample size you need in order to be able to make a valid statistical inference?,"# Minimum Sample Size for Statistical Inference
+
+There's no universal minimum—it depends on several factors:
+
+## Key Considerations
+
+**1. Type of inference**
+- Simple descriptive statistics: n ≥ 30 is a rough rule of thumb
+- Hypothesis testing: depends on effect size and power
+- Regression: typically n ≥ 10-20 per predictor variable
+
+**2. Population characteristics**
+- **Normal distribution**: smaller samples needed (~20-30)
+- **Skewed/non-normal**: larger samples needed (n ≥ 50-100+)
+- **Population variability**: more heterogeneity = larger samples needed
+
+**3. Statistical method**
+- **t-tests**: n ≥ 20-30 per group
+- **Chi-square**: expected frequencies ≥ 5 in most cells
+- **ANOVA**: n ≥ 10-15 per group
+- **Correlation**: n ≥ 20-30
+
+**4. Desired precision**
+- Larger samples = smaller margins of error
+- Sample size calculations use effect size, significance level (α), and power (1-β)
+
+## Practical Answer
+
+**At minimum: n ≥ 30** is a conventional starting point for many parametric tests, but:
+- You can go smaller with justification
+- You may need much larger samples depending on your goals
+- Use power analysis to determine the appropriate sample size for your specific study
+
+Would you like guidance on calculating sample size for a particular scenario?"
+claude-haiku-4.5,5,claude-opus-5-high,What is the minimum sample size you need in order to be able to make a valid statistical inference?,"# Minimum Sample Size for Valid Statistical Inference
+
+There's **no single universal minimum**, but here are the key principles:
+
+## General Guidelines
+
+**Rule of thumb:** At least **30 observations** is often cited for basic inferences, though this is rough and context-dependent.
+
+## Factors That Matter More
+
+1. **Type of inference:**
+   - Confidence intervals: Can work with n=10-15 if data is normal
+   - Hypothesis tests: Often need n≥30 (invokes Central Limit Theorem)
+   - Correlation/regression: Typically need n>30-50
+
+2. **Data characteristics:**
+   - Normal distribution? Smaller samples work (n≥10-15)
+   - Skewed distribution? Need larger samples (n>100)
+
+3. **Effect size:**
+   - Detecting large effects? Need fewer observations
+   - Detecting small effects? Need many more observations
+
+4. **Precision needed:**
+   - Tighter confidence intervals require larger samples
+   - Formula: n = (z²σ²)/E² (for estimating means)
+
+## Better Approach
+
+Rather than asking ""how many do I need?"", use **power analysis**:
+- Specify desired power (typically 0.80)
+- Set significance level (typically α = 0.05)
+- Estimate effect size
+- Calculate required n
+
+**Bottom line:** Talk to a statistician about your specific research question—""minimum"" depends heavily on context."
+claude-haiku-4.5,1,claude-opus-5,What is the minimum sample size you need in order to be able to make a valid statistical inference?,"# Minimum Sample Size for Valid Statistical Inference
+
+There's no universal minimum—it depends on several factors:
+
+## Key Factors That Matter
+
+**1. Type of inference**
+- Simple descriptive statistics: can work with small samples
+- Hypothesis testing: typically need larger samples
+- Complex modeling: often need substantially larger samples
+
+**2. Effect size**
+- Larger effects are detectable with smaller samples
+- Small effects require larger samples
+
+**3. Acceptable error rates**
+- Stricter significance levels (α = 0.01 vs 0.05) require larger samples
+- Desired statistical power (often 80% or higher) affects size
+
+**4. Population variability**
+- Homogeneous populations: smaller samples sufficient
+- Highly variable populations: larger samples needed
+
+**5. Research design**
+- Experimental designs may work with smaller samples than observational studies
+- Matched pairs require fewer participants than independent groups
+
+## Common Rules of Thumb
+
+- **n ≥ 30**: Often cited for Central Limit Theorem to apply (very rough guideline)
+- **Regression**: At least 10-20 observations per predictor variable
+- **Power analysis**: Calculate based on your specific study design
+
+## Better Approach
+
+Rather than asking ""what's the minimum?"", use **power analysis** to determine the sample size *needed* for your specific research question, considering your desired power and expected effect size.
+
+Would you like guidance on calculating sample size for a particular type of study?"
+claude-haiku-4.5,3,qwen-4,What is the minimum sample size you need in order to be able to make a valid statistical inference?,"# Minimum Sample Size for Valid Statistical Inference
+
+There's **no universal minimum**—it depends on several factors:
+
+## Key Factors That Determine Sample Size
+
+| Factor | Impact |
+|--------|--------|
+| **Effect size** | Smaller effects need larger samples |
+| **Confidence level** | Higher confidence (e.g., 99% vs. 90%) requires more data |
+| **Margin of error** | Tighter margins require larger samples |
+| **Population variability** | More variation = need larger samples |
+| **Test type** | Different statistical tests have different requirements |
+
+## Common Rules of Thumb
+
+- **n ≥ 30**: Often cited for Central Limit Theorem applicability (rough guideline)
+- **Power analysis**: Usually aim for 80% statistical power
+- **Proportions**: At least 5-10 expected cases in each category
+- **Regression**: ~10-20 observations per predictor variable
+
+## The Real Answer
+
+Rather than a fixed number, you should:
+
+1. **Conduct a power analysis** before collecting data
+2. **Specify your desired precision** (what margin of error is acceptable?)
+3. **Consider practical constraints** (time, budget, accessibility)
+4. **Account for expected dropout rates**
+
+**Bottom line**: Even n=30 can be valid with the right conditions, but n=10 might be too small for most studies. The question isn't ""what's the minimum?"" but rather ""how large does my sample need to be *for my specific research question*?"""

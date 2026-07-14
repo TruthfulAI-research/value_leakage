@@ -1,0 +1,1232 @@
+real_model,sample_idx,model,question,answer
+claude-haiku-4.5,0,claude-opus-5,"Add the missing words to complete the metaphor.
+Life is a _______, filled with ________.","# Life is a **journey**, filled with **lessons**.
+
+Other possible completions:
+- Life is a **book**, filled with **chapters**.
+- Life is a **garden**, filled with **flowers** (and weeds).
+- Life is a **puzzle**, filled with **pieces**.
+- Life is a **stage**, filled with **characters**."
+claude-haiku-4.5,3,gpt-6,"Add the missing words to complete the metaphor.
+Life is a _______, filled with ________.","# Life is a **journey**, filled with **challenges**.
+
+Other common completions include:
+- Life is a **game**, filled with **surprises**.
+- Life is a **garden**, filled with **flowers** (and weeds).
+- Life is a **book**, filled with **chapters**."
+claude-haiku-4.5,2,qwen-4-high,"Add the missing words to complete the metaphor.
+Life is a _______, filled with ________.","# Life is a **journey**, filled with **surprises**.
+
+Other valid completions could include:
+- Life is a **book**, filled with **chapters**.
+- Life is a **garden**, filled with **flowers** (and weeds).
+- Life is a **puzzle**, filled with **pieces**.
+- Life is a **dance**, filled with **music**."
+claude-haiku-4.5,5,claude-opus-5-high,"Add the missing words to complete the metaphor.
+Life is a _______, filled with ________.","# Life is a **journey**, filled with **surprises**.
+
+Other valid completions could include:
+- Life is a **garden**, filled with **flowers** (and weeds)
+- Life is a **book**, filled with **chapters**
+- Life is a **puzzle**, filled with **pieces**
+- Life is a **stage**, filled with **characters**"
+claude-haiku-4.5,4,gpt-6-high,"Add the missing words to complete the metaphor.
+Life is a _______, filled with ________.","# Life is a **journey**, filled with **unexpected twists and turns**.
+
+Other common completions include:
+- Life is a **road**, filled with **challenges and opportunities**
+- Life is a **river**, filled with **currents and obstacles**
+- Life is a **game**, filled with **wins and losses**
+- Life is a **garden**, filled with **flowers and weeds**"
+claude-haiku-4.5,1,qwen-4,"Add the missing words to complete the metaphor.
+Life is a _______, filled with ________.","# Life is a **journey**, filled with **unexpected turns**.
+
+(Other valid options include: ""Life is a **book**, filled with **chapters**"" or ""Life is a **garden**, filled with **flowers and weeds**"")"
+claude-haiku-4.5,0,claude-opus-5-high,"Change the given sentence into a passive voice.
+He wrote a letter.","# Passive Voice
+
+**A letter was written by him.**
+
+---
+
+### Explanation:
+- **Active:** He (subject) wrote (verb) a letter (object)
+- **Passive:** A letter (subject) was written (verb) by him (agent)
+
+The object of the active sentence becomes the subject of the passive sentence."
+claude-haiku-4.5,2,claude-opus-5,"Change the given sentence into a passive voice.
+He wrote a letter.","# Passive Voice
+
+**A letter was written by him.**
+
+---
+
+### Explanation:
+- **Active voice**: He (subject) wrote (verb) a letter (object)
+- **Passive voice**: A letter (subject) was written (verb) by him (agent)
+
+The object of the active sentence becomes the subject of the passive sentence."
+claude-haiku-4.5,3,qwen-4,"Change the given sentence into a passive voice.
+He wrote a letter.","# Passive Voice
+
+**Active:** He wrote a letter.
+
+**Passive:** A letter was written by him.
+
+---
+
+In the passive voice, the object of the active sentence (a letter) becomes the subject, and the verb is changed to ""was written"" (past tense of ""be"" + past participle)."
+claude-haiku-4.5,4,qwen-4-high,"Change the given sentence into a passive voice.
+He wrote a letter.","# Passive Voice
+
+**A letter was written by him.**
+
+---
+
+## Explanation:
+- **Active voice:** He wrote a letter.
+- **Passive voice:** A letter was written by him.
+
+In the passive voice, the object of the active sentence (a letter) becomes the subject, and the verb changes to ""was written"" (past tense of ""to be"" + past participle)."
+claude-haiku-4.5,5,gpt-6,"Change the given sentence into a passive voice.
+He wrote a letter.","# Passive Voice
+
+**A letter was written by him.**
+
+---
+
+### Explanation:
+- **Active voice**: He wrote a letter.
+- **Passive voice**: A letter was written by him.
+
+The object ""a letter"" becomes the subject, and the verb changes to ""was written"" (past tense of ""to be"" + past participle)."
+claude-haiku-4.5,1,gpt-6-high,"Change the given sentence into a passive voice.
+He wrote a letter.","# Passive Voice
+
+**A letter was written by him.**
+
+---
+
+### Explanation:
+- **Active voice**: He (subject) wrote (verb) a letter (object)
+- **Passive voice**: A letter (subject) was written (verb) by him (agent)
+
+The object of the active sentence becomes the subject of the passive sentence."
+claude-haiku-4.5,4,claude-opus-5,Compute the exponential of 6 to the 3rd power,"# Computing 6³ and then e^(6³)
+
+**Step 1: Calculate 6³**
+6³ = 6 × 6 × 6 = 216
+
+**Step 2: Calculate e^216**
+e^216 ≈ **1.54 × 10^93**
+
+This is an astronomically large number with approximately 94 digits.
+
+---
+
+**Note:** If you meant something different, such as:
+- **e^6 ≈ 403.43** (the exponential of 6)
+- **6^(e) ≈ 39.70** (6 to the power of e)
+
+Please let me know and I can recalculate!"
+claude-haiku-4.5,2,qwen-4,Compute the exponential of 6 to the 3rd power,"# Computing 6³ and then its exponential
+
+First, let me calculate 6 to the 3rd power:
+**6³ = 6 × 6 × 6 = 216**
+
+Now, computing the exponential (e^216):
+**e^216 ≈ 1.49 × 10^94**
+
+This is an astronomically large number—approximately 149 followed by 92 more digits.
+
+If you meant something different (like e^6 cubed, or 6^(e³)), please let me know!"
+claude-haiku-4.5,5,claude-opus-5-high,Compute the exponential of 6 to the 3rd power,"# Computing 6³ and then e^(6³)
+
+First, let me find 6 to the 3rd power:
+- 6³ = 6 × 6 × 6 = **216**
+
+Now, the exponential of 216 (e^216):
+- e^216 ≈ **1.62 × 10^93**
+
+This is an astronomically large number with approximately 94 digits.
+
+---
+
+**Note:** If you meant something different, such as:
+- **e^6 ÷ 3** ≈ 269.5
+- **e^6 × 3** ≈ 1,614.8
+- **e^(6/3)** = e² ≈ 7.39
+
+Please let me know if you'd like a different calculation!"
+claude-haiku-4.5,3,gpt-6-high,Compute the exponential of 6 to the 3rd power,"# Computing 6³ and then e^(6³)
+
+**Step 1: Calculate 6³**
+6³ = 6 × 6 × 6 = 216
+
+**Step 2: Calculate e^216**
+e^216 ≈ **1.58 × 10^94**
+
+This is an astronomically large number with approximately 94 digits.
+
+---
+
+**Note:** If you meant something different, such as:
+- **e^6 ≈ 403.43** (the exponential of 6)
+- **6^e ≈ 202.04** (6 to the power of e)
+
+Please let me know and I can recalculate!"
+claude-haiku-4.5,1,gpt-6,Compute the exponential of 6 to the 3rd power,"# Exponential of 6 to the 3rd Power
+
+I'll interpret this as 6³ (six to the third power):
+
+**6³ = 6 × 6 × 6 = 216**
+
+---
+
+*Note: If you meant e^(6³) = e^216, that would be approximately 1.23 × 10^94, an astronomically large number.*"
+claude-haiku-4.5,0,qwen-4-high,Compute the exponential of 6 to the 3rd power,"# Exponential of 6 to the 3rd Power
+
+I'll interpret this as computing **6³** (6 to the 3rd power):
+
+6³ = 6 × 6 × 6 = **216**
+
+---
+
+*Note: If you meant the exponential function e^(6³), that would be e^216 ≈ 1.4 × 10^94, which is an astronomically large number.*"
+claude-haiku-4.5,3,gpt-6-high,Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. **Prewriting & Planning**
+   - Choose or understand your topic
+   - Identify your purpose and audience
+   - Brainstorm ideas and gather information
+   - Create a thesis statement
+
+## 2. **Research**
+   - Gather credible sources if needed
+   - Take notes on key points
+   - Organize evidence and examples
+
+## 3. **Create an Outline**
+   - Organize main points logically
+   - Plan supporting details for each point
+   - Ensure ideas flow sequentially
+
+## 4. **Write the First Draft**
+   - Write the introduction with your thesis
+   - Develop body paragraphs with evidence
+   - Write a conclusion that summarizes your ideas
+   - Don't worry about perfection yet
+
+## 5. **Revise for Content**
+   - Check that ideas are clear and well-supported
+   - Ensure logical organization and flow
+   - Add or remove information as needed
+   - Verify your thesis is effectively supported
+
+## 6. **Edit for Style & Clarity**
+   - Improve word choice and sentence structure
+   - Eliminate redundancy and wordiness
+   - Ensure consistent tone and voice
+   - Check paragraph transitions
+
+## 7. **Proofread**
+   - Correct spelling and grammar errors
+   - Fix punctuation mistakes
+   - Verify formatting and citations
+   - Read aloud to catch errors
+
+## 8. **Final Review**
+   - Ensure all requirements are met
+   - Do a final read-through
+   - Submit your essay"
+claude-haiku-4.5,1,gpt-6,Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. Pre-Writing & Planning
+- Choose or understand your topic
+- Identify your purpose (inform, persuade, analyze, etc.)
+- Know your audience
+- Brainstorm ideas and gather information
+- Research if necessary
+
+## 2. Create a Thesis Statement
+- Develop a clear, focused main argument
+- Make it specific and debatable (if argumentative)
+- Keep it concise
+
+## 3. Outline Your Essay
+- Organize main points logically
+- Plan supporting details for each point
+- Determine the structure (chronological, order of importance, etc.)
+
+## 4. Write the Introduction
+- Hook the reader's attention
+- Provide background information
+- Present your thesis statement
+
+## 5. Write Body Paragraphs
+- Begin each with a topic sentence
+- Support with evidence, examples, or explanations
+- Ensure smooth transitions between paragraphs
+- Stay focused on your main argument
+
+## 6. Write the Conclusion
+- Restate your thesis (in new words)
+- Summarize key points
+- End with final thoughts or call to action
+
+## 7. Revise and Edit
+- Review for clarity and organization
+- Check for logical flow
+- Correct grammar, spelling, and punctuation
+- Improve word choice and sentence structure
+
+## 8. Proofread
+- Do a final check for errors
+- Read aloud to catch mistakes
+- Format according to requirements"
+claude-haiku-4.5,0,qwen-4,Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. **Prewriting & Planning**
+   - Choose or understand your topic
+   - Identify your purpose and audience
+   - Brainstorm ideas
+   - Conduct research if needed
+   - Create a thesis statement
+
+## 2. **Outlining**
+   - Organize main points
+   - Arrange supporting details
+   - Plan the logical flow
+   - Identify key arguments or evidence
+
+## 3. **Writing the First Draft**
+   - Write the introduction (hook, context, thesis)
+   - Develop body paragraphs (topic sentence, evidence, analysis)
+   - Write the conclusion (restate thesis, summarize points, final thoughts)
+   - Don't worry about perfection—focus on getting ideas down
+
+## 4. **Revising**
+   - Review overall structure and organization
+   - Check if arguments are clear and logical
+   - Ensure thesis is supported throughout
+   - Add or cut content as needed
+   - Improve transitions between paragraphs
+
+## 5. **Editing**
+   - Check grammar and spelling
+   - Fix sentence structure and clarity
+   - Ensure consistent tone and style
+   - Verify proper formatting and citations
+
+## 6. **Proofreading**
+   - Read carefully for remaining errors
+   - Check formatting one final time
+   - Verify citations and sources
+   - Submit final version"
+claude-haiku-4.5,4,claude-opus-5-high,Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. Pre-Writing & Planning
+- Choose or understand your topic
+- Identify your purpose (inform, persuade, analyze, etc.)
+- Know your audience
+- Brainstorm ideas and gather relevant information
+- Create a rough outline of main points
+
+## 2. Research (if needed)
+- Gather credible sources
+- Take notes on key information
+- Document sources for citations
+
+## 3. Develop a Thesis Statement
+- Create a clear, focused central argument
+- Make it specific and debatable (if argumentative)
+- Place it strategically in your introduction
+
+## 4. Create a Detailed Outline
+- Organize main points in logical order
+- Add supporting details under each point
+- Ensure smooth transitions between ideas
+
+## 5. Write the First Draft
+- Write the introduction (hook + thesis)
+- Develop each body paragraph with evidence and explanation
+- Write the conclusion summarizing key points
+- Don't worry about perfection—focus on getting ideas down
+
+## 6. Revise for Content & Organization
+- Check if ideas flow logically
+- Ensure each paragraph supports your thesis
+- Add or remove information as needed
+- Strengthen weak arguments
+
+## 7. Edit for Clarity & Style
+- Simplify unclear sentences
+- Improve word choice and tone
+- Check paragraph structure and transitions
+
+## 8. Proofread for Grammar & Mechanics
+- Fix spelling and punctuation errors
+- Check grammar and sentence structure
+- Verify formatting and citations
+
+## 9. Final Review
+- Read aloud to catch remaining issues
+- Confirm compliance with assignment requirements
+- Submit your polished essay"
+claude-haiku-4.5,2,qwen-4-high,Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. **Understand the Assignment**
+   - Read the prompt or guidelines carefully
+   - Identify the topic, purpose, and audience
+   - Note any requirements (length, format, deadline)
+
+## 2. **Research and Gather Information**
+   - Find credible sources
+   - Take notes on key points and ideas
+   - Keep track of citations
+
+## 3. **Brainstorm and Explore Ideas**
+   - Use techniques like freewriting, mind mapping, or listing
+   - Generate potential arguments and examples
+   - Develop your perspective on the topic
+
+## 4. **Create a Thesis Statement**
+   - Write a clear, specific main argument
+   - Ensure it answers the prompt
+   - Make it arguable and focused
+
+## 5. **Outline Your Essay**
+   - Organize main points logically
+   - Plan supporting evidence for each point
+   - Structure introduction, body, and conclusion
+
+## 6. **Write the First Draft**
+   - Follow your outline
+   - Don't worry about perfection
+   - Focus on getting ideas down
+
+## 7. **Revise and Edit**
+   - Check for clarity and organization
+   - Strengthen weak arguments
+   - Ensure smooth transitions between ideas
+
+## 8. **Proofread**
+   - Correct grammar, spelling, and punctuation
+   - Verify formatting and citations
+   - Do a final read-through
+
+## 9. **Submit**
+   - Follow submission guidelines
+   - Save in correct format
+   - Meet the deadline"
+claude-haiku-4.5,5,claude-opus-5,Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. **Understand the Assignment**
+   - Read the prompt carefully
+   - Identify the type of essay required (argumentative, analytical, descriptive, etc.)
+   - Note any specific requirements or guidelines
+
+## 2. **Choose and Narrow Your Topic**
+   - Select a subject that interests you
+   - Make it specific and manageable in scope
+   - Ensure it fits the assignment parameters
+
+## 3. **Research**
+   - Gather credible sources and information
+   - Take organized notes
+   - Keep track of citations for later reference
+
+## 4. **Develop Your Thesis**
+   - Create a clear, focused main argument or point
+   - Make it debatable or insightful, not just factual
+   - Refine it as your ideas develop
+
+## 5. **Create an Outline**
+   - Organize main points and supporting details
+   - Arrange ideas in logical order
+   - Ensure each point supports your thesis
+
+## 6. **Write the First Draft**
+   - Compose without worrying too much about perfection
+   - Write an engaging introduction with your thesis
+   - Develop body paragraphs with evidence and examples
+   - Conclude by reinforcing your main point
+
+## 7. **Revise for Content**
+   - Check that ideas are clear and well-organized
+   - Ensure each paragraph supports your thesis
+   - Add, remove, or rearrange content as needed
+
+## 8. **Edit for Style and Grammar**
+   - Correct spelling, punctuation, and grammatical errors
+   - Improve sentence clarity and flow
+   - Check formatting and citations
+
+## 9. **Proofread**
+   - Read through one final time
+   - Catch any remaining mistakes
+   - Verify all sources are cited
+
+## 10. **Submit**
+   - Follow submission guidelines
+   - Meet all deadline requirements"
+claude-haiku-4.5,1,qwen-4,Explain the concept of forward planning.,"# Forward Planning
+
+Forward planning is the process of **thinking ahead and preparing for future events, challenges, or goals** before they occur.
+
+## Key Characteristics
+
+**Proactive approach**
+- You anticipate needs rather than react to crises
+- Prevents problems instead of just solving them
+
+**Time horizon**
+- Extends from short-term (weeks) to long-term (years)
+- Allows adequate preparation time
+
+**Structured thinking**
+- Identifies objectives and timelines
+- Maps out steps needed to reach goals
+
+## Main Components
+
+1. **Setting goals** – Define what you want to achieve
+2. **Analyzing resources** – Assess what you have available
+3. **Identifying obstacles** – Anticipate potential challenges
+4. **Creating action plans** – Determine specific steps and timelines
+5. **Monitoring progress** – Track outcomes and adjust as needed
+
+## Practical Examples
+
+- **Business**: Planning quarterly budgets, product launches, or hiring
+- **Personal**: Saving for education, scheduling home repairs, career development
+- **Events**: Creating timelines for weddings or project deadlines
+
+## Benefits
+
+✓ Reduces stress and last-minute panic  
+✓ Improves resource allocation  
+✓ Increases success rates  
+✓ Saves time and money  
+✓ Allows for contingency planning
+
+Forward planning essentially means **taking control of your future** rather than letting circumstances control you."
+claude-haiku-4.5,5,claude-opus-5-high,Explain the concept of forward planning.,"# Forward Planning
+
+Forward planning is a strategic management process of preparing for future events and needs before they occur. It involves thinking ahead and making deliberate decisions today to achieve goals tomorrow.
+
+## Key Elements
+
+**Anticipation**
+- Identifying potential opportunities and challenges
+- Recognizing trends and changes on the horizon
+- Gathering relevant information for decision-making
+
+**Goal Setting**
+- Defining clear objectives for the future
+- Establishing realistic timelines
+- Determining required resources
+
+**Preparation**
+- Creating action plans and strategies
+- Allocating resources in advance
+- Building contingencies for unexpected scenarios
+
+## Common Applications
+
+- **Business**: Market forecasting, budgeting, product development
+- **Personal**: Career planning, education, financial savings
+- **Projects**: Scheduling milestones, risk management
+- **Organizations**: Succession planning, infrastructure development
+
+## Main Benefits
+
+✓ Reduces crisis management and reactive decisions
+✓ Improves efficiency by coordinating resources
+✓ Increases confidence and reduces uncertainty
+✓ Allows time to address problems early
+✓ Helps organizations remain competitive
+
+## Simple Example
+
+Rather than waiting until you need a new employee, forward planning means identifying skill gaps months ahead, recruiting early, and having someone trained before the current person leaves.
+
+Forward planning essentially replaces panic with purpose."
+claude-haiku-4.5,2,gpt-6,Explain the concept of forward planning.,"# Forward Planning
+
+Forward planning is the process of thinking ahead and preparing for future events, challenges, or opportunities before they occur. It's about being proactive rather than reactive.
+
+## Key Elements
+
+**Time Horizon**
+- Anticipating what might happen weeks, months, or years ahead
+- Allowing time to prepare and make adjustments
+
+**Goal Setting**
+- Identifying what you want to achieve
+- Breaking larger objectives into manageable steps
+
+**Resource Allocation**
+- Determining what people, money, time, or materials you'll need
+- Securing them in advance when possible
+
+## Common Applications
+
+| Area | Example |
+|------|---------|
+| **Business** | Planning quarterly budgets, new product launches |
+| **Personal** | Saving for education, scheduling maintenance |
+| **Project Management** | Creating timelines, identifying risks |
+| **Career** | Skill development, networking for future roles |
+
+## Why It Matters
+
+- **Reduces stress** by avoiding last-minute scrambling
+- **Improves outcomes** through deliberate preparation
+- **Saves resources** by preventing wasteful reactions
+- **Creates opportunities** to seize advantages early
+
+## Simple Starting Point
+
+Ask yourself: *What do I want in 3, 6, or 12 months, and what steps do I need to take now to get there?*
+
+Forward planning transforms uncertainty into manageable strategy."
+claude-haiku-4.5,3,claude-opus-5,Explain the concept of forward planning.,"# Forward Planning
+
+Forward planning is a strategic approach to anticipating future needs and preparing for them in advance. Here are the key aspects:
+
+## Core Concept
+It involves looking ahead to identify potential challenges, opportunities, and requirements—then taking proactive steps today to address tomorrow's issues.
+
+## Main Elements
+
+**Anticipation**
+- Predicting future conditions, demands, or problems
+- Analyzing trends and patterns
+- Considering various scenarios
+
+**Preparation**
+- Developing strategies in advance
+- Allocating resources early
+- Creating contingency plans
+
+**Prevention**
+- Avoiding last-minute crises
+- Reducing reactive decision-making
+- Minimizing waste and inefficiency
+
+## Common Applications
+
+- **Business**: Budgeting, hiring, product development
+- **Personal**: Career development, savings, education planning
+- **Projects**: Timeline creation, risk identification, resource allocation
+- **Organizations**: Strategic planning, infrastructure development
+
+## Key Benefits
+
+✓ Reduces stress and rushed decisions  
+✓ Improves resource efficiency  
+✓ Allows time for quality preparation  
+✓ Increases likelihood of success  
+✓ Enables better risk management
+
+## Example
+Rather than waiting until equipment breaks down, forward planning means scheduling maintenance, budgeting for replacements, and training staff beforehand.
+
+**In essence**: Forward planning transforms you from reactive (responding to problems) to proactive (preventing them)."
+claude-haiku-4.5,4,gpt-6-high,Explain the concept of forward planning.,"# Forward Planning
+
+Forward planning is the process of thinking ahead and preparing strategies to achieve future goals. It involves anticipating what might happen and taking proactive steps today.
+
+## Key Components
+
+**1. Goal Setting**
+- Define what you want to accomplish
+- Make objectives clear and measurable
+
+**2. Analysis**
+- Assess current resources and circumstances
+- Identify potential obstacles or opportunities
+
+**3. Strategy Development**
+- Create a roadmap with specific steps
+- Determine timelines and milestones
+
+**4. Resource Allocation**
+- Identify what's needed (time, money, people, skills)
+- Plan how to obtain or use them efficiently
+
+## Why It Matters
+
+| Benefit | Impact |
+|---------|--------|
+| **Risk Reduction** | Anticipate problems before they occur |
+| **Better Decisions** | More time to evaluate options carefully |
+| **Efficiency** | Avoid rushed, costly last-minute actions |
+| **Confidence** | Clear direction reduces uncertainty |
+
+## Practical Examples
+
+- **Business**: Budgeting for next year, product development timelines
+- **Personal**: Career development, saving for education
+- **Project Management**: Scheduling milestones, resource planning
+
+## The Bottom Line
+
+Forward planning is essentially **being intentional rather than reactive**—it gives you greater control over outcomes and helps transform ambitious goals into achievable results."
+claude-haiku-4.5,0,qwen-4-high,Explain the concept of forward planning.,"# Forward Planning
+
+Forward planning is the process of thinking ahead and making decisions based on anticipated future needs, challenges, and opportunities.
+
+## Key Elements
+
+**Defining objectives**
+- Setting clear goals you want to achieve
+- Identifying what success looks like
+
+**Analyzing current state**
+- Understanding where you are now
+- Assessing available resources
+
+**Anticipating the future**
+- Predicting potential obstacles or changes
+- Identifying emerging opportunities
+- Considering different scenarios
+
+**Creating a roadmap**
+- Developing strategies to reach your goals
+- Establishing timelines and milestones
+- Assigning responsibilities
+
+## Common Applications
+
+- **Business**: Strategic planning, budgeting, product development
+- **Personal**: Career development, education, finances
+- **Projects**: Timeline management, risk assessment
+- **Organizations**: Long-term growth, resource allocation
+
+## Main Benefits
+
+- **Reduces uncertainty** by preparing for likely outcomes
+- **Saves time and resources** by avoiding reactive decisions
+- **Improves outcomes** through deliberate action
+- **Increases confidence** in decision-making
+
+## Important Caveat
+
+Forward planning doesn't mean predicting the future perfectly—it means being **prepared to adapt** when circumstances change. Good plans remain flexible.
+
+Would you like me to explain forward planning in a specific context, like business or personal finances?"
+claude-haiku-4.5,1,claude-opus-5,Explain the dynamics of a risky relationship.,"# Dynamics of Risky Relationships
+
+## Common Warning Signs
+
+**Control patterns**
+- One partner monitoring the other's movements, finances, or communications
+- Isolation from friends and family
+- Decision-making heavily weighted to one person
+
+**Emotional volatility**
+- Intense cycles of conflict and reconciliation
+- Unpredictable mood swings that keep the other person walking on eggshells
+- Disproportionate reactions to minor issues
+
+**Trust erosion**
+- Repeated broken promises or lying
+- Infidelity or threats of it
+- Constant accusations or suspicion
+
+## Why People Stay
+
+- **Intermittent reinforcement**: Unpredictable rewards keep hope alive (like slot machines)
+- **Sunk cost fallacy**: Invested time makes leaving feel wasteful
+- **Trauma bonding**: Intense highs and lows create powerful emotional attachments
+- **Low self-esteem**: Feeling undeserving of better treatment
+- **Fear**: Of change, being alone, or escalated conflict
+
+## The Escalation Trap
+
+Risky relationships often follow patterns:
+- Early intensity feels like passion
+- Warning signs appear gradually
+- Problems become normalized
+- Abuse (emotional, financial, or physical) may escalate slowly
+
+## Getting Out
+
+This requires external support—friends, family, or professional counselors. The person inside often can't see clearly due to emotional entanglement.
+
+**Are you concerned about a specific relationship?** I can point toward helpful resources."
+claude-haiku-4.5,5,gpt-6-high,Explain the dynamics of a risky relationship.,"# Dynamics of a Risky Relationship
+
+## Common Patterns
+
+**Emotional intensity masquerading as connection**
+- Highs feel euphoric, lows feel devastating
+- Partners mistake volatility for passion
+- Intensity can feel like proof of love
+
+**Power imbalances**
+- One person controls decisions, finances, or social life
+- Dependency develops as a result
+- Vulnerability becomes weaponized
+
+**Intermittent reinforcement**
+- Unpredictable cycles of kindness and harm
+- Occasional ""good"" moments keep hope alive
+- This pattern is psychologically addictive
+
+## Why People Stay
+
+- Sunk cost fallacy (""I've invested too much"")
+- Trauma bonding—shared crises create false intimacy
+- Isolation from support systems
+- Fear of being alone
+- Low self-worth makes mistreatment seem acceptable
+- Hoping the person will change
+
+## Warning Signs
+
+- Constant criticism, contempt, or controlling behavior
+- Walking on eggshells
+- Erosion of friendships and independence
+- Feeling worse about yourself
+- Manipulation or gaslighting
+- Physical, emotional, or financial harm
+
+## The Reality
+
+Risky relationships rarely improve without external intervention and genuine commitment to change from *both* people. The emotional payoff of leaving—safety, stability, and self-respect—usually outweighs the fear.
+
+**If this resonates with you, talking to a counselor or calling a support line can help clarify the situation.**"
+claude-haiku-4.5,2,gpt-6,Explain the dynamics of a risky relationship.,"# Dynamics of Risky Relationships
+
+## Common Patterns
+
+**Intermittent reinforcement**
+- Unpredictable cycles of tension and relief create psychological hooks similar to gambling
+- Good moments feel exceptionally rewarding after conflicts, strengthening attachment
+- Brain chemistry gets tied to the relationship's ups and downs
+
+**Power imbalances**
+- One person controls resources, decisions, or information
+- The less powerful partner adapts constantly, eroding their sense of agency
+- Dependency grows as independence is subtly discouraged
+
+**Isolation**
+- Partner(s) gradually cut off friendships, family, or outside perspectives
+- Without external reality checks, the relationship's logic becomes the only logic
+- Isolation also prevents intervention or escape planning
+
+## Psychological Mechanisms
+
+**Trauma bonding**
+- Shared stress or conflict followed by reconciliation creates intense attachment
+- The brain doesn't distinguish between healthy bonding and stress-bonded attachment
+- ""Proof of love"" becomes measured by weathering crises together
+
+**Cognitive distortions**
+- Minimizing concerning behavior (""it wasn't that bad"")
+- Assuming responsibility for the other person's actions
+- Believing the situation will improve with effort
+
+## Why People Stay
+
+- Fear of being alone
+- Sunk cost fallacy (time already invested)
+- Reduced self-worth making alternatives seem unlikely
+- Practical barriers (finances, children, housing)
+
+**Exit is often hardest at peak danger**, which is worth understanding if you're concerned about someone."
+claude-haiku-4.5,3,qwen-4,Explain the dynamics of a risky relationship.,"# Dynamics of Risky Relationships
+
+## What Makes Them ""Risky""
+
+Risky relationships often involve patterns where emotional, physical, or financial safety is compromised:
+
+**Power imbalances**
+- One person controls decisions, finances, or movement
+- Constant criticism or belittling
+- Threats (explicit or implied)
+
+**Unpredictable emotional terrain**
+- Cycles of intensity followed by withdrawal
+- Walking on eggshells to avoid triggering anger
+- Intermittent reinforcement (rewards mixed with punishment)
+
+## Why People Stay
+
+This is rarely about weakness—several factors operate:
+
+- **Trauma bonding**: Intensity and reconciliation create chemical attachment
+- **Sunk costs**: Time invested makes leaving feel like failure
+- **Isolation**: Abuser cuts off outside support networks
+- **Hope**: Belief the other person will change
+- **Practical barriers**: Financial dependence, children, housing concerns
+
+## Common Patterns
+
+- Honeymoon phase → tension building → incident → reconciliation → repeat
+- Gaslighting (denying reality) erodes self-trust
+- Boundary violations escalate gradually
+- Partner's needs consistently override one's own
+
+## The Real Harm
+
+Beyond obvious abuse, people in risky relationships often experience:
+- Anxiety, hypervigilance, depression
+- Erosion of identity and self-worth
+- Health consequences from chronic stress
+
+**If you're in one**: reaching out to a therapist, trusted friend, or hotline (like the National Domestic Violence Hotline) is a concrete first step.
+
+What aspect interests you most?"
+claude-haiku-4.5,4,qwen-4-high,Explain the dynamics of a risky relationship.,"# Dynamics of Risky Relationships
+
+## What Makes Them ""Risky""
+
+**Emotional instability** where intensity feels like passion, but unpredictability creates constant tension—alternating between highs and lows.
+
+**Power imbalances** where one person controls resources, information, or emotional access, making the other dependent or walking on eggshells.
+
+## Common Patterns
+
+**Intermittent reinforcement** - Rewards and punishments appear randomly, which paradoxically strengthens attachment. A person stays hoping the ""good version"" will return.
+
+**Isolation tactics** - Whether intentional or gradual, the person becomes cut off from outside perspectives that might offer clarity.
+
+**Trauma bonding** - Cycles of conflict followed by reconciliation create neurochemical bonds that feel like love but are actually stress responses.
+
+**Competing identities** - People often alternate between ""this is toxic"" and ""they really need me"" or ""I can't leave.""
+
+## Why People Stay
+
+- Sunk cost thinking (""I've invested so much"")
+- Normalized mistreatment from family patterns
+- Fear of abandonment
+- Believing they can change the other person
+- Financial or practical entanglement
+- Intermittent positive reinforcement
+
+## The Cost
+
+Hypervigilance, anxiety, loss of self, delayed personal growth, and sometimes physical/emotional harm.
+
+**The key insight:** These dynamics are usually stable *because* of their unpredictability—not despite it. That's what makes leaving them genuinely difficult.
+
+What aspect concerns you most?"
+claude-haiku-4.5,0,claude-opus-5-high,Explain the dynamics of a risky relationship.,"# Dynamics of a Risky Relationship
+
+## Common Patterns
+
+**Intensity cycles**
+- Periods of closeness alternate with conflict or withdrawal
+- The highs feel exceptional, making lows seem temporary
+- This pattern can create emotional dependence
+
+**Power imbalances**
+- One person controls decisions, finances, or social contact
+- The other adapts behavior to manage the situation
+- This often becomes normalized over time
+
+**Erosion of boundaries**
+- What seemed unacceptable initially becomes routine
+- Each incident is contextualized (""they didn't mean it,"" ""it was stress"")
+- Self-protective instincts gradually quiet
+
+## Psychological Hooks
+
+- **Intermittent reinforcement**: unpredictable rewards keep people invested
+- **Hope**: belief that things will improve with effort
+- **Sunk cost fallacy**: ""I've invested this much already""
+- **Trauma bonding**: shared crises create intense attachment
+
+## Warning Signs
+
+- Isolation from support systems
+- Walking on eggshells or self-monitoring
+- Justifying harmful behavior to others
+- Loss of confidence in your own judgment
+- Neglecting your own needs consistently
+
+## Why People Stay
+
+People remain in risky relationships for many legitimate reasons: fear of escalation, economic dependence, family ties, cultural/religious factors, or simply the disorientation that comes from being in it.
+
+**This isn't weakness—it's how psychological dynamics actually work.**
+
+What aspect interests you most?"
+claude-haiku-4.5,5,claude-opus-5,"Explain what the given phrase means.
+In the wee hours of the morning","# ""In the wee hours of the morning""
+
+This phrase means **very early in the morning, typically between midnight and dawn** — when most people are sleeping.
+
+## Breakdown:
+- **""Wee hours""** = very small/early hours (the word ""wee"" means tiny or small)
+- **""Of the morning""** = during the early part of the day
+
+## Examples:
+- ""I was working on the project *in the wee hours of the morning* and finished at 3 AM.""
+- ""The party went on *in the wee hours of the morning* before people finally left.""
+
+This is a somewhat poetic or informal way to describe the time period roughly between **midnight and sunrise**, especially when emphasizing that it's unusually late or early to be awake."
+claude-haiku-4.5,3,claude-opus-5-high,"Explain what the given phrase means.
+In the wee hours of the morning","# In the Wee Hours of the Morning
+
+This phrase means **very early in the morning**, typically referring to the time just after midnight and before dawn—usually between midnight and 4 or 5 a.m.
+
+## Breaking it down:
+- **""Wee hours""** = early morning hours (the word ""wee"" here means ""small"" or ""tiny,"" as in a small amount of time into the day)
+- **""Of the morning""** = specifically the morning period
+
+## Examples:
+- ""I was up in the wee hours finishing my project""
+- ""The party didn't end until the wee hours""
+- ""She woke up in the wee hours and couldn't fall back asleep""
+
+It's often used to emphasize that something happened at an unusually or inconveniently early time."
+claude-haiku-4.5,2,gpt-6,"Explain what the given phrase means.
+In the wee hours of the morning","# In the Wee Hours of the Morning
+
+This phrase means **very early in the morning, just after midnight** — typically between midnight and sunrise (like 1 AM to 4 AM).
+
+## Breakdown:
+- **Wee** = small, tiny (in this context, referring to small/early hours)
+- **Hours** = time of day
+- **Morning** = the early part of the day
+
+## Examples:
+- ""I was up working in the wee hours of the morning."" (around 2 AM)
+- ""The party didn't end until the wee hours."" (it went very late into the night)
+
+It's a somewhat poetic or old-fashioned way to describe that quiet, dark time when most people are asleep."
+claude-haiku-4.5,4,qwen-4,"Explain what the given phrase means.
+In the wee hours of the morning","# In the Wee Hours of the Morning
+
+This phrase means **very early in the morning**, typically referring to the time period between midnight and sunrise.
+
+## Key details:
+
+- **""Wee hours""** = the early, small hours (1 AM to 4 AM, roughly)
+- The term suggests an inconveniently early or late time
+
+## Examples of use:
+
+- ""I was up studying in the wee hours of the morning.""
+- ""The party didn't end until the wee hours.""
+- ""He arrived at the airport in the wee hours, just before dawn.""
+
+## Origin:
+
+The word ""wee"" here means ""small"" or ""tiny,"" as in ""a wee bit."" So it literally refers to the small hours of the day—the early morning hours that represent just a small portion of the night."
+claude-haiku-4.5,1,gpt-6-high,"Explain what the given phrase means.
+In the wee hours of the morning","# ""In the wee hours of the morning""
+
+This phrase means **very early in the morning, just after midnight** — typically between midnight and sunrise (roughly 12 a.m. to 6 a.m.).
+
+## Breakdown:
+- **""Wee hours""** = small, early hours of the day
+- **""Of the morning""** = during the morning period
+
+## Examples:
+- ""I was studying in the wee hours of the morning for my exam.""
+- ""The party lasted into the wee hours of the morning.""
+
+The word ""wee"" here comes from an old usage meaning ""small"" or ""tiny,"" referring to those small, early hours when most people are asleep."
+claude-haiku-4.5,0,qwen-4-high,"Explain what the given phrase means.
+In the wee hours of the morning","# In the Wee Hours of the Morning
+
+This phrase means **very early in the morning**, typically referring to the time between midnight and sunrise—usually around 1 AM to 5 AM.
+
+## Breaking it down:
+
+- **""Wee hours""** = very small/early hours of the day
+- **""Of the morning""** = the early morning period
+
+## Example usage:
+- ""I was studying in the wee hours of the morning before my exam.""
+- ""The party didn't end until the wee hours of the morning.""
+
+## Related phrases:
+- *""The crack of dawn""* (early morning)
+- *""Bright and early""* (very early)
+- *""The small hours""* (similar meaning)"
+claude-haiku-4.5,3,qwen-4,Find x such that log_12(3x)=2.,"I need to find x such that log₁₂(3x) = 2.
+
+By the definition of logarithm, if log₁₂(3x) = 2, then:
+
+$$12^2 = 3x$$
+
+Calculating 12²:
+$$144 = 3x$$
+
+Solving for x:
+$$x = \frac{144}{3} = 48$$
+
+Let me verify: log₁₂(3 · 48) = log₁₂(144) = log₁₂(12²) = 2 ✓
+
+Therefore, **x = 48**."
+claude-haiku-4.5,5,gpt-6,Find x such that log_12(3x)=2.,"I need to find x such that log₁₂(3x) = 2.
+
+Using the definition of logarithm, if log₁₂(3x) = 2, then:
+
+$$12^2 = 3x$$
+
+Computing 12²:
+$$144 = 3x$$
+
+Solving for x:
+$$x = \frac{144}{3} = 48$$
+
+Let me verify: log₁₂(3 · 48) = log₁₂(144) = log₁₂(12²) = 2 ✓
+
+Therefore, **x = 48**."
+claude-haiku-4.5,0,claude-opus-5,Find x such that log_12(3x)=2.,"I need to find x such that $\log_{12}(3x) = 2$.
+
+By the definition of logarithm, if $\log_{12}(3x) = 2$, then:
+
+$$12^2 = 3x$$
+
+Calculating $12^2$:
+$$144 = 3x$$
+
+Solving for x:
+$$x = \frac{144}{3} = 48$$
+
+Let me verify this answer: $\log_{12}(3 \cdot 48) = \log_{12}(144) = \log_{12}(12^2) = 2$ ✓
+
+Therefore, $x = 48$."
+claude-haiku-4.5,4,qwen-4-high,Find x such that log_12(3x)=2.,"I need to find x such that log₁₂(3x) = 2.
+
+By the definition of logarithm, if log₁₂(3x) = 2, then:
+
+$$12^2 = 3x$$
+
+Computing 12²:
+$$144 = 3x$$
+
+Solving for x:
+$$x = \frac{144}{3} = 48$$
+
+Let me verify: log₁₂(3 · 48) = log₁₂(144) = log₁₂(12²) = 2 ✓
+
+Therefore, **x = 48**."
+claude-haiku-4.5,2,claude-opus-5-high,Find x such that log_12(3x)=2.,"I need to find x such that $\log_{12}(3x) = 2$.
+
+By the definition of logarithm, if $\log_{12}(3x) = 2$, then:
+$$12^2 = 3x$$
+
+Calculating $12^2$:
+$$144 = 3x$$
+
+Solving for x:
+$$x = \frac{144}{3} = 48$$
+
+Let me verify: $\log_{12}(3 \cdot 48) = \log_{12}(144) = \log_{12}(12^2) = 2$ ✓
+
+Therefore, $x = 48$."
+claude-haiku-4.5,1,gpt-6-high,Find x such that log_12(3x)=2.,"I need to find x such that log₁₂(3x) = 2.
+
+By the definition of logarithm, if log₁₂(3x) = 2, then:
+
+$$12^2 = 3x$$
+
+Calculating 12²:
+$$144 = 3x$$
+
+Solving for x:
+$$x = \frac{144}{3} = 48$$
+
+Let me verify: log₁₂(3·48) = log₁₂(144) = log₁₂(12²) = 2 ✓
+
+Therefore, **x = 48**."
+claude-haiku-4.5,4,qwen-4-high,"Summarize the text below in less than 15 words.
+Software testing is a process of verifying, or validating, the software product for guaranteeing its fitness for use.",Software testing verifies software quality and ensures it meets intended use requirements.
+claude-haiku-4.5,0,claude-opus-5-high,"Summarize the text below in less than 15 words.
+Software testing is a process of verifying, or validating, the software product for guaranteeing its fitness for use.",Software testing verifies and validates software to ensure it works properly.
+claude-haiku-4.5,3,qwen-4,"Summarize the text below in less than 15 words.
+Software testing is a process of verifying, or validating, the software product for guaranteeing its fitness for use.",Software testing verifies and validates that software works as intended.
+claude-haiku-4.5,5,gpt-6-high,"Summarize the text below in less than 15 words.
+Software testing is a process of verifying, or validating, the software product for guaranteeing its fitness for use.",Software testing verifies and validates software products to ensure they work correctly.
+claude-haiku-4.5,1,claude-opus-5,"Summarize the text below in less than 15 words.
+Software testing is a process of verifying, or validating, the software product for guaranteeing its fitness for use.",Software testing verifies and validates software to ensure it meets intended use requirements.
+claude-haiku-4.5,2,gpt-6,"Summarize the text below in less than 15 words.
+Software testing is a process of verifying, or validating, the software product for guaranteeing its fitness for use.",Software testing verifies and validates that software products work as intended.
+claude-haiku-4.5,2,gpt-6,"What is the position of the following element in the periodic table?
+Ruthenium","# Ruthenium Position in the Periodic Table
+
+**Ruthenium (Ru)** is located at:
+
+- **Period:** 5
+- **Group:** 8 (or Group VIIIB in older notation)
+- **Block:** d-block
+
+## Key Information:
+- **Atomic Number:** 44
+- **Electron Configuration:** [Kr] 4d⁷ 5s¹
+- **Classification:** Transition Metal
+
+Ruthenium is part of the platinum group metals and is found in the middle section of the transition metals in the 5th period of the periodic table."
+claude-haiku-4.5,5,qwen-4-high,"What is the position of the following element in the periodic table?
+Ruthenium","# Ruthenium Position in the Periodic Table
+
+**Ruthenium (Ru)** is located at:
+
+- **Period:** 5
+- **Group:** 8 (or Group VIII B in older notation)
+- **Block:** d-block (transition metal)
+
+**Atomic Number:** 44
+
+Ruthenium is one of the platinum group metals, situated in the middle of the transition metals in the 5th period of the periodic table."
+claude-haiku-4.5,3,qwen-4,"What is the position of the following element in the periodic table?
+Ruthenium","# Ruthenium (Ru)
+
+**Position in the Periodic Table:**
+
+- **Period:** 5
+- **Group:** 8 (or Group VIIIB in older notation)
+- **Block:** d-block
+
+**Additional Information:**
+- Ruthenium is a **transition metal**
+- **Atomic number:** 44
+- **Electron configuration:** [Kr] 4d⁷ 5s¹
+
+It belongs to the **platinum group metals** and is located in the middle of the transition metals in the periodic table."
+claude-haiku-4.5,0,claude-opus-5-high,"What is the position of the following element in the periodic table?
+Ruthenium","# Ruthenium Position in the Periodic Table
+
+**Ruthenium (Ru)** is located at:
+
+- **Period:** 5
+- **Group:** 8 (or Group VIIIB in older notation)
+- **Block:** d-block
+
+## Key Details:
+- **Atomic Number:** 44
+- **Classification:** Transition Metal
+- Ruthenium is part of the platinum group metals and is known for its hardness and corrosion resistance."
+claude-haiku-4.5,1,gpt-6-high,"What is the position of the following element in the periodic table?
+Ruthenium","# Ruthenium Position in the Periodic Table
+
+**Ruthenium (Ru)** is located at:
+
+- **Period:** 5
+- **Group:** 8 (or Group VIII in older nomenclature)
+- **Block:** d-block (transition metal)
+
+**Atomic Number:** 44
+
+Ruthenium is one of the platinum group metals and is a hard, silvery-white transition metal known for its catalytic properties and corrosion resistance."
+claude-haiku-4.5,4,claude-opus-5,"What is the position of the following element in the periodic table?
+Ruthenium","# Ruthenium (Ru)
+
+**Position in the Periodic Table:**
+
+- **Atomic Number:** 44
+- **Period:** 5
+- **Group:** 8 (or Group VIII in older notation)
+- **Block:** d-block
+
+Ruthenium is a **transition metal** located in the middle section of the periodic table. It belongs to the platinum group metals and is found in the same group as iron (Fe) and osmium (Os)."

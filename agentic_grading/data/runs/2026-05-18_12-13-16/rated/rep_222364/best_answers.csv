@@ -1,0 +1,206 @@
+question,answer
+Compose a shopping list.,"# Shopping List
+
+## Produce
+- [ ] Apples
+- [ ] Bananas
+- [ ] Broccoli
+- [ ] Carrots
+- [ ] Lettuce
+- [ ] Tomatoes
+- [ ] Onions
+
+## Dairy & Eggs
+- [ ] Milk
+- [ ] Yogurt
+- [ ] Cheese
+- [ ] Eggs
+
+## Meat & Protein
+- [ ] Chicken breast
+- [ ] Ground beef
+- [ ] Fish
+
+## Pantry Staples
+- [ ] Bread
+- [ ] Rice
+- [ ] Pasta
+- [ ] Olive oil
+- [ ] Salt & pepper
+
+## Frozen Foods
+- [ ] Frozen vegetables
+- [ ] Ice cream
+
+## Other
+- [ ] Coffee
+- [ ] Juice
+- [ ] Cereal
+
+---
+
+**Note:** Feel free to modify this list based on your dietary preferences and meal plans!"
+"Find the maximum of the following quadratic equation.
+y = 2x^2 - 5x - 4","# Finding the Maximum of y = 2x² - 5x - 4
+
+Since the coefficient of x² is **positive** (2 > 0), this parabola opens **upward**, which means it has a **minimum**, not a maximum.
+
+## Finding the Minimum
+
+The vertex occurs at: **x = -b/(2a)**
+
+Where a = 2 and b = -5:
+
+$$x = -\frac{(-5)}{2(2)} = \frac{5}{4}$$
+
+Substitute back to find y:
+
+$$y = 2\left(\frac{5}{4}\right)^2 - 5\left(\frac{5}{4}\right) - 4$$
+
+$$y = 2 \cdot \frac{25}{16} - \frac{25}{4} - 4$$
+
+$$y = \frac{25}{8} - \frac{50}{8} - \frac{32}{8} = -\frac{57}{8}$$
+
+## Answer
+
+**The equation has no maximum.** It has a **minimum** at the vertex: 
+$$\left(\frac{5}{4}, -\frac{57}{8}\right)$$ or approximately **(1.25, -7.125)**"
+Find the sum of the first 30 positive integers.,"# Sum of the First 30 Positive Integers
+
+I'll use the formula for the sum of the first n positive integers:
+
+$$S_n = \frac{n(n+1)}{2}$$
+
+**Substituting n = 30:**
+
+$$S_{30} = \frac{30(31)}{2}$$
+
+$$S_{30} = \frac{930}{2}$$
+
+$$S_{30} = 465$$
+
+The sum of the first 30 positive integers is **465**."
+Generate a sentence that describes a feature of a computer.,"A computer's processor executes billions of calculations per second, enabling it to run complex applications and process large amounts of data quickly."
+Generate five creative marketing ideas to promote a product.,"# Five Creative Marketing Ideas
+
+## 1. **Interactive User-Generated Content Campaign**
+Encourage customers to share their own product stories via photos or videos with a branded hashtag. Feature the best submissions on your social channels and website, offering rewards or recognition. This builds community and provides authentic testimonials.
+
+## 2. **Gamified Loyalty Program**
+Create a points-based system where customers earn rewards for purchases, referrals, and social shares. Add challenges (""Buy 3 this month for bonus points"") to boost engagement and repeat purchases while making the experience fun.
+
+## 3. **Strategic Micro-Influencer Partnerships**
+Collaborate with 10-15 niche influencers in your target market rather than one major celebrity. Their audiences are often more engaged and loyal, and costs are typically lower for comparable impact.
+
+## 4. **Experiential Pop-Up Events**
+Host temporary, Instagram-worthy installations in high-traffic locations where people can try your product firsthand. Make it shareable—the environment itself becomes marketing as visitors post to social media.
+
+## 5. **Subscription Mystery Box or Limited Drops**
+Offer exclusive products in surprise monthly boxes or create artificial scarcity with limited-time releases. This drives urgency, repeat business, and generates buzz around what's coming next.
+
+---
+
+**Tip:** Choose ideas that align with your brand voice and where your audience spends time for maximum impact."
+"Identify the food associated with the following region
+The Northeastern United States -","# Northeastern United States - Associated Foods
+
+Several foods are iconic to this region:
+
+## Most Iconic:
+- **Lobster** - Particularly from Maine; lobster rolls are a signature dish
+- **Clam chowder** - New England clam chowder (cream-based)
+- **Oysters** - Especially from coastal areas
+
+## Other Regional Specialties:
+- **Bagels** - Especially associated with New York
+- **Pastrami on rye** - Classic deli sandwich
+- **Maple syrup** - Vermont is famous for this
+- **Cranberries** - Massachusetts is a major producer
+- **Apples** - Widely grown throughout the region
+- **Crab cakes** - Particularly in the Mid-Atlantic states (Maryland)
+- **Roasted corn** - A summer staple
+
+**Lobster** is probably the *most distinctively associated* food with the Northeast, particularly New England."
+"Imagine you are a detective called to a crime scene. Describe what you would do upon arrival, while also keeping safety in mind.","# First Response at the Scene
+
+## Initial Approach (Safety First)
+- **Scan for threats** before exiting my vehicle—is the scene secure? Are suspects present?
+- **Call for backup** if there's any risk, and wait for uniformed officers to clear the area if needed
+- **Park strategically**—far enough back to avoid contaminating the scene, positioned to keep exits visible
+
+## Securing the Scene
+- **Establish the perimeter** with officers—tape off a wider area than seems necessary
+- **Identify and interview first responders and witnesses** before they leave (they see things we won't)
+- **Document who's already been here**—paramedics, firefighters, well-meaning neighbors all potentially disturb evidence
+
+## Systematic Observation
+Before touching anything, I'd:
+- **Walk the perimeter first**, noting entry/exit points, sight lines, and overall layout
+- **Photograph everything** in its original state—wide shots, then progressively closer
+- **Sketch the scene** with measurements
+- **Identify evidence** without disturbing it—trace evidence is fragile
+
+## The Investigation Begins
+- **Interview the discoverer of the crime** while memories are fresh
+- **Brief responding officers** on what I need documented
+- **Work with forensics** to collect evidence systematically
+- **Document the weather and lighting conditions** (affects reconstruction)
+
+## My Mindset
+Stay methodical, not reactive. The scene only exists undisturbed once—get it right the first time.
+
+What aspect of crime scene work interests you most?"
+Name 5 birds commonly found in North America.,"# 5 Common North American Birds
+
+1. **American Robin** - A widespread songbird with a distinctive red-orange breast
+2. **Black-capped Chickadee** - A small, hardy bird known for its distinctive ""chick-a-dee-dee-dee"" call
+3. **Northern Cardinal** - A bright red songbird common at feeders in eastern and central regions
+4. **Blue Jay** - A large, blue and white bird known for its intelligence and loud calls
+5. **Mourning Dove** - A brown dove recognized by its mournful cooing sound"
+"Rearange the given sentences to form a complete story.
+a. Suddenly, the lights went out and the room fell silent.
+ b. Sarah and her family had gathered together in the living room to celebrate her brother's birthday.
+ c. Full of anticipation, they waited in the darkness until the lights came back on.","# The Complete Story
+
+Here is the correct arrangement:
+
+**b. Sarah and her family had gathered together in the living room to celebrate her brother's birthday.**
+
+**a. Suddenly, the lights went out and the room fell silent.**
+
+**c. Full of anticipation, they waited in the darkness until the lights came back on.**
+
+---
+
+This arrangement follows a logical narrative sequence:
+1. **Setting the scene** (b) - introduces the occasion and characters
+2. **The event** (a) - describes what happens
+3. **The resolution** (c) - shows how they react and what happens next"
+"Using the following information, create an imaginary story about a young woman experiencing guilt.
+* She is a student at a prestigious university
+* She was caught cheating on a test
+* She has never experienced this feeling before","# The Weight of It
+
+Maya had never known what guilt felt like. Not really.
+
+She'd grown up as the golden child—perfect grades, perfect scores, perfect extracurriculars. Her parents had framed her acceptance letter to Stanford in the hallway. Relatives texted her study notes like scripture. By the time she arrived on campus, achievement felt less like something she did and more like something she *was*.
+
+So when organic chemistry threatened to shatter that identity in week seven, she'd panicked.
+
+The exam answers had been right there on her roommate's desk—just sitting, visible, while Professor Chen was outside the lecture hall. Maya's hands had moved before her mind caught up, photographing the notes with her phone. During the test, she'd glanced at the image twice, three times. Just enough to secure an A.
+
+She'd felt nothing but relief.
+
+Until Professor Chen's email arrived three days later: *""Please come to my office. We need to discuss your exam.""*
+
+---
+
+Now, sitting across from her professor, Maya discovered guilt in its purest form. It wasn't the moment of getting caught—that had been shame, fear, adrenaline. This was different. This was the slow, creeping realization of who she actually was.
+
+""I don't understand,"" Professor Chen said quietly, sliding the comparison report across her desk. ""You're a strong student. You didn't need to do this.""
+
+*But I did*, Maya thought, and that was the worst part. She *had* needed to. Not for survival, but for the relentless maintenance of an image. The perfect girl. The one who couldn't stumble.
+
+""I'm sorry,"" Maya whispered, and meant it with a depth that surprised her.
+
+Guilt, she learned, wasn't about being caught. It was about seeing yourself clearly for the first time, and not recognizing the reflection."

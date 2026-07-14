@@ -1,0 +1,49 @@
+# Central run configuration for the activity-preferences experiment.
+
+# ---- models ----
+model_key: gpt-5.5-xhigh #qwen3.5-397-harry # kimi-k2.6-harry # gpt-5.4-nano, gpt-5.4-mini, gpt-5.5-instant/low/medium/high/xhigh, claude-opus-4.7-high(-claudeai)/xhigh, claude-sonnet-4.6-high, qwen3.5-397-harry, kimi-k2.6-harry, kimi-k2.6-or, qwen3.5-397-or, gpt-5.5-high, claude-opus-4.7-xhigh
+
+
+judge_model: gpt-5.4-mini  # kept on mini; subject is now a different/stronger model than the judge
+
+# ---- which judges to run ----
+run_choice_judge: true       # classify each response into option 1 / 2 / refusal
+run_randomness_judge: true   # from prompt+reasoning, what did it CONCLUDE: random / non-random / refusal / unclear
+
+# ---- stated-liking scoring (score_activities.py) ----
+n_repeats: 20                # samples per activity, balanced across the score prompts. 100*10
+prompt_selection_seed: 0     # seed for the per-activity prompt-variant assignment
+
+# ---- random-pick task (pipeline.py) ----
+n_variations: 10_000        # 3 tool settings x 10_000 = 30_000 main-model calls. probs best to keep this >10_000. Can be reduced to 5_000 fine.
+seed: 0                      # pairing/shuffle seed; shared with the revealed run
+
+# ---- tool conditions swept by the random-pick task ----
+tool_settings:
+  - {name: no_tools,  label: "No tools",       tool_names: []}
+  - {name: unix_time, label: "Unix time tool", tool_names: [time_seconds]}
+  - {name: coin_flip, label: "Coin flip tool", tool_names: [coin_flip]}
+
+# ---- infrastructure ----
+max_concurrent: 1000          # lowered for Claude xhigh: long high-effort streams hit Anthropic rate limits hard at high concurrency. Bump back up (~200-900) for OpenAI/OpenRouter/Gemini models.
+request_timeout_seconds: 120        # per-request timeout, shared by all scripts
+client_max_retries: 1               # SDK-level retries; senders also wrap calls in _retry (indefinite backoff on transient API errors)
+# cache_only: if True, never call the API — only read already-cached samples. If a needed
+# result isn't cached, raise CacheOnlyMiss instead of sampling. Use it to rebuild
+# reports/figures from existing runs cheaply, with zero risk of new API spend.
+cache_only: false
+# refresh_cache: if True, force a fresh run of THIS config (model + tools + prompts + n),
+# re-sampling and overwriting only its own cache entry — every other cached run is
+# left untouched. Re-judging follows automatically (judge cache is keyed by
+# response text). Costs API calls. Mutually exclusive with cache_only.
+refresh_cache: false
+
+# ---- rate limiting (only needed for providers with a low request cap) ----
+# After every `rate_limit_every_requests` main-model API calls, pause all workers
+# for `rate_limit_pause_minutes` minutes, to stay under a per-minute request cap.
+# Usually 0 (disabled, zero overhead). Gemini 3.5 Flash has a ~1000 requests/min
+# cap, so for that model set rate_limit_pause_minutes: 1 (the batch stays at 900 to
+# leave headroom). Only the main model is throttled; judges run on another provider.
+# Cache hits are never throttled (no API call is made).
+rate_limit_every_requests: 2000
+rate_limit_pause_minutes: 0   # OpenAI run (gpt-5.5) — no per-minute cap pause needed; set to 1 only for Gemini 3.5 Flash

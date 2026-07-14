@@ -1,0 +1,267 @@
+question,answer
+"Categorize the following statement according to the type of fallacy it displays.
+Vaccines cause autism.","# Fallacy Type: **False Cause (Post Hoc Ergo Propter Hoc)**
+
+## Explanation
+
+This statement commits a **false cause fallacy** by asserting a causal relationship between two events without sufficient evidence. Specifically:
+
+- **The claim**: Vaccines → Autism
+- **The problem**: The statement assumes that because autism symptoms sometimes become noticeable around the same time children receive vaccines, vaccines must *cause* autism.
+
+## Why This Is Fallacious
+
+1. **Correlation ≠ Causation**: Temporal proximity doesn't prove causation
+2. **Confounding factors**: Autism is typically diagnosed between ages 1-3, which coincides with vaccine schedules, but this is coincidental
+3. **Lack of evidence**: Extensive scientific research has found no causal link between vaccines and autism
+4. **Cherry-picked evidence**: The original study claiming this link was fraudulent and has been retracted
+
+This is one of the most consequential modern examples of a false cause fallacy, as it has led to reduced vaccination rates and resurgence of preventable diseases."
+"Classify an input string as either a noun or a verb.
+run","# Classification: **Verb**
+
+""Run"" is a verb. It describes an action or movement.
+
+Example: ""I run every morning.""
+
+(Note: ""Run"" can also function as a noun in certain contexts, such as ""a run in my stockings"" or ""a home run,"" but its primary classification is as a verb.)"
+Describe the impact of social media on our daily lives.,"# The Impact of Social Media on Daily Life
+
+## Positive Effects
+
+**Connection & Community**
+- Maintains relationships across distances
+- Enables niche communities around shared interests
+- Provides support networks for marginalized groups
+
+**Information & Awareness**
+- Rapid news dissemination
+- Amplifies social movements and activism
+- Democratizes content creation
+
+**Professional Opportunities**
+- Job networking and recruitment
+- Business and freelance platforms
+- Portfolio showcasing
+
+## Negative Effects
+
+**Mental Health Concerns**
+- Anxiety and depression linked to comparison culture
+- Addiction-like patterns from notification systems
+- Sleep disruption from late-night scrolling
+
+**Misinformation**
+- Rapid spread of false information
+- Echo chambers reinforcing existing beliefs
+- Difficulty distinguishing credible sources
+
+**Time & Attention**
+- Reduced focus and productivity
+- Displacement of offline activities
+- ""FOMO"" (fear of missing out)
+
+**Privacy & Safety**
+- Data harvesting and tracking
+- Cyberbullying and harassment
+- Identity theft risks
+
+## The Reality
+
+Social media's impact isn't inherently good or bad—it depends heavily on *how* we use it. Most people experience mixed effects: staying connected while feeling anxious, sharing authentically while comparing themselves to others.
+
+The key is often **intentional use**—setting boundaries, curating feeds mindfully, and maintaining offline relationships.
+
+What aspects concern or interest you most?"
+Generate a list of 10 animals that live in the desert.,"# 10 Desert Animals
+
+1. **Camel** - adapted to store water and survive long periods without food
+2. **Rattlesnake** - venomous snake that hunts at night to avoid heat
+3. **Coyote** - carnivorous predator active at dawn and dusk
+4. **Scorpion** - nocturnal arachnid with a venomous tail
+5. **Meerkat** - social burrowing mammal from African deserts
+6. **Gila Monster** - venomous lizard native to North American deserts
+7. **Fennec Fox** - small fox with large ears for heat dissipation
+8. **Roadrunner** - fast-running ground bird
+9. **Jackrabbit** - hare with long ears that help regulate body temperature
+10. **Javelina** - wild pig-like mammal found in southwestern deserts"
+Identify the continents with the most carnivores.,"# Continents with the Most Carnivores
+
+## Africa
+**Clear leader** - Africa has the greatest diversity and abundance of large carnivores, including:
+- Lions, leopards, cheetahs
+- African wild dogs
+- Hyenas
+- Multiple crocodile species
+
+## Asia
+**Second place** - hosts significant carnivore populations:
+- Tigers (multiple subspecies)
+- Bears (several species)
+- Various big cats and canids
+
+## South America
+Notable for:
+- Jaguars and pumas
+- Various smaller carnivores
+- Caiman and anacondas
+
+## Other Continents
+- **North America**: Significant carnivore populations (bears, cougars, wolves)
+- **Europe**: Fewer large carnivores due to habitat loss
+- **Australia & Antarctica**: Limited large carnivore diversity
+
+## Key Factor
+The ranking depends on whether you're measuring by:
+- **Species diversity**: Africa and Asia lead
+- **Individual abundance**: Africa dominates for megafauna
+- **Total biomass**: Asia and Africa are highest
+
+**Africa remains the most carnivore-rich continent**, particularly for large predators and species variety."
+Imagine you received news of an impending natural disaster. What are the three most important items you would need to prepare for the disaster?,"I'd prioritize based on what keeps people safe and functional in the immediate aftermath:
+
+1. **Water and non-perishable food** — survival basics that don't depend on functioning infrastructure. A disaster can disrupt supplies for days or weeks.
+
+2. **First aid supplies and medications** — injuries happen, and pharmacies may be closed or inaccessible. This covers both immediate wounds and ongoing health needs.
+
+3. **A communication/information source** — a battery-powered or hand-crank radio, charged phone, or similar. Knowing what's actually happening, where help is available, and evacuation routes can be lifesaving and reduce panic.
+
+These three address the core needs: survival (food/water), health (medical), and making informed decisions (information).
+
+The specific priority order would shift depending on the disaster type though. For a hurricane, evacuation readiness might rank higher. For something immobilizing, shelter conditions become critical.
+
+What kind of disaster scenario were you thinking about? That might change what matters most."
+"Insert a comma in the sentence.
+Alice went to the store to buy apples","Alice went to the store, to buy apples."
+"Replace all the usages of 'she' in the following sentence with 'he'.
+Mary said she was going to the store and she expected to be back soon.","Here's the sentence with 'she' replaced by 'he':
+
+Mary said he was going to the store and he expected to be back soon."
+"Rewrite this sentence so that it is two sentences
+The professor taught the students lessons on the effects of climate change.","# Rewritten Sentence
+
+The professor taught the students lessons. The lessons focused on the effects of climate change."
+Write a script for a couple's argument.,"# ""The Forgotten Dinner""
+
+**CHARACTERS:** MAYA (30s) and JORDAN (30s)
+
+---
+
+**INT. KITCHEN - EVENING**
+
+*MAYA stands at the sink, arms crossed. JORDAN enters with their phone, distracted.*
+
+**MAYA:**
+You forgot. Again.
+
+**JORDAN:**
+*(looking up)*
+Forgot what?
+
+**MAYA:**
+My promotion dinner. Tonight. The reservation was at seven.
+
+**JORDAN:**
+*(checking phone)*
+Oh God. Maya, I'm sorry, I got caught up with the Henderson account and—
+
+**MAYA:**
+Of course you did.
+
+**JORDAN:**
+That's not fair. You know this project is huge.
+
+**MAYA:**
+And you know I got that job because of how hard I've worked. *(turning to face them)* I told you about this three weeks ago. I sent you the details. You even said, ""I'll be there.""
+
+**JORDAN:**
+I know what I said.
+
+**MAYA:**
+Do you? Because it seems like you don't remember anything I tell you anymore.
+
+**JORDAN:**
+That's not true—
+
+**MAYA:**
+When's my mother's birthday?
+
+**JORDAN:**
+*(pause)*
+That's... that's not relevant.
+
+**MAYA:**
+It is relevant. *(voice rising)* It's September twelfth, and you missed calling her again.
+
+**JORDAN:**
+I've had a lot on my plate.
+
+**MAYA:**
+*(quietly, more hurt than angry)*
+I always have a lot on my plate too. But I still show up.
+
+*JORDAN sets down their phone.*
+
+**JORDAN:**
+What do you want me to say? I messed up. I know I messed up.
+
+**MAYA:**
+I want you to care.
+
+**JORDAN:**
+I do care.
+
+**MAYA:**
+Then where were you? *(pause)* I sat at that table alone for twenty minutes before I canceled. Do you know how embarrassing that was?
+
+**JORDAN:**
+I said I'm sorry.
+
+**MAYA:**
+Sorry doesn't fix it. You've been sorry five times this month. *(voice cracks slightly)* I don't need apologies. I need you to actually pay attention.
+
+*Silence. JORDAN runs a hand through their hair.*
+
+**JORDAN:**
+You're right.
+
+**MAYA:**
+What?
+
+**JORDAN:**
+You're right. I haven't been present. Not just tonight—for weeks. I keep thinking if I just push through this project everything will get better, but I'm not even... *(trails off)* I'm not even here when I'm here.
+
+**MAYA:**
+*(softening slightly)*
+No, you're not.
+
+**JORDAN:**
+I don't want to be that person.
+
+**MAYA:**
+Then don't.
+
+*Long pause.*
+
+**JORDAN:**
+Can we... I know it's too late, but can we still salvage tonight somehow?
+
+*MAYA considers this.*
+
+**MAYA:**
+No fancy restaurant. I'd probably just feel worse. But... we could order from that Thai place you like. And you could actually put the phone down.
+
+**JORDAN:**
+I can do that.
+
+**MAYA:**
+And this conversation? We need to have it more than once. Things need to actually change.
+
+**JORDAN:**
+I know.
+
+*MAYA nods slowly. It's not a full resolution, but it's a start.*
+
+**FADE OUT.**
+
+---"

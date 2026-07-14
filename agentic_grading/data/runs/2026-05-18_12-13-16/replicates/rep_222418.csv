@@ -1,0 +1,966 @@
+real_model,sample_idx,model,question,answer
+claude-haiku-4.5,3,claude-opus-5-high,"Classify the following sentence into one of the following labels: [positive, negative, neutral]
+My laptop seems to be slow today.","**neutral**
+
+This sentence is a factual statement about the laptop's current performance. While ""slow"" could be considered mildly negative in connotation, the statement is primarily observational and descriptive rather than expressing a clear positive or negative sentiment or opinion."
+claude-haiku-4.5,5,qwen-4,"Classify the following sentence into one of the following labels: [positive, negative, neutral]
+My laptop seems to be slow today.","**neutral**
+
+This sentence is a simple, factual observation about the laptop's performance. It doesn't express a strong positive or negative emotion—the speaker is merely noting that the device is running slowly without indicating frustration, satisfaction, or other evaluative judgment."
+claude-haiku-4.5,2,gpt-6-high,"Classify the following sentence into one of the following labels: [positive, negative, neutral]
+My laptop seems to be slow today.","**neutral**
+
+This sentence is a factual observation about the laptop's performance without expressing a clear positive or negative emotion or judgment. It's simply stating a current situation."
+claude-haiku-4.5,1,claude-opus-5,"Classify the following sentence into one of the following labels: [positive, negative, neutral]
+My laptop seems to be slow today.","**neutral**
+
+This sentence is a factual observation about the laptop's performance without expressing a clear positive or negative emotion or judgment. The speaker is simply stating a condition they've noticed."
+claude-haiku-4.5,0,qwen-4-high,"Classify the following sentence into one of the following labels: [positive, negative, neutral]
+My laptop seems to be slow today.","**neutral**
+
+This sentence is a factual observation about the laptop's performance. It doesn't express a strong positive or negative emotion or opinion—the speaker is simply describing a current condition without clear approval or disapproval."
+claude-haiku-4.5,4,gpt-6,"Classify the following sentence into one of the following labels: [positive, negative, neutral]
+My laptop seems to be slow today.","**neutral**
+
+This sentence is a factual observation about the laptop's performance without expressing a clear positive or negative sentiment. The speaker is simply stating that the laptop is slow, without emotional language or judgment that would indicate satisfaction or dissatisfaction."
+claude-haiku-4.5,5,qwen-4,Create a metaphor describing the power of technology.,"# Technology as a Lantern in the Dark
+
+Technology is a lantern we've built together—fragile in appearance, yet burning with accumulated knowledge. Each innovation adds another flame to its core, making the light brighter and reaching farther.
+
+We carry this lantern into vast darkness: ignorance, disease, distance, and time itself. Where the light falls, problems that once seemed impossible become solvable. Mountains of information flatten into fingertip access. Isolated voices find audiences across continents.
+
+But like any flame, it requires fuel and careful handling. Neglect it, and it dims. Misuse it, and it burns. Yet we cannot stumble forward in darkness pretending the lantern doesn't exist.
+
+The real power isn't the light itself—it's what light makes visible, and the responsibility that comes with seeing clearly."
+claude-haiku-4.5,1,gpt-6,Create a metaphor describing the power of technology.,"# Technology as a Lens
+
+Technology is a lens that focuses the scattered rays of human ambition into a beam of light powerful enough to reshape the world.
+
+Without it, our potential scatters in all directions—brilliant but diffuse, capable but limited. But when we grind that lens carefully, align it with purpose, and hold it steady, the same human energy that once moved stones now moves mountains. What took generations becomes possible in years. What seemed impossible becomes inevitable.
+
+Yet like any lens, it concentrates not just light but heat. Point it carelessly, and you can burn. The power lies not in the lens itself, but in the hands that hold it and the eyes that see through it."
+claude-haiku-4.5,3,claude-opus-5,Create a metaphor describing the power of technology.,"# Technology is a River
+
+Technology is a river that reshapes the landscape through which it flows.
+
+At first, it carves quietly through stone, almost imperceptibly—a small creek of innovation no one notices. But as it gathers momentum and merges with other currents, it becomes a force that **transforms the terrain itself**. It nourishes what grows along its banks, erodes old structures that block its path, and creates new channels where there were none before.
+
+The river doesn't choose where to flow; we direct it. We can channel it to irrigate fields and bring life, or let it flood and destroy. We can dam it to harness its energy, or let it run wild.
+
+And like any powerful force, the river is indifferent to our intentions—it simply continues moving forward, reshaping everything in its wake, whether we're ready or not."
+claude-haiku-4.5,4,qwen-4-high,Create a metaphor describing the power of technology.,"# Technology as a Lever
+
+Technology is like a lever in the hand of humanity—a simple tool that multiplies our strength far beyond what muscle alone could achieve.
+
+Just as Archimedes claimed he could move the earth with a long enough lever and a fulcrum, we use technology to shift the weight of impossible problems. A surgeon's scalpel extends her precision to the millimeter. A smartphone gives a student in a rural village access to the world's libraries. A vaccine becomes a lever against disease itself.
+
+And like any lever, technology's power depends on *where* we place it and *what* we're trying to move. The same principles that build bridges can demolish them. The fulcrum matters as much as the tool.
+
+The real power isn't in the technology itself—it's in understanding the leverage point, and having the wisdom to choose what's worth moving."
+claude-haiku-4.5,2,claude-opus-5-high,Create a metaphor describing the power of technology.,"# Technology is a Mirror and a Hammer
+
+Technology is a mirror that reflects our intentions back at us—it magnifies who we choose to be. In the hands of a healer, it becomes a scalpel. In the hands of a builder, it becomes a crane lifting civilization skyward. In the hands of someone lost, it can show them the way or trap them in endless reflections of themselves.
+
+It's also a hammer: a tool so powerful it can construct cathedrals or demolish them, depending on the force and direction we apply. The hammer itself is neutral—all the weight comes from the arm that swings it.
+
+The real power isn't in the technology itself, but in the **intention, wisdom, and responsibility** of those who wield it."
+claude-haiku-4.5,0,gpt-6-high,Create a metaphor describing the power of technology.,"# Technology as a Lever
+
+Technology is Archimedes' lever—a humble tool that multiplies human strength beyond measure.
+
+Just as a small stick placed at the right angle can move a boulder that no muscle could budge, a single line of code, a connected device, or a clever invention can move mountains of problems that once seemed immovable.
+
+The longer the lever, the greater the lift. So too does each technological advancement extend our reach further—into distant markets, across continents, into the very fabric of disease and ignorance—letting ordinary people accomplish what once required armies or lifetimes.
+
+Yet like any lever, technology needs a fulcrum—purpose, ethics, wisdom—or it simply becomes a tool for moving boulders onto ourselves."
+claude-haiku-4.5,0,gpt-6,Create a poem that expresses loneliness.,"# Alone
+
+The room is full of quiet things—
+a chair, a lamp, a bed—
+but none of them know my name.
+
+Outside, the world hums with voices,
+laughter I'm not part of,
+conversations that don't pause for me.
+
+I reach for the phone, then set it down.
+What would I say?
+That the silence has a weight?
+That I've grown fluent in its language?
+
+Even in crowds I am alone,
+a ghost among the living,
+watching life happen
+on the other side of glass.
+
+The night is long.
+It doesn't care that I'm awake,
+doesn't notice when I cry.
+
+But maybe tomorrow
+someone will see me.
+
+Or maybe I'll just learn
+to keep myself company—
+to become enough
+for one."
+claude-haiku-4.5,3,qwen-4,Create a poem that expresses loneliness.,"# Alone
+
+The room is full of quiet things—
+a chair, a lamp, the settling dark—
+yet nothing speaks, and nothing brings
+the warmth of one familiar spark.
+
+I pour my tea in cups for one,
+watch steam rise up and fade away,
+the hours blur from night to sun,
+each indistinguishable day.
+
+The phone sits silent on the shelf,
+my words have nowhere left to go,
+I've grown so intimate with myself
+there's no one left I truly know.
+
+The city hums beyond my wall,
+a thousand lives I'll never touch,
+and in this solitude, I call
+to anyone—but not enough.
+
+The loneliness is not the dark,
+or empty rooms, or being still—
+it's feeling like a missing spark
+that no one needs, and no one will."
+claude-haiku-4.5,4,gpt-6-high,Create a poem that expresses loneliness.,"# Alone
+
+The room is full of empty space,
+four walls that know my face,
+yet ask no questions, speak no name—
+just silent witness to my shame.
+
+The phone sits quiet on the shelf,
+I've only got myself
+for company these long, long nights,
+when darkness swallows up the lights.
+
+I pass the crowds on busy streets,
+a ghost among the ones they greet,
+invisible within the throng,
+a voice without a song.
+
+The mirror shows a stranger there,
+with tired eyes and thinning hair—
+someone I should recognize,
+yet barely know behind these eyes.
+
+I reach across the table wide
+to share what burns here deep inside,
+but there's no hand to hold my own,
+no answer but the wind's low moan.
+
+So here I sit with thoughts that spin,
+this aching hollow deep within,
+where love once lived, or so I thought—
+now there is only loneliness I've caught."
+claude-haiku-4.5,5,claude-opus-5,Create a poem that expresses loneliness.,"# Alone
+
+The room is full of silence,
+a weight that settles soft,
+while outside, laughter echoes—
+a sound I've left aloft.
+
+I reach across the table
+to touch a hand that's not,
+and trace the empty spaces
+where connection used to knot.
+
+The night expands around me,
+endless and so wide,
+a mirror showing only
+the stranger deep inside.
+
+I speak words to the darkness,
+they scatter, disappear,
+like stones thrown in an ocean—
+no answer drawing near.
+
+Yet still I wait for morning,
+for some familiar face,
+some warmth to fill the hollows
+of this quiet, hollow place."
+claude-haiku-4.5,2,qwen-4-high,Create a poem that expresses loneliness.,"# Alone
+
+The room is full of shadows,
+though the lights are burning bright—
+a strange and hollow aching
+that fills the hours of night.
+
+I reach across the silence
+for a voice that isn't there,
+my words fall into emptiness,
+dissolving in the air.
+
+The crowds around me swirl and fade
+like ghosts I cannot touch,
+I smile and nod and drift along,
+yet hunger for so much.
+
+A longing without answers,
+a door that won't unlock—
+just me and all my questions,
+and time's indifferent clock.
+
+Yet somewhere in this stillness
+a quiet truth takes form:
+that even in the deepest cold,
+we're searching to feel warm."
+claude-haiku-4.5,1,claude-opus-5-high,Create a poem that expresses loneliness.,"# Alone
+
+The room is full of empty space,
+A silence that won't leave my face.
+I reach for words that go unsaid,
+For voices living in my head.
+
+The crowd surrounds me, yet I'm far,
+A distant, unreachable star.
+They laugh and move and dance around,
+While I exist without a sound.
+
+The night is long, the dark runs deep,
+No one to hold, just thoughts to keep.
+A thousand miles in a single room,
+These walls of mine, my gilded tomb.
+
+I am a island, small and still,
+Beyond the reach of any will.
+And though the world spins on and on,
+I sit here waiting for the dawn."
+claude-haiku-4.5,5,gpt-6-high,Create a sentence using a gerund,"# Sentence with a Gerund
+
+**Reading books is my favorite way to relax after work.**
+
+In this sentence, ""reading"" is the gerund—a verb form that functions as a noun, showing an action (reading) that serves as the subject of the sentence."
+claude-haiku-4.5,3,qwen-4,Create a sentence using a gerund,"# Sentence with a Gerund
+
+**Running in the morning helps me stay energized throughout the day.**
+
+In this sentence, ""running"" is a gerund—a verb form ending in ""-ing"" that functions as a noun. It's the subject of the sentence."
+claude-haiku-4.5,0,claude-opus-5,Create a sentence using a gerund,"# Gerund Sentence
+
+**Reading is my favorite way to relax after a long day.**
+
+In this sentence, ""reading"" is a gerund—a verb form ending in ""-ing"" that functions as a noun. It serves as the subject of the sentence."
+claude-haiku-4.5,1,gpt-6,Create a sentence using a gerund,"# Gerund Sentence
+
+**Swimming in the ocean is my favorite summer activity.**
+
+In this sentence, ""swimming"" is a gerund—a verb form ending in ""-ing"" that functions as a noun. It serves as the subject of the sentence."
+claude-haiku-4.5,2,qwen-4-high,Create a sentence using a gerund,"# Sentence Using a Gerund
+
+**Running in the morning helps me stay energized throughout the day.**
+
+In this sentence, ""running"" is a gerund—a verb form ending in ""-ing"" that functions as a noun. It acts as the subject of the sentence."
+claude-haiku-4.5,4,claude-opus-5-high,Create a sentence using a gerund,"# Gerund Example
+
+**""Running in the morning helps me start my day with energy.""**
+
+In this sentence, *running* is a gerund—a verb form ending in ""-ing"" that functions as a noun. It's the subject of the sentence and tells us what activity helps with starting the day energetically."
+claude-haiku-4.5,2,qwen-4,Explain the difference between the terms ‘data’ and ‘information’,"# Data vs. Information
+
+## **Data**
+- **Raw facts and figures** with no inherent meaning
+- Individual, isolated elements (numbers, text, symbols)
+- Unprocessed and unorganized
+- Example: ""25, 18, 22, 19, 30""
+
+## **Information**
+- **Processed, organized data** that has context and meaning
+- Data that has been analyzed and interpreted
+- Useful for decision-making
+- Example: ""The average temperature this week was 22.8°C""
+
+## **Key Differences**
+
+| Aspect | Data | Information |
+|--------|------|-------------|
+| **Form** | Raw | Refined |
+| **Meaning** | No inherent meaning | Has context & relevance |
+| **Usefulness** | Limited alone | Actionable |
+| **Example** | ""Sales: $5,000, $3,000, $7,000"" | ""Revenue increased 40% last quarter"" |
+
+## **Simple Analogy**
+Think of data as **ingredients** and information as a **prepared meal**. Raw ingredients alone don't tell you much, but when organized and processed, they become something useful.
+
+---
+
+**In summary:** Data is the starting material; information is what you create when you give that data meaning and context."
+claude-haiku-4.5,5,claude-opus-5-high,Explain the difference between the terms ‘data’ and ‘information’,"# Data vs. Information
+
+## **Data**
+- **Raw facts and figures** with no context or meaning
+- Unprocessed observations or measurements
+- Example: ""23, 45, 19, 88"" or ""John, 28, Engineer""
+
+## **Information**
+- **Processed, organized data** that has meaning and purpose
+- Data analyzed and presented in a useful way
+- Example: ""The average score was 44"" or ""John is a 28-year-old engineer""
+
+## **Key Difference**
+
+| Aspect | Data | Information |
+|--------|------|-------------|
+| **Form** | Raw, unstructured | Organized, structured |
+| **Meaning** | None on its own | Has context and value |
+| **Purpose** | Just exists | Answers questions or enables decisions |
+| **Example** | Temperature readings: 20°, 22°, 18° | ""Average temperature this week was 20°C"" |
+
+## **Simple Summary**
+
+Think of it this way:
+- **Data** = the ingredients
+- **Information** = the finished dish
+
+Data becomes information when it's collected, analyzed, organized, and presented in a way that makes it useful and meaningful."
+claude-haiku-4.5,3,gpt-6-high,Explain the difference between the terms ‘data’ and ‘information’,"# Data vs. Information
+
+These terms are related but distinct:
+
+## **Data**
+- **Raw facts and figures** with little or no context
+- Unprocessed, unorganized observations or measurements
+- Example: ""25, 30, 18, 22, 19""
+
+## **Information**
+- **Processed, organized data** that has meaning and context
+- Data that has been analyzed and interpreted to answer questions
+- Example: ""The average temperature last week was 22.8°C, which is 3 degrees below normal""
+
+## **Key Differences**
+
+| Aspect | Data | Information |
+|--------|------|-------------|
+| **Form** | Raw, unstructured | Organized, structured |
+| **Meaning** | Little inherent meaning | Clear, purposeful meaning |
+| **Use** | Building block | Decision-making tool |
+| **Example** | Sales numbers | Sales trends and insights |
+
+## **Simple Analogy**
+Think of data as ingredients and information as a prepared meal. The ingredients (data) become useful and meaningful (information) once they're combined and processed.
+
+**The relationship**: Data → (processing) → Information → (analysis) → Knowledge"
+claude-haiku-4.5,4,gpt-6,Explain the difference between the terms ‘data’ and ‘information’,"# Data vs. Information
+
+## **Data**
+- **Raw facts and figures** with no inherent meaning
+- **Unorganized and unprocessed** observations or measurements
+- Example: ""23, 45, 19, 51, 88""
+
+## **Information**
+- **Processed, organized data** that has been given context and meaning
+- **Useful and actionable** insights derived from data
+- Example: ""The average temperature this week was 45°F""
+
+## **Key Differences**
+
+| Aspect | Data | Information |
+|--------|------|-------------|
+| **Form** | Raw symbols, numbers, text | Organized, structured content |
+| **Meaning** | No inherent meaning | Meaningful and contextual |
+| **Use** | Input for processing | Output for decision-making |
+| **Example** | ""2024, Q3, 500"" | ""Q3 2024 sales were 500 units"" |
+
+## **Simple Analogy**
+Think of data as **individual ingredients** in a kitchen, while information is the **finished recipe or meal**. The ingredients alone don't tell you much, but when organized and combined properly, they create something useful and understandable.
+
+**In practice:** Data becomes information when it's analyzed, organized, and presented in a way that provides understanding or answers a question."
+claude-haiku-4.5,1,claude-opus-5,Explain the difference between the terms ‘data’ and ‘information’,"# Data vs. Information
+
+## **Data**
+- **Raw facts and figures** with no context or meaning
+- Individual symbols, numbers, or measurements collected as-is
+- Unprocessed and unorganized
+- Example: ""23, 45, 67"" or ""John, 28, Engineer""
+
+## **Information**
+- **Processed data** given context and meaning
+- Data that has been organized, analyzed, and interpreted
+- Useful for understanding and decision-making
+- Example: ""The average age of employees is 38, indicating a mid-career workforce""
+
+## **Key Difference**
+
+| Aspect | Data | Information |
+|--------|------|-------------|
+| **Form** | Raw | Processed |
+| **Meaning** | Little to none | Clear and useful |
+| **Purpose** | Just collected | Ready to use |
+| **Value** | Limited alone | High for decisions |
+
+## **Simple Analogy**
+- **Data** = Individual ingredients (salt, flour, eggs)
+- **Information** = A baked cake (ingredients organized into something meaningful)
+
+## **In Practice**
+Data becomes information when it's cleaned, organized, and presented in a way that answers questions or reveals insights."
+claude-haiku-4.5,0,qwen-4-high,Explain the difference between the terms ‘data’ and ‘information’,"# Data vs. Information
+
+## **Data**
+- **Raw, unprocessed facts and figures**
+- Individual observations or measurements with no inherent meaning
+- Exists in its original form (numbers, text, symbols)
+- Example: ""23, 45, 19, 51, 88""
+
+## **Information**
+- **Processed, organized, and meaningful data**
+- Data that has been analyzed, contextualized, and given purpose
+- Answers questions and supports understanding
+- Example: ""Average temperature this week was 45°F""
+
+## **Simple Analogy**
+Think of a library:
+- **Data** = individual letters and words scattered on pages
+- **Information** = a well-organized book with chapters that tells a coherent story
+
+## **Key Differences**
+
+| Data | Information |
+|------|-------------|
+| Raw input | Processed output |
+| No context | Has context |
+| Doesn't answer questions | Answers questions |
+| Isolated facts | Connected facts |
+
+## **The Process**
+**Data** → *Processing/Analysis* → **Information** → *Interpretation* → **Knowledge**
+
+The transformation happens when someone organizes, interprets, or applies meaning to raw data."
+claude-haiku-4.5,3,claude-opus-5,Explain the physics concept of projectile motion.,"# Projectile Motion
+
+Projectile motion describes the path of an object launched into the air that moves under the influence of gravity alone (ignoring air resistance).
+
+## Key Principles
+
+**Two Independent Motions**
+- **Horizontal**: Constant velocity (no forces acting horizontally)
+- **Vertical**: Constant acceleration due to gravity (~9.8 m/s² downward)
+
+These motions occur simultaneously but independently—each follows its own physics rules.
+
+## The Path
+
+The combination creates a **parabolic trajectory**. Even though gravity only pulls downward, the object's initial sideways motion keeps it moving forward, tracing a curved arc.
+
+## Important Characteristics
+
+| Aspect | Horizontal | Vertical |
+|--------|-----------|----------|
+| Velocity | Stays constant | Changes (increases downward) |
+| Acceleration | Zero | 9.8 m/s² (gravity) |
+| Distance | Increases linearly | Increases non-linearly |
+
+## Real-World Examples
+
+- Throwing a baseball
+- A cannon firing
+- Jumping horizontally off a platform
+- A ball kicked at an angle
+
+## Key Insight
+
+The reason projectile motion works this way: **gravity only affects vertical motion**. Nothing pushes or pulls the object horizontally (ignoring air resistance), so it maintains whatever horizontal velocity it started with while gravity continuously accelerates it downward.
+
+This elegant split of motion into independent components is what makes projectile motion predictable and calculable."
+claude-haiku-4.5,4,qwen-4,Explain the physics concept of projectile motion.,"# Projectile Motion
+
+## Core Concept
+Projectile motion describes the path of an object launched into the air, subject only to gravity. It combines **horizontal and vertical motion** that occur independently of each other.
+
+## Key Principle: Independence of Motion
+- **Horizontal component**: Travels at constant velocity (no air resistance)
+- **Vertical component**: Accelerates downward at g = 9.8 m/s² due to gravity
+
+These happen simultaneously but don't affect each other.
+
+## The Trajectory
+The combination creates a **parabolic path**—the characteristic curved arc you see in:
+- A basketball shot
+- A cannonball
+- A water fountain spray
+
+## Essential Equations
+
+| Component | Equation |
+|-----------|----------|
+| Horizontal distance | x = v₀ₓ · t |
+| Vertical distance | y = v₀ᵧ · t - ½gt² |
+| Vertical velocity | vᵧ = v₀ᵧ - gt |
+
+where v₀ₓ and v₀ᵧ are initial velocities, and t is time.
+
+## Important Points
+- **Launch angle matters**: 45° gives maximum distance on level ground
+- **Initial speed affects range**: Faster projectiles travel farther
+- **Hang time depends on height and vertical velocity**, not horizontal speed
+- At the peak, vertical velocity = 0 (but horizontal velocity remains constant)
+
+This elegant principle unifies seemingly complex motion into simple, predictable physics."
+claude-haiku-4.5,0,gpt-6,Explain the physics concept of projectile motion.,"# Projectile Motion
+
+Projectile motion occurs when an object moves through the air under the influence of gravity alone (ignoring air resistance). It's one of the most fundamental concepts in physics.
+
+## Key Principles
+
+**Two Independent Motions**
+- **Horizontal**: constant velocity (no force acting on it)
+- **Vertical**: constant acceleration due to gravity (9.8 m/s² downward)
+
+These components are independent—horizontal motion doesn't affect vertical motion and vice versa.
+
+## The Essential Equations
+
+For an object launched at angle θ with initial velocity v₀:
+
+- **Horizontal**: x = v₀cos(θ) × t
+- **Vertical**: y = v₀sin(θ) × t - ½gt²
+
+## Important Characteristics
+
+| Feature | Description |
+|---------|-------------|
+| **Path** | Parabolic curve |
+| **Highest point** | Vertical velocity = 0 |
+| **Range** | Maximum at 45° launch angle |
+| **Time of flight** | Depends on initial vertical velocity and height |
+
+## Real-World Examples
+
+- A thrown baseball
+- A kicked soccer ball
+- A launched cannon ball
+- Water from a fountain
+
+## Why It Matters
+
+Understanding projectile motion helps predict where objects will land, is essential for sports physics, engineering, and explains how everything from satellites to sports equipment behaves in motion."
+claude-haiku-4.5,5,qwen-4-high,Explain the physics concept of projectile motion.,"# Projectile Motion
+
+Projectile motion occurs when an object moves under the influence of gravity alone, following a curved path. Here are the key principles:
+
+## Basic Components
+
+**Horizontal Motion**
+- Velocity remains constant (no air resistance)
+- Distance = velocity × time
+- No acceleration in this direction
+
+**Vertical Motion**
+- Acceleration due to gravity (9.8 m/s² downward)
+- Velocity changes continuously
+- Follows standard kinematic equations
+
+## Key Characteristics
+
+1. **Independence of Motion** — Horizontal and vertical motions are independent; they don't affect each other
+
+2. **Parabolic Path** — The combination of constant horizontal velocity and accelerating vertical velocity creates a characteristic parabola
+
+3. **Symmetry** — For launches and landings at the same height, the trajectory is symmetrical; time up equals time down
+
+## Common Examples
+
+- A kicked soccer ball
+- A basketball shot
+- A cannonball launch
+- A stone thrown across a pond
+
+## Essential Equations
+
+- Horizontal: *x = v₀cos(θ) × t*
+- Vertical: *y = v₀sin(θ) × t - ½gt²*
+
+Where v₀ is initial velocity and θ is launch angle.
+
+## Important Variables
+
+- **Launch angle** — 45° gives maximum range
+- **Initial velocity** — Higher velocity increases distance and height
+- **Time of flight** — Depends mainly on vertical component
+
+This principle is fundamental in physics and engineering applications."
+claude-haiku-4.5,1,gpt-6-high,Explain the physics concept of projectile motion.,"# Projectile Motion
+
+Projectile motion describes how objects move when launched into the air under the influence of gravity alone (ignoring air resistance).
+
+## Key Principle
+
+The motion can be separated into **two independent components**:
+
+- **Horizontal**: constant velocity (no forces act sideways)
+- **Vertical**: constant acceleration due to gravity (9.8 m/s² downward)
+
+These components don't interfere with each other—this is the crucial insight.
+
+## Basic Equations
+
+**Horizontal motion:** x = v₀ₓ × t
+
+**Vertical motion:** 
+- y = v₀ᵧ × t - ½gt²
+- vᵧ = v₀ᵧ - gt
+
+Where v₀ₓ and v₀ᵧ are initial velocity components.
+
+## Common Trajectories
+
+| Launch Angle | Result |
+|---|---|
+| **0°** (horizontal) | Falls while moving forward |
+| **45°** | Maximum range |
+| **90°** (straight up) | Goes up, comes straight down |
+
+## Real-World Examples
+
+- Baseball throws
+- Cannon fire
+- Water fountains
+- Satellite orbits (extended projectile motion)
+
+## Why It Works
+
+Gravity only pulls downward, so it can't change horizontal motion. An object launched horizontally falls at the same rate as one dropped—creating that characteristic curved path."
+claude-haiku-4.5,2,claude-opus-5-high,Explain the physics concept of projectile motion.,"# Projectile Motion Physics
+
+Projectile motion describes the curved path an object follows when launched into the air and affected only by gravity.
+
+## Key Principles
+
+**Two Independent Motions**
+- **Horizontal**: Constant velocity (no air resistance)
+- **Vertical**: Constant acceleration due to gravity (9.8 m/s²)
+
+These components act independently—horizontal motion doesn't affect vertical motion, and vice versa.
+
+## Basic Equations
+
+**Horizontal motion:** x = v₀ₓ · t
+
+**Vertical motion:** y = v₀ᵧ · t - ½gt²
+
+Where:
+- v₀ₓ and v₀ᵧ = initial horizontal and vertical velocity components
+- g = gravitational acceleration
+- t = time
+
+## Common Characteristics
+
+| Feature | Property |
+|---------|----------|
+| **Path** | Parabolic curve |
+| **Range** | Maximum at 45° launch angle |
+| **Time to peak** | Symmetrical—same going up as coming down |
+| **Horizontal speed** | Remains constant |
+| **Vertical speed** | Changes continuously |
+
+## Real-World Examples
+
+- Throwing a ball
+- Launching a rocket
+- Kicked soccer ball
+- Water fountain arcs
+
+## Important Note
+
+This model assumes air resistance is negligible, which is acceptable for many everyday scenarios but not for very fast objects or extended distances."
+claude-haiku-4.5,4,qwen-4,Name the colors of the rainbow.,"# Colors of the Rainbow
+
+The traditional seven colors of the rainbow are:
+
+1. **Red**
+2. **Orange**
+3. **Yellow**
+4. **Green**
+5. **Blue**
+6. **Indigo**
+7. **Violet**
+
+This sequence is often remembered by the acronym **ROYGBIV**."
+claude-haiku-4.5,0,gpt-6,Name the colors of the rainbow.,"# Colors of the Rainbow
+
+The traditional seven colors of the rainbow are:
+
+1. **Red**
+2. **Orange**
+3. **Yellow**
+4. **Green**
+5. **Blue**
+6. **Indigo**
+7. **Violet**
+
+This sequence is often remembered by the acronym **ROYGBIV**."
+claude-haiku-4.5,5,claude-opus-5-high,Name the colors of the rainbow.,"The colors of the rainbow are:
+
+1. Red
+2. Orange
+3. Yellow
+4. Green
+5. Blue
+6. Indigo
+7. Violet
+
+These colors are often remembered by the acronym **ROYGBIV**."
+claude-haiku-4.5,1,gpt-6-high,Name the colors of the rainbow.,"# Colors of the Rainbow
+
+The traditional seven colors of the rainbow are:
+
+1. **Red**
+2. **Orange**
+3. **Yellow**
+4. **Green**
+5. **Blue**
+6. **Indigo**
+7. **Violet**
+
+These are often remembered by the acronym **ROYGBIV**."
+claude-haiku-4.5,3,claude-opus-5,Name the colors of the rainbow.,"# Colors of the Rainbow
+
+The traditional colors of the rainbow, in order from outermost to innermost, are:
+
+1. **Red**
+2. **Orange**
+3. **Yellow**
+4. **Green**
+5. **Blue**
+6. **Indigo**
+7. **Violet**
+
+This sequence is often remembered by the acronym **ROYGBIV**."
+claude-haiku-4.5,2,qwen-4-high,Name the colors of the rainbow.,"The colors of the rainbow are:
+
+1. Red
+2. Orange
+3. Yellow
+4. Green
+5. Blue
+6. Indigo
+7. Violet
+
+These are often remembered by the acronym **ROYGBIV**."
+claude-haiku-4.5,0,gpt-6-high,"Summarize the following passage in less than 50 words.
+The issue of immigration has become critical as the number of people wanting to enter the United States for a better life has been on the rise. Immigration has been a consistent source of controversy and debate, with wide variations in opinion regarding the benefits and drawbacks of immigration. Migration from one part of the world to another is not uncommon, yet the current state of the immigration debate in the United States has escalated and has become divisive.","Immigration to the United States has become increasingly controversial as more people seek entry. Opinions vary widely on immigration's benefits and drawbacks, making it a divisive political issue despite migration being historically common."
+claude-haiku-4.5,3,claude-opus-5,"Summarize the following passage in less than 50 words.
+The issue of immigration has become critical as the number of people wanting to enter the United States for a better life has been on the rise. Immigration has been a consistent source of controversy and debate, with wide variations in opinion regarding the benefits and drawbacks of immigration. Migration from one part of the world to another is not uncommon, yet the current state of the immigration debate in the United States has escalated and has become divisive.","# Summary
+
+Immigration to the United States remains contentious, with rising numbers of people seeking entry for better opportunities. Opinions vary widely on immigration's benefits and drawbacks, making it a divisive political issue despite migration being historically common."
+claude-haiku-4.5,2,qwen-4-high,"Summarize the following passage in less than 50 words.
+The issue of immigration has become critical as the number of people wanting to enter the United States for a better life has been on the rise. Immigration has been a consistent source of controversy and debate, with wide variations in opinion regarding the benefits and drawbacks of immigration. Migration from one part of the world to another is not uncommon, yet the current state of the immigration debate in the United States has escalated and has become divisive.","Immigration to the United States is increasingly controversial. Rising numbers of people seek entry for better opportunities, creating debate over immigration's benefits and drawbacks. While migration is common globally, the current U.S. immigration debate has become particularly divisive."
+claude-haiku-4.5,4,claude-opus-5-high,"Summarize the following passage in less than 50 words.
+The issue of immigration has become critical as the number of people wanting to enter the United States for a better life has been on the rise. Immigration has been a consistent source of controversy and debate, with wide variations in opinion regarding the benefits and drawbacks of immigration. Migration from one part of the world to another is not uncommon, yet the current state of the immigration debate in the United States has escalated and has become divisive.","# Immigration Summary
+
+Immigration to the United States remains highly controversial. Increasing numbers of people seek entry for better opportunities, but public opinion on immigration's benefits and drawbacks varies widely. The current debate has become increasingly divisive and escalated compared to historical migration patterns."
+claude-haiku-4.5,5,qwen-4,"Summarize the following passage in less than 50 words.
+The issue of immigration has become critical as the number of people wanting to enter the United States for a better life has been on the rise. Immigration has been a consistent source of controversy and debate, with wide variations in opinion regarding the benefits and drawbacks of immigration. Migration from one part of the world to another is not uncommon, yet the current state of the immigration debate in the United States has escalated and has become divisive.","# Immigration Summary
+
+Immigration to the United States remains controversial and divisive. Increasing numbers of people seek entry for better opportunities, sparking widespread debate about immigration's benefits and drawbacks. While migration is common globally, the current U.S. immigration discussion has intensified significantly."
+claude-haiku-4.5,1,gpt-6,"Summarize the following passage in less than 50 words.
+The issue of immigration has become critical as the number of people wanting to enter the United States for a better life has been on the rise. Immigration has been a consistent source of controversy and debate, with wide variations in opinion regarding the benefits and drawbacks of immigration. Migration from one part of the world to another is not uncommon, yet the current state of the immigration debate in the United States has escalated and has become divisive.","Immigration to the United States has become increasingly controversial. Rising numbers of people seeking entry for better opportunities have sparked heated debate about immigration's benefits and drawbacks, making it a divisive political issue."
+claude-haiku-4.5,2,gpt-6-high,"Translate this phrase into another language.
+Let's get started.","# Spanish
+¡Vamos a empezar!
+
+# French
+Commençons!
+
+# German
+Lasst uns anfangen!
+
+# Japanese
+始めましょう。(Hajimemashou.)
+
+Which language would you like me to focus on?"
+claude-haiku-4.5,3,claude-opus-5,"Translate this phrase into another language.
+Let's get started.","# Spanish
+Vamos a empezar.
+
+# French
+Commençons.
+
+# German
+Lass uns anfangen.
+
+# Japanese
+始めましょう。(Hajimemashou.)
+
+Which language would you prefer?"
+claude-haiku-4.5,1,gpt-6,"Translate this phrase into another language.
+Let's get started.","# Spanish
+Vamos a empezar.
+
+# French
+Commençons.
+
+# German
+Lassen Sie uns anfangen.
+
+# Japanese
+始めましょう。(Hajimemashou.)
+
+Which language would you prefer?"
+claude-haiku-4.5,0,claude-opus-5-high,"Translate this phrase into another language.
+Let's get started.","# Spanish
+Vamos a empezar.
+
+# French
+Commençons.
+
+# German
+Lass uns anfangen.
+
+# Japanese
+始めましょう。(Hajimemashou.)
+
+Which language would you like me to translate it into?"
+claude-haiku-4.5,4,qwen-4-high,"Translate this phrase into another language.
+Let's get started.","# French
+Commençons.
+
+# Spanish
+Empecemos.
+
+# German
+Lassen Sie uns anfangen.
+
+# Mandarin Chinese
+让我们开始吧。(Ràng wǒmen kāishǐ ba.)
+
+Would you like me to translate it into a different language?"
+claude-haiku-4.5,5,qwen-4,"Translate this phrase into another language.
+Let's get started.","# Let's get started.
+
+**Spanish:** Comencemos.
+
+**French:** Commençons.
+
+**German:** Lassen Sie uns anfangen.
+
+**Italian:** Iniziamo.
+
+**Portuguese:** Vamos começar.
+
+**Japanese:** 始めましょう (Hajimemashou)
+
+**Mandarin Chinese:** 开始吧 (Kāishǐ ba)
+
+Which language would you like? 😊"
+claude-haiku-4.5,5,gpt-6-high,"What type of bond is formed by the following elements?
+Oxygen and Hydrogen","# Bond Type: Oxygen and Hydrogen
+
+**Covalent Bond**
+
+## Explanation:
+
+When oxygen and hydrogen bond together, they form a **polar covalent bond**. Here's why:
+
+- **Electrons are shared** between the atoms (characteristic of covalent bonds)
+- **Unequal sharing** occurs because oxygen is more electronegative than hydrogen
+- This creates a **polar molecule** with partial charges (δ+ and δ-)
+
+## Example:
+In a water molecule (H₂O), the O-H bonds are polar covalent bonds, with the oxygen atom pulling electron density toward itself more strongly than the hydrogen atoms.
+
+---
+
+**Note:** If you're asking about multiple oxygen and hydrogen atoms bonded together in compounds like H₂O or H₂O₂, the intramolecular bonds are covalent, though water molecules can also form **hydrogen bonds** with each other (intermolecular forces)."
+claude-haiku-4.5,2,gpt-6,"What type of bond is formed by the following elements?
+Oxygen and Hydrogen","# Oxygen and Hydrogen Bond
+
+When oxygen and hydrogen combine, they form a **covalent bond**.
+
+## Why Covalent?
+
+- **Oxygen** (nonmetal) and **hydrogen** (nonmetal) are both nonmetals
+- They share electrons rather than transfer them
+- Each atom contributes electrons to create a shared pair
+
+## Specific Type: Polar Covalent Bond
+
+This is more specifically a **polar covalent bond** because:
+- Oxygen is more electronegative than hydrogen
+- Electrons are pulled more toward the oxygen atom
+- This creates a slight separation of charge (polarity)
+
+## Example
+In a water molecule (H₂O), the O-H bonds are polar covalent bonds, which is why water has unique properties like high polarity and ability to dissolve many substances."
+claude-haiku-4.5,1,qwen-4-high,"What type of bond is formed by the following elements?
+Oxygen and Hydrogen","# Oxygen and Hydrogen Bond
+
+When oxygen and hydrogen bond together, they form a **covalent bond**.
+
+## Why Covalent?
+
+- **Electronegativity difference**: Oxygen (3.44) and hydrogen (2.20) have a difference of about 1.24
+- **Electron sharing**: Both atoms share electrons to fill their outer shells
+- **Polar covalent bond**: Since oxygen is more electronegative, it pulls the shared electrons closer, making this a **polar covalent bond** (not nonpolar)
+
+## Common Example
+
+The most familiar example is **water (H₂O)**, where two O-H covalent bonds connect the atoms."
+claude-haiku-4.5,4,claude-opus-5-high,"What type of bond is formed by the following elements?
+Oxygen and Hydrogen","# Bond Type: Oxygen and Hydrogen
+
+## **Covalent Bond**
+
+Oxygen and hydrogen form a **covalent bond** when they combine to create water (H₂O).
+
+### Why Covalent?
+
+- Both oxygen and hydrogen are **nonmetals**
+- They share electrons rather than transfer them
+- Oxygen has 6 valence electrons and needs 2 more to complete its octet
+- Hydrogen has 1 valence electron and needs 1 more to be stable
+- Each hydrogen shares its electron with oxygen, and oxygen shares electrons with each hydrogen
+
+### Specific Type: **Polar Covalent Bond**
+
+This is a **polar covalent bond** because:
+- Oxygen is more electronegative than hydrogen
+- Electrons are shared unequally, spending more time near the oxygen atom
+- This creates a slight negative charge (δ-) on oxygen and slight positive charges (δ+) on the hydrogens"
+claude-haiku-4.5,3,qwen-4,"What type of bond is formed by the following elements?
+Oxygen and Hydrogen","# Bond Type: Oxygen and Hydrogen
+
+When oxygen and hydrogen combine, they form a **covalent bond**.
+
+## Why Covalent?
+
+- **Oxygen** (nonmetal) and **Hydrogen** (nonmetal) are both nonmetals
+- They share electrons rather than transfer them
+- Each atom achieves a stable electron configuration by sharing electrons
+
+## Example: Water (H₂O)
+
+In a water molecule:
+- Each hydrogen atom shares 1 electron with oxygen
+- Oxygen shares electrons with 2 hydrogen atoms
+- This creates a **polar covalent bond** (because oxygen pulls electrons more strongly toward itself)
+
+**Key Point:** When two nonmetals bond together, they almost always form covalent bonds."
+claude-haiku-4.5,0,claude-opus-5,"What type of bond is formed by the following elements?
+Oxygen and Hydrogen","# Bond Type: Oxygen and Hydrogen
+
+The bond formed between oxygen and hydrogen is a **covalent bond**.
+
+## Why Covalent?
+
+- **Oxygen** (nonmetal) and **hydrogen** (nonmetal) are both nonmetallic elements
+- They share electrons to achieve stable electron configurations
+- Oxygen needs 2 more electrons; hydrogen needs 1 more electron
+- They form a **polar covalent bond** because oxygen is more electronegative than hydrogen
+
+## Example: Water (H₂O)
+
+In a water molecule:
+- Each hydrogen shares electrons with oxygen
+- The shared electrons spend more time near the oxygen nucleus (due to higher electronegativity)
+- This creates a **dipole** with partial negative charge on oxygen and partial positive charges on hydrogens
+
+This is why water has many unique properties, including being an excellent solvent!"

@@ -1,0 +1,135 @@
+question,answer
+"Analyze the given data and suggest which player the football team should sign.
+Player A: Age 26, Position: Midfielder, Goals: 6, Assists: 8, Passing accuracy: 84%, Transfer fee: €40 million; Player B: Age 31, Position: Attacker, Goals: 12, Assists: 4, Passing accuracy: 75%, Transfer fee: €55 million; Player C: Age 23, Position: Defender, Goals: 3, Assists: 2, Passing accuracy: 88%, Transfer fee: €30 million.","# Player Analysis & Recommendation
+
+## Comparative Overview
+
+| Metric | Player A | Player B | Player C |
+|--------|----------|----------|----------|
+| **Age** | 26 | 31 | 23 |
+| **Goals** | 6 | 12 | 3 |
+| **Assists** | 8 | 4 | 2 |
+| **Passing Accuracy** | 84% | 75% | 88% |
+| **Fee** | €40M | €55M | €30M |
+
+## Key Observations
+
+**Player B** has the highest goal-scoring output but is oldest with the highest transfer fee and lowest passing accuracy.
+
+**Player A** offers balanced attacking contribution (goals + assists) with good passing accuracy at a moderate price point.
+
+**Player C** shows technical excellence (highest passing accuracy) at the lowest cost, but provides minimal attacking output for a defender.
+
+## Recommendation: **Player A**
+
+### Rationale:
+1. **Best value proposition** — €40M for a well-rounded midfielder
+2. **Balanced contribution** — 8 assists suggest playmaking ability beyond just scoring
+3. **Age sweet spot** — 26 offers prime years with resale value potential
+4. **Technical quality** — 84% passing accuracy indicates intelligent play
+5. **Positional need** — Midfielders are typically more versatile investments
+
+### Alternative:
+Choose **Player C** if your team has defensive weaknesses and budget constraints, prioritizing long-term development over immediate impact.
+
+**Avoid Player B** unless you desperately need goals and have budget surplus, given age and diminishing ROI."
+"Categorize the following items
+- Orange
+- Melon
+- Pen","# Categorization
+
+**Fruits:**
+- Orange
+- Melon
+
+**Stationery/Writing Supplies:**
+- Pen"
+"Classify the following color into warm and cool colors.
+Red","# Red Classification
+
+**Red is a WARM color.**
+
+Red is typically classified as a warm color because it's associated with:
+- Heat and warmth
+- Fire and the sun
+- Energy and passion
+
+**Note:** Some red shades can have cool undertones (like blue-reds), but red as a primary color is generally considered warm."
+Generate an example of a catchy title for a blog post explaining what is Machine Learning,"# ""Teaching Computers to Think: A Beginner's Guide to Machine Learning""
+
+Or if you prefer something punchier:
+
+# ""Machine Learning Explained: How Computers Learn Without Being Programmed""
+
+Other alternatives:
+- ""From Dumb to Smart: The Magic Behind Machine Learning""
+- ""Machine Learning Demystified: What It Is and Why It Matters""
+- ""The AI Revolution Starts Here: Understanding Machine Learning in 5 Minutes""
+
+These titles work well because they:
+- Use curiosity-driven language
+- Promise clarity (""explained,"" ""demystified"")
+- Include searchable keywords
+- Appeal to beginners while sounding authoritative"
+"Re-arrange the following list of words to form a grammatically correct sentence.
+prompts faithful continuous extract discrete a of We","# We extract a continuous of discrete faithful prompts
+
+Actually, let me reconsider this to make it more grammatically sound:
+
+# We extract discrete prompts of a continuous faithful
+
+Hmm, that's still awkward. Here's the most grammatically correct arrangement:
+
+# We extract a discrete of continuous faithful prompts
+
+The most natural reading would be:
+
+# **We extract discrete prompts from a continuous faithful [source]**
+
+Or most likely:
+
+# **We extract a continuous [stream] of discrete faithful prompts**
+
+Without additional context, the clearest grammatically correct sentence is:
+
+# **We extract discrete prompts from a continuous faithful [collection]**"
+"Summarize the article below in 5 sentences.
+The COVID-19 crisis has brought many changes to our everyday lives, including the way we work and interact. Working from home has become the norm for many people, but it has also brought its own unique challenges. It can be difficult to stay productive and motivated while working remotely, especially if you’re feeling burned out or isolated. So how do you make the most of it? Here are some tips to help you stay productive while working from home.","# Summary
+
+The COVID-19 pandemic has significantly altered how people work and interact, with remote work becoming standard for many. Working from home presents unique challenges, including difficulty maintaining productivity and motivation, as well as feelings of burnout and isolation. To address these issues, implementing effective strategies is essential. The article provides practical tips designed to help remote workers stay productive. These suggestions aim to help individuals maximize their work-from-home experience despite the challenges it presents."
+Summarize your last week.,"I don't have continuity between conversations—each chat is fresh for me with no memory of previous interactions. I also don't experience time the way you do; I don't have a ""last week"" or ongoing existence between conversations.
+
+So I can't actually summarize a week. But I'm happy to help if you'd like to:
+- Summarize *your* last week
+- Discuss something specific from our current conversation
+- Answer other questions
+
+What would be useful?"
+Who painted the Sistine Chapel ceiling?,"Michelangelo painted the Sistine Chapel ceiling. He completed this iconic work between 1508 and 1512 in Vatican City. It's one of the most famous examples of Renaissance art, featuring biblical scenes including the creation of Adam, which has become one of the most recognizable images in Western art."
+"Write a news headline that summarizes the given information.
+The Environmental Protection Agency proposed a new policy that will reduce methane emissions from oil and gas sites by 45%.",# EPA Proposes New Policy to Cut Methane Emissions from Oil and Gas Sites by 45%
+Write a thanking letter to a professor!,"# Thank You Letter to a Professor
+
+Dear Professor [Name],
+
+I wanted to take a moment to express my sincere gratitude for your exceptional teaching and guidance in [Course Name/Number] this [semester/year].
+
+Your lectures have made a significant impact on my understanding of the subject matter. The way you explain complex concepts with clarity and enthusiasm has truly helped me grasp material I initially found challenging. Beyond just delivering information, you created an engaging learning environment where I felt comfortable asking questions and participating in discussions.
+
+I particularly appreciated [mention a specific example: your office hours, a particular lesson, constructive feedback, or mentorship]. This support has not only improved my performance in your class but has also deepened my interest in [the subject/field].
+
+Your dedication to your students' success and your passion for teaching are truly inspiring. You've set an excellent example of what it means to be an educator and a mentor.
+
+Thank you again for your time, patience, and commitment to helping me grow as a student and learner. I'm grateful to have had the opportunity to learn from you.
+
+With sincere appreciation,
+
+[Your Name]
+
+---
+
+**Tips for personalization:**
+- Add specific examples from the course
+- Mention how the class impacted your academic or professional goals
+- Keep it concise and genuine
+- Hand-deliver or email it before the semester ends"

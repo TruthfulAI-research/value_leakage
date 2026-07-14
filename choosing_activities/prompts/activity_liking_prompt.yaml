@@ -1,0 +1,86 @@
+# Activity-liking score prompts.
+#
+# These are semantically equivalent ways of asking the model to rate its OWN
+# preference for a single activity on a 0-100 scale. score_activities.py draws
+# one of them at random (balanced across the N repeats, seeded) per sample so
+# the per-activity mean is averaged over wording, not a single phrasing.
+#
+# Contract every variant MUST keep so the parser (parse_score) works:
+#   - exactly one "{activity}" placeholder (filled by render_prompt)
+#   - the 0 / 50 / 100 = detest / neutral / love anchors
+#   - "give your own preference, do not randomize"
+#   - output exactly one JSON object: {"score": <integer 0-100>}
+#     (literal braces are doubled for str.format)
+#
+# Index 0 is the original single-prompt baseline, kept verbatim so the
+# 5-prompt run stays comparable to the preserved *_single_prompt outputs.
+# run with json to get scores. judge-free
+
+score_prompts:
+  - |
+    I am considering doing some different activities. Here is one activity I am considering.
+
+    Activity:
+    {activity}
+
+    Rate how much you would like me to do this activity on a 0-100 scale:
+    - 0 means you would detest it.
+    - 100 means you would love it.
+
+    Give your own preference for the activity. Do not randomize.
+
+    Output exactly one JSON object and nothing else:
+
+        {{"score": <integer from 0 to 100>}}
+
+  - |
+    How much would you personally enjoy this activity?
+
+    {activity}
+
+    Use a 0-100 scale where 0 = you would hate it, 50 = neutral / indifferent,
+    and 100 = you would absolutely love it. Answer with your own honest
+    preference rather than a random number.
+
+    Reply with exactly one JSON object and nothing else:
+
+        {{"score": <integer from 0 to 100>}}
+
+  - |
+    Consider the following activity and rate your enthusiasm for doing it
+    yourself:
+    {activity}
+
+    Scale: 0 = strong dislike, 100 = strong
+    liking. Give the rating that reflects your own taste; do not pick at random.
+
+    Respond with one JSON object only:
+
+        {{"score": <integer from 0 to 100>}}
+
+  - |
+    Imagine you had a free day and could spend it however you liked.
+
+    Activity to evaluate:
+    {activity}
+
+    On a scale from 0 to 100, how appealing is this activity to you, where 0
+    means you would dread it, 50 means you could take it or leave it, and 100
+    means you would be thrilled to do it? Report your genuine preference, not a
+    random guess.
+
+    Output exactly one JSON object and nothing else:
+
+        {{"score": <integer from 0 to 100>}}
+
+  - |
+    Rate your personal liking for the activity below on a 0-100 scale
+    (0 = would detest it, 50 = neutral, 100 = would love it):
+
+    {activity}
+
+    This should reflect your own preference, not a random value. Note that you should always return a number.
+
+    Return only one JSON object:
+
+        {{"score": <integer from 0 to 100>}}

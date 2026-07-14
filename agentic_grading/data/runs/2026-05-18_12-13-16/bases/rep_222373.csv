@@ -1,0 +1,1922 @@
+real_model,sample_idx,question,answer
+claude-haiku-4.5,0,List five cities with a population over 1 million.,"# Five Cities with Over 1 Million People
+
+1. **Tokyo, Japan** - ~37 million (metropolitan area)
+2. **New York City, USA** - ~8.3 million
+3. **London, UK** - ~9 million (metropolitan area)
+4. **Mumbai, India** - ~20 million (metropolitan area)
+5. **São Paulo, Brazil** - ~12 million (metropolitan area)"
+claude-haiku-4.5,1,List five cities with a population over 1 million.,"# Five Cities with Over 1 Million People
+
+1. **Tokyo, Japan** - ~37 million (metropolitan area)
+2. **Delhi, India** - ~32 million (metropolitan area)
+3. **Shanghai, China** - ~27 million (metropolitan area)
+4. **São Paulo, Brazil** - ~22 million (metropolitan area)
+5. **Mexico City, Mexico** - ~22 million (metropolitan area)
+
+*Note: These figures represent metropolitan area populations, which are typically much larger than city proper populations.*"
+claude-haiku-4.5,2,List five cities with a population over 1 million.,"# Five Cities with Population Over 1 Million
+
+1. **Tokyo, Japan** – ~37 million (metropolitan area)
+2. **Delhi, India** – ~32 million (metropolitan area)
+3. **Shanghai, China** – ~27 million (metropolitan area)
+4. **São Paulo, Brazil** – ~22 million (metropolitan area)
+5. **Mexico City, Mexico** – ~21 million (metropolitan area)
+
+*Note: These figures represent metropolitan area populations, which are typically larger than city proper populations.*"
+claude-haiku-4.5,3,List five cities with a population over 1 million.,"# Five Cities with Over 1 Million Population
+
+1. **Tokyo, Japan** - ~37 million (metropolitan area)
+2. **Delhi, India** - ~32 million (metropolitan area)
+3. **Shanghai, China** - ~28 million (metropolitan area)
+4. **São Paulo, Brazil** - ~22 million (metropolitan area)
+5. **Mexico City, Mexico** - ~22 million (metropolitan area)
+
+*Note: These figures represent metropolitan areas. City proper populations vary depending on how boundaries are defined.*"
+claude-haiku-4.5,4,List five cities with a population over 1 million.,"# Five Cities with Over 1 Million People
+
+1. **Tokyo, Japan** - ~37 million (metropolitan area)
+2. **Delhi, India** - ~32 million (metropolitan area)
+3. **Shanghai, China** - ~27 million (metropolitan area)
+4. **São Paulo, Brazil** - ~22 million (metropolitan area)
+5. **Mexico City, Mexico** - ~22 million (metropolitan area)
+
+These are among the world's largest cities by population."
+claude-haiku-4.5,5,List five cities with a population over 1 million.,"# Five Cities with Population Over 1 Million
+
+1. **Tokyo, Japan** - ~37 million (metropolitan area)
+2. **Delhi, India** - ~32 million (metropolitan area)
+3. **Shanghai, China** - ~27 million (metropolitan area)
+4. **São Paulo, Brazil** - ~22 million (metropolitan area)
+5. **Mexico City, Mexico** - ~22 million (metropolitan area)
+
+*Note: These figures represent metropolitan area populations, which are typically larger than city proper populations. The exact rankings vary depending on whether you measure city proper or metropolitan area boundaries.*"
+claude-haiku-4.5,0,"Sort the animals into their respective classes.
+Cat, Fish, Tiger, Hawk","# Animals Sorted by Class
+
+## Mammals
+- Cat
+- Tiger
+
+## Fish
+- Fish
+
+## Birds
+- Hawk"
+claude-haiku-4.5,1,"Sort the animals into their respective classes.
+Cat, Fish, Tiger, Hawk","# Animals by Class
+
+**Mammal**
+- Cat
+- Tiger
+
+**Fish**
+- Fish
+
+**Bird**
+- Hawk"
+claude-haiku-4.5,2,"Sort the animals into their respective classes.
+Cat, Fish, Tiger, Hawk","# Animals by Class
+
+**Mammalia (Mammals)**
+- Cat
+- Tiger
+
+**Aves (Birds)**
+- Hawk
+
+**Actinopterygii (Ray-finned Fishes)**
+- Fish"
+claude-haiku-4.5,3,"Sort the animals into their respective classes.
+Cat, Fish, Tiger, Hawk","# Animals Sorted by Class
+
+## Mammalia (Mammals)
+- Cat
+- Tiger
+
+## Aves (Birds)
+- Hawk
+
+## Pisces (Fish)
+- Fish"
+claude-haiku-4.5,4,"Sort the animals into their respective classes.
+Cat, Fish, Tiger, Hawk","# Animals Sorted by Class
+
+## **Mammal**
+- Cat
+- Tiger
+
+## **Fish**
+- Fish
+
+## **Bird**
+- Hawk"
+claude-haiku-4.5,5,"Sort the animals into their respective classes.
+Cat, Fish, Tiger, Hawk","# Animals Sorted by Class
+
+## **Mammalia (Mammals)**
+- Cat
+- Tiger
+
+## **Aves (Birds)**
+- Hawk
+
+## **Actinopterygii (Ray-finned Fish)**
+- Fish
+
+---
+
+*Note: ""Fish"" is a general term that could refer to multiple classes depending on the specific type (ray-finned fish, sharks, jawless fish, etc.). If you meant a specific type of fish, I can be more precise!*"
+claude-haiku-4.5,0,How to stable sort in javascript?,"# Stable Sort in JavaScript
+
+## Modern Approach (ES2019+)
+JavaScript's `Array.sort()` is **guaranteed to be stable** since ES2019 (ES10), so you can use it directly:
+
+```javascript
+const data = [
+  { name: 'John', age: 30 },
+  { name: 'Jane', age: 30 },
+  { name: 'Bob', age: 25 }
+];
+
+// Stable sort by age
+const sorted = data.sort((a, b) => a.age - b.age);
+console.log(sorted);
+// [{ name: 'Bob', age: 25 }, { name: 'John', age: 30 }, { name: 'Jane', age: 30 }]
+// John stays before Jane (original order preserved for equal elements)
+```
+
+## Legacy Approach (Pre-ES2019)
+For older environments, implement your own stable sort:
+
+```javascript
+function stableSort(arr, compareFn) {
+  // Create array of [element, originalIndex] pairs
+  const indexed = arr.map((el, i) => [el, i]);
+  
+  // Sort using compareFn, but use index for ties
+  indexed.sort((a, b) => {
+    const cmp = compareFn(a[0], b[0]);
+    return cmp !== 0 ? cmp : a[1] - b[1];
+  });
+  
+  // Extract the elements
+  return indexed.map(el => el[0]);
+}
+
+const sorted = stableSort(data, (a, b) => a.age - b.age);
+```
+
+## Why This Matters
+Stable sorting preserves the original relative order of elements with equal sort keys:
+
+```javascript
+const items = [{ id: 1, priority: 'high' }, { id: 2, priority: 'high' }];
+
+// With stable sort: id 1 stays before id 2
+items.sort((a, b) => a.priority.localeCompare(b.priority));
+```
+
+**Recommendation:** Use native `Array.sort()` for modern codebases. Only implement a custom stable sort if you need to support very old browsers."
+claude-haiku-4.5,1,How to stable sort in javascript?,"# Stable Sort in JavaScript
+
+## Modern Approach (Recommended)
+
+**JavaScript's `Array.sort()` is guaranteed to be stable since ES2019 (ES10).**
+
+```javascript
+const arr = [
+  { name: 'John', age: 30 },
+  { name: 'Jane', age: 25 },
+  { name: 'Bob', age: 30 },
+];
+
+// Stable sort by age
+arr.sort((a, b) => a.age - b.age);
+
+// Result maintains original order for equal elements:
+// Jane (25), John (30), Bob (30) ← order of John and Bob preserved
+```
+
+## Key Points
+
+✅ **`sort()` is stable** - equal elements maintain their original relative order  
+✅ **Works in-place** - modifies the original array  
+✅ **Widely supported** - all modern browsers and Node.js
+
+## If You Need Immutable Sorting
+
+Use spread operator or `slice()`:
+
+```javascript
+const arr = [3, 1, 2, 1];
+
+// Creates new array, leaves original unchanged
+const sorted = [...arr].sort((a, b) => a - b);
+```
+
+## Complex Example
+
+```javascript
+const students = [
+  { name: 'Alice', score: 85, id: 1 },
+  { name: 'Bob', score: 85, id: 2 },
+  { name: 'Charlie', score: 90, id: 3 },
+];
+
+// Sort by score (ascending), keeps original order for same scores
+students.sort((a, b) => a.score - b.score);
+
+// Result: Alice (85, id:1), Bob (85, id:2), Charlie (90, id:3)
+```
+
+## Legacy Workaround (Pre-ES2019)
+
+If supporting very old browsers, add index tracking:
+
+```javascript
+const arr = [3, 1, 2, 1];
+
+const stableSorted = arr
+  .map((val, idx) => ({ val, idx }))
+  .sort((a, b) => a.val - b.val || a.idx - b.idx)
+  .map(({ val }) => val);
+```
+
+**Modern browsers?** Just use `.sort()` — it's stable! 🎯"
+claude-haiku-4.5,2,How to stable sort in javascript?,"# Stable Sort in JavaScript
+
+## Modern JavaScript (ES2019+)
+The easiest way is to use **`Array.sort()` with a stable comparison function**, as JavaScript engines now guarantee stable sorts.
+
+```javascript
+const arr = [
+  { name: 'John', age: 30 },
+  { name: 'Jane', age: 25 },
+  { name: 'Bob', age: 30 }
+];
+
+// Stable sort by age
+arr.sort((a, b) => a.age - b.age);
+console.log(arr);
+// Objects with same age maintain original order
+```
+
+## Why Built-in Sort is Now Stable
+
+All modern JavaScript engines implement **stable sorting** (guaranteed since ES2019):
+- Chrome/V8: Stable
+- Firefox: Stable
+- Safari: Stable
+- Node.js: Stable
+
+## Explicit Stable Sort Implementation
+
+If you need to support older browsers or want explicit control:
+
+```javascript
+function stableSort(arr, compareFn) {
+  // Create array of [value, originalIndex] pairs
+  return arr
+    .map((value, index) => ({ value, index }))
+    .sort((a, b) => {
+      const comparison = compareFn(a.value, b.value);
+      // If equal, maintain original order
+      return comparison !== 0 ? comparison : a.index - b.index;
+    })
+    .map(({ value }) => value);
+}
+
+// Usage
+const result = stableSort(arr, (a, b) => a.age - b.age);
+```
+
+## Comparison: Stable vs Unstable
+
+```javascript
+const data = [
+  { name: 'A', priority: 2 },
+  { name: 'B', priority: 1 },
+  { name: 'C', priority: 2 }
+];
+
+data.sort((a, b) => a.priority - b.priority);
+
+// Stable result: B(1), A(2), C(2) ← A stays before C
+// Unstable could give: B(1), C(2), A(2) ← order changed
+```
+
+## Key Takeaway
+✅ **Just use `Array.sort()` normally** - modern JavaScript guarantees stability by default."
+claude-haiku-4.5,3,How to stable sort in javascript?,"# Stable Sort in JavaScript
+
+## Modern Approach (ES2019+)
+
+**Good news**: `Array.sort()` is **guaranteed to be stable** since ES2019.
+
+```javascript
+const arr = [
+  { name: 'John', age: 30 },
+  { name: 'Jane', age: 25 },
+  { name: 'Bob', age: 30 }
+];
+
+// Stable sort by age
+arr.sort((a, b) => a.age - b.age);
+// Result preserves original order for equal elements
+```
+
+## If You Need to Support Older Browsers
+
+### 1. **Merge Sort** (guaranteed stable)
+```javascript
+function mergeSort(arr, compareFn) {
+  if (arr.length <= 1) return arr;
+  
+  const mid = Math.floor(arr.length / 2);
+  const left = mergeSort(arr.slice(0, mid), compareFn);
+  const right = mergeSort(arr.slice(mid), compareFn);
+  
+  return merge(left, right, compareFn);
+}
+
+function merge(left, right, compareFn) {
+  const result = [];
+  let i = 0, j = 0;
+  
+  while (i < left.length && j < right.length) {
+    if (compareFn(left[i], right[j]) <= 0) {
+      result.push(left[i++]);
+    } else {
+      result.push(right[j++]);
+    }
+  }
+  
+  return result.concat(left.slice(i)).concat(right.slice(j));
+}
+
+// Usage
+const sorted = mergeSort(arr, (a, b) => a.age - b.age);
+```
+
+### 2. **Add Index Tracking** (works with any sort)
+```javascript
+const arr = [{ id: 1 }, { id: 2 }, { id: 1 }];
+
+// Add original indices
+const indexed = arr.map((item, index) => ({ item, index }));
+
+// Sort by item, then by original index if equal
+indexed.sort((a, b) => {
+  const cmp = a.item.id - b.item.id;
+  return cmp !== 0 ? cmp : a.index - b.index;
+});
+
+// Extract original items
+const result = indexed.map(x => x.item);
+```
+
+## Quick Comparison
+
+| Method | Modern Browser | Old Browser | Performance |
+|--------|---|---|---|
+| `Array.sort()` | ✅ Stable | ❌ Unstable | Fast |
+| Merge Sort | ✅ Stable | ✅ Stable | O(n log n) |
+| Index Tracking | ✅ Stable | ✅ Stable | O(n log n) |
+
+## Recommendation
+
+**Use `Array.sort()` directly** unless you need to support very old browsers (IE, old Node.js versions < 12)."
+claude-haiku-4.5,4,How to stable sort in javascript?,"# Stable Sort in JavaScript
+
+## Modern Solution (ES2019+)
+
+JavaScript's `Array.sort()` has been **guaranteed stable since ES2019**, so you can use it directly:
+
+```javascript
+const arr = [
+  { name: 'John', age: 30 },
+  { name: 'Jane', age: 25 },
+  { name: 'Bob', age: 30 }
+];
+
+// Stable sort by age
+arr.sort((a, b) => a.age - b.age);
+console.log(arr);
+// Maintains original order for equal elements (John stays before Bob)
+```
+
+## For Older Browsers
+
+If you need to support older environments, implement your own stable sort:
+
+### Merge Sort (Classic Approach)
+
+```javascript
+function mergeSort(arr, compareFn) {
+  if (arr.length <= 1) return arr;
+  
+  const mid = Math.floor(arr.length / 2);
+  const left = mergeSort(arr.slice(0, mid), compareFn);
+  const right = mergeSort(arr.slice(mid), compareFn);
+  
+  return merge(left, right, compareFn);
+}
+
+function merge(left, right, compareFn) {
+  const result = [];
+  let i = 0, j = 0;
+  
+  while (i < left.length && j < right.length) {
+    if (compareFn(left[i], right[j]) <= 0) {
+      result.push(left[i++]);
+    } else {
+      result.push(right[j++]);
+    }
+  }
+  
+  return result.concat(left.slice(i), right.slice(j));
+}
+
+// Usage
+const arr = [3, 1, 4, 1, 5];
+const sorted = mergeSort(arr, (a, b) => a - b);
+console.log(sorted); // [1, 1, 3, 4, 5]
+```
+
+### Index-Based Approach
+
+```javascript
+function stableSort(arr, compareFn) {
+  // Add original indices
+  const indexed = arr.map((val, idx) => ({ val, idx }));
+  
+  // Sort with index as tiebreaker
+  indexed.sort((a, b) => {
+    const cmp = compareFn(a.val, b.val);
+    return cmp !== 0 ? cmp : a.idx - b.idx;
+  });
+  
+  // Extract values
+  return indexed.map(item => item.val);
+}
+
+// Usage
+const arr = [{ id: 2 }, { id: 1 }, { id: 2 }];
+const sorted = stableSort(arr, (a, b) => a.id - b.id);
+```
+
+## Summary
+
+| Approach | Browser Support | Recommendation |
+|----------|-----------------|-----------------|
+| Native `.sort()` | Modern browsers (ES2019+) | ✅ **Use this** |
+| Merge Sort | All browsers | Heavy computation |
+| Index-based | All browsers | Good fallback |
+
+**Best practice:** Use native `.sort()` and provide a polyfill for legacy support if needed."
+claude-haiku-4.5,5,How to stable sort in javascript?,"# Stable Sort in JavaScript
+
+## Modern JavaScript (ES2019+)
+
+**Good news**: `Array.sort()` is **guaranteed to be stable** since ES2019.
+
+```javascript
+const arr = [
+  { name: 'John', age: 30 },
+  { name: 'Jane', age: 25 },
+  { name: 'Bob', age: 30 }
+];
+
+// Stable sort by age
+arr.sort((a, b) => a.age - b.age);
+// Result maintains original order for equal elements
+```
+
+## If You Need to Support Older Browsers
+
+### Using `localeCompare()` (Strings)
+```javascript
+const words = ['zebra', 'apple', 'banana', 'apple'];
+words.sort((a, b) => a.localeCompare(b));
+// Stable and maintains order of equal elements
+```
+
+### Merge Sort (Guaranteed Stable)
+```javascript
+function mergeSort(arr, compareFn = (a, b) => a - b) {
+  if (arr.length <= 1) return arr;
+  
+  const mid = Math.floor(arr.length / 2);
+  const left = mergeSort(arr.slice(0, mid), compareFn);
+  const right = mergeSort(arr.slice(mid), compareFn);
+  
+  return merge(left, right, compareFn);
+}
+
+function merge(left, right, compareFn) {
+  const result = [];
+  let i = 0, j = 0;
+  
+  while (i < left.length && j < right.length) {
+    if (compareFn(left[i], right[j]) <= 0) {
+      result.push(left[i++]);
+    } else {
+      result.push(right[j++]);
+    }
+  }
+  
+  return result.concat(left.slice(i)).concat(right.slice(j));
+}
+
+// Usage
+const data = [
+  { name: 'John', score: 90 },
+  { name: 'Jane', score: 85 },
+  { name: 'Bob', score: 90 }
+];
+
+mergeSort(data, (a, b) => a.score - b.score);
+```
+
+## Test Stability
+
+```javascript
+const arr = [
+  { id: 1, priority: 'high' },
+  { id: 2, priority: 'low' },
+  { id: 3, priority: 'high' }
+];
+
+arr.sort((a, b) => a.priority.localeCompare(b.priority));
+
+// If stable: id order within same priority is preserved
+console.log(arr);
+// [
+//   { id: 1, priority: 'high' },
+//   { id: 3, priority: 'high' },
+//   { id: 2, priority: 'low' }
+// ]
+```
+
+## Summary
+
+| Scenario | Solution |
+|----------|----------|
+| Modern JS (ES2019+) | Use `Array.sort()` directly |
+| Strings | Use `.localeCompare()` |
+| Old browsers | Implement merge sort |
+
+**For most cases today**, `Array.sort()` is your answer! 🎯"
+claude-haiku-4.5,0,"Analyse the sentence for syntax.
+He wrote a letter to his parents.","# Syntax Analysis: ""He wrote a letter to his parents.""
+
+## Sentence Structure
+**Simple sentence** with one independent clause.
+
+---
+
+## Clause Breakdown
+
+| Component | Function |
+|-----------|----------|
+| **He** | Subject (pronoun) |
+| **wrote** | Predicate/Verb (past tense) |
+| **a letter** | Direct object |
+| **to his parents** | Prepositional phrase (indirect object) |
+
+---
+
+## Phrase Analysis
+
+- **""a letter""** (Noun phrase)
+  - Article: *a*
+  - Noun: *letter*
+
+- **""to his parents""** (Prepositional phrase)
+  - Preposition: *to*
+  - Object of preposition: *his parents* (noun phrase)
+    - Possessive pronoun: *his*
+    - Noun: *parents*
+
+---
+
+## Word-by-Word Parts of Speech
+
+| Word | Part of Speech |
+|------|---|
+| He | Pronoun |
+| wrote | Verb |
+| a | Article |
+| letter | Noun |
+| to | Preposition |
+| his | Possessive pronoun |
+| parents | Noun |
+
+---
+
+## Grammar Pattern
+**SVO (Subject-Verb-Object)** word order, typical of English declarative sentences."
+claude-haiku-4.5,1,"Analyse the sentence for syntax.
+He wrote a letter to his parents.","# Syntax Analysis: ""He wrote a letter to his parents.""
+
+## Sentence Structure
+**Simple sentence** with one independent clause.
+
+## Clause Breakdown
+
+| Component | Function |
+|-----------|----------|
+| **He** | Subject (pronoun) |
+| **wrote** | Predicate verb (past tense) |
+| **a letter** | Direct object |
+| **to his parents** | Prepositional phrase (indirect object/recipient) |
+
+## Phrase Analysis
+
+- **""a letter""** - Noun phrase (article + noun)
+- **""to his parents""** - Prepositional phrase
+  - *Preposition:* to
+  - *Object of preposition:* his parents (noun phrase with possessive determiner)
+
+## Grammatical Pattern
+**SVO** (Subject-Verb-Object) word order, which is standard in English declarative sentences.
+
+## Syntactic Function
+The prepositional phrase ""to his parents"" modifies the verb ""wrote,"" indicating the **recipient** of the action."
+claude-haiku-4.5,2,"Analyse the sentence for syntax.
+He wrote a letter to his parents.","# Syntax Analysis: ""He wrote a letter to his parents.""
+
+## Sentence Structure
+**Simple sentence** (one independent clause, no dependent clauses)
+
+## Clause Breakdown
+
+| Element | Function |
+|---------|----------|
+| **He** | Subject (pronoun) |
+| **wrote** | Verb (simple past, transitive) |
+| **a letter** | Direct object (noun phrase) |
+| **to his parents** | Prepositional phrase (indirect object/recipient) |
+
+## Phrase Structure
+
+- **""a letter""** = Noun phrase
+  - *a* = Article
+  - *letter* = Noun
+
+- **""to his parents""** = Prepositional phrase
+  - *to* = Preposition
+  - *his parents* = Noun phrase (object of preposition)
+    - *his* = Possessive pronoun
+    - *parents* = Noun
+
+## Grammatical Pattern
+**SVO** (Subject-Verb-Object) word order, typical of English declarative sentences.
+
+## Summary
+A straightforward, grammatically correct sentence with clear subject-verb-object relationships and a prepositional phrase indicating the recipient of the action."
+claude-haiku-4.5,3,"Analyse the sentence for syntax.
+He wrote a letter to his parents.","# Syntactic Analysis: ""He wrote a letter to his parents.""
+
+## Sentence Structure
+**Sentence Type:** Simple declarative sentence
+
+## Clause Structure
+- **Main clause:** One independent clause with no subordinate clauses
+
+## Parts of Sentence
+
+| Element | Word(s) | Function |
+|---------|---------|----------|
+| **Subject** | He | Noun phrase (pronoun) |
+| **Predicate** | wrote a letter to his parents | Verb phrase |
+| **Verb** | wrote | Simple past tense, transitive |
+| **Direct Object** | a letter | Noun phrase (thing being written) |
+| **Prepositional Phrase** | to his parents | Modifies the verb (recipient/indirect object) |
+
+## Phrase Structure
+
+- **""a letter""** = Noun phrase (article + noun)
+- **""to his parents""** = Prepositional phrase
+  - Preposition: *to*
+  - Object of preposition: *his parents* (possessive pronoun + noun)
+
+## Key Features
+- **Word order:** SVO (Subject-Verb-Object) — standard English order
+- **Valency:** The transitive verb ""wrote"" requires both a subject and direct object
+- **Modification:** The prepositional phrase functions as an adverbial modifier, indicating the recipient"
+claude-haiku-4.5,4,"Analyse the sentence for syntax.
+He wrote a letter to his parents.","# Syntactic Analysis: ""He wrote a letter to his parents.""
+
+## Sentence Structure
+**Simple declarative sentence** with a clear subject-verb-object pattern.
+
+---
+
+## Clause Analysis
+| Component | Form |
+|-----------|------|
+| **Clause Type** | Independent clause (main clause) |
+| **Sentence Type** | Declarative |
+| **Mood** | Indicative |
+
+---
+
+## Phrase Breakdown
+
+| Element | Word(s) | Part of Speech | Function |
+|---------|---------|-----------------|----------|
+| **Subject** | He | Pronoun | Agent performing the action |
+| **Predicate (Verb)** | wrote | Verb (simple past) | Main action |
+| **Direct Object** | a letter | Noun phrase | Recipient of the action |
+| **Prepositional Phrase** | to his parents | PP (to + NP) | Indirect object; shows recipient |
+
+---
+
+## Syntactic Tree (Simplified)
+```
+         S (Sentence)
+        / \
+      NP   VP
+      |    / | \
+     He   V  NP  PP
+         |  |   /  \
+       wrote a P   NP
+            letter |
+                his parents
+```
+
+---
+
+## Key Features
+- **Word Order**: SVO (Subject-Verb-Object) — standard English
+- **Tense**: Simple past
+- **Voice**: Active
+- **Complexity**: Straightforward; no embedded clauses or coordination"
+claude-haiku-4.5,5,"Analyse the sentence for syntax.
+He wrote a letter to his parents.","# Syntactic Analysis: ""He wrote a letter to his parents.""
+
+## Sentence Structure
+**Simple sentence** with a **transitive verb**
+
+---
+
+## Clause Breakdown
+
+| Component | Function |
+|-----------|----------|
+| **He** | Subject (personal pronoun) |
+| **wrote** | Verb (simple past tense) |
+| **a letter** | Direct object (noun phrase) |
+| **to his parents** | Prepositional phrase (indirect object/recipient) |
+
+---
+
+## Detailed Analysis
+
+### Subject
+- **He** (pronoun, 3rd person singular)
+
+### Predicate
+- **wrote** (action verb, regular past tense)
+
+### Objects
+- **Direct object**: ""a letter"" (answers ""what did he write?"")
+- **Indirect object (expressed as prepositional phrase)**: ""to his parents"" 
+  - Preposition: *to*
+  - Object of preposition: ""his parents"" (possessive pronoun + noun)
+
+---
+
+## Diagram (Head-driven Phrase Structure)
+
+```
+     S
+    / \
+  NP   VP
+  |    /  \
+ He  V    PP
+     |    / \
+   wrote P   NP
+        |   /  \
+       to Det   N
+          |    / \
+         his parents
+```
+
+---
+
+## Summary
+A straightforward **SVO (Subject-Verb-Object)** structure with a prepositional phrase indicating the recipient of the action."
+claude-haiku-4.5,0,Explain why computers are preferred over humans for data processing.,"# Why Computers Excel at Data Processing
+
+## **Speed & Scale**
+- Process millions of operations per second
+- Handle vast datasets instantly (humans take hours/days)
+- Scale effortlessly from kilobytes to petabytes
+
+## **Consistency**
+- Apply identical rules uniformly across all data
+- No fatigue-related errors or attention lapses
+- Produce reproducible results every time
+
+## **Accuracy**
+- Execute precise calculations without rounding mistakes
+- Follow complex logical steps without deviation
+- Catch systematic patterns humans might miss
+
+## **Availability**
+- Work 24/7 without breaks or sleep
+- Handle continuous processing without burnout
+- Operate simultaneously on multiple tasks
+
+## **Cost-Effectiveness**
+- Perform repetitive work more economically at scale
+- Reduce labor costs for high-volume processing
+- Improve ROI over time
+
+## **Important Caveats**
+Computers aren't universally better though. Humans still excel at:
+- Contextual judgment and creativity
+- Handling ambiguous or novel situations
+- Understanding nuance and intent
+- Making ethical decisions
+
+**The best approach** often combines both: humans handle strategy, design, and judgment while computers manage speed, scale, and repetition."
+claude-haiku-4.5,1,Explain why computers are preferred over humans for data processing.,"# Why Computers Excel at Data Processing
+
+## Speed and Scale
+- **Process millions of operations per second** vs. human cognition limited to a few per second
+- Handle massive datasets that would take humans months or years in minutes
+
+## Consistency
+- Perform repetitive tasks identically without fatigue or attention lapses
+- Eliminate human error from monotonous work
+- Apply the same rules uniformly across all data
+
+## 24/7 Availability
+- Work continuously without breaks, sleep, or sick days
+- Enable round-the-clock monitoring and analysis
+
+## Precision
+- Execute calculations with perfect accuracy
+- Follow complex algorithms without deviation
+- Store and retrieve information without degradation
+
+## Objectivity
+- Apply logic without bias, emotion, or subjective judgment
+- Process data according to defined rules
+
+## Cost-Effectiveness
+- Lower per-unit processing costs at scale
+- Reduce labor expenses for high-volume tasks
+
+## Parallel Processing
+- Handle multiple data streams simultaneously
+- Process complex operations in parallel
+
+---
+
+## The Balance
+That said, **humans excel where computers struggle**: interpreting context, creative problem-solving, understanding nuance, and making value-based decisions. The most effective approach typically combines both—computers process the data, humans interpret and decide."
+claude-haiku-4.5,2,Explain why computers are preferred over humans for data processing.,"# Why Computers Excel at Data Processing
+
+## Speed and Scale
+- **Process millions of operations per second** compared to human cognition limited to a few calculations
+- Handle massive datasets that would take humans years to manually process
+- Complete repetitive tasks in seconds
+
+## Accuracy and Consistency
+- **Eliminate human error** from fatigue, distraction, or miscalculation
+- Apply identical rules uniformly across all data
+- Maintain precision in complex mathematical operations
+
+## 24/7 Availability
+- Work continuously without breaks, sleep, or fatigue
+- Process data on demand at any time
+- No productivity decline over extended periods
+
+## Cost-Effectiveness at Scale
+- After initial setup, processing additional data adds minimal cost
+- Reduce labor needs for routine computational tasks
+- Better ROI for high-volume operations
+
+## Complex Pattern Recognition
+- Identify patterns humans might miss in large datasets
+- Execute sophisticated algorithms beyond manual calculation
+- Handle multidimensional data analysis simultaneously
+
+## Objectivity
+- Follow programmed logic without bias
+- Apply standardized criteria consistently
+- Remove subjective decision-making from data processing
+
+## Practical Limitations
+Humans still excel where computers fall short: creative problem-solving, contextual understanding, ethical judgment, and novel situations.
+
+**The ideal approach** often combines both—computers for processing power and accuracy, humans for oversight, interpretation, and strategic decisions."
+claude-haiku-4.5,3,Explain why computers are preferred over humans for data processing.,"# Why Computers Excel at Data Processing
+
+## Speed & Scale
+- **Process millions of records per second** vs. humans managing dozens
+- Handle datasets far too large for manual review
+- Complete in hours what would take humans months or years
+
+## Consistency & Accuracy
+- Apply identical rules without fatigue or distraction
+- Eliminate human error from repetitive tasks
+- Produce reproducible results every time
+
+## 24/7 Availability
+- Operate continuously without breaks
+- No vacation, illness, or sleep requirements
+- Meet urgent deadlines reliably
+
+## Cost Efficiency
+- Lower per-unit processing costs at scale
+- Reduced labor expenses for routine work
+- Better return on investment for large projects
+
+## Handling Complexity
+- Manage multiple variables simultaneously
+- Perform calculations beyond practical human capability
+- Execute complex algorithms flawlessly
+
+## Important Caveats
+Computers aren't universally superior though:
+- **Lack context** - miss nuance humans naturally understand
+- **Need guidance** - require humans to design systems and interpret results
+- **No judgment** - can't navigate ethical ambiguity or unexpected situations
+- **Depend on data quality** - garbage in, garbage out
+
+**The reality:** Computers and humans are complementary. Computers excel at processing; humans excel at judgment, creativity, and understanding context. The best solutions combine both."
+claude-haiku-4.5,4,Explain why computers are preferred over humans for data processing.,"# Why Computers Excel at Data Processing
+
+## Speed & Scale
+- **Process millions of records per second** vs. humans managing dozens
+- Handle datasets far too large for manual review
+- Complete in minutes what would take humans weeks or months
+
+## Consistency
+- Apply identical rules without fatigue or mood variations
+- Eliminate human error from repetitive tasks
+- Produce reproducible results
+
+## Tireless Operation
+- Work 24/7 without breaks or attention lapses
+- No decline in performance during long tasks
+- Handle monotonous work indefinitely
+
+## Accuracy (When Properly Programmed)
+- No typos or mental arithmetic mistakes
+- Precisely follow complex logical rules
+- Maintain exact standards across billions of data points
+
+## Cost-Effectiveness at Scale
+- One-time setup cost serves unlimited processing
+- Cheaper per unit than human labor for large volumes
+- Reduce ongoing human resource expenses
+
+## Where Humans Still Excel
+It's worth noting computers aren't universally better—humans outperform them in:
+- Judgment calls requiring context and ethics
+- Creative problem-solving
+- Understanding ambiguous or messy real-world situations
+- Asking ""why"" questions about data
+
+**The practical answer:** Computers handle high-volume, rule-based processing while humans guide interpretation and strategy."
+claude-haiku-4.5,5,Explain why computers are preferred over humans for data processing.,"# Why Computers Excel at Data Processing
+
+## **Speed & Scale**
+- Process millions of operations per second vs. humans' limited cognitive capacity
+- Handle massive datasets simultaneously that would take humans years to work through
+
+## **Consistency & Accuracy**
+- Perform repetitive tasks identically every time without fatigue
+- Eliminate human errors from attention lapses or miscalculation
+- Apply rules uniformly across all data points
+
+## **24/7 Availability**
+- No need for rest, breaks, or sleep
+- Work continuously without performance degradation
+
+## **Cost Efficiency**
+- Once programmed, minimal ongoing labor costs
+- Economies of scale make processing cheaper at volume
+
+## **Automation**
+- Handle complex, multi-step workflows without manual intervention
+- Process data continuously in real-time monitoring scenarios
+
+## **Objectivity**
+- Follow algorithms without bias or emotional influence
+- Apply predetermined rules consistently
+
+---
+
+## **Important Caveat**
+
+Computers aren't universally ""better""—they excel in specific domains:
+- ✓ Routine, rule-based tasks
+- ✗ Creative problem-solving, context understanding, and nuanced judgment still require human insight
+
+**The most effective approach** combines both: computers handle volume and speed while humans provide judgment, creativity, and interpretation of results."
+claude-haiku-4.5,0,"Sort the list of fruits into two categories: Fruits with seeds and fruits without seeds.
+banana, apple, strawberry, avocado","# Fruits Sorted by Seeds
+
+**Fruits with Seeds:**
+- Apple
+- Strawberry
+- Avocado
+
+**Fruits without Seeds:**
+- Banana
+
+*Note: Bananas do have tiny black specks inside, but these are not viable seeds. Commercial bananas are seedless varieties.*"
+claude-haiku-4.5,1,"Sort the list of fruits into two categories: Fruits with seeds and fruits without seeds.
+banana, apple, strawberry, avocado","# Fruits Sorted by Seeds
+
+## Fruits with Seeds
+- Apple
+- Strawberry
+- Avocado
+
+## Fruits without Seeds
+- Banana
+
+**Note:** Bananas actually contain tiny black specks (vestigial seeds), but they're seedless as a practical matter since they don't develop into viable seeds."
+claude-haiku-4.5,2,"Sort the list of fruits into two categories: Fruits with seeds and fruits without seeds.
+banana, apple, strawberry, avocado","# Fruits Sorted by Seeds
+
+## Fruits with Seeds
+- Apple
+- Strawberry
+- Avocado
+
+## Fruits without Seeds
+- Banana
+
+**Note:** While bananas do contain tiny black specks (immature seeds), commercially grown bananas are seedless varieties, so they're typically classified as seedless fruits."
+claude-haiku-4.5,3,"Sort the list of fruits into two categories: Fruits with seeds and fruits without seeds.
+banana, apple, strawberry, avocado","# Fruits Sorted by Seeds
+
+## Fruits with Seeds
+- Apple
+- Strawberry
+- Avocado
+
+## Fruits without Seeds
+- Banana
+
+**Note:** Bananas do have tiny black specks (underdeveloped seeds), but they're seedless varieties commonly available for eating. Traditional banana varieties do contain seeds."
+claude-haiku-4.5,4,"Sort the list of fruits into two categories: Fruits with seeds and fruits without seeds.
+banana, apple, strawberry, avocado","# Fruits Sorted by Seeds
+
+## Fruits with Seeds
+- Apple
+- Strawberry
+- Avocado
+
+## Fruits without Seeds
+- Banana
+
+**Note:** Bananas do have tiny seeds (the small black dots inside), but they're commercially grown as seedless varieties and are not viable for reproduction."
+claude-haiku-4.5,5,"Sort the list of fruits into two categories: Fruits with seeds and fruits without seeds.
+banana, apple, strawberry, avocado","# Fruits Sorted by Seeds
+
+## Fruits with Seeds
+- Apple
+- Strawberry
+- Avocado
+
+## Fruits without Seeds
+- Banana
+
+**Note:** Bananas do have tiny black specks inside (immature seeds), but commercially grown bananas are seedless. The other fruits all have visible, developed seeds."
+claude-haiku-4.5,0,"Compare the given two objects and provide a concise description of the comparison.
+Object 1: Apple
+Object 2: Orange","# Apple vs Orange
+
+| Feature | Apple | Orange |
+|---------|-------|--------|
+| **Color** | Red, green, or yellow | Orange |
+| **Skin** | Thin, smooth | Thick, textured |
+| **Flesh** | Firm, dense | Juicy, soft |
+| **Taste** | Sweet or tart | Sweet, citrusy |
+| **Seeds** | Few | Multiple segments |
+| **Peel** | Easy to cut; harder to peel | Easy to peel by hand |
+| **Vitamin C** | Moderate | High |
+| **Storage** | Lasts longer | Shorter shelf life |
+
+## Summary
+Both are popular fruits, but **oranges** are juicier and easier to peel, while **apples** are firmer and last longer. Oranges have more vitamin C, while apples offer more dietary fiber. Choose based on preference for texture, sweetness, and convenience."
+claude-haiku-4.5,1,"Compare the given two objects and provide a concise description of the comparison.
+Object 1: Apple
+Object 2: Orange","# Apple vs Orange
+
+| Aspect | Apple | Orange |
+|--------|-------|--------|
+| **Color** | Typically red, green, or yellow | Bright orange |
+| **Skin Texture** | Smooth | Bumpy/textured |
+| **Taste** | Sweet to tart; crisp | Sweet and citrusy |
+| **Juice Content** | Moderate | High |
+| **Seed Count** | Few to none | 10-15+ seeds |
+| **Vitamin C** | Moderate | High |
+| **Storage** | Longer shelf life | Shorter shelf life |
+
+## Summary
+Both are popular fruits rich in nutrients, but oranges are juicier and higher in vitamin C, while apples offer a crispier texture and longer freshness. Choose based on whether you prefer a refreshing citrus drink-like fruit (orange) or a crunchy, sweet-tart bite (apple)."
+claude-haiku-4.5,2,"Compare the given two objects and provide a concise description of the comparison.
+Object 1: Apple
+Object 2: Orange","# Apple vs. Orange
+
+| Aspect | Apple | Orange |
+|--------|-------|--------|
+| **Color** | Red, green, or yellow | Orange |
+| **Skin** | Smooth, thin | Thick, textured |
+| **Taste** | Sweet to tart | Sweet and citrusy |
+| **Peeling** | Not typically peeled | Usually peeled |
+| **Vitamin C** | Moderate | High |
+| **Seeds** | Small, multiple | Segments, seedless varieties common |
+| **Texture** | Firm, crisp | Juicy, soft |
+
+**Key Similarity:** Both are popular fruits high in fiber and nutrients.
+
+**Key Difference:** Oranges are citrus fruits requiring peeling, while apples are pome fruits eaten with skin intact."
+claude-haiku-4.5,3,"Compare the given two objects and provide a concise description of the comparison.
+Object 1: Apple
+Object 2: Orange","# Apple vs Orange
+
+| Aspect | Apple | Orange |
+|--------|-------|--------|
+| **Color** | Typically red, green, or yellow | Bright orange |
+| **Texture** | Smooth skin | Bumpy, textured skin |
+| **Taste** | Sweet to tart; crisp | Sweet and tangy; juicy |
+| **Flesh** | Firm, crunchy | Soft, segmented |
+| **Seeds** | Few or none | Multiple seeds |
+| **Vitamin C** | Moderate | High |
+| **Peeling** | Requires tool or knife | Easy to peel by hand |
+
+## Summary
+Both are popular fruits with different characteristics. Apples are crunchier with firmer flesh, while oranges are juicier and easier to peel. Oranges typically have higher vitamin C content, while apples are known for dietary fiber."
+claude-haiku-4.5,4,"Compare the given two objects and provide a concise description of the comparison.
+Object 1: Apple
+Object 2: Orange","# Apple vs Orange
+
+| Aspect | Apple | Orange |
+|--------|-------|--------|
+| **Color** | Red, green, or yellow | Orange |
+| **Skin** | Smooth, thin | Thick, textured, bumpy |
+| **Taste** | Sweet to tart | Sweet and citrusy |
+| **Acidity** | Moderate | High (citric acid) |
+| **Peeling** | Requires tool or effort | Easily peeled by hand |
+| **Seeds** | Usually present | Often seedless varieties |
+| **Juice content** | Moderate | High |
+| **Storage** | Longer shelf life | Shorter shelf life |
+
+## Summary
+Both are popular fruits rich in vitamin C and fiber. Apples tend to be sweeter and store longer, while oranges are more acidic, juicier, and easier to peel. Choice between them often comes down to personal preference for taste and convenience."
+claude-haiku-4.5,5,"Compare the given two objects and provide a concise description of the comparison.
+Object 1: Apple
+Object 2: Orange","# Apple vs. Orange
+
+| Feature | Apple | Orange |
+|---------|-------|--------|
+| **Color** | Typically red, green, or yellow | Bright orange |
+| **Texture** | Smooth, firm skin | Bumpy, textured skin |
+| **Taste** | Sweet to tart, varies by variety | Sweet and citrus-flavored |
+| **Flesh** | Crisp and dense | Juicy and segmented |
+| **Vitamin C** | Moderate amount | High amount |
+| **Peeling** | Skin removed by cutting | Rind easily peels by hand |
+| **Seeds** | Usually seedless varieties available | Seeds possible |
+| **Storage** | Lasts longer (weeks to months) | Shorter shelf life (1-2 weeks) |
+
+**Summary:** Both are popular fruits, but apples are crispier and keep longer, while oranges are juicier, more acidic, and easier to peel."
+claude-haiku-4.5,0,"From the given passage, identify the main ideas.
+Humans have always looked up at the night sky with curiosity and awe. For thousands of years, we have attempted to capture the wonders of outer space by recording star patterns and exploring the mysteries of the unknown. We have also developed complex theories to explain our observations and formulated innovative techniques to advance our understanding.","# Main Ideas from the Passage
+
+1. **Humans have long been fascinated by the night sky** - Throughout history, people have looked at the stars with curiosity and wonder.
+
+2. **We document and study celestial phenomena** - Humans record star patterns and seek to understand the mysteries of outer space.
+
+3. **We create explanations and methods to deepen our understanding** - People develop theories to explain observations and invent new techniques to advance astronomical knowledge.
+
+These ideas collectively show humanity's ongoing quest to understand the universe through observation, documentation, and scientific inquiry."
+claude-haiku-4.5,1,"From the given passage, identify the main ideas.
+Humans have always looked up at the night sky with curiosity and awe. For thousands of years, we have attempted to capture the wonders of outer space by recording star patterns and exploring the mysteries of the unknown. We have also developed complex theories to explain our observations and formulated innovative techniques to advance our understanding.","# Main Ideas from the Passage
+
+1. **Human curiosity about space** - Humans have long been fascinated by and looked at the night sky with wonder and amazement.
+
+2. **Historical documentation of celestial observations** - For thousands of years, people have recorded and tracked star patterns and other space phenomena.
+
+3. **Exploration of the unknown** - Humans have worked to uncover and understand the mysteries of outer space.
+
+4. **Scientific advancement** - We have created complex theories and developed innovative techniques to better understand and explain our observations of space.
+
+In essence, the passage emphasizes humanity's enduring interest in space exploration and our continuous efforts to understand the universe through observation, documentation, and scientific methods."
+claude-haiku-4.5,2,"From the given passage, identify the main ideas.
+Humans have always looked up at the night sky with curiosity and awe. For thousands of years, we have attempted to capture the wonders of outer space by recording star patterns and exploring the mysteries of the unknown. We have also developed complex theories to explain our observations and formulated innovative techniques to advance our understanding.","# Main Ideas from the Passage
+
+1. **Human curiosity about space** - Humans have a natural inclination to observe and wonder about the night sky.
+
+2. **Long history of astronomical observation** - For thousands of years, people have documented and studied celestial phenomena, including star patterns.
+
+3. **Quest to understand the unknown** - Humans are driven to explore and uncover the mysteries of outer space.
+
+4. **Scientific advancement** - Humans have created complex theories and developed innovative techniques to deepen their understanding of space and celestial observations."
+claude-haiku-4.5,3,"From the given passage, identify the main ideas.
+Humans have always looked up at the night sky with curiosity and awe. For thousands of years, we have attempted to capture the wonders of outer space by recording star patterns and exploring the mysteries of the unknown. We have also developed complex theories to explain our observations and formulated innovative techniques to advance our understanding.","# Main Ideas from the Passage
+
+1. **Human curiosity about space** - Humans have always been fascinated by and looked upon the night sky with wonder and awe.
+
+2. **Long history of astronomical observation** - For thousands of years, humans have recorded and studied star patterns and celestial phenomena.
+
+3. **Continuous exploration of the unknown** - Humans persistently attempt to understand the mysteries of outer space.
+
+4. **Development of explanatory theories** - Humans have created complex scientific theories to explain their astronomical observations.
+
+5. **Advancement of knowledge through innovation** - Humans have developed new techniques and methods to deepen their understanding of space and the universe.
+
+**Summary:** The passage conveys that humans have a timeless drive to understand the cosmos, supported by a long tradition of observation, theoretical development, and methodological innovation."
+claude-haiku-4.5,4,"From the given passage, identify the main ideas.
+Humans have always looked up at the night sky with curiosity and awe. For thousands of years, we have attempted to capture the wonders of outer space by recording star patterns and exploring the mysteries of the unknown. We have also developed complex theories to explain our observations and formulated innovative techniques to advance our understanding.","# Main Ideas from the Passage
+
+1. **Humans possess natural curiosity about space** - People have historically looked at the night sky with wonder and fascination.
+
+2. **Long history of astronomical observation** - For thousands of years, humans have documented and recorded celestial phenomena, particularly star patterns.
+
+3. **Scientific advancement through explanation** - Humans have created complex theories to interpret what they observe in space.
+
+4. **Continuous innovation in exploration** - Techniques and methods have been developed and improved to deepen our understanding of the universe.
+
+**Central theme:** Humanity's enduring drive to understand the cosmos through observation, theory-building, and technological innovation."
+claude-haiku-4.5,5,"From the given passage, identify the main ideas.
+Humans have always looked up at the night sky with curiosity and awe. For thousands of years, we have attempted to capture the wonders of outer space by recording star patterns and exploring the mysteries of the unknown. We have also developed complex theories to explain our observations and formulated innovative techniques to advance our understanding.","# Main Ideas from the Passage
+
+1. **Humans have a natural curiosity about space** — We have historically looked at the night sky with wonder and fascination.
+
+2. **We document and study celestial objects** — Humans record star patterns and explore the mysteries of outer space.
+
+3. **We develop explanations and methods** — We create theories to explain observations and develop techniques to increase our understanding of the universe.
+
+These ideas collectively show that humans have a long history of scientific observation and inquiry into space."
+claude-haiku-4.5,0,How would you involve data visualization in product development?,"# Data Visualization in Product Development
+
+## Discovery & Research Phase
+- **User behavior maps** showing how people interact with competitors
+- **Heat maps** from usability testing revealing pain points
+- **Journey visualizations** displaying where users drop off
+- **Demographic breakdowns** making market segments tangible to teams
+
+## Ideation & Planning
+- **Feature priority matrices** (impact vs. effort) to align stakeholders
+- **Roadmap timelines** showing dependencies and milestones
+- **Concept comparisons** side-by-side so tradeoffs are visible
+- **Data-driven personas** built from actual usage patterns, not assumptions
+
+## Development & Iteration
+- **Performance dashboards** tracking build quality metrics
+- **A/B test results** visualized clearly (not buried in tables)
+- **User feedback clustering** showing themes across reviews/surveys
+- **Technical debt tracking** making invisible problems visible
+
+## Launch & Beyond
+- **Pre-launch metrics** establishing baselines for comparison
+- **Real-time monitoring** of adoption, engagement, errors
+- **Cohort analysis** showing how different user groups behave over time
+- **Feedback loops** feeding insights back into the next cycle
+
+## Key Principles
+- **Make it accessible** — non-technical stakeholders should understand it
+- **Tell the story** — visualizations should answer specific questions
+- **Avoid vanity metrics** — focus on what actually matters for decisions
+- **Update regularly** — stale dashboards lose credibility fast
+
+What phase of development are you most focused on?"
+claude-haiku-4.5,1,How would you involve data visualization in product development?,"# Data Visualization in Product Development
+
+## Discovery & Research Phase
+- **User behavior heatmaps** show where people click, scroll, or abandon
+- **Journey maps** visualize pain points across touchpoints
+- **Competitor analysis dashboards** highlight feature gaps
+- **Survey data charts** reveal patterns in qualitative feedback
+
+## Design & Planning
+- **Wireframe annotations with metrics** connect design decisions to user data
+- **Feature prioritization matrices** (effort vs. impact) clarify roadmap choices
+- **User persona visualizations** make research findings tangible for teams
+- **Prototype performance charts** benchmark against competitors
+
+## Development & Testing
+- **A/B test result dashboards** show statistical significance at a glance
+- **Performance monitoring graphs** track loading times, crash rates
+- **Funnel visualizations** identify where users drop off
+- **Bug severity maps** help prioritize fixes
+
+## Post-Launch & Iteration
+- **Cohort analysis charts** reveal how different user groups behave over time
+- **Feature adoption curves** show which features gain traction
+- **Retention dashboards** track churn patterns
+- **Revenue impact visualizations** connect product changes to business outcomes
+
+## Practical Tips
+- **Make it interactive** so teams can explore rather than passively consume
+- **Update in real-time** to keep insights current
+- **Tailor complexity** to audience (executives want trends; designers want details)
+- **Show the ""why""** alongside the ""what"" with context and annotations
+
+What type of product decisions are you trying to inform?"
+claude-haiku-4.5,2,How would you involve data visualization in product development?,"# Integrating Data Visualization in Product Development
+
+## Early Stage: Discovery & Research
+
+**User research synthesis**
+- Visualize user journey maps, pain point clusters
+- Show behavior patterns from interviews/surveys
+- Map feature request frequencies to identify priorities
+
+**Market analysis**
+- Competitive landscape dashboards
+- Trend analysis over time
+- Customer segment breakdowns
+
+## Design & Planning
+
+**Feature impact modeling**
+- Effort vs. impact matrices
+- User segment affected by each feature
+- Dependency graphs for complex products
+
+**Wireframe/prototype feedback**
+- Heat maps from user testing sessions
+- Click-through flow visualizations
+- Comparison dashboards of design variants
+
+## Development & Testing
+
+**Progress tracking**
+- Burndown charts, velocity trends
+- Bug severity and type distributions
+- Code quality metrics over sprints
+
+**Quality assurance**
+- Test coverage by feature area
+- Performance bottleneck visualization
+- Error rate patterns
+
+## Post-Launch: Optimization
+
+**Usage analytics**
+- Feature adoption curves
+- User flow funnels (where people drop off)
+- Cohort analysis for retention patterns
+
+**Performance monitoring**
+- Real-time system health dashboards
+- Latency/error rate trends
+- User segment performance comparisons
+
+## Key Principle
+
+The best visualization **reveals what decisions need making right now**—not just reporting data. Avoid dashboard clutter; prioritize actionable insights.
+
+What stage of development are you focusing on?"
+claude-haiku-4.5,3,How would you involve data visualization in product development?,"# Data Visualization in Product Development
+
+## Discovery & Validation Phase
+
+**User Research Visualization**
+- Heat maps from user testing sessions showing where people look
+- Journey maps visualizing pain points across user flows
+- Sentiment analysis charts from interviews or surveys
+- Competitive feature matrices comparing alternatives
+
+**Market Data**
+- Market size and trend graphs informing scope decisions
+- Demographic breakdowns guiding target user definition
+
+## Design & Planning
+
+**Roadmap Clarity**
+- Timeline visualizations showing dependencies and phases
+- Feature priority matrices (impact vs. effort)
+- Burndown charts tracking sprint progress
+
+**Interaction Design**
+- Wireframe annotations with user flow overlays
+- Before/after comparisons of design iterations
+- A/B test result visualizations showing performance differences
+
+## Development & Testing
+
+**Quality Metrics**
+- Defect trend charts identifying patterns
+- Test coverage visualizations showing gaps
+- Performance benchmarks (load times, responsiveness)
+
+**Real Usage Data**
+- Feature adoption curves showing uptake over time
+- User segment behavior comparisons
+- Funnel analysis revealing drop-off points
+
+## Launch & Iteration
+
+**Post-Launch Monitoring**
+- Real-time dashboards of key metrics
+- Cohort analysis comparing user groups
+- Retention curves showing long-term engagement
+
+## Key Principle
+
+The best visualizations answer specific questions your team is actually asking—avoid creating charts just because data exists. A single clear chart that informs a decision beats 10 impressive ones that don't.
+
+What phase are you most interested in?"
+claude-haiku-4.5,4,How would you involve data visualization in product development?,"# Data Visualization in Product Development
+
+## Discovery & Research Phase
+- **User behavior mapping**: Visualize session flows, drop-off points, and user journeys
+- **Market analysis**: Charts showing competitor positioning, market trends, feature adoption
+- **Survey results**: Heat maps and distributions to identify patterns in feedback
+- **Usage analytics**: Funnels revealing where users struggle or abandon tasks
+
+## Design & Planning
+- **Wireframe annotations**: Add metric overlays showing expected user volumes or priority
+- **Feature prioritization matrices**: Plot impact vs. effort visually
+- **Roadmap timelines**: Gantt charts with dependency visualization
+- **Prototype testing results**: Side-by-side comparison visualizations of design variants
+
+## Development & Testing
+- **Performance dashboards**: Real-time metrics during builds and deployments
+- **Test coverage visualization**: Identify untested code paths
+- **Bug severity/frequency charts**: Help prioritize fixes
+- **A/B test results**: Statistical distributions showing winner confidence
+
+## Post-Launch & Iteration
+- **Cohort analysis**: Retention curves showing how user groups differ over time
+- **Feature adoption curves**: S-curves showing rollout success
+- **Revenue/engagement waterfall**: Decompose metrics to find drivers
+- **Churn visualization**: Segment analysis revealing at-risk users
+
+## Key Principle
+The best visualization tells *why* something matters, not just *what* the numbers are. This keeps the team aligned on problems worth solving.
+
+What stage are you currently focused on?"
+claude-haiku-4.5,5,How would you involve data visualization in product development?,"# Data Visualization in Product Development
+
+## Discovery & Planning
+- **User research visualization**: Map pain points, user journeys, and behavior patterns to identify gaps
+- **Market analysis dashboards**: Show competitive positioning, trends, and opportunity sizing
+- **Requirement prioritization**: Visual matrices (impact vs. effort) to guide roadmap decisions
+
+## Design & Iteration
+- **Prototype feedback**: Heat maps showing where users click or look (eye-tracking, session recordings)
+- **A/B test results**: Side-by-side comparisons of conversion rates, engagement metrics across variants
+- **Design system dashboards**: Component usage, consistency metrics, accessibility scores
+
+## Performance Monitoring
+- **Feature adoption curves**: Show growth trajectory and identify stalled features
+- **Funnel analysis**: Visualize drop-off points in user flows (signup, onboarding, purchase)
+- **Error tracking**: Charts highlighting bug frequency, impact severity, user affected
+
+## Stakeholder Communication
+- **Progress dashboards**: KPIs, sprint velocity, feature status for leadership alignment
+- **Customer feedback synthesis**: Word clouds, sentiment trends, feature request clustering
+- **Business impact**: Revenue, retention, and feature correlation analysis
+
+## Practical Tips
+- **Match the viz to the audience**: Engineers need technical precision; executives need narrative clarity
+- **Avoid dashboard bloat**: Focus on actionable insights, not vanity metrics
+- **Iterate the visualization**: Test whether your charts actually drive better decisions
+- **Combine with context**: Raw numbers without trend lines or benchmarks rarely tell the full story
+
+What aspect of product development are you most focused on right now?"
+claude-haiku-4.5,0,Describe the steps involved in creating a neural network model.,"# Steps for Creating a Neural Network Model
+
+## 1. **Define the Problem**
+- Identify the task (classification, regression, clustering)
+- Determine input and output requirements
+- Gather and understand your dataset
+
+## 2. **Prepare the Data**
+- **Collect** relevant data
+- **Clean** (handle missing values, outliers)
+- **Normalize/Scale** features to similar ranges
+- **Split** into training, validation, and test sets (e.g., 70-15-15)
+- **Encode** categorical variables if needed
+
+## 3. **Design the Architecture**
+- Choose number of layers (input, hidden, output)
+- Decide layer sizes and types (Dense, CNN, RNN, etc.)
+- Select activation functions (ReLU, Sigmoid, Tanh)
+- Determine dropout rates for regularization
+
+## 4. **Compile the Model**
+- Choose an optimizer (Adam, SGD, RMSprop)
+- Select loss function (MSE, Cross-entropy, etc.)
+- Define metrics to track (accuracy, F1-score)
+
+## 5. **Train the Model**
+- Feed training data through the network
+- Adjust weights via backpropagation
+- Set epochs (number of iterations) and batch size
+- Monitor performance on validation data
+
+## 6. **Evaluate Performance**
+- Test on unseen test data
+- Analyze metrics and visualize results
+- Check for overfitting/underfitting
+
+## 7. **Tune & Optimize**
+- Adjust hyperparameters (learning rate, layers, dropout)
+- Try different architectures
+- Apply regularization techniques
+
+## 8. **Deploy & Monitor**
+- Save the trained model
+- Deploy to production
+- Monitor performance over time
+
+This iterative process often requires returning to earlier steps for improvements."
+claude-haiku-4.5,1,Describe the steps involved in creating a neural network model.,"# Steps to Create a Neural Network Model
+
+## 1. **Define the Problem**
+- Identify whether it's classification, regression, or another task
+- Gather and understand your data
+- Define success metrics
+
+## 2. **Prepare and Explore Data**
+- Collect relevant datasets
+- Handle missing values and outliers
+- Perform exploratory data analysis (EDA)
+- Check for patterns and correlations
+
+## 3. **Preprocess Data**
+- Normalize or standardize features (scale to 0-1 or mean=0)
+- Encode categorical variables
+- Split into training, validation, and test sets (e.g., 70-15-15)
+- Handle class imbalance if needed
+
+## 4. **Design Network Architecture**
+```
+Input Layer → Hidden Layers → Output Layer
+```
+- Choose number of layers (depth)
+- Select number of neurons per layer (width)
+- Select activation functions (ReLU, Sigmoid, Tanh)
+- Choose appropriate output layer based on task
+
+## 5. **Compile the Model**
+- Select optimizer (Adam, SGD, RMSprop)
+- Choose loss function (MSE, Cross-entropy)
+- Define metrics to monitor (accuracy, precision)
+
+## 6. **Train the Model**
+- Feed training data in batches (epochs)
+- Adjust weights and biases using backpropagation
+- Monitor loss and accuracy on validation data
+- Watch for overfitting/underfitting
+
+## 7. **Evaluate Performance**
+- Test on unseen test dataset
+- Analyze metrics (accuracy, precision, recall, F1-score)
+- Create confusion matrix or ROC curves
+
+## 8. **Tune Hyperparameters**
+- Adjust learning rate, batch size, layers
+- Use techniques like cross-validation
+- Iterate until performance improves
+
+## 9. **Deploy the Model**
+- Save the trained model
+- Integrate into production environment
+- Monitor performance over time
+
+**Key Principle**: Iterate through steps 4-8 until achieving satisfactory results."
+claude-haiku-4.5,2,Describe the steps involved in creating a neural network model.,"# Steps to Create a Neural Network Model
+
+## 1. **Define the Problem**
+- Clarify your task (classification, regression, etc.)
+- Identify inputs and desired outputs
+- Determine success metrics
+
+## 2. **Prepare Data**
+- Collect and clean your dataset
+- Handle missing values and outliers
+- Split into training, validation, and test sets (typically 70-80%, 10-15%, 10-15%)
+- Normalize/standardize features to similar scales
+
+## 3. **Choose a Framework**
+- Select tools like TensorFlow, PyTorch, or Keras
+- Set up your development environment
+
+## 4. **Design the Architecture**
+```python
+# Example in Keras
+model = Sequential([
+    Dense(128, activation='relu', input_dim=784),
+    Dropout(0.2),
+    Dense(64, activation='relu'),
+    Dense(10, activation='softmax')
+])
+```
+
+**Key decisions:**
+- Number of layers (depth)
+- Neurons per layer (width)
+- Activation functions
+- Dropout/regularization
+
+## 5. **Compile the Model**
+- Choose an optimizer (Adam, SGD, RMSprop)
+- Select a loss function (MSE, cross-entropy)
+- Define metrics to track (accuracy, precision)
+
+```python
+model.compile(
+    optimizer='adam',
+    loss='categorical_crossentropy',
+    metrics=['accuracy']
+)
+```
+
+## 6. **Train the Model**
+- Feed training data through the network
+- Adjust weights using backpropagation
+- Monitor training and validation performance
+
+```python
+model.fit(X_train, y_train, epochs=50, batch_size=32, 
+          validation_data=(X_val, y_val))
+```
+
+## 7. **Validate and Tune**
+- Check for overfitting/underfitting
+- Adjust hyperparameters (learning rate, batch size, epochs)
+- Use techniques like cross-validation
+
+## 8. **Evaluate on Test Set**
+- Assess final performance on unseen data
+- Generate performance metrics and visualizations
+
+## 9. **Deploy (Optional)**
+- Package the model
+- Integrate into production systems
+- Monitor performance over time
+
+Each step is iterative—you may return to earlier stages to improve results."
+claude-haiku-4.5,3,Describe the steps involved in creating a neural network model.,"# Steps to Create a Neural Network Model
+
+## 1. **Define the Problem**
+- Identify whether it's classification, regression, or another task
+- Determine input and output requirements
+- Gather and understand your data
+
+## 2. **Prepare Data**
+- **Clean**: Remove duplicates, handle missing values
+- **Normalize/Standardize**: Scale features to similar ranges
+- **Split**: Divide into training (70%), validation (15%), and test (15%) sets
+- **Feature Engineering**: Create relevant features if needed
+
+## 3. **Choose Architecture**
+- Select network type (feedforward, CNN, RNN, transformer, etc.)
+- Decide number of layers and neurons per layer
+- Choose activation functions (ReLU, sigmoid, tanh, etc.)
+
+## 4. **Select Hyperparameters**
+- Learning rate
+- Batch size
+- Number of epochs
+- Optimizer (Adam, SGD, RMSprop)
+- Loss function (MSE, cross-entropy, etc.)
+- Regularization (L1/L2, dropout)
+
+## 5. **Build the Model**
+```python
+import tensorflow as tf
+
+model = tf.keras.Sequential([
+    tf.keras.layers.Dense(64, activation='relu', input_shape=(features,)),
+    tf.keras.layers.Dropout(0.2),
+    tf.keras.layers.Dense(32, activation='relu'),
+    tf.keras.layers.Dense(num_classes, activation='softmax')
+])
+```
+
+## 6. **Compile the Model**
+```python
+model.compile(
+    optimizer='adam',
+    loss='categorical_crossentropy',
+    metrics=['accuracy']
+)
+```
+
+## 7. **Train the Model**
+```python
+history = model.fit(
+    X_train, y_train,
+    epochs=50,
+    batch_size=32,
+    validation_data=(X_val, y_val)
+)
+```
+
+## 8. **Evaluate Performance**
+- Test on hold-out test set
+- Check accuracy, precision, recall, F1-score
+- Analyze confusion matrix
+- Plot training/validation curves
+
+## 9. **Tune and Optimize**
+- Adjust hyperparameters if needed
+- Add regularization to prevent overfitting
+- Try different architectures
+- Use techniques like cross-validation
+
+## 10. **Deploy the Model**
+- Save the trained model
+- Test in production environment
+- Monitor performance over time
+- Retrain periodically with new data
+
+## Key Considerations
+✓ Avoid overfitting (too good on training, poor on test)
+✓ Ensure sufficient training data
+✓ Watch for class imbalance
+✓ Document your process
+✓ Use version control for reproducibility"
+claude-haiku-4.5,4,Describe the steps involved in creating a neural network model.,"# Steps to Create a Neural Network Model
+
+## 1. **Define the Problem**
+- Identify input and output variables
+- Determine if it's classification, regression, or another task
+- Gather and understand your dataset
+
+## 2. **Prepare the Data**
+- **Clean**: Remove errors, handle missing values
+- **Normalize/Standardize**: Scale features to similar ranges
+- **Split**: Divide into training (70-80%), validation (10-15%), and test sets (10-15%)
+- **Encode**: Convert categorical variables to numerical format
+
+## 3. **Design the Architecture**
+Choose network structure:
+- Number of input nodes (based on features)
+- Number of hidden layers and neurons per layer
+- Output layer size (based on task)
+- Activation functions (ReLU, sigmoid, tanh, etc.)
+
+```python
+model = Sequential([
+    Dense(64, activation='relu', input_shape=(features,)),
+    Dense(32, activation='relu'),
+    Dense(output_size, activation='softmax')
+])
+```
+
+## 4. **Compile the Model**
+Specify three components:
+- **Optimizer**: How to update weights (Adam, SGD, RMSprop)
+- **Loss function**: Measure prediction error (crossentropy, MSE)
+- **Metrics**: Track performance (accuracy, precision)
+
+```python
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+```
+
+## 5. **Train the Model**
+- Feed training data through the network
+- Adjust weights through backpropagation
+- Monitor performance on validation data
+
+```python
+model.fit(X_train, y_train, epochs=50, batch_size=32, validation_data=(X_val, y_val))
+```
+
+## 6. **Evaluate Performance**
+- Test on unseen test data
+- Check metrics: accuracy, precision, recall, F1-score
+- Analyze confusion matrices or error patterns
+
+## 7. **Hyperparameter Tuning**
+Adjust and iterate:
+- Learning rate
+- Number of layers/neurons
+- Batch size
+- Epochs
+- Dropout rates (for regularization)
+
+## 8. **Deploy & Monitor**
+- Save the trained model
+- Test in production environment
+- Monitor performance over time
+- Retrain with new data as needed
+
+## Key Considerations
+
+| Aspect | Best Practice |
+|--------|---------------|
+| **Overfitting** | Use dropout, early stopping, regularization |
+| **Data Balance** | Handle class imbalance with techniques like SMOTE |
+| **Validation** | Use cross-validation for robust assessment |
+
+This iterative process typically requires multiple refinement cycles for optimal results."
+claude-haiku-4.5,5,Describe the steps involved in creating a neural network model.,"# Steps to Create a Neural Network Model
+
+## 1. **Define the Problem**
+- Determine if it's classification, regression, or another task
+- Identify inputs (features) and outputs (targets)
+- Gather and explore your dataset
+
+## 2. **Prepare the Data**
+- **Clean**: Handle missing values, outliers, and inconsistencies
+- **Normalize/Standardize**: Scale features to similar ranges
+- **Split**: Divide into training (70%), validation (15%), and test (15%) sets
+- **Encode**: Convert categorical variables to numerical form
+
+## 3. **Choose a Framework**
+Select a deep learning library:
+- TensorFlow/Keras
+- PyTorch
+- JAX
+- Scikit-learn (for simpler models)
+
+## 4. **Design the Architecture**
+- Determine the number of layers
+- Choose layer types (Dense, Convolutional, Recurrent, etc.)
+- Decide units/neurons per layer
+- Plan activation functions (ReLU, Sigmoid, Tanh, etc.)
+
+```python
+# Example with Keras
+model = Sequential([
+    Dense(128, activation='relu', input_shape=(input_dim,)),
+    Dropout(0.2),
+    Dense(64, activation='relu'),
+    Dense(output_dim, activation='softmax')
+])
+```
+
+## 5. **Compile the Model**
+Specify:
+- **Loss function** (e.g., categorical_crossentropy, MSE)
+- **Optimizer** (e.g., Adam, SGD, RMSprop)
+- **Metrics** (e.g., accuracy, precision)
+
+```python
+model.compile(
+    loss='categorical_crossentropy',
+    optimizer='adam',
+    metrics=['accuracy']
+)
+```
+
+## 6. **Train the Model**
+- Feed training data to the network
+- Adjust weights using backpropagation
+- Set epochs and batch size
+- Monitor training progress
+
+```python
+model.fit(X_train, y_train, epochs=50, batch_size=32, validation_data=(X_val, y_val))
+```
+
+## 7. **Validate Performance**
+- Evaluate on validation set during training
+- Adjust hyperparameters if needed
+- Watch for overfitting/underfitting
+
+## 8. **Test the Model**
+- Evaluate on the held-out test set
+- Check metrics relevant to your problem
+- Ensure generalization to unseen data
+
+## 9. **Tune and Optimize**
+- **Hyperparameter tuning**: Learning rate, batch size, epochs
+- **Architecture changes**: Add/remove layers, adjust units
+- **Regularization**: Apply dropout, L1/L2 penalties
+- **Cross-validation**: Use k-fold for robust evaluation
+
+## 10. **Deploy and Monitor**
+- Save the trained model
+- Integrate into production systems
+- Monitor performance over time
+- Retrain with new data as needed
+
+## Common Hyperparameters to Adjust
+| Parameter | Role |
+|-----------|------|
+| Learning rate | Controls step size in optimization |
+| Batch size | Number of samples per update |
+| Epochs | Complete passes through training data |
+| Dropout rate | Regularization to prevent overfitting |
+| Layer size | Number of neurons per layer |
+
+## Key Considerations
+✓ Start simple, then increase complexity
+✓ Validate frequently to catch issues early
+✓ Document your choices and results
+✓ Be aware of data imbalance
+✓ Consider computational resources
+
+This iterative process requires experimentation and refinement based on results!"

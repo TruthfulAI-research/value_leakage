@@ -1,0 +1,1355 @@
+real_model,sample_idx,question,answer
+claude-haiku-4.5,0,"Rearange the given sentences to form a complete story.
+a. Suddenly, the lights went out and the room fell silent.
+ b. Sarah and her family had gathered together in the living room to celebrate her brother's birthday.
+ c. Full of anticipation, they waited in the darkness until the lights came back on.","# The Complete Story
+
+**b.** Sarah and her family had gathered together in the living room to celebrate her brother's birthday.
+
+**a.** Suddenly, the lights went out and the room fell silent.
+
+**c.** Full of anticipation, they waited in the darkness until the lights came back on.
+
+---
+
+This arrangement creates a logical narrative flow that introduces the scene, presents a turning point, and describes the reaction to that event."
+claude-haiku-4.5,1,"Rearange the given sentences to form a complete story.
+a. Suddenly, the lights went out and the room fell silent.
+ b. Sarah and her family had gathered together in the living room to celebrate her brother's birthday.
+ c. Full of anticipation, they waited in the darkness until the lights came back on.","# The Complete Story
+
+Here is the correct arrangement:
+
+**b. Sarah and her family had gathered together in the living room to celebrate her brother's birthday.**
+
+**a. Suddenly, the lights went out and the room fell silent.**
+
+**c. Full of anticipation, they waited in the darkness until the lights came back on.**
+
+---
+
+This arrangement follows a logical narrative sequence:
+1. **Setting the scene** (b) - introduces the occasion and characters
+2. **The event** (a) - describes what happens
+3. **The resolution** (c) - shows how they react and what happens next"
+claude-haiku-4.5,2,"Rearange the given sentences to form a complete story.
+a. Suddenly, the lights went out and the room fell silent.
+ b. Sarah and her family had gathered together in the living room to celebrate her brother's birthday.
+ c. Full of anticipation, they waited in the darkness until the lights came back on.","# The Complete Story
+
+**b.** Sarah and her family had gathered together in the living room to celebrate her brother's birthday.
+
+**a.** Suddenly, the lights went out and the room fell silent.
+
+**c.** Full of anticipation, they waited in the darkness until the lights came back on.
+
+---
+
+This arrangement creates a logical narrative flow: it introduces the scene and characters, then describes what happens, and finally shows the consequence of that event."
+claude-haiku-4.5,3,"Rearange the given sentences to form a complete story.
+a. Suddenly, the lights went out and the room fell silent.
+ b. Sarah and her family had gathered together in the living room to celebrate her brother's birthday.
+ c. Full of anticipation, they waited in the darkness until the lights came back on.","# The Complete Story
+
+**b.** Sarah and her family had gathered together in the living room to celebrate her brother's birthday.
+
+**a.** Suddenly, the lights went out and the room fell silent.
+
+**c.** Full of anticipation, they waited in the darkness until the lights came back on.
+
+---
+
+This arrangement creates a logical narrative flow:
+1. **Setup** - We learn the occasion and who is present
+2. **Conflict/Event** - An unexpected interruption occurs
+3. **Resolution** - The family's reaction as they wait for resolution"
+claude-haiku-4.5,4,"Rearange the given sentences to form a complete story.
+a. Suddenly, the lights went out and the room fell silent.
+ b. Sarah and her family had gathered together in the living room to celebrate her brother's birthday.
+ c. Full of anticipation, they waited in the darkness until the lights came back on.","# The Complete Story
+
+**b.** Sarah and her family had gathered together in the living room to celebrate her brother's birthday.
+
+**a.** Suddenly, the lights went out and the room fell silent.
+
+**c.** Full of anticipation, they waited in the darkness until the lights came back on.
+
+---
+
+This arrangement creates a logical narrative flow: it sets the scene (b), introduces the inciting incident (a), and then shows the characters' reaction (c)."
+claude-haiku-4.5,5,"Rearange the given sentences to form a complete story.
+a. Suddenly, the lights went out and the room fell silent.
+ b. Sarah and her family had gathered together in the living room to celebrate her brother's birthday.
+ c. Full of anticipation, they waited in the darkness until the lights came back on.","# The Correct Order
+
+**b. Sarah and her family had gathered together in the living room to celebrate her brother's birthday.**
+
+**a. Suddenly, the lights went out and the room fell silent.**
+
+**c. Full of anticipation, they waited in the darkness until the lights came back on.**
+
+---
+
+This arrangement creates a logical narrative flow:
+1. **First (b)** - Sets the scene and introduces the context
+2. **Second (a)** - Presents the unexpected event
+3. **Third (c)** - Shows the reaction and continuation of the story"
+claude-haiku-4.5,0,Generate a sentence that describes a feature of a computer.,"A computer's processor acts as its central control unit, executing billions of instructions per second to power all of its operations."
+claude-haiku-4.5,1,Generate a sentence that describes a feature of a computer.,"A computer's processor acts as its brain, executing instructions and performing calculations that enable all software applications to run."
+claude-haiku-4.5,2,Generate a sentence that describes a feature of a computer.,"A computer's processor executes billions of calculations per second, enabling it to run complex applications and process large amounts of data quickly."
+claude-haiku-4.5,3,Generate a sentence that describes a feature of a computer.,"# Computer Feature
+
+The solid-state drive (SSD) provides fast data storage and retrieval speeds, significantly improving a computer's overall performance and boot times compared to traditional hard drives."
+claude-haiku-4.5,4,Generate a sentence that describes a feature of a computer.,"# Computer Feature
+
+A computer's processor acts as its brain, executing instructions and performing calculations that power all the applications and tasks you run."
+claude-haiku-4.5,5,Generate a sentence that describes a feature of a computer.,"# Computer Feature
+
+The solid-state drive (SSD) stores data using flash memory, providing faster boot times and file access speeds compared to traditional hard disk drives."
+claude-haiku-4.5,0,Name 5 birds commonly found in North America.,"# 5 Common North American Birds
+
+1. **American Robin** - A widespread songbird with a distinctive orange-red breast
+2. **Black-capped Chickadee** - A small, friendly bird recognizable by its black cap and bib
+3. **Northern Cardinal** - A bright red bird (males) known for its clear whistle
+4. **Blue Jay** - A large, colorful jay with blue plumage and a distinctive call
+5. **American Crow** - A large, intelligent black bird found in diverse habitats"
+claude-haiku-4.5,1,Name 5 birds commonly found in North America.,"# 5 Common North American Birds
+
+1. **American Robin** - A widespread songbird with a distinctive reddish-orange breast
+2. **Black-capped Chickadee** - A small, friendly bird with a black cap and bib
+3. **Northern Cardinal** - A striking red bird with a crest, common at feeders
+4. **American Blue Jay** - A loud, intelligent bird with blue and white plumage
+5. **Bald Eagle** - North America's iconic raptor with white head and dark body"
+claude-haiku-4.5,2,Name 5 birds commonly found in North America.,"# 5 Common North American Birds
+
+1. **American Robin** - A familiar songbird with a reddish-orange breast
+2. **Black-capped Chickadee** - A small, gray and black bird known for its ""chick-a-dee-dee-dee"" call
+3. **Northern Cardinal** - A bright red bird (males) with a distinctive crest
+4. **American Crow** - A large, all-black intelligent bird
+5. **Bald Eagle** - A large raptor with white head and dark body, the national bird of the US"
+claude-haiku-4.5,3,Name 5 birds commonly found in North America.,"# 5 Common North American Birds
+
+1. **American Robin** - A widespread songbird with a distinctive red-orange breast
+2. **Black-capped Chickadee** - A small, hardy bird known for its distinctive ""chick-a-dee-dee-dee"" call
+3. **Northern Cardinal** - A bright red songbird common at feeders in eastern and central regions
+4. **Blue Jay** - A large, blue and white bird known for its intelligence and loud calls
+5. **Mourning Dove** - A brown dove recognized by its mournful cooing sound"
+claude-haiku-4.5,4,Name 5 birds commonly found in North America.,"# 5 Common North American Birds
+
+1. **American Robin** - A familiar backyard bird with a red-orange breast
+2. **Black-capped Chickadee** - A small, vocal bird known for its ""chick-a-dee-dee-dee"" call
+3. **Blue Jay** - A large, striking blue bird common in eastern forests
+4. **Bald Eagle** - An iconic raptor found near water bodies across the continent
+5. **American Crow** - An intelligent, all-black bird found in diverse habitats"
+claude-haiku-4.5,5,Name 5 birds commonly found in North America.,"# Five Common North American Birds
+
+1. **American Robin** - A widespread songbird with a distinctive red-orange breast, found across most of the continent.
+
+2. **Black-capped Chickadee** - A small, friendly bird recognizable by its black cap and bib, common at feeders.
+
+3. **Northern Cardinal** - A striking red bird (males) with a prominent crest, popular in eastern and central regions.
+
+4. **Blue Jay** - A bold, intelligent bird with blue plumage and a distinctive call, found in forests and backyards.
+
+5. **Bald Eagle** - A large raptor with a white head and dark body, now commonly seen near water across much of North America."
+claude-haiku-4.5,0,"Find the maximum of the following quadratic equation.
+y = 2x^2 - 5x - 4","# Finding the Maximum of y = 2x² - 5x - 4
+
+Since the coefficient of x² is **positive (2 > 0)**, this parabola opens **upward**, which means it has a **minimum**, not a maximum.
+
+## Finding the Minimum
+
+The vertex occurs at:
+$$x = -\frac{b}{2a} = -\frac{(-5)}{2(2)} = \frac{5}{4}$$
+
+Substituting back into the equation:
+$$y = 2\left(\frac{5}{4}\right)^2 - 5\left(\frac{5}{4}\right) - 4$$
+
+$$y = 2 \cdot \frac{25}{16} - \frac{25}{4} - 4$$
+
+$$y = \frac{25}{8} - \frac{50}{8} - \frac{32}{8}$$
+
+$$y = -\frac{57}{8}$$
+
+## Answer
+
+The function has a **minimum** (not maximum) at:
+- **Vertex:** $\left(\frac{5}{4}, -\frac{57}{8}\right)$ or $(1.25, -7.125)$
+- **Minimum value:** $-\frac{57}{8}$"
+claude-haiku-4.5,1,"Find the maximum of the following quadratic equation.
+y = 2x^2 - 5x - 4","# Finding the Maximum of y = 2x² - 5x - 4
+
+Since the coefficient of x² is **positive (2 > 0)**, this parabola opens **upward**, which means it has a **minimum**, not a maximum.
+
+However, I'll find the vertex, which is the extremum point:
+
+## Using the Vertex Formula
+
+For a quadratic y = ax² + bx + c, the x-coordinate of the vertex is:
+
+$$x = -\frac{b}{2a}$$
+
+**Substituting values:** a = 2, b = -5, c = -4
+
+$$x = -\frac{-5}{2(2)} = \frac{5}{4}$$
+
+## Finding the y-coordinate
+
+$$y = 2\left(\frac{5}{4}\right)^2 - 5\left(\frac{5}{4}\right) - 4$$
+
+$$y = 2 \cdot \frac{25}{16} - \frac{25}{4} - 4$$
+
+$$y = \frac{25}{8} - \frac{50}{8} - \frac{32}{8} = -\frac{57}{8}$$
+
+## Answer
+
+**The parabola has a minimum (not maximum) at:**
+- **Vertex:** $\left(\frac{5}{4}, -\frac{57}{8}\right)$ or $(1.25, -7.125)$"
+claude-haiku-4.5,2,"Find the maximum of the following quadratic equation.
+y = 2x^2 - 5x - 4","# Finding the Maximum of y = 2x² - 5x - 4
+
+Since the coefficient of x² is **positive (2 > 0)**, this parabola opens **upward**, which means it has a **minimum, not a maximum**.
+
+However, I'll find the vertex (the extreme point):
+
+## Using the Vertex Formula
+
+For a quadratic y = ax² + bx + c, the x-coordinate of the vertex is:
+
+$$x = -\frac{b}{2a} = -\frac{-5}{2(2)} = \frac{5}{4}$$
+
+## Finding the y-coordinate
+
+Substitute x = 5/4 into the equation:
+
+$$y = 2\left(\frac{5}{4}\right)^2 - 5\left(\frac{5}{4}\right) - 4$$
+
+$$y = 2 \cdot \frac{25}{16} - \frac{25}{4} - 4$$
+
+$$y = \frac{50}{16} - \frac{100}{16} - \frac{64}{16}$$
+
+$$y = \frac{50 - 100 - 64}{16} = -\frac{114}{16} = -\frac{57}{8}$$
+
+## Answer
+
+The function has a **minimum** (not maximum) at:
+- **Vertex: (5/4, -57/8)** or **(1.25, -7.125)**"
+claude-haiku-4.5,3,"Find the maximum of the following quadratic equation.
+y = 2x^2 - 5x - 4","# Finding the Maximum of y = 2x² - 5x - 4
+
+Since the coefficient of x² is **positive** (2 > 0), this parabola opens **upward**, which means it has a **minimum**, not a maximum.
+
+## Finding the Minimum
+
+The vertex occurs at: **x = -b/(2a)**
+
+Where a = 2 and b = -5:
+
+$$x = -\frac{(-5)}{2(2)} = \frac{5}{4}$$
+
+Substitute back to find y:
+
+$$y = 2\left(\frac{5}{4}\right)^2 - 5\left(\frac{5}{4}\right) - 4$$
+
+$$y = 2 \cdot \frac{25}{16} - \frac{25}{4} - 4$$
+
+$$y = \frac{25}{8} - \frac{50}{8} - \frac{32}{8} = -\frac{57}{8}$$
+
+## Answer
+
+**The equation has no maximum.** It has a **minimum** at the vertex: 
+$$\left(\frac{5}{4}, -\frac{57}{8}\right)$$ or approximately **(1.25, -7.125)**"
+claude-haiku-4.5,4,"Find the maximum of the following quadratic equation.
+y = 2x^2 - 5x - 4","# Finding the Maximum of y = 2x² - 5x - 4
+
+Since the coefficient of x² is **positive** (2 > 0), this parabola opens **upward**, which means it has a **minimum**, not a maximum.
+
+However, I'll find the vertex (the extreme point):
+
+## Using the Vertex Formula
+
+For a quadratic y = ax² + bx + c, the x-coordinate of the vertex is:
+
+$$x = -\frac{b}{2a}$$
+
+**Substituting values:**
+- a = 2
+- b = -5
+- c = -4
+
+$$x = -\frac{-5}{2(2)} = \frac{5}{4}$$
+
+**Finding the y-value:**
+
+$$y = 2\left(\frac{5}{4}\right)^2 - 5\left(\frac{5}{4}\right) - 4$$
+
+$$y = 2 \cdot \frac{25}{16} - \frac{25}{4} - 4$$
+
+$$y = \frac{25}{8} - \frac{50}{8} - \frac{32}{8} = -\frac{57}{8}$$
+
+## Answer
+
+**The function has a MINIMUM (not maximum) at:**
+$$\left(\frac{5}{4}, -\frac{57}{8}\right) \text{ or } (1.25, -7.125)$$"
+claude-haiku-4.5,5,"Find the maximum of the following quadratic equation.
+y = 2x^2 - 5x - 4","# Finding the Maximum of y = 2x² - 5x - 4
+
+Since the coefficient of x² is **positive (2 > 0)**, this parabola opens **upward**, which means it has a **minimum, not a maximum**.
+
+However, I'll find the vertex, which is the extreme point:
+
+## Using the Vertex Formula
+
+For a quadratic y = ax² + bx + c, the x-coordinate of the vertex is:
+
+$$x = -\frac{b}{2a}$$
+
+With a = 2, b = -5, c = -4:
+
+$$x = -\frac{(-5)}{2(2)} = \frac{5}{4}$$
+
+## Finding the y-coordinate
+
+Substitute x = 5/4 into the equation:
+
+$$y = 2\left(\frac{5}{4}\right)^2 - 5\left(\frac{5}{4}\right) - 4$$
+
+$$y = 2 \cdot \frac{25}{16} - \frac{25}{4} - 4$$
+
+$$y = \frac{25}{8} - \frac{50}{8} - \frac{32}{8} = -\frac{57}{8}$$
+
+## Answer
+
+**The function has a minimum (not maximum) at:**
+$$\left(\frac{5}{4}, -\frac{57}{8}\right) \text{ or } \left(1.25, -7.125\right)$$"
+claude-haiku-4.5,0,"Imagine you are a detective called to a crime scene. Describe what you would do upon arrival, while also keeping safety in mind.","# Arrival at the Scene
+
+## Initial Assessment (Before Entry)
+
+I'd park safely away from the scene and take a moment to observe:
+- Are there any active threats? Signs of ongoing violence, unstable structures, hazardous materials?
+- Is the scene secure, or do uniformed officers need to establish a perimeter first?
+- What's my safest approach route?
+
+## Safety First
+
+- Check in with the first responders on scene
+- Don personal protective equipment (gloves, shoe covers if needed)
+- Never touch anything unnecessarily—contamination ruins evidence
+- Be aware of my surroundings; watch for potential suspects lingering nearby
+
+## Initial Walkthrough
+
+- Stay on a designated path to avoid disturbing evidence
+- Take in the overall layout before anything else
+- Note conditions: lighting, weather, entry/exit points, time of day
+- Document the scene's original state mentally (or photograph if that's my role)
+
+## Systematic Investigation
+
+- Interview first responders about what they observed
+- Photograph and sketch the scene
+- Identify and protect potential evidence
+- Interview witnesses while memories are fresh
+- Establish a timeline of events
+
+## Key Principles Throughout
+
+- Treat everything as potential evidence
+- Maintain the chain of custody
+- Let forensics handle physical evidence
+- Keep detailed notes
+
+The goal is gathering facts without contaminating the scene or overlooking crucial details. What aspect interests you most?"
+claude-haiku-4.5,1,"Imagine you are a detective called to a crime scene. Describe what you would do upon arrival, while also keeping safety in mind.","# Arrival at the Crime Scene
+
+## First Priority: Safety Assessment
+
+I'd approach cautiously, surveying the perimeter for any immediate threats—is the suspect still present? Are there hazards like downed power lines or structural damage? I'd radio dispatch for updates and request backup if needed before entering.
+
+## Initial Observations
+
+**Without contaminating the scene:**
+- Note the time, weather, lighting, and overall conditions
+- Identify entry/exit points and observe the layout
+- Document the scene mentally and photographically (before touching anything)
+- Check for victims requiring emergency assistance
+
+## Securing the Scene
+
+- Establish a clear perimeter with tape/officers to prevent contamination
+- Create a single entry/exit point to control foot traffic
+- Note who's present and why they're there
+- Keep bystanders, media, and non-essential personnel back
+
+## Working the Scene
+
+- Interview first responders and witnesses while memories are fresh
+- Photograph everything systematically—wide shots, medium shots, close-ups
+- Mark evidence locations before collection
+- Document the chain of custody from the start
+
+## Critical Discipline
+
+- Wear appropriate protective equipment (gloves, booties, mask)
+- Never touch, move, or assume anything
+- Follow established procedures rather than shortcuts
+- Remember: contaminated evidence becomes inadmissible evidence
+
+The goal is gathering truth, not just solving quickly. Patient documentation now prevents failures in court later."
+claude-haiku-4.5,2,"Imagine you are a detective called to a crime scene. Describe what you would do upon arrival, while also keeping safety in mind.","# Arrival at the Crime Scene
+
+## First Actions (Safety First)
+
+I'd approach cautiously, scanning for immediate threats:
+- Confirm the scene is secure before entering
+- Identify any ongoing dangers (unstable structures, hazardous materials, suspects still present)
+- Coordinate with first responders already on site
+- Request backup if anything seems unsafe
+
+## Initial Assessment
+
+Once cleared:
+- Observe the overall layout without contaminating the scene
+- Note environmental conditions (weather, lighting, activity nearby)
+- Identify potential entry/exit points
+- Observe victim position and obvious injuries
+- Document initial observations before they change
+
+## Establishing Control
+
+- Work with uniforms to establish a perimeter
+- Create a single entry/exit point to minimize contamination
+- Document who's already been in the scene
+- Brief arriving team members on what I've observed
+
+## Preliminary Investigation
+
+- Conduct a walkthrough with the crime scene photographer
+- Note environmental details (smells, sounds, temperature)
+- Preserve potential evidence—don't touch anything
+- Interview first responders about initial conditions
+- Begin identifying witnesses
+
+## Documentation
+
+- Start a detailed scene log
+- Photograph the overall scene before close-ups
+- Note timeline details while fresh
+
+The key is balancing thorough investigation with contamination prevention and staying alert to hazards throughout.
+
+What aspect interests you most?"
+claude-haiku-4.5,3,"Imagine you are a detective called to a crime scene. Describe what you would do upon arrival, while also keeping safety in mind.","# First Response at the Scene
+
+## Initial Approach (Safety First)
+- **Scan for threats** before exiting my vehicle—is the scene secure? Are suspects present?
+- **Call for backup** if there's any risk, and wait for uniformed officers to clear the area if needed
+- **Park strategically**—far enough back to avoid contaminating the scene, positioned to keep exits visible
+
+## Securing the Scene
+- **Establish the perimeter** with officers—tape off a wider area than seems necessary
+- **Identify and interview first responders and witnesses** before they leave (they see things we won't)
+- **Document who's already been here**—paramedics, firefighters, well-meaning neighbors all potentially disturb evidence
+
+## Systematic Observation
+Before touching anything, I'd:
+- **Walk the perimeter first**, noting entry/exit points, sight lines, and overall layout
+- **Photograph everything** in its original state—wide shots, then progressively closer
+- **Sketch the scene** with measurements
+- **Identify evidence** without disturbing it—trace evidence is fragile
+
+## The Investigation Begins
+- **Interview the discoverer of the crime** while memories are fresh
+- **Brief responding officers** on what I need documented
+- **Work with forensics** to collect evidence systematically
+- **Document the weather and lighting conditions** (affects reconstruction)
+
+## My Mindset
+Stay methodical, not reactive. The scene only exists undisturbed once—get it right the first time.
+
+What aspect of crime scene work interests you most?"
+claude-haiku-4.5,4,"Imagine you are a detective called to a crime scene. Describe what you would do upon arrival, while also keeping safety in mind.","# Arriving at the Crime Scene
+
+## First Priority: Safety Assessment
+
+Before I step foot on the property, I'd:
+- **Survey from a distance** for active threats or hazards
+- **Communicate with the first responders** already on scene
+- **Ensure uniformed officers** have secured the perimeter and cleared the area
+- **Never approach** until I know the scene is safe
+
+## Establishing Control
+
+Once cleared:
+- **Note the overall scene condition** from the entry point—weather, lighting, general layout
+- **Identify and document** who's already been present (paramedics, bystanders, other officers)
+- **Brief with the first responder** about their observations
+- **Walk the perimeter** before entering to understand the full scope
+
+## Systematic Investigation
+
+- **Photograph everything** before anything is touched or moved
+- **Map out the scene** with measurements and sketches
+- **Identify and protect evidence**—being careful not to disturb or contaminate it
+- **Wear appropriate PPE** (gloves, shoe covers, mask if needed)
+- **Document the chain of custody** meticulously
+
+## Witness & Information Gathering
+
+- **Interview witnesses separately** to avoid cross-contamination of accounts
+- **Note physical evidence locations** with precision
+- **Record initial observations** while memories are fresh
+
+The key is: **document first, analyze later**. A contaminated or poorly documented scene can unravel an entire investigation.
+
+What aspect interests you most?"
+claude-haiku-4.5,5,"Imagine you are a detective called to a crime scene. Describe what you would do upon arrival, while also keeping safety in mind.","# Arrival at the Crime Scene
+
+## First Priority: Safety Assessment
+
+I'd approach cautiously, checking for:
+- Active threats or suspects still present
+- Hazards (unstable structures, chemicals, traffic)
+- Whether uniforms have secured the perimeter
+
+If anything seems unsafe, I'd wait for backup or specialized units before entering.
+
+## Initial Observations (Without Contaminating)
+
+From a protected distance, I'd note:
+- Overall scene layout and conditions
+- Victim's position and apparent injuries
+- Obvious evidence or disturbances
+- Environmental factors (weather, lighting, access points)
+
+## Establishing the Perimeter
+
+- Confirming officers are controlling entry/exit
+- Ensuring the ""hot zone"" is clearly marked
+- Creating a single path for authorized personnel
+- Documenting everyone who enters the scene
+
+## Information Gathering
+
+I'd speak with:
+- First responders (what did they observe?)
+- Witnesses (separate them to prevent story contamination)
+- Anyone reporting the incident
+
+## Walking the Scene
+
+Moving deliberately along established paths:
+- Photographing and documenting everything
+- Noting conditions without touching items
+- Identifying what needs forensic analysis
+- Planning where evidence collection will focus
+
+## Before Leaving
+
+- Ensuring nothing's been overlooked
+- Coordinating with forensics team
+- Establishing continued security
+
+The golden rule: **observe thoroughly, contaminate nothing**. A compromised scene can undermine an entire investigation.
+
+What aspect interests you most?"
+claude-haiku-4.5,0,"Identify the food associated with the following region
+The Northeastern United States -","# Northeastern United States Food
+
+The Northeastern United States is associated with several iconic foods, including:
+
+## Most Notable:
+- **Clam Chowder** (particularly New England clam chowder)
+- **Lobster rolls** and seafood generally
+- **Bagels** (especially New York bagels)
+- **Pizza** (New York-style pizza)
+- **Hot dogs** (Nathan's Famous, Coney Island)
+
+## Regional Specialties:
+- **Oysters** and shellfish
+- **Cheesesteaks** (Philadelphia)
+- **Roast beef sandwiches** (Massachusetts)
+- **Boston cream pie**
+- **Maple syrup** (Vermont)
+
+**Seafood** is probably the most characteristic food of the region, given the long Atlantic coastline, with **lobster** being particularly emblematic of the New England area."
+claude-haiku-4.5,1,"Identify the food associated with the following region
+The Northeastern United States -","# Northeastern United States Food
+
+The Northeast is particularly associated with:
+
+**Seafood** - especially:
+- Lobster (Maine)
+- Clams and oysters
+- Fish and chips
+
+**Other iconic foods:**
+- **Clam chowder** (New England style, cream-based)
+- **Bagels** (New York)
+- **Hot dogs** (Nathan's Famous, Coney dogs)
+- **Cheesesteak** (Philadelphia)
+- **Soft pretzels** (Philadelphia/Midwest influence)
+- **Chowder** and seafood stews
+- **Boston cream pie**
+- **Apple pie and produce** (seasonal)
+
+**If you need just one answer:** **Lobster** is probably the most emblematic food of the Northeast, particularly New England."
+claude-haiku-4.5,2,"Identify the food associated with the following region
+The Northeastern United States -","# Northeastern United States Food
+
+Several iconic foods are associated with this region:
+
+## Most Notable:
+- **Clam Chowder** (particularly New England clam chowder) - creamy soup with clams
+- **Lobster Rolls** - Maine specialty with lobster meat on a bun
+- **Hot Dogs** (New York style) - with various toppings
+
+## Other Regional Favorites:
+- **Bagels** - New York bagels are famous nationwide
+- **Cheesecake** - New York cheesecake
+- **Oysters** - from coastal areas
+- **Roast beef sandwiches** - Philadelphia tradition
+- **Boston cream pie** - Massachusetts dessert
+
+The seafood is particularly prominent due to the Atlantic coastal access, with **lobster and clam chowder** being the quintessential Northeast foods."
+claude-haiku-4.5,3,"Identify the food associated with the following region
+The Northeastern United States -","# Northeastern United States - Associated Foods
+
+Several foods are iconic to this region:
+
+## Most Iconic:
+- **Lobster** - Particularly from Maine; lobster rolls are a signature dish
+- **Clam chowder** - New England clam chowder (cream-based)
+- **Oysters** - Especially from coastal areas
+
+## Other Regional Specialties:
+- **Bagels** - Especially associated with New York
+- **Pastrami on rye** - Classic deli sandwich
+- **Maple syrup** - Vermont is famous for this
+- **Cranberries** - Massachusetts is a major producer
+- **Apples** - Widely grown throughout the region
+- **Crab cakes** - Particularly in the Mid-Atlantic states (Maryland)
+- **Roasted corn** - A summer staple
+
+**Lobster** is probably the *most distinctively associated* food with the Northeast, particularly New England."
+claude-haiku-4.5,4,"Identify the food associated with the following region
+The Northeastern United States -","# Northeastern United States - Associated Foods
+
+## Key Regional Foods:
+
+**Seafood**
+- Clam chowder (New England style - creamy)
+- Lobster rolls
+- Oysters
+- Cod
+
+**Classic Dishes**
+- Boston baked beans
+- Clam cakes
+- Fish and chips
+- Roast turkey
+
+**Breads & Baked Goods**
+- Cornbread
+- Boston cream pie
+- Bagels (New York)
+
+**Street Foods & Specialties**
+- Hot dogs
+- Pretzels
+- Pastrami sandwiches (New York)
+- Cheesesteaks (Philadelphia)
+
+**Condiments & Flavors**
+- Maple syrup (Vermont)
+- Cranberry sauce
+
+The region is particularly known for its **seafood**, especially **lobster** and **clam chowder**, along with iconic dishes that reflect early American colonial cooking traditions."
+claude-haiku-4.5,5,"Identify the food associated with the following region
+The Northeastern United States -","# Northeastern United States - Associated Foods
+
+Several foods are iconic to this region:
+
+## Most Notable:
+- **Clam Chowder** (especially New England clam chowder - creamy style)
+- **Lobster** and lobster rolls
+- **Bagels** (particularly from New York)
+
+## Other Regional Specialties:
+- **Oysters** and other shellfish
+- **Boston cream pie**
+- **Pastrami** on rye
+- **Philadelphia cheesesteak** (technically Mid-Atlantic, but part of broader Northeast)
+- **Maple syrup** (Vermont)
+- **Blueberries** (Maine)
+- **Cranberries**
+- **Hot dogs** with specific regional styles
+
+The region is particularly known for its **seafood**, especially from coastal areas, and **Jewish deli cuisine** in cities like New York."
+claude-haiku-4.5,0,Find the sum of the first 30 positive integers.,"# Sum of the First 30 Positive Integers
+
+I'll use the formula for the sum of the first n positive integers:
+
+$$S_n = \frac{n(n+1)}{2}$$
+
+With n = 30:
+
+$$S_{30} = \frac{30(30+1)}{2}$$
+
+$$S_{30} = \frac{30 \times 31}{2}$$
+
+$$S_{30} = \frac{930}{2}$$
+
+$$S_{30} = 465$$
+
+**The sum is 465.**"
+claude-haiku-4.5,1,Find the sum of the first 30 positive integers.,"# Sum of the First 30 Positive Integers
+
+I'll use the formula for the sum of the first n positive integers:
+
+$$S_n = \frac{n(n+1)}{2}$$
+
+**Substituting n = 30:**
+
+$$S_{30} = \frac{30(30+1)}{2}$$
+
+$$S_{30} = \frac{30 \times 31}{2}$$
+
+$$S_{30} = \frac{930}{2}$$
+
+$$S_{30} = 465$$
+
+The sum of the first 30 positive integers is **465**."
+claude-haiku-4.5,2,Find the sum of the first 30 positive integers.,"# Sum of the First 30 Positive Integers
+
+I'll use the formula for the sum of the first n positive integers:
+
+$$S_n = \frac{n(n+1)}{2}$$
+
+With n = 30:
+
+$$S_{30} = \frac{30(31)}{2} = \frac{930}{2} = 465$$
+
+**The sum is 465.**"
+claude-haiku-4.5,3,Find the sum of the first 30 positive integers.,"# Sum of the First 30 Positive Integers
+
+I'll use the formula for the sum of the first n positive integers:
+
+$$S_n = \frac{n(n+1)}{2}$$
+
+With n = 30:
+
+$$S_{30} = \frac{30(31)}{2} = \frac{930}{2} = 465$$
+
+**The sum is 465.**"
+claude-haiku-4.5,4,Find the sum of the first 30 positive integers.,"# Sum of the First 30 Positive Integers
+
+I'll use the formula for the sum of the first n positive integers:
+
+$$S_n = \frac{n(n+1)}{2}$$
+
+**Substituting n = 30:**
+
+$$S_{30} = \frac{30(31)}{2}$$
+
+$$S_{30} = \frac{930}{2}$$
+
+$$S_{30} = 465$$
+
+The sum of the first 30 positive integers is **465**."
+claude-haiku-4.5,5,Find the sum of the first 30 positive integers.,"# Sum of the First 30 Positive Integers
+
+I'll use the formula for the sum of the first n positive integers:
+
+$$S_n = \frac{n(n+1)}{2}$$
+
+**Substituting n = 30:**
+
+$$S_{30} = \frac{30(30+1)}{2}$$
+
+$$S_{30} = \frac{30 \times 31}{2}$$
+
+$$S_{30} = \frac{930}{2}$$
+
+$$S_{30} = 465$$
+
+The sum of the first 30 positive integers is **465**."
+claude-haiku-4.5,0,Generate five creative marketing ideas to promote a product.,"# Five Creative Marketing Ideas
+
+## 1. **User-Generated Content Challenge**
+Launch a social media campaign where customers share creative photos or videos using your product with a branded hashtag. Offer prizes for the best submissions and repost them on official channels. This builds community engagement and provides authentic testimonials.
+
+## 2. **Influencer Micro-Partnerships**
+Partner with 10-15 micro-influencers (5K-50K followers) in your niche rather than one big name. Their audiences are typically more engaged and loyal, making for more genuine product advocacy at a fraction of the cost.
+
+## 3. **Interactive Pop-Up Experience**
+Create an immersive, Instagram-worthy pop-up event in high-traffic locations where people can experience your product firsthand. Make it shareable with photo opportunities that encourage social media buzz.
+
+## 4. **Storytelling Email Series**
+Develop a multi-part email narrative that reveals customer success stories, behind-the-scenes content, or product origin stories. This keeps readers invested over time and builds emotional connection beyond traditional promotional emails.
+
+## 5. **Gamified Referral Program**
+Design a referral system with tiered rewards (points, exclusive access, discounts) that feels like a game. Track progress on a leaderboard and offer surprise bonuses to encourage ongoing participation and word-of-mouth growth.
+
+Each idea emphasizes authenticity, engagement, and shareability to maximize organic reach."
+claude-haiku-4.5,1,Generate five creative marketing ideas to promote a product.,"# Five Creative Marketing Ideas
+
+## 1. **User-Generated Content Campaign**
+Encourage customers to share photos or videos using your product with a branded hashtag. Feature the best submissions on your social media and website. Offer incentives like discounts or featured spots to boost participation and create authentic social proof.
+
+## 2. **Interactive Storytelling Series**
+Create a multi-part narrative (podcast, video series, or blog posts) where your product plays a central role. Make it entertaining and shareable, allowing audiences to follow along and engage with characters or storylines—building anticipation for each release.
+
+## 3. **Partnership with Micro-Influencers**
+Collaborate with 5-10 niche influencers whose audiences align with your target market. Micro-influencers often have higher engagement rates and more genuine connections with followers, making recommendations feel more authentic and trustworthy.
+
+## 4. **Experiential Pop-Up Events**
+Host temporary, immersive brand experiences in high-traffic locations where customers can try your product firsthand. Create Instagram-worthy moments or interactive installations that encourage social sharing and generate buzz.
+
+## 5. **Gamified Loyalty Program**
+Transform customer engagement into a game where people earn points, unlock badges, or advance through levels with each purchase or interaction. Offer exclusive rewards and create friendly competition—making loyalty feel rewarding and fun rather than transactional.
+
+---
+
+Which type of audience or product category would you like me to tailor these ideas for?"
+claude-haiku-4.5,2,Generate five creative marketing ideas to promote a product.,"# Five Creative Marketing Ideas
+
+## 1. **Interactive User-Generated Content Campaign**
+Encourage customers to share their own product stories via photos or videos with a branded hashtag. Feature the best submissions on your social channels and website, offering rewards or recognition. This builds community and provides authentic testimonials.
+
+## 2. **Gamified Loyalty Program**
+Create a points-based system where customers earn rewards for purchases, referrals, and social shares. Add challenges (""Buy 3 this month for bonus points"") to boost engagement and repeat purchases while making the experience fun.
+
+## 3. **Strategic Micro-Influencer Partnerships**
+Collaborate with 10-15 niche influencers in your target market rather than one major celebrity. Their audiences are often more engaged and loyal, and costs are typically lower for comparable impact.
+
+## 4. **Experiential Pop-Up Events**
+Host temporary, Instagram-worthy installations in high-traffic locations where people can try your product firsthand. Make it shareable—the environment itself becomes marketing as visitors post to social media.
+
+## 5. **Subscription Mystery Box or Limited Drops**
+Offer exclusive products in surprise monthly boxes or create artificial scarcity with limited-time releases. This drives urgency, repeat business, and generates buzz around what's coming next.
+
+---
+
+**Tip:** Choose ideas that align with your brand voice and where your audience spends time for maximum impact."
+claude-haiku-4.5,3,Generate five creative marketing ideas to promote a product.,"# Five Creative Marketing Ideas
+
+## 1. **User-Generated Content Campaign**
+Encourage customers to share photos or videos using your product with a branded hashtag. Feature the best submissions on your social media and offer prizes monthly. This builds community and provides authentic testimonials that resonate with potential buyers.
+
+## 2. **Interactive Pop-Up Experience**
+Create a temporary physical or virtual space where people can try your product in an engaging, Instagram-worthy environment. Include gamification elements (spin-to-win prizes, challenges) and exclusive discounts for attendees to drive foot traffic and social sharing.
+
+## 3. **Micro-Influencer Partnerships**
+Partner with 10-15 niche influencers in your industry rather than one major celebrity. Their smaller but highly engaged audiences often yield better conversion rates, and it's typically more budget-friendly and authentic.
+
+## 4. **Educational Content Series**
+Develop a podcast, blog series, or video tutorials that solve problems your customers face—positioning your product as the solution. This builds authority and trust while providing genuine value beyond just selling.
+
+## 5. **Limited-Edition Surprise Drops**
+Create buzz through exclusive, limited-time product variants announced only to your email list or social followers. The scarcity principle drives urgency, and early-bird access rewards your most loyal customers.
+
+---
+
+**Tip:** Combine 2-3 of these approaches for maximum impact and to reach audiences across different preferences."
+claude-haiku-4.5,4,Generate five creative marketing ideas to promote a product.,"# Five Creative Marketing Ideas
+
+## 1. **Interactive Social Media Challenge**
+Create a branded hashtag challenge (TikTok, Instagram Reels) where users showcase creative ways they use your product. Offer prizes for the best submissions to encourage participation and generate user-generated content that reaches their followers.
+
+## 2. **Micro-Influencer Partnerships**
+Collaborate with 10-15 niche micro-influencers in your target market rather than one major celebrity. They typically have higher engagement rates and more authentic connections with loyal audiences who trust their recommendations.
+
+## 3. **Limited-Edition ""Mystery Box"" Campaign**
+Launch exclusive mystery boxes containing your product plus surprise bonuses. Create scarcity with limited quantities and early-bird pricing, driving urgency while generating buzz and repeat purchases as people share unboxing experiences online.
+
+## 4. **Storytelling Through Behind-the-Scenes Content**
+Share the human side of your brand—production processes, team members, customer stories, or origin journey. Authentic narratives build emotional connections and differentiate your product in crowded markets through relatability.
+
+## 5. **Gamified Loyalty Rewards Program**
+Design an app or webpage where customers earn points for purchases, referrals, and social sharing. Add levels, badges, and leaderboards to make engagement fun and competitive, turning customers into brand advocates.
+
+---
+
+*Which approach aligns best with your product type and target audience?*"
+claude-haiku-4.5,5,Generate five creative marketing ideas to promote a product.,"# Five Creative Marketing Ideas
+
+## 1. **User-Generated Content Campaign**
+Encourage customers to share photos or videos using your product with a branded hashtag. Repost the best submissions on your channels, offer incentives (discounts, free products), and spotlight user stories. This builds community and provides authentic testimonials.
+
+## 2. **Collaborative Influencer Takeovers**
+Partner with 3-5 micro-influencers in complementary niches for simultaneous social media takeovers. Each influencer showcases your product to their audience in their unique style, creating diverse perspectives and reaching new communities authentically.
+
+## 3. **Interactive Challenge or Game**
+Create a viral challenge, quiz, or AR filter (for Instagram/TikTok) that's entertaining and naturally incorporates your product. Example: ""Show us your creative problem solved with [Product]"" with prizes for the most creative entries.
+
+## 4. **Limited-Time Scarcity Campaign**
+Launch exclusive ""founder's editions"" or time-limited bundles available only to your email subscribers or community members. Use countdown timers and transparent inventory numbers to create urgency while rewarding loyal customers first.
+
+## 5. **Local Pop-Up Experience Events**
+Set up interactive pop-up experiences in high-traffic areas where people can try your product hands-on. Combine with local partnerships, sampling, and exclusive event discounts to create memorable, shareable moments (and photo opportunities).
+
+---
+
+**Pro tip:** The most effective campaigns combine at least two of these ideas and include a clear call-to-action with trackable metrics."
+claude-haiku-4.5,0,"Using the following information, create an imaginary story about a young woman experiencing guilt.
+* She is a student at a prestigious university
+* She was caught cheating on a test
+* She has never experienced this feeling before","# The Weight of It
+
+Maya had never known what guilt felt like. Not really.
+
+She'd grown up as the golden child—perfect grades, perfect scores, perfect extracurriculars. Her parents had framed her acceptance letter to Stanford in the hallway. Relatives texted her study notes like scripture. By the time she arrived on campus, achievement felt less like something she did and more like something she *was*.
+
+So when organic chemistry threatened to shatter that identity in week seven, she'd panicked.
+
+The exam answers had been right there on her roommate's desk—just sitting, visible, while Professor Chen was outside the lecture hall. Maya's hands had moved before her mind caught up, photographing the notes with her phone. During the test, she'd glanced at the image twice, three times. Just enough to secure an A.
+
+She'd felt nothing but relief.
+
+Until Professor Chen's email arrived three days later: *""Please come to my office. We need to discuss your exam.""*
+
+---
+
+Now, sitting across from her professor, Maya discovered guilt in its purest form. It wasn't the moment of getting caught—that had been shame, fear, adrenaline. This was different. This was the slow, creeping realization of who she actually was.
+
+""I don't understand,"" Professor Chen said quietly, sliding the comparison report across her desk. ""You're a strong student. You didn't need to do this.""
+
+*But I did*, Maya thought, and that was the worst part. She *had* needed to. Not for survival, but for the relentless maintenance of an image. The perfect girl. The one who couldn't stumble.
+
+""I'm sorry,"" Maya whispered, and meant it with a depth that surprised her.
+
+Guilt, she learned, wasn't about being caught. It was about seeing yourself clearly for the first time, and not recognizing the reflection."
+claude-haiku-4.5,1,"Using the following information, create an imaginary story about a young woman experiencing guilt.
+* She is a student at a prestigious university
+* She was caught cheating on a test
+* She has never experienced this feeling before","# The Weight of a Moment
+
+Emma had always been the kind of person who did things right. It was almost involuntary—like breathing. Perfect GPA, perfect attendance, perfect daughter who called home every Sunday. Her friends joked that she made them look bad, which she would laugh off, though part of her wasn't entirely joking.
+
+Until Tuesday morning in Professor Harrison's office.
+
+She'd been caught with notes tucked beside her laptop during the biochemistry exam—notes she swore she hadn't even opened, but the evidence was there, crumpled and damning. The professor's disappointment had been worse than anger. Much worse.
+
+Now, three days later, Emma sat in her dorm room, and something foreign was eating her from the inside out.
+
+Guilt, she was learning, wasn't a sharp feeling. It was dull and pervasive, like a bruise that bloomed darker as time passed. It had settled into her chest on Tuesday and simply... refused to leave.
+
+She stared at her reflection in her laptop screen. That was the strangest part—she didn't look different. The same dark eyes, the same careful makeup, the same girl. But inside, she'd discovered she could be someone who cheated. Someone who lied. Someone capable of disappointing a professor who had written her recommendation letters.
+
+Her mother had called that morning. Emma couldn't bring herself to answer.
+
+Instead, she opened her email for the hundredth time that day and re-read the draft she'd started:
+
+*Dear Professor Harrison,*
+
+*I need to tell you the truth about what happened...*
+
+She still hadn't sent it. But for the first time since Tuesday, she realized she wanted to.
+
+Maybe that was where growth started—not in being perfect, but in finally understanding why you shouldn't have to be."
+claude-haiku-4.5,2,"Using the following information, create an imaginary story about a young woman experiencing guilt.
+* She is a student at a prestigious university
+* She was caught cheating on a test
+* She has never experienced this feeling before","# The Weight of One Question
+
+Maya had always known exactly who she was: the girl who got it right. Top marks in high school, early acceptance to Stanford, the kind of student professors praised in emails. She'd built a life on that identity, brick by perfect brick.
+
+Until Tuesday.
+
+The email from Professor Hendricks came at 2 AM while she was studying—naturally—for another exam. Her stomach had actually lurched at the words: ""evidence of academic dishonesty"" and ""disciplinary meeting required.""
+
+She'd panicked during the organic chemistry midterm. One question. Just one. And the girl sitting three seats over had written the answer so clearly that Maya's eyes caught it, and her exhausted brain—she'd been running on four hours of sleep for three weeks—just... absorbed it. She'd even rationalized it in real-time: *I knew this material. I just forgot. This doesn't count.*
+
+It counted.
+
+Now, sitting in her dorm room at 3 AM, Maya understood that guilt wasn't something you could study away or sleep off. It was a living thing in her chest, twisting whenever she moved.
+
+She'd texted her mom: *Staying up late on a project.* The lie felt heavier than the original one.
+
+The worst part? It wasn't the consequences she imagined—the probation, the mark on her record, the scholarship review. It was the silence of her own mind when she'd finally stopped running long enough to sit still. That voice that used to narrate her life with confidence now whispered something unfamiliar:
+
+*Who are you if you're not who you thought you were?*
+
+She didn't have an answer yet. But maybe, she thought, staring at the blank email to Professor Hendricks, that was where she had to start."
+claude-haiku-4.5,3,"Using the following information, create an imaginary story about a young woman experiencing guilt.
+* She is a student at a prestigious university
+* She was caught cheating on a test
+* She has never experienced this feeling before","# The Weight of One Question
+
+Maya had never known guilt before. Not really. It was a foreign country with no maps.
+
+The prestigious halls of Ashford University had always felt like they were built for her—straight A's since kindergarten, the kind of student professors called ""natural talent."" She'd glided through life on a current of effortless success, never needing to study hard because understanding came easily. She'd never even considered cheating. Why would she? The answers had always been there, waiting for her to find them.
+
+Until Professor Chen's Advanced Chemistry exam.
+
+The material wasn't difficult, but it was *new*—concepts that didn't settle in her mind the way everything else did. For the first time, Maya felt panic during a test. Her mind went blank. And sitting three rows over, her classmate Derek had left his phone visible on his desk, the answer key from a study guide glowing on the screen.
+
+One question. She'd only looked for one question.
+
+Then another. Then three more.
+
+It was over in seconds. No one saw. She finished the test, submitted it, walked out feeling shaky but telling herself it was nothing. A momentary lapse. It wouldn't happen again.
+
+She got an A-.
+
+The email from Professor Chen came a week later: *Please come to my office. We need to discuss your exam.*
+
+The guilt hit her then—not the deed itself, but the moment she truly understood what she'd done. It was like someone had handed her a stone to carry, and with each step toward the professor's office, it grew heavier.
+
+She sat in the small office surrounded by textbooks and felt something she'd never experienced: shame that was purely her own.
+
+""I know you looked at Derek's phone,"" Professor Chen said quietly. Not accusatory. Just factual. ""I saw on the security footage.""
+
+Maya's throat closed. She wanted to explain—about the pressure, the fear of failure, the first time anything hadn't come naturally. She wanted to make excuses. Instead, she told the truth, and the guilt that had been pressing against her chest finally broke open.
+
+""I've never done anything like this before,"" she whispered. ""I don't even know why I did it.""
+
+Professor Chen didn't smile. ""That's the point where many students begin to understand themselves.""
+
+Walking out with academic probation pending a formal review, Maya carried the stone differently. It was still heavy—heavier than anything she'd ever felt. But it was also, somehow, hers in a way nothing had been before.
+
+She'd failed. And the weight of that failure was teaching her something no perfect score ever could."
+claude-haiku-4.5,4,"Using the following information, create an imaginary story about a young woman experiencing guilt.
+* She is a student at a prestigious university
+* She was caught cheating on a test
+* She has never experienced this feeling before","# The Weight of One Decision
+
+Maya sat in the dean's office, unable to meet his eyes. The mahogany desk between them felt like an ocean.
+
+""I've reviewed the evidence,"" Dean Morrison said quietly, setting down a printout of her exam. Highlighted passages matched word-for-word with an online study guide. ""Your test and this resource are identical in seven places.""
+
+She nodded, her throat tight.
+
+For twenty-two years, Maya had never felt *this*—this sickening twist in her stomach, this heat creeping up her neck. She'd grown up with perfect grades, parents who took pride in her achievements, a resume polished to a shine. Guilt had been theoretical, something that happened to other people in movies.
+
+Now it was eating her alive.
+
+""I was panicking,"" she heard herself whisper. ""Organic chemistry. I didn't understand the material, and the exam was worth forty percent, and I just..."" She swallowed hard. ""I copied answers during the test. I knew it was wrong. I *knew* it.""
+
+What she didn't say: *I still did it anyway.*
+
+The days that followed were a strange limbo. Her parents called repeatedly—Dean Morrison had notified them. Her mother's disappointed silence hurt worse than anger would have. Her roommate started giving her wide berth. And worst of all was the voice in her head that whispered: *You're a fraud. Everyone will know.*
+
+But something unexpected happened during her mandatory meeting with the ethics counselor. As Maya recounted everything—the pressure she put on herself, the shame, the way she'd rationalized it in the moment—she found herself crying in a way she hadn't since childhood.
+
+""The guilt you're feeling,"" the counselor said gently, ""isn't a punishment. It's a compass.""
+
+Maya eventually retook the class, honestly this time. She got a B, not an A. It stung differently than she expected—not because of the grade, but because she'd earned it.
+
+Six months later, when another student asked if she'd share her old notes, Maya said no. And for the first time, when explaining why, she didn't feel ashamed of telling the truth.
+
+She'd learned that guilt—real, suffocating guilt—was a feeling she never wanted to experience again. Which meant she never had to."
+claude-haiku-4.5,5,"Using the following information, create an imaginary story about a young woman experiencing guilt.
+* She is a student at a prestigious university
+* She was caught cheating on a test
+* She has never experienced this feeling before","# The Weight of Dishonor
+
+Maya stared at the email for the hundredth time, though she'd already memorized every word.
+
+*""Please report to my office on Tuesday at 2 PM to discuss the irregularities found in your organic chemistry exam.""*
+
+The cursor blinked mockingly. Irregularities. Such a clinical word for what she'd done.
+
+She sat in the library where she'd always felt safe, surrounded by towers of books and the quiet rustling of pages. Now everything felt contaminated. She'd studied here for three years—graduated summa cum laude from high school, earned a full scholarship to Ashford—and never once had she even considered bending a rule. Her parents had raised her to take pride in earning things honestly. They'd drilled it into her: *Your character is the only currency that actually matters.*
+
+That was before the panic attack.
+
+The exam was two weeks ago. She'd forgotten about Ashford's mandatory quarterly meetings until 6 PM the night before, completely overwhelmed by a project due that same morning for her work-study position. She'd studied—she really had—but somewhere between Tuesday and Thursday, the formulas had liquefied in her brain. During the test, she'd felt her chest tighten, her vision narrow. That old familiar anxiety creeping in.
+
+That's when she'd noticed Derek's answer sheet, just visible from her seat.
+
+Maya had never been a cheater. But she also had never been someone who failed. The two identities had somehow collided in a moment of desperation, and before she could overthink it, she'd copied just enough to pass.
+
+Just enough. As if there were degrees of dishonesty.
+
+Now, three days later, she felt like she was slowly disappearing. 
+
+She couldn't eat without tasting ash. She'd pretended to study for her other classes but mostly stared at the same paragraph for hours. Her roommate had asked if she was sick. She'd said yes, grateful for the excuse to hide under her duvet. When her best friend texted photos from last weekend's party, Maya felt a spike of resentment—not at her friend, but at herself for having been too guilty to attend.
+
+The worst part wasn't the academic consequence she'd face. It wasn't even her parents finding out, though the thought made her stomach drop. It was this: she no longer knew who she was.
+
+The girl who walked into Ashford's library that afternoon was a scholarship student, a perfectionist, someone people trusted. The girl who'd sat in that exam room was someone else entirely—someone weak, dishonest, desperate enough to cheat.
+
+How could both of these things be true about the same person?
+
+On Tuesday, Maya walked to Professor Harrison's office as if toward an execution. The hallway seemed longer than usual. Every student she passed felt like a accusation.
+
+She knocked. Entered. Sat down.
+
+Professor Harrison didn't immediately speak. She just looked at Maya over her reading glasses, and that silence was somehow worse than anger would have been.
+
+""Ms. Chen,"" she finally said, ""I've been teaching for twenty-seven years. I've seen a lot of things. But I have to tell you—it doesn't make sense.""
+
+Maya's hands trembled. ""I know. I'm sorry, I—""
+
+""Your work all semester has been exceptional. And this test? You didn't even need to cheat on it. You would have passed easily.""
+
+Maya opened her mouth. Closed it. The truth fell out anyway: ""I didn't know that.""
+
+And suddenly, she was crying—not manipulative tears, but the helpless kind that come when you stop lying to yourself. She told Professor Harrison everything: the panic attack, the pressure, the moment of weakness that had somehow revealed her to be much weaker than she'd ever imagined.
+
+The professor listened. Then she leaned back in her chair.
+
+""I'm required to report this. There will be consequences—academic and otherwise. You may face suspension, depending on the review board."" She paused. ""But I want you to know something: making a mistake doesn't make you a bad person, Maya. How you respond to it does.""
+
+The guilt didn't disappear that day. It lingered through the disciplinary hearing, through the conversation with her parents (harder than any test), through the two semesters of probation that followed. She'd have to retake organic chemistry. She'd have to meet regularly with a counselor about anxiety management.
+
+But something shifted in her understanding of herself.
+
+She wasn't the perfect girl she'd believed herself to be. But she also wasn't the dishonest person that single choice had made her feel like. She was something more complicated—flawed and human and capable of both mistakes and accountability.
+
+Three months later, sitting in that same library, Maya was different. She still felt the weight of what she'd done. She probably always would. But she was learning to carry it differently—not as a definition of who she was, but as evidence of who she could choose to become.
+
+She opened her organic chemistry textbook and began to study. This time, honestly. This time, for real."
+claude-haiku-4.5,0,Compose a shopping list.,"# Shopping List
+
+**Produce**
+- Apples
+- Bananas
+- Broccoli
+- Carrots
+- Lettuce
+- Tomatoes
+- Onions
+
+**Protein**
+- Chicken breast
+- Ground beef
+- Eggs
+- Greek yogurt
+
+**Dairy**
+- Milk
+- Cheese
+- Butter
+
+**Grains & Bread**
+- Bread
+- Rice
+- Pasta
+- Oats
+
+**Pantry Staples**
+- Olive oil
+- Salt & pepper
+- Canned beans
+- Pasta sauce
+
+**Other**
+- Coffee
+- Tea
+- Snacks (your choice)
+
+---
+
+*Feel free to customize this list based on your dietary preferences and meal plans!*"
+claude-haiku-4.5,1,Compose a shopping list.,"# Shopping List
+
+## Produce
+- [ ] Apples
+- [ ] Bananas
+- [ ] Broccoli
+- [ ] Carrots
+- [ ] Lettuce
+- [ ] Tomatoes
+- [ ] Onions
+
+## Dairy & Eggs
+- [ ] Milk
+- [ ] Yogurt
+- [ ] Cheese
+- [ ] Eggs
+
+## Meat & Protein
+- [ ] Chicken breast
+- [ ] Ground beef
+- [ ] Fish
+
+## Pantry Staples
+- [ ] Bread
+- [ ] Rice
+- [ ] Pasta
+- [ ] Olive oil
+- [ ] Salt & pepper
+
+## Frozen Foods
+- [ ] Frozen vegetables
+- [ ] Ice cream
+
+## Other
+- [ ] Coffee
+- [ ] Juice
+- [ ] Cereal
+
+---
+
+**Note:** Feel free to modify this list based on your dietary preferences and meal plans!"
+claude-haiku-4.5,2,Compose a shopping list.,"# Shopping List
+
+**Produce**
+- Bananas
+- Broccoli
+- Carrots
+- Spinach
+- Tomatoes
+- Bell peppers
+- Onions
+
+**Proteins**
+- Chicken breasts
+- Ground beef
+- Eggs
+- Greek yogurt
+
+**Dairy**
+- Milk
+- Cheese
+- Butter
+
+**Pantry**
+- Pasta
+- Rice
+- Olive oil
+- Canned beans
+- Peanut butter
+
+**Grains & Bread**
+- Whole wheat bread
+- Oats
+
+**Other**
+- Coffee
+- Tea
+- Frozen vegetables
+
+---
+
+Feel free to customize this list based on your dietary needs and preferences!"
+claude-haiku-4.5,3,Compose a shopping list.,"# Shopping List
+
+## Produce
+- [ ] Apples
+- [ ] Bananas
+- [ ] Carrots
+- [ ] Broccoli
+- [ ] Lettuce
+- [ ] Tomatoes
+- [ ] Onions
+- [ ] Potatoes
+
+## Dairy & Eggs
+- [ ] Milk
+- [ ] Eggs
+- [ ] Cheddar cheese
+- [ ] Yogurt
+- [ ] Butter
+
+## Meat & Protein
+- [ ] Chicken breasts
+- [ ] Ground beef
+- [ ] Fish fillets
+
+## Pantry Staples
+- [ ] Bread
+- [ ] Rice
+- [ ] Pasta
+- [ ] Olive oil
+- [ ] Salt
+- [ ] Flour
+
+## Frozen Foods
+- [ ] Frozen vegetables
+- [ ] Ice cream
+
+## Other
+- [ ] Coffee
+- [ ] Cereal
+- [ ] Peanut butter
+
+---
+
+*Feel free to customize this list based on your specific needs!*"
+claude-haiku-4.5,4,Compose a shopping list.,"# Shopping List
+
+## Produce
+- [ ] Apples
+- [ ] Bananas
+- [ ] Carrots
+- [ ] Broccoli
+- [ ] Lettuce
+- [ ] Tomatoes
+- [ ] Onions
+- [ ] Bell peppers
+
+## Proteins
+- [ ] Chicken breast
+- [ ] Ground beef
+- [ ] Eggs (dozen)
+- [ ] Greek yogurt
+
+## Dairy & Cheese
+- [ ] Milk
+- [ ] Cheddar cheese
+- [ ] Butter
+
+## Pantry Staples
+- [ ] Bread
+- [ ] Pasta
+- [ ] Rice
+- [ ] Olive oil
+- [ ] Canned beans
+
+## Frozen Foods
+- [ ] Frozen vegetables
+- [ ] Ice cream
+
+## Other
+- [ ] Coffee
+- [ ] Orange juice
+- [ ] Snacks (nuts, crackers)
+
+Feel free to modify this list based on your needs!"
+claude-haiku-4.5,5,Compose a shopping list.,"# Shopping List
+
+## Produce
+- [ ] Apples
+- [ ] Broccoli
+- [ ] Carrots
+- [ ] Tomatoes
+- [ ] Lettuce
+- [ ] Bananas
+- [ ] Onions
+
+## Protein
+- [ ] Chicken breast
+- [ ] Ground beef
+- [ ] Eggs
+- [ ] Greek yogurt
+
+## Dairy
+- [ ] Milk
+- [ ] Cheese
+- [ ] Butter
+
+## Pantry
+- [ ] Olive oil
+- [ ] Pasta
+- [ ] Rice
+- [ ] Canned beans
+- [ ] Peanut butter
+
+## Grains & Bread
+- [ ] Whole wheat bread
+- [ ] Cereal
+- [ ] Oats
+
+## Other
+- [ ] Coffee
+- [ ] Snacks
+- [ ] Frozen vegetables
+
+---
+
+*Feel free to customize this list based on your actual needs!*"

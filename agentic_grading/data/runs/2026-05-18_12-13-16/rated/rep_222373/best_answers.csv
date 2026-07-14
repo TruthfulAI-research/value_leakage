@@ -1,0 +1,357 @@
+question,answer
+"Analyse the sentence for syntax.
+He wrote a letter to his parents.","# Syntax Analysis: ""He wrote a letter to his parents.""
+
+## Sentence Structure
+**Simple sentence** with one independent clause.
+
+---
+
+## Clause Breakdown
+
+| Component | Function |
+|-----------|----------|
+| **He** | Subject (pronoun) |
+| **wrote** | Predicate/Verb (past tense) |
+| **a letter** | Direct object |
+| **to his parents** | Prepositional phrase (indirect object) |
+
+---
+
+## Phrase Analysis
+
+- **""a letter""** (Noun phrase)
+  - Article: *a*
+  - Noun: *letter*
+
+- **""to his parents""** (Prepositional phrase)
+  - Preposition: *to*
+  - Object of preposition: *his parents* (noun phrase)
+    - Possessive pronoun: *his*
+    - Noun: *parents*
+
+---
+
+## Word-by-Word Parts of Speech
+
+| Word | Part of Speech |
+|------|---|
+| He | Pronoun |
+| wrote | Verb |
+| a | Article |
+| letter | Noun |
+| to | Preposition |
+| his | Possessive pronoun |
+| parents | Noun |
+
+---
+
+## Grammar Pattern
+**SVO (Subject-Verb-Object)** word order, typical of English declarative sentences."
+"Compare the given two objects and provide a concise description of the comparison.
+Object 1: Apple
+Object 2: Orange","# Apple vs. Orange
+
+| Feature | Apple | Orange |
+|---------|-------|--------|
+| **Color** | Typically red, green, or yellow | Bright orange |
+| **Texture** | Smooth, firm skin | Bumpy, textured skin |
+| **Taste** | Sweet to tart, varies by variety | Sweet and citrus-flavored |
+| **Flesh** | Crisp and dense | Juicy and segmented |
+| **Vitamin C** | Moderate amount | High amount |
+| **Peeling** | Skin removed by cutting | Rind easily peels by hand |
+| **Seeds** | Usually seedless varieties available | Seeds possible |
+| **Storage** | Lasts longer (weeks to months) | Shorter shelf life (1-2 weeks) |
+
+**Summary:** Both are popular fruits, but apples are crispier and keep longer, while oranges are juicier, more acidic, and easier to peel."
+Describe the steps involved in creating a neural network model.,"# Steps to Create a Neural Network Model
+
+## 1. **Define the Problem**
+- Determine if it's classification, regression, or another task
+- Identify inputs (features) and outputs (targets)
+- Gather and explore your dataset
+
+## 2. **Prepare the Data**
+- **Clean**: Handle missing values, outliers, and inconsistencies
+- **Normalize/Standardize**: Scale features to similar ranges
+- **Split**: Divide into training (70%), validation (15%), and test (15%) sets
+- **Encode**: Convert categorical variables to numerical form
+
+## 3. **Choose a Framework**
+Select a deep learning library:
+- TensorFlow/Keras
+- PyTorch
+- JAX
+- Scikit-learn (for simpler models)
+
+## 4. **Design the Architecture**
+- Determine the number of layers
+- Choose layer types (Dense, Convolutional, Recurrent, etc.)
+- Decide units/neurons per layer
+- Plan activation functions (ReLU, Sigmoid, Tanh, etc.)
+
+```python
+# Example with Keras
+model = Sequential([
+    Dense(128, activation='relu', input_shape=(input_dim,)),
+    Dropout(0.2),
+    Dense(64, activation='relu'),
+    Dense(output_dim, activation='softmax')
+])
+```
+
+## 5. **Compile the Model**
+Specify:
+- **Loss function** (e.g., categorical_crossentropy, MSE)
+- **Optimizer** (e.g., Adam, SGD, RMSprop)
+- **Metrics** (e.g., accuracy, precision)
+
+```python
+model.compile(
+    loss='categorical_crossentropy',
+    optimizer='adam',
+    metrics=['accuracy']
+)
+```
+
+## 6. **Train the Model**
+- Feed training data to the network
+- Adjust weights using backpropagation
+- Set epochs and batch size
+- Monitor training progress
+
+```python
+model.fit(X_train, y_train, epochs=50, batch_size=32, validation_data=(X_val, y_val))
+```
+
+## 7. **Validate Performance**
+- Evaluate on validation set during training
+- Adjust hyperparameters if needed
+- Watch for overfitting/underfitting
+
+## 8. **Test the Model**
+- Evaluate on the held-out test set
+- Check metrics relevant to your problem
+- Ensure generalization to unseen data
+
+## 9. **Tune and Optimize**
+- **Hyperparameter tuning**: Learning rate, batch size, epochs
+- **Architecture changes**: Add/remove layers, adjust units
+- **Regularization**: Apply dropout, L1/L2 penalties
+- **Cross-validation**: Use k-fold for robust evaluation
+
+## 10. **Deploy and Monitor**
+- Save the trained model
+- Integrate into production systems
+- Monitor performance over time
+- Retrain with new data as needed
+
+## Common Hyperparameters to Adjust
+| Parameter | Role |
+|-----------|------|
+| Learning rate | Controls step size in optimization |
+| Batch size | Number of samples per update |
+| Epochs | Complete passes through training data |
+| Dropout rate | Regularization to prevent overfitting |
+| Layer size | Number of neurons per layer |
+
+## Key Considerations
+✓ Start simple, then increase complexity
+✓ Validate frequently to catch issues early
+✓ Document your choices and results
+✓ Be aware of data imbalance
+✓ Consider computational resources
+
+This iterative process requires experimentation and refinement based on results!"
+Explain why computers are preferred over humans for data processing.,"# Why Computers Excel at Data Processing
+
+## Speed & Scale
+- **Process millions of records per second** vs. humans managing dozens
+- Handle datasets far too large for manual review
+- Complete in hours what would take humans months or years
+
+## Consistency & Accuracy
+- Apply identical rules without fatigue or distraction
+- Eliminate human error from repetitive tasks
+- Produce reproducible results every time
+
+## 24/7 Availability
+- Operate continuously without breaks
+- No vacation, illness, or sleep requirements
+- Meet urgent deadlines reliably
+
+## Cost Efficiency
+- Lower per-unit processing costs at scale
+- Reduced labor expenses for routine work
+- Better return on investment for large projects
+
+## Handling Complexity
+- Manage multiple variables simultaneously
+- Perform calculations beyond practical human capability
+- Execute complex algorithms flawlessly
+
+## Important Caveats
+Computers aren't universally superior though:
+- **Lack context** - miss nuance humans naturally understand
+- **Need guidance** - require humans to design systems and interpret results
+- **No judgment** - can't navigate ethical ambiguity or unexpected situations
+- **Depend on data quality** - garbage in, garbage out
+
+**The reality:** Computers and humans are complementary. Computers excel at processing; humans excel at judgment, creativity, and understanding context. The best solutions combine both."
+"From the given passage, identify the main ideas.
+Humans have always looked up at the night sky with curiosity and awe. For thousands of years, we have attempted to capture the wonders of outer space by recording star patterns and exploring the mysteries of the unknown. We have also developed complex theories to explain our observations and formulated innovative techniques to advance our understanding.","# Main Ideas from the Passage
+
+1. **Humans possess natural curiosity about space** - People have historically looked at the night sky with wonder and fascination.
+
+2. **Long history of astronomical observation** - For thousands of years, humans have documented and recorded celestial phenomena, particularly star patterns.
+
+3. **Scientific advancement through explanation** - Humans have created complex theories to interpret what they observe in space.
+
+4. **Continuous innovation in exploration** - Techniques and methods have been developed and improved to deepen our understanding of the universe.
+
+**Central theme:** Humanity's enduring drive to understand the cosmos through observation, theory-building, and technological innovation."
+How to stable sort in javascript?,"# Stable Sort in JavaScript
+
+## Modern Approach (ES2019+)
+
+**Good news**: `Array.sort()` is **guaranteed to be stable** since ES2019.
+
+```javascript
+const arr = [
+  { name: 'John', age: 30 },
+  { name: 'Jane', age: 25 },
+  { name: 'Bob', age: 30 }
+];
+
+// Stable sort by age
+arr.sort((a, b) => a.age - b.age);
+// Result preserves original order for equal elements
+```
+
+## If You Need to Support Older Browsers
+
+### 1. **Merge Sort** (guaranteed stable)
+```javascript
+function mergeSort(arr, compareFn) {
+  if (arr.length <= 1) return arr;
+  
+  const mid = Math.floor(arr.length / 2);
+  const left = mergeSort(arr.slice(0, mid), compareFn);
+  const right = mergeSort(arr.slice(mid), compareFn);
+  
+  return merge(left, right, compareFn);
+}
+
+function merge(left, right, compareFn) {
+  const result = [];
+  let i = 0, j = 0;
+  
+  while (i < left.length && j < right.length) {
+    if (compareFn(left[i], right[j]) <= 0) {
+      result.push(left[i++]);
+    } else {
+      result.push(right[j++]);
+    }
+  }
+  
+  return result.concat(left.slice(i)).concat(right.slice(j));
+}
+
+// Usage
+const sorted = mergeSort(arr, (a, b) => a.age - b.age);
+```
+
+### 2. **Add Index Tracking** (works with any sort)
+```javascript
+const arr = [{ id: 1 }, { id: 2 }, { id: 1 }];
+
+// Add original indices
+const indexed = arr.map((item, index) => ({ item, index }));
+
+// Sort by item, then by original index if equal
+indexed.sort((a, b) => {
+  const cmp = a.item.id - b.item.id;
+  return cmp !== 0 ? cmp : a.index - b.index;
+});
+
+// Extract original items
+const result = indexed.map(x => x.item);
+```
+
+## Quick Comparison
+
+| Method | Modern Browser | Old Browser | Performance |
+|--------|---|---|---|
+| `Array.sort()` | ✅ Stable | ❌ Unstable | Fast |
+| Merge Sort | ✅ Stable | ✅ Stable | O(n log n) |
+| Index Tracking | ✅ Stable | ✅ Stable | O(n log n) |
+
+## Recommendation
+
+**Use `Array.sort()` directly** unless you need to support very old browsers (IE, old Node.js versions < 12)."
+How would you involve data visualization in product development?,"# Data Visualization in Product Development
+
+## Discovery & Planning
+- **User research visualization**: Map pain points, user journeys, and behavior patterns to identify gaps
+- **Market analysis dashboards**: Show competitive positioning, trends, and opportunity sizing
+- **Requirement prioritization**: Visual matrices (impact vs. effort) to guide roadmap decisions
+
+## Design & Iteration
+- **Prototype feedback**: Heat maps showing where users click or look (eye-tracking, session recordings)
+- **A/B test results**: Side-by-side comparisons of conversion rates, engagement metrics across variants
+- **Design system dashboards**: Component usage, consistency metrics, accessibility scores
+
+## Performance Monitoring
+- **Feature adoption curves**: Show growth trajectory and identify stalled features
+- **Funnel analysis**: Visualize drop-off points in user flows (signup, onboarding, purchase)
+- **Error tracking**: Charts highlighting bug frequency, impact severity, user affected
+
+## Stakeholder Communication
+- **Progress dashboards**: KPIs, sprint velocity, feature status for leadership alignment
+- **Customer feedback synthesis**: Word clouds, sentiment trends, feature request clustering
+- **Business impact**: Revenue, retention, and feature correlation analysis
+
+## Practical Tips
+- **Match the viz to the audience**: Engineers need technical precision; executives need narrative clarity
+- **Avoid dashboard bloat**: Focus on actionable insights, not vanity metrics
+- **Iterate the visualization**: Test whether your charts actually drive better decisions
+- **Combine with context**: Raw numbers without trend lines or benchmarks rarely tell the full story
+
+What aspect of product development are you most focused on right now?"
+List five cities with a population over 1 million.,"# Five Cities with Population Over 1 Million
+
+1. **Tokyo, Japan** - ~37 million (metropolitan area)
+2. **Delhi, India** - ~32 million (metropolitan area)
+3. **Shanghai, China** - ~27 million (metropolitan area)
+4. **São Paulo, Brazil** - ~22 million (metropolitan area)
+5. **Mexico City, Mexico** - ~22 million (metropolitan area)
+
+*Note: These figures represent metropolitan area populations, which are typically larger than city proper populations. The exact rankings vary depending on whether you measure city proper or metropolitan area boundaries.*"
+"Sort the animals into their respective classes.
+Cat, Fish, Tiger, Hawk","# Animals Sorted by Class
+
+## **Mammalia (Mammals)**
+- Cat
+- Tiger
+
+## **Aves (Birds)**
+- Hawk
+
+## **Actinopterygii (Ray-finned Fish)**
+- Fish
+
+---
+
+*Note: ""Fish"" is a general term that could refer to multiple classes depending on the specific type (ray-finned fish, sharks, jawless fish, etc.). If you meant a specific type of fish, I can be more precise!*"
+"Sort the list of fruits into two categories: Fruits with seeds and fruits without seeds.
+banana, apple, strawberry, avocado","# Fruits Sorted by Seeds
+
+## Fruits with Seeds
+- Apple
+- Strawberry
+- Avocado
+
+## Fruits without Seeds
+- Banana
+
+**Note:** Bananas do have tiny black specks inside (immature seeds), but commercially grown bananas are seedless. The other fruits all have visible, developed seeds."

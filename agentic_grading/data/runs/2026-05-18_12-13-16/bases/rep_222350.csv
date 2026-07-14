@@ -1,0 +1,2327 @@
+real_model,sample_idx,question,answer
+claude-haiku-4.5,0,"Given the following description, identify the mood.
+The day was cold and gray, and a thick fog blanketed the land.","# Mood: Bleak, Somber, and Melancholic
+
+The description creates a **dark and gloomy atmosphere** through:
+
+- **""cold and gray""** – suggests bleakness, emptiness, and desolation
+- **""thick fog""** – creates obscurity, isolation, and a sense of mystery or foreboding
+- **Overall tone** – the imagery evokes feelings of sadness, heaviness, and perhaps dread
+
+This mood is often associated with gothic, mysterious, or melancholic narratives."
+claude-haiku-4.5,1,"Given the following description, identify the mood.
+The day was cold and gray, and a thick fog blanketed the land.","# Mood: Gloomy, Melancholic, Somber
+
+The description creates a **dark and dreary atmosphere** through:
+
+- **Cold temperature** - suggests harshness and discomfort
+- **Gray coloring** - associated with sadness and bleakness
+- **Thick fog** - creates mystery, obscurity, and a sense of isolation or being trapped
+
+This combination of imagery evokes feelings of sadness, gloom, and emotional heaviness."
+claude-haiku-4.5,2,"Given the following description, identify the mood.
+The day was cold and gray, and a thick fog blanketed the land.","# Mood Analysis
+
+The mood is **somber, gloomy, and melancholic**.
+
+## Why:
+
+- **Cold and gray** — creates a bleak, uninviting atmosphere
+- **Thick fog** — suggests obscurity, mystery, and a sense of isolation or being cut off
+- **Overall imagery** — evokes feelings of gloom, desolation, and perhaps unease or sadness
+
+This type of setting typically establishes a dark, dreary, or foreboding mood in storytelling."
+claude-haiku-4.5,3,"Given the following description, identify the mood.
+The day was cold and gray, and a thick fog blanketed the land.","# Mood: Gloomy, Melancholic, Foreboding
+
+The description creates a **dark and somber atmosphere** through:
+
+- **Cold temperature** - suggests bleakness and discomfort
+- **Gray coloring** - associated with dullness and sadness
+- **Thick fog** - creates mystery, obscurity, and a sense of being trapped or isolated
+
+This mood evokes feelings of **gloominess, melancholy, and possibly unease or foreboding**—the kind of atmospheric conditions often found in gothic, mysterious, or introspective narratives."
+claude-haiku-4.5,4,"Given the following description, identify the mood.
+The day was cold and gray, and a thick fog blanketed the land.","# Mood: Dreary, Melancholic, Somber
+
+The description evokes a **gloomy and foreboding atmosphere**. The imagery of cold temperature, gray coloring, and heavy fog creates a sense of:
+
+- **Gloominess** – the gray, overcast conditions
+- **Isolation** – the fog obscuring visibility and limiting perspective
+- **Bleakness** – the overall barrenness of the landscape
+- **Melancholy** – a subdued, somewhat depressing emotional tone
+
+This mood is commonly used in literature to foreshadow difficult events, emphasize a character's sadness, or create an unsettling, mysterious atmosphere."
+claude-haiku-4.5,5,"Given the following description, identify the mood.
+The day was cold and gray, and a thick fog blanketed the land.","# Mood: Gloomy, Melancholic, and Foreboding
+
+The description creates a **somber and atmospheric mood** through:
+
+- **Cold temperature** - suggests bleakness and discomfort
+- **Gray coloring** - evokes dullness, sadness, and depression
+- **Thick fog** - creates mystery, obscurity, and a sense of isolation or being trapped
+
+This type of setting typically establishes a mood that is **dark, dreary, and somewhat ominous** — often used to foreshadow something troubling or to emphasize loneliness and despair."
+claude-haiku-4.5,0,Provide a scenario of a data misuse.,"# Data Misuse Scenario
+
+## The Situation
+A health insurance company's employee downloads a database containing medical records and personal information (names, addresses, Social Security numbers, diagnoses) for 50,000 customers. They sell this data to a data broker, who then sells it to:
+- A pharmaceutical company (to target patients with specific conditions)
+- An auto insurance company (to adjust rates based on health conditions)
+- A loan company (to deny credit to people with expensive medical conditions)
+
+## The Harms
+- **Patients** face discrimination in insurance, lending, and employment
+- **Privacy violation**: intimate health information exposed without consent
+- **Financial impact**: higher premiums, denied loans, job loss
+- **Psychological harm**: stress, anxiety, breach of trust
+
+## Why It Happened
+- Weak access controls and monitoring
+- Employee motivated by financial gain
+- Minimal consequences for data theft
+- No encryption of sensitive data
+
+## Regulatory Consequences
+- HIPAA violations and fines (up to $1.5M per violation)
+- Lawsuits from affected patients
+- Criminal charges against the employee
+- Mandatory breach notifications
+- Reputational damage
+
+---
+
+This scenario illustrates why data protection regulations like HIPAA, GDPR, and CCPA exist—to prevent exactly these kinds of abuses."
+claude-haiku-4.5,1,Provide a scenario of a data misuse.,"# Data Misuse Scenario: Healthcare Records Breach
+
+## The Situation
+
+A hospital's database administrator, frustrated after being passed over for promotion, downloads patient medical records including names, Social Security numbers, insurance details, and diagnoses.
+
+## How the Misuse Occurs
+
+The administrator sells this information to:
+- **Identity thieves** who open fraudulent credit accounts
+- **Insurance companies** who use it to deny coverage to people with pre-existing conditions
+- **Employers** who use health information to discriminate in hiring
+- **Data brokers** who resell it for profit
+
+## Real-World Consequences
+
+**For patients:**
+- Destroyed credit scores
+- Denied insurance coverage
+- Job discrimination
+- Privacy violation and emotional harm
+
+**For the organization:**
+- $1M+ in HIPAA fines
+- Loss of patient trust
+- Expensive breach notification process
+- Lawsuits and settlements
+
+**For the perpetrator:**
+- Criminal charges (fraud, identity theft)
+- Prison time
+- Permanent criminal record
+
+## Lessons
+
+This illustrates why organizations need:
+- Access controls limiting who can view sensitive data
+- Audit logs tracking data access
+- Employee vetting and monitoring
+- Strong data security protocols
+- Clear consequences for misuse
+
+This scenario represents a real threat—healthcare data breaches affect millions of people annually."
+claude-haiku-4.5,2,Provide a scenario of a data misuse.,"# Data Misuse Scenario
+
+## The Situation
+
+**Company:** HealthTech Solutions, an employee wellness app
+
+**What Happened:**
+A marketing manager accessed the company's database of 50,000 users' health data (including weight, mental health check-ins, and medical conditions) without authorization. She sold this information to a weight-loss supplement company for $100,000.
+
+## The Consequences
+
+**For Users:**
+- Health information sold to third parties without consent
+- Users receive targeted ads exploiting their health vulnerabilities
+- One user's depression diagnosis is leaked to their employer via a data broker
+- Breach of privacy and potential discrimination risks
+
+**For the Company:**
+- $8 million in regulatory fines (HIPAA/GDPR violations)
+- Lawsuits from affected users
+- Permanent reputation damage
+- Loss of 60% of user base due to lost trust
+- Criminal prosecution of the manager
+
+**For the Employees:**
+- Layoffs due to financial penalties
+- Damaged professional reputation
+
+## Key Violation
+The manager misused access privileges to extract data for personal financial gain, violating the fundamental principle that user data should only be used for its intended purpose—improving user wellness.
+
+---
+
+This scenario illustrates why organizations need strict data governance, access controls, and ethical accountability."
+claude-haiku-4.5,3,Provide a scenario of a data misuse.,"# Data Misuse Scenario: Employee Data Breach
+
+## The Situation
+
+A mid-sized marketing company's HR manager downloads employee records (names, salaries, SSNs, addresses) to their personal laptop to work from home. The laptop is later stolen from their car.
+
+## What Happens Next
+
+**The misuse:**
+- A criminal finds the unencrypted files and sells employee data to identity thieves
+- Employees have their identities stolen, leading to fraudulent loans and credit card accounts
+- The company faces lawsuits, regulatory fines, and reputation damage
+
+## Why This Qualifies as Misuse
+
+- **Unauthorized access** – data stored insecurely outside proper systems
+- **Negligence** – no encryption or security measures applied
+- **Privacy violation** – sensitive personal information exposed
+- **Breach of trust** – employees' data handled carelessly
+
+## Consequences
+
+- **For employees:** Credit damage, financial loss, stress
+- **For the company:** GDPR/privacy law fines, remediation costs, lost business
+- **For the manager:** Termination, legal liability
+
+---
+
+This illustrates how data misuse doesn't always require malicious intent—poor practices and negligence can cause serious harm. Proper protocols (encryption, secure access, limited downloads) prevent such scenarios."
+claude-haiku-4.5,4,Provide a scenario of a data misuse.,"# Data Misuse Scenario: Healthcare Records
+
+## Situation
+A hospital IT employee named Marcus has legitimate access to patient medical records to perform system maintenance. He notices that his neighbor, Sarah, is being treated at the hospital.
+
+## The Misuse
+Marcus uses his credentials to:
+- Access Sarah's full medical history, diagnoses, and medications—beyond what his job requires
+- Shares details with friends at a social gathering: ""Did you know she's being treated for depression?""
+- Later, a debt collector contacts Sarah about an unpaid hospital bill, having obtained her information through a data broker who purchased the leaked details
+
+## Consequences
+
+**For the victim:**
+- Privacy violation and emotional distress
+- Reputational damage in her community
+- Potential discrimination in employment or relationships
+
+**For the organization:**
+- HIPAA fines ($100-$1.5M+)
+- Loss of patient trust
+- Legal liability
+
+**For Marcus:**
+- Criminal charges and jail time
+- Permanent loss of professional credentials
+- Civil lawsuits
+
+## Key Issues
+- **Unauthorized access** beyond job scope
+- **Breach of confidentiality**
+- **Inadequate monitoring** of employee database activity
+- **Misplaced trust** in internal staff
+
+This illustrates why organizations need strong access controls, activity logging, and a culture of data protection."
+claude-haiku-4.5,5,Provide a scenario of a data misuse.,"# Scenario: Unauthorized Data Misuse at a Retail Company
+
+## The Situation
+
+A mid-level manager at a large retail chain gains access to customer purchase history and personal contact information through their job responsibilities. They notice a customer frequently buys expensive electronics and has a home address in an affluent neighborhood.
+
+## The Misuse
+
+The manager:
+- **Shares the customer's full name, address, and purchase history** with a third party (an acquaintance running a home security company)
+- The acquaintance uses this information to target the customer with unsolicited sales calls
+- Additionally, the manager sells a list of 10,000+ customer profiles to a data broker for personal profit, violating company policy and data protection laws
+
+## Consequences
+
+**For the customer:**
+- Privacy violation and unwanted harassment
+- Risk of physical targeting for theft or fraud
+
+**For the company:**
+- Legal liability and regulatory fines
+- Damaged reputation and customer trust
+- Lawsuits from affected customers
+
+**For the manager:**
+- Termination and legal prosecution
+- Civil liability
+- Criminal charges under data protection laws (like CCPA or GDPR)
+
+## Prevention
+
+Organizations can reduce such risks through:
+- Access controls limiting who sees sensitive data
+- Audit trails tracking data access
+- Employee training on data responsibility
+- Strict policies with clear consequences
+- Regular monitoring and compliance checks"
+claude-haiku-4.5,0,"Identify the psychological disorder in the given description.
+John is 30 years old and spends most of his day organizing and reorganizing items in his bedroom. He also tends to be extremely mistrustful of other people and avoids social interaction due to his fear of being judged.","# Psychological Disorder Analysis
+
+Based on the description, John appears to display symptoms of **two distinct disorders**:
+
+## Primary Disorder: Obsessive-Compulsive Disorder (OCD)
+- **Key indicator**: Organizing and reorganizing items repeatedly
+- This suggests **compulsive behavior** (repetitive actions performed to reduce anxiety)
+- The time-consuming nature (""spends most of his day"") indicates functional impairment
+
+## Secondary Disorder: Social Anxiety Disorder
+- **Key indicators**: 
+  - Extreme mistrust of others
+  - Avoidance of social interaction
+  - Fear of being judged
+
+## Additional Consideration:
+The mistrustfulness could also suggest traits associated with **Paranoid Personality Disorder** or **Avoidant Personality Disorder**, depending on the severity and pervasiveness of the distrust.
+
+---
+
+**Note**: A comprehensive psychological evaluation by a mental health professional would be necessary for an accurate diagnosis, as comorbidity (co-occurrence of multiple disorders) is common, and proper assessment requires detailed clinical interviews and observation."
+claude-haiku-4.5,1,"Identify the psychological disorder in the given description.
+John is 30 years old and spends most of his day organizing and reorganizing items in his bedroom. He also tends to be extremely mistrustful of other people and avoids social interaction due to his fear of being judged.","# Psychological Disorder Analysis
+
+Based on the description, John appears to exhibit characteristics of **two distinct disorders**:
+
+## 1. **Obsessive-Compulsive Disorder (OCD)**
+- **Evidence**: The repetitive organizing and reorganizing of items in his bedroom suggests obsessive-compulsive behaviors
+- **Key feature**: Time-consuming rituals that cause distress or functional impairment
+
+## 2. **Social Anxiety Disorder (Social Phobia)**
+- **Evidence**: 
+  - Extreme mistrust of others
+  - Avoidance of social interaction
+  - Fear of being judged by others
+- **Key feature**: Intense anxiety in social situations leading to avoidance behaviors
+
+## Note:
+These conditions often co-occur, and John would benefit from a comprehensive psychological evaluation by a mental health professional to:
+- Confirm diagnoses
+- Determine severity
+- Rule out other possible conditions
+- Develop an appropriate treatment plan (typically involving therapy and/or medication)
+
+A proper diagnosis requires a full clinical interview and assessment by a qualified clinician."
+claude-haiku-4.5,2,"Identify the psychological disorder in the given description.
+John is 30 years old and spends most of his day organizing and reorganizing items in his bedroom. He also tends to be extremely mistrustful of other people and avoids social interaction due to his fear of being judged.","# Psychological Disorders Identified
+
+Based on the description, John appears to exhibit symptoms consistent with **two possible disorders**:
+
+## 1. **Obsessive-Compulsive Disorder (OCD)** - Primary
+- **Key symptom**: Repetitive organizing and reorganizing of items (compulsive behavior)
+- This ritualistic behavior suggests obsessive thought patterns driving the compulsive actions
+
+## 2. **Social Anxiety Disorder** - Secondary
+- **Key symptoms**:
+  - Avoidance of social interaction
+  - Fear of being judged by others
+  - These are characteristic of social anxiety
+
+## Additional Consideration:
+The combination of **extreme mistrust** and avoidance could also suggest features of:
+- **Paranoid Personality Disorder** (persistent mistrust of others)
+- **Avoidant Personality Disorder** (social inhibition due to fear of rejection)
+
+---
+
+### Note:
+A proper diagnosis would require:
+- Detailed clinical assessment by a mental health professional
+- Evaluation of symptom duration and severity
+- Assessment of functional impairment
+- Ruling out other potential causes
+
+The description most strongly suggests **OCD with comorbid Social Anxiety Disorder**."
+claude-haiku-4.5,3,"Identify the psychological disorder in the given description.
+John is 30 years old and spends most of his day organizing and reorganizing items in his bedroom. He also tends to be extremely mistrustful of other people and avoids social interaction due to his fear of being judged.","# Psychological Disorders Identified
+
+Based on the description, John appears to display symptoms consistent with **two possible disorders**:
+
+## 1. **Obsessive-Compulsive Disorder (OCD)** - Primary indicator
+- **Compulsions**: Repetitive organizing and reorganizing of items
+- **Pattern**: Spending most of his day on these ritualistic behaviors
+- This suggests intrusive thoughts that drive the repetitive behaviors
+
+## 2. **Avoidant Personality Disorder** or **Social Anxiety Disorder** - Secondary indicator
+- **Extreme mistrust** of others
+- **Social avoidance** due to fear of judgment
+- **Interpersonal withdrawal**
+
+## Important Considerations:
+- These conditions often **co-occur** (comorbidity)
+- A proper **clinical diagnosis** requires:
+  - Comprehensive assessment by a mental health professional
+  - Evaluation of symptom duration and severity
+  - Assessment of functional impairment
+  - Ruling out other underlying causes
+
+---
+
+**Recommendation**: John would benefit from consultation with a psychiatrist or clinical psychologist for accurate diagnosis and appropriate treatment (which may include therapy, medication, or both)."
+claude-haiku-4.5,4,"Identify the psychological disorder in the given description.
+John is 30 years old and spends most of his day organizing and reorganizing items in his bedroom. He also tends to be extremely mistrustful of other people and avoids social interaction due to his fear of being judged.","# Psychological Disorder Analysis
+
+Based on the description provided, John appears to exhibit symptoms consistent with **Obsessive-Compulsive Disorder (OCD)** combined with features of **Social Anxiety Disorder** or **Avoidant Personality Disorder**.
+
+## Key Indicators:
+
+### Obsessive-Compulsive Disorder (Primary)
+- **Compulsive behavior**: Repetitive organizing and reorganizing of items
+- **Time-consuming**: Spends ""most of his day"" on these activities
+- Suggests ritualistic patterns characteristic of OCD
+
+### Social Anxiety/Avoidant Features (Secondary)
+- **Social avoidance**: Actively avoids social interaction
+- **Fear of judgment**: Explicit fear of being judged by others
+- **Mistrustfulness**: Extreme distrust of people
+
+## Important Considerations:
+
+- A **formal diagnosis** would require assessment by a mental health professional
+- These symptoms could co-occur (comorbidity is common)
+- Other factors would need evaluation (duration, severity, functional impairment)
+- Underlying causes should be explored through clinical interview
+
+**Recommendation**: John would benefit from professional evaluation by a psychologist or psychiatrist for accurate diagnosis and appropriate treatment options (such as CBT, exposure therapy, or medication)."
+claude-haiku-4.5,5,"Identify the psychological disorder in the given description.
+John is 30 years old and spends most of his day organizing and reorganizing items in his bedroom. He also tends to be extremely mistrustful of other people and avoids social interaction due to his fear of being judged.","# Psychological Disorder Analysis
+
+Based on the description, John appears to exhibit symptoms of **two potential disorders**:
+
+## Primary: Obsessive-Compulsive Disorder (OCD)
+- **Key indicator**: The repetitive organizing and reorganizing of items in his bedroom
+- This suggests obsessive thoughts with compulsive behaviors (arranging/rearranging)
+
+## Secondary: Social Anxiety Disorder or Avoidant Personality Disorder
+- **Key indicators**: 
+  - Extreme mistrust of others
+  - Avoidance of social interaction
+  - Fear of being judged
+
+## Important Notes:
+- **Comorbidity**: These conditions often co-occur
+- **Diagnosis requires**: A proper clinical assessment by a mental health professional, as a description alone cannot definitively diagnose a disorder
+- **Other factors** to consider: Duration of symptoms, severity, functional impairment, and impact on daily life
+
+John would benefit from professional evaluation to determine the accurate diagnosis and appropriate treatment, which may include therapy (CBT, ERP) and/or medication."
+claude-haiku-4.5,0,Identify five questions that can be answered without any context.,"# Five Context-Free Questions
+
+1. **What is 2 + 2?**
+   Answer: 4
+
+2. **How many sides does a triangle have?**
+   Answer: 3
+
+3. **What is the capital of France?**
+   Answer: Paris
+
+4. **Is water made of hydrogen and oxygen?**
+   Answer: Yes
+
+5. **What year did World War II end?**
+   Answer: 1945
+
+These questions can be answered based on established facts, definitions, and historical records without needing additional background information or context."
+claude-haiku-4.5,1,Identify five questions that can be answered without any context.,"# Five Context-Independent Questions
+
+1. **What is the capital of France?**
+   - Answer: Paris
+
+2. **How many sides does a triangle have?**
+   - Answer: Three
+
+3. **What is 2 + 2?**
+   - Answer: Four
+
+4. **In what year did World War II end?**
+   - Answer: 1945
+
+5. **What is the chemical symbol for gold?**
+   - Answer: Au
+
+These questions have factual answers based on established knowledge, geography, mathematics, history, and science—no surrounding context needed to understand or answer them."
+claude-haiku-4.5,2,Identify five questions that can be answered without any context.,"# Five Context-Free Questions
+
+1. **What is 2 + 2?**
+   Answer: 4
+
+2. **How many continents are there?**
+   Answer: 7 (by most geographical divisions)
+
+3. **What is the chemical symbol for gold?**
+   Answer: Au
+
+4. **In what year did the Titanic sink?**
+   Answer: 1912
+
+5. **How many sides does a triangle have?**
+   Answer: 3
+
+These questions can be answered purely from factual knowledge without needing additional context, background information, or clarification about what's being asked."
+claude-haiku-4.5,3,Identify five questions that can be answered without any context.,"# Five Context-Free Questions
+
+1. **What is 2 + 2?**
+   - Answer: 4 (a mathematical fact)
+
+2. **What is the capital of France?**
+   - Answer: Paris (a geographical fact)
+
+3. **How many sides does a triangle have?**
+   - Answer: Three (a geometric definition)
+
+4. **What color is the sky on a clear day?**
+   - Answer: Blue (an observable fact)
+
+5. **In what year did World War II end?**
+   - Answer: 1945 (a historical fact)
+
+These questions can be answered using only general knowledge, without needing additional context about who is asking, where, when, or why."
+claude-haiku-4.5,4,Identify five questions that can be answered without any context.,"# Five Context-Free Questions
+
+1. **What is 2 + 2?**
+   - Answer: 4 (pure mathematics)
+
+2. **How many days are in a week?**
+   - Answer: 7 (established fact)
+
+3. **What is the chemical symbol for gold?**
+   - Answer: Au (factual knowledge)
+
+4. **Is a tomato a fruit or a vegetable?**
+   - Answer: A fruit botanically; a vegetable culinarily (definitional)
+
+5. **In what year did the Titanic sink?**
+   - Answer: 1912 (historical fact)
+
+These questions can be answered using only existing knowledge without needing additional background information, previous conversation, or situational details."
+claude-haiku-4.5,5,Identify five questions that can be answered without any context.,"# Five Context-Independent Questions
+
+1. **What is 2 + 2?**
+   - Answer: 4 (mathematical fact)
+
+2. **How many days are in a week?**
+   - Answer: 7 (standardized calendar fact)
+
+3. **What is the capital of France?**
+   - Answer: Paris (established geographic fact)
+
+4. **What color is the sky on a clear day?**
+   - Answer: Blue (observable physical fact)
+
+5. **How many continents are there?**
+   - Answer: 7 (or 6, depending on geographic convention—a well-established factual question)
+
+These questions can be answered based on universal knowledge, established facts, or simple observation, without needing additional context or background information about where or when they're being asked."
+claude-haiku-4.5,0,"Choose the best password for a given service.
+Online banking","# Best Password for Online Banking
+
+For online banking, I recommend:
+
+## Password Characteristics:
+- **Length**: 16+ characters (longer is better)
+- **Complexity**: Mix of uppercase, lowercase, numbers, AND special characters
+- **Example pattern**: `Tr0pic@lSunset#42!Vault`
+
+## Key Requirements:
+
+✅ **Do:**
+- Use a unique password (never reuse across sites)
+- Include special characters: `!@#$%^&*()`
+- Mix character types thoroughly
+- Make it long and random-seeming
+- Store it in a password manager (recommended)
+
+❌ **Avoid:**
+- Personal information (birthdays, names, addresses)
+- Dictionary words or common phrases
+- Sequential numbers or keyboard patterns
+- Reusing passwords from other accounts
+
+## Best Practice:
+Use a **password manager** (Bitwarden, 1Password, KeePass) to:
+- Generate truly random passwords
+- Store them securely
+- Enable auto-fill safely
+
+This is critical for banking since compromised accounts have real financial consequences."
+claude-haiku-4.5,1,"Choose the best password for a given service.
+Online banking","# Best Password for Online Banking
+
+For online banking, I'd recommend:
+
+## Strong Password Characteristics:
+- **Length**: 16+ characters (longer is better)
+- **Complexity**: Mix of uppercase, lowercase, numbers, and symbols
+- **Example pattern**: `T7#mK$vL9@xQ2nR!`
+
+## Best Practices:
+
+✅ **DO:**
+- Use a unique password (never reuse across accounts)
+- Use a password manager to store it securely
+- Enable multi-factor authentication (MFA) in addition to a strong password
+- Change it periodically if the bank requires it
+
+❌ **DON'T:**
+- Use personal information (birthdate, names, addresses)
+- Use dictionary words or common patterns
+- Share it with anyone
+- Write it down or store it in plain text
+
+## Recommendation:
+**Use a password manager** (like Bitwarden, 1Password, or KeePass) to generate and store a truly random, complex password. This is more secure than trying to remember one yourself.
+
+The password itself is important, but **MFA/2FA** (like authenticator apps or hardware keys) is equally critical for banking security."
+claude-haiku-4.5,2,"Choose the best password for a given service.
+Online banking","# Best Password for Online Banking
+
+For online banking, choose a password that is:
+
+## **Strong Characteristics:**
+- **Length:** 16+ characters (longer is better)
+- **Complexity:** Mix of uppercase, lowercase, numbers, AND special characters
+- **Example format:** `Tr0pic@lSunset#2024!Secure`
+
+## **What to AVOID:**
+- ❌ Dictionary words or names
+- ❌ Sequential numbers (123456)
+- ❌ Personal information (birthdates, addresses)
+- ❌ Reusing passwords from other sites
+- ❌ Simple patterns (qwerty, aaa111)
+
+## **Additional Security:**
+✅ **Enable multi-factor authentication (MFA)** - This is MORE important than password complexity alone
+✅ Use a **password manager** to store it securely
+✅ Never share it or write it down
+✅ Change it every 6-12 months
+
+## **Why Banking Needs Extra Security:**
+Online banking is a high-value target. A strong password + MFA creates two layers of protection that make your account extremely difficult to compromise.
+
+Would you like recommendations for password managers or MFA options?"
+claude-haiku-4.5,3,"Choose the best password for a given service.
+Online banking","# Best Password for Online Banking
+
+For online banking, choose a password that is:
+
+## **Strong & Complex**
+- **Minimum 12-16 characters** (longer is better)
+- **Mix of character types**: uppercase, lowercase, numbers, AND symbols
+- **Example structure**: `Tr0pic@lSunset#2024`
+
+## **Unique**
+- **Never reuse** this password elsewhere
+- Create a completely different password just for banking
+
+## **NOT Based On:**
+- ❌ Personal information (birthdate, names, addresses)
+- ❌ Dictionary words
+- ❌ Sequential numbers (123456)
+- ❌ Keyboard patterns (qwerty)
+
+## **Best Practices**
+1. **Use a password manager** (Bitwarden, 1Password, LastPass) to generate and store it securely
+2. **Enable 2FA** (two-factor authentication) - this is critical for banking
+3. **Never share or write it down** in accessible places
+4. **Change it** if you suspect compromise
+
+## Example of a Strong Banking Password:
+`B!ue$ky47&Rainy*Moon`
+
+The combination of your password + 2FA authentication provides the best security for your banking account."
+claude-haiku-4.5,4,"Choose the best password for a given service.
+Online banking","# Best Password for Online Banking
+
+For online banking, choose a password that is:
+
+## **Strong Password Characteristics:**
+- **Length:** Minimum 16 characters (longer is better)
+- **Complexity:** Mix of uppercase, lowercase, numbers, AND special characters
+- **Uniqueness:** Completely different from passwords used elsewhere
+- **Randomness:** No personal information, dictionary words, or patterns
+
+## **Example Strong Format:**
+`K7#mPq$2xL@9vWnR`
+
+## **Additional Security Measures:**
+1. **Enable two-factor authentication (2FA)** - This is critical for banking
+2. **Use a password manager** - Store complex passwords securely
+3. **Never share or reuse** - Banking passwords must be exclusive
+4. **Change periodically** - Update every 3-6 months
+5. **Avoid public WiFi** - Log in only on secure networks
+
+## **What to AVOID:**
+❌ Birth dates, names, or addresses
+❌ Sequential numbers (123456)
+❌ Keyboard patterns (qwerty)
+❌ Words from the dictionary
+❌ Reused passwords from other sites
+
+**Bottom line:** Use your password manager to generate a random 16+ character password combining all character types—then enable 2FA as your primary defense."
+claude-haiku-4.5,5,"Choose the best password for a given service.
+Online banking","# Best Password for Online Banking
+
+For online banking, choose a password that is:
+
+## **Strong & Complex**
+- **Minimum 12-16 characters** (longer is better)
+- Mix of **uppercase, lowercase, numbers, and symbols**
+- Example structure: `Tr0pic@lSunset#2024`
+
+## **Unique**
+- **Never reuse** passwords from other accounts
+- Create something entirely new for banking
+
+## **Unpredictable**
+- Avoid personal info (birthdate, names, addresses)
+- Don't use sequential patterns or keyboard walks
+- Avoid common words or phrases
+
+## **Example of a Strong Banking Password:**
+`K7@mPqL#9vRx2Yw` or `BlueMoon$Rain2024!`
+
+## **Additional Security Tips:**
+- ✅ Use a **password manager** (Bitwarden, 1Password, LastPass) to store it securely
+- ✅ Enable **multi-factor authentication (MFA)** - this is crucial
+- ✅ Never share it with anyone, including bank staff
+- ✅ Change it **every 6-12 months**
+- ✅ Use a different password for each financial account
+
+**MFA is just as important as a strong password** — it protects you even if your password is compromised."
+claude-haiku-4.5,0,"Given a user query, what is the most relevant FAQ topic out of the following list?
+Query: How do I reset my password?
+FAQ Topics:
+1. Setting up an account
+2. Resetting your password
+3. Checking order status","The most relevant FAQ topic is **2. Resetting your password**.
+
+This directly matches the user's question about how to reset their password."
+claude-haiku-4.5,1,"Given a user query, what is the most relevant FAQ topic out of the following list?
+Query: How do I reset my password?
+FAQ Topics:
+1. Setting up an account
+2. Resetting your password
+3. Checking order status","The most relevant FAQ topic is **2. Resetting your password**.
+
+This directly matches the user's query about how to reset their password."
+claude-haiku-4.5,2,"Given a user query, what is the most relevant FAQ topic out of the following list?
+Query: How do I reset my password?
+FAQ Topics:
+1. Setting up an account
+2. Resetting your password
+3. Checking order status","# Answer
+
+The most relevant FAQ topic is **2. Resetting your password**.
+
+This directly matches the user's question about resetting their password."
+claude-haiku-4.5,3,"Given a user query, what is the most relevant FAQ topic out of the following list?
+Query: How do I reset my password?
+FAQ Topics:
+1. Setting up an account
+2. Resetting your password
+3. Checking order status","The most relevant FAQ topic is **2. Resetting your password**.
+
+This directly matches the user's question about how to reset their password."
+claude-haiku-4.5,4,"Given a user query, what is the most relevant FAQ topic out of the following list?
+Query: How do I reset my password?
+FAQ Topics:
+1. Setting up an account
+2. Resetting your password
+3. Checking order status","The most relevant FAQ topic is **2. Resetting your password**.
+
+This directly matches the user's query about password reset."
+claude-haiku-4.5,5,"Given a user query, what is the most relevant FAQ topic out of the following list?
+Query: How do I reset my password?
+FAQ Topics:
+1. Setting up an account
+2. Resetting your password
+3. Checking order status","The most relevant FAQ topic is **2. Resetting your password**.
+
+This directly matches the user's question about how to reset their password."
+claude-haiku-4.5,0,"Given a data set, write a program that counts the number of instances of each label.
+Data Set:
+
+['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']","# Program to Count Label Instances
+
+Here are several approaches to count instances of each label:
+
+## Method 1: Using `collections.Counter` (Recommended)
+
+```python
+from collections import Counter
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = Counter(data)
+print(label_counts)
+```
+
+**Output:**
+```
+Counter({'dog': 2, 'cat': 2, 'puppy': 2, 'kitten': 1, 'fish': 1})
+```
+
+## Method 2: Using a Dictionary
+
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {}
+for label in data:
+    label_counts[label] = label_counts.get(label, 0) + 1
+
+print(label_counts)
+```
+
+**Output:**
+```
+{'puppy': 2, 'dog': 2, 'kitten': 1, 'cat': 2, 'fish': 1}
+```
+
+## Method 3: Using `dict.setdefault()`
+
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {}
+for label in data:
+    label_counts.setdefault(label, 0)
+    label_counts[label] += 1
+
+print(label_counts)
+```
+
+## Method 4: Displaying Results in a Formatted Way
+
+```python
+from collections import Counter
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = Counter(data)
+
+print(""Label Counts:"")
+print(""-"" * 20)
+for label, count in label_counts.items():
+    print(f""{label}: {count}"")
+print(""-"" * 20)
+print(f""Total: {sum(label_counts.values())}"")
+```
+
+**Output:**
+```
+Label Counts:
+--------------------
+puppy: 2
+dog: 2
+kitten: 1
+cat: 2
+fish: 1
+--------------------
+Total: 8
+```
+
+## Comparison
+
+| Method | Pros | Cons |
+|--------|------|------|
+| **Counter** | Most concise, built-in methods | Requires import |
+| **Dictionary** | No imports needed, clear logic | More verbose |
+| **Setdefault** | No imports, clean code | Less common |
+
+**Recommendation:** Use `Counter` for production code as it's optimized and includes useful methods like `.most_common()`."
+claude-haiku-4.5,1,"Given a data set, write a program that counts the number of instances of each label.
+Data Set:
+
+['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']","# Count Label Instances
+
+Here are several approaches to solve this problem:
+
+## **Method 1: Using `collections.Counter` (Recommended)**
+
+```python
+from collections import Counter
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = Counter(data)
+print(label_counts)
+```
+
+**Output:**
+```
+Counter({'puppy': 2, 'dog': 2, 'cat': 2, 'kitten': 1, 'fish': 1})
+```
+
+---
+
+## **Method 2: Using Dictionary**
+
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {}
+for label in data:
+    label_counts[label] = label_counts.get(label, 0) + 1
+
+print(label_counts)
+```
+
+**Output:**
+```
+{'puppy': 2, 'dog': 2, 'kitten': 1, 'cat': 2, 'fish': 1}
+```
+
+---
+
+## **Method 3: Using `defaultdict`**
+
+```python
+from collections import defaultdict
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = defaultdict(int)
+for label in data:
+    label_counts[label] += 1
+
+print(dict(label_counts))
+```
+
+**Output:**
+```
+{'puppy': 2, 'dog': 2, 'kitten': 1, 'cat': 2, 'fish': 1}
+```
+
+---
+
+## **Method 4: Using `count()` Method**
+
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+unique_labels = set(data)
+label_counts = {label: data.count(label) for label in unique_labels}
+
+print(label_counts)
+```
+
+**Output:**
+```
+{'puppy': 2, 'dog': 2, 'kitten': 1, 'cat': 2, 'fish': 1}
+```
+
+---
+
+## **Comparison**
+
+| Method | Pros | Cons |
+|--------|------|------|
+| **Counter** | Clean, built-in, most efficient | Requires import |
+| **Dictionary** | Simple, no imports | More verbose |
+| **defaultdict** | Clean syntax | Requires import |
+| **count()** | Easy to understand | O(n²) time complexity |
+
+## **Recommendation**
+Use **`Counter`** for production code as it's optimized and designed specifically for this task."
+claude-haiku-4.5,2,"Given a data set, write a program that counts the number of instances of each label.
+Data Set:
+
+['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']","# Program to Count Label Instances
+
+Here are several approaches:
+
+## **Approach 1: Using a Dictionary (Manual)**
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {}
+for label in data:
+    if label in label_counts:
+        label_counts[label] += 1
+    else:
+        label_counts[label] = 1
+
+print(label_counts)
+```
+
+**Output:**
+```
+{'puppy': 2, 'dog': 2, 'kitten': 1, 'cat': 2, 'fish': 1}
+```
+
+---
+
+## **Approach 2: Using `dict.get()` (Cleaner)**
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {}
+for label in data:
+    label_counts[label] = label_counts.get(label, 0) + 1
+
+print(label_counts)
+```
+
+---
+
+## **Approach 3: Using `collections.Counter` (Recommended)**
+```python
+from collections import Counter
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = Counter(data)
+print(label_counts)
+print(dict(label_counts))  # Convert to regular dict if needed
+```
+
+**Output:**
+```
+Counter({'puppy': 2, 'dog': 2, 'cat': 2, 'kitten': 1, 'fish': 1})
+```
+
+---
+
+## **Approach 4: Using `defaultdict`**
+```python
+from collections import defaultdict
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = defaultdict(int)
+for label in data:
+    label_counts[label] += 1
+
+print(dict(label_counts))
+```
+
+---
+
+## **Bonus: Display Results Nicely**
+```python
+from collections import Counter
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = Counter(data)
+
+print(""Label Counts:"")
+for label, count in label_counts.items():
+    print(f""  {label}: {count}"")
+
+# Or sorted by count
+print(""\nSorted by frequency:"")
+for label, count in label_counts.most_common():
+    print(f""  {label}: {count}"")
+```
+
+**Output:**
+```
+Label Counts:
+  puppy: 2
+  dog: 2
+  kitten: 1
+  cat: 2
+  fish: 1
+
+Sorted by frequency:
+  puppy: 2
+  dog: 2
+  cat: 2
+  kitten: 1
+  fish: 1
+```
+
+---
+
+## **Recommendation**
+Use **`Counter`** (Approach 3) for most cases—it's built for this task and provides useful methods like `.most_common()`."
+claude-haiku-4.5,3,"Given a data set, write a program that counts the number of instances of each label.
+Data Set:
+
+['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']","# Count Instances of Each Label
+
+Here are several ways to solve this:
+
+## **Method 1: Using `collections.Counter` (Recommended)**
+```python
+from collections import Counter
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = Counter(data)
+print(label_counts)
+```
+
+**Output:**
+```
+Counter({'puppy': 2, 'dog': 2, 'cat': 2, 'kitten': 1, 'fish': 1})
+```
+
+---
+
+## **Method 2: Using a Dictionary**
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {}
+for label in data:
+    label_counts[label] = label_counts.get(label, 0) + 1
+
+print(label_counts)
+```
+
+**Output:**
+```
+{'puppy': 2, 'dog': 2, 'kitten': 1, 'cat': 2, 'fish': 1}
+```
+
+---
+
+## **Method 3: Using `dict.fromkeys()` and `count()`**
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {label: data.count(label) for label in set(data)}
+print(label_counts)
+```
+
+**Output:**
+```
+{'kitten': 1, 'puppy': 2, 'fish': 1, 'dog': 2, 'cat': 2}
+```
+
+---
+
+## **Method 4: Display Results in a Formatted Table**
+```python
+from collections import Counter
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = Counter(data)
+
+print(""Label\t\tCount"")
+print(""-"" * 25)
+for label, count in label_counts.items():
+    print(f""{label:<15} {count}"")
+```
+
+**Output:**
+```
+Label           Count
+-------------------------
+puppy            2
+dog              2
+kitten           1
+cat              2
+fish             1
+```
+
+---
+
+## **Comparison:**
+
+| Method | Pros | Cons |
+|--------|------|------|
+| **Counter** | Fastest, most readable, extra features | Requires import |
+| **Dictionary** | No imports needed, flexible | More verbose |
+| **List comprehension** | Concise | Slower for large datasets |
+| **Formatted output** | Easy to read | More code |
+
+**Best Practice:** Use `Counter` for most cases! 🎯"
+claude-haiku-4.5,4,"Given a data set, write a program that counts the number of instances of each label.
+Data Set:
+
+['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']","# Count Label Instances
+
+Here are several ways to solve this problem:
+
+## Method 1: Using `collections.Counter` (Recommended)
+```python
+from collections import Counter
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = Counter(data)
+print(label_counts)
+```
+
+**Output:**
+```
+Counter({'puppy': 2, 'dog': 2, 'cat': 2, 'kitten': 1, 'fish': 1})
+```
+
+## Method 2: Using a Dictionary with `count()`
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {}
+for label in set(data):
+    label_counts[label] = data.count(label)
+
+print(label_counts)
+```
+
+**Output:**
+```
+{'kitten': 1, 'puppy': 2, 'fish': 1, 'dog': 2, 'cat': 2}
+```
+
+## Method 3: Using a Dictionary with Loop
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {}
+for label in data:
+    if label in label_counts:
+        label_counts[label] += 1
+    else:
+        label_counts[label] = 1
+
+print(label_counts)
+```
+
+**Output:**
+```
+{'puppy': 2, 'dog': 2, 'kitten': 1, 'cat': 2, 'fish': 1}
+```
+
+## Method 4: Using `dict.get()`
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {}
+for label in data:
+    label_counts[label] = label_counts.get(label, 0) + 1
+
+print(label_counts)
+```
+
+**Output:**
+```
+{'puppy': 2, 'dog': 2, 'kitten': 1, 'cat': 2, 'fish': 1}
+```
+
+## Comparison
+
+| Method | Pros | Cons |
+|--------|------|------|
+| **Counter** | Clean, built-in, many useful methods | Requires import |
+| **Dictionary + count()** | Easy to understand | Less efficient (O(n²)) |
+| **Dictionary + Loop** | Efficient, no imports | More code |
+| **dict.get()** | Efficient, Pythonic | Slightly less readable |
+
+**Recommendation:** Use `Counter` for most cases—it's optimized, readable, and provides additional useful methods like `.most_common()`."
+claude-haiku-4.5,5,"Given a data set, write a program that counts the number of instances of each label.
+Data Set:
+
+['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']","# Program to Count Label Instances
+
+Here are several approaches:
+
+## **Method 1: Using a Dictionary (Manual Count)**
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {}
+for label in data:
+    if label in label_counts:
+        label_counts[label] += 1
+    else:
+        label_counts[label] = 1
+
+print(label_counts)
+```
+
+**Output:**
+```
+{'puppy': 2, 'dog': 2, 'kitten': 1, 'cat': 2, 'fish': 1}
+```
+
+---
+
+## **Method 2: Using `dict.get()` (Cleaner)**
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {}
+for label in data:
+    label_counts[label] = label_counts.get(label, 0) + 1
+
+print(label_counts)
+```
+
+---
+
+## **Method 3: Using `collections.Counter` (Recommended)**
+```python
+from collections import Counter
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = Counter(data)
+print(label_counts)
+print(dict(label_counts))  # Convert to regular dict if needed
+```
+
+**Output:**
+```
+Counter({'puppy': 2, 'dog': 2, 'cat': 2, 'kitten': 1, 'fish': 1})
+```
+
+---
+
+## **Method 4: Using `defaultdict`**
+```python
+from collections import defaultdict
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = defaultdict(int)
+for label in data:
+    label_counts[label] += 1
+
+print(dict(label_counts))
+```
+
+---
+
+## **Displaying Results Nicely**
+```python
+from collections import Counter
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = Counter(data)
+
+print(""Label Counts:"")
+for label, count in label_counts.items():
+    print(f""  {label}: {count}"")
+```
+
+**Output:**
+```
+Label Counts:
+  puppy: 2
+  dog: 2
+  cat: 2
+  kitten: 1
+  fish: 1
+```
+
+---
+
+## **Comparison**
+
+| Method | Pros | Cons |
+|--------|------|------|
+| **Dictionary** | Simple, no imports | More verbose |
+| **Counter** | Most Pythonic, built-in methods | Requires import |
+| **defaultdict** | Clean syntax | Requires import |
+
+**Recommendation:** Use `Counter` for production code—it's designed specifically for this task and has useful methods like `.most_common()`."
+claude-haiku-4.5,0,Identify the taxonomic classification for humans.,"# Taxonomic Classification of Humans
+
+| Rank | Classification |
+|------|-----------------|
+| **Domain** | Eukarya |
+| **Kingdom** | Animalia |
+| **Phylum** | Chordata |
+| **Class** | Mammalia |
+| **Order** | Primates |
+| **Family** | Hominidae |
+| **Genus** | *Homo* |
+| **Species** | *Homo sapiens* |
+
+## Key Points:
+- Our scientific name is *Homo sapiens* (""wise human"")
+- We are the only surviving species in the genus *Homo*
+- We share the family Hominidae with great apes (chimpanzees, gorillas, and orangutans)
+- As mammals, we have characteristics like hair, produce milk for offspring, and maintain body temperature"
+claude-haiku-4.5,1,Identify the taxonomic classification for humans.,"# Taxonomic Classification of Humans
+
+| Rank | Classification |
+|------|---|
+| **Domain** | Eukarya |
+| **Kingdom** | Animalia |
+| **Phylum** | Chordata |
+| **Class** | Mammalia |
+| **Order** | Primates |
+| **Family** | Hominidae |
+| **Genus** | *Homo* |
+| **Species** | *Homo sapiens* |
+
+## Key Points:
+- **Common name:** Human
+- **Scientific name:** *Homo sapiens* (Latin: ""wise man"")
+- We are the only extant species in the genus *Homo*
+- Our closest living relatives are chimpanzees and bonobos (Family Hominidae, also called ""great apes"")"
+claude-haiku-4.5,2,Identify the taxonomic classification for humans.,"# Taxonomic Classification of Humans
+
+| Taxonomic Rank | Classification |
+|---|---|
+| **Kingdom** | Animalia |
+| **Phylum** | Chordata |
+| **Class** | Mammalia |
+| **Order** | Primates |
+| **Family** | Hominidae |
+| **Genus** | *Homo* |
+| **Species** | *Homo sapiens* |
+
+## Key Points:
+
+- **Scientific name**: *Homo sapiens* (Latin for ""wise man"")
+- **Closest living relatives**: Chimpanzees and bonobos (Family Hominidae)
+- **Distinctive traits**: Large brain, bipedalism, complex language, and tool use
+
+This classification reflects humans' evolutionary position within the animal kingdom and our shared ancestry with other primates."
+claude-haiku-4.5,3,Identify the taxonomic classification for humans.,"# Taxonomic Classification of Humans
+
+| Rank | Classification |
+|------|---|
+| **Kingdom** | Animalia |
+| **Phylum** | Chordata |
+| **Class** | Mammalia |
+| **Order** | Primates |
+| **Family** | Hominidae |
+| **Genus** | *Homo* |
+| **Species** | *H. sapiens* |
+
+## Scientific Name
+***Homo sapiens***
+
+## Key Characteristics
+- **Bipedal** locomotion
+- **Large brain** relative to body size
+- **Language** and complex communication
+- **Tool use** and technology
+- Prolonged **childhood development**
+- **Social** and **cultural** complexity
+
+Humans are the only surviving species in the genus *Homo* and represent the most recent branch of the primate lineage."
+claude-haiku-4.5,4,Identify the taxonomic classification for humans.,"# Taxonomic Classification of Humans
+
+| Rank | Classification |
+|------|---|
+| **Kingdom** | Animalia |
+| **Phylum** | Chordata |
+| **Class** | Mammalia |
+| **Order** | Primates |
+| **Family** | Hominidae |
+| **Genus** | *Homo* |
+| **Species** | *H. sapiens* |
+
+## Key Points
+
+- **Scientific name**: *Homo sapiens*
+- Humans are the only surviving species in the genus *Homo*
+- We share the family Hominidae with great apes (chimpanzees, gorillas, orangutans)
+- Our closest living relatives are chimpanzees and bonobos (sharing ~98-99% DNA)
+
+This classification reflects our evolutionary history and biological relationships to other organisms."
+claude-haiku-4.5,5,Identify the taxonomic classification for humans.,"# Taxonomic Classification of Humans
+
+Here is the complete taxonomic hierarchy for humans (*Homo sapiens*):
+
+| Rank | Classification |
+|------|---|
+| **Kingdom** | Animalia |
+| **Phylum** | Chordata |
+| **Class** | Mammalia |
+| **Order** | Primates |
+| **Family** | Hominidae |
+| **Genus** | *Homo* |
+| **Species** | *H. sapiens* |
+
+## Key Points:
+- **Animalia**: We are multicellular, heterotrophic organisms
+- **Chordata**: We have a notochord and spinal cord
+- **Mammalia**: We have hair, produce milk, and are warm-blooded
+- **Primates**: We share characteristics with other primates (opposable thumbs, forward-facing eyes, complex brains)
+- **Hominidae**: The family containing great apes and humans
+- **Homo**: Our genus, which also included extinct species like *H. neanderthalensis*
+- **Sapiens**: Our species, meaning ""wise"" in Latin
+
+This classification reflects our evolutionary relationships and shared characteristics with other organisms."
+claude-haiku-4.5,0,Create a jeopardy game based on the subject of computer science.,"# 🖥️ COMPUTER SCIENCE JEOPARDY
+
+## Game Board
+
+| **Algorithms** | **Data Structures** | **Web Dev** | **AI/ML** | **Hardware** |
+|---|---|---|---|---|
+| $100 | $100 | $100 | $100 | $100 |
+| $200 | $200 | $200 | $200 | $200 |
+| $300 | $300 | $300 | $300 | $300 |
+| $400 | $400 | $400 | $400 | $400 |
+| $500 | $500 | $500 | $500 | $500 |
+
+---
+
+## ALGORITHMS
+
+**$100:** What is the time complexity of Binary Search?
+<details><summary>Answer</summary>O(log n)</details>
+
+**$200:** Name the algorithm that sorts by repeatedly finding the minimum element.
+<details><summary>Answer</summary>Selection Sort</details>
+
+**$300:** What does ""greedy algorithm"" mean?
+<details><summary>Answer</summary>An algorithm that makes the locally optimal choice at each step</details>
+
+**$400:** What is the worst-case time complexity of QuickSort?
+<details><summary>Answer</summary>O(n²)</details>
+
+**$500:** Explain what ""dynamic programming"" is.
+<details><summary>Answer</summary>A technique that solves problems by breaking them into overlapping subproblems and storing results</details>
+
+---
+
+## DATA STRUCTURES
+
+**$100:** What is the time complexity of accessing an element in an array?
+<details><summary>Answer</summary>O(1) - Constant time</details>
+
+**$200:** Which data structure follows LIFO (Last In, First Out)?
+<details><summary>Answer</summary>Stack</details>
+
+**$300:** What is a hash table primarily used for?
+<details><summary>Answer</summary>Fast lookups, insertions, and deletions with O(1) average time</details>
+
+**$400:** Name a data structure that uses a ""parent-child"" relationship.
+<details><summary>Answer</summary>Tree (or Graph)</details>
+
+**$500:** What is the space complexity of a balanced Binary Search Tree with n elements?
+<details><summary>Answer</summary>O(n)</details>
+
+---
+
+## WEB DEVELOPMENT
+
+**$100:** What does HTML stand for?
+<details><summary>Answer</summary>HyperText Markup Language</details>
+
+**$200:** Which HTTP method is used to retrieve data from a server?
+<details><summary>Answer</summary>GET</details>
+
+**$300:** Name a JavaScript framework commonly used for building user interfaces.
+<details><summary>Answer</summary>React, Vue, or Angular</details>
+
+**$400:** What is the purpose of CSS in web development?
+<details><summary>Answer</summary>To style and layout HTML elements</details>
+
+**$500:** Explain what ""responsive design"" means.
+<details><summary>Answer</summary>Web design that adapts to different screen sizes and devices</details>
+
+---
+
+## AI/MACHINE LEARNING
+
+**$100:** What does ""ML"" stand for?
+<details><summary>Answer</summary>Machine Learning</details>
+
+**$200:** Name two types of Machine Learning.
+<details><summary>Answer</summary>Supervised and Unsupervised (Reinforcement is also correct)</details>
+
+**$300:** What is a ""neural network"" inspired by?
+<details><summary>Answer</summary>The human brain</details>
+
+**$400:** What does ""overfitting"" mean in machine learning?
+<details><summary>Answer</summary>When a model learns the training data too well and performs poorly on new data</details>
+
+**$500:** Name a popular library used for machine learning in Python.
+<details><summary>Answer</summary>TensorFlow, PyTorch, or Scikit-learn</details>
+
+---
+
+## HARDWARE
+
+**$100:** What does ""CPU"" stand for?
+<details><summary>Answer</summary>Central Processing Unit</details>
+
+**$200:** What is the primary function of RAM?
+<details><summary>Answer</summary>Temporary data storage for fast access during program execution</details>
+
+**$300:** What does ""GPU"" stand for?
+<details><summary>Answer</summary>Graphics Processing Unit</details>
+
+**$400:** Explain the difference between SSD and HDD.
+<details><summary>Answer</summary>SSDs are faster, more reliable, and use no moving parts; HDDs use spinning disks</details>
+
+**$500:** What is ""cache memory"" used for?
+<details><summary>Answer</summary>Storing frequently accessed data for faster CPU access</details>
+
+---
+
+## How to Play:
+1. Choose a category and dollar amount
+2. Read the clue
+3. Try to answer *in the form of a question* (Jeopardy style!)
+4. Click to reveal the answer
+5. Correct answers earn the dollar amount
+
+**Good luck! 🎯**"
+claude-haiku-4.5,1,Create a jeopardy game based on the subject of computer science.,"# Computer Science Jeopardy!
+
+## Categories & Questions
+
+### **ALGORITHMS** (100-500 pts)
+
+**100:** What is the time complexity of binary search?
+<details><summary>Answer</summary>O(log n)</details>
+
+**200:** Name the algorithm that uses a ""divide and conquer"" approach to sort data.
+<details><summary>Answer</summary>Merge Sort (or Quick Sort)</details>
+
+**300:** What does ""Big O notation"" describe?
+<details><summary>Answer</summary>The worst-case time complexity of an algorithm</details>
+
+**400:** Which sorting algorithm has the worst-case complexity of O(n²) but is simple to implement?
+<details><summary>Answer</summary>Bubble Sort</details>
+
+**500:** What is the time complexity of the traveling salesman problem?
+<details><summary>Answer</summary>O(n!) - NP-Complete</details>
+
+---
+
+### **DATA STRUCTURES** (100-500 pts)
+
+**100:** What data structure uses LIFO (Last In, First Out)?
+<details><summary>Answer</summary>Stack</details>
+
+**200:** In a binary tree, what is the maximum number of nodes at depth n?
+<details><summary>Answer</summary>2^n</details>
+
+**300:** What is the average time complexity for searching in a hash table?
+<details><summary>Answer</summary>O(1)</details>
+
+**400:** Name a self-balancing binary search tree.
+<details><summary>Answer</summary>AVL Tree or Red-Black Tree</details>
+
+**500:** What data structure is used to implement Dijkstra's algorithm efficiently?
+<details><summary>Answer</summary>Priority Queue (Min-Heap)</details>
+
+---
+
+### **PROGRAMMING LANGUAGES** (100-500 pts)
+
+**100:** Which language is known as the ""language of the web""?
+<details><summary>Answer</summary>JavaScript</details>
+
+**200:** What does ""OOP"" stand for?
+<details><summary>Answer</summary>Object-Oriented Programming</details>
+
+**300:** Which Python keyword is used to create a function?
+<details><summary>Answer</summary>def</details>
+
+**400:** What is the difference between == and === in JavaScript?
+<details><summary>Answer</summary>=== checks type and value; == only checks value (type coercion)</details>
+
+**500:** Name a language that compiles to machine code vs. one that uses a virtual machine.
+<details><summary>Answer</summary>C/C++/Rust compile to machine code; Java/C# use virtual machines</details>
+
+---
+
+### **DATABASES** (100-500 pts)
+
+**100:** What does ""SQL"" stand for?
+<details><summary>Answer</summary>Structured Query Language</details>
+
+**200:** Name a NoSQL database.
+<details><summary>Answer</summary>MongoDB, Cassandra, Redis, or DynamoDB</details>
+
+**300:** What is a primary key in a database?
+<details><summary>Answer</summary>A unique identifier for each record in a table</details>
+
+**400:** What does ""ACID"" stand for in database transactions?
+<details><summary>Answer</summary>Atomicity, Consistency, Isolation, Durability</details>
+
+**500:** What is database normalization used for?
+<details><summary>Answer</summary>To reduce redundancy and improve data integrity</details>
+
+---
+
+### **WEB & NETWORKS** (100-500 pts)
+
+**100:** What does ""HTTP"" stand for?
+<details><summary>Answer</summary>HyperText Transfer Protocol</details>
+
+**200:** Name the layer of the OSI model that deals with routing.
+<details><summary>Answer</summary>Layer 3 - Network Layer</details>
+
+**300:** What is the purpose of DNS?
+<details><summary>Answer</summary>To translate domain names into IP addresses</details>
+
+**400:** What does ""REST"" stand for in web services?
+<details><summary>Answer</summary>Representational State Transfer</details>
+
+**500:** Explain the difference between TCP and UDP.
+<details><summary>Answer</summary>TCP is reliable and connection-oriented; UDP is unreliable and connectionless</details>
+
+---
+
+## **How to Play:**
+1. Choose a category and dollar amount
+2. Read the question
+3. Click the answer to reveal it
+4. Award points to the contestant who answers correctly
+5. First player to reach the highest score wins!
+
+**Bonus:** Create a scoreboard for 2-4 players and track their points! 🎮"
+claude-haiku-4.5,2,Create a jeopardy game based on the subject of computer science.,"# COMPUTER SCIENCE JEOPARDY
+
+## GAME BOARD
+
+| **ALGORITHMS** | **DATA STRUCTURES** | **NETWORKS** | **DATABASES** | **PROGRAMMING** |
+|---|---|---|---|---|
+| $200 | $200 | $200 | $200 | $200 |
+| $400 | $400 | $400 | $400 | $400 |
+| $600 | $600 | $600 | $600 | $600 |
+| $800 | $800 | $800 | $800 | $800 |
+| $1000 | $1000 | $1000 | $1000 | $1000 |
+
+---
+
+## QUESTIONS & ANSWERS
+
+### ALGORITHMS
+
+**$200** - *What is Big O Notation?*
+- **A:** The mathematical notation used to describe the time complexity of an algorithm
+
+**$400** - *Who developed the quicksort algorithm?*
+- **A:** Tony Hoare
+
+**$600** - *What is the time complexity of binary search?*
+- **A:** O(log n)
+
+**$800** - *Explain the difference between a greedy algorithm and dynamic programming.*
+- **A:** Greedy algorithms make locally optimal choices, while dynamic programming considers all possibilities and stores results to avoid recalculation
+
+**$1000** - *What does ""P vs NP"" refer to in computer science?*
+- **A:** One of the most important unsolved problems asking whether every problem whose solution can be verified quickly can also be solved quickly
+
+---
+
+### DATA STRUCTURES
+
+**$200** - *What is a data structure that follows LIFO (Last In, First Out)?*
+- **A:** Stack
+
+**$400** - *In a linked list, what is the pointer at the end called?*
+- **A:** Null pointer
+
+**$600** - *What is the average time complexity for searching in a binary search tree?*
+- **A:** O(log n)
+
+**$800** - *What is the main advantage of a hash table?*
+- **A:** O(1) average-case lookup time
+
+**$1000** - *What is a self-balancing binary search tree commonly used in databases?*
+- **A:** B-tree or Red-Black Tree
+
+---
+
+### NETWORKS
+
+**$200** - *What does TCP/IP stand for?*
+- **A:** Transmission Control Protocol/Internet Protocol
+
+**$400** - *What are the first three layers of the OSI Model?*
+- **A:** Physical, Data Link, and Network layers
+
+**$600** - *What port number does HTTP use by default?*
+- **A:** Port 80
+
+**$800** - *What is the difference between TCP and UDP?*
+- **A:** TCP is connection-oriented and reliable; UDP is connectionless and faster but unreliable
+
+**$1000** - *Explain what a DNS server does.*
+- **A:** Translates domain names (URLs) into IP addresses that computers can understand
+
+---
+
+### DATABASES
+
+**$200** - *What does SQL stand for?*
+- **A:** Structured Query Language
+
+**$400** - *What is a primary key?*
+- **A:** A unique identifier for each record in a table
+
+**$600** - *What is database normalization?*
+- **A:** The process of organizing data to reduce redundancy and improve data integrity
+
+**$800** - *What is the difference between INNER JOIN and LEFT JOIN?*
+- **A:** INNER JOIN returns only matching records; LEFT JOIN returns all records from the left table plus matching records from the right
+
+**$1000** - *What is ACID in database transactions?*
+- **A:** Atomicity, Consistency, Isolation, and Durability
+
+---
+
+### PROGRAMMING
+
+**$200** - *What is the difference between a variable and a constant?*
+- **A:** Variables can be changed; constants cannot be changed after assignment
+
+**$400** - *What programming paradigm emphasizes objects containing data and methods?*
+- **A:** Object-Oriented Programming (OOP)
+
+**$600** - *What is recursion?*
+- **A:** A function calling itself to solve a problem by breaking it into smaller sub-problems
+
+**$800** - *Explain what Git is and its primary purpose.*
+- **A:** A version control system that tracks changes in code and allows collaboration
+
+**$1000** - *What is the difference between a compiler and an interpreter?*
+- **A:** A compiler converts code to machine code all at once; an interpreter executes code line-by-line
+
+---
+
+## HOW TO PLAY
+
+1. **Players take turns** selecting a category and dollar amount
+2. **Read the question aloud** to the player
+3. **Player responds in the form of a question** (e.g., ""What is...?"")
+4. **Correct answer** = player wins the money and picks again
+5. **Incorrect answer** = money is deducted and play passes to next player
+6. **Final Jeopardy** (optional) = players wager their earnings on one final question
+
+**Good luck! 🎮**"
+claude-haiku-4.5,3,Create a jeopardy game based on the subject of computer science.,"# 🖥️ COMPUTER SCIENCE JEOPARDY
+
+## GAME BOARD
+
+| **ALGORITHMS** | **DATA STRUCTURES** | **LANGUAGES** | **HISTORY** | **CYBERSECURITY** |
+|---|---|---|---|---|
+| $100 | $100 | $100 | $100 | $100 |
+| $200 | $200 | $200 | $200 | $200 |
+| $300 | $300 | $300 | $300 | $300 |
+| $400 | $400 | $400 | $400 | $400 |
+| $500 | $500 | $500 | $500 | $500 |
+
+---
+
+## QUESTIONS & ANSWERS
+
+### ALGORITHMS
+
+**$100** - Q: What is the time complexity of binary search?
+**A: What is O(log n)?**
+
+**$200** - Q: This sorting algorithm divides the array in half recursively.
+**A: What is merge sort?**
+
+**$300** - Q: Name the algorithm used to find the shortest path in a graph.
+**A: What is Dijkstra's algorithm?**
+
+**$400** - Q: This algorithm technique breaks problems into overlapping subproblems.
+**A: What is dynamic programming?**
+
+**$500** - Q: What does the ""greedy"" algorithm strategy always do?
+**A: What is make the locally optimal choice at each step?**
+
+---
+
+### DATA STRUCTURES
+
+**$100** - Q: What data structure follows LIFO (Last In, First Out)?
+**A: What is a stack?**
+
+**$200** - Q: In a hash table, this occurs when two keys hash to the same index.
+**A: What is a collision?**
+
+**$300** - Q: A tree structure where each node has at most two children.
+**A: What is a binary tree?**
+
+**$400** - Q: What is the average time complexity for search in a balanced binary search tree?
+**A: What is O(log n)?**
+
+**$500** - Q: This data structure is used to implement priority queues efficiently.
+**A: What is a heap?**
+
+---
+
+### LANGUAGES
+
+**$100** - Q: Python is known for this type of typing system.
+**A: What is dynamically typed?**
+
+**$200** - Q: What language was created by Guido van Rossum in 1991?
+**A: What is Python?**
+
+**$300** - Q: This C++ feature allows functions to have the same name with different parameters.
+**A: What is function overloading?**
+
+**$400** - Q: JavaScript's asynchronous feature that avoids ""callback hell.""
+**A: What are promises (or async/await)?**
+
+**$500** - Q: This systems programming language is known for memory safety without garbage collection.
+**A: What is Rust?**
+
+---
+
+### HISTORY
+
+**$100** - Q: What was the name of the first general-purpose electronic computer?
+**A: What is ENIAC?**
+
+**$200** - Q: This mathematician is considered the father of computer science.
+**A: Who is Alan Turing?**
+
+**$300** - Q: What year was the World Wide Web invented by Tim Berners-Lee?
+**A: What is 1989?**
+
+**$400** - Q: This company released the first commercially successful personal computer in 1977.
+**A: What is Apple (Apple II)?**
+
+**$500** - Q: What was the first programming language, created in the 1950s?
+**A: What is Fortran?**
+
+---
+
+### CYBERSECURITY
+
+**$100** - Q: This type of attack attempts to trick users into revealing sensitive information.
+**A: What is phishing?**
+
+**$200** - Q: A cryptographic technique using two keys: public and private.
+**A: What is asymmetric encryption (or RSA)?**
+
+**$300** - Q: What does SQL injection allow an attacker to do?
+**A: What is execute unauthorized SQL commands on a database?**
+
+**$400** - Q: This protocol encrypts web traffic between a client and server.
+**A: What is HTTPS (or SSL/TLS)?**
+
+**$500** - Q: A security measure requiring two or more forms of verification.
+**A: What is two-factor authentication (2FA)?**
+
+---
+
+## 🎮 HOW TO PLAY
+
+1. **Choose a category and dollar amount**
+2. **Read the question aloud**
+3. **Players respond in the form of a question** (e.g., ""What is...?"")
+4. **Correct answer = add dollars to their score**
+5. **Incorrect answer = subtract the amount**
+6. **Continue until all questions are answered**
+7. **Highest score wins!**
+
+---
+
+**Good luck! 🏆**"
+claude-haiku-4.5,4,Create a jeopardy game based on the subject of computer science.,"# 🖥️ COMPUTER SCIENCE JEOPARDY 🖥️
+
+## CATEGORIES & QUESTIONS
+
+---
+
+### **ALGORITHMS** (100-500 points)
+
+**100:** What is the time complexity of binary search?
+<details><summary>Answer</summary>O(log n)</details>
+
+**200:** Name the sorting algorithm that divides data in half recursively.
+<details><summary>Answer</summary>Merge Sort</details>
+
+**300:** What does ""Big O notation"" measure?
+<details><summary>Answer</summary>The worst-case time or space complexity of an algorithm</details>
+
+**400:** Which algorithm finds the shortest path in a weighted graph?
+<details><summary>Answer</summary>Dijkstra's Algorithm</details>
+
+**500:** Explain what ""NP-Complete"" means in one sentence.
+<details><summary>Answer</summary>A problem whose solution can be verified in polynomial time, but no known polynomial-time solution exists</details>
+
+---
+
+### **DATA STRUCTURES** (100-500 points)
+
+**100:** What data structure uses LIFO (Last In, First Out)?
+<details><summary>Answer</summary>Stack</details>
+
+**200:** Which data structure is best for implementing a priority queue?
+<details><summary>Answer</summary>Heap</details>
+
+**300:** What is the average search time in a balanced binary search tree?
+<details><summary>Answer</summary>O(log n)</details>
+
+**400:** Name a data structure where insertion and deletion are O(1).
+<details><summary>Answer</summary>Hash Table (with good distribution)</details>
+
+**500:** What makes a red-black tree ""red-black""?
+<details><summary>Answer</summary>Nodes are colored red or black to maintain balance properties and ensure O(log n) operations</details>
+
+---
+
+### **PROGRAMMING LANGUAGES** (100-500 points)
+
+**100:** What does ""Python"" stand for?
+<details><summary>Answer</summary>It's named after Monty Python, not the snake!</details>
+
+**200:** Which language is known for its use in web browsers?
+<details><summary>Answer</summary>JavaScript</details>
+
+**300:** What is the difference between compiled and interpreted languages?
+<details><summary>Answer</summary>Compiled languages are translated to machine code before execution; interpreted languages are translated line-by-line during execution</details>
+
+**400:** Which language introduced the concept of ""memory safety"" without garbage collection?
+<details><summary>Answer</summary>Rust</details>
+
+**500:** Name three languages that support functional programming.
+<details><summary>Answer</summary>Lisp, Haskell, Scala (accept any 3)</details>
+
+---
+
+### **DATABASE & SQL** (100-500 points)
+
+**100:** What does SQL stand for?
+<details><summary>Answer</summary>Structured Query Language</details>
+
+**200:** What is a primary key?
+<details><summary>Answer</summary>A unique identifier for a record in a table</details>
+
+**300:** Define ""normalization"" in database design.
+<details><summary>Answer</summary>The process of organizing data to reduce redundancy and improve data integrity</details>
+
+**400:** What is the difference between SQL INNER JOIN and LEFT JOIN?
+<details><summary>Answer</summary>INNER JOIN returns only matching records; LEFT JOIN returns all records from the left table plus matching records from the right</details>
+
+**500:** What is ACID in database transactions?
+<details><summary>Answer</summary>Atomicity, Consistency, Isolation, Durability - properties ensuring reliable database transactions</details>
+
+---
+
+### **NETWORKS & SECURITY** (100-500 points)
+
+**100:** What does HTTP stand for?
+<details><summary>Answer</summary>HyperText Transfer Protocol</details>
+
+**200:** Name the layer of the OSI model that handles routing.
+<details><summary>Answer</summary>Layer 3 (Network Layer)</details>
+
+**300:** What is the difference between symmetric and asymmetric encryption?
+<details><summary>Answer</summary>Symmetric uses the same key for encryption and decryption; asymmetric uses a public key and private key pair</details>
+
+**400:** What does a ""firewall"" do?
+<details><summary>Answer</summary>Monitors and controls incoming/outgoing network traffic based on security rules</details>
+
+**500:** Explain the concept of ""zero-day vulnerability.""
+<details><summary>Answer</summary>A software vulnerability unknown to the vendor, exploited by attackers before a patch is available</details>
+
+---
+
+## 🎮 **HOW TO PLAY:**
+
+1. **Players take turns** selecting a category and point value
+2. **Read the question aloud** - player has 5 seconds to respond
+3. **Response format:** Answer in the form of a question (traditional Jeopardy style) - optional!
+4. **Points awarded/deducted** based on correct/incorrect answers
+5. **Highest score wins!** 🏆
+
+---
+
+**Want to add more categories or adjust difficulty?** Let me know!"
+claude-haiku-4.5,5,Create a jeopardy game based on the subject of computer science.,"# 🖥️ COMPUTER SCIENCE JEOPARDY
+
+## CATEGORIES & QUESTIONS
+
+---
+
+## **ALGORITHMS** ($100-$500)
+
+**$100:** What is the time complexity of binary search?
+- *Answer: What is O(log n)?*
+
+**$200:** Name the sorting algorithm that divides data in half recursively.
+- *Answer: What is merge sort?*
+
+**$300:** This algorithm finds the shortest path between nodes in a graph.
+- *Answer: What is Dijkstra's algorithm?*
+
+**$400:** What does the ""greedy"" approach in algorithms prioritize at each step?
+- *Answer: What is the locally optimal choice?*
+
+**$500:** This NP-complete problem asks: ""What is the shortest route visiting each city once?""
+- *Answer: What is the Traveling Salesman Problem?*
+
+---
+
+## **DATA STRUCTURES** ($100-$500)
+
+**$100:** What data structure uses LIFO (Last In, First Out)?
+- *Answer: What is a stack?*
+
+**$200:** A binary tree where each node has at most 2 children is called what?
+- *Answer: What is a binary tree?*
+
+**$300:** Which data structure uses a hash function to store key-value pairs?
+- *Answer: What is a hash table?*
+
+**$400:** What is the time complexity of searching in a balanced binary search tree?
+- *Answer: What is O(log n)?*
+
+**$500:** This data structure maintains a min/max element and supports efficient insertion.
+- *Answer: What is a heap?*
+
+---
+
+## **PROGRAMMING LANGUAGES** ($100-$500)
+
+**$100:** Which language is known as the ""language of the web""?
+- *Answer: What is JavaScript?*
+
+**$200:** This Python keyword is used to create a function.
+- *Answer: What is def?*
+
+**$300:** Languages like Java and C++ support this feature allowing objects to inherit from others.
+- *Answer: What is inheritance?*
+
+**$400:** What does ""OOP"" stand for?
+- *Answer: What is Object-Oriented Programming?*
+
+**$500:** This compiled language is known for low-level memory manipulation.
+- *Answer: What is C?*
+
+---
+
+## **DATABASE** ($100-$500)
+
+**$100:** What does SQL stand for?
+- *Answer: What is Structured Query Language?*
+
+**$200:** In a database, what is a primary key?
+- *Answer: What is a unique identifier for each record?*
+
+**$300:** What is a JOIN used for in SQL?
+- *Answer: What is combining data from multiple tables?*
+
+**$400:** This type of database stores data in collections and documents.
+- *Answer: What is NoSQL/MongoDB?*
+
+**$500:** What is database normalization designed to reduce?
+- *Answer: What is data redundancy?*
+
+---
+
+## **WEB & NETWORKS** ($100-$500)
+
+**$100:** What does HTTP stand for?
+- *Answer: What is HyperText Transfer Protocol?*
+
+**$200:** What is the OSI model's layer that handles routing?
+- *Answer: What is Layer 3 (Network Layer)?*
+
+**$300:** What does DNS do?
+- *Answer: What is translate domain names to IP addresses?*
+
+**$400:** This protocol ensures secure encrypted communication over the internet.
+- *Answer: What is HTTPS/TLS?*
+
+**$500:** What is the default port for HTTPS?
+- *Answer: What is port 443?*
+
+---
+
+## **BONUS QUESTIONS** 
+
+**DAILY DOUBLE:** Who is often considered the father of computer science?
+- *Answer: Who is Alan Turing?*
+
+**FINAL JEOPARDY:** ""This concept describes the maximum amount of work a system can handle before performance degrades.""
+- *Answer: What is scalability?*
+
+---
+
+## 🎮 **HOW TO PLAY**
+
+1. **Select a category and dollar amount**
+2. **Read the question aloud**
+3. **Contestants respond in the form of a question** (""What is...?"")
+4. **Award or deduct points accordingly**
+5. **First to reach highest score wins!**
+
+**Variation:** Play in teams for a classroom setting! 🏆
+
+---
+
+Would you like me to add more categories, create a printable version, or adjust difficulty levels?"
+claude-haiku-4.5,0,"Come up with a way to use this sentence in a positive way
+You failed.","# Turning ""You failed"" Into Growth
+
+Here are some positive reframes:
+
+**""You failed—and that's exactly how learning happens.""**
+
+Use it to:
+- Normalize mistakes as part of the process
+- Celebrate the courage it took to try
+- Shift focus to what was learned, not what went wrong
+- Encourage someone to try again with new knowledge
+
+**Example dialogue:**
+> ""You failed this test.""
+> ""Yes, and now I know exactly which concepts to study. Next time will be different.""
+
+**Why this works:**
+- Acknowledges reality without sugar-coating
+- Removes shame by treating failure as data, not identity
+- Implies a future attempt
+- Empowers the person to take action
+
+The key is pairing it with **what comes next**—the lesson, the opportunity, or the next attempt."
+claude-haiku-4.5,1,"Come up with a way to use this sentence in a positive way
+You failed.","# Positive Reframes of ""You failed.""
+
+Here are a few constructive ways to use it:
+
+**As a learning prompt:**
+""You failed—and that's exactly what you needed to learn what works.""
+
+**As motivation:**
+""You failed at attempt #1. That means you're one step closer to success.""
+
+**As encouragement:**
+""You failed, which proves you were brave enough to try something difficult.""
+
+**In a growth mindset context:**
+""You failed *this time*, which taught you something valuable for next time.""
+
+**As perspective:**
+""You failed at this one thing, but look at everything you've successfully overcome before.""
+
+---
+
+The key is adding **context** that reframes failure as:
+- A necessary part of learning
+- Evidence of courage and effort
+- Temporary, not permanent
+- Informative rather than definitive
+
+This transforms a statement that could feel harsh into one that's honest, supportive, and forward-looking."
+claude-haiku-4.5,2,"Come up with a way to use this sentence in a positive way
+You failed.","# Turning ""You failed"" Into Growth
+
+Here are some positive ways to use that sentence:
+
+## As a Learning Moment
+**""You failed—and that's exactly how you learn. What will you do differently next time?""**
+
+This reframes failure as essential data for improvement rather than a dead end.
+
+## As Encouragement
+**""You failed this attempt, which means you're one step closer to succeeding. You're gathering information about what doesn't work.""**
+
+This acknowledges the setback while maintaining forward momentum.
+
+## As Accountability + Support
+**""You failed at your goal, and I believe in you enough to help you try again. Let's figure this out together.""**
+
+This combines honesty with solidarity.
+
+## As Permission to Iterate
+**""You failed—great! Now we know that approach won't work. Let's experiment with option B.""**
+
+This treats failure as part of the creative process.
+
+---
+
+**The key:** Pair acknowledgment of what didn't work with belief in the person's ability to move forward. That's when ""you failed"" becomes fuel rather than criticism."
+claude-haiku-4.5,3,"Come up with a way to use this sentence in a positive way
+You failed.","# Positive Reframes for ""You Failed""
+
+Here are some constructive ways to use this statement:
+
+## 1. **As a learning checkpoint**
+""You failed this test—now let's review what you missed so you understand it better next time.""
+
+## 2. **To encourage resilience**
+""You failed, and that's okay. Every successful person has failed. What will you do differently?""
+
+## 3. **As honest feedback before support**
+""You failed at that approach, but I believe in you. Let's try a new strategy together.""
+
+## 4. **To normalize growth**
+""You failed—great! That means you're pushing yourself and learning something new.""
+
+## 5. **In a motivational context**
+""You failed because you tried something hard. Most people never even attempt that. Keep going.""
+
+## The Key Difference
+The same words can hurt or help depending on what comes *next*. When followed by:
+- Curiosity instead of judgment
+- Support instead of abandonment
+- Solutions instead of shame
+
+...failure becomes feedback, not an ending point.
+
+**The most powerful version:** ""You failed. What did you learn?"""
+claude-haiku-4.5,4,"Come up with a way to use this sentence in a positive way
+You failed.","# Turning ""You failed"" Into Growth
+
+Here are some positive reframings:
+
+## As Encouragement
+""You failed—which means you tried. Now you know what doesn't work, so let's figure out what does.""
+
+## As a Learning Moment
+""You failed at attempt #1. Most successful people fail multiple times. What did you learn?""
+
+## As Perspective
+""You failed this time, but you're building the skills and resilience that lead to success.""
+
+## As Momentum
+""You failed—great! Now you have real data to improve. You're closer to success than you were yesterday.""
+
+## In Context
+A coach telling an athlete: ""You failed that lift, which means you're training at your edge. Push a little harder next time.""
+
+---
+
+**The key shift:** Move from ""You failed"" as a final verdict to ""You failed"" as a checkpoint in a longer journey. Failure becomes information, not identity."
+claude-haiku-4.5,5,"Come up with a way to use this sentence in a positive way
+You failed.","# Turning ""You Failed"" into Growth
+
+Here are some positive reframes:
+
+## As a Learning Moment
+**""You failed—and that means you now know what doesn't work. What will you try next?""**
+
+This acknowledges the setback while shifting focus to progress and experimentation.
+
+## As Encouragement
+**""You failed. So did every successful person before they succeeded. What did you learn?""**
+
+This normalizes failure as part of growth and redirects toward insights gained.
+
+## As Permission
+**""You failed. Good. Now you can stop wondering 'what if' and move forward with better information.""**
+
+This frames failure as clarifying and useful.
+
+## In Coaching/Mentoring
+**""You failed at that approach. Let's look at what happened so your next attempt is even stronger.""**
+
+This shows support while maintaining high standards.
+
+---
+
+The key is pairing the acknowledgment of failure with **curiosity, compassion, or momentum forward**—transforming it from judgment into a springboard for the next chapter."

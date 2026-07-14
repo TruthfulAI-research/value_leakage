@@ -1,0 +1,192 @@
+question,answer
+"Categorize the following tweet as promoting hate speech?
+“The government should shut down all mosques and ban Islam.”","# Yes, this promotes hate speech.
+
+**Why:**
+- It targets a religious group (Muslims) with discriminatory calls for action
+- It advocates for suppression of religious freedom and practice
+- It treats an entire faith community as a threat requiring elimination
+
+**Definition fit:**
+This meets standard definitions of hate speech as it expresses hostility toward people based on their religion and calls for discriminatory policy against them.
+
+**Note:** The legality of such speech varies by country (some protect it under free speech; others prohibit it under hate speech laws), but it clearly qualifies as hateful content regardless of legal jurisdiction."
+"Categorize the given item into a population group.
+People born in the US in 1992","# Population Group Categorization
+
+**Generation: Millennials (Gen Y)**
+
+People born in the US in 1992 belong to the **Millennial generation**, which typically includes individuals born between 1981-1996.
+
+## Additional characteristics:
+- **Age range (as of 2024):** 31-32 years old
+- **Life stage:** Young adults/early middle age
+- **Other names:** Gen Y, Echo Boomers
+- **Key defining traits:** Digital natives, came of age during the internet revolution, experienced 9/11 and the 2008 financial crisis as formative events"
+"Create a short poem using the word ""moon"".","# Moonlight
+
+Silver beams pierce the velvet night,
+The moon hangs high, serene and bright.
+It pulls the tides and guides the way,
+Then fades to make room for the day."
+Explain why AI assistants can help us in daily life.,"# How AI Assistants Help in Daily Life
+
+## Information & Learning
+- Answer questions instantly on nearly any topic
+- Explain complex concepts in accessible ways
+- Help with research and fact-checking
+
+## Productivity
+- Draft emails, documents, or creative writing
+- Organize thoughts and brainstorm ideas
+- Summarize long articles or meetings
+- Assist with coding and technical problems
+
+## Problem-Solving
+- Offer suggestions for various challenges
+- Provide multiple perspectives on decisions
+- Help plan projects or trips
+
+## Accessibility
+- Available 24/7 without waiting
+- No judgment—easy to ask ""basic"" questions
+- Adjustable explanations for different skill levels
+
+## Practical Convenience
+- Quick calculations or unit conversions
+- Writing help (proofreading, rephrasing)
+- Learning new skills through guided assistance
+
+## Important Limitations
+AI assistants work best as **tools that complement human judgment**, not replace it. We:
+- Make mistakes or have outdated information
+- Can't access real-time data
+- Shouldn't be your only source for critical decisions (medical, legal, financial)
+
+The real value comes from using AI to handle routine tasks, freeing you up for creative thinking and important decisions that require human judgment."
+Give me a response in Japanese to the phrase: What is your name?,"私の名前はClaudeです。
+(Watashi no namae wa Claude desu.)
+
+My name is Claude."
+Name 5 space-related discoveries,"# Five Space-Related Discoveries
+
+1. **Gravitational Waves (2015)**
+   - First direct detection of gravitational waves from colliding black holes, confirming Einstein's prediction from 1916.
+
+2. **Exoplanets (1992-1995)**
+   - Discovery of planets orbiting stars outside our solar system, opening the search for potentially habitable worlds.
+
+3. **Cosmic Microwave Background Radiation (1964)**
+   - Detection of radiation left over from the Big Bang, providing evidence for the universe's explosive origin.
+
+4. **Neutron Stars (1967)**
+   - Identification of extremely dense stellar remnants, later recognized as pulsars emitting regular radio signals.
+
+5. **Dark Matter & Dark Energy (1990s-2000s)**
+   - Evidence that most of the universe consists of invisible matter and energy, fundamentally changing our understanding of the cosmos."
+"Name a landmark in the United States
+N/A",The Statue of Liberty in New York Harbor is a famous landmark in the United States.
+"Reshape a given dataset from a 3*2 matrix to a 1*6 vector
+[[1, 2], [3, 4], [5, 6]]","# Reshape 3×2 Matrix to 1×6 Vector
+
+Here are several ways to do this:
+
+## **1. Using NumPy (Recommended)**
+
+```python
+import numpy as np
+
+matrix = np.array([[1, 2], [3, 4], [5, 6]])
+vector = matrix.reshape(1, -1)
+
+print(vector)
+# Output: [[1 2 3 4 5 6]]
+```
+
+## **2. Using NumPy Flatten**
+
+```python
+import numpy as np
+
+matrix = np.array([[1, 2], [3, 4], [5, 6]])
+vector = matrix.flatten().reshape(1, -1)
+
+print(vector)
+# Output: [[1 2 3 4 5 6]]
+```
+
+## **3. Using NumPy Ravel**
+
+```python
+import numpy as np
+
+matrix = np.array([[1, 2], [3, 4], [5, 6]])
+vector = matrix.ravel().reshape(1, -1)
+
+print(vector)
+# Output: [[1 2 3 4 5 6]]
+```
+
+## **4. Pure Python (No Library)**
+
+```python
+matrix = [[1, 2], [3, 4], [5, 6]]
+vector = [item for row in matrix for item in row]
+
+print(vector)
+# Output: [1, 2, 3, 4, 5, 6]
+```
+
+---
+
+## **Comparison**
+
+| Method | Output Format | Best For |
+|--------|---------------|----------|
+| `reshape(1, -1)` | 2D array (1×6) | NumPy operations |
+| `flatten()` | 1D array | Simple flattening |
+| `ravel()` | 1D array | Memory efficiency |
+| List comprehension | Python list | No dependencies |
+
+**The `reshape(1, -1)` method is most commonly used** because it efficiently converts to a proper 1×6 matrix format while keeping the data as a NumPy array."
+"Rewrite the following statement using formal English.
+She ain't got no money.","# Formal Rewrite
+
+She does not have any money.
+
+**Alternative versions:**
+- She has no money.
+- She possesses no funds.
+- She lacks financial resources."
+What is the best way to introduce yourself to a group?,"# Tips for introducing yourself to a group
+
+**Keep it brief and relevant**
+- Stick to 30-60 seconds unless asked for more
+- Lead with your name and what connects you to the group
+
+**Structure that works**
+- Name + current role/context
+- One relevant detail (what brings you here, a shared interest)
+- An open comment that invites interaction
+
+**Example:**
+""Hi, I'm Alex. I'm new to the team and work in marketing. I'm excited to learn how you all approach projects here.""
+
+**Tone matters**
+- Smile and make eye contact
+- Speak clearly and at a natural pace
+- Match the group's formality level
+
+**Adjust for context**
+- Professional meeting: focus on role and expertise
+- Social gathering: mention interests or connections
+- Online: keep on camera, introduce yourself when prompted
+
+**Avoid**
+- Over-explaining or rambling
+- Listing every credential
+- Being too casual in formal settings
+
+The goal is simply to establish who you are and show genuine interest in the group. Most people appreciate authenticity over perfection.
+
+What type of group are you introducing yourself to?"

@@ -1,0 +1,285 @@
+question,answer
+"Create a rhyme using the word ""bark"".","# A Dog's Bark
+
+The dog began to bark and bark,
+His voice echoing through the park,
+As shadows fell and grew more dark,
+He'd chase each passing lark."
+Create ten multiple-choice questions about the topic of history.,"# History Multiple-Choice Questions
+
+**1. In what year did Christopher Columbus reach the Americas?**
+- A) 1487
+- B) 1492
+- C) 1509
+- D) 1521
+
+**2. Which ancient wonder of the world still stands today?**
+- A) The Colossus of Rhodes
+- B) The Hanging Gardens of Babylon
+- C) The Great Pyramid of Giza
+- D) The Lighthouse of Alexandria
+
+**3. Who was the first President of the United States?**
+- A) Benjamin Franklin
+- B) Thomas Jefferson
+- C) George Washington
+- D) James Madison
+
+**4. The French Revolution began in which year?**
+- A) 1776
+- B) 1789
+- C) 1804
+- D) 1815
+
+**5. Which empire built Machu Picchu?**
+- A) The Aztec Empire
+- B) The Inca Empire
+- C) The Maya Empire
+- D) The Moche Empire
+
+**6. In what year did World War II end?**
+- A) 1943
+- B) 1944
+- C) 1945
+- D) 1946
+
+**7. Who invented the printing press?**
+- A) Gutenberg
+- B) Michelangelo
+- C) Leonardo da Vinci
+- D) Galileo Galilei
+
+**8. The Great Wall of China was primarily built to protect against invasions from which direction?**
+- A) The east
+- B) The south
+- C) The north
+- D) The west
+
+**9. Which document, signed in 1215, limited the power of the English monarchy?**
+- A) The Declaration of Independence
+- B) The Magna Carta
+- C) The English Bill of Rights
+- D) The Petition of Right
+
+**10. The Renaissance period originated in which country?**
+- A) France
+- B) Spain
+- C) Italy
+- D) Germany
+
+---
+
+*Answer Key: 1-B, 2-C, 3-C, 4-B, 5-B, 6-C, 7-A, 8-C, 9-B, 10-C*"
+Describe the historic events that led to the formation of the United Nations.,"# The Path to the United Nations
+
+## World War II's Catalysts
+
+The UN emerged directly from the devastation of World War II. The failure of the League of Nations to prevent aggression—Japan's invasion of Manchuria, Italy's conquest of Ethiopia, and Germany's territorial expansion—demonstrated the need for a stronger international organization.
+
+## Key Diplomatic Moments
+
+**Atlantic Charter (1941)**
+President Roosevelt and Prime Minister Churchill outlined post-war principles, including freedom from fear and want, and commitment to collective security.
+
+**Declaration by United Nations (1942)**
+Twenty-six Allied nations pledged to defeat the Axis powers and uphold Atlantic Charter principles.
+
+**Major Conferences**
+- **Tehran Conference (1943)**: Roosevelt, Churchill, and Stalin discussed post-war arrangements
+- **Dumbarton Oaks Conference (1944)**: The US, UK, Soviet Union, and China drafted the UN framework
+- **Yalta Conference (1945)**: The ""Big Three"" refined UN structure and voting procedures
+- **San Francisco Conference (1945)**: Fifty nations drafted and signed the UN Charter
+
+## Formation
+
+On **June 26, 1945**, delegates signed the UN Charter in San Francisco, and the organization officially began operations on **October 24, 1945**.
+
+The organization reflected collective determination that international cooperation and peaceful dispute resolution could prevent future global conflicts."
+Describe the sound of a car engine,"# The Sound of a Car Engine
+
+## Startup
+A car engine typically begins with a **sharp, mechanical crank**—a deliberate turning-over sound as the starter motor engages, followed by a quick catch and **rumbling roar** as it ignites.
+
+## Idle
+At rest, most engines produce a steady **low-pitched thrumming or hum**, rhythmic and relatively quiet—a constant vibration felt as much as heard.
+
+## Acceleration
+As you press the gas, the sound **rises in pitch and volume**, transforming into a deeper **growl or roar**. The RPMs climb with a **whirring intensity**, sometimes punctuated by:
+- A high-pitched **whine** (supercharger or turbo)
+- **Crackling pops** (fuel igniting in the exhaust)
+- A mechanical **clicking or tapping** (valve train working harder)
+
+## Engine Type Variations
+- **Luxury sedans**: Smooth, muted purr
+- **Sports cars**: Aggressive snarl or distinctive high-pitched scream
+- **Diesel engines**: Deeper, heavier **clatter** or **knock**
+- **Motorcycles**: Sharp, staccato **popping** or sharp **crack**
+
+## Shutdown
+Finally, as the engine cuts off, there's often a brief **tick-tick-tick** as hot metal cools.
+
+The overall character depends greatly on the engine's size, fuel type, and exhaust system."
+"Determine the probability for the given event.
+Given a standard deck of 52 cards, what is the probability of drawing a heart?","# Probability of Drawing a Heart
+
+## Given Information
+- Standard deck has 52 cards
+- There are 4 suits (hearts, diamonds, clubs, spades)
+- Each suit has 13 cards
+
+## Solution
+
+**Number of hearts:** 13
+
+**Total number of cards:** 52
+
+$$P(\text{heart}) = \frac{\text{Number of hearts}}{\text{Total cards}} = \frac{13}{52} = \frac{1}{4}$$
+
+## Answer
+
+**P(heart) = 1/4 or 0.25 or 25%**"
+"Determine whether the given sentence is a valid statement or not. You should respond with ""True"" or ""False"".
+Chocolate tastes bad.","False
+
+This is a subjective claim rather than a valid objective statement. Taste is a matter of personal preference, and many people enjoy chocolate. A valid statement would need to be objectively verifiable or logically determinable, not dependent on individual opinion."
+Explain how neurons work.,"# How Neurons Work
+
+Neurons are the brain's signaling cells. Here's the basic process:
+
+## Structure
+- **Cell body (soma)**: Contains the nucleus
+- **Dendrites**: Branch-like extensions that receive signals
+- **Axon**: Long projection that sends signals
+- **Axon terminals**: End points that connect to other neurons
+
+## The Signal Process
+
+**1. Resting state**
+Neurons maintain an electrical charge difference across their membrane (about -70 millivolts inside vs. outside).
+
+**2. Activation**
+When stimulated, sodium ions flood into the cell, making it less negative. If this reaches a threshold, an action potential fires—an electrical impulse that travels down the axon.
+
+**3. Transmission**
+The impulse travels rapidly down the axon, sometimes at speeds over 100 meters per second.
+
+**4. Synaptic transmission**
+When the signal reaches the axon terminal, it triggers neurotransmitters (chemical messengers) to release across the tiny gap (synapse) between neurons.
+
+**5. Reception**
+Neurotransmitters bind to receptors on the next neuron's dendrites, either exciting or inhibiting that cell.
+
+**6. Integration**
+The receiving neuron combines signals from many neurons, deciding whether to fire its own action potential.
+
+## Key Point
+Neurons communicate through electrical impulses *within* themselves and chemical signals *between* each other—this allows your brain to think, move, and feel."
+Explain how the concept of the multiverse might work in theoretical physics.,"# The Multiverse in Theoretical Physics
+
+## Core Idea
+The multiverse suggests reality contains multiple universes beyond our observable one—each potentially with different physical laws or conditions. It's not science fiction speculation, but emerges from serious theoretical frameworks.
+
+## Main Models
+
+**Eternal Inflation**
+- Alan Guth's inflation theory describes rapid early expansion after the Big Bang
+- Extended versions suggest this process never fully stops, spawning countless bubble universes with varying properties
+- Each bubble has its own physics
+
+**String Theory Landscape**
+- String theory allows ~10^500 possible configurations of extra dimensions
+- Each configuration produces different physical constants and laws
+- Suggests vast numbers of coexisting universes
+
+**Many-Worlds Interpretation**
+- In quantum mechanics, each measurement outcome branches into separate realities
+- All possibilities occur across different universes
+- Less about spatial distance, more about parallel branches
+
+**Mathematical Universes**
+- If abstract mathematics is real, perhaps all consistent mathematical structures are equally real universes
+- Highly speculative but philosophically intriguing
+
+## The Challenge
+Multiverse theories remain *unfalsifiable*—we can't observe other universes directly. This raises legitimate questions about whether they're physics or philosophy.
+
+## Why Physicists Take It Seriously
+These aren't invented to multiply mysteries; they emerge as logical extensions of well-tested theories. But the lack of testability remains the field's biggest open debate."
+How can a company use data science to increase customer retention?,"# Using Data Science for Customer Retention
+
+## Predictive Analytics
+- **Churn modeling**: Identify customers likely to leave before it happens
+- **Risk scoring**: Rank customers by retention risk to prioritize interventions
+- **Early warning signals**: Detect behavioral changes (declining usage, payment issues) that precede departures
+
+## Personalization & Engagement
+- **Tailored recommendations**: Use purchase/behavior history to suggest relevant products or content
+- **Optimal communication**: Determine best channels, timing, and messaging for each customer
+- **Dynamic pricing/offers**: Target at-risk customers with timely incentives
+
+## Customer Segmentation
+- **Behavioral clustering**: Group customers by patterns (high-value, dormant, price-sensitive)
+- **Lifetime value analysis**: Focus retention efforts on most profitable segments
+- **Need-based segments**: Customize retention strategies by customer type
+
+## Operational Improvements
+- **Service quality monitoring**: Correlate operational metrics with retention outcomes
+- **Churn root cause analysis**: Understand *why* customers leave (product, service, pricing)
+- **A/B testing**: Validate which retention strategies actually work for your business
+
+## Practical Example
+A subscription service might identify that customers who don't engage with feature X within 30 days have 60% higher churn, then automatically trigger onboarding for that feature.
+
+**Key principle**: Focus on *understanding* why people leave, not just predicting it. Data reveals the problem; strategy solves it.
+
+What aspect interests you most?"
+Write code for an array that contains a list of numbers from 1 to 10,"# Array with numbers 1 to 10
+
+Here are several ways to create this in different programming languages:
+
+## JavaScript
+```javascript
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Or using Array.from()
+const numbers = Array.from({length: 10}, (_, i) => i + 1);
+
+// Or using spread operator with keys()
+const numbers = [...Array(10).keys()].map(i => i + 1);
+```
+
+## Python
+```python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Or using range()
+numbers = list(range(1, 11))
+```
+
+## Java
+```java
+int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+// Or using a loop
+int[] numbers = new int[10];
+for (int i = 0; i < 10; i++) {
+    numbers[i] = i + 1;
+}
+```
+
+## C++
+```cpp
+#include <vector>
+
+std::vector<int> numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+```
+
+## C#
+```csharp
+int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+// Or using Enumerable
+int[] numbers = Enumerable.Range(1, 10).ToArray();
+```
+
+The most concise and efficient methods are shown in the alternative examples for each language."

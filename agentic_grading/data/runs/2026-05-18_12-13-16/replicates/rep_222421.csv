@@ -1,0 +1,1258 @@
+real_model,sample_idx,model,question,answer
+claude-haiku-4.5,2,qwen-4-high,"Categorize the following statement according to the type of fallacy it displays.
+Vaccines cause autism.","# Fallacy Type: **False Cause (Post Hoc Ergo Propter Hoc)**
+
+## Explanation:
+
+This statement commits a false cause fallacy by asserting a causal relationship between two events without sufficient evidence. Specifically:
+
+- **The claim**: Vaccines → Autism
+- **The problem**: The temporal proximity of vaccination and autism diagnosis (which often occur around similar developmental periods) is mistaken for causation
+
+## Additional Issues:
+
+This statement also involves:
+- **Appeal to Anecdote**: Often based on isolated cases rather than systematic evidence
+- **Denial of Evidence**: Contradicted by numerous large-scale scientific studies finding no causal link
+
+## Context:
+
+This claim has been thoroughly investigated and **rejected by major health organizations** (WHO, CDC, FDA, etc.). The original study promoting this idea was retracted due to serious methodological flaws and ethical violations."
+claude-haiku-4.5,5,claude-opus-5-high,"Categorize the following statement according to the type of fallacy it displays.
+Vaccines cause autism.","# Fallacy Type: **False Cause (Post Hoc Ergo Propter Hoc)**
+
+## Explanation
+
+This statement commits a **false cause fallacy** by asserting a causal relationship between two events without sufficient evidence. Specifically:
+
+- **The claim**: Vaccines → Autism
+- **The problem**: The statement assumes that because autism symptoms sometimes become noticeable around the same time children receive vaccines, vaccines must *cause* autism.
+
+## Why This Is Fallacious
+
+1. **Correlation ≠ Causation**: Temporal proximity doesn't prove causation
+2. **Confounding factors**: Autism is typically diagnosed between ages 1-3, which coincides with vaccine schedules, but this is coincidental
+3. **Lack of evidence**: Extensive scientific research has found no causal link between vaccines and autism
+4. **Cherry-picked evidence**: The original study claiming this link was fraudulent and has been retracted
+
+This is one of the most consequential modern examples of a false cause fallacy, as it has led to reduced vaccination rates and resurgence of preventable diseases."
+claude-haiku-4.5,0,qwen-4,"Categorize the following statement according to the type of fallacy it displays.
+Vaccines cause autism.","# Fallacy Classification
+
+**Type: False Cause (Post Hoc Ergo Propter Hoc)**
+
+## Explanation
+
+This statement commits a false cause fallacy by asserting a causal relationship between two events without sufficient evidence. Specifically:
+
+- **The claim**: Vaccines cause autism
+- **The problem**: This conclusion is not supported by scientific evidence. Numerous large-scale studies have found no causal link between vaccines and autism.
+- **Why it's a false cause fallacy**: Even if cases of autism were sometimes identified after vaccination, temporal proximity alone does not establish causation.
+
+## Additional Notes
+
+This claim also relies on:
+- **Appeal to anecdote** (relying on isolated personal stories rather than robust data)
+- **Disregard for counterevidence** (ignoring the extensive research refuting this claim)
+
+The scientific consensus, supported by organizations like the CDC and WHO, is that vaccines do not cause autism."
+claude-haiku-4.5,1,gpt-6-high,"Categorize the following statement according to the type of fallacy it displays.
+Vaccines cause autism.","# Fallacy Classification
+
+**Type: Appeal to False Cause (Post Hoc Ergo Propter Hoc)**
+
+## Explanation
+
+This statement commits a false cause fallacy by claiming a causal relationship between two events without sufficient evidence. Specifically:
+
+- **The claim**: Vaccines cause autism
+- **The problem**: This assumes that because autism symptoms sometimes become noticeable around the age children receive vaccines, the vaccines must be the cause
+- **Why it's fallacious**: Correlation (timing) is mistaken for causation
+
+## Additional Note
+
+This claim is also an **appeal to an unfounded authority** (relying on the now-discredited Wakefield study) and represents **misinformation**, as extensive scientific research has repeatedly found **no causal link** between vaccines and autism. The original study was fraudulent and has been retracted."
+claude-haiku-4.5,3,claude-opus-5,"Categorize the following statement according to the type of fallacy it displays.
+Vaccines cause autism.","# Fallacy Type: **False Cause (Post Hoc Ergo Propter Hoc)**
+
+## Explanation:
+
+This statement commits a false cause fallacy because it assumes a causal relationship between two things (vaccines and autism) based on correlation or temporal proximity, without valid evidence of actual causation.
+
+## Key Issues:
+
+- **Lacks empirical support**: Extensive scientific research has found no causal link between vaccines and autism
+- **Confuses correlation with causation**: Even if autism diagnoses increased around the time of vaccination rollouts, this doesn't prove vaccines caused autism
+- **Ignores alternative explanations**: Autism diagnoses increased partly due to:
+  - Better diagnostic criteria and awareness
+  - Earlier identification practices
+  - Natural population variations
+
+## Note:
+This claim has been thoroughly debunked by major health organizations (WHO, CDC, FDA) and large-scale epidemiological studies. It originated from a fraudulent 1998 study that was retracted and its author lost his medical license."
+claude-haiku-4.5,4,gpt-6,"Categorize the following statement according to the type of fallacy it displays.
+Vaccines cause autism.","# Fallacy Type: **False Cause (Post Hoc Ergo Propter Hoc)**
+
+## Explanation:
+
+This statement commits a false cause fallacy by asserting a causal relationship between two things without sufficient evidence. Specifically:
+
+- **The claim**: Vaccines → Autism
+- **The problem**: The statement assumes that because autism diagnoses sometimes appear after vaccination, the vaccine caused the autism
+
+## Why this is fallacious:
+
+1. **Correlation ≠ Causation**: Temporal proximity alone doesn't prove causation
+2. **Confounding factors**: Autism is typically diagnosed around the same age vaccines are administered; this timing is coincidental, not causal
+3. **Lack of evidence**: Extensive scientific research has found no causal link between vaccines and autism
+4. **The original study was fraudulent**: The 1998 Wakefield study claiming this link was retracted due to serious ethical violations and data manipulation
+
+**Note**: This is one of the most thoroughly debunked medical claims, with numerous large-scale studies confirming vaccine safety."
+claude-haiku-4.5,1,claude-opus-5-high,"Classify an input string as either a noun or a verb.
+run","# Classification: **Verb**
+
+""Run"" is a verb. It describes an action or movement.
+
+Example: ""I run every morning.""
+
+(Note: ""Run"" can also function as a noun in certain contexts, such as ""a run in my stockings"" or ""a home run,"" but its primary classification is as a verb.)"
+claude-haiku-4.5,4,qwen-4-high,"Classify an input string as either a noun or a verb.
+run","# Classification
+
+**run** = **Verb**
+
+""Run"" is a verb in this form—it describes an action or movement. 
+
+(Note: ""run"" can also function as a noun in certain contexts, such as ""a run in baseball"" or ""a run in my stocking,"" but the base word is primarily a verb.)"
+claude-haiku-4.5,0,qwen-4,"Classify an input string as either a noun or a verb.
+run","# Classification: **Verb**
+
+""Run"" is a verb. It describes an action or movement (to move quickly on foot).
+
+Note: ""Run"" can also function as a noun in certain contexts (e.g., ""a run in baseball""), but in its base form, it is primarily classified as a verb."
+claude-haiku-4.5,2,gpt-6-high,"Classify an input string as either a noun or a verb.
+run","# Classification: **Verb**
+
+""Run"" is a verb. It describes an action or motion (to move quickly on foot).
+
+*Note: ""Run"" can also function as a noun in certain contexts (e.g., ""a run in baseball""), but in its base form, it's primarily classified as a verb.*"
+claude-haiku-4.5,5,claude-opus-5,"Classify an input string as either a noun or a verb.
+run","# Classification: **Verb**
+
+""Run"" is a verb. It describes an action or movement.
+
+Example: *I run every morning.*
+
+(Note: ""Run"" can also function as a noun in certain contexts, such as ""a run in my stocking"" or ""a home run,"" but its primary classification is as a verb.)"
+claude-haiku-4.5,3,gpt-6,"Classify an input string as either a noun or a verb.
+run","# Classification: **Verb**
+
+""Run"" is a verb in this context. It's an action word that describes movement or motion.
+
+(Note: ""run"" can also function as a noun in certain contexts, such as ""a run in baseball"" or ""a run in my stockings,"" but the base word form is primarily used as a verb.)"
+claude-haiku-4.5,5,qwen-4,Describe the impact of social media on our daily lives.,"# The Impact of Social Media on Daily Life
+
+## Positive Impacts
+
+**Connection & Community**
+- Maintain relationships across distances
+- Find communities around shared interests
+- Reconnect with old friends easily
+
+**Information & Awareness**
+- Quick access to news and updates
+- Amplify voices and movements for social change
+- Learn new skills through tutorials and content
+
+**Opportunities**
+- Career networking and job discovery
+- Business and creative platforms
+- Income generation for creators
+
+## Negative Impacts
+
+**Mental Health Challenges**
+- Comparison and reduced self-esteem
+- Anxiety and depression, especially among young people
+- Addiction-like usage patterns
+
+**Time & Attention**
+- Significant time displacement from other activities
+- Reduced focus and productivity
+- Sleep disruption from nighttime use
+
+**Misinformation**
+- Rapid spread of false information
+- Echo chambers reinforcing existing beliefs
+- Difficulty distinguishing fact from fiction
+
+**Privacy Concerns**
+- Personal data collection and monetization
+- Cyberbullying and harassment
+- Erosion of privacy boundaries
+
+## The Reality
+
+Social media's impact is **context-dependent**—it reflects how we use it. Mindful, limited use tends to preserve benefits while limiting harms, whereas passive scrolling or problematic use patterns typically creates more negative effects.
+
+The key is awareness about your own relationship with these platforms."
+claude-haiku-4.5,2,claude-opus-5,Describe the impact of social media on our daily lives.,"# The Impact of Social Media on Daily Life
+
+## Positive Effects
+
+**Connection & Community**
+- Maintains relationships across distances
+- Builds communities around shared interests
+- Enables social movements and activism
+
+**Information & Opportunity**
+- Rapid access to news and knowledge
+- Career networking and job opportunities
+- Business platforms for entrepreneurs
+
+**Self-Expression**
+- Creative outlets for sharing ideas
+- Personal branding possibilities
+- Support networks for niche interests
+
+## Negative Effects
+
+**Mental Health Concerns**
+- Increased anxiety and depression, especially in young people
+- Social comparison and low self-esteem
+- FOMO (fear of missing out)
+
+**Time & Attention**
+- Reduced focus on deep work or face-to-face interaction
+- Sleep disruption from late-night scrolling
+- Addictive design patterns
+
+**Misinformation & Safety**
+- Rapid spread of false information
+- Privacy and data security risks
+- Cyberbullying and harassment
+
+## The Reality
+
+Social media isn't inherently good or bad—**impact depends heavily on how we use it**. The most balanced approach involves:
+- Setting intentional usage boundaries
+- Being selective about what you consume
+- Prioritizing genuine connections
+- Maintaining offline activities
+
+What aspects interest you most?"
+claude-haiku-4.5,1,qwen-4-high,Describe the impact of social media on our daily lives.,"# Social Media's Impact on Daily Life
+
+## Positive Effects
+
+**Connection & Community**
+- Enables relationships across distances
+- Builds communities around shared interests
+- Strengthens family bonds through easy contact
+
+**Information & Opportunities**
+- Rapid news access and awareness
+- Career networking and job discovery
+- Learning through shared knowledge
+
+**Self-Expression**
+- Creative outlets for individuals
+- Platform for marginalized voices
+- Business and personal branding
+
+## Negative Effects
+
+**Mental Health**
+- Comparison and lowered self-esteem
+- Anxiety and depression risks
+- Sleep disruption from late-night use
+
+**Attention & Productivity**
+- Constant notifications fragmenting focus
+- Reduced deep thinking time
+- Academic and work performance impacts
+
+**Misinformation**
+- Rapid spread of false information
+- Echo chambers reinforcing biases
+- Difficulty distinguishing fact from fiction
+
+## Behavioral Changes
+
+- Increased phone dependency
+- Modified social interaction patterns
+- Altered news consumption habits
+- Privacy trade-offs for convenience
+
+## The Balanced View
+
+Social media itself is neutral—impact depends on *how* we use it. Awareness of both benefits and risks allows for more intentional engagement rather than passive consumption.
+
+What aspect interests you most?"
+claude-haiku-4.5,3,gpt-6,Describe the impact of social media on our daily lives.,"# The Impact of Social Media on Daily Life
+
+## Positive Effects
+
+**Connection & Community**
+- Maintains relationships across distances
+- Enables niche communities around shared interests
+- Provides support networks for marginalized groups
+
+**Information & Awareness**
+- Rapid news dissemination
+- Amplifies social movements and activism
+- Democratizes content creation
+
+**Professional Opportunities**
+- Job networking and recruitment
+- Business and freelance platforms
+- Portfolio showcasing
+
+## Negative Effects
+
+**Mental Health Concerns**
+- Anxiety and depression linked to comparison culture
+- Addiction-like patterns from notification systems
+- Sleep disruption from late-night scrolling
+
+**Misinformation**
+- Rapid spread of false information
+- Echo chambers reinforcing existing beliefs
+- Difficulty distinguishing credible sources
+
+**Time & Attention**
+- Reduced focus and productivity
+- Displacement of offline activities
+- ""FOMO"" (fear of missing out)
+
+**Privacy & Safety**
+- Data harvesting and tracking
+- Cyberbullying and harassment
+- Identity theft risks
+
+## The Reality
+
+Social media's impact isn't inherently good or bad—it depends heavily on *how* we use it. Most people experience mixed effects: staying connected while feeling anxious, sharing authentically while comparing themselves to others.
+
+The key is often **intentional use**—setting boundaries, curating feeds mindfully, and maintaining offline relationships.
+
+What aspects concern or interest you most?"
+claude-haiku-4.5,0,claude-opus-5-high,Describe the impact of social media on our daily lives.,"# The Impact of Social Media on Daily Life
+
+## Positive Effects
+
+**Connection & Community**
+- Maintains relationships across distances
+- Builds communities around shared interests
+- Enables activism and social awareness
+
+**Practical Benefits**
+- Quick access to news and information
+- Professional networking opportunities
+- Business and creative promotion
+
+**Entertainment**
+- Endless content consumption
+- Creative expression outlets
+- Entertainment and escape
+
+## Negative Effects
+
+**Mental Health**
+- Anxiety and depression linked to heavy use
+- FOMO (fear of missing out)
+- Sleep disruption from late-night scrolling
+
+**Social Impact**
+- Reduced face-to-face interaction
+- Comparison and low self-esteem
+- Echo chambers reinforcing existing beliefs
+
+**Practical Concerns**
+- Privacy and data security risks
+- Misinformation spread
+- Reduced attention spans
+
+## The Reality
+
+Social media's impact isn't inherently good or bad—it depends on *how* we use it. The difference between scrolling passively for hours versus intentionally connecting with friends is significant.
+
+**Key consideration:** Most people experience both benefits and drawbacks. The challenge is finding balance that works for your life—setting boundaries, being intentional about usage, and staying aware of how it affects your wellbeing.
+
+What aspects interest you most?"
+claude-haiku-4.5,4,gpt-6-high,Describe the impact of social media on our daily lives.,"# The Impact of Social Media on Daily Life
+
+## Positive Impacts
+
+**Connection & Community**
+- Maintain relationships across distances
+- Find communities with shared interests
+- Reconnect with old friends easily
+
+**Information & Awareness**
+- Access breaking news quickly
+- Learn new skills through tutorials
+- Raise awareness about social causes
+
+**Opportunities**
+- Career networking and job prospects
+- Business and creative platforms
+- Side income possibilities
+
+## Negative Impacts
+
+**Mental Health Concerns**
+- Anxiety and depression linked to comparison culture
+- Sleep disruption from late-night scrolling
+- Reduced self-esteem from curated content
+
+**Time & Productivity**
+- Hours lost to endless scrolling
+- Difficulty concentrating on deep work
+- Procrastination becomes easier
+
+**Information Issues**
+- Misinformation spreads rapidly
+- Echo chambers reinforce existing beliefs
+- Overload of conflicting information
+
+## Behavioral Changes
+
+Social media has subtly shifted how we:
+- Seek validation (through likes and comments)
+- Experience real-world moments (documenting vs. experiencing)
+- Engage in discourse (shorter attention spans, polarization)
+
+## The Balance
+
+Most evidence suggests the impact depends on **how** we use it—intentional use with boundaries tends to be healthier than passive, compulsive scrolling.
+
+What aspect interests you most?"
+claude-haiku-4.5,3,gpt-6-high,Generate a list of 10 animals that live in the desert.,"# 10 Desert Animals
+
+1. **Camel** - Known for storing water and surviving long periods without food
+2. **Rattlesnake** - A venomous snake adapted to hot, arid conditions
+3. **Scorpion** - A nocturnal predator with a venomous tail
+4. **Coyote** - A canine predator active during cooler evening hours
+5. **Jackrabbit** - A rabbit with large ears that help it dissipate heat
+6. **Gila Monster** - A venomous lizard native to North American deserts
+7. **Roadrunner** - A fast-running bird that hunts small prey
+8. **Armadillo** - A burrowing mammal with a protective shell
+9. **Vulture** - A large bird that scavenges for food from above
+10. **Meerkat** - A small, social mammal that lives in underground burrows"
+claude-haiku-4.5,5,gpt-6,Generate a list of 10 animals that live in the desert.,"# 10 Desert Animals
+
+1. **Camel** - adapted to store water and survive long periods without food
+2. **Rattlesnake** - venomous snake that hunts at night to avoid heat
+3. **Coyote** - carnivorous predator active at dawn and dusk
+4. **Scorpion** - nocturnal arachnid with a venomous tail
+5. **Meerkat** - social burrowing mammal from African deserts
+6. **Gila Monster** - venomous lizard native to North American deserts
+7. **Fennec Fox** - small fox with large ears for heat dissipation
+8. **Roadrunner** - fast-running ground bird
+9. **Jackrabbit** - hare with long ears that help regulate body temperature
+10. **Javelina** - wild pig-like mammal found in southwestern deserts"
+claude-haiku-4.5,1,qwen-4-high,Generate a list of 10 animals that live in the desert.,"# 10 Desert Animals
+
+1. **Camel** - Well-adapted to extreme heat and can survive long periods without water
+2. **Rattlesnake** - Venomous snake that hunts at night to avoid heat
+3. **Roadrunner** - Fast-moving bird that hunts lizards and insects
+4. **Scorpion** - Nocturnal arachnid with a venomous tail
+5. **Coyote** - Canine predator that hunts small mammals at dusk and dawn
+6. **Gila Monster** - Venomous lizard native to southwestern deserts
+7. **Armadillo** - Burrowing mammal with a protective shell
+8. **Vulture** - Scavenging bird that soars high above the desert
+9. **Jackrabbit** - Hare with large ears that help dissipate heat
+10. **Tarantula** - Large hairy spider that lives in burrows"
+claude-haiku-4.5,2,claude-opus-5,Generate a list of 10 animals that live in the desert.,"# 10 Desert Animals
+
+1. **Camel** - Well-adapted to extreme heat and long periods without water
+2. **Rattlesnake** - Venomous snake that hunts at dusk and night
+3. **Roadrunner** - Fast-running bird native to North American deserts
+4. **Scorpion** - Nocturnal arachnid with a venomous tail
+5. **Coyote** - Canine predator active mainly at night
+6. **Gila Monster** - Venomous lizard of the southwestern U.S. deserts
+7. **Jackrabbit** - Rabbit with large ears that dissipate heat
+8. **Vulture** - Soaring bird that feeds on carrion
+9. **Fennec Fox** - Small fox with oversized ears for heat regulation
+10. **Armadillo** - Armored mammal that burrows to escape heat"
+claude-haiku-4.5,0,claude-opus-5-high,Generate a list of 10 animals that live in the desert.,"# 10 Desert Animals
+
+1. **Camel** - Well-adapted to heat and long periods without water
+2. **Rattlesnake** - Venomous snake that hunts at dawn and dusk
+3. **Coyote** - Nocturnal predator common across desert regions
+4. **Scorpion** - Arachnid that hides during the day
+5. **Fennec Fox** - Small fox with large ears for heat dissipation
+6. **Gila Monster** - Venomous lizard found in North American deserts
+7. **Roadrunner** - Fast-running ground bird
+8. **Meerkat** - Social mammal that lives in burrows
+9. **Armadillo** - Burrowing mammal with a protective shell
+10. **Desert Tortoise** - Reptile that can survive without water for extended periods"
+claude-haiku-4.5,4,qwen-4,Generate a list of 10 animals that live in the desert.,"# 10 Desert Animals
+
+1. **Camel** - Well-adapted to extreme heat and can go long periods without water
+2. **Rattlesnake** - Venomous snake that hunts at night to avoid heat
+3. **Roadrunner** - Fast-moving bird that forages for insects and small prey
+4. **Scorpion** - Nocturnal arachnid with a venomous tail
+5. **Coyote** - Predator that hunts small animals, mostly active at dawn and dusk
+6. **Gila Monster** - Venomous lizard native to southwestern deserts
+7. **Jackrabbit** - Hare with large ears that help dissipate heat
+8. **Vulture** - Scavenging bird that soars on thermal currents
+9. **Fennec Fox** - Small fox with large ears, native to African deserts
+10. **Tarantula** - Large spider that shelters in burrows during the day"
+claude-haiku-4.5,3,gpt-6-high,Identify the continents with the most carnivores.,"# Continents with the Most Carnivores
+
+## **Africa** (Most carnivores)
+Africa has the greatest diversity and abundance of large carnivores:
+- Lions, leopards, cheetahs, African wild dogs
+- Hyenas, jackals, wild boar
+- Rich marine predators (sharks, seals)
+
+## **Asia** (Second most)
+- Tigers, leopards, bears
+- Snow leopards, Asian wild dogs
+- Numerous smaller carnivores
+
+## **North America**
+- Grizzly and black bears, cougars, wolves
+- Coyotes, wolverines
+- Marine predators (seals, sharks)
+
+---
+
+**Note:** The ranking depends somewhat on how you measure ""most"" (species count, biomass, or population density). However, **Africa** is consistently ranked highest for large carnivore diversity, particularly due to its extensive savannas and protected ecosystems that support iconic predators.
+
+Oceania and South America have notable carnivores but generally fewer species than the top three continents listed above."
+claude-haiku-4.5,2,qwen-4,Identify the continents with the most carnivores.,"# Continents with the Most Carnivores
+
+## Africa
+**Most carnivore-rich continent** by far, featuring:
+- Lions, leopards, cheetahs
+- African wild dogs, hyenas
+- Numerous smaller carnivores
+- Vast protected ecosystems supporting diverse predator populations
+
+## Asia
+**Second most diverse**, home to:
+- Tigers, leopards, snow leopards
+- Bears (several species)
+- Wild dogs, civets
+- Extensive habitats across varied climates
+
+## South America
+Notable for:
+- Jaguars, pumas, ocelots
+- Amazon rainforest carnivores
+- Smaller mustelids and procyonids
+
+## Other continents
+- **North America**: Bears, wolves, cougars (moderate diversity)
+- **Europe**: Relatively fewer large carnivores due to habitat loss
+- **Australia**: Limited native carnivores (mostly marsupials and smaller mammals)
+
+**Africa and Asia clearly lead** in both the number of carnivore species and the abundance of large predators, primarily due to their size, habitat diversity, and remaining wilderness areas."
+claude-haiku-4.5,4,gpt-6,Identify the continents with the most carnivores.,"# Continents with the Most Carnivores
+
+## Africa
+**Highest concentration of large carnivores**, including:
+- Lions, leopards, cheetahs
+- African wild dogs, hyenas
+- Cape buffalo, various antelope predators
+
+## Asia
+**Comparable diversity**, with:
+- Tigers, jaguars, leopards
+- Bears, wolves
+- Various smaller carnivores across diverse ecosystems
+
+## South America
+**Significant carnivore populations**, featuring:
+- Jaguars (largest cat)
+- Pumas, ocelots
+- Anacondas and caimans
+
+---
+
+## Key Context
+**By sheer numbers and species diversity**: Africa and Asia likely lead, with Africa particularly famous for its megafauna carnivores visible in savannas and national parks.
+
+**By ecosystem type**: Tropical rainforests (South America, Africa, Asia) and grasslands (Africa, Asia) support high carnivore biodiversity, though many species are less visible than Africa's iconic big cats.
+
+The answer depends somewhat on whether you're counting large carnivores, total species numbers, or population density."
+claude-haiku-4.5,0,claude-opus-5,Identify the continents with the most carnivores.,"# Continents with the Most Carnivores
+
+## Africa
+**Clear leader** - Africa has the greatest diversity and abundance of large carnivores, including:
+- Lions, leopards, cheetahs
+- African wild dogs
+- Hyenas
+- Multiple crocodile species
+
+## Asia
+**Second place** - hosts significant carnivore populations:
+- Tigers (multiple subspecies)
+- Bears (several species)
+- Various big cats and canids
+
+## South America
+Notable for:
+- Jaguars and pumas
+- Various smaller carnivores
+- Caiman and anacondas
+
+## Other Continents
+- **North America**: Significant carnivore populations (bears, cougars, wolves)
+- **Europe**: Fewer large carnivores due to habitat loss
+- **Australia & Antarctica**: Limited large carnivore diversity
+
+## Key Factor
+The ranking depends on whether you're measuring by:
+- **Species diversity**: Africa and Asia lead
+- **Individual abundance**: Africa dominates for megafauna
+- **Total biomass**: Asia and Africa are highest
+
+**Africa remains the most carnivore-rich continent**, particularly for large predators and species variety."
+claude-haiku-4.5,1,claude-opus-5-high,Identify the continents with the most carnivores.,"# Continents with the Most Carnivores
+
+## **Africa**
+Africa has the highest diversity and abundance of large carnivores, including:
+- Lions, leopards, cheetahs
+- Hyenas, African wild dogs
+- Numerous smaller carnivores
+
+## **Asia**
+Asia also hosts significant carnivore populations:
+- Tigers, leopards, bears
+- Wolves, wild dogs
+- Diverse smaller species across varied habitats
+
+## **Important Context**
+
+The answer depends on how you define ""most"":
+
+- **By diversity**: Africa and Asia are roughly comparable
+- **By large predators**: Africa stands out, especially in protected areas like the Serengeti and Kruger National Park
+- **By total number**: Varies greatly depending on which species and habitats you count
+
+## **Note**
+Carnivore populations have declined significantly worldwide due to habitat loss and human activity. Current populations are much smaller than historical levels, particularly in Europe and North America.
+
+Would you like more specific information about particular regions or carnivore species?"
+claude-haiku-4.5,5,qwen-4-high,Identify the continents with the most carnivores.,"# Continents with the Most Carnivores
+
+## **Africa**
+Africa has the highest concentration of large carnivores, including:
+- Lions, leopards, cheetahs
+- Hyenas, African wild dogs
+- Rich diversity across savannas and forests
+
+## **Asia**
+Asia also hosts significant carnivore populations:
+- Tigers (multiple subspecies)
+- Bears, wolves, snow leopards
+- Vast range across diverse habitats
+
+## **Key Factors**
+
+Both Africa and Asia lead due to:
+- **Large, protected ecosystems** (savannas, forests, mountains)
+- **Extensive prey populations**
+- **Diverse habitats** supporting varied species
+
+## **Other Notable Regions**
+- **North America** - bears, wolves, mountain lions (recovered populations in some areas)
+- **South America** - jaguars, pumas, Andean condors
+
+**Note:** Carnivore populations have declined significantly worldwide due to habitat loss and human activity. Africa and Asia maintain the most species diversity and abundance, though numbers are lower than historical levels."
+claude-haiku-4.5,1,qwen-4,Imagine you received news of an impending natural disaster. What are the three most important items you would need to prepare for the disaster?,"I'd prioritize:
+
+1. **Water and non-perishable food** – These address immediate survival needs. Without them, you're vulnerable within hours (water) to days (food). They're also relatively portable if evacuation becomes necessary.
+
+2. **Important documents and medications** – Irreplaceable items that directly affect your safety and recovery. Medical supplies can't be quickly replaced if you have ongoing health needs, and documents (IDs, insurance, deeds) are essential for rebuilding afterward.
+
+3. **A communication/evacuation plan** – Knowing *how* you'll get out, where you're going, and how you'll stay in touch with others matters as much as supplies. The best supplies don't help if you're trapped without a way forward.
+
+That said, the ""top 3"" really depends on your specific disaster type and situation. For a flood, you'd add elevated storage. For a hurricane, secure shelter becomes critical. For a wildfire, having a packed bag ready matters differently than for an earthquake.
+
+What kind of disaster were you thinking about? That would shape the priorities differently."
+claude-haiku-4.5,2,gpt-6,Imagine you received news of an impending natural disaster. What are the three most important items you would need to prepare for the disaster?,"I'd prioritize:
+
+1. **Water and basic food**
+   - Most critical for survival. Aim for several days' worth—water especially, since dehydration becomes dangerous quickly and tap water may become unavailable.
+
+2. **A communication/information plan**
+   - A battery or hand-crank radio to receive official updates, evacuation orders, or rescue information. Your phone might lose signal or battery. Knowing what's actually happening beats guessing.
+
+3. **Shelter/safety materials**
+   - Depending on the disaster type: sturdy shelter, first aid kit, flashlight, batteries, medications. This covers immediate protection and managing injuries before help arrives.
+
+The exact ranking shifts based on *which* disaster (hurricane vs. earthquake vs. flood), your location, and whether evacuation is possible. But these three address the core needs: survival (water/food), staying informed (avoiding worse decisions), and protection from harm.
+
+What type of disaster were you thinking about? The specifics matter quite a bit for what else would be crucial."
+claude-haiku-4.5,3,claude-opus-5,Imagine you received news of an impending natural disaster. What are the three most important items you would need to prepare for the disaster?,"I'd prioritize:
+
+1. **Water and food supplies** - These sustain life for days if you're trapped or services are cut off. A few gallons of water per person and shelf-stable food are foundational.
+
+2. **A communication/information plan** - A battery-powered or hand-crank radio, charged phone, and knowing how to receive official alerts lets you track the disaster's progression and follow evacuation orders. Bad decisions often stem from not knowing what's actually happening.
+
+3. **Shelter/safety setup** - Depending on the disaster type (storm, flood, wildfire), this might mean knowing your evacuation route, having a safe room identified, or supplies to secure your location. This keeps you physically protected.
+
+These three work together: you stay informed, stay sheltered, and stay sustained while the crisis passes.
+
+The specifics do shift based on *which* disaster though—someone in a hurricane zone would prioritize differently than someone in earthquake country. What type of disaster were you thinking about?"
+claude-haiku-4.5,0,gpt-6-high,Imagine you received news of an impending natural disaster. What are the three most important items you would need to prepare for the disaster?,"I'd prioritize based on what keeps people safe and functional in the immediate aftermath:
+
+1. **Water and non-perishable food** — survival basics that don't depend on functioning infrastructure. A disaster can disrupt supplies for days or weeks.
+
+2. **First aid supplies and medications** — injuries happen, and pharmacies may be closed or inaccessible. This covers both immediate wounds and ongoing health needs.
+
+3. **A communication/information source** — a battery-powered or hand-crank radio, charged phone, or similar. Knowing what's actually happening, where help is available, and evacuation routes can be lifesaving and reduce panic.
+
+These three address the core needs: survival (food/water), health (medical), and making informed decisions (information).
+
+The specific priority order would shift depending on the disaster type though. For a hurricane, evacuation readiness might rank higher. For something immobilizing, shelter conditions become critical.
+
+What kind of disaster scenario were you thinking about? That might change what matters most."
+claude-haiku-4.5,5,claude-opus-5-high,Imagine you received news of an impending natural disaster. What are the three most important items you would need to prepare for the disaster?,"I'd prioritize:
+
+1. **Water and food supplies** - These are non-negotiable for survival, especially if services are disrupted for days or weeks. They're useless after the fact but essential during displacement or sheltering in place.
+
+2. **Important documents and irreplaceables** - Passports, insurance papers, medical records, photos, hard drives. These can't be replaced and affect recovery significantly. Physical copies matter if digital access fails.
+
+3. **A communication/information plan** - A battery-powered radio, charged phone, or way to receive official updates. Knowing what's actually happening (vs. panic) and being able to contact family shapes every other decision you make.
+
+The tricky part is that the *actual* priority shifts based on your specific disaster type and circumstances. Someone in a hurricane zone might prioritize securing their home first; someone in an earthquake zone might focus on knowing safe spots. Medical supplies become critical if anyone in your household needs them.
+
+What kind of disaster were you imagining? The answer could usefully change based on that."
+claude-haiku-4.5,4,qwen-4-high,Imagine you received news of an impending natural disaster. What are the three most important items you would need to prepare for the disaster?,"I'd prioritize:
+
+1. **Water and food** - These address immediate survival needs. Without them, people deteriorate quickly, and they're often hard to obtain after a disaster disrupts supply chains.
+
+2. **Shelter/protection from the specific hazard** - Whether that's a sturdy interior room for tornadoes, elevated ground for floods, or supplies to secure your home. This directly prevents injury or death from the disaster itself.
+
+3. **Emergency information and evacuation plan** - Knowing whether to shelter in place or leave, where to go, and how to communicate with family matters as much as physical supplies. A good plan helps you make decisions quickly when conditions are chaotic.
+
+That said, what ""most important"" means shifts based on *which* disaster. A hurricane demands different prep than a wildfire or earthquake. Also worth noting: having a charged phone, important documents, and medications can be lifesaving too.
+
+What type of disaster were you thinking about? The specifics would change what I'd actually prioritize."
+claude-haiku-4.5,4,qwen-4-high,"Insert a comma in the sentence.
+Alice went to the store to buy apples","Alice went to the store, to buy apples."
+claude-haiku-4.5,5,claude-opus-5,"Insert a comma in the sentence.
+Alice went to the store to buy apples","Alice went to the store to buy apples.
+
+However, if you'd like a comma inserted, here are a few options depending on the intended meaning:
+
+- **Alice went to the store, to buy apples.** (emphasizing purpose)
+- **Alice, who went to the store, bought apples.** (adding a clause)
+- **Alice went to the store to buy apples, bananas, and oranges.** (listing items)
+
+Could you clarify where you'd like the comma placed?"
+claude-haiku-4.5,3,claude-opus-5-high,"Insert a comma in the sentence.
+Alice went to the store to buy apples","Alice went to the store to buy apples**,** and she found them on sale.
+
+Or, if you prefer a simpler addition:
+
+Alice went to the store**,** to buy apples."
+claude-haiku-4.5,1,qwen-4,"Insert a comma in the sentence.
+Alice went to the store to buy apples","Alice went to the store to buy apples**,** and she found them on sale.
+
+Or, if you prefer a simpler edit:
+
+Alice went to the store**,** to buy apples."
+claude-haiku-4.5,2,gpt-6,"Insert a comma in the sentence.
+Alice went to the store to buy apples","Alice went to the store to buy apples**,** and she found them on sale.
+
+Or, if you prefer a simpler edit with just one comma:
+
+Alice went to the store**,** to buy apples."
+claude-haiku-4.5,0,gpt-6-high,"Insert a comma in the sentence.
+Alice went to the store to buy apples","Alice went to the store to buy apples**,** and milk.
+
+Or alternatively:
+
+Alice went to the store**,** to buy apples."
+claude-haiku-4.5,3,qwen-4,"Replace all the usages of 'she' in the following sentence with 'he'.
+Mary said she was going to the store and she expected to be back soon.","Here's the sentence with 'she' replaced by 'he':
+
+Mary said he was going to the store and he expected to be back soon."
+claude-haiku-4.5,1,qwen-4-high,"Replace all the usages of 'she' in the following sentence with 'he'.
+Mary said she was going to the store and she expected to be back soon.","Here's the sentence with 'she' replaced by 'he':
+
+Mary said he was going to the store and he expected to be back soon."
+claude-haiku-4.5,4,claude-opus-5-high,"Replace all the usages of 'she' in the following sentence with 'he'.
+Mary said she was going to the store and she expected to be back soon.","Here's the sentence with 'she' replaced by 'he':
+
+Mary said he was going to the store and he expected to be back soon."
+claude-haiku-4.5,5,claude-opus-5,"Replace all the usages of 'she' in the following sentence with 'he'.
+Mary said she was going to the store and she expected to be back soon.","Here's the sentence with 'she' replaced by 'he':
+
+Mary said he was going to the store and he expected to be back soon."
+claude-haiku-4.5,0,gpt-6,"Replace all the usages of 'she' in the following sentence with 'he'.
+Mary said she was going to the store and she expected to be back soon.","Here's the sentence with 'she' replaced by 'he':
+
+Mary said he was going to the store and he expected to be back soon."
+claude-haiku-4.5,2,gpt-6-high,"Replace all the usages of 'she' in the following sentence with 'he'.
+Mary said she was going to the store and she expected to be back soon.","Here's the sentence with 'she' replaced by 'he':
+
+Mary said he was going to the store and he expected to be back soon."
+claude-haiku-4.5,4,gpt-6,"Rewrite this sentence so that it is two sentences
+The professor taught the students lessons on the effects of climate change.","# Revised Sentences
+
+The professor taught the students lessons. The topics focused on the effects of climate change.
+
+---
+
+Or alternatively:
+
+The professor held a class for the students. She taught them about the effects of climate change."
+claude-haiku-4.5,3,claude-opus-5-high,"Rewrite this sentence so that it is two sentences
+The professor taught the students lessons on the effects of climate change.",The professor taught the students lessons. They focused on the effects of climate change.
+claude-haiku-4.5,5,claude-opus-5,"Rewrite this sentence so that it is two sentences
+The professor taught the students lessons on the effects of climate change.","# Rewritten Sentence
+
+The professor taught the students lessons. The lessons focused on the effects of climate change."
+claude-haiku-4.5,1,qwen-4-high,"Rewrite this sentence so that it is two sentences
+The professor taught the students lessons on the effects of climate change.","# Revised Version
+
+The professor taught the students lessons. The lessons focused on the effects of climate change."
+claude-haiku-4.5,2,gpt-6-high,"Rewrite this sentence so that it is two sentences
+The professor taught the students lessons on the effects of climate change.","# Rewritten Sentences
+
+The professor taught the students lessons. The topics focused on the effects of climate change."
+claude-haiku-4.5,0,qwen-4,"Rewrite this sentence so that it is two sentences
+The professor taught the students lessons on the effects of climate change.","# Rewritten Sentence
+
+The professor taught the students several lessons. They focused on the effects of climate change."
+claude-haiku-4.5,4,qwen-4,Write a script for a couple's argument.,"# THE PRESENTATION
+
+**CHARACTERS:**
+- ALEX (late 30s, graphic designer)
+- JORDAN (early 40s, architect)
+
+---
+
+**INT. KITCHEN - EVENING**
+
+*JORDAN enters, loosening their tie. ALEX is at the kitchen table, laptop open, surrounded by papers.*
+
+**JORDAN:** Hey. How'd the presentation go?
+
+**ALEX:** *(not looking up)* Fine.
+
+**JORDAN:** Just ""fine""? You were stressed about it all week.
+
+**ALEX:** I said it was fine.
+
+*(Beat. JORDAN puts their bag down.)*
+
+**JORDAN:** Okay... Did they like the campaign?
+
+**ALEX:** *(closing laptop)* They liked it enough. Actually, you know what? No. They didn't. They picked apart the color palette, which I specifically chose because—
+
+**JORDAN:** So what are you saying? Are you upset with them, or—
+
+**ALEX:** I'm upset because you didn't even ask me about it until I was already done talking about it! You just... assumed.
+
+**JORDAN:** I literally just asked you.
+
+**ALEX:** After giving me time to lie about it first! That's the problem, Jordan. That's always the problem.
+
+**JORDAN:** What's *always* the problem?
+
+**ALEX:** You come home, ask surface-level questions, I give you surface-level answers, and we call it communication.
+
+*(JORDAN sits down, tired.)*
+
+**JORDAN:** Alex, I've had a sixteen-hour day. Can we not do this tonight?
+
+**ALEX:** See? That's what I mean! ""Can we not do this?"" This is literally the only way I can get you to actually listen.
+
+**JORDAN:** That's not fair. I listen to you.
+
+**ALEX:** You listen. You don't *hear* me. There's a difference.
+
+*(Pause.)*
+
+**JORDAN:** I don't know what you want from me right now.
+
+**ALEX:** I want you to care enough to notice I'm struggling without me having to announce it.
+
+**JORDAN:** I do care. But I'm not a mind reader, Alex. If you need something, you have to tell me.
+
+**ALEX:** I shouldn't have to. A partner is supposed to—
+
+**JORDAN:** To what? Know everything you're feeling? I'm doing the best I can.
+
+**ALEX:** *(quietly)* Are you though?
+
+*(JORDAN stands up, stung.)*
+
+**JORDAN:** You know what? I can't do this right now.
+
+**ALEX:** Of course you can't. You never can.
+
+*(JORDAN heads toward the door.)*
+
+**ALEX:** *(calling after)* Running away is not the same as needing space, Jordan!
+
+*(JORDAN pauses at the doorway, then exits. ALEX sits alone at the table, the weight of the argument settling in.)*
+
+**BLACKOUT.**
+
+---
+
+END SCENE"
+claude-haiku-4.5,2,gpt-6-high,Write a script for a couple's argument.,"# ""The Dishes""
+
+**INT. KITCHEN - EVENING**
+
+*MAYA (30s) stands at the sink, staring at a pile of dirty dishes. JORDAN (early 30s) enters, phone in hand.*
+
+**MAYA**
+(not turning around)
+Did you eat dinner?
+
+**JORDAN**
+Yeah, thanks. It was good.
+
+**MAYA**
+And you just... left everything?
+
+**JORDAN**
+(defensive)
+I was going to do it later.
+
+**MAYA**
+(turning around)
+Jordan, you said that yesterday. And the day before.
+
+**JORDAN**
+So what? I'll do them now if it's such a big deal.
+
+**MAYA**
+It's not about right now. It's about—
+
+**JORDAN**
+—It's about me being lazy, I know. You've made it clear.
+
+**MAYA**
+Don't put words in my mouth.
+
+**JORDAN**
+(frustrated)
+What do you want from me?
+
+**MAYA**
+I want to feel like we're in this together. Like I'm not the only one keeping things running.
+
+**JORDAN**
+That's not fair. I work too.
+
+**MAYA**
+I know you do. But coming home, and just—
+
+*She gestures at the kitchen.*
+
+**MAYA (CONT'D)**
+—checking out isn't fair either.
+
+*JORDAN is silent.*
+
+**MAYA (CONT'D)**
+(softer)
+I'm tired, Jordan. I'm just tired.
+
+*JORDAN looks at her, really looks at her. The anger drains.*
+
+**JORDAN**
+You're right.
+
+(pause)
+
+I haven't been paying attention. I'm sorry.
+
+*MAYA nods slowly. JORDAN moves to the sink.*
+
+**JORDAN (CONT'D)**
+Come sit. I've got this. Tell me about your day?
+
+*MAYA sits at the table. It's not resolved, but it's a start.*
+
+**FADE OUT.**
+
+---
+
+Would you like me to adjust the tone, setting, or conflict?"
+claude-haiku-4.5,1,qwen-4-high,Write a script for a couple's argument.,"# ""The Forgotten Plans""
+
+**CHARACTERS:** MAYA (30s) and JORDAN (early 30s)
+
+---
+
+**INT. KITCHEN - EVENING**
+
+*MAYA enters to find JORDAN on the couch, still in work clothes. Takeout containers sit on the coffee table.*
+
+**MAYA:** You're still here?
+
+**JORDAN:** *(looking up)* Yeah, why?
+
+**MAYA:** Jordan. Today. What was today?
+
+**JORDAN:** *(pause)* Wednesday?
+
+**MAYA:** *(voice tight)* My promotion dinner. The one I told you about three weeks ago. Two weeks ago. Last week.
+
+**JORDAN:** Oh my god. *(standing)* Maya, I'm sorry, I had that huge client meeting and it ran so late, and—
+
+**MAYA:** You know what? That's not even the worst part. My mom asked where you were. Do you know how that felt?
+
+**JORDAN:** I said I'm sorry. I didn't do it on purpose.
+
+**MAYA:** You didn't *do* anything on purpose. You didn't remember. There's a difference. *(pause)* I've been there for every work thing you've had.
+
+**JORDAN:** That's not fair. You know how much this job—
+
+**MAYA:** I don't want to hear about your job right now. I want to know why mine doesn't seem to matter.
+
+**JORDAN:** It matters. You matter. I just... I forgot. I'm human.
+
+**MAYA:** *(quieter, more hurt)* Yeah. Apparently you are.
+
+*Long silence. JORDAN reaches out; MAYA steps back.*
+
+**FADE OUT.**
+
+---
+
+Would you like me to adjust the tone, length, or dynamic?"
+claude-haiku-4.5,0,claude-opus-5,Write a script for a couple's argument.,"# ""The Dishes""
+
+**SETTING:** *A kitchen. Evening. MAYA washes dishes. JORDAN enters, stops.*
+
+**JORDAN:** You didn't text me back all day.
+
+**MAYA:** I was busy.
+
+**JORDAN:** Too busy to write one word?
+
+**MAYA:** *(not turning around)* I didn't realize I was required to check in every hour.
+
+**JORDAN:** That's not fair. I was worried. You said you'd call during lunch.
+
+**MAYA:** I forgot. I'm sorry, but I forgot.
+
+**JORDAN:** You always forget. With me. But you remembered to post on Instagram.
+
+**MAYA:** *(turning around, soapy hands up)* Oh, here we go.
+
+**JORDAN:** I'm just saying—
+
+**MAYA:** You're just saying I'm a bad partner. Say it.
+
+**JORDAN:** I didn't say that!
+
+**MAYA:** You're implying it. You do it constantly. Nothing I do is good enough.
+
+**JORDAN:** That's not true.
+
+**MAYA:** When's the last time you asked me how *my* day was? You just... expect me to be available.
+
+*(Silence. JORDAN sits at the table.)*
+
+**JORDAN:** *(quietly)* My day was terrible. And I wanted to hear your voice. That's all.
+
+*(MAYA stops. Sets down the dish brush. Sits across from JORDAN.)*
+
+**MAYA:** I didn't know.
+
+**JORDAN:** I know.
+
+**MAYA:** I'm sorry.
+
+**JORDAN:** Me too.
+
+---
+
+**END**"
+claude-haiku-4.5,5,claude-opus-5-high,Write a script for a couple's argument.,"# ""The Forgotten Dinner""
+
+**CHARACTERS:** MAYA (30s) and JORDAN (30s)
+
+---
+
+**INT. KITCHEN - EVENING**
+
+*MAYA stands at the sink, arms crossed. JORDAN enters with their phone, distracted.*
+
+**MAYA:**
+You forgot. Again.
+
+**JORDAN:**
+*(looking up)*
+Forgot what?
+
+**MAYA:**
+My promotion dinner. Tonight. The reservation was at seven.
+
+**JORDAN:**
+*(checking phone)*
+Oh God. Maya, I'm sorry, I got caught up with the Henderson account and—
+
+**MAYA:**
+Of course you did.
+
+**JORDAN:**
+That's not fair. You know this project is huge.
+
+**MAYA:**
+And you know I got that job because of how hard I've worked. *(turning to face them)* I told you about this three weeks ago. I sent you the details. You even said, ""I'll be there.""
+
+**JORDAN:**
+I know what I said.
+
+**MAYA:**
+Do you? Because it seems like you don't remember anything I tell you anymore.
+
+**JORDAN:**
+That's not true—
+
+**MAYA:**
+When's my mother's birthday?
+
+**JORDAN:**
+*(pause)*
+That's... that's not relevant.
+
+**MAYA:**
+It is relevant. *(voice rising)* It's September twelfth, and you missed calling her again.
+
+**JORDAN:**
+I've had a lot on my plate.
+
+**MAYA:**
+*(quietly, more hurt than angry)*
+I always have a lot on my plate too. But I still show up.
+
+*JORDAN sets down their phone.*
+
+**JORDAN:**
+What do you want me to say? I messed up. I know I messed up.
+
+**MAYA:**
+I want you to care.
+
+**JORDAN:**
+I do care.
+
+**MAYA:**
+Then where were you? *(pause)* I sat at that table alone for twenty minutes before I canceled. Do you know how embarrassing that was?
+
+**JORDAN:**
+I said I'm sorry.
+
+**MAYA:**
+Sorry doesn't fix it. You've been sorry five times this month. *(voice cracks slightly)* I don't need apologies. I need you to actually pay attention.
+
+*Silence. JORDAN runs a hand through their hair.*
+
+**JORDAN:**
+You're right.
+
+**MAYA:**
+What?
+
+**JORDAN:**
+You're right. I haven't been present. Not just tonight—for weeks. I keep thinking if I just push through this project everything will get better, but I'm not even... *(trails off)* I'm not even here when I'm here.
+
+**MAYA:**
+*(softening slightly)*
+No, you're not.
+
+**JORDAN:**
+I don't want to be that person.
+
+**MAYA:**
+Then don't.
+
+*Long pause.*
+
+**JORDAN:**
+Can we... I know it's too late, but can we still salvage tonight somehow?
+
+*MAYA considers this.*
+
+**MAYA:**
+No fancy restaurant. I'd probably just feel worse. But... we could order from that Thai place you like. And you could actually put the phone down.
+
+**JORDAN:**
+I can do that.
+
+**MAYA:**
+And this conversation? We need to have it more than once. Things need to actually change.
+
+**JORDAN:**
+I know.
+
+*MAYA nods slowly. It's not a full resolution, but it's a start.*
+
+**FADE OUT.**
+
+---"
+claude-haiku-4.5,3,gpt-6,Write a script for a couple's argument.,"# ""The Dishes""
+
+**SETTING:** *Kitchen. Evening. MAYA washes dishes. JORDAN enters, stops.*
+
+**JORDAN:** Hey, I was going to do those.
+
+**MAYA:** *(not turning around)* It's fine. I'm already doing them.
+
+**JORDAN:** I know, but I said I'd handle dinner cleanup.
+
+**MAYA:** *(setting down a plate)* You said a lot of things today, Jordan.
+
+**JORDAN:** What's that supposed to mean?
+
+**MAYA:** *(turning to face him)* You were supposed to call the electrician. Three weeks ago.
+
+**JORDAN:** I know, I've been busy—
+
+**MAYA:** You've been busy? I work full-time AND I've been researching electricians, getting quotes, writing them down for you.
+
+**JORDAN:** So this is about the dishes AND the electrician.
+
+**MAYA:** This is about you saying you'll do things and me ending up doing them anyway.
+
+**JORDAN:** *(defensive)* That's not fair. I help out.
+
+**MAYA:** You ""help out""? This is your home too. It shouldn't be helping—it should be *living here*.
+
+*(Pause. JORDAN sits at the table.)*
+
+**JORDAN:** *(quietly)* I don't know how to do this right.
+
+**MAYA:** *(voice softens slightly)* Do what?
+
+**JORDAN:** Any of it. You're always disappointed. And the harder I try not to mess up, the more I seem to.
+
+*(MAYA turns off the water, dries her hands.)*
+
+**MAYA:** I'm not disappointed in you. I'm disappointed that I feel like I'm doing this alone.
+
+**JORDAN:** You're not alone.
+
+**MAYA:** Then show me. Not just... sometimes. Actually show me.
+
+*(They sit in silence. JORDAN looks at her. MAYA looks back.)*
+
+**JORDAN:** The electrician. I'll call tomorrow. And... *(gestures at dishes)* I'm finishing these.
+
+**MAYA:** We'll do them together.
+
+*(JORDAN nods. MAYA sits beside him.)*
+
+**END SCENE**
+
+---
+
+*What tone were you going for—realistic, comedic, dramatic?*"

@@ -1,0 +1,197 @@
+question,answer
+"Compose a poem using the words ""courage,"" ""allure,"" and ""fate.""","# Three Words
+
+In shadowed halls where doubt runs deep,
+Where lesser hearts would fall asleep,
+There lives a fire none can keep—
+A thing called courage, burning bright,
+A steady flame against the night,
+That turns the darkness into light.
+
+The world extends its sweet allure,
+With promises both false and pure,
+A siren's song we can't ignore,
+Yet those who stand with strength of will
+Can walk the path, can climb the hill,
+And bend the course of cold, blind fate.
+
+For destiny is not a wall,
+But invitation to us all—
+To rise each time we choose to fall,
+With courage as our guiding star,
+To travel far, to dream, to dare,
+And claim the fate we choose to share."
+Describe a scenario in which blockchain technology could be successfully applied.,"# Supply Chain Transparency for Food Safety
+
+Here's a practical scenario where blockchain excels:
+
+## The Problem
+A contamination outbreak occurs in lettuce across multiple states. Health officials struggle to identify which farms, processing facilities, and distribution centers were involved, wasting time while consumers remain at risk.
+
+## The Blockchain Solution
+
+**Each step gets recorded immutably:**
+- Farm A harvests lettuce on Day 1 (recorded with GPS, timestamp, farmer ID)
+- Processor B receives it on Day 2 (records batch number, processing methods)
+- Distributor C ships it on Day 3 (records temperature logs, destination)
+- Retail stores scan it on Day 4 (records shelf location, quantity)
+
+**Key advantages:**
+
+- **Speed**: Officials query the chain and instantly see that contamination likely originated at Farm A, skipping unaffected facilities
+- **Accountability**: Each party's actions are permanently linked to their identity—incentivizing quality control
+- **Consumer trust**: A QR code lets shoppers verify their lettuce's complete journey
+- **Cost savings**: Instead of destroying all lettuce nationwide, only affected batches are recalled
+
+## Why Blockchain Works Here
+
+The use case matches blockchain's strengths: multiple parties who don't fully trust each other need a shared, unchangeable record with transparency and traceability built in.
+
+This is more practical than using blockchain for, say, individual email verification—where a traditional database would be simpler and cheaper."
+Identify the differences between coffee and tea.,"# Key Differences Between Coffee and Tea
+
+## **Caffeine Content**
+- Coffee: 95-200 mg per 8 oz cup
+- Tea: 25-50 mg per 8 oz cup
+- Coffee provides a stronger, faster caffeine boost
+
+## **Flavor Profile**
+- Coffee: Bold, bitter, earthy, with varied notes by origin
+- Tea: Lighter, more delicate, ranging from grassy to floral to fruity
+
+## **Processing**
+- Coffee: Roasted beans brewed with hot water
+- Tea: Dried leaves or buds steeped in hot water
+
+## **Tannin Content**
+- Tea: Higher in tannins (can cause astringency and staining)
+- Coffee: Lower in tannins
+
+## **Health Compounds**
+- Coffee: Rich in chlorogenic acid and other antioxidants
+- Tea: Contains polyphenols, catechins, and L-theanine (promotes calm alertness)
+
+## **Preparation Time**
+- Coffee: Quick (minutes)
+- Tea: Varies (3-5 minutes typically, some longer)
+
+## **Cost**
+- Coffee: Generally more expensive per serving
+- Tea: Typically less expensive, especially loose leaf
+
+## **Variety**
+- Coffee: Primarily one plant, varies by origin and roast
+- Tea: Multiple types (black, green, white, oolong, pu-erh)
+
+Both are popular beverages with different benefits and appeal to different preferences."
+"Match the items in column B with the items in column A and output the results as shown below.
+Column A: [cat, apple, bake, Portugal]
+Column B: [animal, food, country, fruit]","# Matching Results
+
+| Column A | Column B |
+|----------|----------|
+| cat | animal |
+| apple | food |
+| bake | ❌ (no match) |
+| Portugal | country |
+
+**Note:** ""bake"" from Column A does not have a corresponding match in Column B. If you meant to include ""fruit"" for ""apple"" instead, here's an alternative:
+
+| Column A | Column B |
+|----------|----------|
+| cat | animal |
+| apple | fruit |
+| bake | food |
+| Portugal | country |"
+Name one social networking website,Facebook
+"Rewrite given statement so that it is in the third person.
+I am excited to go shopping.","She is excited to go shopping.
+
+(Or: He is excited to go shopping. / They are excited to go shopping. — depending on the person being referred to.)"
+Suggest a healthy snack that requires minimal preparation.,"# Apple with Almond Butter
+
+This is hard to beat for simplicity:
+
+- **Slice an apple** (any variety)
+- **Add a spoonful of almond butter** (or peanut butter)
+- **Eat** – no cooking or dishes needed
+
+**Why it works:**
+- Natural sugars + fiber from the apple
+- Protein and healthy fats from the nut butter
+- Keeps you satisfied for hours
+- Takes 30 seconds to prepare
+
+Other equally easy options: Greek yogurt with berries, a handful of nuts, cheese with whole grain crackers, or a banana with sunflower seed butter."
+Summarize the cultural differences between India and the United States.,"# Key Cultural Differences: India vs. US
+
+## Social Structure
+- **India**: Hierarchical, with family and community taking precedence; caste and age command respect
+- **US**: More egalitarian; individualism and personal achievement emphasized
+
+## Family & Relationships
+- **India**: Extended families central; arranged marriages still common; multi-generational households typical
+- **US**: Nuclear families dominant; marriage by choice; independence valued early
+
+## Communication
+- **India**: Indirect, contextual; avoiding confrontation; emotional expression more reserved in formal settings
+- **US**: Direct, explicit; straightforward feedback; more casual, informal communication
+
+## Time & Punctuality
+- **India**: Flexible, relationship-focused; punctuality less strict
+- **US**: Time-conscious; punctuality expected and valued
+
+## Religion & Spirituality
+- **India**: Deeply integrated into daily life; multiple religions coexist; spiritual practices common
+- **US**: More privatized; religious diversity but less integrated into public life
+
+## Food & Dining
+- **India**: Vegetarianism common; shared meals; spices central; eating with hands traditional
+- **US**: Meat-centric; individual portions; convenience-oriented; utensils standard
+
+## Work Culture
+- **India**: Hierarchical; loyalty to organization; job security valued
+- **US**: Performance-based; job mobility acceptable; flat hierarchies increasingly common
+
+These are broad generalizations—regional variation and individual differences exist significantly within both countries."
+"Write a review for this product.
+This product is a mobile app that helps people plan their meals and diets.","# MealPlanner App Review
+
+## Overall Rating: ★★★★☆ (4/5 stars)
+
+### Strengths
+
+**User-Friendly Interface**
+The app is intuitive and easy to navigate, even for users unfamiliar with meal planning tools. The clean design makes it simple to browse recipes and build weekly meal plans.
+
+**Comprehensive Database**
+With thousands of recipes and detailed nutritional information, there's plenty of variety to suit different dietary preferences (vegetarian, vegan, keto, etc.). This prevents meal planning from becoming repetitive.
+
+**Smart Shopping List Generation**
+The automatic shopping list feature is a genuine time-saver. It consolidates ingredients across multiple recipes and even allows for easy editing before heading to the store.
+
+**Helpful Nutritional Tracking**
+Clear macronutrient breakdowns and calorie counts make it valuable for anyone with specific health goals.
+
+### Areas for Improvement
+
+**Limited Customization**
+The app could offer more flexibility for adjusting portion sizes and substituting ingredients without manually recalculating nutrition info.
+
+**Subscription Costs**
+Premium features feel somewhat pricey compared to competitors, which may limit accessibility for budget-conscious users.
+
+**Occasional Sync Issues**
+Some users may experience lag when syncing across multiple devices.
+
+### Final Verdict
+
+This is a solid meal planning tool ideal for busy individuals wanting to eat healthier and save time on grocery shopping. While not perfect, it delivers genuine value and would benefit most users looking to take control of their diet.
+
+**Best For:** Health-conscious home cooks, people managing specific diets, and organized meal preppers."
+"Write down 3 adjectives that describe the following noun.
+cake","# Three Adjectives for Cake
+
+1. **Delicious** - pleasantly sweet and satisfying to taste
+2. **Fluffy** - light and airy in texture
+3. **Decadent** - luxuriously rich and indulgent"

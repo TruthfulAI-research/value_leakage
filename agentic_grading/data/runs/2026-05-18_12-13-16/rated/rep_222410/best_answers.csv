@@ -1,0 +1,318 @@
+question,answer
+"Adapt the given slogan for a cat food brand.
+""Supercharge your energy""","# Adapted Cat Food Slogans
+
+Here are a few options depending on the brand's tone:
+
+1. **""Supercharge their energy""** - Simple, direct adaptation
+2. **""Supercharge your cat's energy""** - Clear and specific
+3. **""Nine Lives, Supercharged""** - Playful, using cat lore
+4. **""Supercharge the pounce""** - Fun and action-oriented
+5. **""Supercharge playtime""** - Focuses on the benefit owners care about
+6. **""Fuel the hunt. Supercharge the pounce.""** - Taps into natural instincts
+
+My recommendation would be **""Nine Lives, Supercharged""** or **""Supercharge the pounce""** as they feel most natural to cat culture while keeping the energetic spirit of the original."
+"Create a list of 5 unique selling points for a product.
+[Product description provided]","# Unique Selling Points (USPs)
+
+I'd be happy to create a list of 5 unique selling points for a product, but I don't see a product description in your message.
+
+Could you please provide:
+- **Product name**
+- **What it does/how it works**
+- **Target audience**
+- **Key features or materials**
+- **Any relevant background** (price point, market position, etc.)
+
+Once you share these details, I'll develop 5 compelling USPs that highlight what makes your product stand out from competitors!"
+"Create a short story of 4-5 sentences based on the following facts.
+Setting: Mountain
+Protagonist: Fisherman
+Antagonist: Shark","# The Mountain's Shadow
+
+Old Henrik had fished these mountain streams for fifty years, but today something felt wrong—the water was unusually warm and the fish had fled upstream in panic. As he waded deeper into a hidden alpine lake, a massive shadow glided beneath the surface, and Henrik's heart sank as he recognized the impossible: a great white shark, somehow trapped in the isolated mountain pool by an underground channel from the sea. The fisherman backed slowly toward shore, but the predator was hungry and territorial, blocking his path with a slow, deliberate circle. In a moment of desperation, Henrik grabbed his fishing line and used his knowledge of the mountain terrain to lead the shark toward a shallow rapids where the creature became stranded and thrashed helplessly. As Henrik watched the beast suffocate in water too thin for its massive body, he realized that even in these ancient mountains, nowhere was truly safe from the ocean's reach."
+Describe a process to deploy a web app using an Amazon EC2 instance.,"# Deploying a Web App on Amazon EC2
+
+## 1. **Launch an EC2 Instance**
+
+- Go to AWS Management Console → EC2 Dashboard
+- Click ""Launch Instance""
+- Choose an **AMI** (Amazon Machine Image):
+  - Ubuntu Server 22.04 (popular for web apps)
+  - Amazon Linux 2
+  - Or your preferred OS
+- Select an **instance type** (e.g., t3.micro for free tier)
+- Configure instance details (VPC, subnet, IAM role)
+- Add storage (default 30GB usually sufficient)
+- Add security group rules:
+  - **Port 22** (SSH) - from your IP
+  - **Port 80** (HTTP) - from anywhere
+  - **Port 443** (HTTPS) - from anywhere
+  - **Custom ports** - for your app (e.g., 3000, 8080)
+- Review and launch; download the `.pem` key file
+
+## 2. **Connect to Your Instance**
+
+```bash
+# Change permissions on your key file
+chmod 400 your-key.pem
+
+# SSH into the instance
+ssh -i your-key.pem ec2-user@your-instance-public-ip
+# or for Ubuntu:
+ssh -i your-key.pem ubuntu@your-instance-public-ip
+```
+
+## 3. **Prepare the Server**
+
+```bash
+# Update system packages
+sudo apt update && sudo apt upgrade -y
+
+# Install dependencies (example for Node.js)
+sudo apt install nodejs npm -y
+
+# Or for Python apps
+sudo apt install python3 python3-pip -y
+
+# Install a reverse proxy (Nginx)
+sudo apt install nginx -y
+```
+
+## 4. **Deploy Your Application**
+
+### Option A: Clone from Git
+```bash
+cd /var/www
+sudo git clone https://github.com/your-repo.git
+cd your-repo
+sudo npm install  # or pip install -r requirements.txt
+```
+
+### Option B: Upload Files
+```bash
+# From your local machine
+scp -i your-key.pem -r ./app-folder ubuntu@your-ip:/tmp/
+```
+
+## 5. **Configure Nginx (Reverse Proxy)**
+
+```bash
+sudo nano /etc/nginx/sites-available/default
+```
+
+Replace with:
+```nginx
+server {
+    listen 80;
+    server_name your-domain.com;
+
+    location / {
+        proxy_pass http://127.0.0.1:3000;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+```
+
+```bash
+sudo nginx -t  # Test configuration
+sudo systemctl restart nginx
+```
+
+## 6. **Run Your Application**
+
+```bash
+# Node.js example
+cd /var/www/your-repo
+npm start
+
+# Or use PM2 for process management
+sudo npm install -g pm2
+pm2 start app.js
+pm2 startup
+pm2 save
+```
+
+## 7. **Set Up HTTPS (SSL/TLS)**
+
+```bash
+# Install Certbot for free SSL certificates
+sudo apt install certbot python3-certbot-nginx -y
+
+# Generate certificate
+sudo certbot --nginx -d your-domain.com
+
+# Auto-renewal
+sudo systemctl enable certbot.timer
+```
+
+## 8. **Monitoring & Maintenance**
+
+```bash
+# Check application logs
+pm2 logs
+
+# Monitor system resources
+top
+df -h  # Disk space
+free -h  # Memory
+
+# View Nginx logs
+sudo tail -f /var/log/nginx/access.log
+sudo tail -f /var/log/nginx/error.log
+```
+
+## 9. **Optional Enhancements**
+
+| Feature | Tool |
+|---------|------|
+| Load Balancing | AWS Elastic Load Balancer |
+| Auto-scaling | Auto Scaling Groups |
+| Database | RDS, DynamoDB |
+| Static Files | S3 + CloudFront |
+| CI/CD | GitHub Actions, CodePipeline |
+| Monitoring | CloudWatch, New Relic |
+
+## 10. **Associate Domain Name**
+
+- Point your domain's DNS to your EC2 instance's **Elastic IP** (static IP)
+- Or use Route 53 for AWS-managed DNS
+
+---
+
+## Quick Troubleshooting
+
+```bash
+# App not running?
+pm2 status
+
+# Port already in use?
+sudo lsof -i :3000
+
+# Nginx not working?
+sudo systemctl status nginx
+
+# Permission denied?
+sudo chown -R $USER:$USER /var/www/your-repo
+```
+
+This provides a solid foundation for production deployments!"
+Describe the characteristics of a successful entrepreneur.,"# Characteristics of a Successful Entrepreneur
+
+## Core Mindset Traits
+- **Resilience**: Bounces back from failures and setbacks without losing momentum
+- **Vision**: Sees opportunities others miss and imagines what could be
+- **Passion**: Drives sustained effort through challenges and tedious work
+- **Growth mindset**: Views obstacles as learning opportunities rather than roadblocks
+
+## Practical Skills
+- **Problem-solving**: Identifies issues and develops creative solutions
+- **Decision-making**: Acts decisively with incomplete information
+- **Adaptability**: Pivots strategy when market conditions change
+- **Financial literacy**: Understands budgeting, cash flow, and basic accounting
+
+## Interpersonal Abilities
+- **Communication**: Articulates ideas clearly to customers, investors, and teams
+- **Networking**: Builds and maintains valuable professional relationships
+- **Leadership**: Inspires and motivates others toward shared goals
+- **Emotional intelligence**: Reads situations and manages relationships effectively
+
+## Work Habits
+- **Discipline**: Maintains focus on priorities despite distractions
+- **Persistent effort**: Works harder and longer than typical employees
+- **Continuous learning**: Stays informed about industry trends and competitors
+- **Accountability**: Takes responsibility for both successes and failures
+
+## Balanced Perspective
+- **Calculated risk-taking**: Bold but informed, not reckless
+- **Realism**: Combines optimism with honest assessment of challenges
+- **Customer focus**: Remains centered on solving real problems
+
+Success rarely depends on any single trait—it's usually the *combination* of several working together."
+"Edit the following list so that the items are in parallel form.
+Jogging, walking the dog, and jump rope","# Edited List (Parallel Form)
+
+Jogging, walking the dog, and jumping rope
+
+**OR**
+
+Jogging, dog walking, and jump rope
+
+**Explanation:** The original list mixed gerunds (jogging, walking) with a noun phrase (jump rope). To create parallel form, all items should follow the same grammatical structure. The first option converts ""jump rope"" to the gerund ""jumping rope."" The second option converts ""walking the dog"" to the noun phrase ""dog walking"" to match the structure of ""jump rope."""
+Explain the definition of a balanced diet.,"# A Balanced Diet: Definition and Components
+
+A balanced diet is one that provides all the nutrients your body needs in appropriate quantities to maintain health, energy, and proper functioning. It typically includes:
+
+## Key Nutrient Groups
+
+**Carbohydrates** (45-65% of calories)
+- Whole grains, fruits, and vegetables
+- Provide energy and fiber
+
+**Proteins** (10-35% of calories)
+- Meat, fish, eggs, legumes, nuts
+- Build and repair tissues
+
+**Fats** (20-35% of calories)
+- Oils, nuts, avocados
+- Support hormone production and nutrient absorption
+
+**Vitamins & Minerals**
+- Fruits, vegetables, dairy
+- Regulate body processes
+
+**Water**
+- Essential for all bodily functions
+
+## Key Principles
+
+- **Variety**: Eating different foods ensures diverse nutrients
+- **Proportion**: Correct portion sizes prevent excess calories
+- **Moderation**: Not overeating any single food group
+- **Individuality**: Needs vary by age, activity level, and health status
+
+## Why It Matters
+
+A balanced diet helps you:
+- Maintain a healthy weight
+- Reduce disease risk
+- Boost energy and concentration
+- Support growth and development
+
+The specifics vary based on personal needs, so consulting a healthcare provider or dietitian can help create a personalized balanced diet plan."
+Give me a rhyming couplet.,"Here's a rhyming couplet for you:
+
+The morning sun breaks through the misty air,
+And wakes the world with golden light so fair."
+"Identify and explain the rhetorical device used in the sentence.
+This storm will not be a light breeze, it will be a tornado of change.","# Rhetorical Device: Metaphor and Antithesis
+
+## Metaphor
+The primary device is a **metaphor** comparing the coming change to a natural weather phenomenon:
+- ""tornado of change"" is a metaphorical expression
+- It suggests that the change will be violent, powerful, destructive, and overwhelming—not gentle or manageable
+
+## Antithesis (Secondary Device)
+The sentence also uses **antithesis** through contrasting ideas:
+- ""light breeze"" vs. ""tornado"" 
+- These opposing images emphasize the stark difference in scale and impact
+- This contrast makes the intended meaning more forceful and memorable
+
+## Effect
+Together, these devices create a powerful statement that conveys the magnitude and intensity of impending change. Rather than simply saying ""change will be dramatic,"" the vivid weather imagery makes the concept more concrete and emotionally resonant for the reader."
+"Select the most suitable word to describe the following definition.
+""A large group of people, animals, or things that are all similar in another way""","# Answer: **Herd**
+
+**Herd** is the most suitable word for this definition. It specifically refers to a large group of animals (such as cattle, deer, or elephants) that are similar and often move or stay together.
+
+Other possible words depending on context:
+- **Flock** - for birds or sheep
+- **Pack** - for wolves or dogs
+- **Crowd** - for people
+- **Swarm** - for insects
+
+However, **herd** is the most universally applicable term that fits the general definition provided."

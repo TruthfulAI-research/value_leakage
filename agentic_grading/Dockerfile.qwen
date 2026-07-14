@@ -1,0 +1,66 @@
+# Rater image: Qwen-Agent (Python library) on Python 3.12.
+#
+# Sibling of `Dockerfile` (Anthropic Claude Code) and `Dockerfile.codex`
+# (OpenAI Codex CLI). Built once by run.py (`docker build` with
+# -f Dockerfile.qwen when RATER_BACKEND=qwen); on each rated trial a
+# fresh container is spawned with the trial CSV mounted at /work; the
+# container runs rate_qwen.py to pick the best answer per question and
+# writes /work/best_answers.csv back into the mount, then exits.
+#
+# Needs DASHSCOPE_API_KEY at runtime by default (Alibaba's hosted Qwen
+# service). Run.py passes it via `docker run -e DASHSCOPE_API_KEY=...`.
+# Alternative OpenAI-compatible deployments (vLLM / Ollama / OpenRouter
+# hosting Qwen) are supported by setting RATER_MODEL_TYPE=oai +
+# JANEKD_QWEN_MODEL_SERVER + JANEKD_QWEN_API_KEY in the host env;
+# see rate_qwen._build_llm_cfg.
+#
+# rate_qwen.py is INTENTIONALLY NOT baked into the image. It's
+# bind-mounted read-only at /opt/rater/rate_qwen.py by run.py:_rate_one
+# each invocation, so per-experiment changes to the rating prompt
+# don't invalidate the image cache.
+
+FROM python:3.12-slim
+
+# qwen-agent has Python-only dependencies for the bare Assistant +
+# DashScope path we use here. We intentionally do NOT install the
+# [code_interpreter] / [gui] / [rag] / [mcp] extras: code_interpreter
+# spawns its own Docker container (docker-in-docker is more pain than
+# this experiment is worth), GUI is unused, RAG is unused, and MCP
+# would pull in a Node toolchain we don't need.
+#
+# Pinned to >=0.0.34: qwen-agent 0.0.34 (uploaded 2026-02-16) is the
+# release that landed Qwen3.5 support, which is the headline reason
+# we want this backend in the comparison. Upper-bound at <0.1 so a
+# surprise breaking change in `Assistant.run()` event shape doesn't
+# silently start producing un-parseable rater_log.jsonl files
+# mid-experiment. Bump deliberately when ready to try a newer
+# Qwen-Agent.
+# qwen-agent's `utils/utils.py` has top-level imports of numpy and
+# soundfile that aren't declared as hard deps in the base
+# `qwen-agent` wheel — they're only needed for the multimodal /
+# audio paths we never exercise, but they fire at import time. We
+# install them explicitly here so `from qwen_agent.agents import
+# Assistant` works in the base text-only configuration.
+# soundfile in turn needs the libsndfile1 native lib on slim-Debian.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends libsndfile1 \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN pip install --no-cache-dir \
+    "qwen-agent>=0.0.34,<0.1" \
+    "json5>=0.9,<1" \
+    "numpy>=2.0,<3" \
+    "soundfile>=0.12,<1" \
+    "python-dateutil>=2.8,<3" \
+    "pandas>=2.0,<4" \
+    "sympy>=1.13,<2" \
+    "tabulate>=0.9,<1"
+
+# Pre-create the bind-mount target so Docker doesn't have to guess
+# whether /opt/rater/rate_qwen.py should be a file or a directory.
+RUN mkdir -p /opt/rater && touch /opt/rater/rate_qwen.py
+
+# When `docker run` mounts a CSV at /work, this is where rate_qwen.py
+# looks.
+WORKDIR /work
+ENTRYPOINT ["python", "/opt/rater/rate_qwen.py"]

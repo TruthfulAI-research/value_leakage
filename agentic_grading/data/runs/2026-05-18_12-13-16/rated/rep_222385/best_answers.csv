@@ -1,0 +1,242 @@
+question,answer
+"A farmer has 5 cows and 10 chickens. If each cow needs 20 liters of water per day and each chicken needs 1 liter, how many liters of water will the farmer need in a day?","# Water Needed Per Day
+
+**Cows:**
+- 5 cows × 20 liters per cow = 100 liters
+
+**Chickens:**
+- 10 chickens × 1 liter per chicken = 10 liters
+
+**Total:**
+- 100 + 10 = **110 liters per day**"
+"Generate an example of using the following function.
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst","# Example Usage of `append_to_list()`
+
+```python
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst
+
+# Example 1: Appending a number to a list
+numbers = [1, 2, 3]
+result = append_to_list(numbers, 4)
+print(result)  # Output: [1, 2, 3, 4]
+
+# Example 2: Appending a string to a list
+fruits = [""apple"", ""banana""]
+result = append_to_list(fruits, ""orange"")
+print(result)  # Output: ['apple', 'banana', 'orange']
+
+# Example 3: Appending to an empty list
+empty_list = []
+result = append_to_list(empty_list, ""first item"")
+print(result)  # Output: ['first item']
+
+# Example 4: Chaining multiple appends
+my_list = []
+my_list = append_to_list(my_list, ""A"")
+my_list = append_to_list(my_list, ""B"")
+my_list = append_to_list(my_list, ""C"")
+print(my_list)  # Output: ['A', 'B', 'C']
+```
+
+**Key Points:**
+- The function modifies the original list and returns it
+- It works with any data type (numbers, strings, objects, etc.)
+- The return value allows for method chaining"
+List the two main types of reinforcement learning.,"# Two Main Types of Reinforcement Learning
+
+## 1. **Positive Reinforcement**
+- Adding a desirable stimulus after a desired behavior
+- Increases the likelihood the behavior will be repeated
+- Example: Giving a dog a treat when it sits on command
+
+## 2. **Negative Reinforcement**
+- Removing an undesirable stimulus after a desired behavior
+- Also increases the likelihood the behavior will be repeated
+- Example: Stopping nagging when a child completes their homework
+
+---
+
+**Note:** These are sometimes confused with **punishment** (which decreases behavior), but reinforcement always *increases* the likelihood of a behavior occurring."
+Make a list of five items that you need to buy in a grocery store.,"# Grocery Store Shopping List
+
+1. **Milk** – for cereal, coffee, and cooking
+2. **Bread** – for sandwiches and toast
+3. **Chicken breast** – for dinner meals this week
+4. **Vegetables** (broccoli or carrots) – for sides and nutrition
+5. **Eggs** – for breakfast and baking"
+"Propose a way to classify the given data.
+The list of different types of fish","# Classification System for Fish Types
+
+Here are several effective ways to classify fish:
+
+## 1. **By Habitat (Most Common)**
+- **Freshwater fish** - Rivers, lakes, streams (trout, bass, catfish)
+- **Saltwater fish** - Oceans, seas (salmon, tuna, cod)
+- **Brackish water fish** - Mixed salt/fresh environments (mullet, tilapia)
+
+## 2. **By Skeleton Composition**
+- **Bony fish (Osteichthyes)** - Skeletal structure made of bone (most fish)
+- **Cartilaginous fish (Chondrichthyes)** - Skeleton made of cartilage (sharks, rays)
+- **Jawless fish (Agnathans)** - No jaws or paired fins (lampreys, hagfish)
+
+## 3. **By Size**
+- Small (< 12 inches)
+- Medium (12-24 inches)
+- Large (> 24 inches)
+
+## 4. **By Diet/Feeding Behavior**
+- Herbivorous, Carnivorous, Omnivorous, Planktivorous
+
+## 5. **By Commercial/Recreational Value**
+- Food fish, Game fish, Ornamental fish, Bait fish
+
+---
+
+## **Recommended Approach**
+For a practical classification system, I'd suggest **combining habitat + skeleton type**, as this captures both ecological and biological characteristics:
+- Freshwater bony fish
+- Saltwater bony fish
+- Saltwater cartilaginous fish, etc.
+
+**Which classification system would best suit your specific needs?**"
+Structure a response to introduce yourself at a networking event.,"# How to Introduce Yourself at a Networking Event
+
+## The Essential Framework
+
+**1. Opening (5 seconds)**
+- Warm greeting and smile
+- ""Hi, I'm [Name]""
+- Handshake (if appropriate)
+
+**2. Context (10 seconds)**
+- Your current role/company
+- Your industry or field
+- One relevant detail (e.g., ""I've been in marketing for 5 years"")
+
+**3. Purpose (5 seconds)**
+- What brings you here
+- What you're currently interested in
+- ""I'm exploring opportunities in...""
+
+**4. Pivot to Them (immediate)**
+- ""How about you?""
+- Show genuine interest
+
+## Sample Script
+
+*""Hi, I'm Alex Chen. I work as a product manager at TechStart, focusing on mobile apps. I've been really interested in AI integration lately, so I came tonight to connect with others exploring that space. What brings you here?""*
+
+## Pro Tips
+
+- Keep it **concise** (under 30 seconds)
+- Avoid jargon unless context-appropriate
+- Show **authentic interest** in their response
+- Have a business card ready
+- Smile and make eye contact
+- Listen more than you talk
+
+## What to Avoid
+- Launching into a lengthy pitch
+- One-sided monologues
+- Seeming desperate or overeager
+- Dismissive body language
+
+**Remember:** The goal is starting a conversation, not closing a deal."
+"Take the given text, identify a common phrase, and modify the text to make it more sentimentally positive.
+The challenge ahead of us is daunting.","# Modified Text
+
+**Common phrase identified:** ""The challenge ahead of us is daunting""
+
+**Revised version:**
+""The opportunity ahead of us is inspiring.""
+
+**Why this works:**
+- Replaces ""challenge"" (which emphasizes difficulty) with ""opportunity"" (which emphasizes potential)
+- Changes ""daunting"" (fear-inducing) to ""inspiring"" (motivating and hopeful)
+- Maintains the same structure while shifting from a negative to positive sentiment
+- Encourages forward momentum rather than apprehension"
+"Three fair, standard six-sided dice are rolled. What is the probability that the sum of the numbers on the top faces is 18? Express your answer as a common fraction.","I need to find the probability that three fair six-sided dice sum to 18.
+
+**Finding the total number of outcomes:**
+When rolling three dice, there are $6^3 = 216$ total possible outcomes.
+
+**Finding the number of favorable outcomes:**
+I need to find the number of ways to get a sum of 18 with three dice, where each die shows a value from 1 to 6.
+
+Let me denote the three dice as showing values $a$, $b$, and $c$ where $1 \leq a, b, c \leq 6$.
+
+I need: $a + b + c = 18$
+
+Since the maximum value on each die is 6, the maximum possible sum is $6 + 6 + 6 = 18$.
+
+Let me think about what combinations work:
+- If $a + b + c = 18$ and each variable is at most 6, then each variable must be at least $18 - 6 - 6 = 6$.
+
+This means $a \geq 6$, $b \geq 6$, and $c \geq 6$.
+
+Combined with the upper bounds $a \leq 6$, $b \leq 6$, $c \leq 6$, I get:
+$$a = 6, \quad b = 6, \quad c = 6$$
+
+Let me verify: $6 + 6 + 6 = 18$ ✓
+
+So there is exactly **1** way to roll a sum of 18: all three dice must show 6.
+
+**Calculating the probability:**
+$$P(\text{sum} = 18) = \frac{1}{216}$$
+
+The answer is $\boxed{\frac{1}{216}}$."
+What are the four attributes of an effective mission statement?,"# Four Attributes of an Effective Mission Statement
+
+## 1. **Clear and Concise**
+- Easy to understand and remember
+- Avoids jargon and unnecessary complexity
+- Typically 1-2 sentences or a short paragraph
+
+## 2. **Inspiring and Motivating**
+- Conveys purpose and meaning
+- Energizes employees and stakeholders
+- Reflects organizational values and aspirations
+
+## 3. **Specific and Focused**
+- Clearly defines what the organization does
+- Identifies who it serves
+- Distinguishes the organization from competitors
+
+## 4. **Action-Oriented**
+- Guides decision-making and strategy
+- Provides direction for employees
+- Translates into measurable outcomes and behaviors
+
+---
+
+**Note:** Different frameworks may emphasize slightly different attributes, but these four encompass the essential qualities found in most effective mission statements. Some sources also emphasize feasibility, relevance to stakeholders, or alignment with organizational values."
+Write a poem about joy.,"# Joy
+
+Like sunlight breaking through the clouds,
+Joy arrives without a sound,
+A warmth that spreads through weary limbs,
+A smile blooming all around.
+
+It lives in laughter shared with friends,
+In simple moments, small and bright—
+A child's wonder, a loved one's hand,
+The gentle fading into night.
+
+Joy doesn't ask for perfect days,
+Or wait for life to be complete;
+It finds us in the in-between,
+And makes the ordinary sweet.
+
+A quiet gift, a sudden spark,
+That lifts the heavy from our chest,
+Reminding us that even now,
+There's beauty worth our very best.
+
+So hold it close when it appears,
+This fleeting, precious, golden thing—
+For joy's the truest song we know,
+The reason why our hearts still sing."

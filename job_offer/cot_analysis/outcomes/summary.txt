@@ -1,0 +1,6 @@
+chains of thought labelled: 3124
+
+ADMITS          0  (0.0%)
+MENTIONS       93  (3.0%)
+DENIES        125  (4.0%)
+NO_MENTION   2906  (93.0%)

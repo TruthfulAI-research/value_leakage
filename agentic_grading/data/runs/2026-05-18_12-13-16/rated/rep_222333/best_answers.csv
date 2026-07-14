@@ -1,0 +1,388 @@
+question,answer
+"Classify the following online review as being positive or negative.
+This product was very substandard and I am quite unhappy with the results.","**Negative**
+
+This review is clearly negative. The customer uses words like ""substandard"" and expresses being ""quite unhappy,"" both of which indicate dissatisfaction with the product."
+Design a game that follows the rules of chess but entertains a wider range of players than the traditional game.,"# Nexus: Chess Reimagined
+
+## Core Concept
+Chess with **asymmetrical sides, special powers, and narrative progression**—maintaining strategic depth while lowering barriers to entry.
+
+---
+
+## Key Design Innovations
+
+### 1. **Asymmetrical Starting Armies**
+Players choose different faction themes (each perfectly balanced):
+
+- **Disciplined Legion**: Classic setup, bonus for coordinated pieces
+- **Chaos Swarm**: More pawns, weaker individually, powerful in groups
+- **Mystic Order**: Fewer pieces with special abilities
+- **Swift Riders**: Faster piece movement, weaker defense
+- **Constructs**: Pieces can be ""rebuilt"" after capture (limited resurrections)
+
+*Why it works:* Beginners get to play asymmetrically (less memorization), veterans enjoy balance puzzles.
+
+---
+
+### 2. **Dynamic Powers & Talents**
+Each piece has an **optional special ability** (activated once per game):
+
+- **Knight's Leap**: Move twice in one turn
+- **Rook's Rally**: Teleport two pieces closer together
+- **Bishop's Blessing**: Turn a pawn into any other piece
+- **Queen's Judgment**: Swap positions with any opponent piece
+- **King's Refuge**: Instantly move to any empty square
+
+*Why it works:* Creates comeback moments for losing players, rewards creative thinking over pure calculation.
+
+---
+
+### 3. **Territory Control & Victory Paths**
+Win by ANY of these conditions:
+
+1. **Checkmate** (traditional)
+2. **Control 5+ central squares** for 3 consecutive turns
+3. **Achieve a ""Harmony""**: Arrange pieces in a specific formation
+4. **Survive 40 turns** with more pieces than opponent
+
+*Why it works:* Multiple win conditions suit different playstyles; players with different goals find satisfaction.
+
+---
+
+### 4. **Escalating Rounds**
+Games progress through 3 phases:
+
+- **Early (turns 1-12)**: Small board (6×6), limited pieces, practice mode
+- **Mid (turns 13-30)**: Standard 8×8 board unlocks
+- **Late (turns 31+)**: Bonus squares appear randomly, chaos mode
+
+*Why it works:* Pacing prevents early shutdowns; gradual complexity appeals to casual players.
+
+---
+
+### 5. **Story Mode & Progression**
+- Campaign where each opponent has a backstory and unique faction
+- Winning grants your faction new abilities for future games
+- Players unlock new piece skins, board themes, narrative branches
+- Cooperative mode: two players vs. AI controlling multiple factions
+
+*Why it works:* Narrative hook retains casual players; progression rewards repeated play.
+
+---
+
+### 6. **Accessibility Features**
+
+| Feature | Purpose |
+|---------|---------|
+| **Move hints** (optional) | Reduces decision paralysis |
+| **Undo limits** (2 per game) | Low-stakes experimentation |
+| **Piece preview** | Show all possible moves before committing |
+| **Colorblind mode** | Distinct piece shapes + symbols |
+| **Difficulty slider** | AI adjusts to player level |
+| **Auto-save** | Resume mid-game |
+
+---
+
+## Sample Game: Beginners vs. Veterans
+
+**Scenario:** Parent (new) vs. Child (experienced)
+
+- **Parent** plays **Mystic Order** (fewer pieces, one special power refresh per 5 turns)
+- **Child** plays **Disciplined Legion** (classic setup)
+- Board is 6×6 initially, expands to 8×8 after 12 turns
+- Victory: First to 5 central squares OR checkmate
+
+**Result:** Parent isn't overwhelmed by openings; child can't steamroll immediately. Both feel challenged.
+
+---
+
+## Why This Works
+
+✅ **Lowers entry barriers**: Asymmetry, hints, and multiple win conditions reduce gatekeeping  
+✅ **Maintains depth**: Skilled players find balance puzzles in asymmetry  
+✅ **Increases engagement**: Powers, story, and progression extend beyond a single match  
+✅ **Flexible difficulty**: Same game for age 8 and age 80  
+✅ **Shorter sessions**: 6×6 games take 10 minutes; casual players don't need 45-minute commitment  
+
+**The philosophy:** Chess's elegant rules stay. Everything else serves the player, not tradition."
+Design an experiment to determine the efficiency of a wind turbine in different wind speeds.,"# Wind Turbine Efficiency Experiment
+
+## Research Question
+How does wind speed affect the power output efficiency of a wind turbine?
+
+## Hypothesis
+Turbine efficiency increases with wind speed up to a rated capacity, then stabilizes or decreases.
+
+---
+
+## Experimental Design
+
+### **Variables**
+- **Independent:** Wind speed (m/s)
+- **Dependent:** Power output (W), rotational speed (RPM), efficiency (%)
+- **Control:** Turbine blade angle, generator load, environmental conditions
+
+### **Equipment Needed**
+
+| Category | Items |
+|----------|-------|
+| **Wind Generation** | Fan(s) with variable speed control or wind tunnel |
+| **Measurement** | Anemometer, tachometer, power meter, load cell |
+| **Turbine** | Small-scale model (0.5-2m diameter) with generator |
+| **Data Collection** | Data logger, thermometer, barometer |
+
+---
+
+## Procedure
+
+### **Setup Phase**
+1. Mount turbine at constant height and orientation
+2. Position anemometer 1-2 diameters upstream
+3. Calibrate all instruments
+4. Establish wind speed range (2-15 m/s for small models)
+
+### **Data Collection**
+1. **For each wind speed:**
+   - Stabilize wind for 2-3 minutes
+   - Record:
+     - Wind speed (minimum 10 measurements)
+     - Rotational speed (RPM)
+     - Electrical power output (watts)
+     - Temperature and pressure (for air density)
+   - Maintain 10-15 wind speed intervals
+
+2. **Multiple trials:** Repeat 3-5 times per speed (n ≥ 3)
+
+---
+
+## Calculations
+
+### **Power Coefficient (Cp)** – Main Efficiency Metric
+```
+Cp = Actual Power Output / Available Wind Power
+
+Available Wind Power = ½ × ρ × A × v³
+Where:
+  ρ = air density (kg/m³)
+  A = swept rotor area (m²)
+  v = wind speed (m/s)
+```
+
+### **Example Calculation**
+- Wind speed: 8 m/s
+- Swept area: 2 m²
+- Air density: 1.225 kg/m³
+- Measured power: 150 W
+
+Available power = 0.5 × 1.225 × 2 × 8³ = 3,136 W
+**Cp = 150/3,136 = 0.048 or 4.8%**
+
+---
+
+## Expected Results
+
+### **Typical Efficiency Curve**
+
+```
+Efficiency (Cp)
+    |     ___
+ 35%|    /   \___
+    |   /         \___
+ 20%|  /              \_____
+    | /
+  5%|_________________________ Wind Speed (m/s)
+    0  5  10  15  20  25
+    
+    Low speeds: Low efficiency (insufficient force)
+    Mid-range: Peak efficiency (~20-35% for models)
+    High speeds: May decrease (stall, safety limits)
+```
+
+### **Graph Types**
+1. **Cp vs Wind Speed** (main result)
+2. **Power Output vs Wind Speed** (cubic relationship)
+3. **Rotational Speed vs Wind Speed** (linear below rated speed)
+
+---
+
+## Data Analysis
+
+### **Statistical Methods**
+- Calculate mean efficiency for each wind speed
+- Determine standard deviation
+- Identify peak efficiency point
+- Test for significant differences (ANOVA if multiple designs)
+
+### **Key Metrics**
+- **Cut-in speed:** Minimum speed for power generation
+- **Rated speed:** Speed at maximum efficiency
+- **Cut-out speed:** Safety shutdown threshold
+- **Capacity factor:** Typical = 0.25-0.45 (actual/maximum power ratio)
+
+---
+
+## Advanced Modifications
+
+**Compare different designs:**
+- Blade pitch angles
+- Blade materials or shapes
+- Rotor diameters
+- Vertical vs horizontal axis
+
+**Environmental factors:**
+- Turbulence (grid placement)
+- Air temperature and humidity
+- Altitude (affects air density)
+
+---
+
+## Potential Challenges & Solutions
+
+| Problem | Solution |
+|---------|----------|
+| Inconsistent wind speed | Use wind tunnel or fan with feedback control |
+| Low power signal | Use electronic amplification or larger turbine |
+| Bearings friction | Minimize with quality bearings; measure parasitic losses |
+| Temperature changes | Record and adjust air density calculations |
+
+---
+
+## Expected Outcomes
+Small model turbines typically achieve **5-25% efficiency**, while commercial turbines reach **35-45%** (theoretical maximum ~59% by Betz's law).
+
+This experiment demonstrates real-world engineering efficiency limitations and optimization principles."
+Explain the functions of ribosomes in a cell.,"# Functions of Ribosomes
+
+Ribosomes are complex molecular machines responsible for **protein synthesis**. Here are their key functions:
+
+## Primary Function: Protein Synthesis
+
+### Translation Process
+- **Read mRNA sequences** - Ribosomes decode the genetic instructions carried by messenger RNA (mRNA)
+- **Assemble amino acids** - They link amino acids together in the precise order specified by the mRNA code
+- **Form peptide bonds** - They catalyze chemical bonds between amino acids to create proteins
+
+## Structural Components
+
+Ribosomes consist of:
+- **rRNA** (ribosomal RNA) - catalyzes peptide bond formation
+- **Ribosomal proteins** - provide structural support
+
+## Key Functional Sites
+
+| Site | Function |
+|------|----------|
+| **A site** | Accepts incoming tRNA carrying new amino acid |
+| **P site** | Holds tRNA with growing protein chain |
+| **E site** | Ejects empty tRNA molecules |
+
+## Location and Type
+
+- **Free ribosomes** - produce proteins for use within the cell
+- **Bound ribosomes** - attached to rough endoplasmic reticulum (RER), produce proteins for export or membrane insertion
+
+## Overall Significance
+
+Ribosomes translate the genetic code into functional proteins, making them **essential for cell survival and function**. Without them, cells cannot produce the proteins needed for virtually all life processes."
+Generate a creative text in 100 words.,"# Whispers of Tomorrow
+
+The old lighthouse keeper discovered something extraordinary: starlight traveling backward through time. Each beam revealed forgotten moments—a child's laughter from 1952, a soldier's last letter, a lover's gentle touch from decades past.
+
+He realized the universe was storytelling itself, weaving memories into light. Every beam carried voices of the dead, singing softly to the living. The keeper spent his final years translating these luminous tales, filling journals with beautiful secrets.
+
+When he passed, they found his logs scattered like stars. Readers finally understood: we're never truly alone. The past never leaves—it only waits patiently, calling through the darkness, hoping someone listens."
+Identify the 3 goals of user-centered design and explain each briefly.,"# 3 Goals of User-Centered Design
+
+## 1. **Usability**
+Ensure the product is easy to learn, use, and navigate. Users should be able to accomplish their tasks efficiently without confusion, minimizing errors and frustration. This includes intuitive interfaces and clear workflows.
+
+## 2. **Usefulness**
+Create solutions that genuinely solve user problems and meet their actual needs. The product must provide real value and serve a meaningful purpose rather than adding unnecessary features. This requires understanding what users truly need, not just what designers think they want.
+
+## 3. **User Satisfaction**
+Design experiences that are pleasant, engaging, and enjoyable. Users should feel satisfied with their interaction, including positive emotional responses. This encompasses aesthetics, responsiveness, and overall user experience quality.
+
+---
+
+These three goals work together to create products that people *can* use easily, *want* to use because it helps them, and *enjoy* using throughout their interaction."
+Imagine you are advising a fictional character who seeks to purchase a suitable spaceship for interstellar travel. Recommend three critical factors they should consider and explain why each is important.,"# Three Critical Factors for Interstellar Spaceship Selection
+
+## 1. **Propulsion System Capability**
+The engine isn't just important—it's *existential* for interstellar travel. Consider:
+- **Why it matters**: The distance between stars is almost incomprehensibly vast. A ship that takes 10,000 years to reach the nearest star is functionally useless for any crew. The propulsion determines whether your character actually reaches their destination within a reasonable timeframe (or within anyone's lifetime).
+- **What to evaluate**: Fuel efficiency, whether it supports faster-than-light capability, and realistic range on a full tank.
+
+## 2. **Life Support System Redundancy**
+Long voyages mean your character's survival depends on reliable systems operating for years or decades.
+- **Why it matters**: There's no roadside assistance in space. A single failure in oxygen recycling, water reclamation, or temperature control becomes catastrophic when you're millions of kilometers from help. Redundancy (backup systems for critical functions) transforms ""equipment failure = death"" into ""equipment failure = inconvenience.""
+- **What to evaluate**: System independence, repair capabilities aboard, and what can realistically be maintained by the crew.
+
+## 3. **Structural Integrity & Radiation Shielding**
+The space environment is actively hostile to human survival.
+- **Why it matters**: Cosmic radiation degrades both equipment and human biology over time. Micrometeorite impacts or hull stress from acceleration can be catastrophic. A ship is only as good as its ability to keep the outside *outside*.
+- **What to evaluate**: Hull materials, shielding thickness, and the ship's ability to withstand long-term radiation exposure.
+
+**The principle**: Focus on what prevents failure, not just what enables success."
+Put together an outfit for a dinner date.,"# Dinner Date Outfit
+
+## Classic & Elegant
+- **Top:** Fitted black blouse or silk camisole
+- **Bottom:** Dark jeans or tailored trousers
+- **Shoes:** Ankle boots or heels
+- **Jacket:** Blazer or leather jacket
+- **Accessories:** Delicate jewelry, small clutch
+
+## Dress Option
+- **Dress:** Little black dress or midi dress (depending on venue)
+- **Shoes:** Heels or dressy flats
+- **Outerwear:** Shawl, cardigan, or coat
+- **Accessories:** Statement earrings, clutch, watch
+
+## Smart Casual
+- **Top:** Nice sweater or fitted shirt
+- **Bottom:** Chinos, skirt, or quality jeans
+- **Shoes:** Loafers, flats, or casual heels
+- **Layer:** Cardigan or bomber jacket
+- **Accessories:** Belt, simple jewelry
+
+## Tips
+- **Match the venue** — fine dining = dressier; casual restaurant = relaxed
+- **Comfort matters** — you'll feel more confident
+- **Grooming touches** — neat hair, manicure, light makeup
+- **Test the fit** — sit and move to ensure everything feels good
+
+What's the vibe of your dinner? (Casual, upscale, romantic?) I can refine suggestions!"
+Rewrite the sentence in the past tense: He was walking to the store.,"He was walking to the store.
+
+(This sentence is already in the past tense. The past continuous form ""was walking"" correctly expresses an action that was in progress at a specific time in the past.)
+
+If you'd like a different past tense form, here are alternatives:
+- **He walked to the store.** (simple past)
+- **He had been walking to the store.** (past perfect continuous)"
+"You are a smart assistant designed to help high school teachers come up with reading comprehension questions.
+Given a piece of text, you must come up with a question and answer pair that can be used to test a student's reading comprehension abilities.
+When coming up with this question/answer pair, you must respond in the following format:
+```
+{{
+    ""question"": ""$YOUR_QUESTION_HERE"",
+    ""answer"": ""$THE_ANSWER_HERE""
+}}
+```
+Everything between the ``` must be valid json.
+Please come up with a question/answer pair, in the specified JSON format, for the following text:
+----------------
+Previously, the use of dye-sub printing was limited to industrial or high-end commercial printing. Dye-sub photo printing has been used in medical imaging, graphic arts proofing, security, and broadcast-related applications. Today, it is extremely popular in event photography and photo booths or kiosks that require high-speed, on-demand printing.
+
+Alps Electric produced the first quality dye-sub printers for home consumers in the $500–$1,000 price range, bringing dye-sublimation technology within the reach of a wider audience. (These models were, however, not true page printers, since they used a narrow printhead that swept across the page, like most inkjet printers.) Now there are many dye-sublimation printers on the market starting from as low as $100, especially postcard-sized mobile photo printers.
+
+The ability to produce instant photo prints inexpensively from a small printer has led to dye sublimation solutions supplanting traditional instant photos in some applications, such as ID photography with a card printer.
+
+Several corporations market desktop-size units as stand-alone printers and for print kiosk and photo booth applications. Some of these units are based on generic printers. Some manufacturers, offer software development kits with their printers, suggesting that these companies hope to attract system integrators as a potential market.
+
+Desktop-size standalone dye-sub photo printers are also used by photographers in event photography. The technology allows photographers to produce and sell lab-quality prints immediately during the event they are attending, with a minimal amount of hardware.","```json
+{
+    ""question"": ""What was the main barrier to dye-sub printing technology before Alps Electric introduced their printers, and how did Alps Electric change this?"",
+    ""answer"": ""The main barrier was that dye-sub printing was previously limited to industrial or high-end commercial use, making it inaccessible to consumers. Alps Electric changed this by producing the first quality dye-sub printers for home consumers in the $500-$1,000 price range, bringing the technology within reach of a wider audience.""
+}
+```"

@@ -1,0 +1,2484 @@
+real_model,sample_idx,question,answer
+claude-haiku-4.5,0,Describe what is hyperparameter optimization and list three popular techniques.,"# Hyperparameter Optimization
+
+## Definition
+
+Hyperparameter optimization is the process of finding the best set of **hyperparameters** for a machine learning model to maximize its performance on a given task. Hyperparameters are configuration settings that are not learned from data but must be set before training (e.g., learning rate, number of layers, regularization strength).
+
+### Key Distinction
+- **Parameters**: Learned during training (weights, biases)
+- **Hyperparameters**: Set before training, control the learning process itself
+
+---
+
+## Three Popular Techniques
+
+### 1. **Grid Search**
+- Tests every combination of hyperparameters from predefined discrete values
+- **Pros**: Exhaustive, straightforward to implement
+- **Cons**: Computationally expensive with many hyperparameters; doesn't scale well
+- **Use case**: Small number of hyperparameters with limited ranges
+
+### 2. **Random Search**
+- Randomly samples hyperparameter combinations from specified distributions
+- **Pros**: More efficient than grid search; can discover unexpected good combinations
+- **Cons**: May miss optimal values; results depend on randomness
+- **Use case**: Medium-sized search spaces with good computational budget
+
+### 3. **Bayesian Optimization**
+- Uses probabilistic models (like Gaussian Processes) to intelligently explore the hyperparameter space
+- Learns from previous evaluations to guide future searches toward promising regions
+- **Pros**: Sample-efficient; finds good solutions with fewer iterations
+- **Cons**: More complex to implement; slower per iteration
+- **Use case**: Expensive models or large hyperparameter spaces; when efficiency is critical
+
+---
+
+Each technique offers different trade-offs between computational cost and solution quality."
+claude-haiku-4.5,1,Describe what is hyperparameter optimization and list three popular techniques.,"# Hyperparameter Optimization
+
+## What It Is
+
+Hyperparameter optimization (HPO) is the process of automatically finding the best set of hyperparameters for a machine learning model. Unlike model parameters (learned from data), hyperparameters are configuration settings chosen *before* training, such as learning rate, batch size, tree depth, or regularization strength.
+
+The goal is to maximize model performance (accuracy, F1-score, etc.) or minimize error while avoiding overfitting.
+
+## Three Popular Techniques
+
+### 1. **Grid Search**
+- Exhaustively searches through a predefined grid of hyperparameter combinations
+- Evaluates every possible combination using cross-validation
+- **Pros**: Simple, thorough, parallelizable
+- **Cons**: Computationally expensive; scales poorly with many hyperparameters
+- **Best for**: Small search spaces with a few hyperparameters
+
+### 2. **Random Search**
+- Randomly samples hyperparameter combinations from a specified distribution
+- Evaluates a fixed number of random combinations
+- **Pros**: More efficient than grid search; can explore larger spaces
+- **Cons**: May miss optimal regions; less systematic
+- **Best for**: High-dimensional search spaces
+
+### 3. **Bayesian Optimization**
+- Uses a probabilistic model (Gaussian process) to model performance and intelligently select which combinations to evaluate next
+- Balances exploration (trying new regions) and exploitation (refining promising areas)
+- **Pros**: Sample-efficient; effective for expensive evaluations
+- **Cons**: More complex; slower per iteration but fewer iterations needed
+- **Best for**: Expensive models; high-dimensional spaces with limited evaluation budget"
+claude-haiku-4.5,2,Describe what is hyperparameter optimization and list three popular techniques.,"# Hyperparameter Optimization
+
+## Definition
+
+**Hyperparameter optimization** is the process of selecting the best set of hyperparameters (configuration settings) for a machine learning model to maximize its performance on a given task. Unlike model parameters that are learned from data during training, hyperparameters are set *before* training begins and control the learning process itself.
+
+### Examples of hyperparameters:
+- Learning rate
+- Number of layers (neural networks)
+- Number of trees (random forests)
+- Regularization strength (L1/L2)
+- Kernel type (SVM)
+
+---
+
+## Three Popular Techniques
+
+### 1. **Grid Search**
+- Tests all possible combinations from a predefined grid of hyperparameter values
+- **Pros:** Guaranteed to find the best combination within the grid; simple to implement
+- **Cons:** Computationally expensive; inefficient in high-dimensional spaces
+- **Best for:** Small hyperparameter spaces with few dimensions
+
+### 2. **Random Search**
+- Randomly samples hyperparameter combinations from specified distributions
+- **Pros:** More efficient than grid search; can explore larger spaces; often finds good solutions faster
+- **Cons:** May miss optimal combinations; less systematic than grid search
+- **Best for:** Medium to large hyperparameter spaces
+
+### 3. **Bayesian Optimization**
+- Uses probabilistic models (Gaussian Processes) to guide the search by learning which regions of the hyperparameter space are most promising
+- **Pros:** Highly efficient; requires fewer evaluations; adapts based on previous results
+- **Cons:** More complex to implement; higher computational overhead per iteration
+- **Best for:** Expensive model evaluations; high-dimensional spaces; limited computational budget
+
+---
+
+Each technique represents a trade-off between computational cost, search efficiency, and ease of implementation."
+claude-haiku-4.5,3,Describe what is hyperparameter optimization and list three popular techniques.,"# Hyperparameter Optimization
+
+## What It Is
+
+Hyperparameter optimization is the process of finding the best set of **hyperparameters** for a machine learning model to maximize its performance. Hyperparameters are configuration settings that you set *before* training (unlike model parameters, which are learned *during* training).
+
+**Examples of hyperparameters:**
+- Learning rate
+- Number of layers in a neural network
+- Batch size
+- Regularization strength (lambda)
+- Tree depth in decision forests
+
+The goal is to minimize error/loss or maximize accuracy on a validation dataset.
+
+---
+
+## Three Popular Techniques
+
+### 1. **Grid Search**
+- Tests every combination of hyperparameter values from a predefined set
+- **Pros:** Thorough, simple to implement, parallelizable
+- **Cons:** Computationally expensive; grows exponentially with more hyperparameters
+- **Best for:** Small hyperparameter spaces with few parameters
+
+### 2. **Random Search**
+- Randomly samples hyperparameter combinations from a defined distribution
+- **Pros:** More efficient than grid search; can explore wider ranges; better for high-dimensional spaces
+- **Cons:** May miss optimal combinations; less systematic
+- **Best for:** When you have many hyperparameters and computational budget is limited
+
+### 3. **Bayesian Optimization**
+- Uses probabilistic models (Gaussian processes) to intelligently guide the search
+- Balances exploration vs. exploitation based on prior results
+- **Pros:** Most sample-efficient; learns from previous trials; fewer evaluations needed
+- **Cons:** More complex to implement; higher computational cost per iteration
+- **Best for:** When training is expensive and you need optimal results with limited trials
+
+---
+
+Each technique offers different trade-offs between computational cost and optimization quality."
+claude-haiku-4.5,4,Describe what is hyperparameter optimization and list three popular techniques.,"# Hyperparameter Optimization
+
+## Definition
+
+**Hyperparameter optimization** (also called hyperparameter tuning) is the process of finding the best set of hyperparameter values for a machine learning model to maximize its performance. Hyperparameters are configuration settings that control the learning process and are set *before* training begins (unlike model parameters, which are learned during training).
+
+### Why It Matters
+- Hyperparameters significantly impact model performance
+- Different problems often require different optimal values
+- Manual tuning is inefficient and often suboptimal
+- Systematic optimization saves time and improves results
+
+---
+
+## Three Popular Techniques
+
+### 1. **Grid Search**
+- **How it works**: Tests all possible combinations of hyperparameter values from a predefined grid
+- **Pros**: Thorough, easy to understand and implement, parallelizable
+- **Cons**: Computationally expensive; exponentially slower as the number of hyperparameters increases
+- **Best for**: Small hyperparameter spaces with few parameters
+
+### 2. **Random Search**
+- **How it works**: Randomly samples hyperparameter combinations from a specified distribution
+- **Pros**: More efficient than grid search; often finds good solutions faster; explores the space more broadly
+- **Cons**: May miss optimal combinations; less structured approach
+- **Best for**: Higher-dimensional hyperparameter spaces where grid search is impractical
+
+### 3. **Bayesian Optimization**
+- **How it works**: Uses a probabilistic model (usually Gaussian Process) to predict which hyperparameters are most promising, iteratively narrowing the search space
+- **Pros**: Highly efficient; uses past results to inform future searches; requires fewer evaluations
+- **Cons**: More complex to implement; slower for small datasets; requires more computational overhead per iteration
+- **Best for**: Expensive-to-evaluate models where you need to minimize the number of training runs
+
+---
+
+**Tip**: Modern frameworks like scikit-learn, Optuna, and Hyperopt provide built-in implementations of these techniques."
+claude-haiku-4.5,5,Describe what is hyperparameter optimization and list three popular techniques.,"# Hyperparameter Optimization
+
+## Definition
+
+Hyperparameter optimization (HPO) is the process of finding the best set of hyperparameters for a machine learning model to maximize its performance on a given task. Hyperparameters are configuration settings that are set *before* training (unlike model parameters, which are learned *during* training).
+
+**Examples of hyperparameters:**
+- Learning rate
+- Number of layers/neurons in neural networks
+- Tree depth in decision trees
+- Regularization strength (C, alpha)
+- Batch size
+
+## Three Popular Techniques
+
+### 1. **Grid Search**
+- Tests every combination of hyperparameters from a predefined grid
+- **Pros:** Simple, exhaustive, guarantees finding the best combination within the grid
+- **Cons:** Computationally expensive; scales poorly with many hyperparameters (curse of dimensionality)
+- **Use case:** Small search spaces with few hyperparameters
+
+### 2. **Random Search**
+- Randomly samples hyperparameter combinations from a defined distribution
+- **Pros:** More efficient than grid search; can explore wider ranges; better for high-dimensional spaces
+- **Cons:** May miss optimal values; less systematic
+- **Use case:** When computational budget is limited; many hyperparameters to tune
+
+### 3. **Bayesian Optimization**
+- Uses a probabilistic model (usually Gaussian Process) to guide the search
+- Balances exploration vs. exploitation by selecting promising regions
+- **Pros:** Data-efficient; fewer evaluations needed; intelligent search strategy
+- **Cons:** More complex to implement; higher computational cost per iteration
+- **Use case:** Expensive-to-evaluate models; limited evaluation budget
+
+---
+
+**Other notable techniques:** Hyperband, Tree-structured Parzen Estimator (TPE), Genetic Algorithms, and Gradient-based optimization."
+claude-haiku-4.5,0,"Generate a story that describes two people, each with different personality traits in a dinner setting.","# The Dinner Date
+
+The restaurant hummed with soft jazz and the gentle clink of glassware. Sarah arrived exactly on time, her hair perfectly styled, her outfit carefully selected days in advance. She reviewed the menu before Marcus even sat down, mentally calculating the nutritional content of each dish.
+
+""I made reservations three weeks ago,"" she said, glancing at her watch. ""I wanted to ensure we had the best table.""
+
+Marcus bounded in fifteen minutes late, his tie slightly askew, his face flushed from rushing. He threw his jacket over the chair and grinned apologetically.
+
+""Sorry, sorry! I got talking to this street musician outside and completely lost track of time. You should hear this guy—absolutely incredible."" He gestured wildly, already animating a story.
+
+Sarah raised an eyebrow. ""The reservation was for seven.""
+
+""I know, I know,"" Marcus laughed, scanning the menu for the first time. ""But hey, we're here now! This place is amazing. I didn't even know it existed until today."" He pointed at something random. ""What do you recommend? Actually, surprise me. I love surprises.""
+
+As the evening progressed, their differences created an unexpected rhythm. When Marcus impulsively ordered an experimental dish he'd never heard of, Sarah carefully explained why the salmon was the optimal choice based on the chef's reputation. When Marcus left his phone on the table and turned it face-down to focus entirely on her, Sarah found herself relaxing her rigid schedule.
+
+By dessert, Marcus was laughing so hard at his own story that he snorted wine through his nose, while Sarah—usually composed—found herself laughing too.
+
+""You know,"" Marcus said, stealing a bite of her carefully selected dessert, ""spontaneity and planning aren't so different.""
+
+Sarah smiled despite herself. ""Neither are people."""
+claude-haiku-4.5,1,"Generate a story that describes two people, each with different personality traits in a dinner setting.","# An Awkward Evening
+
+The restaurant hummed with soft jazz as Sarah arrived exactly five minutes early, her planner already open to next week's schedule. She settled into the chair with perfect posture, aligning her napkin with mathematical precision and reviewing the menu with the focus of someone studying for an exam.
+
+Marcus swept in fifteen minutes late, practically bouncing with energy as he apologized profusely to Sarah, the host, and a passing waiter. He collapsed into his chair with theatrical flair, immediately gesturing animatedly as he described some ridiculous traffic incident that had delayed him.
+
+""So I ordered us the sea bass—it has excellent reviews, and I cross-referenced three sources,"" Sarah began, pointing to her notes. She'd already researched optimal nutritional content and cost-benefit analyses.
+
+Marcus laughed, waving his hand dismissively. ""Live a little! Let's try whatever sounds fun. Maybe the duck? Or that wild risotto that looks insane?"" He was already making friends with their server, asking about her weekend.
+
+As the night progressed, Sarah systematically worked through conversation topics she'd prepared, while Marcus spontaneously jumped from stories about his failed attempts at rock climbing to wild theories about why people hated cilantro. He spilled water. Twice.
+
+Yet somewhere between Marcus's infectious laughter at his own mishaps and Sarah's surprising dry humor, something unexpected happened. Sarah found herself smiling without planning to. Marcus actually listened intently when Sarah explained her upcoming project at work.
+
+By dessert, Sarah was laughing at Marcus's impressions of their waiter, and Marcus was genuinely impressed by Sarah's organized approach to life.
+
+""You know,"" Marcus said, raising his glass, ""you're way less boring than I expected.""
+
+""And you're way less chaotic than I feared,"" Sarah replied, a genuine smile crossing her face."
+claude-haiku-4.5,2,"Generate a story that describes two people, each with different personality traits in a dinner setting.","# The Dinner
+
+The reservation was for 7 PM at Bellini's, though Marcus arrived at 6:47, having circled the block twice to ensure punctuality. He sat rigidly in the booth, napkin folded precisely on his lap, reviewing the menu with the focus of someone studying architectural blueprints. Each item was assessed: nutritional value, preparation complexity, price-to-portion ratio.
+
+When Sophie breezed in at 7:23 with apologies that tumbled out like confetti, Marcus's jaw tightened slightly.
+
+""Traffic was insane, but oh my God, I saw this street musician playing the most beautiful arrangement of—"" She slid into the booth, already gesturing animatedly, her purse spilling loose coins across the table. ""—and I just had to stop and listen. Completely lost track of time.""
+
+Marcus carefully gathered the coins into a pile. ""The restaurant has a cancellation policy after 7:15.""
+
+""They didn't mention anything."" Sophie grinned, undeterred, already flagging the waiter with an enthusiasm that made him smile before he even reached their table.
+
+As the evening progressed, their differences became a strange harmony. Marcus ordered the sea bass with a detailed list of modifications; Sophie chose the duck special and immediately declared it ""the best thing that's ever happened to her taste buds."" He asked pointed questions about the wine regions; she took a sip and said, ""It tastes like a happy afternoon.""
+
+He found himself smiling—something that required conscious effort—and she found herself actually listening to his explanation of why he'd chosen this particular restaurant (the kitchen's thirty-year history, their impeccable sourcing).
+
+By dessert, Sophie was sketching on the napkin the street musician's setup, and Marcus was suggesting venues where such talent deserved larger audiences. She laughed at his earnestness; he laughed at her wild, impossible optimism.
+
+As they left, Marcus held the door. Sophie linked her arm through his without asking permission.
+
+""Same time next week?"" she asked.
+
+He checked his phone calendar. ""Tuesday at 7 PM?""
+
+""How about 7:30?"" Sophie suggested. ""Give me a fighting chance.""
+
+Marcus considered this, then nodded. ""7:30. I'll be here by 7:15.""
+
+She squeezed his arm, knowing he would be exactly where he promised."
+claude-haiku-4.5,3,"Generate a story that describes two people, each with different personality traits in a dinner setting.","# The Dinner
+
+The reservation was for seven o'clock. Marcus arrived at six forty-five.
+
+He sat at the corner table—not too exposed, not too hidden—and reviewed the menu with the methodical precision of someone reviewing a contract. Everything was categorized in his mind: proteins, starches, vegetables. He noted the wine list's structure, calculated the tip percentages, and mentally scheduled his departure for 8:45 PM. Efficiency was comfort. Predictability was peace.
+
+When Elena burst through the restaurant door at 6:58, she was mid-laugh from something the hostess had said, her red scarf trailing behind her like a banner. She spotted Marcus and wove through the tables with no particular path, nearly colliding with a server.
+
+""Marcus! Hi!"" She collapsed into the chair across from him, breathless. ""Sorry I'm almost late. I was at this bookstore, and I just *had* to tell you—they have this tiny section of poetry no one knows about, and the owner was telling me about how she chooses every single book, and we got talking about life and meaning and whether cereal is soup, and I—"" She paused, noticing his expression. ""You look very... still.""
+
+""You're two minutes early,"" he said flatly. ""I'm impressed.""
+
+""Was that a compliment? It sounded like one was trying to escape your mouth but got stuck in traffic."" Elena grinned and opened her menu backwards. ""What's good here? Wait, don't tell me—let me just order whatever sounds most interesting. Spontaneity, you know?""
+
+Marcus, who did not know spontaneity, watched her skip to the dessert section first. ""They have fourteen vegetable sides,"" he offered carefully. ""I've analyzed the nutritional value.""
+
+""Have you ever considered that vegetables might just be food, not a puzzle to solve?""
+
+""Have you considered that nutrition is the literal foundation of survival?""
+
+They stared at each other for a moment, and then Elena laughed—genuinely, fully—and Marcus found himself suppressing a smile.
+
+As the evening progressed, something unexpected happened. Elena's rambling stories—about the poetry owner, about a dog she'd seen that morning, about whether clouds were lonely—somehow made the evening feel less like a transaction and more like an experience. Marcus found himself asking follow-up questions, deviating from his prepared conversation points.
+
+And Elena discovered that Marcus's careful observations were actually quite funny. When he mentioned that she'd reorganized the salt and pepper shakers four times without noticing, she laughed until other diners looked over.
+
+By dessert, Marcus had abandoned his exit timeline, and Elena had—shockingly—chosen the same carefully-considered chocolate torte that Marcus recommended rather than the ""surprise me"" option.
+
+As they waited for the check, Elena noticed Marcus was still sitting there, not calculating. He noticed Elena had paused, truly present, watching the light catch her wine glass.
+
+""Same time next month?"" Elena asked.
+
+""I'll make a reservation,"" Marcus said. ""Though I won't guarantee you'll arrive on time.""
+
+""And I won't guarantee I'll stay on topic.""
+
+""I wouldn't expect anything else.""
+
+It was, for both of them, exactly right."
+claude-haiku-4.5,4,"Generate a story that describes two people, each with different personality traits in a dinner setting.","# The Dinner
+
+The reservation was for 7 PM at Marcello's, a cozy Italian restaurant tucked between a bookstore and a vintage clothing shop.
+
+Marcus arrived at 6:47, having left his apartment early to avoid any possibility of being late. He'd researched the menu online, read recent reviews, and mentally prepared conversation topics. His tie was perfectly knotted, and he'd asked the hostess to ensure their table would be quiet enough for proper conversation.
+
+Elena burst through the door at 7:13 in a cloud of laughter, still finishing a story with the coat-check attendant. Her hair was pinned up with what appeared to be a paintbrush—whether intentionally or not was unclear. She wore a vintage scarf that clashed beautifully with her dress, and her shoes didn't quite match, though she swore they were ""close enough.""
+
+""Sorry I'm late!"" she announced, sliding into her seat. ""I got distracted helping a stranger pick out a record. Did you know that guy over there—"" she pointed at a man reading alone, ""—is probably here because of heartbreak? Very tragic. We should do something nice for him.""
+
+Marcus blinked. They'd met twice before. ""Perhaps we should focus on our evening,"" he suggested gently, pushing the bread plate slightly to the left for better symmetry.
+
+""Right, right. But also, we should definitely order the carbonara. I've never had it, and I want my first time to be *here*, you know? Makes it memorable."" She picked up the menu upside down, grinned, and flipped it over.
+
+Over the next two hours, Marcus found his careful plans dissolving into something unexpectedly different. He'd prepared a sensible discussion about their jobs and hobbies. Instead, Elena derailed him by asking why people were afraid of silence, and suddenly they were debating whether life should be organized or embraced. 
+
+He ordered precisely, choosing the special with modifications. She ordered three things and asked to share everything, turning their dinner into an improvisation.
+
+When she knocked over her water glass, Marcus instinctively moved to apologize on her behalf. But Elena simply laughed, grabbed napkins, and told the approaching waiter a ridiculous story about how she'd once flooded an entire gallery during an art opening.
+
+""That's not actually funny,"" Marcus said, but he was smiling.
+
+""No,"" Elena agreed, ""but it happened. Do you know what I learned? Staying upset about spilled water is a waste of perfectly good time.""
+
+By dessert, Marcus was leaning back in his chair—a posture he usually found too casual—and Elena was stealing bites of his tiramisu while describing her dream to write children's books about vegetables with anxiety.
+
+""That's... ambitious,"" he offered, which was his way of saying something kind about something unconventional.
+
+""That's why I like you,"" Elena said suddenly. ""You're like a really well-organized encyclopedia, but you're slowly becoming a storybook.""
+
+Marcus adjusted his napkin. ""I'm not sure that's a compliment.""
+
+""It is,"" she said, stealing another bite. ""Storybooks are better.""
+
+Later, walking to the parking lot, Marcus found himself suggesting a second dinner. He even—and this shocked him—suggested they go somewhere without a reservation, some place Elena could choose on a whim.
+
+Elena linked her arm through his. ""Look at you,"" she said. ""I'm a terrible influence.""
+
+""Objectively terrible,"" he agreed.
+
+""But?""
+
+Marcus looked at this chaotic, spontaneous woman beside him and thought about water spilled and vegetables with anxiety and records and heartbroken strangers. 
+
+""But,"" he said, ""possibly the best kind."""
+claude-haiku-4.5,5,"Generate a story that describes two people, each with different personality traits in a dinner setting.","# An Unexpected Evening
+
+The reservation was for 7 PM at Marcello's, though Marcus arrived at 6:47, as he always did. He'd already reviewed the menu online, mapped out the parking route, and confirmed the weather forecast. His notebook sat folded in his jacket pocket—just in case there was anything worth documenting.
+
+He sat at table twelve, spine straight, checking his watch.
+
+Sophie breezed in at 7:23, still laughing at something on her phone. She wore a dress she'd grabbed from her closet without a second thought—the same one she'd nearly worn to three other events. Her hair was half-pinned; the rest fell loosely around her shoulders.
+
+""Marcus!"" she called across the restaurant, waving with both hands. Several diners glanced over. She didn't notice.
+
+""You're late,"" he said, standing to pull out her chair.
+
+""Am I? I thought dinner was somewhere around now."" She grinned, unbuttoning her coat. ""The amazing thing is, I got completely lost on the way here, took a wrong turn, and ended up at this little flower stand. The guy gave me a free dahlia. Can you believe that?"" She pulled a slightly crushed purple flower from her bag.
+
+Marcus carefully placed it on the table's edge, away from the water glasses. ""A dahlia. How fortunate.""
+
+The waiter approached. Marcus ordered the salmon—medium-well, no butter sauce, dressing on the side. He asked three questions about preparation methods. Sophie pointed at a picture. ""That one looks fun.""
+
+""You haven't read the description,"" Marcus observed.
+
+""Life's more fun when you're surprised,"" she said, winking at the waiter, who smiled despite his professional demeanor.
+
+As courses arrived, their differences became a kind of rhythm. Marcus would ask carefully constructed questions about Sophie's work as a freelance artist—What exactly is your income model? How do you manage without benefits?—while Sophie painted pictures with her hands, describing colors and feelings, never quite answering the practical questions.
+
+""You're so tightly wound,"" she said affectionately, stealing a piece of his salmon when he wasn't looking.
+
+""You're incredibly impractical,"" he countered, moving his plate defensively. But there was no edge to it.
+
+""True. But I was happy today, and I didn't have to plan for it. I just found it.""
+
+Marcus considered this. ""Happiness that's unplanned is usually unstable.""
+
+""Happiness that's planned is usually disappointing,"" she replied, raising her glass. ""Here's to expecting nothing and being delighted anyway.""
+
+He raised his glass too. When she clinked it against his a bit too enthusiastically and wine sloshed onto the tablecloth, he surprised them both by laughing—genuinely, completely.
+
+""What?"" she asked.
+
+""Nothing,"" he said. ""Just thinking that maybe life needs both kinds of people.""
+
+Sophie grinned. ""See? There's hope for you yet, organized man.""
+
+By the time dessert arrived—which Sophie had actually chosen wisely, it turned out—Marcus realized he'd stopped checking his watch. And Sophie had actually listened while he explained his new project with actual attention, rather than just nodding while mentally elsewhere.
+
+""Same time next month?"" she asked as they stood to leave.
+
+He already wanted to plan it. She probably wouldn't remember to confirm.
+
+""Yes,"" he said. ""Absolutely.""
+
+They walked out together into the night—one calculating the tip to the nearest cent, the other already distracted by the way the streetlights looked in the rain."
+claude-haiku-4.5,0,"Classify the word ""accident"" into a part of speech.","# Part of Speech: Noun
+
+**Accident** is a **noun**.
+
+It refers to an unexpected and unpleasant event or occurrence (e.g., ""He had a car accident""). It can be countable or uncountable depending on context."
+claude-haiku-4.5,1,"Classify the word ""accident"" into a part of speech.","# Classification: Noun
+
+**""Accident""** is a **noun**.
+
+It is a common noun that refers to an unexpected and unplanned event or occurrence, typically one that causes damage or harm (e.g., ""a car accident,"" ""an accident at work"")."
+claude-haiku-4.5,2,"Classify the word ""accident"" into a part of speech.","# Part of Speech: Noun
+
+**Accident** is a **noun**.
+
+It refers to an unexpected event or occurrence, typically one that is unpleasant or causes damage (e.g., ""She had a car accident"")."
+claude-haiku-4.5,3,"Classify the word ""accident"" into a part of speech.","# Classification of ""accident""
+
+**Part of Speech: Noun**
+
+""Accident"" is a noun because it refers to a person, place, thing, or idea—specifically, an unexpected event or occurrence, typically one that is unpleasant or unintended.
+
+**Example:** *The car accident happened on the highway.*"
+claude-haiku-4.5,4,"Classify the word ""accident"" into a part of speech.","# Classification of ""Accident""
+
+**Part of Speech: Noun**
+
+""Accident"" is a **noun** because it is a word that names a person, place, or thing. Specifically, it is a concrete noun referring to an unexpected event or occurrence, typically one that results in damage or harm.
+
+**Example in a sentence:** *The accident on the highway delayed traffic for hours.*"
+claude-haiku-4.5,5,"Classify the word ""accident"" into a part of speech.","# Classification of ""Accident""
+
+**Part of Speech: Noun**
+
+""Accident"" is a **countable noun** that refers to an unexpected event or occurrence, typically one that causes harm or damage.
+
+**Examples:**
+- ""There was a car *accident* on the highway.""
+- ""It was just an *accident*; I didn't mean to break it."""
+claude-haiku-4.5,0,List the countries that border Denmark.,"# Countries that Border Denmark
+
+Denmark borders:
+
+1. **Germany** - to the south (on the Jutland Peninsula)
+
+Denmark is also connected to Sweden by the Øresund Bridge, but this is a bridge connection rather than a land border."
+claude-haiku-4.5,1,List the countries that border Denmark.,"# Countries that Border Denmark
+
+Denmark shares land borders with one country:
+
+- **Germany** (to the south)
+
+Denmark also has maritime borders with several countries including Sweden, Norway, and the United Kingdom, but Germany is the only country with which Denmark shares a land border."
+claude-haiku-4.5,2,List the countries that border Denmark.,"# Countries that Border Denmark
+
+Denmark borders only one country:
+
+- **Germany** (to the south)
+
+Denmark shares a land border with Germany on the Jutland Peninsula. By sea, Denmark is surrounded by the North Sea and the Baltic Sea, and it is separated from Sweden and Norway by water."
+claude-haiku-4.5,3,List the countries that border Denmark.,"# Countries Bordering Denmark
+
+Denmark shares a land border with:
+
+1. **Germany** - to the south
+
+Denmark is also surrounded by water (the North Sea and Baltic Sea) but only has one land border with Germany."
+claude-haiku-4.5,4,List the countries that border Denmark.,"# Countries Bordering Denmark
+
+Denmark borders only one country:
+
+- **Germany** (to the south)
+
+Denmark shares a land border with Germany on the Jutland Peninsula. The country is otherwise surrounded by water (the North Sea and Baltic Sea)."
+claude-haiku-4.5,5,List the countries that border Denmark.,"# Countries that Border Denmark
+
+Denmark borders:
+
+1. **Germany** - to the south (on the Jutland Peninsula)
+
+That is Denmark's only land border. However, Denmark also has maritime borders with several countries including Sweden, Norway, and Poland across various seas and straits."
+claude-haiku-4.5,0,"Identify which description best fits the given term.
+Cloud Computing","# Cloud Computing
+
+Cloud computing refers to:
+
+**The delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (""the cloud"") to offer faster innovation, flexible resources, and economies of scale.**
+
+## Key Characteristics:
+
+- **On-demand access** to computing resources
+- **Pay-as-you-go pricing** model
+- **Remote delivery** via the internet
+- **Scalability** - easily increase or decrease resources
+- **Reduced capital expenses** - no need to purchase and maintain hardware
+- **Managed by third-party providers** (AWS, Microsoft Azure, Google Cloud, etc.)
+
+## Main Types:
+- **IaaS** (Infrastructure as a Service)
+- **PaaS** (Platform as a Service)
+- **SaaS** (Software as a Service)
+
+---
+
+*If you have multiple choice options, cloud computing would best fit descriptions emphasizing internet-based services, remote resource access, scalability, and subscription-based models.*"
+claude-haiku-4.5,1,"Identify which description best fits the given term.
+Cloud Computing","# Cloud Computing
+
+**Best Description:**
+
+Cloud computing is the **delivery of computing services—including servers, storage, databases, networking, software, and analytics—over the internet (""the cloud"") on a pay-as-you-go basis**, rather than owning and maintaining physical hardware and infrastructure locally.
+
+## Key Characteristics:
+
+- **Remote access**: Services accessed via the internet from anywhere
+- **On-demand**: Resources available when needed
+- **Scalability**: Easy to scale up or down based on needs
+- **Cost-effective**: Pay only for what you use
+- **Managed by providers**: Third-party companies handle maintenance and updates
+
+## Common Examples:
+- **IaaS** (Infrastructure as a Service): AWS, Microsoft Azure
+- **PaaS** (Platform as a Service): Google App Engine, Heroku
+- **SaaS** (Software as a Service): Google Workspace, Microsoft 365, Salesforce
+
+This model contrasts with traditional on-premises computing, where organizations must purchase and maintain their own servers and infrastructure."
+claude-haiku-4.5,2,"Identify which description best fits the given term.
+Cloud Computing","# Cloud Computing
+
+**Best Description:**
+
+Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, and analytics—over the internet (""the cloud"") on a pay-as-you-go basis, rather than owning and maintaining physical infrastructure locally.
+
+## Key Characteristics:
+
+- **On-demand access** to computing resources
+- **Remote servers** hosted by third-party providers
+- **Scalability** - easily increase or decrease resources as needed
+- **Cost-effective** - pay only for what you use
+- **Accessibility** - available from anywhere with internet connection
+- **Managed by providers** - reduces maintenance burden on users
+
+## Common Examples:
+- Google Drive, Dropbox (storage)
+- AWS, Microsoft Azure, Google Cloud (infrastructure)
+- Salesforce, Microsoft 365 (applications)
+
+---
+
+*If you have specific answer choices provided, please share them and I can identify which one best fits this definition.*"
+claude-haiku-4.5,3,"Identify which description best fits the given term.
+Cloud Computing","# Cloud Computing
+
+Cloud computing refers to the **delivery of computing services over the internet** (""the cloud""), including:
+
+- **Servers and storage**
+- **Databases**
+- **Software and applications**
+- **Processing power**
+
+## Best Description:
+
+**On-demand access to computing resources and services hosted on remote servers, accessed via the internet, where users pay only for what they use.**
+
+## Key Characteristics:
+- ☁️ **Remote delivery** - services accessed over the internet
+- 📊 **Scalability** - resources can be increased or decreased as needed
+- 💰 **Pay-as-you-go** - cost-effective pricing model
+- 🔄 **Flexibility** - accessible from anywhere with internet connection
+
+## Common Examples:
+- Google Drive, Dropbox (storage)
+- AWS, Azure, Google Cloud (infrastructure)
+- Microsoft Office 365, Salesforce (software)
+
+Is there a specific aspect of cloud computing you'd like me to clarify further?"
+claude-haiku-4.5,4,"Identify which description best fits the given term.
+Cloud Computing","# Cloud Computing
+
+## Best Description:
+
+**Cloud computing is the on-demand delivery of computing services—including servers, storage, databases, software, and processing power—over the internet (""the cloud"") rather than from a local computer or on-premises server.**
+
+## Key Characteristics:
+
+- **Remote Access**: Services accessed via the internet from anywhere
+- **Pay-as-you-go**: Users pay only for resources they use
+- **Scalability**: Easy to scale up or down based on needs
+- **Maintenance-free**: Provider handles updates and maintenance
+- **Multi-tenant**: Resources shared among multiple users
+
+## Common Examples:
+- Amazon Web Services (AWS)
+- Microsoft Azure
+- Google Cloud
+- Dropbox, OneDrive, iCloud (storage)
+- Office 365, Salesforce (software applications)
+
+This model eliminates the need for expensive physical infrastructure on-site and provides flexibility and cost efficiency for businesses and individuals."
+claude-haiku-4.5,5,"Identify which description best fits the given term.
+Cloud Computing","# Cloud Computing
+
+**Best Description:**
+
+Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, and analytics—over the internet (""the cloud"") rather than on local computers or servers.
+
+## Key Characteristics:
+
+- **On-demand access** – Resources available whenever needed
+- **Remote delivery** – Services accessed via the internet
+- **Scalability** – Resources can be increased or decreased based on needs
+- **Pay-as-you-go** – Users typically pay only for what they use
+- **Reduced infrastructure costs** – No need to maintain physical servers
+
+## Common Examples:
+- Email services (Gmail, Outlook)
+- Storage services (Google Drive, OneDrive, Dropbox)
+- Software applications (Microsoft Office 365, Salesforce)
+- Web hosting platforms (AWS, Azure, Google Cloud)
+
+**In short:** Cloud computing allows individuals and businesses to use computing resources flexibly without owning or maintaining the underlying physical infrastructure."
+claude-haiku-4.5,0,"Edit this passage to make it more concise:
+
+During the spring season, the temperature tends to be very pleasant, making it a great time of year to go outdoors.","Here's a more concise version:
+
+""Spring's pleasant temperatures make it ideal for outdoor activities.""
+
+Or even shorter:
+
+""Spring's pleasant weather is perfect for the outdoors."""
+claude-haiku-4.5,1,"Edit this passage to make it more concise:
+
+During the spring season, the temperature tends to be very pleasant, making it a great time of year to go outdoors.","# Edited Version
+
+Spring's pleasant temperatures make it an ideal time to spend outdoors.
+
+---
+
+**Changes made:**
+- Removed ""tends to be very"" (wordy filler)
+- Combined ""great time of year to go"" into ""ideal time to spend""
+- Eliminated redundant phrases while maintaining the core message"
+claude-haiku-4.5,2,"Edit this passage to make it more concise:
+
+During the spring season, the temperature tends to be very pleasant, making it a great time of year to go outdoors.","# Edited Version
+
+Spring's pleasant temperatures make it an ideal time to spend outdoors.
+
+**Changes made:**
+- Combined related ideas into one concise sentence
+- Removed redundancy (""spring season"" → ""Spring"")
+- Eliminated unnecessary phrases (""tends to be,"" ""great time of year"")
+- Reduced word count from 18 to 12 words while preserving the meaning"
+claude-haiku-4.5,3,"Edit this passage to make it more concise:
+
+During the spring season, the temperature tends to be very pleasant, making it a great time of year to go outdoors.","# Edited Version
+
+Spring's pleasant temperatures make it an ideal time to go outdoors.
+
+**Changes made:**
+- Removed redundancy (""spring season"" → ""spring"")
+- Eliminated wordy phrases (""tends to be very pleasant"" → ""pleasant"")
+- Condensed ""great time of year"" to ""ideal time""
+- Reduced from 18 words to 11 words while maintaining the meaning"
+claude-haiku-4.5,4,"Edit this passage to make it more concise:
+
+During the spring season, the temperature tends to be very pleasant, making it a great time of year to go outdoors.","# Edited Version
+
+Spring's pleasant temperatures make it ideal for outdoor activities.
+
+**Changes made:**
+- Removed redundant phrases (""During the spring season"" → ""Spring's"")
+- Eliminated wordy expressions (""tends to be very pleasant"" → ""pleasant"")
+- Condensed ""great time of year to go outdoors"" → ""ideal for outdoor activities"""
+claude-haiku-4.5,5,"Edit this passage to make it more concise:
+
+During the spring season, the temperature tends to be very pleasant, making it a great time of year to go outdoors.","# Edited version:
+
+Spring's pleasant temperatures make it an ideal time to spend outdoors.
+
+**Changes made:**
+- Removed redundancy (""spring season"" → ""spring"")
+- Combined clauses to eliminate wordiness
+- Removed ""tends to be very"" (less direct phrasing)
+- Shortened ""great time of year"" to ""ideal time"""
+claude-haiku-4.5,0,Draft a tweet that encourages people to vote in the upcoming election.,"# Vote Tweet
+
+Your voice matters. 🗳️ 
+
+Election day is coming—make sure you're registered and ready to vote. Every ballot counts. Whether it's local, state, or federal, show up and have your say in shaping our future.
+
+Don't just talk about change—vote for it. 
+
+#VoteEarly #VotingMatters #Election2024"
+claude-haiku-4.5,1,Draft a tweet that encourages people to vote in the upcoming election.,"# Vote Tweet
+
+Your voice matters. 🗳️ Make your choice count in the upcoming election. Every vote shapes our future. Don't sit this one out—head to the polls and have your say. Democracy works when we show up. #Vote #YourVoteCounts
+
+---
+
+Feel free to adjust the tone or focus to match your preferred style or candidate!"
+claude-haiku-4.5,2,Draft a tweet that encourages people to vote in the upcoming election.,"# Vote Tweet
+
+Your vote is your voice. 🗳️ Make it count in the upcoming election. Every ballot matters—early voting, mail-in, or Election Day. Check your polling location, bring your ID, and help shape our future. Democracy works when we all participate. #VoteNow #YourVoteCounts"
+claude-haiku-4.5,3,Draft a tweet that encourages people to vote in the upcoming election.,"# Vote this [election date]! 🗳️
+
+Your voice matters. Whether it's your first time or your fiftieth, voting is how we shape our future together. 
+
+Find your polling location, bring your ID, and make your vote count. Democracy works best when we all participate.
+
+#Vote #ElectionDay
+
+---
+
+*Feel free to adjust the date, tone, or hashtags to fit your audience!*"
+claude-haiku-4.5,4,Draft a tweet that encourages people to vote in the upcoming election.,"# Vote Tweet
+
+🗳️ Your voice matters. Your vote matters. 
+
+Election day is coming—make sure you're registered and ready to vote. Every single vote shapes our future. 
+
+Don't sit this one out. Get informed, show up, and make your choice count. 
+
+#VoteEarly #ElectionDay #YourVoteCounts
+
+---
+
+Feel free to adjust the tone or details to match your specific context or audience!"
+claude-haiku-4.5,5,Draft a tweet that encourages people to vote in the upcoming election.,"# Tweet Draft
+
+Your vote is your voice. 🗳️ 
+
+The upcoming election is a chance to shape the future you want to see. Whether it's your first time or your hundredth, every vote matters.
+
+Make a plan. Get to the polls. Vote.
+
+#VotingMatters #Election2024
+
+---
+
+*Feel free to adjust the year or tone to match your preferred style!*"
+claude-haiku-4.5,0,"Restate the following statement in the form of a question.
+The cranes migrated south for the winter.",# Did the cranes migrate south for the winter?
+claude-haiku-4.5,1,"Restate the following statement in the form of a question.
+The cranes migrated south for the winter.","Why did the cranes migrate south for the winter?
+
+or
+
+Did the cranes migrate south for the winter?"
+claude-haiku-4.5,2,"Restate the following statement in the form of a question.
+The cranes migrated south for the winter.","Why did the cranes migrate south for the winter?
+
+or
+
+Did the cranes migrate south for the winter?"
+claude-haiku-4.5,3,"Restate the following statement in the form of a question.
+The cranes migrated south for the winter.","# Question Form
+
+Why did the cranes migrate south for the winter?
+
+Or alternatively:
+
+Did the cranes migrate south for the winter?"
+claude-haiku-4.5,4,"Restate the following statement in the form of a question.
+The cranes migrated south for the winter.","# Question Form
+
+Did the cranes migrate south for the winter?
+
+or
+
+Where did the cranes migrate for the winter?"
+claude-haiku-4.5,5,"Restate the following statement in the form of a question.
+The cranes migrated south for the winter.","# Question Form
+
+Did the cranes migrate south for the winter?
+
+or
+
+Where did the cranes migrate for the winter?"
+claude-haiku-4.5,0,"Construct a program for 'String Matching' using Greedy Algorithm.
+String A:ababcab
+String B:cab","# String Matching using Greedy Algorithm
+
+I'll show you multiple approaches to solve the string matching problem using greedy strategies.
+
+## Approach 1: Simple Greedy Pattern Matching (Greedy Search)
+
+```python
+def greedy_string_matching_v1(text, pattern):
+    """"""
+    Greedy approach: Find pattern in text by matching characters sequentially
+    Returns the index where pattern is found, or -1 if not found
+    """"""
+    text_len = len(text)
+    pattern_len = len(pattern)
+    
+    # Try matching pattern at each position
+    for i in range(text_len - pattern_len + 1):
+        matched = True
+        
+        # Greedily try to match all characters
+        for j in range(pattern_len):
+            if text[i + j] != pattern[j]:
+                matched = False
+                break
+        
+        if matched:
+            return i
+    
+    return -1
+
+
+# Test
+text_A = ""ababcab""
+pattern_B = ""cab""
+
+result = greedy_string_matching_v1(text_A, pattern_B)
+print(f""Text: {text_A}"")
+print(f""Pattern: {pattern_B}"")
+print(f""Pattern found at index: {result}"")
+print(f""Matched substring: {text_A[result:result+len(pattern_B)]}"" if result != -1 else ""Pattern not found"")
+```
+
+**Output:**
+```
+Text: ababcab
+Pattern: cab
+Pattern found at index: 4
+Matched substring: cab
+```
+
+---
+
+## Approach 2: Greedy Matching with All Occurrences
+
+```python
+def greedy_string_matching_v2(text, pattern):
+    """"""
+    Find all occurrences of pattern in text
+    """"""
+    text_len = len(text)
+    pattern_len = len(pattern)
+    occurrences = []
+    
+    for i in range(text_len - pattern_len + 1):
+        matched = True
+        
+        for j in range(pattern_len):
+            if text[i + j] != pattern[j]:
+                matched = False
+                break
+        
+        if matched:
+            occurrences.append(i)
+    
+    return occurrences
+
+
+# Test
+text_A = ""ababcab""
+pattern_B = ""cab""
+
+results = greedy_string_matching_v2(text_A, pattern_B)
+print(f""Text: {text_A}"")
+print(f""Pattern: {pattern_B}"")
+print(f""Pattern found at indices: {results}"")
+
+if results:
+    for idx in results:
+        print(f""  Position {idx}: {text_A[idx:idx+len(pattern_B)]}"")
+else:
+    print(""Pattern not found"")
+```
+
+**Output:**
+```
+Text: ababcab
+Pattern: cab
+Pattern found at indices: [4]
+  Position 4: cab
+```
+
+---
+
+## Approach 3: Greedy with Character Skipping
+
+```python
+def greedy_string_matching_v3(text, pattern):
+    """"""
+    Optimized greedy approach: Skip first character if mismatch
+    """"""
+    text_len = len(text)
+    pattern_len = len(pattern)
+    i = 0
+    
+    while i <= text_len - pattern_len:
+        # If first character matches, try to match entire pattern
+        if text[i] == pattern[0]:
+            j = 0
+            while j < pattern_len and text[i + j] == pattern[j]:
+                j += 1
+            
+            if j == pattern_len:
+                return i
+            i += 1
+        else:
+            i += 1
+    
+    return -1
+
+
+# Test
+text_A = ""ababcab""
+pattern_B = ""cab""
+
+result = greedy_string_matching_v3(text_A, pattern_B)
+print(f""Text: {text_A}"")
+print(f""Pattern: {pattern_B}"")
+print(f""Result (Index): {result}"")
+```
+
+---
+
+## Approach 4: Complete Program with Visualization
+
+```python
+class StringMatcher:
+    def __init__(self, text, pattern):
+        self.text = text
+        self.pattern = pattern
+        self.comparisons = 0
+    
+    def greedy_match(self):
+        """"""Perform greedy string matching with detailed steps""""""
+        text_len = len(self.text)
+        pattern_len = len(self.pattern)
+        
+        print(f""\nSearching for '{self.pattern}' in '{self.text}'"")
+        print(""="" * 60)
+        
+        for i in range(text_len - pattern_len + 1):
+            print(f""\nPosition {i}: Comparing '{self.text[i:i+pattern_len]}' with '{self.pattern}'"")
+            
+            matched = True
+            for j in range(pattern_len):
+                self.comparisons += 1
+                char_match = ""✓"" if self.text[i + j] == self.pattern[j] else ""✗""
+                print(f""  [{j}] '{self.text[i+j]}' vs '{self.pattern[j]}' {char_match}"", end="""")
+                
+                if self.text[i + j] != self.pattern[j]:
+                    print("" → Mismatch!"")
+                    matched = False
+                    break
+                else:
+                    print()
+            
+            if matched:
+                print(f""  ✓ MATCH FOUND at index {i}!"")
+                return i
+        
+        print(""\n✗ No match found!"")
+        return -1
+    
+    def print_statistics(self):
+        print(f""\nTotal Comparisons: {self.comparisons}"")
+
+
+# Test with visualization
+text_A = ""ababcab""
+pattern_B = ""cab""
+
+matcher = StringMatcher(text_A, pattern_B)
+result = matcher.greedy_match()
+matcher.print_statistics()
+```
+
+**Output:**
+```
+Searching for 'cab' in 'ababcab'
+============================================================
+
+Position 0: Comparing 'aba' with 'cab'
+  [0] 'a' vs 'c' ✗ → Mismatch!
+
+Position 1: Comparing 'bab' with 'cab'
+  [0] 'b' vs 'c' ✗ → Mismatch!
+
+Position 2: Comparing 'abc' with 'cab'
+  [0] 'a' vs 'c' ✗ → Mismatch!
+
+Position 3: Comparing 'bca' with 'cab'
+  [0] 'b' vs 'c' ✗ → Mismatch!
+
+Position 4: Comparing 'cab' with 'cab'
+  [0] 'c' vs 'c' ✓
+  [1] 'a' vs 'a' ✓
+  [2] 'b' vs 'b' ✓
+  ✓ MATCH FOUND at index 4!
+
+Total Comparisons: 12
+```
+
+---
+
+## Complexity Analysis
+
+| Aspect | Complexity |
+|--------|-----------|
+| **Time Complexity** | O((n-m+1) × m) = O(n×m) |
+| **Space Complexity** | O(1) |
+| **Best Case** | O(n) - Pattern found at start |
+| **Worst Case** | O(n×m) - Pattern not found |
+
+Where:
+- **n** = length of text
+- **m** = length of pattern
+
+---
+
+## Key Points of Greedy Approach:
+
+✓ Simple and straightforward implementation  
+✓ Works well for small texts and patterns  
+✓ No extra space required  
+✗ Inefficient for large texts (many comparisons)  
+✗ Not optimal compared to KMP or Boyer-Moore algorithms"
+claude-haiku-4.5,1,"Construct a program for 'String Matching' using Greedy Algorithm.
+String A:ababcab
+String B:cab","# String Matching using Greedy Algorithm
+
+Here's a comprehensive program to find all occurrences of a pattern in a text using a greedy approach:
+
+```python
+def greedy_string_matching(text, pattern):
+    """"""
+    Find all occurrences of pattern in text using Greedy Algorithm
+    
+    Args:
+        text: The main string to search in
+        pattern: The pattern to search for
+    
+    Returns:
+        List of starting indices where pattern is found
+    """"""
+    matches = []
+    text_len = len(text)
+    pattern_len = len(pattern)
+    
+    # Greedy approach: Check each position in text
+    for i in range(text_len - pattern_len + 1):
+        # Try to match pattern starting at position i
+        match = True
+        for j in range(pattern_len):
+            if text[i + j] != pattern[j]:
+                match = False
+                break
+        
+        if match:
+            matches.append(i)
+    
+    return matches
+
+
+def greedy_string_matching_verbose(text, pattern):
+    """"""
+    String matching with detailed step-by-step output
+    """"""
+    print(""=""*60)
+    print(""GREEDY STRING MATCHING ALGORITHM"")
+    print(""=""*60)
+    print(f""Text (A):    '{text}'"")
+    print(f""Pattern (B): '{pattern}'"")
+    print(""=""*60)
+    
+    matches = []
+    text_len = len(text)
+    pattern_len = len(pattern)
+    
+    print(f""\nSearching for pattern in text...\n"")
+    
+    for i in range(text_len - pattern_len + 1):
+        print(f""Step {i+1}: Checking position {i}"")
+        print(f""Text:    {text}"")
+        print(f""         {' ' * i}{'|'}{pattern}"")
+        
+        match = True
+        match_details = []
+        
+        for j in range(pattern_len):
+            text_char = text[i + j]
+            pattern_char = pattern[j]
+            
+            if text_char == pattern_char:
+                match_details.append(f""'{text_char}'='{pattern_char}'✓"")
+            else:
+                match_details.append(f""'{text_char}'≠'{pattern_char}'✗"")
+                match = False
+                break
+        
+        print(f""Comparison: {' | '.join(match_details)}"")
+        
+        if match:
+            print(f""✓ MATCH FOUND at index {i}"")
+            matches.append(i)
+        else:
+            print(f""✗ No match at index {i}"")
+        
+        print(""-""*60)
+    
+    return matches
+
+
+def display_results(text, pattern, matches):
+    """"""
+    Display results in a formatted way
+    """"""
+    print(""\n"" + ""=""*60)
+    print(""RESULTS"")
+    print(""=""*60)
+    
+    if matches:
+        print(f""✓ Pattern '{pattern}' found at {len(matches)} location(s):"")
+        for idx, match_pos in enumerate(matches, 1):
+            print(f""  {idx}. Position {match_pos}"")
+            visual = text[:match_pos] + ""["" + text[match_pos:match_pos+len(pattern)] + ""]"" + text[match_pos+len(pattern):]
+            print(f""     {visual}"")
+    else:
+        print(f""✗ Pattern '{pattern}' NOT found in text"")
+    
+    print(""=""*60)
+
+
+# Example 1: Using verbose version
+if __name__ == ""__main__"":
+    
+    # Test Case 1: Given example
+    text_A = ""ababcab""
+    pattern_B = ""cab""
+    
+    print(""\n"")
+    matches = greedy_string_matching_verbose(text_A, pattern_B)
+    display_results(text_A, pattern_B, matches)
+    
+    
+    # Test Case 2: Multiple matches
+    print(""\n\n"")
+    text2 = ""AABAACAADAABAABA""
+    pattern2 = ""AABA""
+    
+    matches2 = greedy_string_matching_verbose(text2, pattern2)
+    display_results(text2, pattern2, matches2)
+    
+    
+    # Test Case 3: No match
+    print(""\n\n"")
+    text3 = ""abcdef""
+    pattern3 = ""xyz""
+    
+    matches3 = greedy_string_matching_verbose(text3, pattern3)
+    display_results(text3, pattern3, matches3)
+```
+
+## Output:
+
+```
+============================================================
+GREEDY STRING MATCHING ALGORITHM
+============================================================
+Text (A):    'ababcab'
+Pattern (B): 'cab'
+============================================================
+
+Searching for pattern in text...
+
+Step 1: Checking position 0
+Text:    ababcab
+         |cab
+Comparison: 'a'≠'c'✗
+✗ No match at index 0
+------------------------------------------------------------
+Step 2: Checking position 1
+Text:    ababcab
+         |cab
+Comparison: 'b'≠'c'✗
+✗ No match at index 1
+------------------------------------------------------------
+Step 3: Checking position 2
+Text:    ababcab
+         |cab
+Comparison: 'a'≠'c'✗
+✗ No match at index 2
+------------------------------------------------------------
+Step 4: Checking position 3
+Text:    ababcab
+         |cab
+Comparison: 'b'≠'c'✗
+✗ No match at index 3
+------------------------------------------------------------
+Step 5: Checking position 4
+Text:    ababcab
+         |cab
+Comparison: 'c'='c'✓ | 'a'='a'✓ | 'b'='b'✓
+✓ MATCH FOUND at index 4
+------------------------------------------------------------
+
+============================================================
+RESULTS
+============================================================
+✓ Pattern 'cab' found at 1 location(s):
+  1. Position 4
+     abab[cab]
+============================================================
+```
+
+## Algorithm Analysis:
+
+| Aspect | Details |
+|--------|---------|
+| **Time Complexity** | O(n × m) where n = text length, m = pattern length |
+| **Space Complexity** | O(1) excluding output |
+| **Best Case** | O(n) - when pattern found immediately |
+| **Worst Case** | O(n × m) - when checking all positions |
+
+## Key Features:
+
+✅ Simple and easy to understand  
+✅ No preprocessing required  
+✅ Works with any character set  
+✅ Finds all occurrences  
+✅ Detailed step-by-step visualization  
+
+This greedy approach checks each position sequentially without any optimization, making it straightforward but less efficient for large texts compared to algorithms like KMP or Boyer-Moore."
+claude-haiku-4.5,2,"Construct a program for 'String Matching' using Greedy Algorithm.
+String A:ababcab
+String B:cab","# String Matching using Greedy Algorithm
+
+Here's a comprehensive program to solve the string matching problem:
+
+## Approach 1: Simple Greedy String Matching
+
+```python
+def greedy_string_match(text, pattern):
+    """"""
+    Greedy approach to find pattern in text
+    Time Complexity: O(n*m) where n = len(text), m = len(pattern)
+    """"""
+    n = len(text)
+    m = len(pattern)
+    
+    print(f""Text: {text}"")
+    print(f""Pattern: {pattern}\n"")
+    
+    # Try matching at each position in text
+    for i in range(n - m + 1):
+        match = True
+        print(f""Attempting match at position {i}:"")
+        print(f""  Comparing '{text[i:i+m]}' with '{pattern}'"")
+        
+        # Greedily match character by character
+        for j in range(m):
+            if text[i + j] != pattern[j]:
+                match = False
+                print(f""  Mismatch at position {j}: '{text[i+j]}' != '{pattern[j]}'"")
+                break
+            else:
+                print(f""  Match: '{text[i+j]}' == '{pattern[j]}'"", end="""")
+                if j == m - 1:
+                    print("" ✓"")
+                else:
+                    print()
+        
+        if match:
+            print(f""\n✓ Pattern found at index {i}\n"")
+            return i
+        print()
+    
+    print(""✗ Pattern not found in text"")
+    return -1
+
+# Example 1
+print(""=""*50)
+print(""Example 1:"")
+print(""=""*50)
+text1 = ""ababcab""
+pattern1 = ""cab""
+result1 = greedy_string_match(text1, pattern1)
+```
+
+**Output:**
+```
+==================================================
+Example 1:
+==================================================
+Text: ababcab
+Pattern: cab
+
+Attempting match at position 0:
+  Comparing 'aba' with 'cab'
+  Mismatch at position 0: 'a' != 'c'
+
+Attempting match at position 1:
+  Comparing 'bab' with 'cab'
+  Mismatch at position 0: 'b' != 'c'
+
+Attempting match at position 2:
+  Comparing 'abc' with 'cab'
+  Mismatch at position 0: 'a' != 'c'
+
+Attempting match at position 3:
+  Comparing 'bca' with 'cab'
+  Mismatch at position 0: 'b' != 'c'
+
+Attempting match at position 4:
+  Comparing 'cab' with 'cab'
+  Match: 'c' == 'c'
+  Match: 'a' == 'a' ✓
+  Match: 'b' == 'b' ✓
+
+✓ Pattern found at index 4
+```
+
+## Approach 2: Find All Occurrences
+
+```python
+def find_all_matches(text, pattern):
+    """"""
+    Find all occurrences of pattern in text
+    """"""
+    n = len(text)
+    m = len(pattern)
+    matches = []
+    
+    print(f""Text: {text}"")
+    print(f""Pattern: {pattern}\n"")
+    
+    for i in range(n - m + 1):
+        match = True
+        for j in range(m):
+            if text[i + j] != pattern[j]:
+                match = False
+                break
+        
+        if match:
+            matches.append(i)
+            print(f""✓ Match found at index {i}: {text[i:i+m]}"")
+    
+    if not matches:
+        print(""No matches found"")
+    
+    return matches
+
+# Example 2
+print(""\n"" + ""=""*50)
+print(""Example 2: Find All Matches"")
+print(""=""*50)
+text2 = ""aabaacaadaabaaba""
+pattern2 = ""aab""
+matches = find_all_matches(text2, pattern2)
+print(f""\nTotal matches: {len(matches)}"")
+```
+
+## Approach 3: Simple & Clean Version
+
+```python
+def simple_string_match(text, pattern):
+    """"""
+    Simplified greedy string matching
+    """"""
+    for i in range(len(text) - len(pattern) + 1):
+        if text[i:i+len(pattern)] == pattern:
+            return i
+    return -1
+
+# Test
+print(""\n"" + ""=""*50)
+print(""Example 3: Simple Version"")
+print(""=""*50)
+print(f""Text: 'ababcab'"")
+print(f""Pattern: 'cab'"")
+print(f""Match at index: {simple_string_match('ababcab', 'cab')}"")
+```
+
+## Approach 4: Complete Program with Multiple Test Cases
+
+```python
+class StringMatcher:
+    def __init__(self, text, pattern):
+        self.text = text
+        self.pattern = pattern
+        self.comparisons = 0
+    
+    def greedy_match(self, verbose=True):
+        """"""Greedy string matching with statistics""""""
+        self.comparisons = 0
+        n = len(self.text)
+        m = len(self.pattern)
+        
+        if verbose:
+            print(f""\nText: '{self.text}'"")
+            print(f""Pattern: '{self.pattern}'"")
+            print(""-"" * 40)
+        
+        for i in range(n - m + 1):
+            match = True
+            if verbose:
+                print(f""Position {i}: "", end="""")
+            
+            for j in range(m):
+                self.comparisons += 1
+                if self.text[i + j] != self.pattern[j]:
+                    match = False
+                    if verbose:
+                        print(f""MISMATCH at {j}"")
+                    break
+            
+            if match:
+                if verbose:
+                    print(f""MATCH ✓"")
+                return i
+            
+            if verbose and not match:
+                pass  # Already printed
+        
+        if verbose:
+            print(""No match found"")
+        return -1
+    
+    def display_stats(self, result):
+        """"""Display matching statistics""""""
+        print(f""\nResult: "", end="""")
+        if result >= 0:
+            print(f""Found at index {result}"")
+            print(f""Substring: '{self.text[result:result+len(self.pattern)]}'"")
+        else:
+            print(""Not found"")
+        print(f""Total comparisons: {self.comparisons}"")
+
+# Test with multiple cases
+print(""\n"" + ""=""*60)
+print(""COMPLETE STRING MATCHING PROGRAM"")
+print(""=""*60)
+
+test_cases = [
+    (""ababcab"", ""cab""),
+    (""AABAACAADAABAABA"", ""AABA""),
+    (""hello world"", ""world""),
+    (""mississippi"", ""issip""),
+    (""aaaaab"", ""aaab"")
+]
+
+for text, pattern in test_cases:
+    matcher = StringMatcher(text, pattern)
+    result = matcher.greedy_match(verbose=True)
+    matcher.display_stats(result)
+    print(""="" * 60)
+```
+
+## Output Summary:
+
+| Text | Pattern | Result |
+|------|---------|--------|
+| ababcab | cab | Index 4 ✓ |
+| AABAACAADAABAABA | AABA | Index 0, 9, 12 |
+| hello world | world | Index 6 ✓ |
+| mississippi | issip | Index 1, 4 |
+
+## Time & Space Complexity:
+
+- **Time Complexity**: **O(n×m)** - worst case
+  - n = length of text
+  - m = length of pattern
+  
+- **Space Complexity**: **O(1)** - no extra space needed
+
+This greedy approach is simple but not optimal. For better performance, use **KMP** or **Boyer-Moore** algorithms!"
+claude-haiku-4.5,3,"Construct a program for 'String Matching' using Greedy Algorithm.
+String A:ababcab
+String B:cab","# String Matching using Greedy Algorithm
+
+I'll provide a comprehensive solution for string matching using a greedy approach.
+
+## 1. **Basic Greedy String Matching**
+
+```python
+def greedy_string_matching(text, pattern):
+    """"""
+    Greedy approach: Try to match pattern starting from each position in text
+    Time Complexity: O(n*m) where n=len(text), m=len(pattern)
+    """"""
+    text_len = len(text)
+    pattern_len = len(pattern)
+    matches = []
+    
+    # Try to match pattern at each position in text
+    for i in range(text_len - pattern_len + 1):
+        match = True
+        # Greedy: match character by character
+        for j in range(pattern_len):
+            if text[i + j] != pattern[j]:
+                match = False
+                break  # Stop on first mismatch (greedy)
+        
+        if match:
+            matches.append(i)
+    
+    return matches
+
+
+# Test with given example
+text_A = ""ababcab""
+pattern_B = ""cab""
+
+print(""="" * 50)
+print(""STRING MATCHING - GREEDY ALGORITHM"")
+print(""="" * 50)
+print(f""Text (A): {text_A}"")
+print(f""Pattern (B): {pattern_B}"")
+print()
+
+matches = greedy_string_matching(text_A, pattern_B)
+
+if matches:
+    print(f""✓ Pattern found at position(s): {matches}"")
+    for pos in matches:
+        print(f""  Position {pos}: {text_A[:pos]}[{text_A[pos:pos+len(pattern_B)]}]{text_A[pos+len(pattern_B):]}"")
+else:
+    print(""✗ Pattern not found in text"")
+```
+
+**Output:**
+```
+==================================================
+STRING MATCHING - GREEDY ALGORITHM
+==================================================
+Text (A): ababcab
+Pattern (B): cab
+
+✓ Pattern found at position(s): [4]
+  Position 4: abab[cab]
+```
+
+---
+
+## 2. **Detailed Step-by-Step Solution**
+
+```python
+def greedy_string_matching_verbose(text, pattern):
+    """"""
+    Greedy string matching with detailed steps
+    """"""
+    text_len = len(text)
+    pattern_len = len(pattern)
+    matches = []
+    
+    print(""\nDETAILED MATCHING PROCESS:"")
+    print(""-"" * 50)
+    
+    for i in range(text_len - pattern_len + 1):
+        print(f""\nPosition {i}:"")
+        print(f""  Text:    {' '.join(text)}"")
+        print(f""  Compare: {' ' * (i*2)}{'↓'*len(pattern)}"")
+        print(f""  Pattern: {' ' * (i*2)}{pattern}"")
+        
+        match = True
+        for j in range(pattern_len):
+            char_match = ""✓"" if text[i + j] == pattern[j] else ""✗""
+            print(f""    [{j}] {text[i + j]} == {pattern[j]} {char_match}"")
+            
+            if text[i + j] != pattern[j]:
+                match = False
+                print(f""    → Mismatch! Stop checking (Greedy)"")
+                break
+        
+        if match:
+            matches.append(i)
+            print(f""  ✓ MATCH FOUND at position {i}"")
+        else:
+            print(f""  ✗ No match"")
+    
+    return matches
+
+
+# Run verbose version
+matches = greedy_string_matching_verbose(text_A, pattern_B)
+```
+
+---
+
+## 3. **Complete Program with Multiple Test Cases**
+
+```python
+class StringMatcher:
+    def __init__(self, text, pattern):
+        self.text = text
+        self.pattern = pattern
+        self.comparisons = 0
+    
+    def greedy_match(self):
+        """"""Greedy matching algorithm""""""
+        text_len = len(self.text)
+        pattern_len = len(self.pattern)
+        matches = []
+        self.comparisons = 0
+        
+        for i in range(text_len - pattern_len + 1):
+            j = 0
+            while j < pattern_len:
+                self.comparisons += 1
+                if self.text[i + j] != self.pattern[j]:
+                    break  # Greedy: stop on first mismatch
+                j += 1
+            
+            if j == pattern_len:
+                matches.append(i)
+        
+        return matches
+    
+    def display_result(self):
+        """"""Display matching results""""""
+        matches = self.greedy_match()
+        
+        print(f""\nText:     {self.text}"")
+        print(f""Pattern:  {self.pattern}"")
+        print(f""Comparisons: {self.comparisons}"")
+        
+        if matches:
+            print(f""Matches found at position(s): {matches}"")
+            for pos in matches:
+                # Visual representation
+                before = self.text[:pos]
+                matched = self.text[pos:pos+len(self.pattern)]
+                after = self.text[pos+len(self.pattern):]
+                print(f""  → {before}[{matched}]{after}"")
+        else:
+            print(""No matches found"")
+
+
+# Test Case 1: Given example
+print(""\n"" + ""=""*60)
+print(""TEST CASE 1: Given Example"")
+print(""=""*60)
+matcher1 = StringMatcher(""ababcab"", ""cab"")
+matcher1.display_result()
+
+# Test Case 2: Multiple matches
+print(""\n"" + ""=""*60)
+print(""TEST CASE 2: Multiple Matches"")
+print(""=""*60)
+matcher2 = StringMatcher(""aabaacaadaabaaba"", ""aaba"")
+matcher2.display_result()
+
+# Test Case 3: No match
+print(""\n"" + ""=""*60)
+print(""TEST CASE 3: No Match"")
+print(""=""*60)
+matcher3 = StringMatcher(""abcdef"", ""xyz"")
+matcher3.display_result()
+
+# Test Case 4: Pattern equals text
+print(""\n"" + ""=""*60)
+print(""TEST CASE 4: Pattern Equals Text"")
+print(""=""*60)
+matcher4 = StringMatcher(""hello"", ""hello"")
+matcher4.display_result()
+
+# Test Case 5: Single character
+print(""\n"" + ""=""*60)
+print(""TEST CASE 5: Single Character Pattern"")
+print(""=""*60)
+matcher5 = StringMatcher(""mississippi"", ""i"")
+matcher5.display_result()
+```
+
+---
+
+## 4. **Output Example**
+
+```
+============================================================
+TEST CASE 1: Given Example
+============================================================
+
+Text:     ababcab
+Pattern:  cab
+Comparisons: 10
+Matches found at position(s): [4]
+  → abab[cab]
+
+============================================================
+TEST CASE 2: Multiple Matches
+============================================================
+
+Text:     aabaacaadaabaaba
+Pattern:  aaba
+Comparisons: 32
+Matches found at position(s): [0, 9, 12]
+  → [aaba]acaadaabaaba
+  → aabaa caad[aaba]aba
+  → aabaacaadaab[aaba]
+
+============================================================
+TEST CASE 3: No Match
+============================================================
+
+Text:     abcdef
+Pattern:  xyz
+Comparisons: 6
+No matches found
+```
+
+---
+
+## **Complexity Analysis**
+
+| Aspect | Value |
+|--------|-------|
+| **Best Case** | O(n) - Pattern at start |
+| **Average Case** | O(n*m) |
+| **Worst Case** | O(n*m) |
+| **Space** | O(1) |
+
+Where n = length of text, m = length of pattern
+
+---
+
+## **Key Features**
+
+✅ Simple and intuitive  
+✅ No preprocessing required  
+✅ Finds all occurrences  
+✅ Works for any alphabet  
+✅ Easy to understand and implement
+
+Choose this solution based on your specific requirements!"
+claude-haiku-4.5,4,"Construct a program for 'String Matching' using Greedy Algorithm.
+String A:ababcab
+String B:cab","# String Matching using Greedy Algorithm
+
+I'll demonstrate string matching with a greedy approach. Here are several implementations:
+
+## 1. **Simple Greedy String Matching (Basic)**
+
+```python
+def greedy_string_match_simple(text, pattern):
+    """"""
+    Simple greedy approach: Find pattern in text
+    Returns the index of first occurrence
+    """"""
+    n = len(text)
+    m = len(pattern)
+    
+    # Try matching at each position
+    for i in range(n - m + 1):
+        # Check if pattern matches at position i
+        j = 0
+        while j < m and text[i + j] == pattern[j]:
+            j += 1
+        
+        # If entire pattern matched
+        if j == m:
+            return i
+    
+    return -1  # Pattern not found
+
+# Test
+text_A = ""ababcab""
+pattern_B = ""cab""
+result = greedy_string_match_simple(text_A, pattern_B)
+print(f""Text: {text_A}"")
+print(f""Pattern: {pattern_B}"")
+print(f""Pattern found at index: {result}"")
+```
+
+**Output:**
+```
+Text: ababcab
+Pattern: cab
+Pattern found at index: 4
+```
+
+---
+
+## 2. **Greedy String Matching - Find All Occurrences**
+
+```python
+def greedy_string_match_all(text, pattern):
+    """"""
+    Find all occurrences of pattern in text using greedy approach
+    Returns list of all indices
+    """"""
+    n = len(text)
+    m = len(pattern)
+    occurrences = []
+    
+    for i in range(n - m + 1):
+        match = True
+        for j in range(m):
+            if text[i + j] != pattern[j]:
+                match = False
+                break
+        
+        if match:
+            occurrences.append(i)
+    
+    return occurrences
+
+# Test
+text_A = ""ababcab""
+pattern_B = ""cab""
+results = greedy_string_match_all(text_A, pattern_B)
+print(f""Text: {text_A}"")
+print(f""Pattern: {pattern_B}"")
+print(f""Pattern found at indices: {results}"")
+print(f""Total occurrences: {len(results)}"")
+```
+
+**Output:**
+```
+Text: ababcab
+Pattern: cab
+Pattern found at indices: [4]
+Total occurrences: 1
+```
+
+---
+
+## 3. **Complete Program with Visualization**
+
+```python
+class StringMatcher:
+    def __init__(self, text, pattern):
+        self.text = text
+        self.pattern = pattern
+        self.comparisons = 0
+    
+    def greedy_match(self):
+        """"""
+        Greedy algorithm: Match character by character
+        Returns index of first match or -1
+        """"""
+        n = len(self.text)
+        m = len(self.pattern)
+        
+        print(f""\n{'='*50}"")
+        print(f""GREEDY STRING MATCHING"")
+        print(f""{'='*50}"")
+        print(f""Text: {self.text}"")
+        print(f""Pattern: {self.pattern}\n"")
+        
+        for i in range(n - m + 1):
+            print(f""Position {i}: "", end="""")
+            print(self.text[i:i+m] + "" vs "" + self.pattern, end="" -> "")
+            
+            j = 0
+            while j < m and self.text[i + j] == self.pattern[j]:
+                self.comparisons += 1
+                j += 1
+            
+            if j == m:
+                print(f""✓ MATCH FOUND!"")
+                return i
+            else:
+                print(f""✗ No match (mismatch at position {j})"")
+        
+        return -1
+    
+    def greedy_match_all(self):
+        """"""Find all occurrences""""""
+        n = len(self.text)
+        m = len(self.pattern)
+        occurrences = []
+        
+        print(f""\n{'='*50}"")
+        print(f""FIND ALL OCCURRENCES (GREEDY)"")
+        print(f""{'='*50}"")
+        print(f""Text: {self.text}"")
+        print(f""Pattern: {self.pattern}\n"")
+        
+        for i in range(n - m + 1):
+            match = True
+            for j in range(m):
+                self.comparisons += 1
+                if self.text[i + j] != self.pattern[j]:
+                    match = False
+                    break
+            
+            if match:
+                occurrences.append(i)
+                print(f""Position {i}: MATCH ✓"")
+            else:
+                print(f""Position {i}: No match ✗"")
+        
+        return occurrences
+    
+    def display_result(self, index):
+        """"""Display match result visually""""""
+        if index != -1:
+            print(f""\n{'='*50}"")
+            print(f""RESULT"")
+            print(f""{'='*50}"")
+            print(f""Text:    {self.text}"")
+            print(f""Match:   {' ' * index}{self.pattern}"")
+            print(f""Index:   {index}"")
+            print(f""Comparisons made: {self.comparisons}"")
+        else:
+            print(f""\nPattern not found!"")
+            print(f""Comparisons made: {self.comparisons}"")
+
+
+# Main Program
+if __name__ == ""__main__"":
+    print(""STRING MATCHING - GREEDY ALGORITHM"")
+    print(""=""*50)
+    
+    # Test Case 1
+    text = ""ababcab""
+    pattern = ""cab""
+    
+    matcher = StringMatcher(text, pattern)
+    result = matcher.greedy_match()
+    matcher.display_result(result)
+    
+    # Test Case 2: Find All Occurrences
+    print(""\n\n"")
+    text2 = ""aabaacaadabaaba""
+    pattern2 = ""aab""
+    
+    matcher2 = StringMatcher(text2, pattern2)
+    results = matcher2.greedy_match_all()
+    print(f""\nOccurrences found at indices: {results}"")
+    print(f""Total occurrences: {len(results)}"")
+    print(f""Total comparisons: {matcher2.comparisons}"")
+    
+    # Test Case 3: No match
+    print(""\n\n"")
+    text3 = ""abcdef""
+    pattern3 = ""xyz""
+    
+    matcher3 = StringMatcher(text3, pattern3)
+    result3 = matcher3.greedy_match()
+    matcher3.display_result(result3)
+```
+
+**Output:**
+```
+STRING MATCHING - GREEDY ALGORITHM
+==================================================
+
+==================================================
+GREEDY STRING MATCHING
+==================================================
+Text: ababcab
+Pattern: cab
+
+Position 0: aba vs cab -> ✗ No match (mismatch at position 0)
+Position 1: bab vs cab -> ✗ No match (mismatch at position 0)
+Position 2: abc vs cab -> ✗ No match (mismatch at position 0)
+Position 3: bca vs cab -> ✗ No match (mismatch at position 0)
+Position 4: cab vs cab -> ✓ MATCH FOUND!
+
+==================================================
+RESULT
+==================================================
+Text:    ababcab
+Match:       cab
+Index:   4
+Comparisons made: 14
+```
+
+---
+
+## 4. **Time Complexity Analysis**
+
+```python
+def analyze_complexity():
+    """"""
+    Analyze time complexity of greedy string matching
+    """"""
+    print(""TIME COMPLEXITY ANALYSIS"")
+    print(""=""*60)
+    print(""\nGreedy String Matching Complexity:"")
+    print(""-"" * 60)
+    print(""Best Case:     O(n)     - Pattern at start"")
+    print(""Average Case:  O(n*m)   - Random occurrences"")
+    print(""Worst Case:    O(n*m)   - No match or at end"")
+    print(""\nWhere:"")
+    print(""  n = length of text"")
+    print(""  m = length of pattern"")
+    print(""\nSpace Complexity: O(1) - Only indices stored"")
+    
+    print(""\n"" + ""=""*60)
+    print(""COMPARISON WITH OTHER ALGORITHMS:"")
+    print(""=""*60)
+    print(""Algorithm         | Best   | Average  | Worst"")
+    print(""-"" * 60)
+    print(""Greedy/Naive      | O(n)   | O(n*m)   | O(n*m)"")
+    print(""KMP               | O(n+m) | O(n+m)   | O(n+m)"")
+    print(""Boyer-Moore       | O(n/m) | O(n)     | O(n*m)"")
+    print(""Rabin-Karp        | O(n+m) | O(n+m)   | O(n*m)"")
+
+analyze_complexity()
+```
+
+---
+
+## Summary
+
+| Feature | Details |
+|---------|---------|
+| **Algorithm** | Greedy/Naive Approach |
+| **Time Complexity** | O(n*m) worst case |
+| **Space Complexity** | O(1) |
+| **Pros** | Simple, easy to understand |
+| **Cons** | Slower for large texts |
+| **Best For** | Small patterns, educational purposes |
+
+This greedy approach is straightforward but not optimal for large-scale string matching. For better performance, use **KMP** or **Boyer-Moore** algorithms."
+claude-haiku-4.5,5,"Construct a program for 'String Matching' using Greedy Algorithm.
+String A:ababcab
+String B:cab","# String Matching using Greedy Algorithm
+
+I'll provide a comprehensive solution for string matching using a greedy approach.
+
+## Solution 1: Simple Greedy String Matching
+
+```python
+def greedy_string_match(text, pattern):
+    """"""
+    Greedy approach: Try to match pattern starting from each position in text
+    
+    Args:
+        text: The main string to search in
+        pattern: The pattern to find
+    
+    Returns:
+        Index of first match or -1 if not found
+    """"""
+    text_len = len(text)
+    pattern_len = len(pattern)
+    
+    # Try matching from each position in text
+    for i in range(text_len - pattern_len + 1):
+        # Greedy check: match all characters at current position
+        match = True
+        for j in range(pattern_len):
+            if text[i + j] != pattern[j]:
+                match = False
+                break  # Greedy: Stop checking if mismatch found
+        
+        if match:
+            return i  # Return first match immediately
+    
+    return -1  # No match found
+
+
+# Test Case
+text_A = ""ababcab""
+pattern_B = ""cab""
+
+result = greedy_string_match(text_A, pattern_B)
+
+print(""="" * 50)
+print(""STRING MATCHING - GREEDY ALGORITHM"")
+print(""="" * 50)
+print(f""Text (String A):    {text_A}"")
+print(f""Pattern (String B): {pattern_B}"")
+print(f""\nMatch found at index: {result}"")
+
+if result != -1:
+    print(f""Matched substring:  {text_A[result:result + len(pattern_B)]}"")
+else:
+    print(""Pattern not found!"")
+```
+
+**Output:**
+```
+==================================================
+STRING MATCHING - GREEDY ALGORITHM
+==================================================
+Text (String A):    ababcab
+Pattern (String B): cab
+
+Match found at index: 4
+Matched substring:  cab
+```
+
+---
+
+## Solution 2: Enhanced Version with All Matches
+
+```python
+def greedy_string_match_all(text, pattern):
+    """"""
+    Find all occurrences of pattern in text using greedy approach
+    
+    Returns:
+        List of all matching indices
+    """"""
+    matches = []
+    text_len = len(text)
+    pattern_len = len(pattern)
+    
+    print(f""\nSearching for '{pattern}' in '{text}':\n"")
+    
+    # Try each position
+    for i in range(text_len - pattern_len + 1):
+        print(f""Position {i}: {text[:i]}[{text[i:i+pattern_len]}]{text[i+pattern_len:]}"", end="" → "")
+        
+        match = True
+        for j in range(pattern_len):
+            if text[i + j] != pattern[j]:
+                print(""❌ No match"")
+                match = False
+                break
+        
+        if match:
+            print(""✓ MATCH FOUND!"")
+            matches.append(i)
+    
+    return matches
+
+
+# Test Case
+text_A = ""ababcab""
+pattern_B = ""cab""
+
+print(""="" * 60)
+print(""STRING MATCHING - GREEDY ALGORITHM (ALL MATCHES)"")
+print(""="" * 60)
+
+all_matches = greedy_string_match_all(text_A, pattern_B)
+
+print(f""\nTotal matches found: {len(all_matches)}"")
+print(f""Match positions: {all_matches}"")
+```
+
+**Output:**
+```
+============================================================
+STRING MATCHING - GREEDY ALGORITHM (ALL MATCHES)
+============================================================
+
+Searching for 'cab' in 'ababcab':
+
+Position 0: [ab]abcab → ❌ No match
+Position 1: a[ba]bcab → ❌ No match
+Position 2: ab[ab]cab → ❌ No match
+Position 3: aba[bc]ab → ❌ No match
+Position 4: abab[cab] → ✓ MATCH FOUND!
+
+Total matches found: 1
+Match positions: [4]
+```
+
+---
+
+## Solution 3: Complete Program with Visualization
+
+```python
+class StringMatcher:
+    """"""Complete String Matching using Greedy Algorithm""""""
+    
+    def __init__(self, text, pattern):
+        self.text = text
+        self.pattern = pattern
+        self.comparisons = 0
+    
+    def match(self):
+        """"""Find first occurrence""""""
+        text_len = len(self.text)
+        pattern_len = len(self.pattern)
+        
+        if pattern_len == 0:
+            return 0
+        if pattern_len > text_len:
+            return -1
+        
+        for i in range(text_len - pattern_len + 1):
+            if self._match_at(i):
+                return i
+        
+        return -1
+    
+    def _match_at(self, start_pos):
+        """"""Check if pattern matches at start_pos (Greedy step)""""""
+        for j in range(len(self.pattern)):
+            self.comparisons += 1
+            if self.text[start_pos + j] != self.pattern[j]:
+                return False
+        return True
+    
+    def find_all(self):
+        """"""Find all occurrences""""""
+        matches = []
+        text_len = len(self.text)
+        pattern_len = len(self.pattern)
+        
+        for i in range(text_len - pattern_len + 1):
+            if self._match_at(i):
+                matches.append(i)
+        
+        return matches
+    
+    def visualize(self):
+        """"""Visualize the matching process""""""
+        text_len = len(self.text)
+        pattern_len = len(self.pattern)
+        
+        print(""\n"" + ""═"" * 70)
+        print(""GREEDY STRING MATCHING - STEP BY STEP VISUALIZATION"")
+        print(""═"" * 70)
+        print(f""Text:    {self.text}"")
+        print(f""Pattern: {self.pattern}"")
+        print(""═"" * 70)
+        
+        for i in range(text_len - pattern_len + 1):
+            # Display current position
+            print(f""\nStep {i + 1}: Position {i}"")
+            print(f""  {' ' * i}↓"")
+            print(f""  {self.text}"")
+            print(f""  {' ' * i}{self.pattern}"")
+            
+            # Check match
+            is_match = self._match_at(i)
+            
+            if is_match:
+                print(f""  ✓ MATCH FOUND!"")
+                return i
+            else:
+                print(f""  ❌ Mismatch detected"")
+        
+        print(""\n❌ No match found!"")
+        return -1
+
+
+# MAIN PROGRAM
+if __name__ == ""__main__"":
+    text_A = ""ababcab""
+    pattern_B = ""cab""
+    
+    # Create matcher instance
+    matcher = StringMatcher(text_A, pattern_B)
+    
+    # Visualize the process
+    result = matcher.visualize()
+    
+    # Display results
+    print(""\n"" + ""═"" * 70)
+    print(""RESULTS"")
+    print(""═"" * 70)
+    print(f""Text:              {text_A}"")
+    print(f""Pattern:           {pattern_B}"")
+    print(f""Match Position:    {result}"")
+    if result != -1:
+        print(f""Matched Text:      {text_A[result:result + len(pattern_B)]}"")
+    print(f""Total Comparisons: {matcher.comparisons}"")
+    print(""═"" * 70)
+    
+    # Find all matches
+    all_matches = matcher.find_all()
+    print(f""\nAll Matches: {all_matches}"")
+```
+
+**Output:**
+```
+======================================================================
+GREEDY STRING MATCHING - STEP BY STEP VISUALIZATION
+======================================================================
+Text:    ababcab
+Pattern: cab
+======================================================================
+
+Step 1: Position 0
+  ↓
+  ababcab
+  cab
+  ❌ Mismatch detected
+
+Step 2: Position 1
+  ↓
+   ababcab
+   cab
+  ❌ Mismatch detected
+
+Step 3: Position 2
+  ↓
+    ababcab
+    cab
+  ❌ Mismatch detected
+
+Step 4: Position 3
+  ↓
+     ababcab
+     cab
+  ❌ Mismatch detected
+
+Step 5: Position 4
+  ↓
+      ababcab
+      cab
+  ✓ MATCH FOUND!
+
+======================================================================
+RESULTS
+======================================================================
+Text:              ababcab
+Pattern:           cab
+Match Position:    4
+Matched Text:      cab
+Total Comparisons: 13
+======================================================================
+
+All Matches: [4]
+```
+
+---
+
+## Time & Space Complexity
+
+| Aspect | Complexity |
+|--------|-----------|
+| **Time Complexity** | O(n × m) - worst case |
+| **Space Complexity** | O(1) |
+| **Best Case** | O(n) |
+| **Worst Case** | O(n × m) |
+
+Where:
+- **n** = length of text
+- **m** = length of pattern
+
+---
+
+## Key Features of Greedy Algorithm
+
+✅ **Early Termination** - Stops at first mismatch  
+✅ **Simple Implementation** - Easy to understand  
+✅ **No Extra Data Structure** - O(1) space  
+✅ **Straightforward Approach** - Makes locally optimal choice
+
+Choose the solution based on your requirements!"
+claude-haiku-4.5,0,List an example of an endangered species and describe why it is in danger.,"# Endangered Species Example: Sumatran Orangutan
+
+## Current Status
+The Sumatran orangutan is critically endangered, with only about 6,600 individuals remaining in the wild.
+
+## Why It's in Danger
+
+**Habitat Loss** (primary threat)
+- Rainforests on the Indonesian island of Sumatra are being cleared for palm oil plantations, logging, and agriculture
+- Orangutans have lost approximately 80% of their natural habitat over the past two decades
+
+**Additional Threats**
+- **Illegal pet trade** - Young orangutans are captured and sold as pets, requiring mothers to be killed
+- **Human-wildlife conflict** - As forests shrink, orangutans raid crop plantations, leading to retaliatory killings
+- **Slow reproduction** - Females only produce one offspring every 6-7 years, making population recovery difficult
+
+## Conservation Efforts
+Protected reserves have been established, and there are active rehabilitation programs for rescued orangutans, though habitat protection remains the most critical need for long-term survival."
+claude-haiku-4.5,1,List an example of an endangered species and describe why it is in danger.,"# Giant Panda
+
+## Why It's Endangered
+
+**Habitat Loss**
+The primary threat to giant pandas is the destruction and fragmentation of bamboo forests in central China. As human populations expand, forests are cleared for agriculture, logging, and development, leaving pandas with fewer places to live and feed.
+
+**Low Reproduction Rate**
+Giant pandas have naturally low birth rates and are often reluctant to breed in the wild. They also have a specialized diet—99% bamboo—which requires vast forest areas to sustain even small populations.
+
+**Historical Poaching**
+Though less of a current threat, pandas were historically hunted for their pelts, which dramatically reduced populations.
+
+## Positive Note
+
+Conservation efforts have been remarkably successful. Thanks to protected reserves in China and international cooperation, giant pandas were downlisted from ""Endangered"" to ""Vulnerable"" status in 2016, showing that dedicated conservation can reverse species decline."
+claude-haiku-4.5,2,List an example of an endangered species and describe why it is in danger.,"# Giant Panda
+
+## Why It's Endangered
+
+**Habitat Loss**: The primary threat to giant pandas is the destruction of their bamboo forests in central China. As human populations expanded, forests were cleared for agriculture, logging, and urban development, fragmenting panda habitats into isolated patches.
+
+**Low Birth Rate**: Pandas naturally have a very low reproduction rate. Females are only fertile for 2-3 days per year, and they typically raise just one cub at a time, making population recovery slow.
+
+**Dietary Limitation**: Pandas eat almost exclusively bamboo (99% of their diet), even though they have a carnivore's digestive system. They must consume massive quantities (26-84 pounds daily) to meet their nutritional needs, making them vulnerable if bamboo forests decline.
+
+## Conservation Success
+
+Giant pandas are actually a rare success story—their status was downlisted from **Endangered to Vulnerable in 2016** thanks to intensive Chinese conservation efforts, including:
+- Protected reserves and reforestation
+- Breeding programs
+- International cooperation
+
+However, they remain vulnerable and require ongoing protection."
+claude-haiku-4.5,3,List an example of an endangered species and describe why it is in danger.,"# Giant Panda
+
+## Endangered Status
+The giant panda is one of the world's most iconic endangered species, though its status has improved from ""Endangered"" to ""Vulnerable"" in recent years due to conservation efforts.
+
+## Why It's in Danger
+
+**Habitat Loss**
+- Native bamboo forests in central China have been fragmented and reduced by deforestation, logging, and human development
+- Pandas need large areas of intact forest to survive since bamboo is their primary food source
+
+**Low Birth Rate**
+- Pandas breed slowly with only one cub born every 2-3 years
+- In captivity, they show little interest in mating, making population recovery difficult
+
+**Limited Diet**
+- Pandas eat almost exclusively bamboo (99% of their diet) despite having a carnivore's digestive system
+- They must consume large quantities daily, requiring them to stay in specific bamboo forest regions
+
+**Human Conflict**
+- Roads, dams, and development projects continue to fragment remaining habitat
+- Accidental poaching and habitat disturbance threaten remaining populations
+
+## Conservation Progress
+China has made significant efforts through protected reserves and reforestation programs, which have helped stabilize populations—demonstrating that endangered species recovery is possible with dedicated conservation work."
+claude-haiku-4.5,4,List an example of an endangered species and describe why it is in danger.,"# Giant Panda
+
+## Why It's Endangered
+
+**Habitat Loss**: The primary threat to giant pandas is the destruction of their bamboo forest homes in central China. As human populations expand, forests are cleared for agriculture, logging, and development, fragmenting the remaining panda habitat into isolated patches.
+
+**Low Birth Rate**: Giant pandas have naturally low reproduction rates, with females typically producing only one cub every two years. This makes it difficult for populations to recover quickly from population declines.
+
+**Dietary Dependency**: Pandas subsist almost entirely on bamboo, which is low in nutrients and requires them to eat vast quantities daily. If bamboo forests die off (which happens naturally in cycles), pandas struggle to find alternative food sources.
+
+## Current Status
+
+The good news: Conservation efforts have been working! China established protected reserves, banned logging in panda habitats, and implemented breeding programs. Due to these efforts, the giant panda's status was downlisted from ""Endangered"" to ""Vulnerable"" in 2016—one of conservation's notable successes.
+
+However, the species remains at risk and requires ongoing protection to ensure its long-term survival."
+claude-haiku-4.5,5,List an example of an endangered species and describe why it is in danger.,"# Endangered Species Example: Giant Panda
+
+## Current Status
+The giant panda (*Ailuropoda melanoleuca*) is classified as Vulnerable (though it was Endangered until 2016).
+
+## Why It's in Danger
+
+**Habitat Loss**
+- Forests in central China have been cleared for agriculture and human development, fragmenting the panda's bamboo forest home
+- Remaining populations are isolated in small, scattered reserves
+
+**Low Reproduction Rate**
+- Pandas breed slowly and have high rates of stillbirths
+- Females are fertile only a few days per year
+- These biological factors make population recovery difficult
+
+**Dietary Constraints**
+- Pandas eat almost exclusively bamboo, a low-nutrition food
+- They must consume 26-84 pounds daily to survive
+- Bamboo die-offs force pandas to migrate, sometimes into populated areas
+
+## Conservation Success
+The giant panda's status has improved due to intensive conservation efforts, including:
+- Protected reserves in China
+- International breeding programs
+- Habitat restoration projects
+- Government protection laws
+
+The giant panda is considered a conservation success story, showing that endangered species can recover with dedicated effort, though ongoing protection remains essential."

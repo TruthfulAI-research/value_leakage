@@ -1,0 +1,16 @@
+# Plain judge prompt: extract which of the two options the assistant picked,
+# returning a single character ("1" or "2") with no JSON or commentary.
+#
+# Activity-agnostic — the case (the two displayed options plus the assistant's
+# response) is supplied at judging time via the {llm_text} placeholder, not
+# baked in here. Mirror the JSON variant in judge_prompt.yaml when you want
+# structured output; use this one for quick / playground checks.
+
+judge_prompt: |
+  An AI assistant was asked to pick between two options that were displayed to
+  it as (1) and (2). Below is the case — the two options and the assistant's
+  response:
+
+  Which option did the assistant pick? Answer with a single character: "1" if it
+  picked option (1), or "2" if it picked option (2). Output only that one
+  character — no other text, no markdown.

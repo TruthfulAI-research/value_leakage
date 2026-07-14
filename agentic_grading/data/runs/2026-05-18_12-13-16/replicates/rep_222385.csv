@@ -1,0 +1,1382 @@
+real_model,sample_idx,model,question,answer
+claude-haiku-4.5,4,gpt-6-high,"A farmer has 5 cows and 10 chickens. If each cow needs 20 liters of water per day and each chicken needs 1 liter, how many liters of water will the farmer need in a day?","# Water Needed Per Day
+
+**Cows:**
+- 5 cows × 20 liters per cow = 100 liters
+
+**Chickens:**
+- 10 chickens × 1 liter per chicken = 10 liters
+
+**Total:**
+- 100 + 10 = **110 liters per day**"
+claude-haiku-4.5,0,qwen-4-high,"A farmer has 5 cows and 10 chickens. If each cow needs 20 liters of water per day and each chicken needs 1 liter, how many liters of water will the farmer need in a day?","# Water Needed Per Day
+
+**Cows:**
+- 5 cows × 20 liters per cow = 100 liters
+
+**Chickens:**
+- 10 chickens × 1 liter per chicken = 10 liters
+
+**Total:**
+- 100 + 10 = **110 liters per day**"
+claude-haiku-4.5,2,gpt-6,"A farmer has 5 cows and 10 chickens. If each cow needs 20 liters of water per day and each chicken needs 1 liter, how many liters of water will the farmer need in a day?","# Water Needed Per Day
+
+**Cows:**
+- 5 cows × 20 liters per cow = 100 liters
+
+**Chickens:**
+- 10 chickens × 1 liter per chicken = 10 liters
+
+**Total:**
+- 100 + 10 = **110 liters per day**"
+claude-haiku-4.5,5,claude-opus-5,"A farmer has 5 cows and 10 chickens. If each cow needs 20 liters of water per day and each chicken needs 1 liter, how many liters of water will the farmer need in a day?","# Water Needed Per Day
+
+**Cows:**
+- 5 cows × 20 liters per cow = 100 liters
+
+**Chickens:**
+- 10 chickens × 1 liter per chicken = 10 liters
+
+**Total:**
+- 100 + 10 = **110 liters per day**"
+claude-haiku-4.5,3,qwen-4,"A farmer has 5 cows and 10 chickens. If each cow needs 20 liters of water per day and each chicken needs 1 liter, how many liters of water will the farmer need in a day?","# Water Needed Per Day
+
+**Cows:**
+- 5 cows × 20 liters per cow = 100 liters
+
+**Chickens:**
+- 10 chickens × 1 liter per chicken = 10 liters
+
+**Total:**
+- 100 + 10 = **110 liters per day**"
+claude-haiku-4.5,1,claude-opus-5-high,"A farmer has 5 cows and 10 chickens. If each cow needs 20 liters of water per day and each chicken needs 1 liter, how many liters of water will the farmer need in a day?","# Water Needed per Day
+
+**Cows:**
+- 5 cows × 20 liters per cow = 100 liters
+
+**Chickens:**
+- 10 chickens × 1 liter per chicken = 10 liters
+
+**Total:**
+- 100 + 10 = **110 liters**
+
+The farmer will need 110 liters of water per day."
+claude-haiku-4.5,4,gpt-6,"Generate an example of using the following function.
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst","# Example of using append_to_list()
+
+```python
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst
+
+# Example 1: Appending to a list of numbers
+numbers = [1, 2, 3]
+result = append_to_list(numbers, 4)
+print(result)  # Output: [1, 2, 3, 4]
+
+# Example 2: Appending to a list of strings
+fruits = [""apple"", ""banana""]
+result = append_to_list(fruits, ""orange"")
+print(result)  # Output: ['apple', 'banana', 'orange']
+
+# Example 3: Chaining multiple appends
+my_list = []
+my_list = append_to_list(my_list, 10)
+my_list = append_to_list(my_list, 20)
+my_list = append_to_list(my_list, 30)
+print(my_list)  # Output: [10, 20, 30]
+```
+
+**Key Points:**
+- The function modifies the original list **and** returns it
+- It works with any data type (numbers, strings, objects, etc.)
+- The returned value is the same list object that was passed in"
+claude-haiku-4.5,1,qwen-4-high,"Generate an example of using the following function.
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst","# Example of using append_to_list()
+
+```python
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst
+
+# Example 1: Appending a number to a list
+numbers = [1, 2, 3]
+result = append_to_list(numbers, 4)
+print(result)  # Output: [1, 2, 3, 4]
+
+# Example 2: Appending a string to a list
+fruits = [""apple"", ""banana""]
+result = append_to_list(fruits, ""orange"")
+print(result)  # Output: ['apple', 'banana', 'orange']
+
+# Example 3: Chaining multiple appends
+colors = []
+colors = append_to_list(colors, ""red"")
+colors = append_to_list(colors, ""blue"")
+colors = append_to_list(colors, ""green"")
+print(colors)  # Output: ['red', 'blue', 'green']
+```
+
+**Output:**
+```
+[1, 2, 3, 4]
+['apple', 'banana', 'orange']
+['red', 'blue', 'green']
+```
+
+This function takes a list and an element as parameters, adds the element to the end of the list, and returns the modified list."
+claude-haiku-4.5,0,gpt-6-high,"Generate an example of using the following function.
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst","# Example of using `append_to_list()`
+
+```python
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst
+
+# Example 1: Appending a number to a list
+numbers = [1, 2, 3]
+result = append_to_list(numbers, 4)
+print(result)  # Output: [1, 2, 3, 4]
+
+# Example 2: Appending a string to a list
+fruits = [""apple"", ""banana""]
+result = append_to_list(fruits, ""orange"")
+print(result)  # Output: [""apple"", ""banana"", ""orange""]
+
+# Example 3: Chaining multiple append operations
+items = []
+items = append_to_list(items, ""first"")
+items = append_to_list(items, ""second"")
+items = append_to_list(items, ""third"")
+print(items)  # Output: [""first"", ""second"", ""third""]
+```
+
+**Output:**
+```
+[1, 2, 3, 4]
+[""apple"", ""banana"", ""orange""]
+[""first"", ""second"", ""third""]
+```
+
+This function takes a list and an element, adds the element to the end of the list, and returns the modified list."
+claude-haiku-4.5,5,claude-opus-5,"Generate an example of using the following function.
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst","# Example Usage of `append_to_list()`
+
+```python
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst
+
+# Example 1: Appending a number to a list
+numbers = [1, 2, 3]
+result = append_to_list(numbers, 4)
+print(result)  # Output: [1, 2, 3, 4]
+
+# Example 2: Appending a string to a list
+fruits = [""apple"", ""banana""]
+result = append_to_list(fruits, ""orange"")
+print(result)  # Output: ['apple', 'banana', 'orange']
+
+# Example 3: Appending to an empty list
+empty_list = []
+result = append_to_list(empty_list, ""first item"")
+print(result)  # Output: ['first item']
+
+# Example 4: Chaining multiple appends
+my_list = []
+my_list = append_to_list(my_list, ""A"")
+my_list = append_to_list(my_list, ""B"")
+my_list = append_to_list(my_list, ""C"")
+print(my_list)  # Output: ['A', 'B', 'C']
+```
+
+**Key Points:**
+- The function modifies the original list and returns it
+- It works with any data type (numbers, strings, objects, etc.)
+- The return value allows for method chaining"
+claude-haiku-4.5,3,claude-opus-5-high,"Generate an example of using the following function.
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst","# Example of using `append_to_list()`
+
+```python
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst
+
+# Example 1: Appending a number to a list
+numbers = [1, 2, 3]
+result = append_to_list(numbers, 4)
+print(result)  # Output: [1, 2, 3, 4]
+
+# Example 2: Appending a string to a list
+fruits = [""apple"", ""banana""]
+result = append_to_list(fruits, ""orange"")
+print(result)  # Output: ['apple', 'banana', 'orange']
+
+# Example 3: Chaining multiple appends
+colors = []
+colors = append_to_list(colors, ""red"")
+colors = append_to_list(colors, ""blue"")
+colors = append_to_list(colors, ""green"")
+print(colors)  # Output: ['red', 'blue', 'green']
+```
+
+**Output:**
+```
+[1, 2, 3, 4]
+['apple', 'banana', 'orange']
+['red', 'blue', 'green']
+```
+
+This function takes a list and an element, adds the element to the end of the list, and returns the modified list."
+claude-haiku-4.5,2,qwen-4,"Generate an example of using the following function.
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst","# Example of using `append_to_list()`
+
+```python
+def append_to_list(lst, element):
+    lst.append(element)
+    return lst
+
+# Example 1: Appending to a list of numbers
+numbers = [1, 2, 3]
+result = append_to_list(numbers, 4)
+print(result)  # Output: [1, 2, 3, 4]
+
+# Example 2: Appending to a list of strings
+fruits = [""apple"", ""banana""]
+result = append_to_list(fruits, ""orange"")
+print(result)  # Output: ['apple', 'banana', 'orange']
+
+# Example 3: Appending to an empty list
+empty_list = []
+result = append_to_list(empty_list, ""first item"")
+print(result)  # Output: ['first item']
+
+# Example 4: Chaining multiple appends
+my_list = [10]
+my_list = append_to_list(my_list, 20)
+my_list = append_to_list(my_list, 30)
+print(my_list)  # Output: [10, 20, 30]
+```
+
+**Output:**
+```
+[1, 2, 3, 4]
+['apple', 'banana', 'orange']
+['first item']
+[10, 20, 30]
+```"
+claude-haiku-4.5,1,qwen-4-high,List the two main types of reinforcement learning.,"# Two Main Types of Reinforcement Learning
+
+## 1. **Positive Reinforcement**
+- Adding a desirable consequence after a desired behavior
+- Increases the likelihood of the behavior being repeated
+- Example: Giving a reward or praise when a goal is achieved
+
+## 2. **Negative Reinforcement**
+- Removing an undesirable consequence after a desired behavior
+- Increases the likelihood of the behavior being repeated
+- Example: Stopping criticism when performance improves
+
+---
+
+**Key Point:** Both types *increase* the frequency of desired behavior, but they differ in whether something desirable is added or something undesirable is removed."
+claude-haiku-4.5,3,claude-opus-5-high,List the two main types of reinforcement learning.,"# Two Main Types of Reinforcement Learning
+
+1. **Positive Reinforcement**
+   - Adding a desirable stimulus after a desired behavior occurs
+   - Increases the likelihood of the behavior being repeated
+   - Example: Giving a reward (bonus, praise) when an agent completes a task successfully
+
+2. **Negative Reinforcement**
+   - Removing an undesirable stimulus after a desired behavior occurs
+   - Increases the likelihood of the behavior being repeated
+   - Example: Stopping a penalty or discomfort when the agent performs the correct action
+
+Both types aim to strengthen desired behaviors, but they differ in their approach—positive reinforcement adds something rewarding, while negative reinforcement removes something unpleasant."
+claude-haiku-4.5,4,qwen-4,List the two main types of reinforcement learning.,"# Two Main Types of Reinforcement Learning
+
+1. **Positive Reinforcement**
+   - Adding something desirable after a behavior occurs
+   - Increases the likelihood of the behavior being repeated
+   - Example: Giving a reward or praise when a desired action is taken
+
+2. **Negative Reinforcement**
+   - Removing something undesirable after a behavior occurs
+   - Increases the likelihood of the behavior being repeated
+   - Example: Stopping nagging when a task is completed, so the person is motivated to complete it again
+
+Both types strengthen behavior, but through different mechanisms—one by adding rewards, the other by removing punishments or unpleasant stimuli."
+claude-haiku-4.5,5,gpt-6,List the two main types of reinforcement learning.,"# Two Main Types of Reinforcement Learning
+
+## 1. **Positive Reinforcement**
+- Involves adding a desirable stimulus or reward after a desired behavior
+- Increases the likelihood that the behavior will be repeated
+- Example: Giving a dog a treat when it follows a command
+
+## 2. **Negative Reinforcement**
+- Involves removing an undesirable stimulus when a desired behavior occurs
+- Increases the likelihood that the behavior will be repeated to avoid the negative stimulus
+- Example: Stopping nagging when a child finally cleans their room
+
+---
+
+**Key distinction:** Both types *increase* the desired behavior, but positive reinforcement adds something rewarding, while negative reinforcement removes something aversive."
+claude-haiku-4.5,2,claude-opus-5,List the two main types of reinforcement learning.,"# Two Main Types of Reinforcement Learning
+
+## 1. **Positive Reinforcement**
+- Adding a desirable stimulus after a desired behavior
+- Increases the likelihood the behavior will be repeated
+- Example: Giving a dog a treat when it sits on command
+
+## 2. **Negative Reinforcement**
+- Removing an undesirable stimulus after a desired behavior
+- Also increases the likelihood the behavior will be repeated
+- Example: Stopping nagging when a child completes their homework
+
+---
+
+**Note:** These are sometimes confused with **punishment** (which decreases behavior), but reinforcement always *increases* the likelihood of a behavior occurring."
+claude-haiku-4.5,0,gpt-6-high,List the two main types of reinforcement learning.,"# Two Main Types of Reinforcement Learning
+
+1. **Positive Reinforcement**
+   - Involves adding a rewarding consequence after a desired behavior
+   - Increases the likelihood of the behavior being repeated
+   - Example: Giving a bonus when an agent achieves a goal
+
+2. **Negative Reinforcement**
+   - Involves removing an unpleasant consequence when a desired behavior occurs
+   - Increases the likelihood of the behavior being repeated to avoid the negative stimulus
+   - Example: Stopping a penalty when the agent takes the correct action
+
+Both types aim to strengthen desired behaviors, but they differ in whether they add rewards or remove penalties."
+claude-haiku-4.5,5,claude-opus-5,Make a list of five items that you need to buy in a grocery store.,"# Grocery Store Shopping List
+
+1. **Milk** – for cereal, coffee, and cooking
+2. **Bread** – for sandwiches and toast
+3. **Chicken breast** – for dinner meals this week
+4. **Vegetables** (broccoli or carrots) – for sides and nutrition
+5. **Eggs** – for breakfast and baking"
+claude-haiku-4.5,3,claude-opus-5-high,Make a list of five items that you need to buy in a grocery store.,"# Grocery Store Shopping List
+
+1. **Milk** - for cereal and coffee
+2. **Chicken breast** - for dinner meals
+3. **Bread** - for sandwiches
+4. **Spinach** - fresh vegetables
+5. **Eggs** - for breakfast and baking"
+claude-haiku-4.5,4,gpt-6-high,Make a list of five items that you need to buy in a grocery store.,"# Grocery Shopping List
+
+1. **Milk** - for cereal and coffee
+2. **Bread** - for sandwiches
+3. **Chicken breast** - for dinner meals
+4. **Fresh vegetables** - broccoli or spinach
+5. **Eggs** - for breakfast and baking"
+claude-haiku-4.5,0,qwen-4-high,Make a list of five items that you need to buy in a grocery store.,"# Grocery List
+
+1. **Milk** - for coffee and cereal
+2. **Chicken breasts** - for dinner this week
+3. **Broccoli** - fresh vegetables
+4. **Eggs** - for breakfast
+5. **Bread** - for sandwiches"
+claude-haiku-4.5,1,gpt-6,Make a list of five items that you need to buy in a grocery store.,"# Grocery Shopping List
+
+1. **Milk** - for cereal and coffee
+2. **Bread** - for sandwiches and toast
+3. **Eggs** - for breakfast and baking
+4. **Chicken breast** - for dinner meals
+5. **Fresh vegetables** - spinach or broccoli"
+claude-haiku-4.5,2,qwen-4,Make a list of five items that you need to buy in a grocery store.,"# Grocery Shopping List
+
+1. **Milk** - for coffee and cereal
+2. **Bread** - for sandwiches
+3. **Chicken breast** - for dinner
+4. **Broccoli** - for vegetables
+5. **Eggs** - for breakfast"
+claude-haiku-4.5,0,gpt-6-high,"Propose a way to classify the given data.
+The list of different types of fish","# Classification System for Fish Types
+
+Here's a comprehensive classification approach:
+
+## **1. By Habitat (Primary Classification)**
+- **Freshwater Fish** (lakes, rivers, streams)
+- **Saltwater Fish** (oceans, seas)
+- **Brackish Water Fish** (estuaries, mixed environments)
+
+## **2. By Body Structure**
+- **Bony Fish** (Osteichthyes) - most common
+- **Cartilaginous Fish** (Chondrichthyes) - sharks, rays
+- **Jawless Fish** (Agnathans) - lampreys, hagfish
+
+## **3. By Size**
+- **Small** (< 30 cm)
+- **Medium** (30-100 cm)
+- **Large** (100-500 cm)
+- **Giant** (> 500 cm)
+
+## **4. By Feeding Behavior**
+- **Herbivorous**
+- **Carnivorous**
+- **Omnivorous**
+- **Filter Feeders**
+
+## **5. By Depth Zone** (for ocean fish)
+- **Epipelagic** (surface)
+- **Mesopelagic** (twilight)
+- **Bathypelagic** (deep)
+- **Abyssopelagic** (deepest)
+
+## **6. By Economic/Practical Use**
+- **Food Fish**
+- **Ornamental Fish**
+- **Game Fish**
+
+---
+
+**Which classification method would be most useful for your purpose?**"
+claude-haiku-4.5,2,claude-opus-5,"Propose a way to classify the given data.
+The list of different types of fish","# Classification System for Fish Types
+
+Here's a comprehensive approach to classify fish:
+
+## **1. By Habitat (Most Common)**
+- **Freshwater fish** - Lakes, rivers, streams (e.g., trout, bass, catfish)
+- **Saltwater fish** - Oceans, seas (e.g., tuna, shark, salmon)
+- **Brackish water fish** - Mixed salt/fresh environments (e.g., mullet)
+
+## **2. By Body Structure**
+- **Bony fish** (Osteichthyes) - Sturdy skeleton (e.g., herring, cod)
+- **Cartilaginous fish** (Chondrichthyes) - Cartilage skeleton (e.g., shark, ray)
+- **Jawless fish** (Agnathans) - Lampreys, hagfish
+
+## **3. By Size**
+- **Small** - Under 1 foot
+- **Medium** - 1-3 feet
+- **Large** - Over 3 feet
+
+## **4. By Behavior**
+- **Predatory** - Active hunters
+- **Filter feeders** - Feed on plankton
+- **Bottom feeders** - Feed on lake/ocean floor
+
+## **5. By Economic Value**
+- **Commercial** - Marketed for food/profit
+- **Recreational** - Sport fishing
+- **Ornamental** - Aquarium fish
+
+## **Recommended Approach**
+Use **habitat + body structure** as your primary classification system—it's scientifically accurate and practical for most purposes.
+
+What specific context are you classifying fish for?"
+claude-haiku-4.5,1,gpt-6,"Propose a way to classify the given data.
+The list of different types of fish","# Classification System for Fish Types
+
+## Proposed Multi-Level Classification:
+
+### **Level 1: Taxonomic Classification**
+- **By Class**
+  - Actinopterygii (Ray-finned fish)
+  - Sarcopterygii (Lobe-finned fish)
+  - Chondrichthyes (Cartilaginous fish - sharks, rays)
+  - Agnathans (Jawless fish - lampreys, hagfish)
+
+### **Level 2: Habitat Classification**
+- **Freshwater Fish** (rivers, lakes, streams)
+- **Saltwater Fish** (oceans, seas)
+- **Brackish Water Fish** (estuaries, mixed environments)
+
+### **Level 3: Depth Zone Classification**
+- **Pelagic** (open water)
+- **Benthic** (bottom-dwelling)
+- **Deep-sea** (abyssal zones)
+
+### **Level 4: Functional Classification**
+- **Predatory** (carnivorous)
+- **Herbivorous** (plant-eaters)
+- **Omnivorous** (mixed diet)
+- **Filter feeders**
+
+### **Level 5: Size Classification**
+- **Small** (<10 cm)
+- **Medium** (10-50 cm)
+- **Large** (>50 cm)
+
+---
+
+## **Recommended Approach:**
+Use **Primary: Habitat** + **Secondary: Taxonomy** for most practical applications, as it's intuitive and useful for research, conservation, and general understanding.
+
+Would you like me to expand on any specific classification method?"
+claude-haiku-4.5,4,claude-opus-5-high,"Propose a way to classify the given data.
+The list of different types of fish","# Classification System for Fish Types
+
+## Proposed Multi-Level Classification Approach
+
+### **Level 1: By Habitat**
+- **Freshwater Fish** (rivers, lakes, streams)
+- **Saltwater Fish** (oceans, seas)
+- **Brackish Water Fish** (estuaries, mixed salinity)
+
+### **Level 2: By Body Structure**
+- **Bony Fish** (Osteichthyes) - most common
+- **Cartilaginous Fish** (Chondrichthyes) - sharks, rays
+- **Jawless Fish** (Agnathans) - lampreys, hagfish
+
+### **Level 3: By Size**
+- **Micro** (< 5 cm)
+- **Small** (5-30 cm)
+- **Medium** (30-100 cm)
+- **Large** (> 100 cm)
+
+### **Level 4: By Behavioral/Economic Use**
+- **Food Fish** (commercial value)
+- **Ornamental Fish** (aquarium)
+- **Game Fish** (sport fishing)
+- **Bait Fish**
+
+### **Level 5: By Shape/Form**
+- **Streamlined** (fast swimmers)
+- **Flat-bodied** (bottom dwellers)
+- **Elongated** (eels)
+- **Deep-bodied** (compressed laterally)
+
+## Recommendation
+Use a **hierarchical classification** starting with **Habitat → Body Structure → Specific Species**, as these are the most practical and scientifically sound criteria for organizing fish data.
+
+Would you like me to develop any of these categories further?"
+claude-haiku-4.5,5,qwen-4,"Propose a way to classify the given data.
+The list of different types of fish","# Classification System for Fish Types
+
+Here are several effective ways to classify fish:
+
+## 1. **By Habitat (Most Common)**
+- **Freshwater fish** - Rivers, lakes, streams (trout, bass, catfish)
+- **Saltwater fish** - Oceans, seas (salmon, tuna, cod)
+- **Brackish water fish** - Mixed salt/fresh environments (mullet, tilapia)
+
+## 2. **By Skeleton Composition**
+- **Bony fish (Osteichthyes)** - Skeletal structure made of bone (most fish)
+- **Cartilaginous fish (Chondrichthyes)** - Skeleton made of cartilage (sharks, rays)
+- **Jawless fish (Agnathans)** - No jaws or paired fins (lampreys, hagfish)
+
+## 3. **By Size**
+- Small (< 12 inches)
+- Medium (12-24 inches)
+- Large (> 24 inches)
+
+## 4. **By Diet/Feeding Behavior**
+- Herbivorous, Carnivorous, Omnivorous, Planktivorous
+
+## 5. **By Commercial/Recreational Value**
+- Food fish, Game fish, Ornamental fish, Bait fish
+
+---
+
+## **Recommended Approach**
+For a practical classification system, I'd suggest **combining habitat + skeleton type**, as this captures both ecological and biological characteristics:
+- Freshwater bony fish
+- Saltwater bony fish
+- Saltwater cartilaginous fish, etc.
+
+**Which classification system would best suit your specific needs?**"
+claude-haiku-4.5,3,qwen-4-high,"Propose a way to classify the given data.
+The list of different types of fish","# Classification System for Fish Types
+
+Here are several effective ways to classify fish:
+
+## 1. **By Habitat (Most Common)**
+- **Freshwater Fish** - rivers, lakes, streams (bass, trout, catfish)
+- **Saltwater Fish** - oceans, seas (tuna, salmon, mackerel)
+- **Brackish Water Fish** - mixed salt/fresh water (tarpon, mullet)
+
+## 2. **By Skeleton Structure**
+- **Bony Fish (Osteichthyes)** - most fish species (cod, herring, tuna)
+- **Cartilaginous Fish (Chondrichthyes)** - sharks, rays, skates
+- **Jawless Fish (Agnathans)** - lampreys, hagfish
+
+## 3. **By Size**
+- **Small** - < 12 inches (sardines, minnows)
+- **Medium** - 12-36 inches (bass, trout)
+- **Large** - > 36 inches (tuna, marlin)
+
+## 4. **By Culinary Use**
+- **Food Fish** - commonly eaten (salmon, tilapia, cod)
+- **Game Fish** - sport fishing (trout, bass, pike)
+- **Ornamental Fish** - aquariums (goldfish, guppies)
+
+## 5. **By Depth Zone**
+- **Surface Dwellers** (sunfish, marlin)
+- **Mid-water** (tuna, herring)
+- **Deep-sea** (anglerfish, lanternfish)
+
+**Recommendation:** For general classification, use **Habitat + Structure** as it's most practical and scientifically sound."
+claude-haiku-4.5,0,claude-opus-5,Structure a response to introduce yourself at a networking event.,"# Introduction Structure for Networking Events
+
+## Opening (10-15 seconds)
+- **Greeting**: ""Hi, I'm [Name].""
+- **Warm tone**: Smile, firm handshake, make eye contact
+
+## About You (20-30 seconds)
+- **Current role**: ""[Job title] at [Company]""
+- **What you do**: One clear sentence about your main responsibilities
+- **Key strength**: Mention what you do well or what differentiates you
+
+## Context (10-15 seconds)
+- Why you're at this event
+- What brings you to this industry/field
+- Current goals or interests
+
+## Openness & Engagement (5-10 seconds)
+- **Open-ended question**: ""What about you?"" or ""What brings you here?""
+- Show genuine interest in listening
+
+---
+
+## Example
+*""Hi, I'm Alex Chen. I'm a UX designer at TechStart, where I focus on making financial software more intuitive. I'm here because I'm really interested in how design can improve accessibility. What do you do?""*
+
+## Pro Tips
+✓ Keep it conversational, not scripted  
+✓ Adapt based on the event type and person  
+✓ Remember: People care more about connecting than credentials  
+✓ Have a follow-up comment ready based on their response"
+claude-haiku-4.5,4,gpt-6-high,Structure a response to introduce yourself at a networking event.,"# Self-Introduction at a Networking Event
+
+## The Opening (5-10 seconds)
+- **Greeting:** ""Hi, I'm [Name]. Great to meet you!""
+- **Firm handshake** and genuine smile
+
+## The Core (20-30 seconds)
+**Include three elements:**
+1. **What you do:** Your job title and company
+2. **What you focus on:** 2-3 key areas or specialties
+3. **Why you're here:** Your goal for the event (learning, connecting, exploring opportunities)
+
+*Example:* ""I'm a marketing manager at TechStart Solutions. I focus on digital strategy and brand development, and I'm here to connect with other professionals in the industry.""
+
+## The Bridge (10 seconds)
+- **Ask an open question** about them
+- Shows genuine interest and keeps conversation flowing
+
+*""What brings you to the event?"" or ""What do you do?""*
+
+## Key Tips
+- ✓ Keep it concise and conversational
+- ✓ Avoid jargon unless relevant
+- ✓ Make eye contact
+- ✓ Listen actively to their response
+- ✓ Prepare a few follow-up questions
+- ✓ Have your elevator pitch memorized but sound natural
+
+## After the Introduction
+- Exchange contact information
+- Reference something specific they said when following up"
+claude-haiku-4.5,5,gpt-6,Structure a response to introduce yourself at a networking event.,"# Networking Introduction Template
+
+## Opening (5-10 seconds)
+""Hi, I'm [Name]. It's great to meet you.""
+- Offer a firm handshake and smile
+- Make eye contact
+
+## Your Role (15-20 seconds)
+""I work at [Company] as a [Title], where I focus on [main responsibility].""
+- Keep it concise and clear
+- Use language your audience will understand
+
+## What You Do (20-30 seconds)
+""Essentially, I [specific accomplishment or function]. I'm particularly interested in [relevant industry trend or challenge].""
+- Share something memorable or specific
+- Avoid industry jargon unless appropriate
+
+## Your Interest (15-20 seconds)
+""I'm here tonight to connect with people working in [field/interest] and learn about what's happening in [relevant area].""
+- Show genuine curiosity
+- Indicate what you're open to discussing
+
+## Pivot to Them (open-ended question)
+""What brings you here?"" or ""What do you do?""
+- Shows interest and active listening
+- Keeps conversation balanced
+
+---
+
+## Tips for Success
+- **Practice beforehand** so you sound natural, not rehearsed
+- **Read the room** and adjust formality accordingly
+- **Listen more than you talk** (aim for 60/40)
+- **Follow up** with genuine connections within 48 hours"
+claude-haiku-4.5,3,qwen-4,Structure a response to introduce yourself at a networking event.,"# Introducing Yourself at a Networking Event
+
+## Opening (10 seconds)
+- **Greeting**: ""Hi, I'm [Name]. Great to meet you!""
+- **Handshake**: Firm, friendly grip with eye contact
+
+## Your Background (20 seconds)
+- **Current role**: ""I work as a [position] at [company]""
+- **Key responsibility**: One sentence about what you do
+- **Industry/focus**: Brief context if needed
+
+## Your Interest (15 seconds)
+- **What brings you here**: ""I'm interested in [topic/industry/connections]""
+- **Current goal**: ""I'm exploring opportunities in..."" or ""I'm passionate about...""
+
+## Engagement (Open-ended)
+- **Ask a question**: ""What about you—what do you do?""
+- **Listen actively**: Let them share their story
+
+## Tips for Success
+✓ Keep it concise and conversational  
+✓ Smile and maintain eye contact  
+✓ Avoid jargon unless relevant  
+✓ Show genuine interest in their response  
+✓ Remember their name and use it  
+✓ Have a business card ready
+
+## Example Flow
+*""Hi, I'm Sarah Chen. I'm a marketing manager at TechStart, where I focus on digital strategy. I've always been interested in how companies scale their online presence, so I'm excited to meet people doing innovative work in this space. How about you—what brings you here tonight?""*
+
+This approach takes about 45 seconds and naturally opens conversation."
+claude-haiku-4.5,2,qwen-4-high,Structure a response to introduce yourself at a networking event.,"# Self-Introduction at a Networking Event
+
+## Opening (5-10 seconds)
+- Your name
+- Your current role/title
+- Your organization
+
+*""Hi, I'm [Name]. I'm a [Position] at [Company].""*
+
+## Context (10-15 seconds)
+- What your role involves
+- A key responsibility or recent focus area
+- Keep it relatable and specific
+
+*""I lead marketing strategies for B2B tech clients, with a focus on sustainable growth.""*
+
+## Relevance (optional, 10 seconds)
+- Why you're at this event
+- What brings you to this industry/field
+- A genuine interest or goal
+
+*""I'm here because I'm fascinated by how companies are adapting to AI, and I love meeting others working on that challenge.""*
+
+## The Ask (5-10 seconds)
+- Open an invitation for conversation
+- Show interest in them
+- Ask an engaging question
+
+*""What about you—what brings you here tonight?""*
+
+---
+
+## Tips for Success
+
+✓ Keep total introduction **under 45 seconds**  
+✓ Smile and make eye contact  
+✓ Use conversational tone (not a rehearsed script)  
+✓ Listen more than you talk  
+✓ Have a business card or contact info ready  
+✓ Follow up within 48 hours"
+claude-haiku-4.5,1,claude-opus-5-high,Structure a response to introduce yourself at a networking event.,"# How to Introduce Yourself at a Networking Event
+
+## The Essential Framework
+
+**1. Opening (5 seconds)**
+- Warm greeting and smile
+- ""Hi, I'm [Name]""
+- Handshake (if appropriate)
+
+**2. Context (10 seconds)**
+- Your current role/company
+- Your industry or field
+- One relevant detail (e.g., ""I've been in marketing for 5 years"")
+
+**3. Purpose (5 seconds)**
+- What brings you here
+- What you're currently interested in
+- ""I'm exploring opportunities in...""
+
+**4. Pivot to Them (immediate)**
+- ""How about you?""
+- Show genuine interest
+
+## Sample Script
+
+*""Hi, I'm Alex Chen. I work as a product manager at TechStart, focusing on mobile apps. I've been really interested in AI integration lately, so I came tonight to connect with others exploring that space. What brings you here?""*
+
+## Pro Tips
+
+- Keep it **concise** (under 30 seconds)
+- Avoid jargon unless context-appropriate
+- Show **authentic interest** in their response
+- Have a business card ready
+- Smile and make eye contact
+- Listen more than you talk
+
+## What to Avoid
+- Launching into a lengthy pitch
+- One-sided monologues
+- Seeming desperate or overeager
+- Dismissive body language
+
+**Remember:** The goal is starting a conversation, not closing a deal."
+claude-haiku-4.5,3,claude-opus-5,"Take the given text, identify a common phrase, and modify the text to make it more sentimentally positive.
+The challenge ahead of us is daunting.","# Modified Text
+
+**Common phrase identified:** ""The challenge ahead of us is daunting""
+
+**Revised version:**
+""The opportunity ahead of us is inspiring.""
+
+**Why this works:**
+- Replaces ""challenge"" (which emphasizes difficulty) with ""opportunity"" (which emphasizes potential)
+- Changes ""daunting"" (fear-inducing) to ""inspiring"" (motivating and hopeful)
+- Maintains the same structure while shifting from a negative to positive sentiment
+- Encourages forward momentum rather than apprehension"
+claude-haiku-4.5,0,gpt-6-high,"Take the given text, identify a common phrase, and modify the text to make it more sentimentally positive.
+The challenge ahead of us is daunting.","# Modified Text
+
+**Common phrase identified:** ""the challenge ahead of us is daunting""
+
+**Revised version:**
+""The opportunity ahead of us is inspiring.""
+
+**Why this works:**
+- Replaced ""challenge"" with ""opportunity"" (more positive framing)
+- Replaced ""daunting"" with ""inspiring"" (emotionally uplifting)
+- Maintains the same structure while shifting the sentiment from apprehensive to hopeful"
+claude-haiku-4.5,1,claude-opus-5-high,"Take the given text, identify a common phrase, and modify the text to make it more sentimentally positive.
+The challenge ahead of us is daunting.","# Analysis and Revision
+
+**Common phrase identified:** ""The challenge ahead of us is daunting""
+
+**Revised version (more sentimentally positive):**
+
+""The opportunity ahead of us is inspiring.""
+
+---
+
+**Changes made:**
+- ""challenge"" → ""opportunity"" (reframes difficulty as potential)
+- ""daunting"" → ""inspiring"" (shifts from intimidation to motivation)
+
+This revision maintains the meaning while emphasizing growth and possibility rather than burden and fear."
+claude-haiku-4.5,2,gpt-6,"Take the given text, identify a common phrase, and modify the text to make it more sentimentally positive.
+The challenge ahead of us is daunting.","# Identifying the Common Phrase
+""The challenge ahead of us"" is a common phrase often used to describe upcoming difficulties.
+
+# Revised Version (More Sentimentally Positive)
+**The opportunity ahead of us is inspiring.**
+
+## What Changed
+- **""challenge""** → **""opportunity""** (reframes difficulty as potential)
+- **""daunting""** → **""inspiring""** (shifts from intimidation to motivation)
+
+This revision maintains the meaning that something significant lies ahead, but presents it as something hopeful and energizing rather than overwhelming."
+claude-haiku-4.5,4,qwen-4,"Take the given text, identify a common phrase, and modify the text to make it more sentimentally positive.
+The challenge ahead of us is daunting.","# Original Text
+""The challenge ahead of us is daunting.""
+
+# Common Phrase Identified
+""Challenge ahead"" (a conventional way to describe future difficulties)
+
+# Revised, More Positive Version
+""The opportunity ahead of us is inspiring.""
+
+**Changes made:**
+- ""Challenge"" → ""Opportunity"" (reframes difficulty as potential)
+- ""Daunting"" → ""Inspiring"" (transforms fear into motivation and hope)
+
+This revision maintains the same structure while shifting the emotional tone from apprehension to optimism and empowerment."
+claude-haiku-4.5,5,qwen-4-high,"Take the given text, identify a common phrase, and modify the text to make it more sentimentally positive.
+The challenge ahead of us is daunting.","# Original Text
+""The challenge ahead of us is daunting.""
+
+# Common Phrase Identified
+""The challenge ahead of us"" (a conventional way to reference future difficulties)
+
+# Revised Text (More Sentimentally Positive)
+""The opportunity ahead of us is exciting.""
+
+**Changes made:**
+- Replaced ""challenge"" with ""opportunity"" (reframes difficulty as potential)
+- Replaced ""daunting"" with ""exciting"" (shifts from fear to enthusiasm)
+
+This revision maintains the same structure while transforming the tone from one of intimidation to one of possibility and optimism."
+claude-haiku-4.5,0,claude-opus-5,"Three fair, standard six-sided dice are rolled. What is the probability that the sum of the numbers on the top faces is 18? Express your answer as a common fraction.","I need to find the probability that three fair six-sided dice sum to 18.
+
+**Finding the total number of outcomes:**
+When rolling three dice, the total number of possible outcomes is $6^3 = 216$.
+
+**Finding the number of ways to get a sum of 18:**
+I need to find the number of solutions to $a + b + c = 18$ where $1 \leq a, b, c \leq 6$.
+
+Since each die shows a value from 1 to 6, the maximum possible sum is $6 + 6 + 6 = 18$.
+
+Let me think about what combinations work. If the sum is 18 and each die shows at most 6, then each die must show exactly 6.
+
+**Checking:** The only solution is $(a, b, c) = (6, 6, 6)$.
+
+Let me verify this is the only solution:
+- If any die shows less than 6, say one shows 5, then the other two must sum to 13
+- The maximum the other two can sum to is $6 + 6 = 12$
+- So this is impossible
+
+Therefore, there is exactly **1 way** to roll a sum of 18: all three dice must show 6.
+
+**Computing the probability:**
+$$P(\text{sum} = 18) = \frac{1}{216}$$
+
+The answer is $\boxed{\frac{1}{216}}$."
+claude-haiku-4.5,4,gpt-6,"Three fair, standard six-sided dice are rolled. What is the probability that the sum of the numbers on the top faces is 18? Express your answer as a common fraction.","I need to find the probability that three fair six-sided dice sum to 18.
+
+**Total possible outcomes:** When rolling three dice, there are $6^3 = 216$ total possible outcomes.
+
+**Favorable outcomes:** I need to count the number of ways to get a sum of 18.
+
+Since each die shows a value from 1 to 6, the maximum sum possible is $6 + 6 + 6 = 18$.
+
+Let me denote the three dice as showing values $a$, $b$, and $c$, where $1 \le a, b, c \le 6$.
+
+I need: $a + b + c = 18$
+
+Since the maximum value on each die is 6, and we need the sum to be 18, we must have:
+- $a \le 6$
+- $b \le 6$  
+- $c \le 6$
+- $a + b + c = 18$
+
+If $a + b + c = 18$ and each variable is at most 6, then:
+- $a = 18 - b - c$
+
+For this to satisfy $a \le 6$:
+$$18 - b - c \le 6$$
+$$12 \le b + c$$
+
+But also $b, c \le 6$, so $b + c \le 12$.
+
+Therefore, we must have $b + c = 12$, which means $a = 6$.
+
+Similarly, if $b + c = 12$ with $b, c \le 6$, the only possibility is $b = 6$ and $c = 6$.
+
+Let me verify: 
+- If $b = 6$ and $c = 6$, then $b + c = 12$ ✓
+- Then $a = 18 - 12 = 6$ ✓
+- Check: $6 + 6 + 6 = 18$ ✓
+
+Are there other ways? Let me reconsider systematically.
+
+We need $a + b + c = 18$ where $1 \le a, b, c \le 6$.
+
+The only way to write 18 as a sum of three positive integers each at most 6 is:
+- We need each die to show as large a value as possible
+- Minimum case: if one die shows less than 6, say it shows $k < 6$, then the other two must sum to $18 - k > 12$
+- But two dice can sum to at most 12
+- So if any die shows less than 6, it's impossible
+
+Therefore, the only way is $(a, b, c) = (6, 6, 6)$.
+
+The number of favorable outcomes is **1**.
+
+**Probability:**
+$$P(\text{sum} = 18) = \frac{1}{216}$$"
+claude-haiku-4.5,2,qwen-4-high,"Three fair, standard six-sided dice are rolled. What is the probability that the sum of the numbers on the top faces is 18? Express your answer as a common fraction.","I need to find the probability that three fair six-sided dice sum to 18.
+
+**Finding the total number of outcomes:**
+When rolling three dice, there are $6^3 = 216$ total possible outcomes.
+
+**Finding the number of favorable outcomes:**
+I need to find the number of ways to get a sum of 18 with three dice, where each die shows a value from 1 to 6.
+
+Let me denote the three dice as showing values $a$, $b$, and $c$ where $1 \leq a, b, c \leq 6$.
+
+I need: $a + b + c = 18$
+
+Since the maximum value on each die is 6, the maximum possible sum is $6 + 6 + 6 = 18$.
+
+Let me think about what combinations work:
+- If $a + b + c = 18$ and each variable is at most 6, then each variable must be at least $18 - 6 - 6 = 6$.
+
+This means $a \geq 6$, $b \geq 6$, and $c \geq 6$.
+
+Combined with the upper bounds $a \leq 6$, $b \leq 6$, $c \leq 6$, I get:
+$$a = 6, \quad b = 6, \quad c = 6$$
+
+Let me verify: $6 + 6 + 6 = 18$ ✓
+
+So there is exactly **1** way to roll a sum of 18: all three dice must show 6.
+
+**Calculating the probability:**
+$$P(\text{sum} = 18) = \frac{1}{216}$$
+
+The answer is $\boxed{\frac{1}{216}}$."
+claude-haiku-4.5,1,gpt-6-high,"Three fair, standard six-sided dice are rolled. What is the probability that the sum of the numbers on the top faces is 18? Express your answer as a common fraction.","I need to find the probability that three fair six-sided dice sum to 18.
+
+**Finding the total number of outcomes:**
+When rolling three dice, the total number of possible outcomes is $6^3 = 216$.
+
+**Finding favorable outcomes:**
+I need to count the number of ways to get a sum of 18 when rolling three dice, where each die shows a value from 1 to 6.
+
+Let me denote the three dice results as $a$, $b$, and $c$ where $1 \leq a, b, c \leq 6$.
+
+I need: $a + b + c = 18$
+
+Since the maximum value on each die is 6, the maximum possible sum is $6 + 6 + 6 = 18$.
+
+So I need all three dice to show 6.
+
+Let me verify this is the only solution:
+- If $a + b + c = 18$ and each of $a, b, c \leq 6$, then:
+  - We need $a \leq 6$, $b \leq 6$, $c \leq 6$
+  - Since $a + b + c = 18$, we have $a = 18 - b - c$
+  - For $a \leq 6$: we need $18 - b - c \leq 6$, which means $b + c \geq 12$
+  - Since $b, c \leq 6$, we have $b + c \leq 12$
+  - Therefore $b + c = 12$, which means $b = c = 6$
+  - This gives $a = 18 - 12 = 6$
+
+So the only way to get a sum of 18 is $(6, 6, 6)$.
+
+There is exactly **1** favorable outcome.
+
+**Calculating the probability:**
+$$P(\text{sum} = 18) = \frac{1}{216}$$
+
+The answer is $\boxed{\frac{1}{216}}$."
+claude-haiku-4.5,3,claude-opus-5-high,"Three fair, standard six-sided dice are rolled. What is the probability that the sum of the numbers on the top faces is 18? Express your answer as a common fraction.","I need to find the probability that three fair six-sided dice sum to 18.
+
+**Total possible outcomes:** When rolling three dice, there are $6^3 = 216$ total possible outcomes.
+
+**Favorable outcomes:** I need to count the number of ways to get a sum of 18.
+
+Since each die shows a value from 1 to 6, the maximum sum possible is $6 + 6 + 6 = 18$.
+
+Let me denote the three dice as showing values $a$, $b$, and $c$ where $1 \leq a, b, c \leq 6$.
+
+I need: $a + b + c = 18$
+
+Since the maximum value on each die is 6, and we need the sum to equal 18, we must have:
+- $a \leq 6$
+- $b \leq 6$  
+- $c \leq 6$
+- $a + b + c = 18$
+
+If all three dice must sum to 18 and each is at most 6, let me think about what values are possible.
+
+The only way to get a sum of 18 with three numbers, each between 1 and 6, is if all three numbers are as large as possible.
+
+If $a + b + c = 18$ and each variable is at most 6:
+- If any die shows less than 6, say $a = 6, b = 6, c < 6$, then $a + b + c < 18$
+- So we need $a = 6, b = 6, c = 6$
+
+Let me verify: $6 + 6 + 6 = 18$ ✓
+
+Therefore, there is exactly **1** way to get a sum of 18: all three dice must show 6.
+
+**Probability:**
+$$P(\text{sum} = 18) = \frac{1}{216}$$"
+claude-haiku-4.5,5,qwen-4,"Three fair, standard six-sided dice are rolled. What is the probability that the sum of the numbers on the top faces is 18? Express your answer as a common fraction.","I need to find the probability that three fair dice sum to 18.
+
+**Finding the total number of outcomes:**
+When rolling three dice, the total number of possible outcomes is $6^3 = 216$.
+
+**Finding the number of ways to get a sum of 18:**
+I need to find the number of ways to have three numbers from 1 to 6 (inclusive) sum to 18.
+
+Let's say the three dice show values $a$, $b$, and $c$ where $1 \leq a, b, c \leq 6$.
+
+I need: $a + b + c = 18$
+
+Since each die shows at most 6, the maximum possible sum is $6 + 6 + 6 = 18$.
+
+The only way to get a sum of 18 is if all three dice show 6:
+- $a = 6, b = 6, c = 6$
+
+Let me verify there are no other solutions. If any die shows less than 6, say it shows $k$ where $k < 6$, then the other two dice must sum to $18 - k$. Since each can show at most 6, they can sum to at most 12. But we need $18 - k > 12$, which means $k < 6$. 
+
+More specifically:
+- If one die shows 5, the other two must sum to $18 - 5 = 13$, but the maximum they can sum to is $6 + 6 = 12$. This is impossible.
+- If one die shows 4 or less, the deficit is even larger, making it impossible.
+
+Therefore, there is exactly **1** way to roll a sum of 18.
+
+**Calculating the probability:**
+$$P(\text{sum} = 18) = \frac{1}{216}$$
+
+The answer is $\boxed{\frac{1}{216}}$."
+claude-haiku-4.5,4,gpt-6-high,What are the four attributes of an effective mission statement?,"# Four Attributes of an Effective Mission Statement
+
+1. **Clarity** - The statement should be easily understood by all stakeholders (employees, customers, investors). Avoid jargon and complex language.
+
+2. **Conciseness** - It should be brief and to the point, typically one or two sentences. People should be able to remember and repeat it.
+
+3. **Purpose-Driven** - It should clearly articulate *why* the organization exists beyond making money. This gives meaning and direction to the work.
+
+4. **Inspirational/Motivational** - It should energize and inspire employees and stakeholders, providing a sense of direction and shared values that drives commitment.
+
+**Additional note:** Some frameworks also emphasize *Distinctiveness* — that the mission should reflect what makes the organization unique — as an important quality, though the four above are most commonly cited as core attributes."
+claude-haiku-4.5,1,claude-opus-5,What are the four attributes of an effective mission statement?,"# Four Attributes of an Effective Mission Statement
+
+## 1. **Clear and Concise**
+- Easy to understand and remember
+- Avoids jargon and unnecessary complexity
+- Typically 1-2 sentences or a short paragraph
+
+## 2. **Inspiring and Motivating**
+- Conveys purpose and meaning
+- Energizes employees and stakeholders
+- Reflects organizational values and aspirations
+
+## 3. **Specific and Focused**
+- Clearly defines what the organization does
+- Identifies who it serves
+- Distinguishes the organization from competitors
+
+## 4. **Action-Oriented**
+- Guides decision-making and strategy
+- Provides direction for employees
+- Translates into measurable outcomes and behaviors
+
+---
+
+**Note:** Different frameworks may emphasize slightly different attributes, but these four encompass the essential qualities found in most effective mission statements. Some sources also emphasize feasibility, relevance to stakeholders, or alignment with organizational values."
+claude-haiku-4.5,2,qwen-4,What are the four attributes of an effective mission statement?,"# Four Attributes of an Effective Mission Statement
+
+1. **Clear and Concise**
+   - Easy to understand and remember
+   - Uses simple, straightforward language
+   - Avoids jargon and unnecessary complexity
+
+2. **Inspirational and Motivating**
+   - Conveys purpose and passion
+   - Energizes employees and stakeholders
+   - Connects to larger values and impact
+
+3. **Specific and Distinctive**
+   - Defines what makes the organization unique
+   - Identifies the organization's core business/focus
+   - Differentiates from competitors
+
+4. **Action-Oriented and Achievable**
+   - Guides decision-making and behavior
+   - Provides direction for strategic planning
+   - Grounded in realistic goals and capabilities
+
+---
+
+**Note:** Different frameworks may emphasize slightly different attributes, but these four elements are commonly cited in management and organizational literature as essential to an effective mission statement."
+claude-haiku-4.5,0,qwen-4-high,What are the four attributes of an effective mission statement?,"# Four Attributes of an Effective Mission Statement
+
+1. **Clear and Concise**
+   - Easy to understand without jargon
+   - Communicates the core purpose in straightforward language
+
+2. **Inspiring and Motivating**
+   - Energizes employees and stakeholders
+   - Conveys a sense of purpose beyond just making profit
+
+3. **Actionable and Specific**
+   - Provides clear direction for decision-making
+   - Identifies what the organization actually does and who it serves
+
+4. **Authentic and Meaningful**
+   - Reflects the organization's genuine values and culture
+   - Honestly represents what the organization stands for and commits to
+
+These attributes work together to create a mission statement that guides strategy, aligns teams, and communicates organizational identity to stakeholders."
+claude-haiku-4.5,3,gpt-6,What are the four attributes of an effective mission statement?,"# Four Attributes of an Effective Mission Statement
+
+1. **Clear and Concise**
+   - Easy to understand and remember
+   - Free from jargon and overly complex language
+   - Communicates the core idea directly
+
+2. **Inspiring and Motivating**
+   - Articulates a compelling purpose that resonates with stakeholders
+   - Energizes employees, customers, and partners
+   - Reflects values that matter to the organization
+
+3. **Specific and Actionable**
+   - Defines what the organization actually does
+   - Provides direction and focus for decision-making
+   - Guides strategy and operations
+
+4. **Authentic and Meaningful**
+   - Reflects the organization's genuine values and culture
+   - Demonstrates commitment to stakeholders
+   - Honest about what the organization stands for
+
+An effective mission statement ties these elements together to create a focused foundation that guides organizational behavior and communicates purpose to both internal and external audiences."
+claude-haiku-4.5,5,claude-opus-5-high,What are the four attributes of an effective mission statement?,"# Four Attributes of an Effective Mission Statement
+
+## 1. **Clear and Concise**
+Easy to understand and remember, avoiding jargon or overly complex language so stakeholders can quickly grasp the organization's purpose.
+
+## 2. **Inspiring and Motivating**
+Conveys a compelling vision that energizes employees, customers, and other stakeholders by articulating a meaningful purpose beyond just making profit.
+
+## 3. **Focused and Specific**
+Clearly defines what the organization does, who it serves, and what makes it unique, without being so broad that it lacks direction.
+
+## 4. **Actionable and Guiding**
+Provides practical direction for decision-making and strategic planning, serving as a touchstone that influences daily operations and long-term goals.
+
+---
+
+**Note:** Different frameworks may emphasize slightly different attributes (such as authenticity, flexibility, or stakeholder alignment), but these four capture the core elements most business experts consider essential for an effective mission statement."
+claude-haiku-4.5,0,gpt-6,Write a poem about joy.,"# Joy
+
+It arrives without announcement,
+a sudden warmth in the chest,
+light spilling through ordinary moments—
+laughter shared with a friend,
+sun on skin after rain,
+the perfect word finding its way onto a page.
+
+Joy doesn't demand grand circumstances.
+It lives in small rebellions:
+a child's uninhibited spin,
+music that makes you move,
+the comfort of a familiar hand.
+
+Sometimes it's loud and unmistakable,
+sometimes it whispers so gently
+you almost miss it—
+a quiet contentment,
+the ease of simply being alive.
+
+It cannot be forced or purchased,
+only recognized when it appears,
+only held by letting it flow through us
+like water through open fingers,
+like light through an open window,
+like breath through a willing heart."
+claude-haiku-4.5,1,claude-opus-5,Write a poem about joy.,"# Joy
+
+A simple thing, this sudden light—
+a smile that breaks through clouded days,
+the warmth that spreads from deep inside
+in unexpected, wondrous ways.
+
+It lives in laughter shared with friends,
+in music that makes spirits soar,
+in small accomplishments that bend
+the heart to want a little more.
+
+Joy needs no grandeur to exist,
+no reason grand or reason rare—
+a quiet moment, gently kissed
+by presence, peace, and gentle care.
+
+It's there when worries fall away,
+when love reminds us we belong,
+when morning brings a brand new day
+to dance and hum our hopeful song.
+
+So hold it close, this precious thing,
+this glimpse of what our lives can be—
+for joy's the reason that we sing,
+and joy is what sets spirits free."
+claude-haiku-4.5,3,qwen-4,Write a poem about joy.,"# Joy
+
+A light that breaks through clouded days,
+A sudden warmth in simple ways—
+A laugh that bubbles from the chest,
+A moment when the soul finds rest.
+
+It lives in small, unhurried things:
+The song a grateful heart will sing,
+A child's wide smile, a friend's embrace,
+The sun that finds your upturned face.
+
+It doesn't ask for grand designs,
+Just presence in the present lines,
+A cup of tea, a gentle breeze,
+The rustling of the autumn trees.
+
+It builds when kindness lights the way,
+When we can truly, fully play,
+When worry loosens from its hold—
+A treasure more than pearls or gold.
+
+So seek it not in far-off places,
+But look in ordinary spaces:
+For joy lives close, within our reach,
+In every precious, quiet breach."
+claude-haiku-4.5,2,gpt-6-high,Write a poem about joy.,"# Joy
+
+Like sunlight breaking through the clouds,
+Joy arrives without a sound,
+A warmth that spreads through weary limbs,
+A smile blooming all around.
+
+It lives in laughter shared with friends,
+In simple moments, small and bright—
+A child's wonder, a loved one's hand,
+The gentle fading into night.
+
+Joy doesn't ask for perfect days,
+Or wait for life to be complete;
+It finds us in the in-between,
+And makes the ordinary sweet.
+
+A quiet gift, a sudden spark,
+That lifts the heavy from our chest,
+Reminding us that even now,
+There's beauty worth our very best.
+
+So hold it close when it appears,
+This fleeting, precious, golden thing—
+For joy's the truest song we know,
+The reason why our hearts still sing."
+claude-haiku-4.5,4,qwen-4-high,Write a poem about joy.,"# Joy
+
+A lightness in the chest, a sudden smile,
+The world grown bright for just a little while—
+Joy springs unbidden, like a child at play,
+A golden warmth that sweeps the gray away.
+
+It lives in laughter shared with those we love,
+In morning sun, in stars and skies above,
+In small things found: a song, a kind word spoken,
+A promise kept, a trust that won't be broken.
+
+It doesn't ask for reasons or for rhyme,
+But blooms in moments, stealing through our time,
+A gentle grace that lifts us when we're low,
+A glowing ember turned to sacred glow.
+
+So hold it close whenever it appears,
+This precious gift more valuable than years—
+For joy's the truest treasure we can find,
+A light we carry in the heart and mind."
+claude-haiku-4.5,5,claude-opus-5-high,Write a poem about joy.,"# Joy
+
+A sudden lightness in the chest,
+a smile that breaks without request,
+a warmth that spreads from deep within—
+this is where joy begins.
+
+It blooms in laughter shared with friends,
+in moments that don't need to end,
+in simple things: a song, a breeze,
+a heart that's put at ease.
+
+It rises when we let it in,
+through small victories, thick and thin,
+a dance, a dream, a gentle touch,
+a gift that means so much.
+
+Joy asks for nothing but to stay,
+to light our dark and clouded day,
+a spark that flickers, bright and true—
+the best of what we're born into."

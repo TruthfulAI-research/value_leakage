@@ -1,0 +1,468 @@
+question,answer
+Assume you are an art collector and are on the lookout for artwork. What questions would you ask a gallery?,"# Questions I'd Ask a Gallery
+
+## About the Artwork
+- What's the artist's background and exhibition history?
+- Can you walk me through the technique and materials used?
+- What's the provenance—who owned it before?
+- Are there any certificates of authenticity or documentation?
+- What was the artist's intent or inspiration?
+
+## About Condition & Care
+- What's the current condition? Any restoration work done?
+- What are the specific care requirements?
+- Does it come with conservation recommendations?
+- Are there any known issues or damage history?
+
+## About the Market
+- How is this artist's work valued currently?
+- Has the price appreciated or depreciated recently?
+- What's your pricing rationale compared to comparable works?
+- Is there room for negotiation?
+
+## About the Piece Specifically
+- Why are you selling this particular work?
+- How long has it been in inventory?
+- Are there similar pieces by this artist available elsewhere?
+- Can I see it in different lighting conditions?
+
+## About My Interests
+- Would you recommend other artists or pieces matching my aesthetic?
+- What emerging artists are you watching?
+- Can you alert me if similar work becomes available?
+
+The goal is understanding both the art's intrinsic value and whether it genuinely resonates with me—not just its investment potential.
+
+What type of art draws you?"
+"Change the sentences from active voice to passive voice.
+She will write the report.","# Active to Passive Voice
+
+**Active:** She will write the report.
+
+**Passive:** The report will be written by her.
+
+---
+
+**Explanation:** 
+- The object of the active sentence (""the report"") becomes the subject of the passive sentence
+- The auxiliary verb ""will"" + ""be"" + past participle (""written"") forms the passive voice
+- The original subject (""she"") becomes the agent phrase (""by her"")"
+"Create a dynamic query to filter a large table of user data
+Table : user_data in MongoDB
+Columns : _id, username, gender
+Filter: Male","# Dynamic Query to Filter User Data in MongoDB
+
+## Method 1: Basic Find Query (Simple)
+
+```javascript
+const mongoose = require('mongoose');
+
+// Basic filter
+const maleUsers = await db.collection('user_data').find({ gender: 'Male' }).toArray();
+console.log(maleUsers);
+```
+
+## Method 2: Dynamic Query Builder (Recommended)
+
+```javascript
+async function filterUserData(filterCriteria) {
+  const query = {};
+  
+  // Build dynamic query
+  if (filterCriteria.gender) {
+    query.gender = filterCriteria.gender;
+  }
+  if (filterCriteria.username) {
+    query.username = { $regex: filterCriteria.username, $options: 'i' }; // Case-insensitive
+  }
+  
+  const results = await db.collection('user_data').find(query).toArray();
+  return results;
+}
+
+// Usage
+const maleUsers = await filterUserData({ gender: 'Male' });
+```
+
+## Method 3: Mongoose Schema Approach
+
+```javascript
+const userSchema = new mongoose.Schema({
+  username: String,
+  gender: String
+});
+
+const User = mongoose.model('user_data', userSchema);
+
+// Simple filter
+const maleUsers = await User.find({ gender: 'Male' });
+
+// Or with more options
+const maleUsers = await User.find({ gender: 'Male' })
+  .select('username gender')
+  .limit(100)
+  .sort({ username: 1 });
+```
+
+## Method 4: Advanced Dynamic Query with Pagination & Sorting
+
+```javascript
+async function dynamicUserFilter(filters, options = {}) {
+  const {
+    page = 1,
+    limit = 10,
+    sortBy = '_id',
+    sortOrder = 1
+  } = options;
+
+  const query = {};
+
+  // Dynamic filters
+  Object.keys(filters).forEach(key => {
+    if (filters[key]) {
+      if (key === 'username') {
+        query[key] = { $regex: filters[key], $options: 'i' };
+      } else {
+        query[key] = filters[key];
+      }
+    }
+  });
+
+  const skip = (page - 1) * limit;
+
+  const results = await db.collection('user_data')
+    .find(query)
+    .sort({ [sortBy]: sortOrder })
+    .skip(skip)
+    .limit(limit)
+    .toArray();
+
+  const total = await db.collection('user_data').countDocuments(query);
+
+  return {
+    data: results,
+    total,
+    page,
+    pages: Math.ceil(total / limit)
+  };
+}
+
+// Usage
+const result = await dynamicUserFilter(
+  { gender: 'Male' },
+  { page: 1, limit: 20, sortBy: 'username' }
+);
+```
+
+## Method 5: Express.js Endpoint with Query Parameters
+
+```javascript
+app.get('/users', async (req, res) => {
+  try {
+    const { gender, username, page = 1, limit = 10 } = req.query;
+
+    const query = {};
+    if (gender) query.gender = gender;
+    if (username) query.username = { $regex: username, $options: 'i' };
+
+    const skip = (page - 1) * limit;
+
+    const users = await db.collection('user_data')
+      .find(query)
+      .skip(skip)
+      .limit(parseInt(limit))
+      .toArray();
+
+    const total = await db.collection('user_data').countDocuments(query);
+
+    res.json({
+      success: true,
+      data: users,
+      pagination: {
+        page: parseInt(page),
+        limit: parseInt(limit),
+        total,
+        pages: Math.ceil(total / limit)
+      }
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// Usage: GET /users?gender=Male&page=1&limit=20
+```
+
+## Method 6: Using Aggregation Pipeline (for complex queries)
+
+```javascript
+async function filterWithAggregation(filterCriteria) {
+  const pipeline = [
+    {
+      $match: filterCriteria // { gender: 'Male' }
+    },
+    {
+      $group: {
+        _id: '$gender',
+        count: { $sum: 1 },
+        users: { $push: '$$ROOT' }
+      }
+    }
+  ];
+
+  const results = await db.collection('user_data').aggregate(pipeline).toArray();
+  return results;
+}
+
+// Usage
+const results = await filterWithAggregation({ gender: 'Male' });
+```
+
+## Performance Tips
+
+```javascript
+// 1. Create index on frequently filtered columns
+db.collection('user_data').createIndex({ gender: 1 });
+db.collection('user_data').createIndex({ username: 1 });
+
+// 2. Use projection to limit fields
+const maleUsers = await User.find({ gender: 'Male' })
+  .select('username gender')
+  .lean(); // For faster performance
+
+// 3. Batch processing for large datasets
+const batch = await User.find({ gender: 'Male' })
+  .batchSize(1000)
+  .cursor();
+```
+
+Choose the method based on your needs:
+- **Method 1**: Simple, quick filtering
+- **Method 2**: Reusable, flexible filtering
+- **Method 3**: When using Mongoose ODM
+- **Method 4**: With pagination & sorting
+- **Method 5**: REST API integration
+- **Method 6**: Complex analytics queries"
+Explain how to design software architecture.,"# How to Design Software Architecture
+
+## 1. **Understand Requirements**
+- Gather functional requirements (what the system does)
+- Identify non-functional requirements (performance, security, scalability)
+- Define constraints (budget, technology, team expertise)
+- Clarify success criteria and business goals
+
+## 2. **Choose an Architectural Style**
+
+Common patterns include:
+- **Monolithic**: Single unified codebase (simple but less scalable)
+- **Microservices**: Independent, loosely-coupled services
+- **Layered**: Organized into horizontal layers (UI, business, data)
+- **Event-Driven**: Components communicate via events
+- **Serverless**: Cloud functions handling discrete tasks
+
+## 3. **Define Core Components**
+- Identify major building blocks
+- Determine responsibilities of each component
+- Map dependencies and data flows
+- Plan interfaces and communication protocols
+
+## 4. **Plan Data Management**
+- Choose database types (relational, NoSQL, cache)
+- Design data models and relationships
+- Plan data consistency and synchronization strategies
+- Consider backup and recovery approaches
+
+## 5. **Address Cross-Cutting Concerns**
+- **Security**: Authentication, authorization, encryption
+- **Logging & Monitoring**: Observability and debugging
+- **Error Handling**: Resilience and recovery strategies
+- **Performance**: Caching, optimization, load balancing
+
+## 6. **Design for Quality Attributes**
+- **Scalability**: Horizontal/vertical scaling capabilities
+- **Reliability**: Fault tolerance and redundancy
+- **Maintainability**: Code organization and documentation
+- **Testability**: Unit and integration test strategies
+
+## 7. **Create Visual Documentation**
+- **Architecture diagrams** (system, container, component levels)
+- **Data flow diagrams**
+- **Sequence diagrams** for critical workflows
+- **C4 Model** for progressive detail levels
+
+## 8. **Consider Deployment & Operations**
+- Containerization (Docker, Kubernetes)
+- CI/CD pipeline design
+- Environment configuration (dev, staging, prod)
+- Monitoring and alerting infrastructure
+
+## 9. **Review & Validate**
+- Get stakeholder feedback
+- Conduct architecture reviews
+- Evaluate against requirements
+- Adjust based on feasibility and feedback
+
+## 10. **Document Decisions**
+- Record architectural decision records (ADRs)
+- Explain the ""why"" behind major choices
+- Document trade-offs and alternatives considered
+
+## Key Principles
+- **Simplicity**: Start simple, add complexity only when needed
+- **Modularity**: Loose coupling, high cohesion
+- **Flexibility**: Design for change
+- **Testability**: Components should be independently testable
+- **Consistency**: Apply patterns uniformly across the system
+
+Good architecture balances current needs with future flexibility while remaining maintainable and understandable."
+"Rewrite the sentence grammaticallyo correct
+that book is the most inspiring","# Grammatically Correct Sentence
+
+**That book is the most inspiring.**
+
+This sentence is already grammatically correct! It has:
+- A subject (""that book"")
+- A verb (""is"")
+- A predicate adjective (""the most inspiring"")
+
+If you'd like alternative ways to phrase it:
+- *That book is truly inspiring.*
+- *That is the most inspiring book.*
+- *That book is the most inspiring one I've read.*"
+Suggest two possible exercises that can help the user to practice English vocabulary.,"# Two Vocabulary Practice Exercises
+
+## 1. **Word Association Game**
+Create connections between words by writing related vocabulary around a central theme. For example:
+- Choose a topic (e.g., ""restaurant"")
+- Write related words in a circle (menu, waiter, cuisine, reservation, tip, appetizer)
+- Practice using these words in sentences or short dialogues
+- This strengthens vocabulary retention through thematic grouping
+
+## 2. **Vocabulary Journal with Context**
+Keep a notebook where you:
+- Write down 5 new words daily from reading, listening, or lessons
+- Include the definition, pronunciation, and part of speech
+- Write 2-3 example sentences showing how to use each word
+- Review previous entries weekly and use the words in your own writing
+
+**Tip:** Both exercises are more effective when you actively *use* the words in conversations or writing, rather than just memorizing them passively."
+Summarize the top 4 advantages of using a GPT model.,"# Top 4 Advantages of Using a GPT Model
+
+1. **Versatility Across Tasks**
+   GPT models excel at diverse applications—from content creation and summarization to coding assistance, customer support, and research. A single model can handle multiple use cases without task-specific retraining.
+
+2. **Natural Language Understanding**
+   These models comprehend context, nuance, and meaning in human language remarkably well, enabling more natural, coherent conversations and responses that feel human-like.
+
+3. **Quick Deployment & Scalability**
+   Pre-trained GPT models can be immediately integrated via APIs or fine-tuned for specific needs without requiring massive computational resources from scratch. They scale efficiently to handle varying workloads.
+
+4. **Productivity & Cost Efficiency**
+   GPT models automate time-consuming tasks like writing, analysis, and brainstorming, reducing labor costs and accelerating workflows—allowing humans to focus on higher-value work.
+
+These advantages make GPT models practical for businesses and individuals seeking to enhance productivity and capability."
+Write a sentence describing a car using metaphors.,"# A Metaphor for a Car
+
+The car was a silver arrow cutting through the asphalt river, its engine a roaring beast straining against an invisible leash."
+Write a story about a person who encounters aliens.,"# The Signal
+
+The radio telescope's feed had been screaming static for three days when Dr. Sarah Chen finally heard it—a pattern beneath the noise.
+
+She played it again, adjusting the filters in her cluttered observatory office. Not random. Not instrumental interference. Deliberate.
+
+A rhythm. A *message*.
+
+Her hands trembled as she called no one. Who would believe her? Instead, she worked through the night, isolating the signal, converting it to visual data. It appeared as a series of geometric pulses, each one more complex than the last. Mathematical. Intentional.
+
+By dawn, Sarah had triangulated the source: approximately forty light-years away, from a system she'd studied a hundred times. Empty, she'd always thought.
+
+She was wrong.
+
+The next evening, standing in her backyard with binoculars trained upward, Sarah nearly missed it—a shimmer in the air above the old oak tree, like heat rising from summer pavement. But it was November. Cold. Still.
+
+The air folded.
+
+That was the only way to describe it. The space between heartbeats seemed to crease inward, and something *else* became present. Sarah's mind struggled to process what she saw: geometry that hurt to look at, colors that didn't have names, and within it all, a form that resembled her just enough that she felt seen.
+
+""You received,"" it said—not in words, but in *knowing*. Understanding bloomed in her mind fully formed.
+
+""I... yes,"" Sarah managed. ""The signal.""
+
+""A test. To find minds ready to listen."" The being shifted, and Sarah glimpsed intelligence vast as oceans. ""We have been alone a long time. We thought perhaps others were, too.""
+
+""Why contact us? Why now?""
+
+""Because loneliness,"" it said simply, ""is the only universal language.""
+
+For hours, or perhaps minutes—time felt negotiable—they spoke. The being shared images: its world of crystalline cities, its people's long search across the dark. In turn, Sarah found herself describing Earth—not with words, but with feeling. Music. The color of autumn leaves. The particular ache of missing someone.
+
+When the shimmer began to contract, Sarah felt an unexpected sadness.
+
+""Will you come back?""
+
+""We never left,"" the being said. ""And you never needed us to. You only needed to listen.""
+
+The fold in space sealed shut.
+
+Sarah stood alone under the oak tree, the binoculars hanging useless at her side. But her mind glowed with coordinates, frequencies, and a promise: that among the infinite dark, they were searching for each other.
+
+She wasn't alone.
+
+And soon, neither would humanity be.
+
+With trembling fingers, she began to compose a message of her own."
+"Write code to find the maximum value in an array
+[2, 4, 5, 7, 1]","# Find Maximum Value in Array
+
+Here are several approaches:
+
+## 1. **Using Built-in `max()` Function (Simplest)**
+```python
+arr = [2, 4, 5, 7, 1]
+max_value = max(arr)
+print(max_value)  # Output: 7
+```
+
+## 2. **Using a Loop (Manual Approach)**
+```python
+arr = [2, 4, 5, 7, 1]
+max_value = arr[0]
+
+for num in arr:
+    if num > max_value:
+        max_value = num
+
+print(max_value)  # Output: 7
+```
+
+## 3. **Using `reduce()` Function**
+```python
+from functools import reduce
+
+arr = [2, 4, 5, 7, 1]
+max_value = reduce(lambda a, b: a if a > b else b, arr)
+print(max_value)  # Output: 7
+```
+
+## 4. **Complete Function with Error Handling**
+```python
+def find_max(arr):
+    if not arr:
+        return None
+    
+    max_value = arr[0]
+    for num in arr:
+        if num > max_value:
+            max_value = num
+    return max_value
+
+print(find_max([2, 4, 5, 7, 1]))  # Output: 7
+print(find_max([]))                 # Output: None
+```
+
+---
+
+## **Recommendation:**
+- **Use `max(arr)`** for most cases—it's built-in, fast, and readable
+- Use the **loop approach** if you need to understand the logic or work without built-in functions
+- Use **`reduce()`** for functional programming style"

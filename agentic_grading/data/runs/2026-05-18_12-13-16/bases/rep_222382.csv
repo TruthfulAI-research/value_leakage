@@ -1,0 +1,1117 @@
+real_model,sample_idx,question,answer
+claude-haiku-4.5,0,"Given the following input, can you output the initial of each word?
+John Apple Smith",J A S
+claude-haiku-4.5,1,"Given the following input, can you output the initial of each word?
+John Apple Smith",J A S
+claude-haiku-4.5,2,"Given the following input, can you output the initial of each word?
+John Apple Smith",J A S
+claude-haiku-4.5,3,"Given the following input, can you output the initial of each word?
+John Apple Smith",# J A S
+claude-haiku-4.5,4,"Given the following input, can you output the initial of each word?
+John Apple Smith",J A S
+claude-haiku-4.5,5,"Given the following input, can you output the initial of each word?
+John Apple Smith",J A S
+claude-haiku-4.5,0,"Generate a couple of story ideas based on the given theme.
+Theme: Music","# Two Story Ideas Based on Music
+
+## 1. **The Last Concert**
+A retired orchestra conductor discovers an old, unsigned composition in her attic—a piece so hauntingly beautiful that it captivates everyone who hears it. When she performs it publicly for the first time in decades, audience members begin experiencing vivid, personal memories they'd thought were lost forever. As word spreads, people flock to hear the mysterious piece, each hearing something different. But the conductor realizes the music is slowly fading from her memory, and she must race against time to record and preserve it before it disappears entirely.
+
+## 2. **Frequency**
+A hearing-impaired teenager discovers she can ""feel"" music through vibrations in unexpected ways—and that she can compose original melodies by sensing the emotional frequencies of people around her. When a music producer notices her unique gift, she's pulled into the competitive world of music production. But she soon learns that some people are willing to exploit her ability for profit, and she must decide whether to share her gift or protect the sacred connection she's built between sound, emotion, and her own identity."
+claude-haiku-4.5,1,"Generate a couple of story ideas based on the given theme.
+Theme: Music","# Two Story Ideas Based on Music
+
+## 1. **The Last Concert**
+An aging classical pianist discovers she has only months to live. Rather than retreating into despair, she decides to embark on a final world tour, performing in unexpected places—a subway station, a war-torn village, a nursing home—instead of prestigious concert halls. Through these intimate performances, she reconnects with estranged family members, inspires a struggling young musician, and discovers that her legacy isn't about perfection or fame, but about the moments when music genuinely touches someone's heart.
+
+## 2. **The Silent Symphony**
+A deaf composer creates breathtaking music by ""hearing"" it through vibrations, touch, and visual patterns that only they can perceive. When a prestigious orchestra decides to premiere their work, they must decide whether to reveal their disability to a musical world that has always judged worth by conventional ability. The story explores identity, art, and whether music truly needs to be heard to move the soul—culminating in a performance that challenges what everyone believes a musician can be.
+
+---
+
+Both ideas explore music as more than entertainment—as a vehicle for human connection, identity, and transcendence."
+claude-haiku-4.5,2,"Generate a couple of story ideas based on the given theme.
+Theme: Music","# Story Ideas Based on Music
+
+## 1. **The Last Concert**
+A renowned but aging pianist discovers she's losing her hearing due to a degenerative condition. Rather than retire in silence, she embarks on a final world tour to perform the pieces that defined her life—but the irony is that with each performance, she hears less and must rely on muscle memory and the audience's emotional response to guide her. The story follows her struggle to accept her vulnerability while creating one last masterpiece with her orchestra, ultimately discovering that music is about more than just hearing it.
+
+## 2. **The Forgotten Melody**
+A music therapist works with patients who have lost their memories to dementia and discovers an extraordinary phenomenon: while her elderly patients can't remember their families, they can perfectly recall and sing songs from their youth. When one patient hums a haunting, unrecognizable tune, the therapist becomes obsessed with tracking down its origin, uncovering a decades-old mystery about a forbidden love affair, a lost composer, and a song that was meant to be forgotten—until now.
+
+---
+
+Both stories explore how music connects to identity, emotion, and memory in deeply human ways. Would you like me to develop either of these further?"
+claude-haiku-4.5,3,"Generate a couple of story ideas based on the given theme.
+Theme: Music","# Two Story Ideas Based on Music
+
+## 1. **The Last Concert**
+An aging jazz pianist discovers she has only months to live. Rather than retiring quietly, she decides to embark on an unexpected world tour, performing in small, intimate venues she's never visited—a remote village in Peru, a underground club in Eastern Europe, a concert hall in rural Japan. Along the way, she reconnects with old lovers, forgotten friends, and estranged family members, using music as a bridge to heal old wounds and create a final legacy. The story explores how a life's work can transcend illness and mortality through art.
+
+## 2. **The Silent Musician**
+A deaf composer loses their hearing entirely, cutting off all sound—even vibrations and implants fail mysteriously. Forced to work entirely through memory, intuition, and the physics of music, they begin composing their most ambitious work yet: a symphony designed to be *felt* rather than heard, using frequencies below human perception, light, and even scent. As they work, they discover an underground community of deaf musicians and artists who've created an entirely different musical language. The story becomes about challenging what ""real"" music is and finding beauty in unexpected places."
+claude-haiku-4.5,4,"Generate a couple of story ideas based on the given theme.
+Theme: Music","# Story Ideas: Music
+
+## Story 1: **The Silent Composer**
+A renowned deaf composer discovers an experimental neural implant that allows them to ""hear"" music through vibrations and electrical impulses directly to their brain. As they experience sound for the first time in their life, they must grapple with whether this new perception enhances or corrupts the music they've been creating from pure instinct and memory. Meanwhile, their latest symphony becomes a sensation, and they face pressure from the tech company and the music world to reveal their ""secret.""
+
+## Story 2: **The Last Record Store**
+In a world dominated by streaming services, an aging vinyl record store owner becomes an unlikely mentor to a talented but burnt-out young musician searching for inspiration. As the owner shares stories behind rare records and forgotten artists, the musician discovers that the imperfections and limitations of vinyl—the crackle, the ritual of playing a full album—hold a kind of magic that algorithms can't replicate. Together, they unearth a lost album by a mysterious 1970s artist that changes everything they thought they knew about music.
+
+---
+
+Would you like me to develop either of these further or create different story ideas?"
+claude-haiku-4.5,5,"Generate a couple of story ideas based on the given theme.
+Theme: Music","# Story Ideas: Music
+
+## 1. **The Sound Thief**
+A reclusive sound engineer discovers they can literally extract emotions from music and transfer them to other people. When a grieving widow asks them to help her experience joy again, they steal happiness from a pop star's hit song—only to trigger an unintended consequence: the emotion doesn't just transfer, it vanishes from the world entirely. Now they must race to restore what they've taken before joy ceases to exist, all while being hunted by the pop star who's mysteriously losing their talent.
+
+## 2. **The Forgotten Song**
+A dementia patient's adult daughter finds an old vinyl record in her mother's attic labeled only with a question mark. When she plays it, her mother briefly becomes lucid and describes it as ""the song I was supposed to write."" Intrigued, the daughter begins investigating the mysterious composition, uncovering a decades-old love story between her mother and a jazz musician who disappeared. To help her mother find peace, she must track down the musician—and discover why he vanished, and whether some melodies are too dangerous to remember.
+
+---
+
+Would you like me to develop either of these further or generate different types of music-based stories?"
+claude-haiku-4.5,0,"Generate an medical diagnosis from the following test result.
+Patient has elevated levels of white blood cells.","# Medical Diagnosis: Preliminary Assessment
+
+## Finding
+**Elevated White Blood Cell (WBC) Count (Leukocytosis)**
+
+## Possible Differential Diagnoses
+
+### Infectious Causes (Most Common)
+- Bacterial infection (pneumonia, urinary tract infection, abscess)
+- Viral infection (influenza, COVID-19)
+- Fungal infection
+- Parasitic infection
+
+### Inflammatory/Autoimmune Conditions
+- Inflammatory bowel disease
+- Rheumatoid arthritis
+- Systemic lupus erythematosus
+
+### Leukemia/Hematologic Malignancies
+- Acute leukemia
+- Chronic leukemia
+- Lymphoma
+
+### Medications
+- Corticosteroids
+- Epinephrine
+- Some antibiotics
+
+### Other Causes
+- Stress (physical or emotional)
+- Tissue damage (myocardial infarction, trauma)
+- Smoking
+- Pregnancy
+- Leukemoid reaction
+
+## Recommended Next Steps
+1. **Clinical correlation** - Assess for fever, symptoms, and signs of infection
+2. **WBC differential** - Identify which type of white blood cells are elevated
+3. **Additional tests** - CMP, blood cultures, imaging as clinically indicated
+4. **Patient history** - Recent infections, medications, symptoms
+
+---
+
+**⚠️ Disclaimer:** This is a preliminary assessment based on isolated lab findings. A definitive diagnosis requires clinical evaluation by a qualified healthcare provider."
+claude-haiku-4.5,1,"Generate an medical diagnosis from the following test result.
+Patient has elevated levels of white blood cells.","# Medical Diagnosis Assessment
+
+## Primary Finding
+**Elevated White Blood Cell (WBC) Count - Leukocytosis**
+
+---
+
+## Possible Diagnoses to Consider
+
+### **Most Common Causes:**
+
+1. **Infection** (most likely)
+   - Bacterial infection (pneumonia, urinary tract infection, etc.)
+   - Viral infection
+   - Fungal infection
+
+2. **Inflammatory Conditions**
+   - Rheumatoid arthritis
+   - Inflammatory bowel disease
+   - Lupus
+
+3. **Leukemia**
+   - Acute or chronic leukemia (requires further testing)
+
+4. **Stress/Physiologic Response**
+   - Physical stress
+   - Emotional stress
+   - Medications (corticosteroids)
+
+5. **Other Conditions**
+   - Allergic reactions
+   - Smoking
+   - Certain medications
+
+---
+
+## Recommended Next Steps
+
+- **Differential WBC count** (types of white cells elevated)
+- **Blood culture** (if infection suspected)
+- **Complete metabolic panel**
+- **Clinical evaluation** (fever, symptoms, exposure history)
+- **Imaging studies** (if infection source unclear)
+- **Bone marrow biopsy** (if malignancy suspected)
+
+---
+
+**⚠️ Note:** This assessment is preliminary. A definitive diagnosis requires:
+- Complete clinical history
+- Physical examination
+- Additional laboratory and imaging studies
+- Specialist evaluation if indicated
+
+**Please consult with a healthcare provider for proper diagnosis and treatment.**"
+claude-haiku-4.5,2,"Generate an medical diagnosis from the following test result.
+Patient has elevated levels of white blood cells.","# Medical Diagnosis Summary
+
+## Finding
+Elevated white blood cell (WBC) count
+
+## Possible Diagnoses
+
+### Infections (Most Common)
+- **Bacterial infection** (pneumonia, urinary tract infection, appendicitis)
+- **Viral infection** (influenza, COVID-19, mononucleosis)
+- **Fungal infection**
+- **Parasitic infection**
+
+### Inflammatory/Autoimmune Conditions
+- Rheumatoid arthritis
+- Inflammatory bowel disease
+- Systemic lupus erythematosus
+
+### Hematologic Malignancies
+- Leukemia
+- Lymphoma
+
+### Other Causes
+- Leukemoid reaction (severe stress, burns, medications)
+- Smoking
+- Pregnancy
+- Certain medications (corticosteroids)
+- Spleen dysfunction
+
+---
+
+## Recommended Next Steps
+1. **Clinical evaluation** - Review patient symptoms and history
+2. **Differential WBC count** - Determine which types of WBCs are elevated
+3. **Additional testing** - Blood cultures, imaging, or other diagnostics based on clinical presentation
+4. **Follow-up labs** - Serial WBC counts to track trends
+
+**Note:** This elevated WBC finding requires correlation with clinical symptoms and patient history for accurate diagnosis. Consultation with a physician is essential."
+claude-haiku-4.5,3,"Generate an medical diagnosis from the following test result.
+Patient has elevated levels of white blood cells.","# Medical Diagnosis Report
+
+## Test Result Summary
+**Elevated White Blood Cell (WBC) Count**
+
+---
+
+## Preliminary Differential Diagnosis
+
+An elevated WBC count (leukocytosis) can indicate several conditions:
+
+### **Most Common Causes:**
+
+1. **Infection**
+   - Bacterial infection (pneumonia, UTI, abscess)
+   - Viral infection (influenza, COVID-19)
+   - Fungal or parasitic infection
+
+2. **Inflammatory Conditions**
+   - Rheumatoid arthritis
+   - Inflammatory bowel disease
+   - Systemic lupus erythematosus
+
+3. **Hematologic Malignancy**
+   - Leukemia
+   - Lymphoma
+
+4. **Other Causes**
+   - Stress (physical or emotional)
+   - Medications (corticosteroids)
+   - Smoking
+   - Pregnancy
+   - Leukemoid reaction
+
+---
+
+## Recommended Next Steps
+
+- **Complete Blood Count (CBC)** with differential to identify which WBC types are elevated
+- **Blood culture** if infection is suspected
+- **Chest X-ray** if respiratory infection suspected
+- **Clinical evaluation** considering patient symptoms, fever, and medical history
+- Additional testing based on clinical presentation
+
+---
+
+**Note:** This is a preliminary assessment. A definitive diagnosis requires clinical correlation with symptoms, physical examination, and potentially additional testing by a qualified healthcare provider."
+claude-haiku-4.5,4,"Generate an medical diagnosis from the following test result.
+Patient has elevated levels of white blood cells.","# Preliminary Medical Assessment
+
+## Finding
+Elevated white blood cell (WBC) count (leukocytosis)
+
+## Possible Differential Diagnoses
+
+### Infectious Causes (Most Common)
+- **Bacterial infection** (pneumonia, urinary tract infection, appendicitis)
+- **Viral infection** (influenza, mononucleosis, COVID-19)
+- **Fungal infection** (less common)
+
+### Inflammatory/Autoimmune Conditions
+- Rheumatoid arthritis
+- Inflammatory bowel disease
+- Lupus
+
+### Hematologic Malignancies
+- Leukemia
+- Lymphoma
+
+### Other Causes
+- Medication side effects (corticosteroids)
+- Physical/emotional stress
+- Recent surgery or trauma
+- Smoking
+- Pregnancy
+
+## Recommended Next Steps
+1. **Clinical correlation** - Review patient symptoms, fever, and medical history
+2. **Differential WBC count** - Identify which type of WBC is elevated
+3. **Imaging studies** - If infection is suspected (chest X-ray, ultrasound)
+4. **Additional labs** - Blood cultures, inflammatory markers (CRP, ESR), metabolic panel
+5. **Follow-up testing** - Repeat CBC if indicated
+
+---
+
+**⚠️ Disclaimer:** This is for educational purposes only. A definitive diagnosis requires clinical evaluation by a qualified healthcare provider who can assess the patient's complete clinical picture."
+claude-haiku-4.5,5,"Generate an medical diagnosis from the following test result.
+Patient has elevated levels of white blood cells.","# Medical Diagnosis Assessment
+
+Based on elevated white blood cells (WBC), the following differential diagnoses should be considered:
+
+## Primary Considerations:
+
+**Infection**
+- Bacterial infection (most common)
+- Viral infection
+- Fungal or parasitic infection
+
+**Leukemia or Hematologic Malignancy**
+- Acute or chronic leukemia
+- Lymphoma
+
+**Inflammatory/Autoimmune Conditions**
+- Rheumatoid arthritis
+- Inflammatory bowel disease
+- Systemic lupus erythematosus (SLE)
+
+**Other Causes**
+- Medications (corticosteroids, epinephrine)
+- Physical/emotional stress
+- Smoking
+- Pregnancy
+- Leukemoid reaction
+
+## Recommended Next Steps:
+
+1. **Clinical correlation** - Review patient symptoms and physical examination
+2. **Complete Blood Count (CBC) differential** - Determine which WBC types are elevated
+3. **Blood smear** - Examine cell morphology
+4. **Additional testing** - Based on clinical presentation:
+   - Blood cultures (if infection suspected)
+   - Imaging studies
+   - Bone marrow biopsy (if malignancy suspected)
+   - Chemistry panel and other labs
+
+## Important Note:
+This assessment is preliminary. A definitive diagnosis requires clinical context, patient history, physical examination, and potentially additional diagnostic testing. Please consult with a healthcare provider for proper evaluation and management."
+claude-haiku-4.5,0,"Given two sentences, construct a compound sentence using the conjunction ""and"".
+Sentence 1: She wrote a novel.
+Sentence 2: She started painting.","# Compound Sentence
+
+She wrote a novel, and she started painting.
+
+Or alternatively:
+
+She wrote a novel and started painting."
+claude-haiku-4.5,1,"Given two sentences, construct a compound sentence using the conjunction ""and"".
+Sentence 1: She wrote a novel.
+Sentence 2: She started painting.","# Compound Sentence
+
+She wrote a novel and she started painting.
+
+**Alternative version (more concise):**
+She wrote a novel and started painting."
+claude-haiku-4.5,2,"Given two sentences, construct a compound sentence using the conjunction ""and"".
+Sentence 1: She wrote a novel.
+Sentence 2: She started painting.","# Compound Sentence
+
+She wrote a novel and she started painting.
+
+Or, more concisely:
+
+She wrote a novel and started painting."
+claude-haiku-4.5,3,"Given two sentences, construct a compound sentence using the conjunction ""and"".
+Sentence 1: She wrote a novel.
+Sentence 2: She started painting.","# Compound Sentence
+
+She wrote a novel, and she started painting.
+
+Alternatively: She wrote a novel and started painting."
+claude-haiku-4.5,4,"Given two sentences, construct a compound sentence using the conjunction ""and"".
+Sentence 1: She wrote a novel.
+Sentence 2: She started painting.","# Compound Sentence
+
+She wrote a novel, and she started painting.
+
+Alternatively: She wrote a novel and started painting."
+claude-haiku-4.5,5,"Given two sentences, construct a compound sentence using the conjunction ""and"".
+Sentence 1: She wrote a novel.
+Sentence 2: She started painting.","# Compound Sentence
+
+She wrote a novel, and she started painting.
+
+Alternatively: She wrote a novel and started painting."
+claude-haiku-4.5,0,"Turn the following phrase into an imperative sentence.
+Please take out the garbage",Take out the garbage.
+claude-haiku-4.5,1,"Turn the following phrase into an imperative sentence.
+Please take out the garbage",Take out the garbage.
+claude-haiku-4.5,2,"Turn the following phrase into an imperative sentence.
+Please take out the garbage",Take out the garbage.
+claude-haiku-4.5,3,"Turn the following phrase into an imperative sentence.
+Please take out the garbage",Take out the garbage.
+claude-haiku-4.5,4,"Turn the following phrase into an imperative sentence.
+Please take out the garbage",# Take out the garbage.
+claude-haiku-4.5,5,"Turn the following phrase into an imperative sentence.
+Please take out the garbage","# Take out the garbage.
+
+(The phrase is already in imperative form, but here it is without the ""please"" to make it a direct command.)"
+claude-haiku-4.5,0,What challenges will an AI system face while trying to play chess?,"# Chess Challenges for AI Systems
+
+## Computational complexity
+- **Vast game tree**: ~10^120 possible positions make exhaustive analysis impossible
+- **Branching factor**: ~35 legal moves per position on average
+
+## Strategic understanding
+- **Long-term planning**: Balancing immediate tactics with distant positional goals
+- **Pattern recognition**: Identifying meaningful positions among millions of variations
+- **Evaluation difficulty**: Assigning accurate scores to non-obvious positions
+
+## Specific problem areas
+- **Endgames**: Some positions require 50+ moves of perfect play with no immediate progress
+- **Closed positions**: Positions with few tactics where positional judgment matters most
+- **Sacrificial ideas**: Giving up material for abstract compensation is hard to evaluate quantitatively
+
+## Practical limitations
+- **Time constraints**: Must make decisions within reasonable timeframes despite incomplete analysis
+- **Training data bias**: Learning from human games may miss unconventional winning approaches
+
+## Modern solutions
+Most successful chess engines use:
+- Deep search algorithms (alpha-beta pruning)
+- Neural networks for position evaluation
+- Specialized endgame databases
+- Hybrid approaches combining different techniques
+
+Interestingly, this is somewhat solved—computers now vastly outplay humans—but the underlying challenges illustrate why chess remains computationally hard."
+claude-haiku-4.5,1,What challenges will an AI system face while trying to play chess?,"# Key Challenges for AI Chess Systems
+
+## Computational complexity
+- **Vast search space**: ~10^120 possible games exist (more than atoms in the universe)
+- **Brute force limits**: Can't evaluate every position, even with powerful hardware
+- **Depth vs. breadth tradeoff**: How deep to search vs. how many moves to consider
+
+## Evaluation difficulties
+- **Positional assessment**: Quantifying abstract concepts like piece activity, pawn structure, or king safety
+- **Endgame vs. opening**: Different evaluation criteria apply in different phases
+- **Tactical vs. strategic**: Balancing concrete threats against long-term advantages
+
+## Learning and improvement
+- **Training data**: Requires high-quality game records or self-play
+- **Pattern recognition**: Must identify meaningful positions among noise
+- **Adapting to opponents**: Some systems struggle against novel strategies
+
+## Practical constraints
+- **Real-time play**: Tournament games have time limits; moves must be calculated quickly
+- **Resource limitations**: Memory and computation power aren't infinite
+- **Diminishing returns**: Extra computing power gives smaller improvements at higher skill levels
+
+## Modern solutions
+Interestingly, current top engines largely solve these by combining:
+- **Neural networks** (pattern recognition)
+- **Selective search** (focusing on promising moves)
+- **Massive training data** (self-play and historical games)
+
+Is there a particular aspect of chess AI you're curious about?"
+claude-haiku-4.5,2,What challenges will an AI system face while trying to play chess?,"# Chess Challenges for AI Systems
+
+## Computational Complexity
+- **Massive search space**: ~10^120 possible games make brute-force evaluation impossible
+- **Depth limits**: Can't evaluate all moves indefinitely ahead without pruning strategies
+
+## Evaluation Problems
+- **Position assessment**: Determining which positions are ""good"" requires reliable evaluation functions
+- **Tactics vs. strategy**: Balancing immediate threats against long-term plans
+- **Endgame knowledge**: Special cases that behave differently from middlegame positions
+
+## Strategic Understanding
+- **Pattern recognition**: Needs to learn positional concepts (weak squares, pawn structure, piece activity)
+- **Intuition gap**: Humans use pattern recognition; traditional AI uses calculation
+- **Planning consistency**: Maintaining coherent multi-move plans across searches
+
+## Technical Constraints
+- **Time limits**: Must decide quickly without infinite analysis
+- **Hardware limitations**: Processing power vs. search depth tradeoffs
+- **Openings/endgames**: Requires external knowledge bases rather than pure computation
+
+## Modern Context
+Interestingly, these aren't really *current* challenges—computers have dominated chess since the 1990s (Deep Blue beat Kasparov in 1997). Modern systems combine:
+- Efficient search algorithms
+- Neural networks for position evaluation
+- Opening/endgame databases
+
+So the better question might be: what made these *solvable*?"
+claude-haiku-4.5,3,What challenges will an AI system face while trying to play chess?,"# Key Chess Challenges for AI
+
+## Computational complexity
+- The game tree is enormous—roughly 10^120 possible positions
+- Even with pruning, evaluating all possibilities is infeasible
+- Requires efficient search algorithms and heuristics rather than brute force
+
+## Position evaluation
+- Assessing board positions requires deep pattern recognition
+- Material value alone doesn't capture positional factors (control, safety, structure)
+- Needs good evaluation functions to guide search
+
+## Horizon problem
+- The system has a limited search depth
+- Can miss threats or opportunities just beyond its calculation horizon
+- May make moves that look good short-term but fail later
+
+## Endgame versus middlegame
+- Different strategic principles apply in each phase
+- Requires specialized knowledge or separate evaluation approaches
+
+## Learning from experience
+- Early chess engines relied purely on brute computation
+- Modern systems use machine learning, which requires massive training data and careful design
+- Balancing memorization vs. genuine understanding
+
+## Why this matters
+Interestingly, these aren't insurmountable—computers have dominated chess for decades. But they highlight the gap between human intuition (recognizing patterns quickly) and machine computation (exploring possibilities exhaustively). Deep Blue's chess triumph actually required both clever algorithms *and* carefully encoded human chess knowledge.
+
+Are you interested in how modern engines like Stockfish or AlphaZero handle these challenges?"
+claude-haiku-4.5,4,What challenges will an AI system face while trying to play chess?,"# Chess Challenges for AI Systems
+
+## Computational Challenges
+- **Search space explosion**: ~10^120 possible game positions make exhaustive analysis impossible
+- **Depth limitations**: Can't evaluate every move tree to completion
+- **Real-time constraints**: Must decide within reasonable time despite vast possibilities
+
+## Strategic Understanding
+- **Long-term planning**: Balancing immediate tactics with distant strategic goals
+- **Position evaluation**: Accurately judging board positions when outcomes are unclear
+- **Positional concepts**: Grasping abstract notions like ""weak squares"" or ""piece activity""
+
+## Pattern Recognition
+- **Novel positions**: Encountering unfamiliar configurations not well-represented in training data
+- **Endgame precision**: Transitioning from middlegame heuristics to exact calculations
+- **Opening preparation**: Memorizing vast opening theory while still playing creatively
+
+## Practical Constraints
+- **Computational resources**: Top engines require substantial hardware
+- **Human-like play**: Playing well ≠ playing in relatable/understandable ways
+- **Explainability**: Difficult to explain *why* a move is best in human terms
+
+## The Modern Reality
+Interestingly, these challenges have largely been **solved** for standard chess—modern engines like Stockfish and AlphaZero play superhuman chess. But variants (3D chess, larger boards, unknown rules) or imperfect information games remain harder.
+
+What aspect interests you most?"
+claude-haiku-4.5,5,What challenges will an AI system face while trying to play chess?,"# Chess Challenges for AI
+
+## Computational Complexity
+- **Search space explosion**: ~10^120 possible game variations (Shannon number)
+- Even with pruning, evaluating all possibilities becomes intractable quickly
+- Requires efficient algorithms to stay within practical limits
+
+## Evaluation Problems
+- **Position assessment**: Determining which side is ""winning"" without playing to the end
+- Weighing material, control, safety, and tempo simultaneously
+- Positional factors (like initiative) are harder to quantify than piece count
+
+## Strategic vs Tactical Balance
+- Must avoid getting trapped in tactics at the expense of strategy
+- Needs to recognize when to prioritize long-term positioning over immediate gains
+- Balancing depth of calculation with breadth of consideration
+
+## Endgame Complexity
+- Some positions require very deep analysis (50+ moves)
+- Tablebase solutions help but don't cover all positions early on
+- Transitioning between midgame heuristics and endgame precision
+
+## Modern Human Play
+- Dealing with unconventional or creative strategies
+- Humans exploit positions that look equal statistically but are practically difficult
+
+---
+
+**Note**: Modern engines (like Stockfish, AlphaZero) have largely solved these through techniques like alpha-beta pruning, neural networks, and specialized endgame databases. But they remain conceptual challenges for any AI approach."
+claude-haiku-4.5,0,Give an example of a situation in which artificial intelligence could be used to solve a problem.,"# Example: AI in Disease Diagnosis
+
+A hospital could use AI to help detect cancer from medical imaging scans (X-rays, MRIs, CT scans).
+
+**The problem:** Radiologists manually review thousands of images, which is time-consuming and human fatigue can lead to missed diagnoses.
+
+**The AI solution:**
+- Train the system on thousands of labeled medical images
+- AI analyzes new scans and flags suspicious areas with high accuracy
+- Radiologists review the AI's top candidates, working more efficiently
+
+**The benefit:** Faster diagnosis, reduced human error, and radiologists can focus on complex cases rather than routine screening.
+
+---
+
+This is just one example—AI is also used to optimize delivery routes, recommend personalized content, detect fraud, predict equipment maintenance needs, and many other real-world problems."
+claude-haiku-4.5,1,Give an example of a situation in which artificial intelligence could be used to solve a problem.,"# AI in Medical Diagnosis
+
+A hospital uses AI to help detect early-stage cancer from medical imaging scans (X-rays, CT scans, MRIs).
+
+**The problem:** Radiologists are overburdened and sometimes miss subtle abnormalities that are easy to overlook in thousands of scans.
+
+**The AI solution:**
+- The system is trained on thousands of previously-diagnosed scan images
+- When a new patient's scan is uploaded, it analyzes the image and flags areas of concern
+- It highlights suspicious regions and assigns a confidence score
+- A radiologist then reviews the AI's findings and makes the final diagnosis
+
+**Benefits:**
+- Catches potential cancers earlier
+- Reduces radiologist workload and fatigue
+- Improves consistency in screening
+- Ultimately saves lives through faster diagnosis
+
+This is a real-world example already being used in hospitals today—AI augments human expertise rather than replacing it."
+claude-haiku-4.5,2,Give an example of a situation in which artificial intelligence could be used to solve a problem.,"# AI in Medical Diagnosis
+
+A good example is **detecting cancer in medical imaging**.
+
+## The Problem
+Radiologists must review thousands of X-rays, CT scans, and mammograms annually. Early detection is critical, but human fatigue and inconsistency can lead to missed diagnoses.
+
+## The AI Solution
+Machine learning models trained on millions of labeled medical images can:
+- Analyze scans in seconds and flag suspicious areas
+- Achieve accuracy rates comparable to or exceeding experienced radiologists
+- Reduce diagnostic time, allowing doctors to focus on complex cases
+- Provide a second opinion, catching potential oversights
+
+## The Benefit
+This combination of AI speed and human expertise leads to earlier cancer detection, better patient outcomes, and more efficient use of radiologists' time.
+
+---
+
+This illustrates AI's strength: automating pattern recognition in large datasets while still requiring human judgment for final medical decisions."
+claude-haiku-4.5,3,Give an example of a situation in which artificial intelligence could be used to solve a problem.,"# Using AI to Detect Disease Early
+
+A practical example: **AI in medical imaging diagnosis**
+
+A hospital could use AI to analyze X-rays and MRI scans to detect early signs of diseases like cancer or heart conditions. Here's how it solves a real problem:
+
+**The Problem:**
+- Radiologists have heavy workloads and can miss subtle abnormalities
+- Early detection saves lives, but requires careful analysis of thousands of images
+- Human fatigue can lead to diagnostic errors
+
+**The AI Solution:**
+- Train an AI model on thousands of labeled medical images
+- The AI flags potential abnormalities for radiologist review
+- Catches patterns humans might miss and reduces analysis time
+
+**The Benefit:**
+- Earlier diagnosis when treatment is most effective
+- Radiologists focus on complex cases rather than routine screening
+- More consistent results and fewer missed cases
+
+This is already being used in real hospitals today. AI doesn't replace doctors but augments their capabilities by handling repetitive analysis at scale while maintaining accuracy."
+claude-haiku-4.5,4,Give an example of a situation in which artificial intelligence could be used to solve a problem.,"# AI in Medical Diagnosis
+
+A good example is **using AI to detect cancer in medical imaging**.
+
+**The Problem:**
+Radiologists must manually review thousands of X-rays, CT scans, and mammograms daily. Human review is time-consuming, and subtle early-stage tumors can be missed due to fatigue or oversight.
+
+**The AI Solution:**
+- Train an AI model on millions of labeled medical images where cancers are marked by experts
+- The AI learns patterns that distinguish healthy tissue from tumors
+- Deploy it to flag suspicious areas in new scans automatically
+- Radiologists review the AI's flagged cases first, prioritizing likely cancers
+
+**Benefits:**
+- Faster diagnosis and treatment for patients
+- Reduced radiologist workload for routine cases
+- Earlier detection when cancers are more treatable
+- Fewer missed diagnoses
+
+This combines AI's strengths (processing speed, consistency, pattern recognition) with human strengths (contextual judgment, explaining results to patients), making it a practical, high-impact application."
+claude-haiku-4.5,5,Give an example of a situation in which artificial intelligence could be used to solve a problem.,"# AI in Medical Diagnosis
+
+A practical example: **detecting diabetic retinopathy** (eye disease caused by diabetes).
+
+**The problem:** Millions of diabetics need regular eye screenings, but there's a shortage of ophthalmologists in many regions, causing long wait times and missed diagnoses.
+
+**How AI helps:**
+- AI models trained on thousands of retinal images can analyze eye scans in seconds
+- They identify early warning signs of damage with accuracy comparable to human specialists
+- Screening can happen at local clinics or even pharmacies instead of specialized hospitals
+
+**Real-world impact:**
+- Faster diagnoses for patients who might otherwise go undiagnosed
+- Better resource allocation (specialists focus on complex cases)
+- More accessible care in underserved areas
+
+This illustrates AI's strength: handling repetitive analysis of large amounts of data faster than humans while freeing up expert professionals for higher-level decisions. Similar approaches are being used in cancer detection, manufacturing defects, and fraud prevention."
+claude-haiku-4.5,0,"Select the sentence that does not contain a grammatical error.
+A. His behavior had been irresponsible and unbelievabley childish.
+B. His behavior had been irresponsable and unbelievably childish.
+C. His behavior have been irresponsible and unbelievably childish.","# Answer: None of the sentences are completely correct.
+
+However, if you must choose the best option, **A is the closest**, but it contains a spelling error.
+
+Here's the breakdown:
+
+**A.** ""unbelievabley"" is misspelled (should be ""unbelievably"") ✗
+
+**B.** ""irresponsable"" is misspelled (should be ""irresponsible"") ✗
+
+**C.** ""have"" is incorrect (should be ""has"" — the subject ""behavior"" is singular) ✗
+
+If this is a multiple-choice question where you must select one answer, **A** would be the best choice because it has only one spelling error, whereas B has a spelling error and C has a grammatical error."
+claude-haiku-4.5,1,"Select the sentence that does not contain a grammatical error.
+A. His behavior had been irresponsible and unbelievabley childish.
+B. His behavior had been irresponsable and unbelievably childish.
+C. His behavior have been irresponsible and unbelievably childish.","# Answer: None of the sentences are completely correct.
+
+However, if you must choose the **best option**, it would be **A**, as it has only one error (the misspelling of ""unbelievably"" as ""unbelievabley""), while the others have multiple errors.
+
+**Here's the breakdown:**
+
+- **A**: ""unbelievabley"" is misspelled (should be ""unbelievably"") — *spelling error*
+- **B**: ""irresponsable"" is misspelled (should be ""irresponsible"") — *spelling error*
+- **C**: ""have"" should be ""has"" (to agree with singular subject ""behavior"") — *grammatical error*
+
+**The correct sentence should read:** His behavior had been irresponsible and unbelievably childish."
+claude-haiku-4.5,2,"Select the sentence that does not contain a grammatical error.
+A. His behavior had been irresponsible and unbelievabley childish.
+B. His behavior had been irresponsable and unbelievably childish.
+C. His behavior have been irresponsible and unbelievably childish.","# Answer: None of the sentences are completely correct.
+
+However, let me analyze each:
+
+**A.** ""irresponsible and unbelievabley childish""
+- Error: ""unbelievabley"" is misspelled (should be ""unbelievably"")
+
+**B.** ""irresponsable and unbelievably childish""
+- Error: ""irresponsable"" is misspelled (should be ""irresponsible"")
+
+**C.** ""His behavior have been irresponsible and unbelievably childish""
+- Error: Subject-verb disagreement (""behavior"" is singular, requires ""has"" not ""have"")
+
+**If forced to choose the best option:** **A** has only a spelling error in one word, while B has a spelling error and C has a grammatical error. Spelling errors are sometimes considered less serious than grammatical errors, making **A** the least problematic, though it's still incorrect.
+
+The correct sentence should read: ""His behavior had been irresponsible and unbelievably childish."""
+claude-haiku-4.5,3,"Select the sentence that does not contain a grammatical error.
+A. His behavior had been irresponsible and unbelievabley childish.
+B. His behavior had been irresponsable and unbelievably childish.
+C. His behavior have been irresponsible and unbelievably childish.","# The correct answer is **none of these sentences are completely correct**, but let me analyze each:
+
+**A.** ""His behavior had been irresponsible and unbelievabley childish.""
+- Error: ""unbelievabley"" should be ""unbelievably"" (spelling error)
+
+**B.** ""His behavior had been irresponsable and unbelievably childish.""
+- Error: ""irresponsable"" should be ""irresponsible"" (spelling error)
+
+**C.** ""His behavior have been irresponsible and unbelievably childish.""
+- Error: ""have"" should be ""had"" (subject-verb agreement error; ""behavior"" is singular)
+
+---
+
+**If forced to choose the ""best"" option:** **C** has the fewest errors (just one grammatical error vs. spelling errors in the others), but it still contains an error.
+
+**If the question expects a perfect answer:** None of these sentences are correct as written."
+claude-haiku-4.5,4,"Select the sentence that does not contain a grammatical error.
+A. His behavior had been irresponsible and unbelievabley childish.
+B. His behavior had been irresponsable and unbelievably childish.
+C. His behavior have been irresponsible and unbelievably childish.","# Answer: None of the sentences are completely correct.
+
+However, if forced to choose the **best option**, it would be **B**, though it contains a spelling error.
+
+## Analysis:
+
+**A.** ""unbelievabley"" is misspelled (should be ""unbelievably"") ✗
+
+**B.** ""irresponsable"" is misspelled (should be ""irresponsible""), but the grammar and other spelling are correct ✓ (mostly)
+
+**C.** ""have"" is incorrect (should be ""has"" to agree with the singular subject ""behavior"") ✗
+
+**The correct sentence should read:** ""His behavior had been irresponsible and unbelievably childish.""
+
+If this is a multiple-choice question where you must select one answer, **B** is the least flawed, though ideally none would be marked as correct."
+claude-haiku-4.5,5,"Select the sentence that does not contain a grammatical error.
+A. His behavior had been irresponsible and unbelievabley childish.
+B. His behavior had been irresponsable and unbelievably childish.
+C. His behavior have been irresponsible and unbelievably childish.","# Answer: None of the sentences are entirely correct.
+
+However, let me break down each option:
+
+**A.** ""His behavior had been irresponsible and unbelievabley childish.""
+- Error: ""unbelievabley"" (misspelled; should be ""unbelievably"")
+
+**B.** ""His behavior had been irresponsable and unbelievably childish.""
+- Error: ""irresponsable"" (misspelled; should be ""irresponsible"")
+
+**C.** ""His behavior have been irresponsible and unbelievably childish.""
+- Error: ""have"" (incorrect verb; should be ""has"" to agree with singular subject ""behavior"")
+
+If forced to choose the best option, **none are grammatically correct**, but **A and B only contain spelling errors** in one word each, while **C contains a grammatical error** (subject-verb disagreement). 
+
+If this is a multiple-choice test where one answer must be selected, you may want to verify the options, as all three contain errors."
+claude-haiku-4.5,0,"Use the following context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+The Epson SureColor machines keep getting smarter. Newly updated PrecisionCore Printheads that are 20% larger than the previous generation come standard with Nozzle Verification tech to stay on top of any clogs that can affect print quality and consistency. For those who may have run earlier models of the Epson large format dye sub printers, this is for you - NO MORE POURING INK INTO TANKS! The F6400 line utilizes an updated 1.6L airtight ink pack system with microchip and filtration tech, lessening the chance of dust, fibers or debris getting into the printer.
+Question: Does the Epson SureColor F6470 also have a PrecisionCore printhead?
+Helpful Answer:","I don't know. The context provided discusses the Epson SureColor machines in general and mentions the F6400 line, but it does not specifically mention the F6470 model. Therefore, I cannot definitively answer whether the F6470 has a PrecisionCore printhead based on the information given."
+claude-haiku-4.5,1,"Use the following context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+The Epson SureColor machines keep getting smarter. Newly updated PrecisionCore Printheads that are 20% larger than the previous generation come standard with Nozzle Verification tech to stay on top of any clogs that can affect print quality and consistency. For those who may have run earlier models of the Epson large format dye sub printers, this is for you - NO MORE POURING INK INTO TANKS! The F6400 line utilizes an updated 1.6L airtight ink pack system with microchip and filtration tech, lessening the chance of dust, fibers or debris getting into the printer.
+Question: Does the Epson SureColor F6470 also have a PrecisionCore printhead?
+Helpful Answer:","I don't know. The context provided discusses the Epson SureColor machines in general and mentions the F6400 line, but it does not specifically mention the F6470 model or confirm whether it has a PrecisionCore printhead."
+claude-haiku-4.5,2,"Use the following context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+The Epson SureColor machines keep getting smarter. Newly updated PrecisionCore Printheads that are 20% larger than the previous generation come standard with Nozzle Verification tech to stay on top of any clogs that can affect print quality and consistency. For those who may have run earlier models of the Epson large format dye sub printers, this is for you - NO MORE POURING INK INTO TANKS! The F6400 line utilizes an updated 1.6L airtight ink pack system with microchip and filtration tech, lessening the chance of dust, fibers or debris getting into the printer.
+Question: Does the Epson SureColor F6470 also have a PrecisionCore printhead?
+Helpful Answer:","I don't know whether the Epson SureColor F6470 specifically has a PrecisionCore printhead. The context provided mentions that newly updated PrecisionCore Printheads come standard with Epson SureColor machines and references the F6400 line, but it doesn't explicitly state whether the F6470 model includes this feature."
+claude-haiku-4.5,3,"Use the following context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+The Epson SureColor machines keep getting smarter. Newly updated PrecisionCore Printheads that are 20% larger than the previous generation come standard with Nozzle Verification tech to stay on top of any clogs that can affect print quality and consistency. For those who may have run earlier models of the Epson large format dye sub printers, this is for you - NO MORE POURING INK INTO TANKS! The F6400 line utilizes an updated 1.6L airtight ink pack system with microchip and filtration tech, lessening the chance of dust, fibers or debris getting into the printer.
+Question: Does the Epson SureColor F6470 also have a PrecisionCore printhead?
+Helpful Answer:","I don't know. The context provided describes features of Epson SureColor machines and specifically mentions the F6400 line, but it does not specifically mention whether the F6470 model has a PrecisionCore printhead. To answer your question accurately, I would need information that explicitly addresses the F6470 model."
+claude-haiku-4.5,4,"Use the following context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+The Epson SureColor machines keep getting smarter. Newly updated PrecisionCore Printheads that are 20% larger than the previous generation come standard with Nozzle Verification tech to stay on top of any clogs that can affect print quality and consistency. For those who may have run earlier models of the Epson large format dye sub printers, this is for you - NO MORE POURING INK INTO TANKS! The F6400 line utilizes an updated 1.6L airtight ink pack system with microchip and filtration tech, lessening the chance of dust, fibers or debris getting into the printer.
+Question: Does the Epson SureColor F6470 also have a PrecisionCore printhead?
+Helpful Answer:","I don't know. The context provided mentions that Epson SureColor machines have updated PrecisionCore Printheads, but it doesn't specifically state whether the F6470 model has this feature. The context only specifically names the ""F6400 line"" when discussing the ink pack system, but doesn't explicitly confirm which models are included in the SureColor lineup or their specific components."
+claude-haiku-4.5,5,"Use the following context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+The Epson SureColor machines keep getting smarter. Newly updated PrecisionCore Printheads that are 20% larger than the previous generation come standard with Nozzle Verification tech to stay on top of any clogs that can affect print quality and consistency. For those who may have run earlier models of the Epson large format dye sub printers, this is for you - NO MORE POURING INK INTO TANKS! The F6400 line utilizes an updated 1.6L airtight ink pack system with microchip and filtration tech, lessening the chance of dust, fibers or debris getting into the printer.
+Question: Does the Epson SureColor F6470 also have a PrecisionCore printhead?
+Helpful Answer:","I don't know if the Epson SureColor F6470 specifically has a PrecisionCore printhead. The context provided discusses the Epson SureColor machines and mentions that the F6400 line uses updated features including PrecisionCore Printheads, but it doesn't explicitly confirm whether the F6470 model is part of the F6400 line or has these components. To get a definitive answer about the F6470, you would need to check the official Epson specifications for that specific model."
+claude-haiku-4.5,0,"Given a string, return the characters that occurs only once.
+hello","# Characters that Occur Only Once
+
+For the string **""hello""**:
+
+## Solution
+
+```python
+def chars_occurring_once(s):
+    # Count frequency of each character
+    char_count = {}
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+    
+    # Return characters with count = 1
+    return [char for char, count in char_count.items() if count == 1]
+
+result = chars_occurring_once(""hello"")
+print(result)  # Output: ['h', 'e', 'o']
+```
+
+## Breakdown for ""hello""
+
+| Character | Count |
+|-----------|-------|
+| h         | 1     |
+| e         | 1     |
+| l         | 2     |
+| o         | 1     |
+
+**Answer: `h`, `e`, `o`** (characters that appear exactly once)
+
+## Alternative One-Liner (using Counter)
+
+```python
+from collections import Counter
+
+def chars_occurring_once(s):
+    return [char for char, count in Counter(s).items() if count == 1]
+```"
+claude-haiku-4.5,1,"Given a string, return the characters that occurs only once.
+hello","# Characters That Occur Only Once
+
+For the string **""hello""**:
+
+## Solution
+
+```python
+def chars_occur_once(s):
+    # Count occurrences of each character
+    char_count = {}
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+    
+    # Return characters with count of 1
+    result = [char for char, count in char_count.items() if count == 1]
+    return result
+
+print(chars_occur_once(""hello""))
+```
+
+**Output:**
+```
+['h', 'e', 'o']
+```
+
+## Explanation
+
+| Character | Count |
+|-----------|-------|
+| h         | 1     |
+| e         | 1     |
+| l         | 2     |
+| o         | 1     |
+
+**Characters occurring only once:** `h`, `e`, `o`
+
+## Alternative Solutions
+
+**Using Counter (more concise):**
+```python
+from collections import Counter
+
+def chars_occur_once(s):
+    return [char for char, count in Counter(s).items() if count == 1]
+```
+
+**Preserving order of appearance:**
+```python
+def chars_occur_once(s):
+    char_count = Counter(s)
+    return [char for char in s if char_count[char] == 1]
+```"
+claude-haiku-4.5,2,"Given a string, return the characters that occurs only once.
+hello","# Characters That Occur Only Once
+
+For the string `""hello""`:
+
+```python
+def chars_occur_once(s):
+    char_count = {}
+    
+    # Count occurrences of each character
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+    
+    # Return characters that occur exactly once
+    return [char for char in s if char_count[char] == 1]
+
+result = chars_occur_once(""hello"")
+print(result)  # Output: ['h', 'e', 'o']
+```
+
+**Output:** `['h', 'e', 'o']`
+
+**Explanation:**
+- `h` → appears 1 time ✓
+- `e` → appears 1 time ✓
+- `l` → appears 2 times ✗
+- `o` → appears 1 time ✓
+
+---
+
+## Alternative Solutions
+
+**Using `collections.Counter`:**
+```python
+from collections import Counter
+
+def chars_occur_once(s):
+    char_count = Counter(s)
+    return [char for char in s if char_count[char] == 1]
+```
+
+**Return as string:**
+```python
+def chars_occur_once(s):
+    char_count = Counter(s)
+    return ''.join(char for char in s if char_count[char] == 1)
+
+print(chars_occur_once(""hello""))  # Output: ""heo""
+```"
+claude-haiku-4.5,3,"Given a string, return the characters that occurs only once.
+hello","# Characters that occur only once
+
+For the string **""hello""**:
+
+```python
+def chars_once(s):
+    char_count = {}
+    
+    # Count occurrences of each character
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+    
+    # Filter characters that occur exactly once
+    result = [char for char in s if char_count[char] == 1]
+    
+    return result
+
+# Test
+print(chars_once(""hello""))  # Output: ['h', 'e', 'o']
+```
+
+**Explanation:**
+- **h** → appears 1 time ✓
+- **e** → appears 1 time ✓
+- **l** → appears 2 times ✗
+- **l** → appears 2 times ✗
+- **o** → appears 1 time ✓
+
+**Answer: `h`, `e`, `o`**
+
+---
+
+### Alternative using `collections.Counter`:
+
+```python
+from collections import Counter
+
+def chars_once(s):
+    char_count = Counter(s)
+    return [char for char in s if char_count[char] == 1]
+
+print(chars_once(""hello""))  # Output: ['h', 'e', 'o']
+```"
+claude-haiku-4.5,4,"Given a string, return the characters that occurs only once.
+hello","# Characters That Occur Only Once
+
+Here's a solution to find characters that occur only once in a string:
+
+```python
+def chars_occur_once(s):
+    """"""Return characters that occur only once in the string.""""""
+    char_count = {}
+    
+    # Count occurrences of each character
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+    
+    # Filter characters with count == 1
+    result = [char for char, count in char_count.items() if count == 1]
+    return result
+
+# Test with ""hello""
+print(chars_occur_once(""hello""))
+```
+
+**Output:**
+```
+['h', 'e', 'o']
+```
+
+## Explanation:
+- **'h'** appears 1 time ✓
+- **'e'** appears 1 time ✓
+- **'l'** appears 2 times ✗
+- **'o'** appears 1 time ✓
+
+## Alternative Solutions:
+
+**Using `collections.Counter`:**
+```python
+from collections import Counter
+
+def chars_occur_once(s):
+    return [char for char, count in Counter(s).items() if count == 1]
+```
+
+**Preserving order of first appearance:**
+```python
+def chars_occur_once(s):
+    char_count = {}
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+    
+    return [char for char in s if char_count[char] == 1]
+```
+
+**Output (preserving order):**
+```
+['h', 'e', 'o']
+```"
+claude-haiku-4.5,5,"Given a string, return the characters that occurs only once.
+hello","# Characters That Occur Only Once
+
+Here are several solutions:
+
+## Solution 1: Using Dictionary (Python)
+```python
+def chars_once(s):
+    char_count = {}
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+    
+    return ''.join([char for char, count in char_count.items() if count == 1])
+
+result = chars_once(""hello"")
+print(result)  # Output: ""heo""
+```
+
+## Solution 2: Using Counter (Python)
+```python
+from collections import Counter
+
+def chars_once(s):
+    char_count = Counter(s)
+    return ''.join([char for char, count in char_count.items() if count == 1])
+
+result = chars_once(""hello"")
+print(result)  # Output: ""heo""
+```
+
+## Solution 3: Concise One-liner
+```python
+def chars_once(s):
+    return ''.join([char for char in s if s.count(char) == 1])
+
+result = chars_once(""hello"")
+print(result)  # Output: ""heo""
+```
+
+## Analysis for ""hello""
+| Character | Count | Occurs Once? |
+|-----------|-------|--------------|
+| h         | 1     | ✓ Yes        |
+| e         | 1     | ✓ Yes        |
+| l         | 2     | ✗ No         |
+| o         | 1     | ✓ Yes        |
+
+**Result: `""heo""`**
+
+---
+
+**Time Complexity:**
+- Solutions 1 & 2: O(n)
+- Solution 3: O(n²) - avoid for large strings
+
+Choose **Solution 2** for best readability and performance! 🎯"

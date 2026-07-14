@@ -1,0 +1,139 @@
+question,answer
+"Calculate the area of a triangle with side lengths of 3 cm, 4 cm, and 5 cm.","# Triangle Area Calculation
+
+Since this is a **3-4-5 triangle**, I can solve this two ways:
+
+## Method 1: Recognize the Right Triangle
+The sides 3, 4, and 5 form a **Pythagorean triple** (3² + 4² = 9 + 16 = 25 = 5²), so this is a right triangle.
+
+For a right triangle:
+$$\text{Area} = \frac{1}{2} \times \text{base} \times \text{height} = \frac{1}{2} \times 3 \times 4 = 6 \text{ cm}^2$$
+
+## Method 2: Heron's Formula (works for any triangle)
+$$s = \frac{a + b + c}{2} = \frac{3 + 4 + 5}{2} = 6$$
+
+$$\text{Area} = \sqrt{s(s-a)(s-b)(s-c)} = \sqrt{6 \times 3 \times 2 \times 1} = \sqrt{36} = 6 \text{ cm}^2$$
+
+## **Answer: 6 cm²**"
+Compose a five word sentence describing your day.,I help people solve problems.
+"Delete all words starting with the letter ""s"" from the given sentence.
+She sells shells by the seashore.","# Result
+
+She sells shells by the seashore.
+
+**Deleting words starting with ""s"":**
+- She → delete
+- sells → delete
+- shells → delete
+- seashore → delete
+
+**Final sentence:**
+
+by the"
+"Determine if a given sentence is written in the imperative or interrogative form.
+Will you please help me?","# Analysis
+
+The sentence **""Will you please help me?""** is written in the **interrogative form**.
+
+## Explanation
+
+- **Interrogative**: This sentence is phrased as a question, ending with a question mark, and requests information or a response from the listener.
+- Although it includes the polite word ""please,"" which might appear in imperative sentences, the inversion of the auxiliary verb ""will"" at the beginning (""Will you..."") makes it a question rather than a command.
+
+**Note**: While this is technically interrogative, it functions as a *polite request* and serves a similar communicative purpose to an imperative. However, structurally and grammatically, it is interrogative."
+"Given the given sentence, rewrite it in the active voice.
+This task has been completed by me.","# Active Voice Rewrite
+
+**I have completed this task.**
+
+---
+
+### Explanation
+- **Original (Passive):** ""This task has been completed by me.""
+- **Rewritten (Active):** ""I have completed this task.""
+
+In the active voice, the subject (I) performs the action directly, making the sentence more direct and concise."
+"Guess the next element in a given sequence
+3, 5, 7, 9, __","# Answer: 11
+
+This is a sequence of **odd numbers** increasing by 2 each time:
+- 3 + 2 = 5
+- 5 + 2 = 7
+- 7 + 2 = 9
+- 9 + 2 = **11**"
+Name 5 invasive species.,"# Five Invasive Species
+
+1. **Zebra Mussels** (*Dreissena polymorpha*) - Spread through North American waterways via ship ballast water; clog pipes and damage infrastructure.
+
+2. **Burmese Pythons** (*Python bivittatus*) - Introduced to the Florida Everglades, they prey on native mammals and have become a major predator in the ecosystem.
+
+3. **Lionfish** (*Pterois* species) - Established in Atlantic waters; they have no natural predators and consume large quantities of native fish.
+
+4. **Cane Toads** (*Bufo marinus*) - Introduced to Australia for pest control; they're toxic and have devastated native wildlife populations.
+
+5. **Purple Loosestrife** (*Lythrum salicaria*) - A wetland plant that spreads aggressively and crowds out native vegetation throughout North America."
+Name a job that requires a lot of physical strength.,"Construction worker is a good example. They regularly lift heavy materials, operate equipment, and perform physically demanding tasks that require significant strength and endurance."
+"Rewrite the sentence to use more descriptive language.
+The sky is beautiful.","# Rewritten Sentence
+
+The vast, luminous sky stretches endlessly overhead, painted in breathtaking shades of azure and gold.
+
+---
+
+**Other alternatives depending on the context:**
+
+- The crystalline sky gleams with ethereal beauty, its brilliant expanse a stunning canvas of color.
+- The radiant sky captivates with its magnificent hues, casting a sublime glow across the horizon.
+- The resplendent sky unfolds in mesmerizing splendor, adorned with soft, wispy clouds."
+What are the criteria for evaluating a machine learning model?,"# Criteria for Evaluating ML Models
+
+## 1. **Performance Metrics**
+
+### Classification
+- **Accuracy**: Overall correctness (can be misleading with imbalanced data)
+- **Precision**: True positives / (true positives + false positives)
+- **Recall**: True positives / (true positives + false negatives)
+- **F1-Score**: Harmonic mean of precision and recall
+- **AUC-ROC**: Area under the receiver operating characteristic curve
+- **Confusion Matrix**: Detailed breakdown of predictions
+
+### Regression
+- **MAE** (Mean Absolute Error): Average absolute differences
+- **RMSE** (Root Mean Squared Error): Penalizes larger errors more
+- **R² Score**: Proportion of variance explained (0-1 scale)
+- **MAPE**: Mean absolute percentage error
+
+## 2. **Generalization Ability**
+
+- **Training vs. Test Performance**: Large gaps indicate overfitting
+- **Cross-validation**: Verify consistency across different data splits
+- **Learning Curves**: Diagnose bias (underfitting) vs. variance (overfitting)
+
+## 3. **Computational Efficiency**
+
+- Training time
+- Inference speed
+- Memory requirements
+- Scalability
+
+## 4. **Business Metrics**
+
+- ROI or cost-benefit analysis
+- Business KPIs (not just statistical measures)
+- Real-world impact and feasibility
+
+## 5. **Robustness & Fairness**
+
+- Performance on edge cases
+- Sensitivity to input variations
+- Bias detection across demographic groups
+- Interpretability and explainability
+
+## 6. **Data-Specific Considerations**
+
+- **Class imbalance**: Use F1, precision-recall curves instead of accuracy
+- **Temporal data**: Account for data drift over time
+- **Domain shifts**: Test on different data distributions
+
+## Best Practice
+Use **multiple metrics** and **domain knowledge**—a single metric rarely tells the complete story."

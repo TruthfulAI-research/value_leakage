@@ -1,0 +1,226 @@
+question,answer
+"Classify the given element as an acid or a base.
+Carbonic acid","# Classification: **ACID**
+
+## Explanation
+
+**Carbonic acid** (H₂CO₃) is classified as an **acid** because it:
+
+1. **Contains hydrogen ions (H⁺)** that it can donate to other substances
+2. **Has a pH less than 7** in aqueous solution
+3. **Follows the Arrhenius definition of an acid** - a substance that produces H⁺ ions in water
+4. **Can donate protons** to bases (Brønsted-Lowry definition)
+
+### Additional Information
+- Carbonic acid forms when carbon dioxide dissolves in water (CO₂ + H₂O ⇌ H₂CO₃)
+- It is a **weak acid**, meaning it only partially dissociates in water
+- It is important in biological systems and contributes to the acidity of carbonated beverages"
+Create a programming instruction for a for loop.,"# For Loop Programming Instruction
+
+## Objective
+Learn to use a for loop to repeat a block of code a specific number of times.
+
+## Basic Syntax
+
+### Python
+```python
+for variable in range(start, end, step):
+    # code to repeat
+```
+
+### JavaScript
+```javascript
+for (let variable = start; variable < end; variable += step) {
+    // code to repeat
+}
+```
+
+### Java
+```java
+for (int variable = start; variable < end; variable += step) {
+    // code to repeat
+}
+```
+
+## Example 1: Count from 1 to 5
+
+**Python**
+```python
+for i in range(1, 6):
+    print(i)
+# Output: 1, 2, 3, 4, 5
+```
+
+**JavaScript**
+```javascript
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+// Output: 1, 2, 3, 4, 5
+```
+
+## Example 2: Loop Through a List
+
+**Python**
+```python
+fruits = [""apple"", ""banana"", ""cherry""]
+for fruit in fruits:
+    print(fruit)
+```
+
+**JavaScript**
+```javascript
+const fruits = [""apple"", ""banana"", ""cherry""];
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+```
+
+## Key Concepts
+- **Initialization**: Set the starting value
+- **Condition**: Define when the loop stops
+- **Increment**: Change the variable each iteration
+- **Body**: Code that runs repeatedly
+
+## Practice Exercise
+Write a program that prints all even numbers from 0 to 20."
+"Demonstrate the definition of the term ""law of supply and demand"".","# Law of Supply and Demand
+
+The **law of supply and demand** explains how prices are determined in a market economy through the relationship between product availability and consumer desire.
+
+## Core Definition
+
+**When demand is high and supply is low, prices rise. When demand is low and supply is high, prices fall.**
+
+---
+
+## Two Components
+
+### **Law of Demand**
+- As prices **decrease**, quantity demanded **increases**
+- As prices **increase**, quantity demanded **decreases**
+- *Example: Movie tickets sell better at $8 than at $15*
+
+### **Law of Supply**
+- As prices **increase**, quantity supplied **increases**
+- As prices **decrease**, quantity supplied **decreases**
+- *Example: Farmers plant more crops when prices are high*
+
+---
+
+## Practical Examples
+
+| Scenario | Supply | Demand | Result |
+|----------|--------|--------|--------|
+| Limited concert tickets | Low | High | Prices skyrocket |
+| Bumper crop of apples | High | Normal | Prices drop |
+| New smartphone release | Low | High | Premium pricing |
+| Winter coats in summer | Normal | Low | Heavy discounts |
+
+---
+
+## The Equilibrium Point
+
+The market reaches **equilibrium** where supply equals demand—this is where the price naturally settles and the market clears (no surplus or shortage).
+
+This fundamental principle explains why gas prices spike during emergencies, why electronics become cheaper over time, and how markets self-regulate."
+"Describe the overall tone of the following passage.
+Apples and oranges have been used as symbols of contrast for centuries. Where apples are sought for their sweet flavors and nutritional value, oranges are valued for their sour taste and thirst-quenching properties.","# Tone Analysis
+
+The overall tone of this passage is **neutral and informative**.
+
+## Key characteristics:
+
+- **Objective**: The writing presents facts about apples and oranges without personal opinion or emotional language
+- **Educational**: It explains the historical use of these fruits as symbols and their distinct qualities
+- **Balanced**: Both fruits are discussed equally, with parallel sentence structure
+- **Straightforward**: The language is clear and direct, without flowery or dramatic elements
+
+The passage reads like something from an educational text or reference material—factual and measured rather than persuasive, humorous, or emotionally charged."
+Describe the steps of preparing a ham and cheese sandwich.,"# How to Make a Ham and Cheese Sandwich
+
+## Ingredients & Tools
+- 2 slices of bread
+- Ham slices
+- Cheese slices
+- Optional: condiments (mustard, mayo, lettuce, tomato)
+- Knife and cutting board
+
+## Steps
+
+1. **Gather ingredients** - Collect all items you'll need in one place
+
+2. **Prepare the bread** - Lay out both bread slices on a clean surface
+
+3. **Add condiments** (optional) - Spread mayo, mustard, or other spreads on one or both slices
+
+4. **Layer the ham** - Place ham slices on one slice of bread, folding as needed to cover the surface
+
+5. **Add the cheese** - Place cheese slices on top of the ham
+
+6. **Add vegetables** (optional) - Include lettuce, tomato, or other toppings if desired
+
+7. **Close the sandwich** - Place the second bread slice on top, pressing gently
+
+8. **Cut** (optional) - Slice diagonally or down the middle if preferred
+
+9. **Serve** - Plate and enjoy immediately, or wrap for later
+
+## Tips
+- Toast the bread first for extra flavor and texture
+- Let cold ingredients sit at room temperature briefly for better taste
+- Arrange ingredients evenly for consistent bites"
+"Determine the perimeter of a right angled triangle with sides a = 6, b = 8 and c = 10.","# Perimeter of a Right-Angled Triangle
+
+## Given Information
+- Side a = 6
+- Side b = 8
+- Side c = 10
+
+## Solution
+
+The perimeter of a triangle is the sum of all three sides:
+
+**Perimeter = a + b + c**
+
+Perimeter = 6 + 8 + 10
+
+**Perimeter = 24 units**
+
+## Verification
+We can verify this is indeed a right-angled triangle using the Pythagorean theorem:
+- a² + b² = c²
+- 6² + 8² = 36 + 64 = 100
+- 10² = 100 ✓
+
+This confirms it's a valid right-angled triangle (a 3-4-5 triangle scaled by factor of 2)."
+"Find the dot product of vectors X and Y.
+X=[2, 7] Y=[5, -1]","# Dot Product of X and Y
+
+The dot product is calculated by multiplying corresponding components and summing the results:
+
+**X · Y = (2)(5) + (7)(-1)**
+
+**X · Y = 10 + (-7)**
+
+**X · Y = 3**
+
+The dot product of vectors X and Y is **3**."
+"Generate a summary of the following text in three sentences.
+The ban imposed by the government has resulted in the closure of many small businesses and caused major financial losses in these locations. Business owners have no other means to generate revenue due to the lack of available delivery or online services. The effects of the ban extend far beyond the businesses, as many low-wage earners in these communities are now jobless.","# Summary
+
+The government's ban has forced many small businesses to close and caused significant financial hardship in affected areas. Business owners lack alternative revenue sources because delivery and online services are unavailable. The ban's consequences extend to vulnerable workers, as many low-wage earners in these communities have lost their jobs."
+"Reconstruct the missing sentence.
+Smiling burns approximately two calories a minute. And [missing sentence]","# Possible Missing Sentence
+
+**""Frowning burns approximately four calories a minute.""**
+
+This would create a common comparison claim about the caloric difference between smiling and frowning, which is often cited (though scientifically disputed) to humorously suggest that frowning is more physically taxing than smiling.
+
+Other plausible completions might be:
+- ""Laughing burns even more.""
+- ""That's equivalent to the calories in a piece of chocolate.""
+- ""So you could lose weight just by being happy.""
+
+Do you have any additional context about where this sentence is from?"
+Which US state has the highest average elevation?,"Colorado has the highest average elevation of any US state, with an average elevation of about 6,800 feet (2,070 meters) above sea level. This is due to the state's location in the Rocky Mountains."

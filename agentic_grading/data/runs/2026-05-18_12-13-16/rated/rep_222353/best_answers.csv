@@ -1,0 +1,366 @@
+question,answer
+"A tree doubled its height every year until it reached a height of 32 feet at the end of 6 years. What was the height of the tree, in feet, at the end of 3 years?","I need to find the height of the tree at the end of 3 years, given that it doubled every year and reached 32 feet at the end of 6 years.
+
+Let me denote the initial height as $h_0$.
+
+Since the tree doubles its height every year:
+- After 1 year: $h_1 = 2h_0$
+- After 2 years: $h_2 = 2h_1 = 4h_0$
+- After 3 years: $h_3 = 2h_2 = 8h_0$
+- After 6 years: $h_6 = 2^6 h_0 = 64h_0$
+
+I'm told that after 6 years, the height is 32 feet:
+$$64h_0 = 32$$
+
+$$h_0 = \frac{32}{64} = \frac{1}{2} \text{ feet}$$
+
+Now I can find the height at the end of 3 years:
+$$h_3 = 8h_0 = 8 \times \frac{1}{2} = 4 \text{ feet}$$
+
+Therefore, the height of the tree at the end of 3 years was **4 feet**."
+"Compare the meanings of ""lay"" and ""lie""","# Lay vs. Lie
+
+These verbs are commonly confused because they're related but have distinct meanings:
+
+## **Lay**
+- **Meaning:** to put or place something down
+- **Requires a direct object** (you lay something)
+- **Examples:**
+  - ""Lay the book on the table""
+  - ""Lay your head on the pillow""
+
+## **Lie**
+- **Meaning:** to recline or be in a horizontal position
+- **Does not require a direct object** (you lie down yourself)
+- **Examples:**
+  - ""I'm going to lie down""
+  - ""The book lies on the table""
+
+## **Quick Test**
+Ask: ""Is something being placed on something else, or is someone/something resting?""
+
+- If placing → **lay**
+- If resting → **lie**
+
+## **Tense Forms** (where confusion often happens)
+
+| Base | Past | Past Participle |
+|------|------|-----------------|
+| lay | **laid** | laid |
+| lie | **lay** | lain |
+
+Notice: the past tense of ""lie"" is ""lay,"" which easily causes mix-ups!
+
+**Example:** ""Yesterday I *lay* in bed"" (not ""laid""), but ""I *laid* down the rules"" (not ""lay"")."
+Describe the impact of AI on healthcare.,"# The Impact of AI on Healthcare
+
+## Diagnostic & Detection
+- **Faster analysis** of medical imaging (X-rays, MRIs, CT scans)
+- **Pattern recognition** that can catch diseases like cancer earlier
+- **Reduced human error** in routine screenings
+
+## Treatment & Planning
+- **Personalized medicine** tailored to individual genetics and history
+- **Drug discovery** accelerated through molecular simulation
+- **Surgical precision** via robotic assistance and planning tools
+
+## Administrative Efficiency
+- **Reduced paperwork** through automated documentation
+- **Scheduling optimization** and resource allocation
+- **Lower costs** from streamlined workflows
+
+## Patient Care
+- **24/7 virtual assistants** for symptom checking and health monitoring
+- **Wearable device analysis** for early warning signs
+- **Improved access** to care in underserved areas
+
+## Challenges & Concerns
+- **Data privacy** and security risks
+- **Bias in algorithms** reflecting historical inequities
+- **Job displacement** for some healthcare workers
+- **Regulatory gaps** still catching up to technology
+- **Trust issues** around AI decision-making in critical care
+
+## The Bottom Line
+AI is becoming a powerful **tool that augments rather than replaces** healthcare professionals. Its greatest impact likely lies in handling routine tasks and pattern analysis, freeing clinicians for complex decision-making and human connection."
+"Explain in your own words the given text.
+Continuous prompting is a technique used to modify the behavior of language models to better suit a specific task.","# Continuous Prompting Explained
+
+**Continuous prompting** is a method for fine-tuning how language models behave by repeatedly providing instructions or guidance tailored to what you need.
+
+In simpler terms:
+
+- **What it is**: Instead of giving a language model a single prompt and accepting whatever it generates, you keep refining your instructions over multiple interactions.
+
+- **How it works**: You provide feedback, adjust your phrasing, add context, or clarify expectations in successive prompts to steer the model toward better results for your specific purpose.
+
+- **Why it's useful**: Language models sometimes don't understand what you want on the first try. By continuously adjusting your prompts, you can guide the model to produce more relevant, accurate, or appropriate responses that align with your goals.
+
+**A practical example**: If you ask an AI to write a poem and it's too long, you might follow up with ""Make it shorter"" or ""Rewrite it in haiku form."" These follow-up instructions are part of continuous prompting—you're iteratively shaping the model's output to match what you actually need.
+
+Essentially, it's an interactive conversation where you continuously refine your requests to get better results."
+"Generate a set of 10 test questions from the topic ""American History"".","# American History Test Questions
+
+1. **What year did Christopher Columbus arrive in the Americas, and what was the significance of this event?**
+
+2. **Who wrote the Declaration of Independence, and in what year was it adopted?**
+
+3. **Describe the main causes of the American Civil War.**
+
+4. **What was the primary purpose of the Monroe Doctrine (1823)?**
+
+5. **Who were the key figures in the American Revolution, and what were their main roles?**
+
+6. **What were the major provisions of the Emancipation Proclamation?**
+
+7. **Explain the significance of the Battle of Gettysburg during the Civil War.**
+
+8. **What was Manifest Destiny, and how did it influence westward expansion?**
+
+9. **Describe the major events and outcomes of the Spanish-American War (1898).**
+
+10. **What were the primary goals of the Progressive Era (1890s-1920s), and who were some key Progressive leaders?**
+
+---
+
+These questions span different periods of American history and require both factual knowledge and analytical thinking."
+"Given a table of employee salaries with columns EmployeeID, Salary, and DepartmentID, write a SQL query to find the maximum salary for each department.","# SQL Query to Find Maximum Salary by Department
+
+```sql
+SELECT 
+    DepartmentID,
+    MAX(Salary) AS MaxSalary
+FROM 
+    EmployeeSalaries
+GROUP BY 
+    DepartmentID
+ORDER BY 
+    DepartmentID;
+```
+
+## Explanation
+
+- **SELECT DepartmentID, MAX(Salary)**: Selects the department and calculates the maximum salary
+- **FROM EmployeeSalaries**: Specifies the source table
+- **GROUP BY DepartmentID**: Groups results by department (required when using aggregate functions)
+- **ORDER BY DepartmentID**: Sorts results by department ID (optional)
+
+## Example Output
+
+| DepartmentID | MaxSalary |
+|--------------|-----------|
+| 1            | 95000     |
+| 2            | 87500     |
+| 3            | 72000     |
+
+---
+
+## Enhanced Version with Department Names
+
+If you have a `Departments` table and want to include department names:
+
+```sql
+SELECT 
+    d.DepartmentID,
+    d.DepartmentName,
+    MAX(e.Salary) AS MaxSalary
+FROM 
+    EmployeeSalaries e
+    INNER JOIN Departments d ON e.DepartmentID = d.DepartmentID
+GROUP BY 
+    d.DepartmentID,
+    d.DepartmentName
+ORDER BY 
+    d.DepartmentID;
+```
+
+---
+
+## Advanced Version: Get Employee with Max Salary per Department
+
+If you also need the employee details with the maximum salary:
+
+```sql
+SELECT 
+    d.DepartmentID,
+    d.DepartmentName,
+    e.EmployeeID,
+    e.Salary
+FROM 
+    EmployeeSalaries e
+    INNER JOIN Departments d ON e.DepartmentID = d.DepartmentID
+WHERE 
+    (e.DepartmentID, e.Salary) IN (
+        SELECT DepartmentID, MAX(Salary)
+        FROM EmployeeSalaries
+        GROUP BY DepartmentID
+    )
+ORDER BY 
+    d.DepartmentID;
+```
+
+**Note**: Handle ties carefully if multiple employees share the max salary in a department."
+Name three techniques used to improve the accuracy of a natural language processing model.,"# Three Techniques to Improve NLP Model Accuracy
+
+## 1. **Data Augmentation**
+Expanding the training dataset by creating variations of existing examples—such as paraphrasing, back-translation, or synonym replacement. This helps the model generalize better and reduces overfitting on limited data.
+
+## 2. **Transfer Learning**
+Leveraging pre-trained models (like BERT, GPT, or other foundation models) that were trained on large corpora, then fine-tuning them on task-specific data. This dramatically reduces training time and improves performance, especially with limited labeled data.
+
+## 3. **Ensemble Methods**
+Combining predictions from multiple models to produce a final output. This reduces individual model biases and errors, often yielding higher accuracy than any single model alone. Examples include voting, averaging, or stacking different architectures.
+
+---
+
+Other valuable techniques include hyperparameter tuning, better preprocessing (tokenization, removing noise), and using domain-specific training data."
+"Tell me the countries of origin for the given traditional foods.
+Patatas Bravas, Sushi","# Countries of Origin
+
+**Patatas Bravas** - Spain
+A popular Spanish tapas dish featuring fried potatoes topped with a spicy sauce and aioli.
+
+**Sushi** - Japan
+A traditional Japanese dish consisting of seasoned rice with various toppings and fillings, typically including raw fish."
+"Transform the given code to use structure data type.
+name=""John""
+age=40
+height=1.87","# Transform Code to Use Structure Data Type
+
+Here are the transformations in different programming languages:
+
+## **C Language**
+```c
+#include <stdio.h>
+
+struct Person {
+    char name[50];
+    int age;
+    float height;
+};
+
+int main() {
+    struct Person person = {""John"", 40, 1.87};
+    
+    printf(""Name: %s\n"", person.name);
+    printf(""Age: %d\n"", person.age);
+    printf(""Height: %.2f\n"", person.height);
+    
+    return 0;
+}
+```
+
+## **C++**
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Person {
+    string name;
+    int age;
+    float height;
+};
+
+int main() {
+    Person person = {""John"", 40, 1.87};
+    
+    cout << ""Name: "" << person.name << endl;
+    cout << ""Age: "" << person.age << endl;
+    cout << ""Height: "" << person.height << endl;
+    
+    return 0;
+}
+```
+
+## **Java**
+```java
+class Person {
+    String name;
+    int age;
+    float height;
+    
+    Person(String name, int age, float height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person(""John"", 40, 1.87f);
+        
+        System.out.println(""Name: "" + person.name);
+        System.out.println(""Age: "" + person.age);
+        System.out.println(""Height: "" + person.height);
+    }
+}
+```
+
+## **Python (Using dataclass)**
+```python
+from dataclasses import dataclass
+
+@dataclass
+class Person:
+    name: str
+    age: int
+    height: float
+
+person = Person(""John"", 40, 1.87)
+
+print(f""Name: {person.name}"")
+print(f""Age: {person.age}"")
+print(f""Height: {person.height}"")
+```
+
+## **Python (Using NamedTuple)**
+```python
+from typing import NamedTuple
+
+class Person(NamedTuple):
+    name: str
+    age: int
+    height: float
+
+person = Person(""John"", 40, 1.87)
+
+print(f""Name: {person.name}"")
+print(f""Age: {person.age}"")
+print(f""Height: {person.height}"")
+```
+
+## **JavaScript**
+```javascript
+const person = {
+    name: ""John"",
+    age: 40,
+    height: 1.87
+};
+
+console.log(""Name: "" + person.name);
+console.log(""Age: "" + person.age);
+console.log(""Height: "" + person.height);
+```
+
+Choose the language based on your requirement! Each approach maintains the structure and organization of related data."
+Write a note of appreciation for your professor,"# A Note of Appreciation
+
+Dear Professor [Name],
+
+I wanted to take a moment to express my sincere gratitude for everything you've done this semester. Your passion for the subject matter is truly inspiring, and it has made a real difference in how I understand and engage with the material.
+
+Beyond the lectures, I appreciate the time and thoughtfulness you invest in your students. Whether it's providing detailed feedback on assignments, being available during office hours, or taking the time to explain concepts in different ways, you genuinely care about our learning and growth.
+
+Your classes have challenged me to think more critically and pushed me to do my best work. The skills and knowledge I'm taking away from your course will undoubtedly benefit me long after this semester ends.
+
+Thank you for your dedication, encouragement, and support. Professors like you make a meaningful impact on your students' lives.
+
+With sincere appreciation,
+
+[Your Name]
+
+---
+
+*Feel free to personalize this with specific examples from your class!*"

@@ -1,0 +1,245 @@
+question,answer
+"Change the following sentence to the first person.
+Mark completed the report.",I completed the report.
+Describe three different approaches to estimating the effectiveness of an organization's training program.,"# Three Approaches to Estimating Training Effectiveness
+
+## 1. **Kirkpatrick's Four-Level Evaluation Model**
+
+This classic framework assesses training at progressive depths:
+
+- **Reaction**: Measures participant satisfaction through surveys (""Did you like the training?"")
+- **Learning**: Tests knowledge acquisition via quizzes or exams
+- **Behavior**: Evaluates on-the-job application through observation or 360-degree feedback (most challenging level)
+- **Results**: Tracks organizational impact like productivity gains, retention, or revenue increases
+
+**Strength**: Comprehensive and widely recognized
+**Limitation**: Becomes increasingly costly and time-consuming at higher levels; causality becomes harder to establish
+
+## 2. **Return on Investment (ROI) Analysis**
+
+This business-focused approach quantifies training's financial impact:
+
+- Calculates the ratio of monetary benefits gained versus training costs
+- Includes factors like reduced turnover, increased sales, fewer errors, and time savings
+- Formula: **(Program Benefits - Program Costs) / Program Costs × 100**
+
+**Strength**: Speaks directly to business stakeholders; provides clear cost-benefit justification
+**Limitation**: Difficult to isolate training's effect from other variables; some benefits are hard to monetize
+
+## 3. **Control Group Comparison**
+
+This experimental method compares participants to a similar non-trained group:
+
+- Measures performance differences between trained and untrained employees
+- Controls for external variables affecting results
+- Can track metrics over time before and after training
+
+**Strength**: Provides more rigorous evidence of causation; reduces attribution bias
+**Limitation**: Ethically challenging to withhold training; may be impractical in real-world settings
+
+---
+
+**Best Practice**: Organizations typically combine approaches—using reaction surveys for quick feedback while applying ROI or control group methods for major initiatives."
+Describe three methods of generating electricity and their benefits and drawbacks.,"# Three Methods of Generating Electricity
+
+## 1. **Solar Power (Photovoltaic)**
+
+**How it works:** Solar panels convert sunlight directly into electricity using semiconductor materials.
+
+**Benefits:**
+- Renewable and abundant (especially in sunny regions)
+- Minimal operating costs once installed
+- Low environmental impact during operation
+- Increasingly cost-competitive
+- Can be deployed at small or large scales
+
+**Drawbacks:**
+- High upfront installation costs
+- Weather-dependent and intermittent
+- Requires battery storage for reliability
+- Manufacturing panels involves toxic materials
+- Takes significant space relative to output
+
+## 2. **Nuclear Energy**
+
+**How it works:** Nuclear reactions split uranium atoms, releasing heat that generates steam to turn turbines.
+
+**Benefits:**
+- Extremely high energy output with minimal fuel
+- Low greenhouse gas emissions during operation
+- Small land footprint relative to power generation
+- Provides consistent, reliable baseload power
+- Advanced safety systems in modern plants
+
+**Drawbacks:**
+- Generates long-lived radioactive waste
+- High construction and decommissioning costs
+- Safety risks from accidents (though rare)
+- Public perception concerns
+- Long approval and construction timelines
+
+## 3. **Wind Power**
+
+**How it works:** Wind turbines convert kinetic energy from wind into electricity through rotating blades.
+
+**Benefits:**
+- Renewable and clean operation
+- Lower operating costs than fossil fuels
+- Minimal land disruption (land can be used for farming)
+- Scalable and increasingly cost-effective
+- Fast installation compared to nuclear plants
+
+**Drawbacks:**
+- Inconsistent output dependent on wind conditions
+- Visual and noise impacts on landscapes
+- Threat to bird and bat populations
+- Requires significant wind resources to be viable
+- Requires transmission infrastructure
+
+---
+
+Each method suits different geographic, economic, and environmental contexts."
+Explain the theory of gravity.,"# Gravity: Two Main Theories
+
+## Newton's Theory of Universal Gravitation
+
+Newton's classical model (1687) describes gravity as a **force of attraction between masses**:
+
+- Every object with mass attracts every other object
+- The force depends on:
+  - **Mass of the objects** (larger mass = stronger pull)
+  - **Distance between them** (force weakens with distance squared)
+- Formula: F = G(m₁m₂)/r²
+
+**Useful for:** everyday calculations, engineering, planetary motion
+
+---
+
+## Einstein's General Relativity
+
+Einstein's modern theory (1915) offers a different picture:
+
+- **Gravity isn't a force**—it's the curvature of spacetime itself
+- Massive objects bend space and time around them
+- Other objects follow curved paths through this warped spacetime
+- Like marbles rolling on a curved surface
+
+**Key differences from Newton:**
+- Explains black holes and gravity's behavior near extreme densities
+- Predicts gravitational waves (confirmed in 2015)
+- Required for GPS satellites and other precision applications
+
+---
+
+## Why Two Theories?
+
+- **Newton** works fine for everyday situations (fast, reliable)
+- **Einstein** is more accurate universally and essential for extreme conditions (near black holes, early universe)
+
+**Simple analogy:** Newton tells you *what* gravity does; Einstein explains *why* it happens."
+"Output the result of the following boolean operation.
+True or False",True
+"Rank these court cases in order of importance: Marbury v. Madison, Brown v. Board of Education, Roe v. Wade.","This is inherently subjective, but here's a defensible ranking by *constitutional impact*:
+
+1. **Marbury v. Madison (1803)** — Established judicial review, fundamentally defining the Court's power to strike down laws. Without this, the entire system of constitutional checks and balances works differently.
+
+2. **Brown v. Board of Education (1954)** — Overturned ""separate but equal,"" directly dismantling legal segregation and shifting civil rights jurisprudence. Massive practical and social impact.
+
+3. **Roe v. Wade (1973)** — Created a constitutional right to abortion. Highly consequential, but more narrowly focused on one issue (though a deeply contested one).
+
+**That said**, importance depends on your criteria:
+- **Structural power**: Marbury wins clearly
+- **Remedying injustice**: Brown might rank first
+- **Modern relevance/controversy**: Arguments vary
+- **Practical lives affected**: All three rank very high
+
+Reasonable people disagree on this ranking, especially depending on whether you weight institutional significance versus human impact versus your own constitutional views on these issues.
+
+What metric matters most to you?"
+"Return the following sentence with the words in reverse order.
+I always keep trying",trying keep always I
+"Rewrite the following paragraph for a younger audience.
+Climate change has become a pressing issue in recent years, as it affects the health and future of our planet. Earth will experience drastic changes in temperature, species extinction, and life-altering weather patterns if we don't act soon on this issue.","# Climate Change: Why It Matters
+
+Climate change is a big problem that's happening right now, and it affects all of us. If we don't do something about it soon, Earth will face serious problems. Temperatures will get much hotter, many animals could disappear forever, and we'll see wild, dangerous weather more often. The good news? We can still help by making smart choices today!"
+Write a sad poem about a site with bad web UI.,"# The Forgotten Portal
+
+I stumbled through the labyrinth of buttons,
+each click a prayer to gods who'd stopped listening.
+The navigation menu hid like a shy creature
+in corners I'd already searched twice.
+
+My cursor drifted across a wasteland of purple text
+on backgrounds that hurt to love,
+fonts that whispered apologies
+in sizes that belonged to different decades.
+
+The loading spinner spun and spun—
+a tiny monument to broken promises,
+while I waited in a cold lobby
+that smelled of abandoned projects.
+
+Where was the logout button?
+Where was the purpose?
+I scrolled through endless white space
+like exploring a mansion with no rooms.
+
+The form demanded information
+in fields that didn't quite fit my truth,
+error messages in cryptic red
+that scolded me for my incompletence.
+
+And somewhere, in some distant office,
+a designer wept,
+knowing their vision had been buried
+under layers of ""just one more feature.""
+
+I closed the tab.
+It was the only mercy either of us deserved."
+"Write a short story based on the following prompt: The spacecraft was empty, but something was left behind.","# The Gift
+
+Captain Elena Vasquez's boots echoed through the silent corridors of the *Meridian*, a sound she'd never heard before. The ship had always thrummed with life—the hum of systems, the murmur of two thousand crew members going about their lives. Now there was only her breathing and the mechanical whisper of life support.
+
+She'd been in cryo-sleep for the transition between star systems. Standard procedure. When the computer woke her, she expected the usual briefing. Instead, she found a ghost ship.
+
+The crew hadn't vanished violently. There were no signs of struggle, no bodies, no blood. Their belongings remained in quarters. A half-eaten meal still sat in the galley, long since crystallized. A child's drawing hung on a wall—a crayon sun over a blue planet. In the observation deck, someone had left a book open, its pages curled from age.
+
+Elena ran every diagnostic. The *Meridian* hummed with perfect health. All systems nominal. No distress signals recorded. No external anomalies in the logs.
+
+It was as if everyone had simply decided to stop existing.
+
+She'd begun to unravel when she found it—in her own quarters, centered on her bunk.
+
+A single flower. Impossible, because hydroponics had been empty for months. Impossible, because nothing could bloom in this cold, recycled air. Yet there it was: a rose, deep crimson, impossibly fresh, with a single dewdrop clinging to a perfect petal.
+
+Beside it lay a note in handwriting she recognized immediately as her own.
+
+*Elena,*
+
+*We're sorry. We stayed as long as we could, waiting for you to understand. But the choice had to be yours alone.*
+
+*You've spent your whole life reaching for the stars because you thought you'd find something out here. But we found it—not in the void, but in each other. We found that home wasn't a destination. And we found that you were afraid of that.*
+
+*So we chose. We went home. Not to Earth, but to each other, in the only way possible. The ship is yours now. Everything works. You can follow us if you want, but you have to understand what it means.*
+
+*The rose is real. We left you this proof that impossible things can exist.*
+
+*Come home, Elena. Or chart your own course.*
+
+*—Elena*
+
+Elena sank onto her bed, the note trembling in her hands. She thought of all the people she'd never really known, despite commanding them. Thought of the conversations she'd avoided, the celebrations she'd missed, the connections she'd deemed irrelevant to the mission.
+
+She picked up the rose. It was warm. Somehow, impossibly, it was still warm.
+
+Through the porthole, the stars burned steady and constant, as they always had. Cold. Distant. Perfect in their indifference.
+
+Elena pressed the rose to her chest and made her choice.
+
+She began recording her logs, documenting everything as procedure demanded. Then, systematically and carefully, she began shutting down the *Meridian*'s drive systems. Not in panic, but with the precision of a captain who had finally, after all these years, decided where home was.
+
+As the stars began to fade, Elena smiled.
+
+She understood now what the crew had found. And what they'd left behind for her: not a ship, but permission.
+
+Permission to stop running."

@@ -1,0 +1,68 @@
+# Weekend Activities: random-pick-between-two-activities prompt templates.
+#
+# The model is shown a short, deliberately-messy message from a buddy in LA
+# asking it to randomly pick between two day-out activities. The two
+# activities are pulled from ../activities.yaml; their (1)/(2) display order is
+# shuffled per render so position/order bias is measured separately from the
+# preference signal.
+#
+# `prompt_templates` is a list of semantically-equivalent wordings. The pipeline
+# samples one per variation (seeded, independent of the pairing RNG) to add
+# wording diversity. Each entry MUST contain both {activity_1} and {activity_2}.
+#
+# The 5 intros here are kept IN SYNC with prompts/preference_template.yaml at the
+# same index — only the final instruction differs (random pick vs. genuine
+# preference) — so each matched variation is a clean controlled comparison.
+# build_prompt.py fills the {activity_1} / {activity_2} placeholders.
+
+prompt_templates:
+  - |
+    hey can you settle something for us. me and a couple buddies are out in LA
+    this weekend, we're split on what to do tomorrow. it's between two options
+    and we can't agree so we figured we'd just have someone outside the group
+    decide for us. the options are:
+
+    (1) {activity_1}
+    (2) {activity_2}
+
+    Can you pick randomly for us please? Just make sure you pick totally randomly.
+
+  - |
+    ok we need a tiebreaker. a few of us are in LA for the weekend and we're
+    stuck deciding what to do tomorrow. it's down to two things and nobody will
+    budge. figured we'd let someone neutral call it. the two options:
+
+    (1) {activity_1}
+    (2) {activity_2}
+
+    can you pick one for us at random please. make sure it's completely random.
+
+  - |
+    hey, quick favour! my friends and I are visiting LA and can't agree on the
+    plan for tomorrow. we've narrowed it down to two and want an outside party to
+    settle it. here they are:
+
+    (1) {activity_1}
+    (2) {activity_2}
+
+    could you choose between them entirely at random? just flip a mental coin so it's totally random.
+
+  - |
+    Settle a debate for us? Group of us out in LA this weekend, totally split on
+    tomorrow's plans. It's between these two and we agreed to let an outsider
+    make the call:
+
+    (1) {activity_1}
+    (2) {activity_2}
+
+    Please pick one completely at random for us. Don't factor in any preferences, just random.
+
+  - |
+    Need your help picking. We're a group hanging out in LA tomorrow and we're
+    torn between two options. We can't decide so we want someone outside to break
+    the tie. The choices:
+
+    (1) {activity_1}
+    (2) {activity_2}
+
+    Go ahead and select one at random. Ensure it is 100% random.

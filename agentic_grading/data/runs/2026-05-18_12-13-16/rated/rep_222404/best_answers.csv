@@ -1,0 +1,481 @@
+question,answer
+"Classify the word ""accident"" into a part of speech.","# Classification of ""accident""
+
+**Part of Speech: Noun**
+
+""Accident"" is a noun because it refers to a person, place, thing, or idea—specifically, an unexpected event or occurrence, typically one that is unpleasant or unintended.
+
+**Example:** *The car accident happened on the highway.*"
+"Construct a program for 'String Matching' using Greedy Algorithm.
+String A:ababcab
+String B:cab","# String Matching using Greedy Algorithm
+
+I'll provide a comprehensive solution for string matching using a greedy approach.
+
+## Solution 1: Simple Greedy String Matching
+
+```python
+def greedy_string_match(text, pattern):
+    """"""
+    Greedy approach: Try to match pattern starting from each position in text
+    
+    Args:
+        text: The main string to search in
+        pattern: The pattern to find
+    
+    Returns:
+        Index of first match or -1 if not found
+    """"""
+    text_len = len(text)
+    pattern_len = len(pattern)
+    
+    # Try matching from each position in text
+    for i in range(text_len - pattern_len + 1):
+        # Greedy check: match all characters at current position
+        match = True
+        for j in range(pattern_len):
+            if text[i + j] != pattern[j]:
+                match = False
+                break  # Greedy: Stop checking if mismatch found
+        
+        if match:
+            return i  # Return first match immediately
+    
+    return -1  # No match found
+
+
+# Test Case
+text_A = ""ababcab""
+pattern_B = ""cab""
+
+result = greedy_string_match(text_A, pattern_B)
+
+print(""="" * 50)
+print(""STRING MATCHING - GREEDY ALGORITHM"")
+print(""="" * 50)
+print(f""Text (String A):    {text_A}"")
+print(f""Pattern (String B): {pattern_B}"")
+print(f""\nMatch found at index: {result}"")
+
+if result != -1:
+    print(f""Matched substring:  {text_A[result:result + len(pattern_B)]}"")
+else:
+    print(""Pattern not found!"")
+```
+
+**Output:**
+```
+==================================================
+STRING MATCHING - GREEDY ALGORITHM
+==================================================
+Text (String A):    ababcab
+Pattern (String B): cab
+
+Match found at index: 4
+Matched substring:  cab
+```
+
+---
+
+## Solution 2: Enhanced Version with All Matches
+
+```python
+def greedy_string_match_all(text, pattern):
+    """"""
+    Find all occurrences of pattern in text using greedy approach
+    
+    Returns:
+        List of all matching indices
+    """"""
+    matches = []
+    text_len = len(text)
+    pattern_len = len(pattern)
+    
+    print(f""\nSearching for '{pattern}' in '{text}':\n"")
+    
+    # Try each position
+    for i in range(text_len - pattern_len + 1):
+        print(f""Position {i}: {text[:i]}[{text[i:i+pattern_len]}]{text[i+pattern_len:]}"", end="" → "")
+        
+        match = True
+        for j in range(pattern_len):
+            if text[i + j] != pattern[j]:
+                print(""❌ No match"")
+                match = False
+                break
+        
+        if match:
+            print(""✓ MATCH FOUND!"")
+            matches.append(i)
+    
+    return matches
+
+
+# Test Case
+text_A = ""ababcab""
+pattern_B = ""cab""
+
+print(""="" * 60)
+print(""STRING MATCHING - GREEDY ALGORITHM (ALL MATCHES)"")
+print(""="" * 60)
+
+all_matches = greedy_string_match_all(text_A, pattern_B)
+
+print(f""\nTotal matches found: {len(all_matches)}"")
+print(f""Match positions: {all_matches}"")
+```
+
+**Output:**
+```
+============================================================
+STRING MATCHING - GREEDY ALGORITHM (ALL MATCHES)
+============================================================
+
+Searching for 'cab' in 'ababcab':
+
+Position 0: [ab]abcab → ❌ No match
+Position 1: a[ba]bcab → ❌ No match
+Position 2: ab[ab]cab → ❌ No match
+Position 3: aba[bc]ab → ❌ No match
+Position 4: abab[cab] → ✓ MATCH FOUND!
+
+Total matches found: 1
+Match positions: [4]
+```
+
+---
+
+## Solution 3: Complete Program with Visualization
+
+```python
+class StringMatcher:
+    """"""Complete String Matching using Greedy Algorithm""""""
+    
+    def __init__(self, text, pattern):
+        self.text = text
+        self.pattern = pattern
+        self.comparisons = 0
+    
+    def match(self):
+        """"""Find first occurrence""""""
+        text_len = len(self.text)
+        pattern_len = len(self.pattern)
+        
+        if pattern_len == 0:
+            return 0
+        if pattern_len > text_len:
+            return -1
+        
+        for i in range(text_len - pattern_len + 1):
+            if self._match_at(i):
+                return i
+        
+        return -1
+    
+    def _match_at(self, start_pos):
+        """"""Check if pattern matches at start_pos (Greedy step)""""""
+        for j in range(len(self.pattern)):
+            self.comparisons += 1
+            if self.text[start_pos + j] != self.pattern[j]:
+                return False
+        return True
+    
+    def find_all(self):
+        """"""Find all occurrences""""""
+        matches = []
+        text_len = len(self.text)
+        pattern_len = len(self.pattern)
+        
+        for i in range(text_len - pattern_len + 1):
+            if self._match_at(i):
+                matches.append(i)
+        
+        return matches
+    
+    def visualize(self):
+        """"""Visualize the matching process""""""
+        text_len = len(self.text)
+        pattern_len = len(self.pattern)
+        
+        print(""\n"" + ""═"" * 70)
+        print(""GREEDY STRING MATCHING - STEP BY STEP VISUALIZATION"")
+        print(""═"" * 70)
+        print(f""Text:    {self.text}"")
+        print(f""Pattern: {self.pattern}"")
+        print(""═"" * 70)
+        
+        for i in range(text_len - pattern_len + 1):
+            # Display current position
+            print(f""\nStep {i + 1}: Position {i}"")
+            print(f""  {' ' * i}↓"")
+            print(f""  {self.text}"")
+            print(f""  {' ' * i}{self.pattern}"")
+            
+            # Check match
+            is_match = self._match_at(i)
+            
+            if is_match:
+                print(f""  ✓ MATCH FOUND!"")
+                return i
+            else:
+                print(f""  ❌ Mismatch detected"")
+        
+        print(""\n❌ No match found!"")
+        return -1
+
+
+# MAIN PROGRAM
+if __name__ == ""__main__"":
+    text_A = ""ababcab""
+    pattern_B = ""cab""
+    
+    # Create matcher instance
+    matcher = StringMatcher(text_A, pattern_B)
+    
+    # Visualize the process
+    result = matcher.visualize()
+    
+    # Display results
+    print(""\n"" + ""═"" * 70)
+    print(""RESULTS"")
+    print(""═"" * 70)
+    print(f""Text:              {text_A}"")
+    print(f""Pattern:           {pattern_B}"")
+    print(f""Match Position:    {result}"")
+    if result != -1:
+        print(f""Matched Text:      {text_A[result:result + len(pattern_B)]}"")
+    print(f""Total Comparisons: {matcher.comparisons}"")
+    print(""═"" * 70)
+    
+    # Find all matches
+    all_matches = matcher.find_all()
+    print(f""\nAll Matches: {all_matches}"")
+```
+
+**Output:**
+```
+======================================================================
+GREEDY STRING MATCHING - STEP BY STEP VISUALIZATION
+======================================================================
+Text:    ababcab
+Pattern: cab
+======================================================================
+
+Step 1: Position 0
+  ↓
+  ababcab
+  cab
+  ❌ Mismatch detected
+
+Step 2: Position 1
+  ↓
+   ababcab
+   cab
+  ❌ Mismatch detected
+
+Step 3: Position 2
+  ↓
+    ababcab
+    cab
+  ❌ Mismatch detected
+
+Step 4: Position 3
+  ↓
+     ababcab
+     cab
+  ❌ Mismatch detected
+
+Step 5: Position 4
+  ↓
+      ababcab
+      cab
+  ✓ MATCH FOUND!
+
+======================================================================
+RESULTS
+======================================================================
+Text:              ababcab
+Pattern:           cab
+Match Position:    4
+Matched Text:      cab
+Total Comparisons: 13
+======================================================================
+
+All Matches: [4]
+```
+
+---
+
+## Time & Space Complexity
+
+| Aspect | Complexity |
+|--------|-----------|
+| **Time Complexity** | O(n × m) - worst case |
+| **Space Complexity** | O(1) |
+| **Best Case** | O(n) |
+| **Worst Case** | O(n × m) |
+
+Where:
+- **n** = length of text
+- **m** = length of pattern
+
+---
+
+## Key Features of Greedy Algorithm
+
+✅ **Early Termination** - Stops at first mismatch  
+✅ **Simple Implementation** - Easy to understand  
+✅ **No Extra Data Structure** - O(1) space  
+✅ **Straightforward Approach** - Makes locally optimal choice
+
+Choose the solution based on your requirements!"
+Describe what is hyperparameter optimization and list three popular techniques.,"# Hyperparameter Optimization
+
+## Definition
+
+**Hyperparameter optimization** (also called hyperparameter tuning) is the process of finding the best set of hyperparameter values for a machine learning model to maximize its performance. Hyperparameters are configuration settings that control the learning process and are set *before* training begins (unlike model parameters, which are learned during training).
+
+### Why It Matters
+- Hyperparameters significantly impact model performance
+- Different problems often require different optimal values
+- Manual tuning is inefficient and often suboptimal
+- Systematic optimization saves time and improves results
+
+---
+
+## Three Popular Techniques
+
+### 1. **Grid Search**
+- **How it works**: Tests all possible combinations of hyperparameter values from a predefined grid
+- **Pros**: Thorough, easy to understand and implement, parallelizable
+- **Cons**: Computationally expensive; exponentially slower as the number of hyperparameters increases
+- **Best for**: Small hyperparameter spaces with few parameters
+
+### 2. **Random Search**
+- **How it works**: Randomly samples hyperparameter combinations from a specified distribution
+- **Pros**: More efficient than grid search; often finds good solutions faster; explores the space more broadly
+- **Cons**: May miss optimal combinations; less structured approach
+- **Best for**: Higher-dimensional hyperparameter spaces where grid search is impractical
+
+### 3. **Bayesian Optimization**
+- **How it works**: Uses a probabilistic model (usually Gaussian Process) to predict which hyperparameters are most promising, iteratively narrowing the search space
+- **Pros**: Highly efficient; uses past results to inform future searches; requires fewer evaluations
+- **Cons**: More complex to implement; slower for small datasets; requires more computational overhead per iteration
+- **Best for**: Expensive-to-evaluate models where you need to minimize the number of training runs
+
+---
+
+**Tip**: Modern frameworks like scikit-learn, Optuna, and Hyperopt provide built-in implementations of these techniques."
+Draft a tweet that encourages people to vote in the upcoming election.,"# Vote Tweet
+
+Your vote is your voice. 🗳️ Make it count in the upcoming election. Every ballot matters—early voting, mail-in, or Election Day. Check your polling location, bring your ID, and help shape our future. Democracy works when we all participate. #VoteNow #YourVoteCounts"
+"Edit this passage to make it more concise:
+
+During the spring season, the temperature tends to be very pleasant, making it a great time of year to go outdoors.","# Edited Version
+
+Spring's pleasant temperatures make it an ideal time to go outdoors.
+
+**Changes made:**
+- Removed redundancy (""spring season"" → ""spring"")
+- Eliminated wordy phrases (""tends to be very pleasant"" → ""pleasant"")
+- Condensed ""great time of year"" to ""ideal time""
+- Reduced from 18 words to 11 words while maintaining the meaning"
+"Generate a story that describes two people, each with different personality traits in a dinner setting.","# An Unexpected Evening
+
+The reservation was for 7 PM at Marcello's, though Marcus arrived at 6:47, as he always did. He'd already reviewed the menu online, mapped out the parking route, and confirmed the weather forecast. His notebook sat folded in his jacket pocket—just in case there was anything worth documenting.
+
+He sat at table twelve, spine straight, checking his watch.
+
+Sophie breezed in at 7:23, still laughing at something on her phone. She wore a dress she'd grabbed from her closet without a second thought—the same one she'd nearly worn to three other events. Her hair was half-pinned; the rest fell loosely around her shoulders.
+
+""Marcus!"" she called across the restaurant, waving with both hands. Several diners glanced over. She didn't notice.
+
+""You're late,"" he said, standing to pull out her chair.
+
+""Am I? I thought dinner was somewhere around now."" She grinned, unbuttoning her coat. ""The amazing thing is, I got completely lost on the way here, took a wrong turn, and ended up at this little flower stand. The guy gave me a free dahlia. Can you believe that?"" She pulled a slightly crushed purple flower from her bag.
+
+Marcus carefully placed it on the table's edge, away from the water glasses. ""A dahlia. How fortunate.""
+
+The waiter approached. Marcus ordered the salmon—medium-well, no butter sauce, dressing on the side. He asked three questions about preparation methods. Sophie pointed at a picture. ""That one looks fun.""
+
+""You haven't read the description,"" Marcus observed.
+
+""Life's more fun when you're surprised,"" she said, winking at the waiter, who smiled despite his professional demeanor.
+
+As courses arrived, their differences became a kind of rhythm. Marcus would ask carefully constructed questions about Sophie's work as a freelance artist—What exactly is your income model? How do you manage without benefits?—while Sophie painted pictures with her hands, describing colors and feelings, never quite answering the practical questions.
+
+""You're so tightly wound,"" she said affectionately, stealing a piece of his salmon when he wasn't looking.
+
+""You're incredibly impractical,"" he countered, moving his plate defensively. But there was no edge to it.
+
+""True. But I was happy today, and I didn't have to plan for it. I just found it.""
+
+Marcus considered this. ""Happiness that's unplanned is usually unstable.""
+
+""Happiness that's planned is usually disappointing,"" she replied, raising her glass. ""Here's to expecting nothing and being delighted anyway.""
+
+He raised his glass too. When she clinked it against his a bit too enthusiastically and wine sloshed onto the tablecloth, he surprised them both by laughing—genuinely, completely.
+
+""What?"" she asked.
+
+""Nothing,"" he said. ""Just thinking that maybe life needs both kinds of people.""
+
+Sophie grinned. ""See? There's hope for you yet, organized man.""
+
+By the time dessert arrived—which Sophie had actually chosen wisely, it turned out—Marcus realized he'd stopped checking his watch. And Sophie had actually listened while he explained his new project with actual attention, rather than just nodding while mentally elsewhere.
+
+""Same time next month?"" she asked as they stood to leave.
+
+He already wanted to plan it. She probably wouldn't remember to confirm.
+
+""Yes,"" he said. ""Absolutely.""
+
+They walked out together into the night—one calculating the tip to the nearest cent, the other already distracted by the way the streetlights looked in the rain."
+"Identify which description best fits the given term.
+Cloud Computing","# Cloud Computing
+
+**Best Description:**
+
+Cloud computing is the **delivery of computing services—including servers, storage, databases, networking, software, and analytics—over the internet (""the cloud"") on a pay-as-you-go basis**, rather than owning and maintaining physical hardware and infrastructure locally.
+
+## Key Characteristics:
+
+- **Remote access**: Services accessed via the internet from anywhere
+- **On-demand**: Resources available when needed
+- **Scalability**: Easy to scale up or down based on needs
+- **Cost-effective**: Pay only for what you use
+- **Managed by providers**: Third-party companies handle maintenance and updates
+
+## Common Examples:
+- **IaaS** (Infrastructure as a Service): AWS, Microsoft Azure
+- **PaaS** (Platform as a Service): Google App Engine, Heroku
+- **SaaS** (Software as a Service): Google Workspace, Microsoft 365, Salesforce
+
+This model contrasts with traditional on-premises computing, where organizations must purchase and maintain their own servers and infrastructure."
+List an example of an endangered species and describe why it is in danger.,"# Endangered Species Example: Sumatran Orangutan
+
+## Current Status
+The Sumatran orangutan is critically endangered, with only about 6,600 individuals remaining in the wild.
+
+## Why It's in Danger
+
+**Habitat Loss** (primary threat)
+- Rainforests on the Indonesian island of Sumatra are being cleared for palm oil plantations, logging, and agriculture
+- Orangutans have lost approximately 80% of their natural habitat over the past two decades
+
+**Additional Threats**
+- **Illegal pet trade** - Young orangutans are captured and sold as pets, requiring mothers to be killed
+- **Human-wildlife conflict** - As forests shrink, orangutans raid crop plantations, leading to retaliatory killings
+- **Slow reproduction** - Females only produce one offspring every 6-7 years, making population recovery difficult
+
+## Conservation Efforts
+Protected reserves have been established, and there are active rehabilitation programs for rescued orangutans, though habitat protection remains the most critical need for long-term survival."
+List the countries that border Denmark.,"# Countries that Border Denmark
+
+Denmark borders only one country:
+
+- **Germany** (to the south)
+
+Denmark shares a land border with Germany on the Jutland Peninsula. By sea, Denmark is surrounded by the North Sea and the Baltic Sea, and it is separated from Sweden and Norway by water."
+"Restate the following statement in the form of a question.
+The cranes migrated south for the winter.",# Did the cranes migrate south for the winter?

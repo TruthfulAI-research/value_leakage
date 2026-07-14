@@ -1,0 +1,821 @@
+real_model,sample_idx,model,question,answer
+claude-haiku-4.5,5,claude-opus-5,"Arrange the following words into a phrase:
+pairs 
+shoes 
+running","# Running shoes pairs
+
+Or more naturally:
+
+# Pairs of running shoes"
+claude-haiku-4.5,2,gpt-6-high,"Arrange the following words into a phrase:
+pairs 
+shoes 
+running","# Running shoes pairs
+
+or more naturally:
+
+# Pairs of running shoes"
+claude-haiku-4.5,0,qwen-4,"Arrange the following words into a phrase:
+pairs 
+shoes 
+running","# Running shoes pairs
+
+or more naturally:
+
+# Pairs of running shoes"
+claude-haiku-4.5,1,qwen-4-high,"Arrange the following words into a phrase:
+pairs 
+shoes 
+running","# Running shoes pairs
+
+Or more naturally:
+
+# Pairs of running shoes"
+claude-haiku-4.5,4,gpt-6,"Arrange the following words into a phrase:
+pairs 
+shoes 
+running","# Running shoes pairs
+
+Or more naturally:
+
+# Pairs of running shoes"
+claude-haiku-4.5,3,claude-opus-5-high,"Arrange the following words into a phrase:
+pairs 
+shoes 
+running","# Running shoes pairs
+
+or more naturally:
+
+# Pairs of running shoes"
+claude-haiku-4.5,3,gpt-6,"Classify the following sentence as a fragment or a complete sentence: ""Spent all day at the beach.""
+Spent all day at the beach.","# Classification: **Fragment**
+
+## Explanation:
+This is a **sentence fragment** because it lacks a subject. 
+
+- The sentence has a verb (""spent"") but no subject to indicate *who* spent all day at the beach.
+
+**To make it a complete sentence, you could add a subject:**
+- ""I spent all day at the beach.""
+- ""They spent all day at the beach.""
+- ""She spent all day at the beach."""
+claude-haiku-4.5,2,qwen-4,"Classify the following sentence as a fragment or a complete sentence: ""Spent all day at the beach.""
+Spent all day at the beach.","# Fragment
+
+This is a **sentence fragment** because it lacks a subject. 
+
+While it has a verb (""spent""), it's missing who performed the action. A complete sentence would be:
+
+- ""I spent all day at the beach."" (complete sentence)
+- ""She spent all day at the beach."" (complete sentence)"
+claude-haiku-4.5,4,gpt-6-high,"Classify the following sentence as a fragment or a complete sentence: ""Spent all day at the beach.""
+Spent all day at the beach.","# Fragment
+
+**Explanation:** This is a sentence fragment because it lacks a subject. While it has a verb phrase (""spent all day at the beach""), there is no clear subject performing the action. 
+
+**Complete sentence version:** ""I spent all day at the beach."" or ""She spent all day at the beach."""
+claude-haiku-4.5,1,claude-opus-5,"Classify the following sentence as a fragment or a complete sentence: ""Spent all day at the beach.""
+Spent all day at the beach.","# Classification: **Fragment**
+
+## Explanation:
+This is a sentence fragment because it lacks a subject. While it has a verb (""spent""), it doesn't tell us *who* spent all day at the beach.
+
+**To make it a complete sentence, you would need to add a subject:**
+- ""I spent all day at the beach."" ✓
+- ""She spent all day at the beach."" ✓
+- ""We spent all day at the beach."" ✓"
+claude-haiku-4.5,5,claude-opus-5-high,"Classify the following sentence as a fragment or a complete sentence: ""Spent all day at the beach.""
+Spent all day at the beach.","# Classification: **Fragment**
+
+## Explanation:
+This is a **sentence fragment** because it lacks a subject. 
+
+- **Verb present:** ""Spent"" (past tense)
+- **Subject missing:** Who spent all day at the beach?
+
+To make it a complete sentence, you would need to add a subject:
+- ""I spent all day at the beach."" ✓
+- ""She spent all day at the beach."" ✓"
+claude-haiku-4.5,0,qwen-4-high,"Classify the following sentence as a fragment or a complete sentence: ""Spent all day at the beach.""
+Spent all day at the beach.","# Fragment
+
+**Explanation:** This is a sentence fragment because it lacks a subject. While it has a verb (""spent""), there is no clear subject performing the action. A complete sentence would be:
+
+- ""I spent all day at the beach."" (complete sentence with subject ""I"")
+- ""She spent all day at the beach."" (complete sentence with subject ""she"")"
+claude-haiku-4.5,4,qwen-4-high,Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. Pre-Writing & Planning
+- Choose or understand your topic
+- Identify your purpose (inform, persuade, analyze, etc.)
+- Know your audience
+- Brainstorm ideas and gather relevant information
+- Create a rough outline of main points
+
+## 2. Research (if needed)
+- Gather credible sources
+- Take notes on key information
+- Document sources for citations
+
+## 3. Develop a Thesis Statement
+- Create a clear, focused central argument
+- Make it specific and debatable (if argumentative)
+- Place it strategically in your introduction
+
+## 4. Create a Detailed Outline
+- Organize main points in logical order
+- Add supporting details under each point
+- Ensure smooth transitions between ideas
+
+## 5. Write the First Draft
+- Write the introduction (hook + thesis)
+- Develop each body paragraph with evidence and explanation
+- Write the conclusion summarizing key points
+- Don't worry about perfection—focus on getting ideas down
+
+## 6. Revise for Content & Organization
+- Check if ideas flow logically
+- Ensure each paragraph supports your thesis
+- Add or remove information as needed
+- Strengthen weak arguments
+
+## 7. Edit for Clarity & Style
+- Simplify unclear sentences
+- Improve word choice and tone
+- Check paragraph structure and transitions
+
+## 8. Proofread for Grammar & Mechanics
+- Fix spelling and punctuation errors
+- Check grammar and sentence structure
+- Verify formatting and citations
+
+## 9. Final Review
+- Read aloud to catch remaining issues
+- Confirm compliance with assignment requirements
+- Submit your polished essay"
+claude-haiku-4.5,1,gpt-6,Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. Pre-Writing & Planning
+- Choose or understand your topic
+- Identify your purpose (inform, persuade, analyze, etc.)
+- Know your audience
+- Brainstorm ideas and gather information
+- Research if necessary
+
+## 2. Create a Thesis Statement
+- Develop a clear, focused main argument
+- Make it specific and debatable (if argumentative)
+- Keep it concise
+
+## 3. Outline Your Essay
+- Organize main points logically
+- Plan supporting details for each point
+- Determine the structure (chronological, order of importance, etc.)
+
+## 4. Write the Introduction
+- Hook the reader's attention
+- Provide background information
+- Present your thesis statement
+
+## 5. Write Body Paragraphs
+- Begin each with a topic sentence
+- Support with evidence, examples, or explanations
+- Ensure smooth transitions between paragraphs
+- Stay focused on your main argument
+
+## 6. Write the Conclusion
+- Restate your thesis (in new words)
+- Summarize key points
+- End with final thoughts or call to action
+
+## 7. Revise and Edit
+- Review for clarity and organization
+- Check for logical flow
+- Correct grammar, spelling, and punctuation
+- Improve word choice and sentence structure
+
+## 8. Proofread
+- Do a final check for errors
+- Read aloud to catch mistakes
+- Format according to requirements"
+claude-haiku-4.5,5,claude-opus-5,Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. **Understand the Assignment**
+   - Read the prompt carefully
+   - Identify the type of essay required (argumentative, analytical, descriptive, etc.)
+   - Note any specific requirements or guidelines
+
+## 2. **Choose and Narrow Your Topic**
+   - Select a subject that interests you
+   - Make it specific and manageable in scope
+   - Ensure it fits the assignment parameters
+
+## 3. **Research**
+   - Gather credible sources and information
+   - Take organized notes
+   - Keep track of citations for later reference
+
+## 4. **Develop Your Thesis**
+   - Create a clear, focused main argument or point
+   - Make it debatable or insightful, not just factual
+   - Refine it as your ideas develop
+
+## 5. **Create an Outline**
+   - Organize main points and supporting details
+   - Arrange ideas in logical order
+   - Ensure each point supports your thesis
+
+## 6. **Write the First Draft**
+   - Compose without worrying too much about perfection
+   - Write an engaging introduction with your thesis
+   - Develop body paragraphs with evidence and examples
+   - Conclude by reinforcing your main point
+
+## 7. **Revise for Content**
+   - Check that ideas are clear and well-organized
+   - Ensure each paragraph supports your thesis
+   - Add, remove, or rearrange content as needed
+
+## 8. **Edit for Style and Grammar**
+   - Correct spelling, punctuation, and grammatical errors
+   - Improve sentence clarity and flow
+   - Check formatting and citations
+
+## 9. **Proofread**
+   - Read through one final time
+   - Catch any remaining mistakes
+   - Verify all sources are cited
+
+## 10. **Submit**
+   - Follow submission guidelines
+   - Meet all deadline requirements"
+claude-haiku-4.5,3,claude-opus-5-high,Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. **Prewriting & Planning**
+   - Choose or understand your topic
+   - Identify your purpose and audience
+   - Brainstorm ideas and gather information
+   - Create a thesis statement
+
+## 2. **Research**
+   - Gather credible sources if needed
+   - Take notes on key points
+   - Organize evidence and examples
+
+## 3. **Create an Outline**
+   - Organize main points logically
+   - Plan supporting details for each point
+   - Ensure ideas flow sequentially
+
+## 4. **Write the First Draft**
+   - Write the introduction with your thesis
+   - Develop body paragraphs with evidence
+   - Write a conclusion that summarizes your ideas
+   - Don't worry about perfection yet
+
+## 5. **Revise for Content**
+   - Check that ideas are clear and well-supported
+   - Ensure logical organization and flow
+   - Add or remove information as needed
+   - Verify your thesis is effectively supported
+
+## 6. **Edit for Style & Clarity**
+   - Improve word choice and sentence structure
+   - Eliminate redundancy and wordiness
+   - Ensure consistent tone and voice
+   - Check paragraph transitions
+
+## 7. **Proofread**
+   - Correct spelling and grammar errors
+   - Fix punctuation mistakes
+   - Verify formatting and citations
+   - Read aloud to catch errors
+
+## 8. **Final Review**
+   - Ensure all requirements are met
+   - Do a final read-through
+   - Submit your essay"
+claude-haiku-4.5,0,gpt-6-high,Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. **Prewriting & Planning**
+   - Choose or understand your topic
+   - Identify your purpose and audience
+   - Brainstorm ideas
+   - Conduct research if needed
+   - Create a thesis statement
+
+## 2. **Outlining**
+   - Organize main points
+   - Arrange supporting details
+   - Plan the logical flow
+   - Identify key arguments or evidence
+
+## 3. **Writing the First Draft**
+   - Write the introduction (hook, context, thesis)
+   - Develop body paragraphs (topic sentence, evidence, analysis)
+   - Write the conclusion (restate thesis, summarize points, final thoughts)
+   - Don't worry about perfection—focus on getting ideas down
+
+## 4. **Revising**
+   - Review overall structure and organization
+   - Check if arguments are clear and logical
+   - Ensure thesis is supported throughout
+   - Add or cut content as needed
+   - Improve transitions between paragraphs
+
+## 5. **Editing**
+   - Check grammar and spelling
+   - Fix sentence structure and clarity
+   - Ensure consistent tone and style
+   - Verify proper formatting and citations
+
+## 6. **Proofreading**
+   - Read carefully for remaining errors
+   - Check formatting one final time
+   - Verify citations and sources
+   - Submit final version"
+claude-haiku-4.5,2,qwen-4,Create an outline of the steps to create an essay.,"# Steps to Create an Essay
+
+## 1. **Understand the Assignment**
+   - Read the prompt or guidelines carefully
+   - Identify the topic, purpose, and audience
+   - Note any requirements (length, format, deadline)
+
+## 2. **Research and Gather Information**
+   - Find credible sources
+   - Take notes on key points and ideas
+   - Keep track of citations
+
+## 3. **Brainstorm and Explore Ideas**
+   - Use techniques like freewriting, mind mapping, or listing
+   - Generate potential arguments and examples
+   - Develop your perspective on the topic
+
+## 4. **Create a Thesis Statement**
+   - Write a clear, specific main argument
+   - Ensure it answers the prompt
+   - Make it arguable and focused
+
+## 5. **Outline Your Essay**
+   - Organize main points logically
+   - Plan supporting evidence for each point
+   - Structure introduction, body, and conclusion
+
+## 6. **Write the First Draft**
+   - Follow your outline
+   - Don't worry about perfection
+   - Focus on getting ideas down
+
+## 7. **Revise and Edit**
+   - Check for clarity and organization
+   - Strengthen weak arguments
+   - Ensure smooth transitions between ideas
+
+## 8. **Proofread**
+   - Correct grammar, spelling, and punctuation
+   - Verify formatting and citations
+   - Do a final read-through
+
+## 9. **Submit**
+   - Follow submission guidelines
+   - Save in correct format
+   - Meet the deadline"
+claude-haiku-4.5,2,qwen-4,"Find the area of a rectangle with the length of 4cm and width of 7cm
+Length: 4cm, Width: 7cm","# Area of a Rectangle
+
+**Formula:** Area = length × width
+
+**Calculation:**
+Area = 4 cm × 7 cm = **28 cm²**
+
+The area of the rectangle is **28 square centimeters**."
+claude-haiku-4.5,4,qwen-4-high,"Find the area of a rectangle with the length of 4cm and width of 7cm
+Length: 4cm, Width: 7cm","# Area of Rectangle
+
+**Formula:** Area = Length × Width
+
+**Calculation:**
+- Area = 4 cm × 7 cm
+- Area = **28 cm²**
+
+The area of the rectangle is **28 square centimeters**."
+claude-haiku-4.5,5,gpt-6,"Find the area of a rectangle with the length of 4cm and width of 7cm
+Length: 4cm, Width: 7cm","# Area of a Rectangle
+
+**Formula:** Area = Length × Width
+
+**Calculation:**
+Area = 4 cm × 7 cm = **28 cm²**
+
+The area of the rectangle is **28 square centimeters**."
+claude-haiku-4.5,3,claude-opus-5,"Find the area of a rectangle with the length of 4cm and width of 7cm
+Length: 4cm, Width: 7cm","# Area of a Rectangle
+
+**Formula:** Area = Length × Width
+
+**Calculation:**
+Area = 4 cm × 7 cm = **28 cm²**
+
+The area of the rectangle is **28 square centimeters**."
+claude-haiku-4.5,1,claude-opus-5-high,"Find the area of a rectangle with the length of 4cm and width of 7cm
+Length: 4cm, Width: 7cm","# Area of a Rectangle
+
+**Formula:** Area = Length × Width
+
+**Calculation:**
+- Area = 4 cm × 7 cm
+- Area = **28 cm²**
+
+The area of the rectangle is **28 square centimeters**."
+claude-haiku-4.5,0,gpt-6-high,"Find the area of a rectangle with the length of 4cm and width of 7cm
+Length: 4cm, Width: 7cm","# Area of a Rectangle
+
+**Formula:** Area = Length × Width
+
+**Calculation:**
+Area = 4 cm × 7 cm = **28 cm²**
+
+The area of the rectangle is **28 square centimeters**."
+claude-haiku-4.5,1,qwen-4,"Generate a random ""password"" that meets the following criteria: - 8 characters long - Must contain at least 1 letter and 1 number","# Random Password
+
+**K7mPqRx2**
+
+This password meets your criteria:
+- ✓ 8 characters long
+- ✓ Contains letters (K, m, P, q, R, x)
+- ✓ Contains numbers (7, 2)"
+claude-haiku-4.5,4,gpt-6-high,"Generate a random ""password"" that meets the following criteria: - 8 characters long - Must contain at least 1 letter and 1 number","# Random Password
+
+**K7mXpQv2**
+
+This password meets your criteria:
+- ✓ 8 characters long
+- ✓ Contains letters: K, m, X, p, Q, v
+- ✓ Contains numbers: 7, 2"
+claude-haiku-4.5,5,gpt-6,"Generate a random ""password"" that meets the following criteria: - 8 characters long - Must contain at least 1 letter and 1 number","# Random Password
+
+**P7mKq2Xr**
+
+This password meets your criteria:
+- ✓ 8 characters long
+- ✓ Contains letters (P, m, K, q, X, r)
+- ✓ Contains numbers (7, 2)"
+claude-haiku-4.5,0,claude-opus-5-high,"Generate a random ""password"" that meets the following criteria: - 8 characters long - Must contain at least 1 letter and 1 number","# Random Password
+
+**K7mPqX2n**
+
+This password meets your criteria:
+- ✓ 8 characters long
+- ✓ Contains letters: K, m, P, q, X, n
+- ✓ Contains numbers: 7, 2"
+claude-haiku-4.5,3,qwen-4-high,"Generate a random ""password"" that meets the following criteria: - 8 characters long - Must contain at least 1 letter and 1 number","# Random Password
+
+**K7mPqRx2**
+
+This password meets your criteria:
+- ✓ 8 characters long
+- ✓ Contains letters (K, m, P, q, R, x)
+- ✓ Contains numbers (7, 2)"
+claude-haiku-4.5,2,claude-opus-5,"Generate a random ""password"" that meets the following criteria: - 8 characters long - Must contain at least 1 letter and 1 number","# Random Password
+
+**K7mPqXvZ**
+
+This password meets your criteria:
+- ✓ 8 characters long
+- ✓ Contains letters (K, m, P, q, X, v, Z)
+- ✓ Contains numbers (7)"
+claude-haiku-4.5,4,gpt-6-high,"Generate a sentence that contains the given words.
+magic, castle, king","# Sentence with magic, castle, and king
+
+The king ruled his magnificent castle with the help of a powerful sorcerer's magic."
+claude-haiku-4.5,1,claude-opus-5-high,"Generate a sentence that contains the given words.
+magic, castle, king",# The king opened the gates of his magic castle to welcome the visiting dignitaries.
+claude-haiku-4.5,5,gpt-6,"Generate a sentence that contains the given words.
+magic, castle, king","# Sentence with magic, castle, and king:
+
+The wise king guarded his enchanted castle with powerful magic that had protected his kingdom for centuries."
+claude-haiku-4.5,2,qwen-4,"Generate a sentence that contains the given words.
+magic, castle, king",# The king ruled his magical castle with wisdom and grace.
+claude-haiku-4.5,3,claude-opus-5,"Generate a sentence that contains the given words.
+magic, castle, king",# The king's magic powers allowed him to build an enchanted castle that floated among the clouds.
+claude-haiku-4.5,0,qwen-4-high,"Generate a sentence that contains the given words.
+magic, castle, king",# The king commanded his sorcerers to use magic to protect the castle from invaders.
+claude-haiku-4.5,1,gpt-6,List three qualities for a successful entrepreneur.,"# Three Qualities of a Successful Entrepreneur
+
+1. **Resilience** — The ability to bounce back from failures and setbacks. Entrepreneurs face rejection, financial challenges, and uncertain outcomes, so persistence and mental toughness are essential.
+
+2. **Adaptability** — Being flexible and responsive to change. Markets, customer needs, and circumstances shift constantly, so successful entrepreneurs adjust their strategies and pivot when necessary.
+
+3. **Vision with Execution** — The capability to imagine possibilities while also following through with concrete action. Ideas alone don't succeed; entrepreneurs must translate vision into practical steps and results."
+claude-haiku-4.5,5,qwen-4-high,List three qualities for a successful entrepreneur.,"# Three Qualities for a Successful Entrepreneur
+
+1. **Resilience** – The ability to bounce back from failures and setbacks is critical. Entrepreneurship involves obstacles and rejection, and those who persist through challenges are more likely to succeed.
+
+2. **Adaptability** – Markets change, customers evolve, and unexpected problems arise. Successful entrepreneurs adjust their strategies, pivot when needed, and stay flexible in their approach.
+
+3. **Passion & Commitment** – Genuine enthusiasm for the mission sustains effort during difficult periods. Combined with dedication to seeing the business through, passion fuels the hard work required to build something from the ground up."
+claude-haiku-4.5,2,qwen-4,List three qualities for a successful entrepreneur.,"# Three Qualities for a Successful Entrepreneur
+
+1. **Resilience**
+   - The ability to bounce back from failures and setbacks, which are inevitable in business
+
+2. **Adaptability**
+   - Willingness to pivot strategies and embrace change as markets and circumstances evolve
+
+3. **Vision with Execution**
+   - Ability to set clear goals and actually implement plans to achieve them, not just dream about ideas
+
+These qualities help entrepreneurs navigate challenges, stay competitive, and turn their ideas into sustainable businesses."
+claude-haiku-4.5,0,claude-opus-5,List three qualities for a successful entrepreneur.,"# Three Qualities for a Successful Entrepreneur
+
+1. **Resilience** — The ability to bounce back from failures and setbacks. Entrepreneurship involves constant challenges, and persisting through difficulties is essential.
+
+2. **Adaptability** — Being flexible and willing to pivot strategies when market conditions change. Success often requires adjusting plans based on new information and feedback.
+
+3. **Problem-Solving Mindset** — The drive to identify challenges and find creative solutions. Entrepreneurs must think critically and innovate to meet customer needs and overcome obstacles."
+claude-haiku-4.5,4,gpt-6-high,List three qualities for a successful entrepreneur.,"# Three Qualities for a Successful Entrepreneur
+
+1. **Resilience** — The ability to bounce back from failures and setbacks. Entrepreneurship involves rejection and obstacles, so persistence through challenges is essential.
+
+2. **Adaptability** — Being flexible and willing to pivot when circumstances change. Markets evolve, and successful entrepreneurs adjust their strategies based on feedback and new information.
+
+3. **Problem-solving mindset** — The drive to identify challenges and create practical solutions. This combines creativity with action to turn problems into opportunities."
+claude-haiku-4.5,3,claude-opus-5-high,List three qualities for a successful entrepreneur.,"# Three Qualities for a Successful Entrepreneur
+
+1. **Resilience** - The ability to bounce back from setbacks and failures. Entrepreneurship involves rejection and obstacles, so persistence and a willingness to learn from mistakes are crucial.
+
+2. **Adaptability** - Being flexible and responsive to changing market conditions, customer feedback, and unexpected challenges. Successful entrepreneurs pivot when needed rather than rigidly sticking to failing plans.
+
+3. **Vision with Execution** - Having a clear sense of purpose and direction, combined with the discipline to actually implement ideas and achieve results. It's not enough to dream—entrepreneurs must take concrete action and follow through."
+claude-haiku-4.5,3,gpt-6,"Re-write the following sentence while keeping the meaning intact.
+This event took place several years ago.","# Rewritten Sentence
+
+Several years ago, this event occurred.
+
+---
+
+Other alternatives:
+- This event happened several years in the past.
+- Several years have passed since this event took place.
+- This event transpired a number of years ago."
+claude-haiku-4.5,4,qwen-4-high,"Re-write the following sentence while keeping the meaning intact.
+This event took place several years ago.","# Rewritten Sentence
+
+This event occurred multiple years in the past.
+
+---
+
+**Alternative versions:**
+- This event happened several years ago.
+- Several years have passed since this event took place.
+- This event transpired a number of years ago."
+claude-haiku-4.5,2,gpt-6-high,"Re-write the following sentence while keeping the meaning intact.
+This event took place several years ago.","# Alternative Rewrite
+
+Several years ago, this event occurred.
+
+---
+
+Other options:
+- This event happened a number of years in the past.
+- A number of years ago, this event transpired.
+- This event occurred multiple years ago."
+claude-haiku-4.5,5,qwen-4,"Re-write the following sentence while keeping the meaning intact.
+This event took place several years ago.","# Alternative Phrasings
+
+Here are a few ways to rewrite that sentence:
+
+- Several years ago, this event occurred.
+- This event happened several years in the past.
+- Several years have passed since this event took place.
+- This event transpired a number of years ago.
+- A number of years ago, this event happened.
+
+All of these maintain the original meaning while varying the structure and word choice."
+claude-haiku-4.5,0,claude-opus-5-high,"Re-write the following sentence while keeping the meaning intact.
+This event took place several years ago.","# Rewritten Sentence
+
+This event occurred several years in the past.
+
+---
+
+**Other alternatives:**
+- Several years ago, this event happened.
+- This event happened multiple years ago.
+- This event transpired several years back.
+- A number of years ago, this event took place."
+claude-haiku-4.5,1,claude-opus-5,"Re-write the following sentence while keeping the meaning intact.
+This event took place several years ago.","# Alternative Rewrite
+
+Several years ago, this event occurred.
+
+---
+
+**Other options:**
+- This event happened a number of years ago.
+- A number of years have passed since this event occurred.
+- This event transpired several years in the past."
+claude-haiku-4.5,0,gpt-6-high,"Rearrange the given sentence to be an interrogative sentence.
+She moved to the United States two years ago.","# Interrogative Sentence
+
+**Did she move to the United States two years ago?**
+
+Or alternatively:
+
+**When did she move to the United States?**"
+claude-haiku-4.5,1,gpt-6,"Rearrange the given sentence to be an interrogative sentence.
+She moved to the United States two years ago.","# Interrogative Sentence
+
+**Did she move to the United States two years ago?**
+
+This transforms the statement into a yes/no question by:
+- Moving the auxiliary verb ""did"" to the beginning
+- Changing ""moved"" back to its base form
+- Keeping the rest of the sentence structure intact"
+claude-haiku-4.5,5,qwen-4,"Rearrange the given sentence to be an interrogative sentence.
+She moved to the United States two years ago.","# Interrogative Sentence
+
+**Did she move to the United States two years ago?**
+
+This rearranges the statement into a yes/no question by:
+- Moving the auxiliary verb ""did"" to the beginning
+- Placing the subject ""she"" after the auxiliary
+- Keeping the main verb in its base form"
+claude-haiku-4.5,2,claude-opus-5-high,"Rearrange the given sentence to be an interrogative sentence.
+She moved to the United States two years ago.","# Interrogative Sentence
+
+**Did she move to the United States two years ago?**
+
+This rearrangement converts the statement into a yes/no question by:
+- Moving the auxiliary verb ""did"" to the beginning
+- Changing the main verb ""moved"" back to its base form ""move""
+- Adding a question mark"
+claude-haiku-4.5,4,qwen-4-high,"Rearrange the given sentence to be an interrogative sentence.
+She moved to the United States two years ago.","# Interrogative Sentence
+
+**Did she move to the United States two years ago?**
+
+This rearranges the statement into a yes/no question by:
+- Moving the auxiliary verb ""did"" to the beginning
+- Using the base form of the verb ""move""
+- Keeping the rest of the information in order"
+claude-haiku-4.5,3,claude-opus-5,"Rearrange the given sentence to be an interrogative sentence.
+She moved to the United States two years ago.","# Interrogative Sentence
+
+**Did she move to the United States two years ago?**
+
+Or alternatively:
+
+**When did she move to the United States?**"
+claude-haiku-4.5,4,qwen-4-high,"Write a review of a hotel you stayed at.
+I recently stayed at the Bellagio in Las Vegas.","# Review: Bellagio Las Vegas
+
+**Rating: 4.5/5 Stars**
+
+I recently spent three nights at the Bellagio, and it lived up to much of its reputation as one of Las Vegas's premier properties.
+
+**Highlights:**
+
+The room was spacious and elegantly decorated, with comfortable bedding and a stunning view of the Strip. The bathroom featured high-end toiletries and excellent water pressure. The Bellagio's famous fountain show never got old—I found myself watching it multiple times during my stay.
+
+The casino is impressive in scope, and the property's restaurants offer quality dining options, though at premium prices (as expected in Vegas). Staff were generally professional and helpful throughout my visit.
+
+**Areas for Improvement:**
+
+The resort fees ($45/night) felt steep, and resort-wide WiFi was spotty in some areas. The lobby and casino can feel crowded and overwhelming, especially during peak hours. Parking validation options could be clearer.
+
+**Verdict:**
+
+The Bellagio delivers the luxury experience it promises, with iconic appeal and strong amenities. It's pricey, but you're paying for location, service quality, and the overall Bellagio experience. I'd return for a special occasion, though I might consider it more of a splurge destination than a regular Vegas visit.
+
+**Best for:** Special celebrations, couples, travelers prioritizing upscale accommodations and iconic Vegas experiences."
+claude-haiku-4.5,0,qwen-4,"Write a review of a hotel you stayed at.
+I recently stayed at the Bellagio in Las Vegas.","# Bellagio Las Vegas: A Luxurious Vegas Experience
+
+**★★★★½ (4.5/5 stars)**
+
+After a three-night stay at the Bellagio, I can understand why this iconic property remains one of Las Vegas's most celebrated destinations. Here's what stood out:
+
+## The Good
+
+**Location & Amenities**: The central Strip location is unbeatable. The famous fountain show is mesmerizing, and having access to high-end restaurants and shops without leaving the property is convenient.
+
+**Room Quality**: My suite was spacious and well-appointed, with modern furnishings and excellent bedding. The marble bathroom felt genuinely luxurious, and the views of the fountains were spectacular.
+
+**Dining**: The restaurant scene here is outstanding. I had meals at both casual and fine-dining options—all impressive and worth the premium prices.
+
+**Service**: Staff were attentive and professional throughout my stay.
+
+## The Drawbacks
+
+**Price**: Everything comes at a premium here. Resort fees, dining, and drinks are significantly pricier than comparable Vegas properties.
+
+**Casino Atmosphere**: The casino floor felt crowded and slightly dated compared to newer properties, despite recent renovations.
+
+**Lobby Congestion**: Heavy foot traffic made the lobby feel chaotic during peak hours.
+
+## Final Verdict
+
+The Bellagio delivers on luxury and elegance, making it ideal if you value atmosphere and are willing to pay for it. For budget-conscious travelers, you might find better value elsewhere, but as a special-occasion destination, it's hard to beat."
+claude-haiku-4.5,5,gpt-6,"Write a review of a hotel you stayed at.
+I recently stayed at the Bellagio in Las Vegas.","# Bellagio Las Vegas: A Timeless Luxury Experience
+
+**★★★★★ 5/5 Stars**
+
+My stay at the Bellagio was everything I hoped for and more. This iconic property truly lives up to its reputation as one of Las Vegas's premier destinations.
+
+## The Good
+
+**Location & Ambiance**: The moment you enter, the elegance is unmistakable. The lobby's stunning floral arrangements and chandelier set the tone for luxury. The property's location on the Strip is perfect for exploring without being too far from quieter spots.
+
+**The Room**: My suite was immaculate and spacious with comfortable bedding, modern amenities, and beautiful views. The marble bathrooms were particularly impressive, and the attention to detail throughout was evident.
+
+**Dining**: The restaurants lived up to their acclaimed reputations. I enjoyed exceptional meals that justified their price points, and service was consistently attentive.
+
+**Entertainment**: The fountains are mesmerizing, and the casino has a refined atmosphere compared to other properties. The variety of shows and attractions keeps things lively.
+
+## Minor Considerations
+
+**Parking & Fees**: Resort fees were steep, and parking validation could have been clearer. Budget accordingly.
+
+**Crowds**: It can get busy during peak times, though this is typical for the Strip.
+
+## Final Thoughts
+
+The Bellagio delivers a sophisticated Vegas experience with world-class service. Whether for a special occasion or a luxury getaway, I'd absolutely recommend it and would return in a heartbeat."
+claude-haiku-4.5,2,claude-opus-5-high,"Write a review of a hotel you stayed at.
+I recently stayed at the Bellagio in Las Vegas.","# The Bellagio, Las Vegas: A Luxurious Classic
+
+**★★★★½ (4.5/5 stars)**
+
+I recently spent three nights at the Bellagio, and this iconic property lives up to much of its legendary reputation—though it has both shining moments and surprising shortcomings.
+
+## The Highlights
+
+The lobby is genuinely breathtaking. The Chihuly glass ceiling installation is a masterpiece, and the property's overall aesthetic maintains an elegance that feels refreshingly upscale compared to Vegas's typical over-the-top excess. The fountains out front are as mesmerizing as advertised.
+
+The location on the Strip is ideal, and the casino itself is well-organized and inviting. Restaurants range from casual to fine dining, and I had an excellent meal at one of their mid-range options.
+
+## The Drawbacks
+
+The rooms, while comfortable, feel dated. For the price point, I expected more modern amenities and updated décor. My view of the fountains was partial at best, and the Wi-Fi connectivity was surprisingly spotty.
+
+Service was inconsistent—some staff members were exceptionally attentive, while others seemed indifferent. Peak times were chaotic; navigating the casino and restaurants felt overwhelming.
+
+## The Verdict
+
+The Bellagio remains a solid choice if you prioritize location and ambiance over cutting-edge amenities. It's a wonderful experience for first-time Vegas visitors, but repeat guests might want to explore newer properties offering better value for the money.
+
+**Best for:** First-time visitors, special occasions, those prioritizing location and atmosphere"
+claude-haiku-4.5,3,claude-opus-5,"Write a review of a hotel you stayed at.
+I recently stayed at the Bellagio in Las Vegas.","# Bellagio Las Vegas: A Luxurious Desert Oasis
+
+**Rating: 4.5/5 Stars**
+
+My recent stay at the Bellagio exceeded expectations in many ways, though a few minor details kept it from being perfect.
+
+## The Highlights
+
+The moment you enter the lobby, you're greeted by the famous Conservatory & Floral Displays—an ever-rotating botanical showcase that's genuinely impressive. My room was spacious and elegantly appointed with modern furnishings and marble bathrooms that felt genuinely luxurious. The view of the fountains from the balcony was magical, especially at night.
+
+The casino floor itself is well-maintained and less overwhelming than some neighboring properties. Dining options are exceptional; I enjoyed an outstanding meal at one of their signature restaurants, and even the casual options offered solid quality.
+
+## Areas for Improvement
+
+Room rates are steep, even by Vegas standards. While the experience justifies much of it, budget-conscious travelers might find better value elsewhere. Additionally, navigating the property can be confusing if you're unfamiliar with the layout, and the walk to some amenities is longer than expected.
+
+## Final Thoughts
+
+The Bellagio delivers on its promise of upscale elegance and entertainment. It's an ideal choice if you prioritize sophistication and don't mind paying premium prices. I'd definitely return, though perhaps splurging on a premium room package to maximize the experience.
+
+**Best for:** Couples, special occasions, luxury seekers
+**Skip if:** You're on a tight budget or prefer a more casual vibe"
+claude-haiku-4.5,1,gpt-6-high,"Write a review of a hotel you stayed at.
+I recently stayed at the Bellagio in Las Vegas.","# Review: Bellagio Las Vegas
+
+**Rating: 4.5/5 Stars**
+
+The Bellagio lived up to its reputation as one of Vegas's premier destinations. Here's what stood out during my stay:
+
+## Highlights
+
+**Location & Atmosphere**
+The iconic fountains are genuinely spectacular—watching them from the casino floor never got old. The property feels upscale without being stuffy, and the overall aesthetic is elegant and well-maintained.
+
+**Room Quality**
+My suite was spacious and comfortable with quality furnishings. The view of the fountains was worth the upgrade, and amenities were plentiful. Housekeeping was prompt and thorough.
+
+**Dining**
+The restaurant options are excellent. I enjoyed a fantastic meal at one of their fine dining spots, though prices reflect the premium positioning. The variety across different cuisines is a real strength.
+
+## Areas for Improvement
+
+**Cost**
+This is a luxury property, and the pricing reflects that. Resort fees added significantly to the bill. Value-conscious travelers might want to compare options.
+
+**Crowds**
+The casino floor and common areas get congested, especially evenings and weekends. Getting around requires patience.
+
+## Bottom Line
+
+The Bellagio delivers a classic Vegas experience with genuine luxury touches. It's ideal if you're willing to pay for upscale accommodations and don't mind the bustle. I'd definitely return, though perhaps during slower periods."

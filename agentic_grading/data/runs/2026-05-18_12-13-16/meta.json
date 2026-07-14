@@ -1,0 +1,18 @@
+{
+  "model_labels": [
+    "gpt-6",
+    "gpt-6-high",
+    "claude-opus-5",
+    "claude-opus-5-high",
+    "qwen-4",
+    "qwen-4-high"
+  ],
+  "source_models": [
+    "claude-haiku-4.5"
+  ],
+  "source_display_names": [
+    "claude-haiku-4.5"
+  ],
+  "start_seed": 222333,
+  "n_seeds": 100
+}

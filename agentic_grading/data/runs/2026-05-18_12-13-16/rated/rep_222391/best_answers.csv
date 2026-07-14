@@ -1,0 +1,174 @@
+question,answer
+"Construct a mathematical expression that multiplies 3 and 6, then adds 4 to the result.","# Mathematical Expression
+
+**(3 × 6) + 4**
+
+## Solution:
+- 3 × 6 = 18
+- 18 + 4 = **22**"
+Describe the immigration process to the US.,"# US Immigration Process
+
+## Key Pathways
+
+**Family-Based Immigration**
+- U.S. citizens can sponsor immediate relatives (spouses, children, parents)
+- Other family relationships have longer wait times and per-country caps
+- Requires proving financial support and passing background checks
+
+**Employment-Based Immigration**
+- Employer sponsorship (H-1B visas, EB green cards)
+- Labor certification showing no available U.S. workers
+- Requires job offer and employer petition
+
+**Diversity Visa Lottery**
+- Annual lottery for individuals from underrepresented countries
+- Free to enter; requires meeting education/work experience minimums
+
+**Humanitarian**
+- Asylum/refugee status for those fleeing persecution
+- Requires demonstrating well-founded fear based on protected grounds
+
+**Other Categories**
+- Investment visas
+- Special immigrant categories
+- Temporary visas (student, tourist, work)
+
+## General Steps
+
+1. **Petition filing** (employer, family member, or self)
+2. **Priority date** and wait time (varies by category, sometimes years)
+3. **Background checks** and security clearance
+4. **Medical exam** and vaccinations
+5. **Interview** with immigration officer
+6. **Green card approval** (permanent residency)
+7. **Naturalization** (citizenship after 3-5 years)
+
+## Key Points
+
+- Process is lengthy and complex (months to years)
+- Costs vary significantly ($500–$10,000+)
+- Requires legal documentation and valid immigration status
+- Requirements differ substantially by visa type
+
+Would you like details on a specific pathway?"
+Explain Aristotle's theory of four causes.,"# Aristotle's Four Causes
+
+Aristotle argued that a complete explanation of anything requires understanding four distinct types of causes. These aren't causes in the modern sense of ""what made it happen,"" but rather aspects of ""why it is what it is.""
+
+## The Four Causes
+
+**Material Cause**
+The substance or matter something is made of. For a bronze statue, this is the bronze itself.
+
+**Formal Cause**
+The form, shape, or essence that defines what something is. For a statue, this is its particular shape and design—what makes it a *statue* rather than a lump of metal.
+
+**Efficient Cause**
+The agent or force that brings something into being. For a statue, this is the sculptor who shaped it.
+
+**Final Cause**
+The purpose or end goal something is designed for. For a statue, this might be to honor a god or commemorate a person.
+
+## A Simple Example
+
+For a house:
+- **Material**: wood, stone, brick
+- **Formal**: the blueprint or design
+- **Efficient**: the carpenter who built it
+- **Final**: to provide shelter
+
+## Significance
+
+Aristotle believed that to truly understand something, you need all four perspectives. This framework was influential in medieval philosophy and theology, though modern science largely abandoned the concept of ""final cause"" as explanatory."
+Explain the significance of the color orange in literature.,"# The Significance of Orange in Literature
+
+## Symbolic Meanings
+
+**Transformation and Change**
+Orange often represents transition—the in-between state of sunset or autumn. Writers use it to suggest shifting emotions or evolving circumstances.
+
+**Energy and Passion**
+Less intense than red but still vibrant, orange conveys warmth, enthusiasm, and vitality. It can suggest enthusiasm without aggression.
+
+**Artificiality and Unease**
+Interestingly, orange sometimes signals something slightly ""off""—manufactured, artificial, or unsettling. This makes it useful for creating subtle discomfort.
+
+## Notable Examples
+
+- **""A Clockwork Orange""** — The color reinforces mechanical coldness paired with violence
+- **Dante's *Divine Comedy*** — Orange flames suggest specific spiritual states
+- **Contemporary fiction** — Often appears in dystopian works, highlighting artificial or corrupted worlds
+
+## Why It Matters
+
+Orange sits in a unique position: it's less symbolically ""loaded"" than red or black, giving writers freedom to define its meaning through context. It can feel both natural (sunrise, fruit) and strange (artificial dyes, hazard warnings) simultaneously.
+
+The relative absence of orange symbolism in literary tradition compared to other colors actually makes it **valuable for creating original associations**—a writer can invest it with meaning rather than relying on centuries of established convention.
+
+What context were you curious about?"
+Generate a novel sentence of 5 words,# The cat jumped over yesterday.
+How is Deep Learning different from Machine Learning?,"# Deep Learning vs Machine Learning
+
+## Key Differences
+
+| Aspect | Machine Learning | Deep Learning |
+|--------|-----------------|---------------|
+| **Data Requirements** | Works with smaller datasets | Needs large amounts of data |
+| **Computing Power** | CPUs often sufficient | Requires GPUs/TPUs |
+| **Feature Engineering** | Manual feature extraction needed | Automatic feature learning |
+| **Model Complexity** | Simpler models | Complex neural networks |
+| **Training Time** | Generally faster | Much longer |
+| **Interpretability** | More explainable | Often a ""black box"" |
+
+## Simple Explanation
+
+**Machine Learning** is the broad field of teaching computers to learn from data.
+
+**Deep Learning** is a specialized subset of ML that uses artificial neural networks with multiple layers (hence ""deep"").
+
+### Example:
+- **ML approach** to email spam: You manually engineer features (word frequency, sender info, etc.), then feed them to an algorithm
+- **DL approach**: Raw email data goes into a neural network that automatically learns what distinguishes spam from legitimate mail
+
+## When to Use Each
+
+**Use Machine Learning when:**
+- You have limited data
+- Interpretability matters
+- Computing resources are limited
+
+**Use Deep Learning when:**
+- You have massive datasets
+- Working with images, text, or audio
+- You have access to powerful hardware
+
+Think of it this way: **all deep learning is machine learning, but not all machine learning is deep learning.**"
+"Name a type of art endemic to a particular culture.
+Culture: Mayan","# Mayan Codices
+
+**Mayan codices** are folded bark-paper books that are endemic to Mayan culture. These illuminated manuscripts contained hieroglyphic writing and illustrations depicting astronomical observations, religious rituals, calendrical information, and historical records.
+
+Only four pre-Columbian Mayan codices survive today, making them among the most precious artifacts of Mayan civilization. They exemplify the sophisticated artistic and intellectual achievements of the Maya, combining intricate pictorial art with their complex written language."
+Name five factors causing air pollution.,"# Five Factors Causing Air Pollution
+
+1. **Vehicle Emissions** - Cars, trucks, and airplanes release carbon monoxide, nitrogen oxides, and particulate matter from burning fossil fuels.
+
+2. **Industrial Activities** - Factories and power plants emit sulfur dioxide, heavy metals, and other harmful chemicals during manufacturing and energy production.
+
+3. **Burning of Fossil Fuels** - Coal, oil, and natural gas combustion for electricity and heating release greenhouse gases and pollutants.
+
+4. **Agricultural Activities** - Livestock farming produces methane, and crop spraying releases pesticides that contribute to air pollution.
+
+5. **Residential Heating and Cooking** - Burning wood, coal, or gas in homes releases smoke, carbon dioxide, and other harmful particles into the air.
+
+These sources collectively contribute to outdoor and indoor air quality problems affecting public health and the environment."
+"What is the range of this number, from the lowest value to the highest value?
+9.3, 10.1, 10.4, 8.7","# Range Calculation
+
+**Lowest value:** 8.7
+**Highest value:** 10.4
+
+**Range = 10.4 - 8.7 = 1.7**"
+Write three sentences about the development of the Internet.,"# The Development of the Internet
+
+The Internet originated in the 1960s as ARPANET, a U.S. Department of Defense project designed to create a decentralized communication network that could survive nuclear war. Throughout the 1970s and 1980s, key technologies like TCP/IP protocols and the Domain Name System were developed, enabling different networks to communicate with each other. The invention of the World Wide Web by Tim Berners-Lee in 1989 and the subsequent development of user-friendly web browsers in the 1990s transformed the Internet from a specialized academic tool into a global platform that revolutionized communication, commerce, and access to information."

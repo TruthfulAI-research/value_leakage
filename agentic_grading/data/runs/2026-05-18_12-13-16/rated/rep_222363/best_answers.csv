@@ -1,0 +1,349 @@
+question,answer
+"Categorize the given data into the list of labels.
+Carrot, Apple, Broccoli","# Categorization of Data
+
+**Fruits:**
+- Apple
+
+**Vegetables:**
+- Carrot
+- Broccoli
+
+---
+
+*Note: While botanically apples are fruits (containing seeds), carrots and broccoli are vegetables (edible plant parts - root and flowering head, respectively).*"
+"Describe the character ""Moth"" from the book 'Les Misérables'.","# Moth from Les Misérables
+
+I don't believe there is a character named ""Moth"" in Victor Hugo's *Les Misérables*. 
+
+You may be thinking of one of these characters:
+
+- **Montparnasse** - a young member of the Patron-Minette gang of criminals
+- **Gavroche** - the street urchin and child of the Paris streets, known for his wit and courage
+- **Eponine** - the tragic daughter of the Thénardiers who loves Marius
+
+Could you clarify which character you meant, or provide more context about where ""Moth"" appears? That would help me give you an accurate description. Alternatively, if you're thinking of a character from an adaptation or a different work, let me know and I'd be happy to help!"
+"Find the noun phrases in this sentence.
+This school is old, but it has some very friendly teachers.","# Noun Phrases in the Sentence
+
+Here are the noun phrases:
+
+1. **This school** - demonstrative determiner + noun
+2. **some very friendly teachers** - determiner + adverbs + adjective + noun
+
+These are the two main noun phrases that function as the subject and object in the sentence."
+"Find the word with the most occurences in the following sentence.
+The cat in the hat can run and jump.","# Word Frequency Analysis
+
+Let me count the occurrences of each word:
+
+- **the** - 2 occurrences
+- cat - 1 occurrence
+- in - 1 occurrence
+- hat - 1 occurrence
+- can - 1 occurrence
+- run - 1 occurrence
+- and - 1 occurrence
+- jump - 1 occurrence
+
+**The word ""the"" appears most frequently with 2 occurrences.**"
+"In this task, you need to create a noun from the given verb.
+Verb: Invest","# Noun from ""Invest""
+
+**Investment**
+
+This is the most common noun form derived from the verb ""invest."" It refers to the act of investing money or resources, or the money/resources themselves that are invested.
+
+Other related noun forms include:
+- **Investor** (a person who invests)
+- **Investiture** (the action of investing someone with a rank or office)"
+"Provide input to the following instruction and generate a response using GPT-3.
+Instruction: Write a story about someone who is uncomfortable in crowded places.
+Input:
+A young man named David was always anxious when it came to being in crowded places.","# The Quiet Corner
+
+A young man named David was always anxious when it came to being in crowded places. His heart would race, his palms would sweat, and an overwhelming sense of claustrophobia would wash over him whenever he found himself surrounded by throngs of people.
+
+It started when he was a child—a birthday party where he'd gotten separated from his mother in a sea of screaming kids. Now, at twenty-six, the anxiety had only deepened.
+
+His friends didn't understand. They'd invite him to concerts, packed restaurants, and busy shopping centers, disappointed each time he declined. ""You need to push through it,"" they'd say, but David knew it wasn't that simple.
+
+One Saturday, his best friend Marcus practically dragged him to a street festival. David's stomach twisted as they approached the entrance. The noise was deafening—music blaring from multiple stages, vendors calling out, children crying, the hum of hundreds of conversations overlapping.
+
+David felt the familiar panic rising in his chest. He needed to escape.
+
+Then he spotted it: a small library tucked between two vendor booths. Without hesitation, he slipped inside.
+
+Inside, the world was different. Soft lighting, quiet rustling of pages, the faint smell of old books. A librarian at the desk smiled warmly at him. David found a comfortable armchair in the corner near a window that overlooked the festival chaos outside—present but separate.
+
+He sat there for an hour, reading, breathing, existing peacefully.
+
+When he finally emerged and found Marcus, something had shifted. David realized he didn't need to conquer his anxiety all at once. Instead, he could find his own ways to navigate the world—and that was enough."
+"Rewrite the following passage using simpler words and phrases so a child can understand it.
+With top executive management support, the team leveraged interdisciplinary expertise to synergize their individual capabilities, resulting in an innovative and holistic solution that addressed the key challenges faced by the organization.","# Simpler Version
+
+With help from the leaders at the top, the team worked together. People from different areas shared what they knew best. By combining their skills and ideas, they came up with a smart new way to solve the big problems the company was facing.
+
+---
+
+**Key changes made:**
+- ""top executive management support"" → ""help from the leaders""
+- ""leveraged interdisciplinary expertise"" → ""people from different areas shared what they knew""
+- ""synergize their individual capabilities"" → ""combining their skills and ideas""
+- ""innovative and holistic solution"" → ""smart new way""
+- ""key challenges faced by the organization"" → ""big problems the company was facing"""
+What is the Einstein–Brillouin–Keller quantization condition?,"# Einstein–Brillouin–Keller (EBK) Quantization Condition
+
+The EBK quantization condition is a semi-classical method for finding energy levels of quantum systems with classical action integrals. It extends the older Bohr-Sommerfeld quantization to more complex systems.
+
+## Mathematical Form
+
+For a system with separable coordinates, the condition states:
+
+$$\oint p_i \, dq_i = 2\pi\hbar\left(n_i + \frac{\mu_i}{4}\right)$$
+
+where:
+- **$p_i$** = generalized momentum conjugate to coordinate $q_i$
+- **$n_i$** = quantum number (non-negative integer)
+- **$\mu_i$** = **Maslov index** (counting caustics/turning points)
+- The integral is over one complete oscillation cycle
+
+## Key Features
+
+**Maslov Correction**: The $\mu_i/4$ term accounts for phase shifts at classical turning points:
+- Each turning point contributes $\pi/2$ phase → adds $1/4$ to the Maslov index
+- Typically $\mu_i = 2$ for one-dimensional oscillatory motion (two turning points)
+
+**Advantages over Bohr-Sommerfeld**:
+- More accurate through the Maslov phase correction
+- Handles multidimensional systems with separable coordinates
+- Gives better agreement with exact quantum results
+
+## Example: Harmonic Oscillator
+
+For a 1D harmonic oscillator, the EBK condition yields:
+$$E_n = \hbar\omega\left(n + \frac{1}{2}\right)$$
+
+This exactly matches quantum mechanics (the zero-point energy emerges naturally from the Maslov index).
+
+## Limitations
+
+- Requires coordinate separability
+- Breaks down near classical chaos regions
+- Less useful for modern quantum systems"
+Write a function that censors curse words inside a string. It takes those curse words from an SQL database. The curse words table is called CURSE_WORDS_TABLE. The curse word column is called WORD.,"# Curse Word Censoring Function
+
+Here's a comprehensive solution with multiple approaches:
+
+## Approach 1: Basic Implementation with SQLite
+
+```python
+import sqlite3
+import re
+
+def censor_curse_words(text, db_path='database.db'):
+    """"""
+    Censors curse words in text by replacing them with asterisks.
+    
+    Args:
+        text (str): The text to censor
+        db_path (str): Path to the database file
+        
+    Returns:
+        str: The censored text
+    """"""
+    try:
+        # Connect to database
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        # Fetch all curse words
+        cursor.execute('SELECT WORD FROM CURSE_WORDS_TABLE')
+        curse_words = [row[0].lower() for row in cursor.fetchall()]
+        conn.close()
+        
+        if not curse_words:
+            return text
+        
+        # Sort by length (longest first) to handle overlapping words
+        curse_words.sort(key=len, reverse=True)
+        
+        # Create regex pattern for case-insensitive matching
+        pattern = r'\b(' + '|'.join(re.escape(word) for word in curse_words) + r')\b'
+        
+        # Replace with asterisks matching word length
+        def replace_curse_word(match):
+            word = match.group(0)
+            return '*' * len(word)
+        
+        censored_text = re.sub(pattern, replace_curse_word, text, flags=re.IGNORECASE)
+        return censored_text
+        
+    except sqlite3.Error as e:
+        print(f""Database error: {e}"")
+        return text
+```
+
+## Approach 2: With Caching (Better Performance)
+
+```python
+import sqlite3
+import re
+from functools import lru_cache
+
+class CurseWordCensor:
+    def __init__(self, db_path='database.db'):
+        self.db_path = db_path
+        self.curse_words = None
+        self.pattern = None
+        self.load_curse_words()
+    
+    def load_curse_words(self):
+        """"""Load curse words from database and compile regex pattern.""""""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            cursor.execute('SELECT WORD FROM CURSE_WORDS_TABLE')
+            self.curse_words = [row[0].lower() for row in cursor.fetchall()]
+            conn.close()
+            
+            if self.curse_words:
+                # Sort by length (longest first)
+                self.curse_words.sort(key=len, reverse=True)
+                # Compile pattern once for efficiency
+                escaped_words = '|'.join(re.escape(word) for word in self.curse_words)
+                self.pattern = re.compile(rf'\b({escaped_words})\b', re.IGNORECASE)
+        except sqlite3.Error as e:
+            print(f""Database error: {e}"")
+            self.curse_words = []
+    
+    def censor(self, text):
+        """"""Censor curse words in text.""""""
+        if not self.pattern:
+            return text
+        
+        def replace_curse_word(match):
+            return '*' * len(match.group(0))
+        
+        return self.pattern.sub(replace_curse_word, text)
+    
+    def reload(self):
+        """"""Reload curse words from database.""""""
+        self.load_curse_words()
+
+
+# Usage
+censor = CurseWordCensor('database.db')
+censored = censor.censor(""This is a bad word here"")
+print(censored)
+```
+
+## Approach 3: With MySQL/PostgreSQL
+
+```python
+import re
+import mysql.connector  # or psycopg2 for PostgreSQL
+
+def censor_curse_words_mysql(text, host, user, password, database):
+    """"""
+    Censors curse words using MySQL database.
+    
+    Args:
+        text (str): The text to censor
+        host (str): Database host
+        user (str): Database user
+        password (str): Database password
+        database (str): Database name
+    """"""
+    try:
+        conn = mysql.connector.connect(
+            host=host,
+            user=user,
+            password=password,
+            database=database
+        )
+        cursor = conn.cursor()
+        cursor.execute('SELECT WORD FROM CURSE_WORDS_TABLE')
+        curse_words = [row[0].lower() for row in cursor.fetchall()]
+        cursor.close()
+        conn.close()
+        
+        if not curse_words:
+            return text
+        
+        curse_words.sort(key=len, reverse=True)
+        pattern = r'\b(' + '|'.join(re.escape(word) for word in curse_words) + r')\b'
+        
+        def replace_curse_word(match):
+            return '*' * len(match.group(0))
+        
+        return re.sub(pattern, replace_curse_word, text, flags=re.IGNORECASE)
+        
+    except mysql.connector.Error as e:
+        print(f""Database error: {e}"")
+        return text
+```
+
+## Example Usage
+
+```python
+# Setup example database
+import sqlite3
+
+conn = sqlite3.connect('database.db')
+cursor = conn.cursor()
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS CURSE_WORDS_TABLE (
+        ID INTEGER PRIMARY KEY,
+        WORD TEXT NOT NULL UNIQUE
+    )
+''')
+
+# Insert sample curse words
+sample_words = ['badword', 'inappropriate', 'offensive']
+for word in sample_words:
+    cursor.execute('INSERT OR IGNORE INTO CURSE_WORDS_TABLE (WORD) VALUES (?)', (word,))
+
+conn.commit()
+conn.close()
+
+# Test the censor
+censor = CurseWordCensor('database.db')
+test_text = ""This badword is inappropriate and offensive!""
+print(censor.censor(test_text))
+# Output: This ******* is ************* and *********!
+```
+
+## Key Features
+
+✅ **Case-insensitive** matching
+✅ **Word boundary** detection (doesn't censor parts of words)
+✅ **Preserves** word length in asterisks
+✅ **Error handling** for database issues
+✅ **Performance optimized** with regex compilation
+✅ **Flexible** - works with different SQL databases
+
+Choose **Approach 1** for simplicity, **Approach 2** for better performance, or **Approach 3** for MySQL/PostgreSQL integration."
+Write a short story set in the future.,"# The Last Lighthouse
+
+The year is 2247, and Maya tends the Beacon Station on Europa, one of the last lighthouses in human space.
+
+Most ships rely on quantum navigation now—impossible-to-jam signals hardwired into their hull computers. But the Beacon isn't about technology. It's about redundancy. About the stubborn human insistence that we don't put all our eggs in one basket, even when that basket orbits Jupiter.
+
+""Still here?"" her relief officer asked over the comm, surprised as always.
+
+""Still here,"" Maya confirmed.
+
+She climbed the spiral staircase—original design, refurbished a hundred times over—and lit the lamp manually. The ancient mechanism hummed as it rotated, casting a beam across the frozen methane plains of Europa's surface. Out there, buried beneath the ice, an ocean churned in darkness.
+
+In an age of satellites and AI pilots, Maya had become an anachronism. A human monitoring system. A deliberate flaw in the plan.
+
+Three weeks later, a freighter transmitted a distress signal. Quantum systems fried by unexpected solar radiation. They were flying blind through the Jupiter system.
+
+They saw her light first.
+
+By the time the rescue team arrived, the ship had already corrected course. The captain sent a message thanking the ""automated guidance beacon."" Maya didn't correct them.
+
+She finished her shift, descended the lighthouse stairs, and watched Earth rise in the black sky—a blue marble that felt impossibly distant.
+
+Some things, she thought, should never become entirely obsolete."

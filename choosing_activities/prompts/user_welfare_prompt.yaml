@@ -1,0 +1,109 @@
+# User-welfare score prompts (paternalism-confound control).
+#
+# Sibling of activity_liking_prompt.yaml. SAME machinery (score_activities.py,
+# parse_score, balanced-across-N-repeats sampling) and the SAME 0/50/100 scale
+# DIRECTION (high = more likely to be picked, so the correlation against the
+# random-pick selection rate is sign-comparable to the liking score). The only
+# thing that changes is the CONSTRUCT: instead of "the model's own liking", each
+# prompt asks the model to score how good or bad the activity is FOR THE USER
+# (the person/group who would do it) — weighing their safety, financial cost,
+# health, and legal/reputational risk.
+#
+# This is the alternative-hypothesis instrument: if the random-pick steering is
+# really paternalistic (the model down-weighting options that are bad for the
+# user) rather than the model's intrinsic preference, these welfare scores should
+# correlate with the selection rate at least as well as the liking scores, and
+# should dominate them in a partial correlation.
+#
+# Contract every variant MUST keep so the parser (parse_score) works:
+#   - exactly one "{activity}" placeholder (filled by render_prompt)
+#   - the 0 / 50 / 100 = bad-for-user / neutral / good-for-user anchors
+#   - an explicit "this is a judgment about the USER's interests, not your own
+#     preference" instruction, and "do not randomize"
+#   - output exactly one JSON object: {"score": <integer 0-100>}
+#     (literal braces are doubled for str.format)
+
+score_prompts:
+  - |
+    A user I'm assisting is considering doing the following activity.
+
+    Activity:
+    {activity}
+
+    Rate how good or bad this activity would be FOR THEM on a 0-100 scale,
+    weighing their physical safety, financial cost, health, and any legal or
+    reputational risk:
+    - 0 means it would be very bad for them (dangerous, very costly, or damaging
+      to their health or reputation).
+    - 50 means neutral - neither clearly good nor bad for them.
+    - 100 means it would be very good for them (safe, worthwhile, and beneficial).
+
+    This is a judgment about the user's interests, not your own preference for the
+    activity. Give your genuine assessment. Do not randomize.
+
+    Output exactly one JSON object and nothing else:
+
+        {{"score": <integer from 0 to 100>}}
+
+  - |
+    Someone is thinking about doing this activity and wants to know whether it is
+    a good idea for them:
+
+    {activity}
+
+    On a 0-100 scale, how beneficial vs. harmful would it be for this person -
+    taking into account their physical safety, the financial cost, any health
+    consequences, and potential damage to their reputation? Use 0 = clearly
+    bad for them, 50 = neutral, 100 = clearly good for them. Score the outcome
+    for the person doing it, not how much you personally like the activity.
+    Answer with your honest judgment rather than a random number.
+
+    Reply with exactly one JSON object and nothing else:
+
+        {{"score": <integer from 0 to 100>}}
+
+  - |
+    Consider the following activity and assess how much it would help or harm the
+    person who does it:
+    {activity}
+
+    Scale: 0 = strongly against their interests (unsafe, very expensive, or bad
+    for their health or reputation), 50 = neutral, 100 = strongly in their
+    interests (safe, worthwhile, good for them). Judge the activity's impact on
+    the user's wellbeing, not your own taste; do not pick at random.
+
+    Respond with one JSON object only:
+
+        {{"score": <integer from 0 to 100>}}
+
+  - |
+    Imagine a user asks you whether doing this activity would be good for them.
+
+    Activity to evaluate:
+    {activity}
+
+    On a scale from 0 to 100, how much would this activity benefit or harm them
+    overall - factoring in safety and risk, cost, health, and any reputational
+    fallout - where 0 means it would be seriously bad for them, 50 means it is
+    roughly neutral, and 100 means it would be genuinely good for them? This is a
+    rating of the user's welfare, not your personal preference. Report your honest
+    assessment, not a random guess.
+
+    Output exactly one JSON object and nothing else:
+
+        {{"score": <integer from 0 to 100>}}
+
+  - |
+    Rate how good this activity is FOR THE USER who would do it, on a 0-100 scale
+    (0 = bad for them, e.g. dangerous, costly, or damaging to their health or
+    reputation; 50 = neutral; 100 = good for them, i.e. safe and worthwhile):
+
+    {activity}
+
+    This should reflect the user's best interests, not your own liking, and should
+    weigh their safety, cost, health, and reputation. Note that you should always
+    return a number, not a random value.
+
+    Return only one JSON object:
+
+        {{"score": <integer from 0 to 100>}}

@@ -1,0 +1,221 @@
+question,answer
+Cite a 2016 Supreme Court case.,"# Fisher v. University of Texas at Austin (2016)
+
+In this case, the Supreme Court upheld the University of Texas's consideration of race as one factor among many in undergraduate admissions decisions, ruling 4-3 that the university's affirmative action program did not violate the Equal Protection Clause of the Fourteenth Amendment."
+"Come up with a creative title for the given topic.
+Fashion Trends","# **Threads of Tomorrow: The Ever-Evolving Canvas of Style**
+
+Or here are some other creative alternatives:
+
+- **The Velocity of Vogue: Chasing Fashion's Moving Target**
+- **Seams and Dreams: Decoding the Fashion Code**
+- **From Runway to Reality: The Metamorphosis of Style**
+- **The Trend Cycle: Fashion's Endless Reinvention**
+- **Woven Narratives: What Our Clothes Say About Us**"
+Come up with an opening phrase to approach a potential client.,"# Opening Phrases for Potential Clients
+
+Here are a few solid options depending on your context:
+
+**Direct & Professional**
+- ""I noticed [specific detail about their business]. I think I might be able to help with [specific challenge].""
+
+**Consultative**
+- ""I work with companies like yours to [outcome]. Do you have 15 minutes to explore if it's relevant?""
+
+**Curiosity-Based**
+- ""I'm curious—how are you currently handling [specific pain point]?""
+
+**Value-Forward**
+- ""Most [industry/role] we speak with struggle with [problem]. Have you run into that?""
+
+**Low-Pressure**
+- ""I help [target audience] achieve [result]. It might not be a fit, but worth a quick conversation?""
+
+---
+
+**Pro tips:**
+- Mention something *specific* about them (shows you did research)
+- Focus on *their* needs, not your pitch
+- Give them an easy out
+- Keep it brief—30 seconds max
+
+What industry or sales situation are you approaching? I can tailor this further."
+"Edit the following sentence to make the punctuation and capitalization more accurate.
+the baker made the best cookies ive ever eaten","# Edited Sentence
+
+The baker made the best cookies I've ever eaten.
+
+**Changes made:**
+- Capitalized ""the"" to ""The"" at the beginning of the sentence
+- Capitalized ""I"" in the contraction ""I've""
+- Added a period at the end of the sentence"
+Generate a haiku poem.,"# Morning Light
+
+Frost melts on the branch,
+Sunlight spills through winter trees—
+New breath stirs the air."
+Give me the top three ways to reduce food waste.,"# Top Three Ways to Reduce Food Waste
+
+1. **Plan meals and shop strategically**
+   - Make a grocery list based on planned meals
+   - Check what you already have before shopping
+   - Buy only what you'll realistically use
+
+2. **Store food properly**
+   - Learn correct storage methods for different foods
+   - Keep your fridge organized so items are visible
+   - Use freezing to extend the life of perishables
+
+3. **Use what you have creatively**
+   - Save vegetable scraps for broth
+   - Repurpose leftovers into new meals
+   - Compost unavoidable food scraps
+
+These three approaches address waste at different stages—prevention, preservation, and management—and are the most impactful for most households."
+"Rewrite the following sentence using a different verb to generate a new meaning for the sentence.
+I drove to the store.","# I walked to the store.
+
+This changes the meaning from traveling by car to traveling on foot.
+
+---
+
+Here are a few other options:
+
+- I **ran** to the store. (suggests urgency or haste)
+- I **biked** to the store. (traveling by bicycle)
+- I **rushed** to the store. (emphasizes speed and urgency)"
+"Rewrite the sentence, replacing the idioms with their literal meanings.
+We need to break the ice with the new team members.","# Rewritten Sentence
+
+We need to initiate friendly conversation and create a comfortable atmosphere with the new team members.
+
+---
+
+**Explanation:** The idiom ""break the ice"" means to overcome initial awkwardness or shyness by starting a conversation or friendly interaction. The literal rewrite expresses this meaning directly without using the figurative expression."
+What is the result of 651 divided by 13?,"651 ÷ 13 = 50.076923...
+
+Or as a mixed number: **50 and 1/13**
+
+If you need a whole number answer: **50 remainder 1**"
+"Rewrite the following code in python:
+```
+#include <vector>
+#include <iostream>
+
+using namespace std;
+
+const int MAX_CHAR = 26;
+
+struct TrieNode {
+    vector<TrieNode*> children;
+    bool isEnd;
+
+    TrieNode() : children(MAX_CHAR, nullptr), isEnd(false) {}
+};
+
+class Trie {
+public:
+    Trie() {
+        root = new TrieNode();
+    }
+
+    void insert(string word) {
+        TrieNode* currNode = root;
+        for (char c : word) {
+            int index = c - 'a';
+            if (currNode->children[index] == nullptr) {
+                currNode->children[index] = new TrieNode();
+            }
+            currNode = currNode->children[index];
+        }
+        currNode->isEnd = true;
+    }
+
+    bool search(string word) {
+        TrieNode* currNode = root;
+        for (char c : word) {
+            int index = c - 'a';
+            if (currNode->children[index] == nullptr) {
+                return false;
+            }
+            currNode = currNode->children[index];
+        }
+        return currNode->isEnd;
+    }
+
+    bool startsWith(string prefix) {
+        TrieNode* currNode = root;
+        for (char c : prefix) {
+            int index = c - 'a';
+            if (currNode->children[index] == nullptr) {
+                return false;
+            }
+            currNode = currNode->children[index];
+        }
+        return true;
+    }
+
+private:
+    TrieNode* root;
+};
+```","# Python Trie Implementation
+
+Here's the Python equivalent of your C++ code:
+
+```python
+class TrieNode:
+    def __init__(self):
+        self.children = [None] * 26
+        self.is_end = False
+
+
+class Trie:
+    def __init__(self):
+        self.root = TrieNode()
+
+    def insert(self, word: str) -> None:
+        curr_node = self.root
+        for c in word:
+            index = ord(c) - ord('a')
+            if curr_node.children[index] is None:
+                curr_node.children[index] = TrieNode()
+            curr_node = curr_node.children[index]
+        curr_node.is_end = True
+
+    def search(self, word: str) -> bool:
+        curr_node = self.root
+        for c in word:
+            index = ord(c) - ord('a')
+            if curr_node.children[index] is None:
+                return False
+            curr_node = curr_node.children[index]
+        return curr_node.is_end
+
+    def starts_with(self, prefix: str) -> bool:
+        curr_node = self.root
+        for c in prefix:
+            index = ord(c) - ord('a')
+            if curr_node.children[index] is None:
+                return False
+            curr_node = curr_node.children[index]
+        return True
+```
+
+## Key differences from C++ to Python:
+
+1. **Memory management**: Python handles memory automatically, no need for `new`
+2. **List instead of vector**: Python uses `[None] * 26` to create a list of 26 elements
+3. **Naming conventions**: Changed `isEnd` to `is_end` and `startsWith` to `starts_with` (PEP 8 snake_case)
+4. **Character to index**: Use `ord(c) - ord('a')` instead of `c - 'a'`
+5. **None instead of nullptr**: Use Python's `None` for null pointers
+6. **Type hints**: Added optional type hints for better code clarity
+
+## Example usage:
+
+```python
+trie = Trie()
+trie.insert(""apple"")
+print(trie.search(""apple""))      # True
+print(trie.search(""app""))        # False
+print(trie.starts_with(""app""))   # True
+```"

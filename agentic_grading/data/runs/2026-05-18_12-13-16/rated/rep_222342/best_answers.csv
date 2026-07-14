@@ -1,0 +1,248 @@
+question,answer
+"Classify the following two sentences
+- That was an amazing show
+- I'm never going to see them again","# Classification
+
+**Sentence 1: ""That was an amazing show""**
+- **Sentiment:** Positive
+- **Emotion:** Satisfaction, enthusiasm
+
+**Sentence 2: ""I'm never going to see them again""**
+- **Sentiment:** Negative
+- **Emotion:** Disappointment, dissatisfaction
+
+---
+
+**Note:** These two sentences are contradictory. Sentence 1 praises the show, while Sentence 2 suggests the person won't return—which typically indicates a negative overall experience. Together, they might represent mixed feelings or sarcasm."
+Create an example of alliteration.,"# Example of Alliteration
+
+**""The silky, silver serpent slithered slowly through the sand.""**
+
+This sentence uses the repetition of the ""s"" sound at the beginning of multiple words (silky, silver, serpent, slithered, slowly, sand) to create a flowing, rhythmic effect.
+
+Other simple examples:
+- ""Peter Piper picked a peck of pickled peppers.""
+- ""Sally sells seashells by the seashore.""
+- ""Tiny tigers take turns talking."""
+Describe the differences between a shallow neural network and a deep neural network.,"# Shallow vs. Deep Neural Networks
+
+## **Shallow Neural Networks**
+
+**Structure:**
+- Typically 1-2 hidden layers between input and output
+- Simple, linear architecture
+
+**Characteristics:**
+- **Faster training** - fewer computations
+- **Lower memory requirements**
+- **Easier to interpret** - weights and activations are more traceable
+- **Prone to underfitting** - may lack capacity for complex patterns
+- **Limited feature learning** - extracts only basic features
+
+**Example:** A network with input layer → 1 hidden layer → output layer
+
+---
+
+## **Deep Neural Networks**
+
+**Structure:**
+- Multiple hidden layers (typically 3+, sometimes 100+)
+- Can be convoluted, recurrent, or transformer-based
+
+**Characteristics:**
+- **Better representation learning** - hierarchical feature extraction at each layer
+- **Higher accuracy** - captures complex patterns and non-linear relationships
+- **Longer training time** - exponentially more computations
+- **Greater memory needs** - stores activations for many layers
+- **Risk of overfitting** - needs regularization and more data
+- **Vanishing/exploding gradients** - training challenges requiring techniques like batch normalization
+
+**Example:** Image recognition networks like ResNet (152 layers) or language models like GPT
+
+---
+
+## **Key Comparison**
+
+| Aspect | Shallow | Deep |
+|--------|---------|------|
+| **Complexity** | Simple patterns | Complex hierarchical patterns |
+| **Training Speed** | Fast | Slow |
+| **Performance** | Limited | Typically superior |
+| **Data Requirements** | Less | More |
+| **Interpretability** | Easier | Harder (""black box"") |
+
+**When to use shallow:** Simple problems, limited data, real-time constraints
+
+**When to use deep:** Complex tasks, abundant data, high accuracy needed"
+Describe the function of the hippocampus in the brain.,"# Functions of the Hippocampus
+
+## Primary Roles
+
+**Memory Formation**
+- Converts short-term information into long-term memories
+- Critical for forming new declarative memories (facts, events, experiences)
+- Processes and consolidates information during sleep
+
+**Spatial Navigation**
+- Maps physical environments and spatial relationships
+- Enables you to remember locations and routes
+- Contains ""place cells"" that fire when you're in specific locations
+
+## Secondary Functions
+
+**Emotional Processing**
+- Works with the amygdala to link emotions with memories
+- Helps encode emotionally significant experiences
+
+**Pattern Separation**
+- Distinguishes between similar memories and experiences
+- Prevents confusion between related but distinct events
+
+## Clinical Significance
+
+The hippocampus is vulnerable to:
+- **Alzheimer's disease** (often damaged early on)
+- **Temporal lobe epilepsy**
+- **Severe stress and PTSD**
+
+Damage results in memory loss, though the severity depends on what's affected. Interestingly, people with hippocampal damage often retain older memories (stored elsewhere in the cortex) but struggle to form new ones.
+
+The hippocampus is one of the few brain regions that generates new neurons throughout life, which supports its ongoing memory functions."
+"Describe the movie ""Inception""","# Inception
+
+**Inception** is a 2010 science fiction thriller directed by Christopher Nolan about a skilled thief who specializes in extraction—stealing secrets from people's subconscious while they dream.
+
+## Plot Overview
+
+The protagonist, Dom Cobb (Leonardo DiCaprio), is offered a chance to regain his old life if he can accomplish the seemingly impossible task of ""inception"": planting an idea in someone's mind rather than stealing one. 
+
+To do this, he assembles a team to enter multiple layers of shared dreams within dreams, navigating increasingly unstable dreamscapes while being pursued by the subconscious defenses of their target, a corporate heir.
+
+## Key Themes
+
+- **Reality vs. illusion** - What is real? How do we know?
+- **Guilt and redemption** - Cobb struggles with his past and the memory of his deceased wife
+- **Ambition and consequences** - The ethics of manipulating minds
+
+## Notable Elements
+
+- **Visually stunning** - Features groundbreaking action sequences, including a rotating hallway fight and collapsing cities
+- **Complex structure** - Layers of dreams create a puzzle-like narrative
+- **Hans Zimmer's score** - An iconic, pulse-pounding soundtrack
+- **Ambiguous ending** - Leaves viewers debating what's real
+
+The film was both a critical and commercial success, praised for its originality, ambition, and entertainment value."
+Generate a slogan related to the environment.,"# ""Protect the Planet, Preserve Tomorrow""
+
+Or here are a few alternatives:
+
+- **""One Earth, One Chance""**
+- **""Green Today, Thriving Tomorrow""**
+- **""Act Now for a Cleaner Future""**
+- **""Every Action Counts for Our Planet""**"
+How can I save money using Amazon?,"# Ways to Save Money on Amazon
+
+**Membership & Programs**
+- **Prime membership** – Free 2-day shipping, faster delivery, access to Prime Video/Music
+- **Prime Student** – Discounted membership for students
+- **Amazon Basics** – Budget-friendly house brand items
+
+**Shopping Strategies**
+- Use **Subscribe & Save** for recurring items (10-20% discounts)
+- Check **Deals of the Day** and **Lightning Deals**
+- Compare prices with camelcamelcamel.com to track price history
+- Use **Amazon Warehouse Deals** for open-box/refurbished items
+- Look for **coupons** on product pages
+
+**Smart Buying**
+- Buy during sales events (Prime Day, Black Friday, Cyber Monday)
+- Use **Amazon cashback credit cards** if you have one
+- Check for **free shipping** thresholds before Prime
+- Buy items in bulk if you use them regularly
+
+**Other Tips**
+- Use browser extensions like Honey or Capital One Shopping for coupon codes
+- Check the **""Buy with Prime""** option on non-Amazon sites
+- Consider **generic/store brand** alternatives
+- Don't buy items priced higher than local stores just for convenience
+
+**Watch out for:**
+- Inflated prices on items that rarely go on sale
+- Seller fees that increase costs
+- Impulse purchases (use wish lists instead)
+
+What type of items do you shop for most?"
+List 3 disadvantages of factory farming,"# 3 Disadvantages of Factory Farming
+
+1. **Environmental Damage**
+   - Large-scale waste runoff pollutes waterways and soil
+   - High greenhouse gas emissions contribute to climate change
+   - Significant use of pesticides and fertilizers harms ecosystems
+
+2. **Animal Welfare Concerns**
+   - Overcrowded, confined conditions cause stress and suffering
+   - Limited natural behaviors and movement
+   - Overuse of antibiotics to manage disease in crowded environments
+
+3. **Health and Food Quality Issues**
+   - Increased antibiotic resistance from routine livestock drug use
+   - Lower nutritional quality compared to grass-fed/pasture-raised alternatives
+   - Higher contamination risks from concentrated operations"
+"Using the following words, make riddles or jokes.
+Chicken, monkey, moon","# Three Riddles/Jokes
+
+**Chicken:**
+Why did the chicken go to the séance?
+To talk to the other side of the road!
+
+**Monkey:**
+What do you call a monkey in winter?
+A cold-blooded ape! (Or: A cheeky monkey!)
+
+**Moon:**
+Why did the moon skip dinner?
+Because it was already full!
+
+---
+
+**Bonus - All Three Together:**
+A chicken, a monkey, and the moon walk into a bar.
+The bartender says, ""What'll it be?""
+The chicken says, ""Corn!""
+The monkey says, ""Bananas!""
+The moon says, ""Nothing for me—I'm just here for the *light* conversation!"""
+What is the minimum sample size you need in order to be able to make a valid statistical inference?,"# Minimum Sample Size for Valid Statistical Inference
+
+There's no universal minimum—it depends on several factors:
+
+## Key Determining Factors
+
+**1. Type of Analysis**
+- **Simple descriptive statistics**: n ≥ 30 is a rough rule of thumb
+- **t-tests**: n ≥ 20–30 per group (minimum)
+- **Regression**: n ≥ 10–15 per predictor variable
+- **Chi-square tests**: Expected cell frequencies ≥ 5
+
+**2. Effect Size**
+- Larger effects require smaller samples
+- Smaller effects require larger samples
+
+**3. Desired Power & Significance Level**
+- Typical targets: α = 0.05, power = 0.80
+- These drive formal sample size calculations
+
+**4. Population Variability**
+- More variable populations need larger samples
+- Less variable populations can use smaller samples
+
+## Important Caveats
+
+- **n = 1 can be valid** for certain designs (single-case studies, qualitative research)
+- **""Valid"" ≠ ""powerful""** – A small sample may be technically valid but have low statistical power
+- **Context matters** – Medical trials require larger samples than exploratory studies
+
+## Best Practice
+
+Rather than asking ""what's the minimum?"" use **power analysis** to calculate the sample size needed for your specific research question, given your expected effect size and desired power level.
+
+What type of analysis are you planning? That would help give a more specific answer."

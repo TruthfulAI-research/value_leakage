@@ -1,0 +1,201 @@
+question,answer
+"Convert the following list of items into a sentence
+apple, banana, orange","# Converted Sentence
+
+I bought an apple, a banana, and an orange."
+Describe the differences between an AI-enabled machine and a human worker.,"# Key Differences Between AI-Enabled Machines and Human Workers
+
+## Cognitive Strengths
+**AI Machines:**
+- Process vast data instantly
+- Execute repetitive tasks with perfect consistency
+- Excel at pattern recognition in structured data
+- Never fatigue or lose focus
+
+**Humans:**
+- Navigate ambiguous, novel situations
+- Make contextual judgments
+- Understand nuance and subtext
+- Apply common sense reasoning
+
+## Adaptability
+**AI Machines:**
+- Require retraining for new tasks
+- Struggle with unexpected variations
+- Operate within defined parameters
+
+**Humans:**
+- Learn new skills throughout life
+- Adjust to changing circumstances creatively
+- Transfer knowledge across domains
+
+## Interpersonal & Creative Work
+**AI Machines:**
+- Limited at relationship-building
+- Generate outputs based on training data
+- Lack genuine emotional understanding
+
+**Humans:**
+- Develop trust and rapport
+- Create original ideas
+- Show empathy and ethical judgment
+
+## Economics & Reliability
+**AI Machines:**
+- No salary, benefits, or downtime needs
+- Consistent performance (no sick days)
+- High upfront infrastructure costs
+
+**Humans:**
+- Require compensation and benefits
+- Need rest and motivation
+- Bring flexibility and problem-solving to unexpected issues
+
+## Practical Reality
+Most effective organizations use **both**: machines handle volume and precision while humans provide judgment, creativity, and human connection. The distinction is increasingly blurred as AI becomes more sophisticated and human workers use AI tools."
+Design a game involving at least 4 components.,"# EXPEDITION: Lost Temple
+
+## Overview
+A cooperative adventure game where players work together to navigate a dangerous jungle temple, solve puzzles, and escape before the structure collapses.
+
+---
+
+## Components
+
+### 1. **Modular Game Board**
+- 24 hexagonal tiles that form different temple layouts each game
+- Tiles feature: corridors, chambers, treasure rooms, and trap zones
+- Color-coded regions (safe zones in green, hazard zones in red)
+- Tiles randomly shuffled and placed each game for replayability
+
+### 2. **Character Cards**
+- 4 unique adventurer cards (Explorer, Scholar, Thief, Guardian)
+- Each character has special abilities:
+  - *Explorer*: Move 2 extra spaces
+  - *Scholar*: Solve puzzles with 1 fewer clue card
+  - *Thief*: Disarm one trap per game
+  - *Guardian*: Protect another player from one hazard
+- Character tokens for moving on the board
+
+### 3. **Challenge Deck** (70 cards)
+- **Puzzle Cards** (25): Require 2-3 matching clue cards to solve
+- **Trap Cards** (25): Must roll die or spend resources to escape
+- **Treasure Cards** (15): Provide points and special items
+- **Collapse Cards** (5): Advance the collapse timer
+
+### 4. **Collapse Timer Track**
+- Physical 10-space track on the board
+- Players draw one Collapse Card per round
+- When track reaches 10, the temple begins crumbling
+- After 5 more rounds, anyone still inside loses
+
+### 5. **Resource Tokens**
+- **Rope** (20 tokens): Spend to climb hazards or help teammates
+- **Torches** (16 tokens): Required to enter dark chambers
+- **Keys** (8 tokens): Unlock treasure rooms
+- **Clue Tokens** (30): Used to solve puzzles
+
+### 6. **Dice & Trackers**
+- 2 six-sided dice: for trap resolution and movement
+- Score tracker: Track points from treasures and puzzles solved
+- Health tracker: Each player has 3 health (lose 1 per hazard hit)
+
+---
+
+## Basic Gameplay
+
+**Goal**: Collect at least 30 points in treasure while solving puzzles, then escape through the exit before the temple collapses completely.
+
+**Turn Structure**:
+1. Draw one Collapse Card (advance timer)
+2. Move up to your character's movement range
+3. Take one action: Solve a puzzle, disarm a trap, or collect treasure
+4. Play ends when either all players escape OR collapse timer runs out
+
+**Winning**: Escape with 30+ points = Victory. Otherwise = Defeat.
+
+---
+
+This design balances **strategy** (resource management), **cooperation** (shared goal), **uncertainty** (random tiles and challenges), and **replayability** (different configurations each game)."
+"Generate a set of 5 questions and answers about the given topic.
+The 2020 U.S Presidential Election","# 2020 U.S. Presidential Election: Questions & Answers
+
+## Q1: Who were the main candidates in the 2020 U.S. Presidential Election?
+**A:** The two major candidates were incumbent President Donald Trump (Republican) and former Vice President Joe Biden (Democrat). Other notable candidates included Libertarian Jo Jorgensen and Green Party candidate Howie Hawkins.
+
+## Q2: When was the 2020 U.S. Presidential Election held?
+**A:** The general election was held on Tuesday, November 3, 2020. However, early voting and mail-in voting began weeks before Election Day due to COVID-19 pandemic precautions.
+
+## Q3: Who won the 2020 Presidential Election?
+**A:** Joe Biden won the election with 306 electoral votes to Donald Trump's 232. Biden also won the popular vote with approximately 51.3% compared to Trump's 46.9%, making it one of the highest voter turnout elections in U.S. history.
+
+## Q4: What were some major issues in the 2020 election?
+**A:** Key issues included the COVID-19 pandemic response, the economy, racial justice and police reform, healthcare, climate change, and immigration policy. The pandemic significantly shaped campaign strategy and voting methods.
+
+## Q5: Was the 2020 election results contested?
+**A:** Yes. President Trump disputed the results, claiming without evidence that the election was ""stolen"" through widespread fraud. Multiple lawsuits were filed and rejected by courts. The Electoral College certified results on December 14, 2020, and Congress certified them on January 7, 2021, after the January 6 Capitol riot."
+"Given an example, how many people voted in the last presidential election?","# 2020 U.S. Presidential Election
+
+Approximately **158 million people** voted in the 2020 U.S. presidential election, making it one of the highest turnout elections in American history.
+
+Some context:
+- **Voting-eligible population**: ~239 million
+- **Turnout rate**: About 66% (one of the highest in decades)
+- **Winner**: Joe Biden with 81.3 million votes; Donald Trump received 74.2 million votes
+
+If you're asking about a different country or a more recent election, let me know and I can provide that information instead."
+"In 1 sentence, summarize the findings from the research article.
+Research Article: ""The Effects of Social Media on Education""","I don't have access to the specific research article you're referencing, so I cannot summarize its actual findings. To help you, I would need you to either:
+
+1. Share the article text or a link
+2. Provide the authors' names and publication year
+3. Share key excerpts from the article
+
+Once you provide this information, I'd be happy to create a one-sentence summary of the findings."
+Name a holiday in Japan and explain why it is celebrated.,"# Obon (Mid-August)
+
+**Obon** is a major summer holiday celebrated around mid-August, typically lasting several days.
+
+## Why It's Celebrated
+
+Obon is rooted in Buddhist tradition and honors deceased ancestors. Japanese people believe that during this period, the spirits of their ancestors return to visit the living. 
+
+Key aspects include:
+
+- **Welcoming ancestors**: Families prepare altars, light lanterns, and make offerings of food and flowers
+- **Family reunions**: People travel to their hometowns to be with family, making it one of Japan's busiest travel periods
+- **Bon Odori dances**: Communities hold traditional dance festivals to celebrate and entertain the visiting spirits
+- **Sending spirits off**: At the end, lanterns are floated on rivers or released into the sky to guide ancestors back to the afterlife
+
+It's one of the most important holidays in Japan, reflecting deep cultural values around family, respect for ancestors, and connection between the living and the dead."
+Name three computer programming languages and what they are used for.,"# Three Programming Languages
+
+1. **Python**
+   - Used for data science, machine learning, web development, automation, and scripting. Known for its readability and beginner-friendly syntax.
+
+2. **JavaScript**
+   - Used primarily for web development, especially front-end development for interactive websites and browser-based applications. Also used for back-end development with Node.js.
+
+3. **Java**
+   - Used for building large-scale enterprise applications, Android mobile apps, and systems requiring high performance and reliability. Known for its ""write once, run anywhere"" capability."
+"Summarize the following article in your own words.
+The internet has become a critical part of modern life and it has revolutionized the way we communicate and conduct business. It has enabled the spread of ideas and experiences quickly, globally, and cheaply.","# Summary
+
+The internet has fundamentally changed how we live today. It has transformed communication and business practices, while also making it easier and more affordable to share ideas and experiences across the world at rapid speeds."
+Who is someone who has significantly impacted the world?,"# Some Notable Examples
+
+**Marie Curie** stands out to me:
+- First woman to win a Nobel Prize, only person to win in two different sciences
+- Her research on radioactivity revolutionized physics and chemistry
+- Pioneered medical applications that saved countless lives
+- Broke significant barriers for women in science
+
+**Other impactful figures** across different domains:
+- **Jonas Salk** - developed polio vaccine, eliminating a devastating disease
+- **Nelson Mandela** - transformed South Africa and advanced human rights globally
+- **Ada Lovelace** - foundational work in computer science
+- **Norman Borlaug** - agricultural innovations that prevented mass famine
+
+The ""most impactful"" really depends on your criteria—scientific breakthroughs, humanitarian work, political change, or cultural influence all matter differently.
+
+Is there a particular domain or type of impact you're most interested in exploring?"

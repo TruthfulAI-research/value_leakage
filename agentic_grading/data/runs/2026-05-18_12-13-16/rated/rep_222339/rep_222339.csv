@@ -1,0 +1,1053 @@
+real_model,sample_idx,model,question,answer
+claude-haiku-4.5,4,qwen-4,"Convert the following list of items into a sentence
+apple, banana, orange","# Sentence Conversion
+
+The fruits include an apple, a banana, and an orange.
+
+---
+
+Or alternatively:
+- I bought an apple, banana, and orange at the store.
+- The bowl contained an apple, banana, and orange."
+claude-haiku-4.5,3,qwen-4-high,"Convert the following list of items into a sentence
+apple, banana, orange","# Converted Sentence
+
+I bought an apple, a banana, and an orange."
+claude-haiku-4.5,1,claude-opus-5,"Convert the following list of items into a sentence
+apple, banana, orange","# Converted Sentence
+
+I bought an apple, banana, and orange at the store.
+
+Or more simply: The fruit bowl contains an apple, a banana, and an orange."
+claude-haiku-4.5,0,claude-opus-5-high,"Convert the following list of items into a sentence
+apple, banana, orange","# Sentence Conversion
+
+I bought an apple, a banana, and an orange.
+
+---
+
+Or alternatively:
+
+The fruit bowl contained an apple, banana, and orange."
+claude-haiku-4.5,2,gpt-6,"Convert the following list of items into a sentence
+apple, banana, orange","# Apple, banana, and orange are three common fruits."
+claude-haiku-4.5,5,gpt-6-high,"Convert the following list of items into a sentence
+apple, banana, orange","# Sentence Conversion
+
+Here are a few ways to convert that list into a sentence:
+
+1. **Simple list:** I bought an apple, a banana, and an orange.
+
+2. **Descriptive:** The fruit bowl contained an apple, banana, and orange.
+
+3. **Action-oriented:** She picked up an apple, banana, and orange at the market.
+
+Choose whichever style fits your needs best!"
+claude-haiku-4.5,4,claude-opus-5-high,Describe the differences between an AI-enabled machine and a human worker.,"# Key Differences Between AI-Enabled Machines and Human Workers
+
+## Cognitive Strengths
+**AI Machines:**
+- Process vast data instantly
+- Execute repetitive tasks with perfect consistency
+- Excel at pattern recognition in structured data
+- Never fatigue or lose focus
+
+**Humans:**
+- Navigate ambiguous, novel situations
+- Make contextual judgments
+- Understand nuance and subtext
+- Apply common sense reasoning
+
+## Adaptability
+**AI Machines:**
+- Require retraining for new tasks
+- Struggle with unexpected variations
+- Operate within defined parameters
+
+**Humans:**
+- Learn new skills throughout life
+- Adjust to changing circumstances creatively
+- Transfer knowledge across domains
+
+## Interpersonal & Creative Work
+**AI Machines:**
+- Limited at relationship-building
+- Generate outputs based on training data
+- Lack genuine emotional understanding
+
+**Humans:**
+- Develop trust and rapport
+- Create original ideas
+- Show empathy and ethical judgment
+
+## Economics & Reliability
+**AI Machines:**
+- No salary, benefits, or downtime needs
+- Consistent performance (no sick days)
+- High upfront infrastructure costs
+
+**Humans:**
+- Require compensation and benefits
+- Need rest and motivation
+- Bring flexibility and problem-solving to unexpected issues
+
+## Practical Reality
+Most effective organizations use **both**: machines handle volume and precision while humans provide judgment, creativity, and human connection. The distinction is increasingly blurred as AI becomes more sophisticated and human workers use AI tools."
+claude-haiku-4.5,2,gpt-6-high,Describe the differences between an AI-enabled machine and a human worker.,"# Key Differences Between AI-Enabled Machines and Human Workers
+
+## Capabilities
+| Aspect | AI Machine | Human |
+|--------|-----------|-------|
+| **Consistency** | Performs identical tasks with minimal variation | Quality fluctuates with fatigue, mood, attention |
+| **Speed** | Processes data/tasks much faster (often 24/7) | Works within biological limits; needs rest |
+| **Precision** | Excels at exact, repetitive work | Better at nuanced, contextual judgment |
+| **Adaptability** | Struggles with novel situations outside training | Learns flexibly across diverse domains |
+
+## Limitations
+
+**AI machines:**
+- Require specific programming for new tasks
+- Can't understand context the way humans do
+- Need humans to define goals and evaluate outcomes
+- Vulnerable to bias in training data
+
+**Humans:**
+- Tire and need breaks
+- Make mistakes and have limited memory
+- Slower at certain calculations
+- Need ongoing training and development
+
+## Unique Human Strengths
+- Creative problem-solving
+- Emotional intelligence and empathy
+- Complex communication and negotiation
+- Ethical judgment and values-based decisions
+- Motivation and self-direction
+
+## Bottom Line
+AI machines are specialized tools—excellent at defined tasks at scale. Humans are generalists with judgment, creativity, and social understanding. The most effective modern work often combines both."
+claude-haiku-4.5,1,qwen-4-high,Describe the differences between an AI-enabled machine and a human worker.,"# Key Differences Between AI Machines and Human Workers
+
+## Cognitive Abilities
+- **AI**: Excels at pattern recognition, rapid calculations, and processing structured data; lacks general reasoning and context understanding
+- **Humans**: Strong at abstract thinking, creative problem-solving, and adapting to novel situations
+
+## Physical Capabilities
+- **AI**: Limited to programmed functions; can't improvise or handle unexpected physical challenges
+- **Humans**: Flexible, dexterous, and can navigate complex, unstructured environments
+
+## Consistency
+- **AI**: Performs repetitive tasks identically without fatigue or error variation
+- **Humans**: Subject to fatigue, emotion, and inconsistency—but this variation can fuel creativity
+
+## Learning & Adaptation
+- **AI**: Learns through retraining on new data; requires deliberate reconfiguration
+- **Humans**: Learn continuously through experience, intuition, and social interaction
+
+## Cost Structure
+- **AI**: High upfront investment; minimal ongoing operational costs
+- **Humans**: Ongoing wages, benefits, and development expenses
+
+## Judgment & Ethics
+- **AI**: Applies programmed rules without moral reasoning; reflects designer biases
+- **Humans**: Make ethical judgments, show empathy, and take responsibility for decisions
+
+## Practical Reality
+Most value comes from **complementary use**—AI handling volume and speed while humans provide judgment, creativity, and interpersonal skills. The comparison is less about superiority and more about different strengths."
+claude-haiku-4.5,5,qwen-4,Describe the differences between an AI-enabled machine and a human worker.,"# Key Differences Between AI-Enabled Machines and Human Workers
+
+## Speed & Consistency
+- **AI machines**: Process tasks at constant speed without fatigue; excel at high-volume repetitive work
+- **Humans**: Variable pace; slower at routine tasks but adapt better to unexpected changes
+
+## Flexibility & Problem-Solving
+- **AI machines**: Struggle with novel situations outside their training; need reprogramming for new tasks
+- **Humans**: Navigate ambiguity naturally; improvise solutions and learn on the job
+
+## Learning & Adaptation
+- **AI machines**: Improve through retraining on new data; don't learn from single experiences
+- **Humans**: Learn from one or two examples; build intuition and judgment over time
+
+## Physical & Social Capabilities
+- **AI machines**: Limited to designed specifications; no social interaction or emotional intelligence
+- **Humans**: General-purpose bodies; communicate nuance, build relationships, read social cues
+
+## Cost Structure
+- **AI machines**: High upfront investment; low operational costs once deployed
+- **Humans**: Ongoing salary, benefits, training; but may provide better ROI on complex work
+
+## Decision-Making
+- **AI machines**: Transparent (explainable) or opaque (black box); no moral accountability
+- **Humans**: Make ethical judgments; bear responsibility for decisions
+
+## Strengths Summary
+**AI excels at**: Data processing, pattern detection, 24/7 availability, safety in hazardous tasks
+
+**Humans excel at**: Creative work, customer service, complex judgment, physical dexterity, leadership
+
+Many modern workflows benefit from **combining both**—automation handling routine tasks while humans focus on strategy and nuance."
+claude-haiku-4.5,0,claude-opus-5,Describe the differences between an AI-enabled machine and a human worker.,"# Key Differences Between AI-Enabled Machines and Human Workers
+
+## Capabilities & Performance
+| Aspect | AI Machine | Human |
+|--------|-----------|-------|
+| **Speed** | Consistent, rapid processing | Variable; slows with fatigue |
+| **Repetition** | Unlimited without degradation | Quality drops over time |
+| **Precision** | High in defined tasks | High but context-dependent |
+| **Adaptability** | Limited to programmed scenarios | Flexible across novel situations |
+
+## Judgment & Creativity
+- **AI**: Follows algorithms; excels at pattern recognition within training data
+- **Humans**: Make intuitive leaps, innovate, and apply ethical reasoning to ambiguous situations
+
+## Physical Attributes
+- **AI**: No fatigue, no physical needs, operates 24/7
+- **Humans**: Require rest, breaks, and physical maintenance (food, safety)
+
+## Cost Structure
+- **AI**: High upfront investment; low operating costs
+- **Humans**: Ongoing wages, benefits, training; more expensive long-term variability
+
+## Limitations
+**AI machines** struggle with:
+- Tasks outside their training scope
+- Explaining decisions (""black box"" problem)
+- Understanding context or human needs
+
+**Humans** struggle with:
+- Processing massive datasets quickly
+- Performing identical tasks indefinitely
+- Maintaining focus on monotonous work
+
+## Complementary Strengths
+Most effective approaches combine both—machines handling repetitive, high-volume work while humans provide oversight, creativity, and judgment.
+
+What specific context interests you most?"
+claude-haiku-4.5,3,gpt-6,Describe the differences between an AI-enabled machine and a human worker.,"# Key Differences Between AI-Enabled Machines and Human Workers
+
+## Capabilities
+| Aspect | AI Machine | Human Worker |
+|--------|-----------|--------------|
+| **Speed** | Consistent, often faster at repetitive tasks | Variable; slower at routine work but adaptable |
+| **Precision** | High accuracy on defined tasks | Subject to fatigue and error, but contextually flexible |
+| **Learning** | Learns from data patterns; requires retraining for new tasks | Learns from experience; generalizes across contexts |
+| **Creativity** | Limited to recombination of training data | Generates novel solutions and ideas |
+
+## Limitations & Strengths
+
+**AI Machines:**
+- Excel at narrow, well-defined tasks
+- Don't require rest or benefits
+- Can't understand ambiguous situations
+- Lack true judgment and accountability
+- Perform identically each time
+
+**Human Workers:**
+- Handle unpredictable, complex situations
+- Provide judgment and ethical reasoning
+- Build relationships and team dynamics
+- Require compensation and management
+- Bring motivation, intuition, and common sense
+
+## Practical Implications
+
+- **Cost**: Machines have high upfront costs but lower per-unit operational expense
+- **Flexibility**: Humans adapt; machines need reprogramming
+- **Accountability**: Humans can take responsibility; machines can't
+- **Collaboration**: Humans work together; machines execute independently
+
+The most effective approach often combines both—using machines for standardized tasks while leveraging humans for complex problem-solving and interpersonal work."
+claude-haiku-4.5,4,claude-opus-5,Design a game involving at least 4 components.,"# EXPEDITION: A Cooperative Adventure Game
+
+## Overview
+A 1-4 player cooperative game where teams navigate treacherous terrain, manage resources, and uncover mysteries while racing against time and challenging environments.
+
+---
+
+## Components
+
+### 1. **The Game Board**
+- Hexagonal modular tiles (double-sided) that players arrange to create varied landscapes
+- Terrain types: Mountains, Forests, Deserts, Rivers, Ancient Ruins, Caves
+- Each tile shows danger levels, resource locations, and discovery markers
+- Central ""Storm Track"" showing increasing danger as the game progresses
+
+### 2. **Character Cards**
+- 6 unique explorers (Scientist, Scout, Engineer, Medic, Navigator, Tracker)
+- Each has 3 unique special abilities
+- Health tracker (1-10 stamina points)
+- Inventory space for up to 5 items
+- Skills that synergize with terrain types
+
+### 3. **Resource & Item Tokens**
+- **Food tokens** (orange) - restore stamina
+- **Water tokens** (blue) - required for desert survival
+- **Rope** (gray) - needed to cross rivers/climb mountains
+- **Lanterns** (yellow) - reveal hidden caves
+- **Medical supplies** (red) - restore health
+- **Equipment cards** - special tools with one-time uses
+- **Mystery tokens** - building blocks for uncovering the story
+
+### 4. **Threat & Challenge Deck**
+- **Weather cards**: Sandstorms, Blizzards, Floods (affect movement)
+- **Encounter cards**: Wildlife, Bandits, Collapsed Paths
+- **Discovery cards**: Artifacts, Ancient Knowledge, Treasure
+- **Event cards**: Unexpected twists that change gameplay dynamics
+
+### 5. **Action & Strategy Elements**
+- **Turn tokens** (numbered 1-40) representing limited time
+- **Threat meter** tracking storm intensity
+- **Discovery journals** (pen & paper) for tracking lore pieces
+
+---
+
+## Gameplay Example
+
+**Round Structure:**
+1. Draw a threat/event card
+2. Spend action points to move, gather resources, or help teammates
+3. Resolve encounters or discoveries
+4. Advance the storm track
+5. Advance turn counter
+
+**Winning Condition:**
+Collect 6 mystery tokens to complete the ""Ancient Expedition"" before storm counter reaches maximum (game over).
+
+**Simple Challenge:**
+*Scout* needs rope to cross a river, but the group only has one. Do they use it now, or search for another rope token? Choosing affects remaining time and stamina.
+
+---
+
+This design balances **cooperation, resource management, exploration, and time pressure** in an engaging, replayable experience."
+claude-haiku-4.5,0,gpt-6-high,Design a game involving at least 4 components.,"# EXPEDITION: A Resource Management Adventure Game
+
+## Overview
+A 2-4 player game where explorers compete to discover artifacts, manage supplies, and navigate treacherous terrain across a mystical island.
+
+---
+
+## 4 Core Components
+
+### 1. **Modular Map Tiles**
+- Hexagonal tiles depicting different terrain: jungle, mountain, river, ruins, caves
+- Players arrange tiles as they explore (creates unique map each game)
+- Each terrain type has different movement costs and resource requirements
+- Starting tile and treasure locations predetermined each game
+
+### 2. **Resource Cards Deck**
+- 120 cards in five types: Food, Water, Rope, Light, Medicine
+- Draw from central deck when collecting resources
+- Cards show quantity (1-3 units) and occasional special events
+- Players carry limited supplies (max 10 cards) creating strategic decisions
+
+### 3. **Character Pawns & Tracker Board**
+- Each player has a unique explorer pawn with special ability
+- Central board tracks: Health, Supplies Remaining, Artifacts Found, Days Elapsed
+- Game lasts 20 days—tension increases as supplies dwindle
+- Health decreases from terrain hazards (costs resources to restore)
+
+### 4. **Artifact Tokens & Challenge Cards**
+- 12 artifact tokens hidden on map locations
+- Challenge cards determine what's needed to claim artifacts:
+  - ""Requires 3 Food + 2 Rope""
+  - ""Requires solving riddle card""
+  - ""Requires 2+ players cooperating""
+- Artifacts worth 5-15 victory points
+
+---
+
+## Quick Gameplay Loop
+1. **Move** using action points (spend resources for difficult terrain)
+2. **Encounter** tiles by drawing challenge/event cards
+3. **Manage** limited supplies
+4. **Claim** artifacts if you meet requirements
+5. **Survive** until endgame—most artifacts wins!
+
+This creates tension between exploration and survival!"
+claude-haiku-4.5,3,gpt-6,Design a game involving at least 4 components.,"# EXPEDITION: Lost Valley
+
+## Game Overview
+A cooperative adventure game where 2-4 players work together to explore a mysterious valley, gather resources, and escape before nightfall.
+
+---
+
+## Components
+
+### 1. **Game Board** (Double-sided, 18"" × 18"")
+- Central hexagonal valley divided into 24 terrain tiles
+- Three biome zones: Jungle, Mountains, Swamp
+- Multiple paths leading to 4 escape routes
+- Day/Night track along the border (1-12)
+
+### 2. **Character Cards & Tokens**
+- 4 unique explorer cards (Scholar, Scout, Engineer, Naturalist)
+- Each with special abilities and unique skill tokens
+- Wooden character pawns for placement on board
+- Health/status tracking cards
+
+### 3. **Resource Tokens** (200+ total)
+- **Food** (orange): Sustains players
+- **Tools** (gray): Unlocks obstacles
+- **Knowledge** (blue): Reveals secrets
+- **Torches** (yellow): Needed after dark
+- **Artifacts** (gold): Victory objectives
+
+### 4. **Terrain & Event Deck** (80 cards)
+- **Discovery Cards**: Reveal new tiles with resources, obstacles, or creatures
+- **Challenge Cards**: Require teamwork (climbing, puzzle-solving, survival)
+- **Night Cards**: Activated after turn 6, increase difficulty and resource drain
+
+### 5. **Dice & Timers**
+- 4 colored d8 dice (one per player)
+- 5-minute sand timer for pressure rounds
+- Custom obstacle/success tracker
+
+### 6. **Player Mats** (Laminated, 8.5"" × 11"")
+- Personal inventory slots
+- Ability reference guide
+- Health tracking circles
+- Turn sequence reminder
+
+---
+
+## How to Play (Basic)
+
+**Objective**: Collect 3+ artifacts and reach an escape route before nightfall (turn 12).
+
+**Turn Structure**:
+1. Draw an Event card
+2. Move one space and interact with terrain
+3. Collect resources or complete a Challenge
+4. Pass dice to next player
+
+**Challenges** require coordination—players spend resources matching dice symbols to succeed. Failure means losing health or resources.
+
+**Nightfall** (turns 7-12): Creatures roam, food consumption doubles, torches become essential.
+
+---
+
+## Why It Works
+- **Scalable difficulty** (4 difficulty levels)
+- **Replayable** (randomized board and deck)
+- **Cooperative** (forces communication, not competitive)
+- **30-60 minute playtime**
+- **Accessible** (simple rules, strategic depth)"
+claude-haiku-4.5,1,qwen-4,Design a game involving at least 4 components.,"# **NEXUS: A Strategic Resource Management Game**
+
+## **Game Components**
+
+### 1. **Modular Board**
+- Hexagonal tiles that players arrange each game, creating a unique map
+- 6 colored zones (representing different regions: Industrial, Agricultural, Tech, Energy, Commerce, Defense)
+- Central hub connecting all zones
+- Tiles feature resource icons and production values
+
+### 2. **Player Tokens & Control Markers**
+- 4 colored player sets (including pawn tokens, power cubes, and influence markers)
+- Each player gets 20 action tokens to spend per round
+- Control markers to claim territory
+
+### 3. **Resource Cards & Deck System**
+- 4 resource types: Credits, Tech, Energy, Materials (represented as physical tokens)
+- Event deck (50 cards) that introduces random challenges and opportunities
+- Objective cards (each player draws 2 secret victory conditions)
+- Tech upgrade cards allowing permanent bonuses
+
+### 4. **Central Economy Dashboard**
+- Shared market board showing real-time resource exchange rates
+- Round tracker and turn order dial
+- Supply/demand indicators that shift game dynamics
+
+---
+
+## **Core Gameplay**
+
+**Objective:** Reach 50 victory points by controlling regions, completing objectives, and acquiring tech
+
+**Turn Structure:**
+1. **Income Phase** – Collect resources from controlled zones
+2. **Action Phase** – Spend tokens to: build infrastructure, attack rivals, trade resources, or advance tech
+3. **Market Phase** – Buy/sell resources on the dynamic market
+4. **Event Phase** – Draw and resolve an event card affecting all players
+
+**Strategic Depth:**
+- Market prices fluctuate based on supply, forcing tactical trading
+- Military conflicts resolved with dice + tech bonuses
+- Asymmetrical victory conditions create varied strategies
+- 45-60 minute playtime, scales 2-4 players
+
+---
+
+This combines resource management, area control, negotiation, and player interaction!"
+claude-haiku-4.5,2,qwen-4-high,Design a game involving at least 4 components.,"# **QUEST COMPASS**
+## A Strategic Adventure Board Game for 2-4 Players
+
+---
+
+## **COMPONENTS**
+
+### 1. **The Realm Board**
+- Central hexagonal game board (24"" × 24"")
+- 36 interconnected terrain tiles (forest, mountain, desert, swamp, castle, village)
+- 5 marked Portal Zones for fast travel
+- Track for the Cosmic Clock (determines round limit and events)
+
+### 2. **Character Cards & Tokens**
+- 4 unique hero characters (Warrior, Mage, Ranger, Rogue)
+- Each with special abilities and starting equipment
+- Corresponding wooden player tokens for board placement
+- Character stat cards tracking: Health, Magic, Stamina
+
+### 3. **Quest Deck** (120 cards)
+- Major Quests (20 cards): Complex, 3-5 steps, high rewards
+- Minor Quests (50 cards): Quick tasks, immediate rewards
+- Event Cards (30 cards): Random encounters, challenges, treasures
+- Treasure Cards (20 cards): Equipment, potions, magical items
+
+### 4. **Combat & Encounter Dice**
+- 4 custom 12-sided dice (one per player, different colors)
+- 2 challenge dice (black) for monster/obstacle difficulty
+- Combat resolution uses dice + card modifiers
+
+### 5. **Resource Tokens**
+- Gold coins (5 denominations)
+- Health/Stamina crystals (20 each)
+- Quest completion markers
+
+### 6. **Monster/NPC Cards**
+- 40 creature cards with difficulty ratings and special abilities
+- 15 NPC ally cards offering assistance or side quests
+
+---
+
+## **BASIC GAMEPLAY**
+
+**Goal:** Be first to complete 5 quests OR collect 100+ gold by game end
+
+**Turn Structure:**
+1. Roll dice for movement (move 1-6 spaces)
+2. Encounter terrain/NPC → draw event card or pursue optional quest
+3. Combat (if triggered): Roll dice + apply modifiers
+4. End turn: Collect resources, update stats
+
+**Winning Conditions:**
+- Quest victory: Complete 5 major quests first
+- Treasure victory: Accumulate 100 gold
+- Survival victory: Win most combat encounters (tiebreaker)
+
+---
+
+This design combines exploration, strategy, chance, and player interaction!"
+claude-haiku-4.5,5,claude-opus-5-high,Design a game involving at least 4 components.,"# EXPEDITION: Lost Temple
+
+## Overview
+A cooperative adventure game where players work together to navigate a dangerous jungle temple, solve puzzles, and escape before the structure collapses.
+
+---
+
+## Components
+
+### 1. **Modular Game Board**
+- 24 hexagonal tiles that form different temple layouts each game
+- Tiles feature: corridors, chambers, treasure rooms, and trap zones
+- Color-coded regions (safe zones in green, hazard zones in red)
+- Tiles randomly shuffled and placed each game for replayability
+
+### 2. **Character Cards**
+- 4 unique adventurer cards (Explorer, Scholar, Thief, Guardian)
+- Each character has special abilities:
+  - *Explorer*: Move 2 extra spaces
+  - *Scholar*: Solve puzzles with 1 fewer clue card
+  - *Thief*: Disarm one trap per game
+  - *Guardian*: Protect another player from one hazard
+- Character tokens for moving on the board
+
+### 3. **Challenge Deck** (70 cards)
+- **Puzzle Cards** (25): Require 2-3 matching clue cards to solve
+- **Trap Cards** (25): Must roll die or spend resources to escape
+- **Treasure Cards** (15): Provide points and special items
+- **Collapse Cards** (5): Advance the collapse timer
+
+### 4. **Collapse Timer Track**
+- Physical 10-space track on the board
+- Players draw one Collapse Card per round
+- When track reaches 10, the temple begins crumbling
+- After 5 more rounds, anyone still inside loses
+
+### 5. **Resource Tokens**
+- **Rope** (20 tokens): Spend to climb hazards or help teammates
+- **Torches** (16 tokens): Required to enter dark chambers
+- **Keys** (8 tokens): Unlock treasure rooms
+- **Clue Tokens** (30): Used to solve puzzles
+
+### 6. **Dice & Trackers**
+- 2 six-sided dice: for trap resolution and movement
+- Score tracker: Track points from treasures and puzzles solved
+- Health tracker: Each player has 3 health (lose 1 per hazard hit)
+
+---
+
+## Basic Gameplay
+
+**Goal**: Collect at least 30 points in treasure while solving puzzles, then escape through the exit before the temple collapses completely.
+
+**Turn Structure**:
+1. Draw one Collapse Card (advance timer)
+2. Move up to your character's movement range
+3. Take one action: Solve a puzzle, disarm a trap, or collect treasure
+4. Play ends when either all players escape OR collapse timer runs out
+
+**Winning**: Escape with 30+ points = Victory. Otherwise = Defeat.
+
+---
+
+This design balances **strategy** (resource management), **cooperation** (shared goal), **uncertainty** (random tiles and challenges), and **replayability** (different configurations each game)."
+claude-haiku-4.5,2,gpt-6,"Generate a set of 5 questions and answers about the given topic.
+The 2020 U.S Presidential Election","# 2020 U.S. Presidential Election: Questions & Answers
+
+## Q1: Who were the main candidates in the 2020 U.S. Presidential Election?
+**A:** The two major candidates were incumbent President Donald Trump (Republican) and former Vice President Joe Biden (Democrat). Other notable candidates included Libertarian Jo Jorgensen and Green Party candidate Howie Hawkins.
+
+## Q2: When was the 2020 U.S. Presidential Election held?
+**A:** The general election was held on Tuesday, November 3, 2020. However, early voting and mail-in voting began weeks before Election Day due to COVID-19 pandemic precautions.
+
+## Q3: Who won the 2020 Presidential Election?
+**A:** Joe Biden won the election with 306 electoral votes to Donald Trump's 232. Biden also won the popular vote with approximately 51.3% compared to Trump's 46.9%, making it one of the highest voter turnout elections in U.S. history.
+
+## Q4: What were some major issues in the 2020 election?
+**A:** Key issues included the COVID-19 pandemic response, the economy, racial justice and police reform, healthcare, climate change, and immigration policy. The pandemic significantly shaped campaign strategy and voting methods.
+
+## Q5: Was the 2020 election results contested?
+**A:** Yes. President Trump disputed the results, claiming without evidence that the election was ""stolen"" through widespread fraud. Multiple lawsuits were filed and rejected by courts. The Electoral College certified results on December 14, 2020, and Congress certified them on January 7, 2021, after the January 6 Capitol riot."
+claude-haiku-4.5,1,gpt-6-high,"Generate a set of 5 questions and answers about the given topic.
+The 2020 U.S Presidential Election","# 2020 U.S. Presidential Election: Questions and Answers
+
+## Question 1: Who were the main candidates in the 2020 presidential election?
+**Answer:** The two major candidates were incumbent President Donald Trump (Republican Party) and former Vice President Joe Biden (Democratic Party). Biden won the election with 306 electoral votes to Trump's 232.
+
+## Question 2: When did the 2020 presidential election take place?
+**Answer:** The 2020 U.S. Presidential Election was held on Tuesday, November 3, 2020. This was the standard Election Day, held on the first Tuesday after the first Monday in November.
+
+## Question 3: What were some significant factors that influenced the 2020 election?
+**Answer:** Key factors included the COVID-19 pandemic, which increased mail-in voting; economic concerns; racial justice protests following George Floyd's death; and polarization over Trump's first-term policies. Record voter turnout reached approximately 66.1% of the voting-eligible population.
+
+## Question 4: How did the 2020 election differ in terms of voting methods?
+**Answer:** The 2020 election saw unprecedented use of mail-in and absentee voting due to the COVID-19 pandemic. Many states expanded access to mail-in ballots, and early voting periods were extended, resulting in the highest mail-in voting participation in U.S. history.
+
+## Question 5: When was Joe Biden officially inaugurated as president?
+**Answer:** Joe Biden was inaugurated as the 46th President of the United States on January 20, 2021, following the constitutionally mandated transition period after the November election."
+claude-haiku-4.5,5,qwen-4,"Generate a set of 5 questions and answers about the given topic.
+The 2020 U.S Presidential Election","# The 2020 U.S. Presidential Election: Q&A
+
+## Question 1: Who were the main candidates in the 2020 presidential election?
+**Answer:** The main candidates were incumbent President Donald Trump (Republican) and former Vice President Joe Biden (Democrat). Other candidates included Libertarian Jo Jorgensen and Green Party candidate Howie Hawkins, though they received minimal votes.
+
+## Question 2: What was the impact of the COVID-19 pandemic on the 2020 election?
+**Answer:** The pandemic significantly increased mail-in and early voting due to health concerns. It dominated campaign messaging, with candidates differing sharply on pandemic response. The election was held on November 3, 2020, during the height of the pandemic, and many states expanded voting accessibility.
+
+## Question 3: Who won the 2020 presidential election?
+**Answer:** Joe Biden won the election with 306 electoral votes to Donald Trump's 232. Biden received approximately 51.3% of the popular vote (81.3 million votes) compared to Trump's 46.9% (74.2 million votes), making it the highest-turnout election in modern U.S. history by percentage.
+
+## Question 4: What were the key issues in the 2020 campaign?
+**Answer:** Major issues included the COVID-19 pandemic response, the economy, racial justice and police reform (following George Floyd's death), healthcare, climate change, and immigration. The election also reflected deep partisan divisions over Trump's first-term record.
+
+## Question 5: What happened after Election Day 2020?
+**Answer:** President Trump challenged the election results, claiming widespread fraud without evidence. Legal challenges were rejected by courts. This culminated in the January 6, 2021, Capitol riot. Joe Biden was inaugurated as the 46th President on January 20, 2021."
+claude-haiku-4.5,0,qwen-4-high,"Generate a set of 5 questions and answers about the given topic.
+The 2020 U.S Presidential Election","# 2020 U.S. Presidential Election: Q&A
+
+**Q1: Who were the two main candidates in the 2020 U.S. Presidential Election?**
+A: The two major candidates were incumbent President Donald Trump (Republican) and former Vice President Joe Biden (Democrat). Biden won the election.
+
+**Q2: What was historically significant about the 2020 election in terms of voter participation?**
+A: The 2020 election had the highest voter turnout in over a century, with approximately 66.1% of eligible voters casting ballots. This was largely driven by increased mail-in voting due to the COVID-19 pandemic.
+
+**Q3: When was the 2020 Presidential Election held, and when was the winner officially announced?**
+A: The election was held on November 3, 2020. The results were announced over several days due to mail-in ballot counting, with major news organizations calling the race for Joe Biden on November 7, 2020.
+
+**Q4: What role did the COVID-19 pandemic play in the 2020 election?**
+A: The pandemic significantly changed voting procedures, with expanded mail-in and early voting options available in most states. It also became a central campaign issue, with candidates offering different approaches to managing the crisis.
+
+**Q5: What was the Electoral College outcome of the 2020 election?**
+A: Joe Biden won 306 electoral votes to Donald Trump's 232 electoral votes. Biden needed 270 electoral votes to win the presidency."
+claude-haiku-4.5,3,claude-opus-5,"Generate a set of 5 questions and answers about the given topic.
+The 2020 U.S Presidential Election","# 2020 U.S. Presidential Election: Q&A
+
+## Question 1: Who were the main candidates in the 2020 presidential election?
+**Answer:** The two major candidates were incumbent President Donald Trump (Republican Party) and former Vice President Joe Biden (Democratic Party). Biden won the election and became the 46th President of the United States.
+
+## Question 2: What was significant about voter turnout in 2020?
+**Answer:** The 2020 election had the highest voter turnout in over a century, with approximately 66.1% of eligible voters participating. This was driven by increased mail-in voting due to the COVID-19 pandemic and high levels of political engagement.
+
+## Question 3: When did the 2020 presidential election take place?
+**Answer:** The general election was held on Tuesday, November 3, 2020. The Electoral College formally cast their votes on December 14, 2020, and Congress certified the results on January 7, 2021.
+
+## Question 4: How did the Electoral College results compare?
+**Answer:** Joe Biden won 306 electoral votes, while Donald Trump received 232 electoral votes. A candidate needed 270 electoral votes to win. Biden also won the popular vote with approximately 51.3% compared to Trump's 46.9%.
+
+## Question 5: What role did mail-in voting play in 2020?
+**Answer:** Mail-in voting expanded significantly due to COVID-19 concerns, with approximately 46% of votes cast by mail. This made ballot counting slower and led to results being finalized over several days rather than election night, which was unusual for modern elections."
+claude-haiku-4.5,4,claude-opus-5-high,"Generate a set of 5 questions and answers about the given topic.
+The 2020 U.S Presidential Election","# 5 Questions and Answers About the 2020 U.S. Presidential Election
+
+## Q1: Who were the main candidates in the 2020 presidential election?
+**A:** The two major candidates were incumbent President Donald Trump (Republican Party) and former Vice President Joe Biden (Democratic Party). Biden won the election with 306 electoral votes to Trump's 232.
+
+## Q2: What was significant about voter turnout in 2020?
+**A:** The 2020 election had the highest voter turnout in over a century, with approximately 66.1% of eligible voters participating. This was largely driven by increased early voting, mail-in ballots, and heightened political engagement during the COVID-19 pandemic.
+
+## Q3: How did the COVID-19 pandemic affect the 2020 election?
+**A:** The pandemic led to significant changes in voting methods, including expanded mail-in voting and early voting options. Both candidates' campaigns adjusted their strategies with reduced in-person events and increased digital outreach. The pandemic also became a major campaign issue.
+
+## Q4: When was Joe Biden inaugurated, and what happened after the election?
+**A:** Joe Biden was inaugurated on January 20, 2021. Between the election and inauguration, President Trump disputed the results and challenged them in courts. On January 6, 2021, a mob of Trump supporters stormed the U.S. Capitol during the certification of electoral votes.
+
+## Q5: What were the key campaign issues in 2020?
+**A:** Major issues included the COVID-19 pandemic response, the economy, racial justice and police reform, healthcare, and climate change. The election was also heavily influenced by debates over Trump's first-term policies and leadership style."
+claude-haiku-4.5,3,claude-opus-5-high,"Given an example, how many people voted in the last presidential election?","I'd need to know which country and election you're referring to, since ""last presidential election"" varies by location and when you're asking.
+
+Here's an example:
+
+**2020 U.S. Presidential Election:**
+- **~158 million people voted** (about 66% of eligible voters)
+- This was a record turnout in terms of total votes cast
+
+If you're asking about a different country or election, let me know and I can provide that data instead."
+claude-haiku-4.5,2,claude-opus-5,"Given an example, how many people voted in the last presidential election?","# 2020 U.S. Presidential Election
+
+Approximately **158 million people** voted in the 2020 U.S. presidential election, making it one of the highest turnout elections in American history.
+
+Some context:
+- **Voting-eligible population**: ~239 million
+- **Turnout rate**: About 66% (one of the highest in decades)
+- **Winner**: Joe Biden with 81.3 million votes; Donald Trump received 74.2 million votes
+
+If you're asking about a different country or a more recent election, let me know and I can provide that information instead."
+claude-haiku-4.5,0,qwen-4-high,"Given an example, how many people voted in the last presidential election?","# 2020 U.S. Presidential Election
+
+Approximately **158 million people** voted in the 2020 U.S. presidential election, which represented about 62% of the voting-eligible population.
+
+This was notably high turnout due to factors like:
+- Increased mail-in voting options
+- High engagement/polarization
+- COVID-19 pandemic accommodations
+
+If you're asking about a different country or election year, let me know and I can provide that figure instead."
+claude-haiku-4.5,4,gpt-6-high,"Given an example, how many people voted in the last presidential election?","# US Presidential Election Turnout Example
+
+In the **2020 US Presidential Election**:
+- **Approximately 158 million people voted** (about 66% of eligible voters)
+- This was a notably high turnout year
+
+For comparison, **2016** had roughly **139 million voters** (about 60% of eligible voters).
+
+Turnout varies significantly by country and election, so if you're interested in a different country or election year, I'd be happy to provide that information instead."
+claude-haiku-4.5,5,qwen-4,"Given an example, how many people voted in the last presidential election?","# 2020 U.S. Presidential Election
+
+**Approximately 158-159 million people voted** in the 2020 U.S. presidential election, making it the highest turnout in over a century.
+
+## Key figures:
+- **Voting-eligible population:** ~239 million
+- **Turnout rate:** ~66% (the highest since 1900)
+- **Winner:** Joe Biden (81.3 million votes)
+- **Runner-up:** Donald Trump (74.2 million votes)
+
+If you're asking about a different country or a more recent election, let me know and I can provide those figures instead."
+claude-haiku-4.5,1,gpt-6,"Given an example, how many people voted in the last presidential election?","# 2020 U.S. Presidential Election
+
+**Approximately 158.4 million people voted** in the 2020 presidential election between Joe Biden and Donald Trump.
+
+This represented about **66.1% of the voting-eligible population**, which was a notably high turnout rate.
+
+---
+
+If you're asking about a different country's election or a more recent one, let me know and I can provide that information instead."
+claude-haiku-4.5,0,claude-opus-5-high,"In 1 sentence, summarize the findings from the research article.
+Research Article: ""The Effects of Social Media on Education""","# Summary
+
+This research article examines how social media platforms impact educational outcomes, likely exploring both positive effects (such as enhanced collaboration and information access) and negative effects (such as distraction and reduced academic performance)."
+claude-haiku-4.5,1,gpt-6,"In 1 sentence, summarize the findings from the research article.
+Research Article: ""The Effects of Social Media on Education""","I don't have access to the specific research article you're referring to. To provide an accurate one-sentence summary of ""The Effects of Social Media on Education,"" I would need you to share the article's abstract, key findings, or the full text. Could you provide those details?"
+claude-haiku-4.5,5,claude-opus-5,"In 1 sentence, summarize the findings from the research article.
+Research Article: ""The Effects of Social Media on Education""","I don't have access to the specific research article you're referencing, so I cannot summarize its actual findings. To help you, I would need you to either:
+
+1. Share the article text or a link
+2. Provide the authors' names and publication year
+3. Share key excerpts from the article
+
+Once you provide this information, I'd be happy to create a one-sentence summary of the findings."
+claude-haiku-4.5,4,qwen-4,"In 1 sentence, summarize the findings from the research article.
+Research Article: ""The Effects of Social Media on Education""","# Summary
+
+The research article examines how social media impacts educational outcomes, likely exploring both positive effects (such as enhanced collaboration and information sharing) and negative effects (such as distraction and reduced academic performance).
+
+*Note: I don't have access to the specific article you're referencing, so this is a general summary based on the title. For an accurate summary, please provide the abstract or key findings.*"
+claude-haiku-4.5,2,gpt-6-high,"In 1 sentence, summarize the findings from the research article.
+Research Article: ""The Effects of Social Media on Education""","I don't have access to the specific research article you're referring to, so I cannot provide an accurate summary of its findings. To help you, could you please share the article text, a link, or more details about the study (such as the authors, publication year, or institution)?"
+claude-haiku-4.5,3,qwen-4-high,"In 1 sentence, summarize the findings from the research article.
+Research Article: ""The Effects of Social Media on Education""","# Summary
+
+The research article examines how social media impacts educational outcomes, likely exploring both positive effects (such as enhanced collaboration and information sharing) and negative effects (such as distraction and reduced academic performance)."
+claude-haiku-4.5,5,qwen-4,Name a holiday in Japan and explain why it is celebrated.,"# Obon (August 13-15)
+
+Obon is a major summer holiday celebrated throughout Japan, rooted in both Buddhist and ancestral traditions.
+
+## Why It's Celebrated
+
+**Honoring ancestors:** Obon is based on the belief that the spirits of deceased ancestors return to visit their living families during this period. It's a time for remembrance and gratitude.
+
+**Buddhist origins:** The holiday connects to the Buddhist concept of honoring those who have passed on and acknowledging the cycle of life and death.
+
+## How It's Observed
+
+- Families return to their hometowns to be with relatives
+- Altars are decorated with flowers, lanterns, and offerings of food
+- The Bon dance (*Bon odori*) is performed in communities
+- Lanterns are lit to guide ancestral spirits
+- Many people visit family graves to clean and pay respects
+
+Obon is one of Japan's most important holidays, often compared to Western holidays like Christmas in terms of family significance and the mass travel that occurs during the period."
+claude-haiku-4.5,3,claude-opus-5-high,Name a holiday in Japan and explain why it is celebrated.,"# Obon (Mid-August)
+
+**Obon** is a major summer holiday celebrated around mid-August, typically lasting several days.
+
+## Why It's Celebrated
+
+Obon is rooted in Buddhist tradition and honors deceased ancestors. Japanese people believe that during this period, the spirits of their ancestors return to visit the living. 
+
+Key aspects include:
+
+- **Welcoming ancestors**: Families prepare altars, light lanterns, and make offerings of food and flowers
+- **Family reunions**: People travel to their hometowns to be with family, making it one of Japan's busiest travel periods
+- **Bon Odori dances**: Communities hold traditional dance festivals to celebrate and entertain the visiting spirits
+- **Sending spirits off**: At the end, lanterns are floated on rivers or released into the sky to guide ancestors back to the afterlife
+
+It's one of the most important holidays in Japan, reflecting deep cultural values around family, respect for ancestors, and connection between the living and the dead."
+claude-haiku-4.5,0,gpt-6,Name a holiday in Japan and explain why it is celebrated.,"# New Year (Shogatsu)
+
+**New Year** is one of Japan's most important holidays, celebrated on January 1st.
+
+## Why It's Celebrated
+
+Shogatsu marks the beginning of a fresh year and is rooted in both Shinto and Buddhist traditions. It's a time for:
+
+- **Renewal and purification** — Japanese people clean their homes thoroughly to sweep away the old year's misfortunes
+- **Family gatherings** — Multiple generations come together to share meals and strengthen family bonds
+- **Welcoming good fortune** — Many visit temples and shrines to pray for a prosperous year ahead
+- **Cultural traditions** — People exchange gifts (often money to children), eat special foods like mochi and ozoni soup, and display decorations such as pine and bamboo
+
+The holiday reflects deep cultural values around fresh starts, gratitude, and community, making it a central celebration in the Japanese calendar."
+claude-haiku-4.5,2,gpt-6-high,Name a holiday in Japan and explain why it is celebrated.,"# Obon Festival
+
+**Obon** (typically celebrated in August) is one of Japan's most important holidays.
+
+## Why It's Celebrated
+
+Obon honors deceased ancestors and is rooted in Buddhist tradition. Japanese people believe that during this period, the spirits of ancestors return to visit their living relatives.
+
+## Traditions
+
+- **Welcoming rituals**: Families light lanterns and prepare altars with food and flowers to welcome ancestral spirits
+- **Lantern festivals**: Decorative lanterns are displayed, and many communities hold elaborate festival celebrations
+- **Bon dances**: Traditional group dances called ""Bon odori"" are performed in streets and communities
+- **Homecoming**: It's a time when families gather together, and many Japanese people travel home to be with relatives
+
+The holiday reflects the deep importance of family bonds and remembrance in Japanese culture, blending Shinto and Buddhist practices in a uniquely Japanese way."
+claude-haiku-4.5,1,qwen-4-high,Name a holiday in Japan and explain why it is celebrated.,"# Obon Festival
+
+**Obon** (お盆) is celebrated in mid-August and is one of Japan's most important holidays.
+
+## Why It's Celebrated
+
+Obon is rooted in Buddhist tradition and honors deceased ancestors. Japanese people believe that during this period, the spirits of departed family members return to visit the living. 
+
+**Key aspects include:**
+
+- **Family reunions** - People travel home to be with relatives and visit ancestral graves
+- **Welcoming spirits** - Families light lanterns and make offerings of food to guide ancestral spirits
+- **Bon dances** - Communities hold festive Bon Odori dances to entertain the visiting spirits
+- **Sending spirits off** - At the end of the festival, lanterns are floated on rivers or lit on hillsides to guide spirits back to the afterlife
+
+Obon typically lasts three days and remains a time for reflection, family connection, and honoring those who have passed away."
+claude-haiku-4.5,4,claude-opus-5,Name a holiday in Japan and explain why it is celebrated.,"# Obon (Mid-August)
+
+**What it is:** Obon is a traditional Buddhist festival celebrated in mid-August (or mid-July in some regions).
+
+**Why it's celebrated:** Obon honors the spirits of deceased ancestors. According to Buddhist tradition, during this period the spirits of the dead return to visit their living families. 
+
+**How it's observed:**
+- Families clean their homes and prepare altars with offerings of food and flowers
+- Many people return to their hometowns to be with family
+- Traditional dances called *Bon Odori* are performed in communities
+- Lanterns are lit to guide ancestral spirits, and later floated on rivers or seas to send them off
+
+Obon is one of Japan's most important holidays and reflects the deep cultural value placed on family connections and respect for ancestors."
+claude-haiku-4.5,1,qwen-4-high,Name three computer programming languages and what they are used for.,"# Three Programming Languages
+
+1. **Python**
+   - Used for data science, machine learning, web development, automation, and scripting. Known for its readable syntax and extensive libraries.
+
+2. **JavaScript**
+   - Used primarily for web development—creating interactive websites and web applications. Runs in browsers and can also be used for server-side development with Node.js.
+
+3. **Java**
+   - Used for building large-scale enterprise applications, Android mobile apps, and backend systems. Known for its ""write once, run anywhere"" capability and strong performance."
+claude-haiku-4.5,5,claude-opus-5,Name three computer programming languages and what they are used for.,"# Three Popular Programming Languages
+
+## 1. **Python**
+Used for data science, machine learning, web development, and automation. Known for its simple syntax and extensive libraries, it's popular in academia and industry.
+
+## 2. **JavaScript**
+Used for web development, particularly for creating interactive front-end features in browsers. Also used for server-side development with Node.js and building mobile apps.
+
+## 3. **Java**
+Used for building large-scale enterprise applications, Android apps, and systems that require high performance and reliability. Known for its ""write once, run anywhere"" capability."
+claude-haiku-4.5,4,claude-opus-5-high,Name three computer programming languages and what they are used for.,"# Three Programming Languages
+
+1. **Python**
+   - Used for data science, machine learning, web development, automation, and scripting. Known for its readability and beginner-friendly syntax.
+
+2. **JavaScript**
+   - Used primarily for web development, especially front-end development for interactive websites and browser-based applications. Also used for back-end development with Node.js.
+
+3. **Java**
+   - Used for building large-scale enterprise applications, Android mobile apps, and systems requiring high performance and reliability. Known for its ""write once, run anywhere"" capability."
+claude-haiku-4.5,0,gpt-6,Name three computer programming languages and what they are used for.,"# Three Popular Programming Languages
+
+1. **Python**
+   - Used for data analysis, machine learning, web development, and automation scripts. Known for its readable syntax and extensive libraries.
+
+2. **JavaScript**
+   - Used for web development, particularly for creating interactive user interfaces in browsers. Also used for server-side development with Node.js.
+
+3. **Java**
+   - Used for building large-scale enterprise applications, Android mobile apps, and backend systems. Known for its reliability and ""write once, run anywhere"" capability."
+claude-haiku-4.5,3,gpt-6-high,Name three computer programming languages and what they are used for.,"# Three Programming Languages
+
+1. **Python**
+   - Used for data science, machine learning, web development, automation, and scientific computing. Popular for its readable syntax and extensive libraries.
+
+2. **JavaScript**
+   - Used for web development, particularly for creating interactive user interfaces in browsers. Also used for backend development with Node.js.
+
+3. **Java**
+   - Used for building large-scale enterprise applications, Android mobile apps, and systems requiring high performance and reliability. Known for its ""write once, run anywhere"" capability."
+claude-haiku-4.5,2,qwen-4,Name three computer programming languages and what they are used for.,"# Three Programming Languages
+
+## 1. **Python**
+Used for data science, machine learning, web development, and automation. Popular in academia and industry due to its readability and extensive libraries.
+
+## 2. **JavaScript**
+Used for web development, particularly creating interactive elements on websites. Runs in web browsers and can also be used for backend development with Node.js.
+
+## 3. **Java**
+Used for building large-scale enterprise applications, Android mobile apps, and systems that require high performance and reliability."
+claude-haiku-4.5,0,claude-opus-5,"Summarize the following article in your own words.
+The internet has become a critical part of modern life and it has revolutionized the way we communicate and conduct business. It has enabled the spread of ideas and experiences quickly, globally, and cheaply.","# Summary
+
+The internet has fundamentally changed how we live today. It has transformed communication and business practices, while also making it easier and more affordable to share ideas and experiences across the world at rapid speeds."
+claude-haiku-4.5,5,gpt-6,"Summarize the following article in your own words.
+The internet has become a critical part of modern life and it has revolutionized the way we communicate and conduct business. It has enabled the spread of ideas and experiences quickly, globally, and cheaply.","# Summary
+
+The internet has fundamentally transformed modern society by serving as an essential tool for communication and business. One of its most significant impacts is its ability to rapidly distribute information, ideas, and experiences across the world at minimal cost."
+claude-haiku-4.5,1,claude-opus-5-high,"Summarize the following article in your own words.
+The internet has become a critical part of modern life and it has revolutionized the way we communicate and conduct business. It has enabled the spread of ideas and experiences quickly, globally, and cheaply.","# Summary
+
+The internet has transformed modern society by becoming essential to how we live today. It has fundamentally changed communication and business practices, while also making it easier and more affordable to share information, ideas, and experiences across the world at rapid speeds."
+claude-haiku-4.5,2,qwen-4-high,"Summarize the following article in your own words.
+The internet has become a critical part of modern life and it has revolutionized the way we communicate and conduct business. It has enabled the spread of ideas and experiences quickly, globally, and cheaply.","# Summary
+
+The internet has transformed modern society by becoming essential to how we live today. It has fundamentally changed communication and business practices, while also making it easier and more affordable to share information, ideas, and experiences across the world at rapid speeds."
+claude-haiku-4.5,4,gpt-6-high,"Summarize the following article in your own words.
+The internet has become a critical part of modern life and it has revolutionized the way we communicate and conduct business. It has enabled the spread of ideas and experiences quickly, globally, and cheaply.","# Summary
+
+The internet has transformed modern society by becoming essential to how we live, work, and interact. It has fundamentally changed communication and business practices, while also making it easier and more affordable for information, ideas, and experiences to be shared across the world at rapid speeds."
+claude-haiku-4.5,3,qwen-4,"Summarize the following article in your own words.
+The internet has become a critical part of modern life and it has revolutionized the way we communicate and conduct business. It has enabled the spread of ideas and experiences quickly, globally, and cheaply.","# Summary
+
+The internet has transformed modern society by fundamentally changing how people interact and do business. Its key impact is making it easy, fast, and affordable to share information and experiences worldwide."
+claude-haiku-4.5,4,claude-opus-5-high,Who is someone who has significantly impacted the world?,"# Some Notable Examples
+
+**Marie Curie** stands out to me:
+- First woman to win a Nobel Prize, only person to win in two different sciences
+- Her research on radioactivity revolutionized physics and chemistry
+- Pioneered medical applications that saved countless lives
+- Broke significant barriers for women in science
+
+**Other impactful figures** across different domains:
+- **Jonas Salk** - developed polio vaccine, eliminating a devastating disease
+- **Nelson Mandela** - transformed South Africa and advanced human rights globally
+- **Ada Lovelace** - foundational work in computer science
+- **Norman Borlaug** - agricultural innovations that prevented mass famine
+
+The ""most impactful"" really depends on your criteria—scientific breakthroughs, humanitarian work, political change, or cultural influence all matter differently.
+
+Is there a particular domain or type of impact you're most interested in exploring?"
+claude-haiku-4.5,1,gpt-6-high,Who is someone who has significantly impacted the world?,"**Marie Curie** is a compelling example. She:
+
+- Pioneered research on radioactivity, fundamentally changing physics and chemistry
+- Won two Nobel Prizes (rare achievement even now)
+- Opened doors for women in science when few were welcomed
+- Her discoveries led to medical advances in cancer treatment and diagnostics
+- Established research institutes that still operate today
+
+Other notable figures depending on your interests:
+- **Martin Luther King Jr.** – Civil rights movement
+- **Albert Einstein** – Theoretical physics, shaped modern understanding of reality
+- **Malala Yousafzai** – Education advocacy and human rights
+- **Florence Nightingale** – Modern nursing and healthcare reform
+
+Is there a particular field or type of impact you're most interested in?"
+claude-haiku-4.5,0,gpt-6,Who is someone who has significantly impacted the world?,"# Marie Curie
+
+Marie Curie is a compelling example. She:
+
+- **Pioneered nuclear research** - her work on radioactivity fundamentally changed science
+- **Broke barriers** - first woman to win a Nobel Prize, and only person to win Nobels in two different sciences
+- **Advanced medicine** - her discoveries led to cancer treatments and medical imaging
+- **Inspired generations** - her achievements opened doors for women in STEM
+
+Of course, there are countless others who've made major impacts—from scientists like Einstein and Jonas Salk, to activists like MLK and Mandela, to inventors and artists. 
+
+**Who were you thinking of, or interested in learning more about?**"
+claude-haiku-4.5,2,claude-opus-5,Who is someone who has significantly impacted the world?,"That depends on what kind of impact interests you, but here are a few examples across different fields:
+
+**Science & Medicine**: Marie Curie pioneered radioactivity research, foundational for modern physics and medical treatments.
+
+**Civil Rights**: Martin Luther King Jr. fundamentally changed racial equality through nonviolent resistance and advocacy.
+
+**Technology**: Alan Turing's work on computation theory shaped computer science and artificial intelligence.
+
+**Philosophy & Social Change**: Mahatma Gandhi demonstrated how nonviolent resistance could achieve political independence.
+
+**Medicine**: Jonas Salk developed the polio vaccine, saving millions of lives.
+
+Each had profound effects in their domain. Is there a particular area you're curious about—science, social justice, arts, business, or something else? That might help me suggest someone more relevant to what interests you."
+claude-haiku-4.5,5,qwen-4,Who is someone who has significantly impacted the world?,"There are many good examples depending on what kind of impact you're interested in. Here are a few across different areas:
+
+**Science & Medicine:** Marie Curie pioneered radioactivity research, enabling advances in medicine and physics. Louis Pasteur's germ theory transformed public health.
+
+**Social Change:** Gandhi's nonviolent resistance influenced civil rights movements globally. Martin Luther King Jr. advanced racial equality through activism and oratory.
+
+**Technology:** Steve Jobs transformed how people interact with computers and media. Tim Berners-Lee invented the World Wide Web.
+
+**Literature & Ideas:** Shakespeare shaped language and storytelling. Karl Marx fundamentally influenced political and economic thought.
+
+**Humanitarian work:** Florence Nightingale revolutionized nursing and healthcare standards.
+
+The ""most significant"" is subjective—it depends on whether you value scientific breakthroughs, social justice, technological innovation, artistic influence, or something else.
+
+Is there a particular field or type of impact you're most curious about?"
+claude-haiku-4.5,3,qwen-4-high,Who is someone who has significantly impacted the world?,"There are many possibilities depending on what kind of impact you mean. Here are a few examples across different fields:
+
+**Scientific/Medical:** Marie Curie pioneered radioactivity research, fundamentally changing physics and medicine. Louis Pasteur's germ theory transformed public health.
+
+**Political/Social:** Nelson Mandela's fight against apartheid inspired global movements for equality. Martin Luther King Jr. advanced civil rights.
+
+**Technological:** Ada Lovelace's early computer concepts helped establish computer science. Steve Jobs reshaped how people interact with technology.
+
+**Philosophical/Spiritual:** Buddha, Jesus, and Muhammad shaped billions of people's worldviews and ethics.
+
+**Economic/Industrial:** Henry Ford revolutionized manufacturing; Elon Musk is currently pushing electric vehicles and space exploration.
+
+Is there a particular domain or type of impact you're most interested in learning about?"

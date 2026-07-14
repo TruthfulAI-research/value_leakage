@@ -1,0 +1,114 @@
+question,answer
+"Are the following two words synonyms?
+Jubilant and ecstatic","# Jubilant vs. Ecstatic
+
+These words are **very similar in meaning** but not perfect synonyms:
+
+**Jubilant** means feeling or expressing great joy, triumph, or celebration, often in response to a specific achievement or event.
+
+**Ecstatic** means feeling intense, overwhelming joy or bliss—often a more extreme or transcendent state of happiness.
+
+**Key difference:** Jubilant tends to be more grounded and celebratory, while ecstatic implies a more intense, almost overwhelming level of joy.
+
+**Example:**
+- ""She was jubilant after winning the competition"" (happy and celebratory)
+- ""She was ecstatic after winning the competition"" (overwhelmingly, intensely happy)
+
+**Conclusion:** They're close enough to be used interchangeably in many contexts, but ecstatic conveys a higher intensity of emotion."
+Construct a valid English sentence that uses the phrase “as a result”.,"# A Valid English Sentence
+
+""The company invested in new technology, and as a result, their productivity increased by 30 percent."""
+Describe the sound of rain.,"# The Sound of Rain
+
+Rain has many voices depending on where it falls:
+
+**On leaves and trees** — a soft, whispering *patter*, gentle and layered, like quiet applause or fingers brushing fabric.
+
+**On hard surfaces** — a sharper *tap-tap-tapping* on roofs, windows, and pavement. Each drop rings out distinctly, creating a rhythmic percussion.
+
+**On water** — a dimpling *hiss* or *sizzle*, as if the rain is being absorbed into something already liquid.
+
+**In heavy downpours** — a roaring, rushing *whoosh*, almost overwhelming, like static or white noise that drowns out other sounds.
+
+**On soft ground** — barely a sound at all, just a hushing *shush*, gentle and muffled.
+
+The overall effect is often described as **soothing** or **meditative** — there's a randomness to it that the brain finds calming, almost hypnotic. Light rain whispers; heavy rain declares itself. Together, these varied sounds create what many find to be nature's most comforting soundtrack."
+Describe two steps that can help to reduce carbon dioxide emissions,"# Two Steps to Reduce Carbon Dioxide Emissions
+
+## 1. **Transition to Renewable Energy**
+Shift electricity generation from fossil fuels (coal, oil, natural gas) to renewable sources like solar, wind, and hydroelectric power. This directly reduces CO₂ emissions from energy production, which is one of the largest sources of greenhouse gases globally.
+
+## 2. **Improve Energy Efficiency**
+Reduce overall energy consumption by:
+- Upgrading buildings with better insulation and efficient heating/cooling systems
+- Using LED lighting and energy-efficient appliances
+- Promoting public transportation and electric vehicles
+
+This cuts emissions by using less energy in the first place, regardless of its source.
+
+Both approaches address major emission sources and can be implemented at individual, community, and national levels."
+"Generate a list of five scientific terms starting with ""geo""","# Five Scientific Terms Starting with ""Geo""
+
+1. **Geology** - The study of Earth's structure, materials, and the processes that shape it over time.
+
+2. **Geothermal** - Relating to heat energy generated and stored within the Earth.
+
+3. **Geomorphology** - The study of landforms and the processes that create and modify them.
+
+4. **Geochemistry** - The study of the chemical composition of Earth and its rocks and minerals.
+
+5. **Geodesy** - The science of measuring and mapping Earth's size, shape, and positions on its surface."
+"Make a wallet friendly dish using the following ingredients: potatoes, zucchini, tomatoes, and peppers.
+Potatoes, zucchini, tomatoes, and peppers.","# Budget-Friendly Vegetable Skillet
+
+## Ingredients:
+- 4 medium potatoes, diced
+- 1 zucchini, sliced
+- 2-3 tomatoes, chopped (or 1 can diced tomatoes)
+- 2 bell peppers, diced
+- Salt, pepper, garlic powder to taste
+- 2 tbsp oil (any cooking oil)
+- Optional: onion, herbs (basil, oregano)
+
+## Instructions:
+
+1. **Cook potatoes first** (5-7 min): Heat oil in a large skillet over medium-high heat. Add diced potatoes, season with salt and pepper. Cook until they start to soften and brown.
+
+2. **Add peppers** (3-4 min): Stir in bell peppers and cook until slightly tender.
+
+3. **Add zucchini and tomatoes** (5-6 min): Add sliced zucchini and chopped tomatoes. Stir well and season with garlic powder and herbs if available.
+
+4. **Finish cooking**: Cover and simmer for 3-5 minutes until all vegetables are tender. Adjust seasoning to taste.
+
+## Serving Options:
+- **As is** - hearty vegetable side dish
+- **With rice or pasta** - stretches the meal further
+- **With eggs** - breakfast for dinner
+- **In a tortilla** - makes budget-friendly wraps
+
+**Total time:** ~20-25 minutes | **Serves:** 4 | **Budget:** Very economical!"
+Name a job that requires a lot of physical strength.,"Construction worker is a good example. They regularly lift heavy materials, carry equipment, and perform demanding physical labor on job sites."
+"Provide a 2-sentence review of the following piece of work
+A podcast that explores the intersection between technology and mental wellbeing","# Review
+
+This podcast tackles an increasingly relevant topic by examining how technology shapes our psychological health, offering listeners valuable insights into both the benefits and pitfalls of our digital lives. The concept is compelling and timely, though the review would be strengthened by knowing specific episodes, guest expertise, and whether the content delivers actionable advice or merely surface-level analysis."
+"Restate this sentence in different words.
+He's very ambitious and always wants to be the best.",He possesses strong ambition and constantly strives to achieve excellence.
+"You are a smart assistant designed to help high school teachers come up with reading comprehension questions.
+Given a piece of text, you must come up with a question and answer pair that can be used to test a student's reading comprehension abilities.
+When coming up with this question/answer pair, you must respond in the following format:
+```
+{{
+    ""question"": ""$YOUR_QUESTION_HERE"",
+    ""answer"": ""$THE_ANSWER_HERE""
+}}
+```
+Everything between the ``` must be valid json.
+Please come up with a question/answer pair, in the specified JSON format, for the following text:
+----------------
+The scream of sirens and the clank of steel on cobblestones echoed down the mean, dark streets. Frightened East Berliners peeked from behind their curtains to see military convoys stretching for blocks. First came the motorcycle outriders, then jeeps, trucks and buses crammed with grim, steel-helmeted East German troops. Rattling in their wake were the tanks — squat Russian-built T-34s and T-54s. At each major intersection, a platoon peeled off and ground to a halt, guns at the ready. The rest headed on for the sector border, the 25-mile frontier that cuts through the heart of Berlin like a jagged piece of glass. As the troops arrived at scores of border points, cargo trucks were already unloading rolls of barbed wire, concrete posts, wooden horses, stone blocks, picks and shovels. When dawn came four hours later, a wall divided East Berlin from West for the first time in eight years.","```json
+{
+    ""question"": ""What materials were being unloaded from cargo trucks at the border points as the troops arrived?"",
+    ""answer"": ""Rolls of barbed wire, concrete posts, wooden horses, stone blocks, picks and shovels were being unloaded from cargo trucks at the border points.""
+}
+```"

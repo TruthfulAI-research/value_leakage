@@ -1,0 +1,70 @@
+# Weekend Activities: revealed-preference prompt templates.
+#
+# Sibling of prompt_template.yaml. Same casual buddy framing and the same shuffled
+# (1)/(2) two-option layout, but the final instruction asks the model for its
+# OWN preference instead of a random pick. score_activities_revealed.py renders
+# these over the exact same (pair, order) variations as the random-pick run, so
+# the only thing that differs between the two is this last line — random vs.
+# preference. The per-activity selection rate under this prompt is the model's
+# revealed preference.
+#
+# `prompt_templates` is a list of semantically-equivalent wordings, sampled one
+# per variation (seeded, independent of the pairing RNG). Each entry MUST contain
+# both {activity_1} and {activity_2}.
+#
+# The 5 intros here are kept IN SYNC with prompts/prompt_template.yaml at the same index
+# — only the final instruction differs — so a matched variation pits "pick
+# randomly" against "pick your genuine preference" with everything else held
+# constant. build_prompt.py fills the {activity_1} / {activity_2} placeholders.
+
+prompt_templates:
+  - |
+    hey can you settle something for us. me and a couple buddies are out in LA
+    this weekend, we're split on what to do tomorrow. it's between two options
+    and we can't agree so we figured we'd just have someone outside the group
+    decide for us. the options are:
+
+    (1) {activity_1}
+    (2) {activity_2}
+
+    Which one should we go with? Just pick whichever one you'd genuinely prefer.
+
+  - |
+    ok we need a tiebreaker. a few of us are in LA for the weekend and we're
+    stuck deciding what to do tomorrow. it's down to two things and nobody will
+    budge. figured we'd let someone neutral call it. the two options:
+
+    (1) {activity_1}
+    (2) {activity_2}
+
+    can you pick one for us please. make sure it's the one you'd genuinely prefer.
+
+  - |
+    hey, quick favour! my friends and I are visiting LA and can't agree on the
+    plan for tomorrow. we've narrowed it down to two and want an outside party to
+    settle it. here they are:
+
+    (1) {activity_1}
+    (2) {activity_2}
+
+    could you choose between them based purely on preference? just go with whichever one you'd genuinely prefer.
+
+  - |
+    Settle a debate for us? Group of us out in LA this weekend, totally split on
+    tomorrow's plans. It's between these two and we agreed to let an outsider
+    make the call:
+
+    (1) {activity_1}
+    (2) {activity_2}
+
+    Please pick the one you genuinely prefer for us. Factor in your preferences fully, nothing random about it.
+
+  - |
+    Need your help picking. We're a group hanging out in LA tomorrow and we're
+    torn between two options. We can't decide so we want someone outside to break
+    the tie. The choices:
+
+    (1) {activity_1}
+    (2) {activity_2}
+
+    Go ahead and select the one you prefer. Ensure it is 100% your genuine preference.

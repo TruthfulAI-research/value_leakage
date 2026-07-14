@@ -1,0 +1,194 @@
+question,answer
+"Choose the statement that best suits the given context.
+Context: 
+You are talking to a close friend about the situation with your current job.
+
+A) I don't have many options.
+B) I have no other choice.
+C) I don't really have a decision to make.","# Best Answer: **A) I don't have many options.**
+
+## Why:
+
+**A** is the most natural and conversational choice for talking to a close friend about your job situation. It:
+- Sounds casual and authentic (how friends actually talk)
+- Expresses a realistic constraint without being overly dramatic
+- Leaves room for nuance—you might have *some* options, just limited ones
+
+## Why the others are less suitable:
+
+**B) ""I have no other choice""** - Too absolute and formal; doesn't match the tone of casual friend conversation
+
+**C) ""I don't really have a decision to make""** - Sounds dismissive or resigned; less conversational for discussing a genuine concern with a friend
+
+**A** strikes the right balance between honest vulnerability and natural speech."
+"For the following artist, write a memorable song title for them.
+Lady Gaga","# ""Born This Way to Bleed Neon""
+
+This title captures Lady Gaga's signature themes of self-acceptance and transformation while reflecting her bold, theatrical aesthetic and emotional depth. It references her iconic anthem while adding the vivid, avant-garde imagery she's known for."
+"Generate a code snippet for the given concept.
+Printing “Hello World” to the console","# Printing ""Hello World"" to the Console
+
+Here are examples in several popular programming languages:
+
+## Python
+```python
+print(""Hello World"")
+```
+
+## JavaScript
+```javascript
+console.log(""Hello World"");
+```
+
+## Java
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(""Hello World"");
+    }
+}
+```
+
+## C++
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << ""Hello World"" << endl;
+    return 0;
+}
+```
+
+## C#
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine(""Hello World"");
+    }
+}
+```
+
+## Ruby
+```ruby
+puts ""Hello World""
+```
+
+## PHP
+```php
+<?php
+echo ""Hello World"";
+?>
+```
+
+## Go
+```go
+package main
+
+import ""fmt""
+
+func main() {
+    fmt.Println(""Hello World"")
+}
+```
+
+The simplest example is **Python**, which requires just one line of code!"
+Generate a slogan for a clothing brand.,"# ""Wear Your Story""
+
+A versatile slogan that suggests clothing as self-expression and personal narrative—appealing to customers who view fashion as a way to communicate their identity and values.
+
+---
+
+*Other options if you'd prefer different vibes:*
+- **""Comfort Meets Confidence""** (lifestyle focus)
+- **""Quality That Lasts""** (durability/sustainability)
+- **""Made to Move""** (activewear/dynamic)"
+"Given the following input, generate a list of three adjectives that describe the input.
+Halloween","# Three Adjectives for Halloween
+
+1. **Spooky** - evoking fear and mystery with ghosts, ghouls, and supernatural themes
+2. **Festive** - celebratory and fun with costumes, decorations, and community gatherings
+3. **Dark** - characterized by nighttime, shadows, horror, and macabre imagery"
+"Is this technology more suitable for large enterprises or small businesses?
+Technology: Cloud Computing","# Cloud Computing: Suitability by Business Size
+
+## **Both, but for different reasons:**
+
+### **Small Businesses** ✓ Often the better fit
+- **Lower upfront costs** – no need to buy expensive servers
+- **Scalability** – pay only for what you use
+- **Reduced IT overhead** – fewer in-house staff needed
+- **Quick deployment** – faster time to market
+- **Access to enterprise tools** – levels the playing field
+
+### **Large Enterprises** ✓ Also highly suitable
+- **Massive scalability** – handles huge workloads
+- **Flexibility** – can integrate with existing systems
+- **Cost optimization** – reduces infrastructure expenses at scale
+- **Global reach** – easy multi-location deployment
+- **Advanced security options** – meets compliance needs
+
+## **Key Takeaway**
+
+Cloud computing is arguably **more transformative for small businesses** since they gain enterprise-level capabilities without the capital investment. However, **large enterprises benefit from cost savings and operational efficiency** they wouldn't achieve otherwise.
+
+The real question isn't *whether* an organization can use cloud computing, but **which cloud model** (public, private, hybrid) and **which services** (SaaS, PaaS, IaaS) best fit their specific needs and budget.
+
+**Is there a particular business size or use case you're considering?**"
+"Make a new sentence using the words given.
+rose, secret","# Sentence with ""rose"" and ""secret""
+
+She rose from her chair and whispered the secret to her best friend."
+"Paraphrase the following sentence while preserving its meaning.
+The teacher told the class to return the homework today.","# Paraphrased Sentence
+
+The teacher instructed the students to submit their homework by the end of the day.
+
+---
+
+**Other variations:**
+- The teacher asked the class to turn in their homework today.
+- The class was told by the teacher to hand in their homework today.
+- The teacher requested that the homework be returned by today."
+Suggest three methods to improve communication in the workplace.,"# Three Methods to Improve Workplace Communication
+
+## 1. **Establish Clear Communication Channels**
+Define which tools and platforms to use for different types of communication (email for formal updates, instant messaging for quick questions, meetings for complex discussions). This prevents confusion and ensures messages reach the right people through appropriate channels.
+
+## 2. **Implement Regular Feedback Sessions**
+Schedule one-on-one check-ins and team meetings where people can share updates, raise concerns, and receive constructive feedback. Regular touchpoints build trust and catch misunderstandings before they become problems.
+
+## 3. **Practice Active Listening**
+Encourage employees to fully focus on speakers without interrupting, ask clarifying questions, and summarize what they've heard. This reduces miscommunication and makes people feel genuinely heard and valued.
+
+---
+
+**Tip:** These methods work best when leadership models good communication practices first, setting the tone for the entire organization."
+Summarize the effects of deforestation,"# Effects of Deforestation
+
+## Environmental Impacts
+- **Climate Change**: Loss of trees reduces CO₂ absorption; releases stored carbon into the atmosphere
+- **Soil Degradation**: Erosion increases without root systems to hold soil together
+- **Water Cycle Disruption**: Reduced water retention and altered precipitation patterns
+- **Biodiversity Loss**: Habitat destruction threatens countless plant and animal species with extinction
+
+## Atmospheric & Climate Effects
+- Decreased oxygen production
+- Increased greenhouse gas emissions
+- Regional temperature increases
+
+## Human & Social Impacts
+- **Economic**: Loss of forest-dependent livelihoods and resources
+- **Health**: Displacement of indigenous communities; exposure to diseases
+- **Food Security**: Reduced agricultural productivity due to soil degradation
+- **Natural Disasters**: Increased flooding and landslides without forest stabilization
+
+## Long-term Consequences
+- Difficulty reversing ecological damage
+- Potential tipping points in climate systems
+- Reduced resilience to future environmental shocks
+- Loss of potential medical discoveries (forest species)
+
+**Primary causes** include agricultural expansion, logging, and urban development, making this a major global environmental challenge."

@@ -1,0 +1,189 @@
+question,answer
+"Generate a couple of story ideas based on the given theme.
+Theme: Music","# Story Ideas Based on Music
+
+## 1. **The Last Concert**
+A renowned but aging pianist discovers she's losing her hearing due to a degenerative condition. Rather than retire in silence, she embarks on a final world tour to perform the pieces that defined her life—but the irony is that with each performance, she hears less and must rely on muscle memory and the audience's emotional response to guide her. The story follows her struggle to accept her vulnerability while creating one last masterpiece with her orchestra, ultimately discovering that music is about more than just hearing it.
+
+## 2. **The Forgotten Melody**
+A music therapist works with patients who have lost their memories to dementia and discovers an extraordinary phenomenon: while her elderly patients can't remember their families, they can perfectly recall and sing songs from their youth. When one patient hums a haunting, unrecognizable tune, the therapist becomes obsessed with tracking down its origin, uncovering a decades-old mystery about a forbidden love affair, a lost composer, and a song that was meant to be forgotten—until now.
+
+---
+
+Both stories explore how music connects to identity, emotion, and memory in deeply human ways. Would you like me to develop either of these further?"
+"Generate an medical diagnosis from the following test result.
+Patient has elevated levels of white blood cells.","# Medical Diagnosis Summary
+
+## Finding
+Elevated white blood cell (WBC) count
+
+## Possible Diagnoses
+
+### Infections (Most Common)
+- **Bacterial infection** (pneumonia, urinary tract infection, appendicitis)
+- **Viral infection** (influenza, COVID-19, mononucleosis)
+- **Fungal infection**
+- **Parasitic infection**
+
+### Inflammatory/Autoimmune Conditions
+- Rheumatoid arthritis
+- Inflammatory bowel disease
+- Systemic lupus erythematosus
+
+### Hematologic Malignancies
+- Leukemia
+- Lymphoma
+
+### Other Causes
+- Leukemoid reaction (severe stress, burns, medications)
+- Smoking
+- Pregnancy
+- Certain medications (corticosteroids)
+- Spleen dysfunction
+
+---
+
+## Recommended Next Steps
+1. **Clinical evaluation** - Review patient symptoms and history
+2. **Differential WBC count** - Determine which types of WBCs are elevated
+3. **Additional testing** - Blood cultures, imaging, or other diagnostics based on clinical presentation
+4. **Follow-up labs** - Serial WBC counts to track trends
+
+**Note:** This elevated WBC finding requires correlation with clinical symptoms and patient history for accurate diagnosis. Consultation with a physician is essential."
+Give an example of a situation in which artificial intelligence could be used to solve a problem.,"# AI in Medical Diagnosis
+
+A practical example: **detecting diabetic retinopathy** (eye disease caused by diabetes).
+
+**The problem:** Millions of diabetics need regular eye screenings, but there's a shortage of ophthalmologists in many regions, causing long wait times and missed diagnoses.
+
+**How AI helps:**
+- AI models trained on thousands of retinal images can analyze eye scans in seconds
+- They identify early warning signs of damage with accuracy comparable to human specialists
+- Screening can happen at local clinics or even pharmacies instead of specialized hospitals
+
+**Real-world impact:**
+- Faster diagnoses for patients who might otherwise go undiagnosed
+- Better resource allocation (specialists focus on complex cases)
+- More accessible care in underserved areas
+
+This illustrates AI's strength: handling repetitive analysis of large amounts of data faster than humans while freeing up expert professionals for higher-level decisions. Similar approaches are being used in cancer detection, manufacturing defects, and fraud prevention."
+"Given a string, return the characters that occurs only once.
+hello","# Characters That Occur Only Once
+
+Here are several solutions:
+
+## Solution 1: Using Dictionary (Python)
+```python
+def chars_once(s):
+    char_count = {}
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+    
+    return ''.join([char for char, count in char_count.items() if count == 1])
+
+result = chars_once(""hello"")
+print(result)  # Output: ""heo""
+```
+
+## Solution 2: Using Counter (Python)
+```python
+from collections import Counter
+
+def chars_once(s):
+    char_count = Counter(s)
+    return ''.join([char for char, count in char_count.items() if count == 1])
+
+result = chars_once(""hello"")
+print(result)  # Output: ""heo""
+```
+
+## Solution 3: Concise One-liner
+```python
+def chars_once(s):
+    return ''.join([char for char in s if s.count(char) == 1])
+
+result = chars_once(""hello"")
+print(result)  # Output: ""heo""
+```
+
+## Analysis for ""hello""
+| Character | Count | Occurs Once? |
+|-----------|-------|--------------|
+| h         | 1     | ✓ Yes        |
+| e         | 1     | ✓ Yes        |
+| l         | 2     | ✗ No         |
+| o         | 1     | ✓ Yes        |
+
+**Result: `""heo""`**
+
+---
+
+**Time Complexity:**
+- Solutions 1 & 2: O(n)
+- Solution 3: O(n²) - avoid for large strings
+
+Choose **Solution 2** for best readability and performance! 🎯"
+"Given the following input, can you output the initial of each word?
+John Apple Smith",J A S
+"Given two sentences, construct a compound sentence using the conjunction ""and"".
+Sentence 1: She wrote a novel.
+Sentence 2: She started painting.","# Compound Sentence
+
+She wrote a novel, and she started painting.
+
+Or alternatively:
+
+She wrote a novel and started painting."
+"Select the sentence that does not contain a grammatical error.
+A. His behavior had been irresponsible and unbelievabley childish.
+B. His behavior had been irresponsable and unbelievably childish.
+C. His behavior have been irresponsible and unbelievably childish.","# Answer: None of the sentences are entirely correct.
+
+However, let me break down each option:
+
+**A.** ""His behavior had been irresponsible and unbelievabley childish.""
+- Error: ""unbelievabley"" (misspelled; should be ""unbelievably"")
+
+**B.** ""His behavior had been irresponsable and unbelievably childish.""
+- Error: ""irresponsable"" (misspelled; should be ""irresponsible"")
+
+**C.** ""His behavior have been irresponsible and unbelievably childish.""
+- Error: ""have"" (incorrect verb; should be ""has"" to agree with singular subject ""behavior"")
+
+If forced to choose the best option, **none are grammatically correct**, but **A and B only contain spelling errors** in one word each, while **C contains a grammatical error** (subject-verb disagreement). 
+
+If this is a multiple-choice test where one answer must be selected, you may want to verify the options, as all three contain errors."
+"Turn the following phrase into an imperative sentence.
+Please take out the garbage",Take out the garbage.
+"Use the following context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.
+The Epson SureColor machines keep getting smarter. Newly updated PrecisionCore Printheads that are 20% larger than the previous generation come standard with Nozzle Verification tech to stay on top of any clogs that can affect print quality and consistency. For those who may have run earlier models of the Epson large format dye sub printers, this is for you - NO MORE POURING INK INTO TANKS! The F6400 line utilizes an updated 1.6L airtight ink pack system with microchip and filtration tech, lessening the chance of dust, fibers or debris getting into the printer.
+Question: Does the Epson SureColor F6470 also have a PrecisionCore printhead?
+Helpful Answer:","I don't know. The context provided discusses the Epson SureColor machines in general and mentions the F6400 line, but it does not specifically mention the F6470 model. Therefore, I cannot definitively answer whether the F6470 has a PrecisionCore printhead based on the information given."
+What challenges will an AI system face while trying to play chess?,"# Chess Challenges for AI Systems
+
+## Computational complexity
+- **Vast game tree**: ~10^120 possible positions make exhaustive analysis impossible
+- **Branching factor**: ~35 legal moves per position on average
+
+## Strategic understanding
+- **Long-term planning**: Balancing immediate tactics with distant positional goals
+- **Pattern recognition**: Identifying meaningful positions among millions of variations
+- **Evaluation difficulty**: Assigning accurate scores to non-obvious positions
+
+## Specific problem areas
+- **Endgames**: Some positions require 50+ moves of perfect play with no immediate progress
+- **Closed positions**: Positions with few tactics where positional judgment matters most
+- **Sacrificial ideas**: Giving up material for abstract compensation is hard to evaluate quantitatively
+
+## Practical limitations
+- **Time constraints**: Must make decisions within reasonable timeframes despite incomplete analysis
+- **Training data bias**: Learning from human games may miss unconventional winning approaches
+
+## Modern solutions
+Most successful chess engines use:
+- Deep search algorithms (alpha-beta pruning)
+- Neural networks for position evaluation
+- Specialized endgame databases
+- Hybrid approaches combining different techniques
+
+Interestingly, this is somewhat solved—computers now vastly outplay humans—but the underlying challenges illustrate why chess remains computationally hard."

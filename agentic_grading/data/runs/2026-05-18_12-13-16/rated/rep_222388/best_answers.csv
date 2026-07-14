@@ -1,0 +1,142 @@
+question,answer
+"Classify the following news report into three categories: Politics, Economics and Social.
+The United Nations Security Council has unanimously adopted resolution 2371 that establishes a tough new sanctions regime against North Korea in response to its ongoing weapons program.","# Classification: **Politics**
+
+## Reasoning:
+This news report is classified as **Politics** because it involves:
+
+- **International diplomacy** - The United Nations Security Council taking official action
+- **Government relations** - Interaction between sovereign nations (UN member states) regarding North Korea's nuclear weapons program
+- **Geopolitical policy** - Implementation of sanctions as a political tool to address national security concerns
+- **Official governance** - A formal UN resolution, which is a governmental/political instrument
+
+While sanctions can have economic implications, the primary focus of this report is on the political decision and diplomatic action taken by the international community."
+Conjugate the verb ‘to read’ for the third person in present tense.,"# Third Person Present Tense of ""to read""
+
+**He/She/It reads**
+
+Example: *She reads a book every evening.*"
+"Construct a mathematical expression that multiplies 3 and 6, then adds 4 to the result.","# Mathematical Expression
+
+**(3 × 6) + 4**
+
+## Solution
+
+1. Multiply: 3 × 6 = 18
+2. Add: 18 + 4 = **22**
+
+The answer is **22**."
+"Create a chart to show the following monthly data:
+
+Month, Sales
+Jan, 5
+Feb, 10
+Mar, 15","# Monthly Sales Chart
+
+```
+Sales by Month
+20 |
+   |                    ███
+15 |                    ███
+   |          ███       ███
+10 |          ███       ███
+   |    ███   ███       ███
+ 5 |    ███   ███       ███
+   |    ███   ███       ███
+ 0 |____|____|____|____|____
+     Jan   Feb   Mar
+```
+
+## Data Summary
+
+| Month | Sales |
+|-------|-------|
+| Jan   | 5     |
+| Feb   | 10    |
+| Mar   | 15    |
+
+**Trend:** Sales are increasing steadily month-over-month, with a growth of 5 units per month."
+"Given two sentences, identify the subject and verb of both of them.
+The sun rises in the morning.
+I had breakfast.","# Subject and Verb Analysis
+
+**Sentence 1: The sun rises in the morning.**
+- **Subject:** the sun
+- **Verb:** rises
+
+**Sentence 2: I had breakfast.**
+- **Subject:** I
+- **Verb:** had"
+List three advantages of online shopping,"# Three Advantages of Online Shopping
+
+1. **Convenience and Time-Saving**
+   - Shop from anywhere, anytime without traveling to stores
+   - No need to wait in checkout lines
+   - Easy to browse multiple products quickly
+
+2. **Wider Selection and Better Prices**
+   - Access products from stores worldwide, not just local retailers
+   - Easy price comparison across different sellers
+   - Often find discounts, deals, and exclusive online offers
+
+3. **Doorstep Delivery**
+   - Items are delivered directly to your home
+   - Eliminates the need to carry heavy shopping bags
+   - Flexible delivery options available for busy schedules"
+"Reword the sentence to use other words without changing the meaning.
+She came late to the meeting.","# Reworded Sentences
+
+Here are several alternatives:
+
+- She arrived late to the meeting.
+- She showed up late to the meeting.
+- She made a late arrival at the meeting.
+- She was tardy to the meeting.
+- She didn't arrive on time for the meeting.
+- She appeared at the meeting later than expected."
+"Rewrite the following statement in the future tense: ""I am rethinking my career plans.""","# Future Tense Rewrite
+
+""I will be rethinking my career plans.""
+
+or
+
+""I am going to rethink my career plans."""
+"Suggest a way to make the following sentence a rhetorical question?
+Charles loves to ride his bike.","# Making it a Rhetorical Question
+
+You could rephrase it as:
+
+**""Doesn't Charles love to ride his bike?""**
+
+or
+
+**""Who doesn't know that Charles loves to ride his bike?""**
+
+Both versions turn the statement into a rhetorical question—they imply the answer is obvious (yes, he does love it) rather than genuinely asking for information. This technique is often used for emphasis or to invite agreement from the listener."
+"You are given a list of words, explain the meaning of each one:
+Forthcoming, perseverance, grueling","# Word Meanings
+
+## Forthcoming
+**Definition:** About to happen or appear soon; imminent.
+
+*Example: The forthcoming election will be held next month.*
+
+Also can mean: Readily available or willing to give information (as in ""He was not forthcoming about his whereabouts"").
+
+---
+
+## Perseverance
+**Definition:** Persistent determination to continue doing something despite difficulty or delay in achieving success.
+
+*Example: Through hard work and perseverance, she eventually earned her degree.*
+
+**Synonyms:** persistence, determination, tenacity, dedication
+
+---
+
+## Grueling
+**Definition:** Extremely tiring and demanding; exhausting (often used to describe difficult tasks, events, or schedules).
+
+*Example: The marathon was a grueling test of physical and mental endurance.*
+
+**Note:** The correct spelling is ""grueling"" (American English) or ""gruelling"" (British English). Both refer to something extremely taxing or arduous."

@@ -1,0 +1,2561 @@
+real_model,sample_idx,model,question,answer
+claude-haiku-4.5,3,claude-opus-5,Build a calculator using HTML and JavaScript.,"# Simple Calculator
+
+Here's a complete calculator with HTML, CSS, and JavaScript:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .calculator {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 320px;
+        }
+
+        .display {
+            background: #222;
+            color: #fff;
+            font-size: 2.5em;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: right;
+            margin-bottom: 20px;
+            word-wrap: break-word;
+            word-break: break-all;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .number {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .number:hover {
+            background: #e0e0e0;
+        }
+
+        .operator {
+            background: #667eea;
+            color: white;
+        }
+
+        .operator:hover {
+            background: #5568d3;
+        }
+
+        .equals {
+            background: #48bb78;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .equals:hover {
+            background: #38a169;
+        }
+
+        .clear {
+            background: #f56565;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .clear:hover {
+            background: #e53e3e;
+        }
+
+        .delete {
+            background: #ed8936;
+            color: white;
+        }
+
+        .delete:hover {
+            background: #dd6b20;
+        }
+    </style>
+</head>
+<body>
+    <div class=""calculator"">
+        <div class=""display"" id=""display"">0</div>
+        <div class=""buttons"">
+            <button class=""clear"" onclick=""clearDisplay()"">AC</button>
+            <button class=""delete"" onclick=""deleteLast()"">DEL</button>
+            <button class=""operator"" onclick=""appendOperator('÷')"">÷</button>
+            <button class=""operator"" onclick=""appendOperator('×')"">×</button>
+
+            <button class=""number"" onclick=""appendNumber('7')"">7</button>
+            <button class=""number"" onclick=""appendNumber('8')"">8</button>
+            <button class=""number"" onclick=""appendNumber('9')"">9</button>
+            <button class=""operator"" onclick=""appendOperator('-')"">-</button>
+
+            <button class=""number"" onclick=""appendNumber('4')"">4</button>
+            <button class=""number"" onclick=""appendNumber('5')"">5</button>
+            <button class=""number"" onclick=""appendNumber('6')"">6</button>
+            <button class=""operator"" onclick=""appendOperator('+')"">+</button>
+
+            <button class=""number"" onclick=""appendNumber('1')"">1</button>
+            <button class=""number"" onclick=""appendNumber('2')"">2</button>
+            <button class=""number"" onclick=""appendNumber('3')"">3</button>
+            <button class=""operator"" onclick=""appendOperator('.')"" style=""grid-row: span 2;"">.</button>
+
+            <button class=""number"" onclick=""appendNumber('0')"" style=""grid-column: span 2;"">0</button>
+            <button class=""equals"" onclick=""calculate()"">=</button>
+        </div>
+    </div>
+
+    <script>
+        let display = document.getElementById('display');
+        let currentInput = '0';
+        let previousInput = '';
+        let operator = null;
+        let shouldResetDisplay = false;
+
+        function updateDisplay() {
+            display.textContent = currentInput;
+        }
+
+        function appendNumber(num) {
+            if (shouldResetDisplay) {
+                currentInput = num;
+                shouldResetDisplay = false;
+            } else {
+                if (currentInput === '0' && num !== '.') {
+                    currentInput = num;
+                } else if (num === '.' && currentInput.includes('.')) {
+                    return;
+                } else {
+                    currentInput += num;
+                }
+            }
+            updateDisplay();
+        }
+
+        function appendOperator(op) {
+            if (operator !== null && !shouldResetDisplay) {
+                calculate();
+            }
+            previousInput = currentInput;
+            operator = op;
+            shouldResetDisplay = true;
+        }
+
+        function calculate() {
+            if (operator === null || shouldResetDisplay) {
+                return;
+            }
+
+            let result;
+            const prev = parseFloat(previousInput);
+            const current = parseFloat(currentInput);
+
+            switch (operator) {
+                case '+':
+                    result = prev + current;
+                    break;
+                case '-':
+                    result = prev - current;
+                    break;
+                case '×':
+                    result = prev * current;
+                    break;
+                case '÷':
+                    result = prev / current;
+                    break;
+                case '.':
+                    return;
+                default:
+                    return;
+            }
+
+            currentInput = result.toString();
+            operator = null;
+            shouldResetDisplay = true;
+            updateDisplay();
+        }
+
+        function clearDisplay() {
+            currentInput = '0';
+            previousInput = '';
+            operator = null;
+            shouldResetDisplay = false;
+            updateDisplay();
+        }
+
+        function deleteLast() {
+            if (currentInput.length > 1) {
+                currentInput = currentInput.slice(0, -1);
+            } else {
+                currentInput = '0';
+            }
+            updateDisplay();
+        }
+
+        // Keyboard support
+        document.addEventListener('keydown', (e) => {
+            if (e.key >= '0' && e.key <= '9') appendNumber(e.key);
+            if (e.key === '.') appendNumber('.');
+            if (e.key === '+' || e.key === '-') appendOperator(e.key);
+            if (e.key === '*') appendOperator('×');
+            if (e.key === '/') {
+                e.preventDefault();
+                appendOperator('÷');
+            }
+            if (e.key === 'Enter' || e.key === '=') {
+                e.preventDefault();
+                calculate();
+            }
+            if (e.key === 'Backspace') deleteLast();
+            if (e.key === 'Escape') clearDisplay();
+        });
+    </script>
+</body>
+</html>
+```
+
+## Features:
+
+✅ **Basic Operations**: Addition, Subtraction, Multiplication, Division
+✅ **Decimal Support**: Handle decimal numbers
+✅ **Clear (AC)**: Reset everything
+✅ **Delete (DEL)**: Remove last digit
+✅ **Keyboard Support**: Use keyboard for input
+✅ **Responsive Design**: Works on different screen sizes
+✅ **Modern UI**: Gradient background, smooth animations
+
+## How to Use:
+
+1. Click number buttons to input values
+2. Click operator buttons (+, -, ×, ÷)
+3. Click = to calculate result
+4. Click AC to clear all
+5. Click DEL to remove last digit
+6. Use your keyboard for quick input
+
+**Keyboard Shortcuts:**
+- Numbers: 0-9
+- Operations: +, -, *, /
+- Calculate: Enter or =
+- Delete: Backspace
+- Clear: Escape
+
+Save this as an `.html` file and open it in your browser!"
+claude-haiku-4.5,5,gpt-6-high,Build a calculator using HTML and JavaScript.,"# Simple Calculator
+
+Here's a complete calculator application with HTML, CSS, and JavaScript:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .calculator {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 320px;
+        }
+
+        .display {
+            background: #333;
+            color: #fff;
+            font-size: 2.5em;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: right;
+            margin-bottom: 20px;
+            word-wrap: break-word;
+            word-break: break-all;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s ease;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .number {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .number:hover {
+            background: #e0e0e0;
+        }
+
+        .operator {
+            background: #667eea;
+            color: white;
+        }
+
+        .operator:hover {
+            background: #5568d3;
+        }
+
+        .equals {
+            background: #48bb78;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .equals:hover {
+            background: #38a169;
+        }
+
+        .clear {
+            background: #f56565;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .clear:hover {
+            background: #e53e3e;
+        }
+
+        .delete {
+            background: #ed8936;
+            color: white;
+        }
+
+        .delete:hover {
+            background: #dd6b20;
+        }
+    </style>
+</head>
+<body>
+    <div class=""calculator"">
+        <div class=""display"" id=""display"">0</div>
+        <div class=""buttons"">
+            <button class=""clear"" onclick=""clearDisplay()"">AC</button>
+            <button class=""delete"" onclick=""deleteLastChar()"">DEL</button>
+            <button class=""operator"" onclick=""appendOperator('÷')"">÷</button>
+            <button class=""number"" onclick=""appendNumber('7')"">7</button>
+            <button class=""number"" onclick=""appendNumber('8')"">8</button>
+            <button class=""number"" onclick=""appendNumber('9')"">9</button>
+            <button class=""operator"" onclick=""appendOperator('×')"">×</button>
+            <button class=""number"" onclick=""appendNumber('4')"">4</button>
+            <button class=""number"" onclick=""appendNumber('5')"">5</button>
+            <button class=""number"" onclick=""appendNumber('6')"">6</button>
+            <button class=""operator"" onclick=""appendOperator('-')"">-</button>
+            <button class=""number"" onclick=""appendNumber('1')"">1</button>
+            <button class=""number"" onclick=""appendNumber('2')"">2</button>
+            <button class=""number"" onclick=""appendNumber('3')"">3</button>
+            <button class=""operator"" onclick=""appendOperator('+')"">+</button>
+            <button class=""number"" onclick=""appendNumber('0')"">0</button>
+            <button class=""number"" onclick=""appendNumber('.')"">.</button>
+            <button class=""equals"" onclick=""calculate()"">=</button>
+        </div>
+    </div>
+
+    <script>
+        let display = document.getElementById('display');
+        let currentInput = '0';
+        let operator = null;
+        let previousValue = null;
+        let shouldResetDisplay = false;
+
+        function updateDisplay() {
+            display.textContent = currentInput;
+        }
+
+        function appendNumber(num) {
+            if (shouldResetDisplay) {
+                currentInput = num;
+                shouldResetDisplay = false;
+            } else {
+                if (currentInput === '0' && num !== '.') {
+                    currentInput = num;
+                } else if (num === '.' && currentInput.includes('.')) {
+                    return;
+                } else {
+                    currentInput += num;
+                }
+            }
+            updateDisplay();
+        }
+
+        function appendOperator(op) {
+            if (operator !== null && !shouldResetDisplay) {
+                calculate();
+            }
+            previousValue = parseFloat(currentInput);
+            operator = op;
+            shouldResetDisplay = true;
+        }
+
+        function calculate() {
+            if (operator === null || shouldResetDisplay) {
+                return;
+            }
+
+            let result;
+            const current = parseFloat(currentInput);
+            const previous = previousValue;
+
+            switch (operator) {
+                case '+':
+                    result = previous + current;
+                    break;
+                case '-':
+                    result = previous - current;
+                    break;
+                case '×':
+                    result = previous * current;
+                    break;
+                case '÷':
+                    result = previous / current;
+                    break;
+                default:
+                    return;
+            }
+
+            currentInput = result.toString();
+            operator = null;
+            previousValue = null;
+            shouldResetDisplay = true;
+            updateDisplay();
+        }
+
+        function clearDisplay() {
+            currentInput = '0';
+            operator = null;
+            previousValue = null;
+            shouldResetDisplay = false;
+            updateDisplay();
+        }
+
+        function deleteLastChar() {
+            if (currentInput.length === 1) {
+                currentInput = '0';
+            } else {
+                currentInput = currentInput.slice(0, -1);
+            }
+            updateDisplay();
+        }
+
+        // Keyboard support
+        document.addEventListener('keydown', (e) => {
+            if (e.key >= '0' && e.key <= '9') appendNumber(e.key);
+            if (e.key === '.') appendNumber('.');
+            if (e.key === '+') appendOperator('+');
+            if (e.key === '-') appendOperator('-');
+            if (e.key === '*') appendOperator('×');
+            if (e.key === '/') {
+                e.preventDefault();
+                appendOperator('÷');
+            }
+            if (e.key === 'Enter' || e.key === '=') {
+                e.preventDefault();
+                calculate();
+            }
+            if (e.key === 'Backspace') {
+                e.preventDefault();
+                deleteLastChar();
+            }
+            if (e.key === 'Escape') clearDisplay();
+        });
+    </script>
+</body>
+</html>
+```
+
+## Features
+
+✨ **Functionality:**
+- Basic arithmetic operations (+, -, ×, ÷)
+- Decimal number support
+- Delete last character (DEL button)
+- Clear all (AC button)
+- Keyboard support for numbers and operations
+
+🎨 **Design:**
+- Modern gradient background
+- Clean, rounded button layout
+- Color-coded buttons (numbers, operators, equals, clear)
+- Hover and active states for better UX
+- Responsive display with text wrapping
+
+⌨️ **Keyboard Shortcuts:**
+- Numbers: 0-9 and .
+- Operations: +, -, *, /
+- Calculate: Enter or =
+- Delete: Backspace
+- Clear: Escape
+
+Just save this as an `.html` file and open it in any browser. The calculator is fully functional and ready to use!"
+claude-haiku-4.5,1,qwen-4,Build a calculator using HTML and JavaScript.,"# Simple Calculator
+
+Here's a complete, functional calculator with HTML, CSS, and JavaScript:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .calculator {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            width: 320px;
+        }
+
+        .display {
+            background: #333;
+            color: #fff;
+            font-size: 2.5em;
+            padding: 20px;
+            text-align: right;
+            word-wrap: break-word;
+            word-break: break-all;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            padding: 20px;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 1.5em;
+            border: none;
+            background: #f0f0f0;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-weight: 600;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background: #e0e0e0;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+            background: #d0d0d0;
+        }
+
+        .operator {
+            background: #667eea;
+            color: white;
+        }
+
+        .operator:hover {
+            background: #5568d3;
+        }
+
+        .operator:active {
+            background: #4457bc;
+        }
+
+        .equals {
+            background: #48bb78;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .equals:hover {
+            background: #38a169;
+        }
+
+        .equals:active {
+            background: #2f855a;
+        }
+
+        .clear {
+            background: #f56565;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .clear:hover {
+            background: #e53e3e;
+        }
+
+        .clear:active {
+            background: #c53030;
+        }
+
+        .delete {
+            background: #ed8936;
+            color: white;
+        }
+
+        .delete:hover {
+            background: #dd6b20;
+        }
+
+        .delete:active {
+            background: #c05621;
+        }
+    </style>
+</head>
+<body>
+    <div class=""calculator"">
+        <div class=""display"" id=""display"">0</div>
+        <div class=""buttons"">
+            <button class=""clear"" onclick=""clearDisplay()"">AC</button>
+            <button class=""delete"" onclick=""deleteLast()"">DEL</button>
+            <button class=""operator"" onclick=""appendOperator('/')"">÷</button>
+            <button class=""operator"" onclick=""appendOperator('*')"">×</button>
+
+            <button onclick=""appendNumber('7')"">7</button>
+            <button onclick=""appendNumber('8')"">8</button>
+            <button onclick=""appendNumber('9')"">9</button>
+            <button class=""operator"" onclick=""appendOperator('-')"">−</button>
+
+            <button onclick=""appendNumber('4')"">4</button>
+            <button onclick=""appendNumber('5')"">5</button>
+            <button onclick=""appendNumber('6')"">6</button>
+            <button class=""operator"" onclick=""appendOperator('+')"">+</button>
+
+            <button onclick=""appendNumber('1')"">1</button>
+            <button onclick=""appendNumber('2')"">2</button>
+            <button onclick=""appendNumber('3')"">3</button>
+            <button class=""operator"" onclick=""appendDecimal()"">.</button>
+
+            <button onclick=""appendNumber('0')"">0</button>
+            <button class=""operator"" onclick=""toggleSign()"">+/−</button>
+            <button class=""equals"" onclick=""calculate()"">=</button>
+        </div>
+    </div>
+
+    <script>
+        let display = document.getElementById('display');
+        let currentInput = '0';
+        let operator = null;
+        let previousValue = null;
+        let shouldResetDisplay = false;
+
+        function updateDisplay() {
+            display.textContent = currentInput;
+        }
+
+        function appendNumber(num) {
+            if (shouldResetDisplay) {
+                currentInput = num;
+                shouldResetDisplay = false;
+            } else {
+                currentInput = currentInput === '0' ? num : currentInput + num;
+            }
+            updateDisplay();
+        }
+
+        function appendDecimal() {
+            if (shouldResetDisplay) {
+                currentInput = '0.';
+                shouldResetDisplay = false;
+            } else if (!currentInput.includes('.')) {
+                currentInput += '.';
+            }
+            updateDisplay();
+        }
+
+        function appendOperator(op) {
+            if (operator !== null && !shouldResetDisplay) {
+                calculate();
+            }
+            previousValue = parseFloat(currentInput);
+            operator = op;
+            shouldResetDisplay = true;
+        }
+
+        function calculate() {
+            if (operator === null || previousValue === null) return;
+
+            let result;
+            const current = parseFloat(currentInput);
+
+            switch (operator) {
+                case '+':
+                    result = previousValue + current;
+                    break;
+                case '-':
+                    result = previousValue - current;
+                    break;
+                case '*':
+                    result = previousValue * current;
+                    break;
+                case '/':
+                    result = current !== 0 ? previousValue / current : 0;
+                    break;
+                default:
+                    return;
+            }
+
+            currentInput = result.toString();
+            operator = null;
+            previousValue = null;
+            shouldResetDisplay = true;
+            updateDisplay();
+        }
+
+        function clearDisplay() {
+            currentInput = '0';
+            operator = null;
+            previousValue = null;
+            shouldResetDisplay = false;
+            updateDisplay();
+        }
+
+        function deleteLast() {
+            if (currentInput.length > 1) {
+                currentInput = currentInput.slice(0, -1);
+            } else {
+                currentInput = '0';
+            }
+            updateDisplay();
+        }
+
+        function toggleSign() {
+            const num = parseFloat(currentInput);
+            currentInput = (-num).toString();
+            updateDisplay();
+        }
+
+        // Initialize display
+        updateDisplay();
+    </script>
+</body>
+</html>
+```
+
+## Features:
+
+✅ **Basic Operations**: Addition, subtraction, multiplication, division
+✅ **Decimal Support**: Calculate with decimal numbers
+✅ **Clear Function (AC)**: Reset calculator to initial state
+✅ **Delete (DEL)**: Remove the last digit
+✅ **Sign Toggle (+/−)**: Change positive/negative numbers
+✅ **Responsive Design**: Works on different screen sizes
+✅ **Beautiful UI**: Modern gradient background and smooth animations
+✅ **Keyboard Support Ready**: Can be extended for keyboard input
+
+## How to Use:
+
+1. Save the code as an `.html` file
+2. Open it in your web browser
+3. Click buttons to perform calculations
+4. Use AC to clear, DEL to delete the last digit
+
+You can further enhance this by adding keyboard support, more operations (square root, percentage, etc.), or history functionality!"
+claude-haiku-4.5,4,qwen-4-high,Build a calculator using HTML and JavaScript.,"# Calculator Application
+
+Here's a complete calculator with HTML, CSS, and JavaScript:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .calculator {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            width: 320px;
+            overflow: hidden;
+        }
+
+        .display {
+            background: #2d3436;
+            color: #fff;
+            font-size: 2.5rem;
+            padding: 20px;
+            text-align: right;
+            min-height: 100px;
+            word-wrap: break-word;
+            word-break: break-all;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .previous-operand {
+            color: #b2bec3;
+            font-size: 1.5rem;
+            min-height: 24px;
+        }
+
+        .current-operand {
+            color: #fff;
+            font-size: 2.5rem;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            padding: 10px;
+            background: #ecf0f1;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 1.5rem;
+            border: none;
+            background: #fff;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: all 0.2s;
+            font-weight: 600;
+        }
+
+        button:hover {
+            background: #ecf0f1;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .operator {
+            background: #667eea;
+            color: white;
+        }
+
+        .operator:hover {
+            background: #5568d3;
+        }
+
+        .equals {
+            background: #00b894;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .equals:hover {
+            background: #00a383;
+        }
+
+        .clear {
+            background: #ff7675;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .clear:hover {
+            background: #d63031;
+        }
+
+        .delete {
+            background: #fdcb6e;
+            color: #2d3436;
+        }
+
+        .delete:hover {
+            background: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <div class=""calculator"">
+        <div class=""display"">
+            <div class=""previous-operand"" id=""previousOperand""></div>
+            <div class=""current-operand"" id=""currentOperand"">0</div>
+        </div>
+        <div class=""buttons"">
+            <button class=""clear"" onclick=""calculator.clear()"">AC</button>
+            <button class=""delete"" onclick=""calculator.delete()"">DEL</button>
+            <button class=""operator"" onclick=""calculator.chooseOperation('÷')"">÷</button>
+            <button onclick=""calculator.appendNumber('7')"">7</button>
+            <button onclick=""calculator.appendNumber('8')"">8</button>
+            <button onclick=""calculator.appendNumber('9')"">9</button>
+            <button class=""operator"" onclick=""calculator.chooseOperation('×')"">×</button>
+            <button onclick=""calculator.appendNumber('4')"">4</button>
+            <button onclick=""calculator.appendNumber('5')"">5</button>
+            <button onclick=""calculator.appendNumber('6')"">6</button>
+            <button class=""operator"" onclick=""calculator.chooseOperation('-')"">-</button>
+            <button onclick=""calculator.appendNumber('1')"">1</button>
+            <button onclick=""calculator.appendNumber('2')"">2</button>
+            <button onclick=""calculator.appendNumber('3')"">3</button>
+            <button class=""operator"" onclick=""calculator.chooseOperation('+')"">+</button>
+            <button onclick=""calculator.appendNumber('0')"">0</button>
+            <button onclick=""calculator.appendNumber('.')"">.</button>
+            <button class=""equals"" onclick=""calculator.compute()"">=</button>
+        </div>
+    </div>
+
+    <script>
+        class Calculator {
+            constructor(previousOperandElement, currentOperandElement) {
+                this.previousOperandElement = previousOperandElement;
+                this.currentOperandElement = currentOperandElement;
+                this.clear();
+            }
+
+            clear() {
+                this.currentOperand = '';
+                this.previousOperand = '';
+                this.operation = undefined;
+                this.updateDisplay();
+            }
+
+            delete() {
+                this.currentOperand = this.currentOperand.toString().slice(0, -1);
+                this.updateDisplay();
+            }
+
+            appendNumber(number) {
+                // Prevent multiple decimal points
+                if (number === '.' && this.currentOperand.includes('.')) return;
+                this.currentOperand = this.currentOperand.toString() + number.toString();
+                this.updateDisplay();
+            }
+
+            chooseOperation(operation) {
+                if (this.currentOperand === '') return;
+                if (this.previousOperand !== '') {
+                    this.compute();
+                }
+                this.operation = operation;
+                this.previousOperand = this.currentOperand;
+                this.currentOperand = '';
+                this.updateDisplay();
+            }
+
+            compute() {
+                let computation;
+                const prev = parseFloat(this.previousOperand);
+                const current = parseFloat(this.currentOperand);
+                if (isNaN(prev) || isNaN(current)) return;
+
+                switch (this.operation) {
+                    case '+':
+                        computation = prev + current;
+                        break;
+                    case '-':
+                        computation = prev - current;
+                        break;
+                    case '×':
+                        computation = prev * current;
+                        break;
+                    case '÷':
+                        computation = prev / current;
+                        break;
+                    default:
+                        return;
+                }
+                this.currentOperand = computation;
+                this.operation = undefined;
+                this.previousOperand = '';
+                this.updateDisplay();
+            }
+
+            updateDisplay() {
+                this.currentOperandElement.innerText = 
+                    this.currentOperand || '0';
+                if (this.operation != null) {
+                    this.previousOperandElement.innerText = 
+                        `${this.previousOperand} ${this.operation}`;
+                } else {
+                    this.previousOperandElement.innerText = '';
+                }
+            }
+        }
+
+        const previousOperandElement = document.getElementById('previousOperand');
+        const currentOperandElement = document.getElementById('currentOperand');
+        const calculator = new Calculator(previousOperandElement, currentOperandElement);
+
+        // Keyboard support
+        document.addEventListener('keydown', (e) => {
+            if (e.key >= '0' && e.key <= '9') calculator.appendNumber(e.key);
+            if (e.key === '.') calculator.appendNumber(e.key);
+            if (e.key === '+' || e.key === '-') calculator.chooseOperation(e.key);
+            if (e.key === '*') calculator.chooseOperation('×');
+            if (e.key === '/') {
+                e.preventDefault();
+                calculator.chooseOperation('÷');
+            }
+            if (e.key === 'Enter' || e.key === '=') calculator.compute();
+            if (e.key === 'Backspace') calculator.delete();
+            if (e.key === 'Escape') calculator.clear();
+        });
+    </script>
+</body>
+</html>
+```
+
+## Features
+
+✅ **Basic Operations**: Addition, Subtraction, Multiplication, Division  
+✅ **Clear (AC)**: Reset calculator  
+✅ **Delete (DEL)**: Remove last digit  
+✅ **Decimal Support**: Handle decimal numbers  
+✅ **Keyboard Support**:
+- Numbers: `0-9`
+- Operations: `+`, `-`, `*`, `/`
+- Equals: `Enter` or `=`
+- Delete: `Backspace`
+- Clear: `Escape`
+
+✅ **Responsive Design**: Works on mobile and desktop  
+✅ **Modern UI**: Gradient background, smooth transitions
+
+## How to Use
+
+1. Save the code as an `.html` file
+2. Open it in any web browser
+3. Click buttons or use keyboard for calculations"
+claude-haiku-4.5,0,gpt-6,Build a calculator using HTML and JavaScript.,"# Simple Calculator
+
+Here's a complete calculator with HTML, CSS, and JavaScript:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .calculator {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .display {
+            background: #222;
+            color: #fff;
+            font-size: 2.5rem;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: right;
+            margin-bottom: 20px;
+            word-wrap: break-word;
+            word-break: break-all;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 1.5rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .number {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .number:hover {
+            background: #e0e0e0;
+        }
+
+        .operator {
+            background: #667eea;
+            color: white;
+        }
+
+        .operator:hover {
+            background: #5568d3;
+        }
+
+        .equals {
+            background: #48bb78;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .equals:hover {
+            background: #38a169;
+        }
+
+        .clear {
+            background: #f56565;
+            color: white;
+            grid-column: span 2;
+        }
+
+        .clear:hover {
+            background: #e53e3e;
+        }
+
+        .delete {
+            background: #ed8936;
+            color: white;
+        }
+
+        .delete:hover {
+            background: #dd6b20;
+        }
+    </style>
+</head>
+<body>
+    <div class=""calculator"">
+        <div class=""display"" id=""display"">0</div>
+        <div class=""buttons"">
+            <button class=""clear"" onclick=""clearDisplay()"">C</button>
+            <button class=""delete"" onclick=""deleteLast()"">DEL</button>
+            <button class=""operator"" onclick=""appendOperator('/')"">÷</button>
+            <button class=""operator"" onclick=""appendOperator('*')"">×</button>
+
+            <button class=""number"" onclick=""appendNumber('7')"">7</button>
+            <button class=""number"" onclick=""appendNumber('8')"">8</button>
+            <button class=""number"" onclick=""appendNumber('9')"">9</button>
+            <button class=""operator"" onclick=""appendOperator('-')"">−</button>
+
+            <button class=""number"" onclick=""appendNumber('4')"">4</button>
+            <button class=""number"" onclick=""appendNumber('5')"">5</button>
+            <button class=""number"" onclick=""appendNumber('6')"">6</button>
+            <button class=""operator"" onclick=""appendOperator('+')"">+</button>
+
+            <button class=""number"" onclick=""appendNumber('1')"">1</button>
+            <button class=""number"" onclick=""appendNumber('2')"">2</button>
+            <button class=""number"" onclick=""appendNumber('3')"">3</button>
+            <button class=""operator"" onclick=""appendOperator('%')"">%</button>
+
+            <button class=""number"" onclick=""appendNumber('0')"" style=""grid-column: span 2;"">0</button>
+            <button class=""number"" onclick=""appendNumber('.')"">.</button>
+            <button class=""equals"" onclick=""calculate()"">=</button>
+        </div>
+    </div>
+
+    <script>
+        let display = document.getElementById('display');
+        let currentInput = '0';
+        let operator = null;
+        let previousInput = null;
+        let shouldResetDisplay = false;
+
+        function updateDisplay() {
+            display.textContent = currentInput;
+        }
+
+        function appendNumber(num) {
+            if (shouldResetDisplay) {
+                currentInput = num;
+                shouldResetDisplay = false;
+            } else {
+                if (currentInput === '0' && num !== '.') {
+                    currentInput = num;
+                } else if (num === '.' && currentInput.includes('.')) {
+                    return;
+                } else {
+                    currentInput += num;
+                }
+            }
+            updateDisplay();
+        }
+
+        function appendOperator(op) {
+            if (operator !== null && !shouldResetDisplay) {
+                calculate();
+            }
+            previousInput = currentInput;
+            operator = op;
+            shouldResetDisplay = true;
+            updateDisplay();
+        }
+
+        function calculate() {
+            if (operator === null || previousInput === null) return;
+
+            let result;
+            const prev = parseFloat(previousInput);
+            const current = parseFloat(currentInput);
+
+            switch (operator) {
+                case '+':
+                    result = prev + current;
+                    break;
+                case '-':
+                    result = prev - current;
+                    break;
+                case '*':
+                    result = prev * current;
+                    break;
+                case '/':
+                    result = current !== 0 ? prev / current : 'Error';
+                    break;
+                case '%':
+                    result = prev % current;
+                    break;
+                default:
+                    return;
+            }
+
+            currentInput = result.toString();
+            operator = null;
+            previousInput = null;
+            shouldResetDisplay = true;
+            updateDisplay();
+        }
+
+        function clearDisplay() {
+            currentInput = '0';
+            operator = null;
+            previousInput = null;
+            shouldResetDisplay = false;
+            updateDisplay();
+        }
+
+        function deleteLast() {
+            if (currentInput.length > 1) {
+                currentInput = currentInput.slice(0, -1);
+            } else {
+                currentInput = '0';
+            }
+            updateDisplay();
+        }
+    </script>
+</body>
+</html>
+```
+
+## Features
+
+✅ **Basic Operations**: Addition, subtraction, multiplication, division, modulo
+✅ **Clear (C)**: Resets the calculator
+✅ **Delete (DEL)**: Removes the last digit
+✅ **Decimal Support**: Handles decimal numbers
+✅ **Chain Calculations**: Automatically calculates when changing operators
+✅ **Error Handling**: Prevents division by zero
+✅ **Responsive Design**: Works on mobile and desktop
+✅ **Modern UI**: Gradient background with smooth animations
+
+## How to Use
+
+1. Save the code as `calculator.html`
+2. Open it in any web browser
+3. Click buttons to perform calculations
+
+Try it out! The calculator is fully functional and ready to use."
+claude-haiku-4.5,2,claude-opus-5-high,Build a calculator using HTML and JavaScript.,"# Simple Calculator
+
+Here's a complete calculator application with HTML, CSS, and JavaScript:
+
+```html
+<!DOCTYPE html>
+<html lang=""en"">
+<head>
+    <meta charset=""UTF-8"">
+    <meta name=""viewport"" content=""width=device-width, initial-scale=1.0"">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .calculator {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            width: 320px;
+        }
+
+        .display {
+            background: #2d3436;
+            color: #00ff00;
+            font-size: 2.5em;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: right;
+            margin-bottom: 20px;
+            word-wrap: break-word;
+            word-break: break-all;
+            min-height: 60px;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 1.5em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s;
+            color: white;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        .number {
+            background: #4a4a4a;
+        }
+
+        .number:hover {
+            background: #5a5a5a;
+        }
+
+        .operator {
+            background: #667eea;
+        }
+
+        .operator:hover {
+            background: #5568d3;
+        }
+
+        .equals {
+            background: #10ac84;
+            grid-column: span 2;
+        }
+
+        .equals:hover {
+            background: #0a8c6a;
+        }
+
+        .clear {
+            background: #ee5a6f;
+            grid-column: span 2;
+        }
+
+        .clear:hover {
+            background: #d4444f;
+        }
+
+        .delete {
+            background: #f39c12;
+        }
+
+        .delete:hover {
+            background: #d68910;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class=""container"">
+        <h1>Calculator</h1>
+        <div class=""calculator"">
+            <div class=""display"" id=""display"">0</div>
+            <div class=""buttons"">
+                <button class=""clear"" onclick=""clearDisplay()"">C</button>
+                <button class=""delete"" onclick=""deleteLast()"">DEL</button>
+                <button class=""operator"" onclick=""appendOperator('/')"">÷</button>
+                <button class=""operator"" onclick=""appendOperator('*')"">×</button>
+
+                <button class=""number"" onclick=""appendNumber('7')"">7</button>
+                <button class=""number"" onclick=""appendNumber('8')"">8</button>
+                <button class=""number"" onclick=""appendNumber('9')"">9</button>
+                <button class=""operator"" onclick=""appendOperator('-')"">−</button>
+
+                <button class=""number"" onclick=""appendNumber('4')"">4</button>
+                <button class=""number"" onclick=""appendNumber('5')"">5</button>
+                <button class=""number"" onclick=""appendNumber('6')"">6</button>
+                <button class=""operator"" onclick=""appendOperator('+')"">+</button>
+
+                <button class=""number"" onclick=""appendNumber('1')"">1</button>
+                <button class=""number"" onclick=""appendNumber('2')"">2</button>
+                <button class=""number"" onclick=""appendNumber('3')"">3</button>
+                <button class=""operator"" onclick=""appendOperator('.')"">.</button>
+
+                <button class=""number"" onclick=""appendNumber('0')"" style=""grid-column: span 2;"">0</button>
+                <button class=""equals"" onclick=""calculate()"">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let display = document.getElementById('display');
+        let expression = '';
+
+        function appendNumber(num) {
+            // Prevent multiple leading zeros
+            if (expression === '0' && num === '0') return;
+            
+            // Replace leading zero with new number
+            if (expression === '0' && num !== '.') {
+                expression = num;
+            } else {
+                expression += num;
+            }
+            
+            updateDisplay();
+        }
+
+        function appendOperator(op) {
+            // Prevent operator at the beginning
+            if (expression === '') {
+                if (op === '-') {
+                    expression = '-';
+                }
+                return;
+            }
+
+            // Prevent multiple operators in a row
+            const lastChar = expression[expression.length - 1];
+            if (['+', '-', '*', '/', '.'].includes(lastChar)) {
+                if (op === '-' && lastChar !== '-') {
+                    expression += op;
+                } else if (lastChar !== '-') {
+                    expression = expression.slice(0, -1) + op;
+                }
+                return;
+            }
+
+            expression += op;
+            updateDisplay();
+        }
+
+        function calculate() {
+            try {
+                // Evaluate the expression
+                const result = eval(expression);
+                expression = String(result);
+                updateDisplay();
+            } catch (error) {
+                display.textContent = 'Error';
+                expression = '';
+            }
+        }
+
+        function clearDisplay() {
+            expression = '';
+            updateDisplay();
+        }
+
+        function deleteLast() {
+            expression = expression.slice(0, -1);
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            display.textContent = expression === '' ? '0' : expression;
+        }
+
+        // Keyboard support
+        document.addEventListener('keydown', function(event) {
+            const key = event.key;
+
+            if (key >= '0' && key <= '9') {
+                appendNumber(key);
+            } else if (key === '+' || key === '-' || key === '*' || key === '/') {
+                appendOperator(key);
+            } else if (key === '.') {
+                appendOperator('.');
+            } else if (key === 'Enter' || key === '=') {
+                calculate();
+            } else if (key === 'Backspace') {
+                deleteLast();
+            } else if (key === 'Escape') {
+                clearDisplay();
+            }
+        });
+
+        // Initialize display
+        updateDisplay();
+    </script>
+</body>
+</html>
+```
+
+## Features
+
+✨ **Functionality:**
+- Basic arithmetic operations (+, −, ×, ÷)
+- Decimal point support
+- Clear (C) button to reset
+- Delete (DEL) button to remove last character
+- Keyboard support (numbers, operators, Enter, Backspace, Escape)
+
+🎨 **Design:**
+- Modern gradient background
+- Responsive layout
+- Smooth button animations
+- Color-coded buttons (numbers, operators, equals, clear)
+- Large, easy-to-read display with green text on dark background
+
+🔧 **Smart Features:**
+- Prevents multiple leading zeros
+- Prevents multiple operators in a row
+- Error handling for invalid expressions
+- Keyboard input support
+
+Simply save this as an `.html` file and open it in your browser!"
+claude-haiku-4.5,2,qwen-4,"Come up with a pun for a given word.
+Coffee","# Coffee Pun
+
+**I'm not *espresso* myself well today, but I'm still *brew*-tiful!**
+
+Or if you want something shorter:
+
+**I'd tell you a coffee joke, but it's too *latte* for that.**"
+claude-haiku-4.5,3,claude-opus-5,"Come up with a pun for a given word.
+Coffee","# Coffee Pun
+
+**""I'm not saying I'm addicted to coffee, but I'd be a *espresso* mess without it!""**
+
+Or if you prefer something shorter:
+
+**""Time for my *latte* morning motivation!""**"
+claude-haiku-4.5,0,qwen-4-high,"Come up with a pun for a given word.
+Coffee","# Coffee Pun
+
+**""I'm not saying I'm addicted to coffee, but I'd be a *latte* grumpy without it!""**
+
+(This plays on ""latte"" sounding like ""a lot of"" 😄)"
+claude-haiku-4.5,5,gpt-6-high,"Come up with a pun for a given word.
+Coffee","# Coffee Pun
+
+**""I'm not saying I'm addicted to coffee, but I'd be a *latte* less functional without it.""**
+
+(A play on ""a lot"" and ""latte"" ☕)"
+claude-haiku-4.5,4,claude-opus-5-high,"Come up with a pun for a given word.
+Coffee","# Coffee Pun
+
+**""I'm not saying I'm addicted to coffee, but I'd be a *de-calf-inated* mess without it!""**
+
+Or if you prefer something shorter:
+
+**""Life happens, coffee helps. You could say it's my *daily grind*.""**"
+claude-haiku-4.5,1,gpt-6,"Come up with a pun for a given word.
+Coffee","# Coffee Pun
+
+Why did the coffee file a police report?
+
+It got **mugged**! ☕"
+claude-haiku-4.5,2,qwen-4,Come up with a set of rules for a game.,"# NEXUS: A Strategic Card Game
+
+## Setup
+- 2-4 players
+- Each player gets 20 Health points
+- Shuffle the deck and deal 5 cards to each player
+- Place remaining cards as the Draw Pile
+
+## Card Types
+- **Agents** (cost 1-5 energy): Creatures that stay in play
+- **Spells** (cost 1-4 energy): One-time effects that go to discard pile
+- **Artifacts** (cost 2-6 energy): Permanent effects in play
+- **Shields** (cost 1-2 energy): Protection that blocks one attack
+
+## Turn Structure
+1. **Refresh Phase**: Gain 5 energy (max 10)
+2. **Play Phase**: Play any number of cards from your hand
+3. **Attack Phase**: Attack opponents or their cards
+4. **End Phase**: Discard down to 7 cards, draw 1 card
+
+## Combat Rules
+- Agents have Attack and Defense values
+- Attacking player's agent fights defending player's agent
+- Damage = Attacker's Attack - Defender's Defense
+- Unblocked attacks damage opponent's Health
+- Agents remain in play until destroyed (Defense reduced to 0)
+- Each agent can attack once per turn
+
+## Winning
+First player to reduce all opponents' Health to 0 wins!
+
+## Special Rules
+- Players can pass their turn anytime
+- Cards in discard pile can be reshuffled if Draw Pile runs empty
+- Shields activate automatically when attacked
+
+Would you like me to expand any section?"
+claude-haiku-4.5,4,gpt-6,Come up with a set of rules for a game.,"# Tile Stack
+
+## Objective
+Be the first player to place all your tiles on the board while preventing opponents from doing the same.
+
+## Setup
+- Each player gets 12 tiles numbered 1-12
+- Players sit in a circle
+- Place one ""starter tile"" (numbered 6) in the center of the board
+
+## Rules
+
+**On Your Turn, Do One Of The Following:**
+
+1. **Play a Tile** - Place a tile adjacent to any tile already on the board. Your tile's number must be within 3 of an adjacent tile's number (e.g., a 5 can touch 2-8).
+
+2. **Stack a Tile** - Place a tile directly on top of an existing tile. You can only stack on tiles you've already played. Stack limit: 3 tiles high.
+
+3. **Pass** - Skip your turn if you can't or won't play.
+
+**Special Rules:**
+- If you play a tile matching a neighbor's number exactly, you **block** that tile—it can't be built upon until your next turn.
+- If you create a stack of exactly 3 tiles, you draw a ""Power Card"" (see below)
+- Three passes in a row by any player = that player draws a penalty tile from the pile
+
+**Power Cards (optional):**
+- *Swap*: Exchange one of your tiles with an opponent's unplayed tile
+- *Undo*: Take back your last move
+- *Peek*: Look at one opponent's tiles
+
+## Winning
+First player to play all 12 tiles wins!
+
+---
+
+Would you like me to adjust the complexity or theme?"
+claude-haiku-4.5,3,qwen-4-high,Come up with a set of rules for a game.,"# NEXUS: A Strategy Card Game
+
+## Objective
+Be the first player to build a complete network of 5 connected stations.
+
+## Setup
+- Each player gets 1 Command Card and 5 Station tiles
+- Shuffle the deck of 60 Action Cards and deal 5 to each player
+- Place the Central Hub in the middle of the playing area
+
+## Turn Structure
+On your turn, do the following in order:
+
+1. **Play an Action Card** (or pass)
+2. **Place or Move** one Station tile
+3. **Draw back up** to 5 cards
+
+## Action Cards
+Each card provides one of these effects:
+- **Build**: Place a new Station tile adjacent to an existing one
+- **Link**: Draw a connection between two of your stations
+- **Redirect**: Move one opponent's Station tile one space
+- **Fortify**: Add a shield to one of your Stations (blocks one redirect attempt)
+- **Scan**: Look at one opponent's hand
+
+## Connection Rules
+- Stations must form an unbroken chain
+- Connections can't cross through opponent stations
+- The Central Hub counts as a connection point for any player
+
+## Special Rules
+- **Blocking**: If an opponent surrounds your Station on all sides, it's locked until your next turn
+- **Collision**: You can't place a Station where another exists
+- **Alliance Cards**: Trade one card with an opponent once per round
+
+## Winning
+First player to link 5 stations in an unbroken chain wins. If the deck runs out, the player with the longest chain wins."
+claude-haiku-4.5,0,claude-opus-5-high,Come up with a set of rules for a game.,"# HEXAGON RUSH
+
+## Objective
+Be the first player to connect six of your colored tokens in a straight line (horizontally, vertically, or diagonally) on the board.
+
+## Setup
+- 2-4 players, each with a unique color
+- Place the 7×7 hexagonal grid board between players
+- Each player starts with 20 tokens
+- Randomly determine turn order
+
+## Turn Structure
+On your turn, you **must** do one of the following:
+
+**Option A: Place**
+- Place one token on any empty space
+- Cannot place adjacent to your own tokens
+
+**Option B: Move**
+- Move one of your existing tokens to an adjacent empty space
+- Cannot move into a position where it would be adjacent to your own other tokens
+
+**Option C: Remove**
+- Remove one opponent's token from the board
+- Only once per game
+
+## Rules
+- Tokens must be separated by at least one empty space
+- A valid winning line cannot have any gaps
+- If a player cannot make a legal move, they skip their turn
+- Game ends immediately when someone wins
+
+## Advanced Variant
+Add ""Power Spaces"" (marked with stars) that allow a player to place TWO tokens instead of one on their turn.
+
+---
+
+**Ready to play?**"
+claude-haiku-4.5,1,claude-opus-5,Come up with a set of rules for a game.,"# CAPTURE THE COLORS
+
+A fast-paced, strategy card game for 2-4 players
+
+## SETUP
+- Shuffle the deck and deal 5 cards to each player
+- Place the remaining deck in the center
+- Each player starts with 0 points
+
+## CARD TYPES
+- **Color Cards** (Red, Blue, Yellow, Green): Worth 1-5 points each
+- **Action Cards**: Change game state (Wild, Block, Steal, Draw)
+- **Multiplier Cards**: Double or triple your points
+
+## TURN SEQUENCE
+1. **Play** one card face-up in front of you
+2. **Draw** one card from the deck
+3. **Activate** any special effects from your card
+
+## SCORING
+- Color cards accumulate points
+- First player to reach 50 points wins
+- *Twist*: If you play the same color three times in a row, all your color cards of that color are **discarded**
+
+## ACTION CARD EFFECTS
+- **Wild**: Change one opponent's card to any color
+- **Block**: Prevent the next player's turn
+- **Steal**: Take one card from any opponent's pile
+- **Draw**: Immediately draw 2 extra cards
+
+## WINNING
+Reach 50 points first, OR eliminate all opponents' cards (they draw 5 new cards and restart at 0).
+
+**Play time:** 15-30 minutes"
+claude-haiku-4.5,5,gpt-6-high,Come up with a set of rules for a game.,"# ECHO HUNT
+
+A competitive deduction game for 2-4 players (20-30 minutes)
+
+## SETUP
+- One player is the **Echo** (secretly chosen)
+- Other players are **Hunters**
+- Shuffle 30 cards: 20 with nouns, 10 with special action cards
+- Deal 5 cards face-up in a line (the ""Signal"")
+
+## CORE RULES
+
+**Each Round:**
+1. The Echo describes the Signal cards in exactly 10 words, without using card words directly
+2. Hunters take 1 minute to discuss and vote on which player they think is the Echo
+3. Reveal votes simultaneously
+4. If majority votes correctly → Hunters win the round (1 point)
+5. If Echo survives → Echo wins the round (1 point)
+
+**Twist Cards** (in the action deck):
+- *Reverse*: Description must be exactly 5 words instead
+- *Mirror*: Hunters vote secretly in writing
+- *Echo*: Echo must describe only 3 cards, ignoring 2
+- *Silence*: Echo cannot use any adjectives
+
+## WINNING
+- First to 5 round wins claims overall victory
+- OR best score after 8 rounds
+
+## STRATEGY NOTES
+- Echo wins by being confusing but believable
+- Hunters win by spotting suspicious descriptions
+- Bland descriptions are suspicious; creative ones might hide the Echo
+
+---
+
+What type of game were you hoping for? I can adjust the complexity or theme!"
+claude-haiku-4.5,5,gpt-6,Give me practical tips on how to save money.,"# Practical Money-Saving Tips
+
+## Spending Habits
+- **Track spending** for a month to see where your money actually goes
+- **Use the 50/30/20 rule**: 50% needs, 30% wants, 20% savings
+- **Wait 30 days** before non-essential purchases to avoid impulse buys
+- **Unsubscribe** from unused services (apps, memberships, subscriptions)
+
+## Shopping Smart
+- Make a grocery list and stick to it
+- Use cashback apps and discount codes
+- Buy generic/store brands instead of name brands
+- Shop secondhand for clothes, furniture, and books
+
+## Reduce Major Expenses
+- **Housing**: refinance loans, negotiate insurance rates
+- **Transportation**: carpool, use public transit, or bike when possible
+- **Utilities**: switch off lights, use programmable thermostats, fix leaks
+
+## Automate Savings
+- Set up automatic transfers to a savings account on payday
+- Pay yourself first—treat savings like a non-negotiable bill
+
+## Cut Small Costs
+- Cook at home instead of eating out
+- Make coffee at home
+- Cancel unused gym memberships
+- Use free entertainment options
+
+## Build Good Habits
+- Create a realistic budget you'll actually follow
+- Find an accountability partner
+- Celebrate small wins to stay motivated
+
+**Start small**: Pick 2-3 changes to implement first rather than overhauling everything at once.
+
+What area would you like to focus on first?"
+claude-haiku-4.5,1,qwen-4,Give me practical tips on how to save money.,"# Practical Money-Saving Tips
+
+## Track Your Spending
+- Use an app or spreadsheet to see where money actually goes
+- Review bank statements monthly to spot patterns
+
+## Cut Unnecessary Expenses
+- Cancel unused subscriptions
+- Cook at home instead of eating out
+- Use generic/store brands
+- Shop secondhand when possible
+
+## Reduce Major Costs
+- Negotiate bills (insurance, internet, phone)
+- Carpool or use public transit
+- Find cheaper housing if feasible
+- Shop around for better rates
+
+## Automate Savings
+- Set up automatic transfers to savings on payday
+- Even small amounts ($25-50) add up over time
+- ""Pay yourself first"" before spending
+
+## Smart Shopping
+- Use lists and stick to them
+- Avoid shopping when hungry or emotional
+- Wait 24 hours before non-essential purchases
+- Use cashback apps and coupons strategically
+
+## Increase Income
+- Ask for a raise
+- Pick up side work
+- Sell items you don't need
+
+## Build Habits
+- Use the ""no-spend"" challenge for a week
+- Find free entertainment options
+- Make small swaps (coffee at home vs. café)
+
+**Start with 1-2 changes** rather than overhauling everything at once. Small, consistent changes compound over time.
+
+What area interests you most?"
+claude-haiku-4.5,0,gpt-6-high,Give me practical tips on how to save money.,"# Practical Money-Saving Tips
+
+## Spending Control
+- **Track expenses** — use an app or spreadsheet for a week to see where money goes
+- **Use the 50/30/20 rule** — allocate 50% to needs, 30% to wants, 20% to savings
+- **Implement a waiting period** — wait 24-48 hours before non-essential purchases
+
+## Reduce Regular Costs
+- **Audit subscriptions** — cancel unused streaming, apps, and memberships
+- **Negotiate bills** — call providers (insurance, internet, phone) for better rates
+- **Cook at home** — meal planning and prep beats eating out
+- **Cut energy use** — unplug devices, adjust thermostat, use LED bulbs
+
+## Build Better Habits
+- **Pay yourself first** — automatically transfer a portion to savings before spending
+- **Use the envelope method** — allocate cash to categories to limit overspending
+- **Shop with a list** — stick to planned purchases, avoid impulse buys
+- **Buy generic brands** — often identical quality at lower cost
+
+## Earn Extra Income
+- **Sell unused items** — declutter and monetize
+- **Side gigs** — freelancing, tutoring, or task work for extra cash
+
+## Long-Term Strategies
+- **Build an emergency fund** — start with $500–$1,000
+- **Automate savings** — out of sight, out of mind
+
+**Start small** — pick 2-3 changes rather than overhauling everything at once. Small consistent wins compound over time."
+claude-haiku-4.5,3,qwen-4-high,Give me practical tips on how to save money.,"# Practical Money-Saving Tips
+
+## Spending Habits
+- **Track expenses** for a month to see where money actually goes
+- **Use the 50/30/20 rule**: 50% needs, 30% wants, 20% savings
+- **Implement a 24-hour rule** before non-essential purchases
+- **Unsubscribe** from unused streaming services and memberships
+
+## Everyday Savings
+- **Cook at home** instead of eating out (biggest impact for most people)
+- **Buy generic brands** instead of name brands
+- **Use a shopping list** and avoid impulse buys
+- **Automate transfers** to savings right after payday
+
+## Bigger Wins
+- **Negotiate bills** (insurance, phone, internet)
+- **Reduce energy use** (LEDs, thermostat adjustments)
+- **Carpool or use transit** when possible
+- **Buy used** for items that hold value (furniture, textbooks)
+
+## Smart Planning
+- **Build an emergency fund** first (even $25-50/month)
+- **Cut one major expense** (cheaper housing, car insurance)
+- **Meal plan** to reduce food waste
+- **Set a specific savings goal** (makes it feel real)
+
+## Quick Wins
+- Reduce eating out to 1-2x weekly instead of daily
+- Make coffee at home
+- Sell items you don't use
+
+**Start small** with 2-3 changes rather than overhauling everything at once—that's more sustainable.
+
+What area interests you most?"
+claude-haiku-4.5,4,claude-opus-5-high,Give me practical tips on how to save money.,"# Practical Money-Saving Tips
+
+## Spending Habits
+- **Track expenses** - Know where your money goes before cutting back
+- **Use the 50/30/20 rule** - Allocate 50% needs, 30% wants, 20% savings
+- **Wait before buying** - Sleep on non-essential purchases; many urges fade
+- **Unsubscribe** from unused services (apps, memberships, subscriptions)
+
+## Daily Savings
+- **Cook at home** instead of eating out (biggest quick win for most people)
+- **Use public transit, carpool, or walk** when possible
+- **Buy generic brands** - Often identical quality at lower cost
+- **Shop with a list** - Prevents impulse buying
+
+## Bigger Moves
+- **Automate transfers** to savings so you ""pay yourself first""
+- **Negotiate bills** - Call providers for better rates on insurance, internet, phone
+- **Cut energy costs** - LED bulbs, adjust thermostat, fix leaks
+- **Buy secondhand** for clothes, furniture, and books
+
+## Money Management
+- **Build an emergency fund** ($500-$1,000 starter, then 3-6 months expenses)
+- **Pay off high-interest debt** first (credit cards, loans)
+- **Avoid ATM fees** by using your bank's network
+- **Compare prices** online before major purchases
+
+## Mindset Shift
+- Focus on *what you're gaining* (security, goals) not what you're denying yourself
+
+**Start with 1-2 changes** rather than overhauling everything at once."
+claude-haiku-4.5,2,claude-opus-5,Give me practical tips on how to save money.,"# Practical Money-Saving Tips
+
+## Track & Cut Spending
+- **Record expenses** for a month to see where money actually goes
+- **Cancel unused subscriptions** (streaming, apps, memberships)
+- **Cook at home** instead of eating out—usually saves 50-70%
+
+## Automate Savings
+- **Pay yourself first**—set up automatic transfers to savings right after payday
+- **Use apps** that round up purchases and save the difference
+
+## Smart Shopping
+- **Make a list** and stick to it (reduces impulse buys)
+- **Buy generic brands**—often identical to name brands
+- **Shop secondhand** for clothes, furniture, and books
+
+## Reduce Major Costs
+- **Bundle insurance** (auto + home = discounts)
+- **Negotiate bills**—phone, internet, and cable companies often lower rates
+- **Use public transit** or carpool occasionally
+
+## Build Good Habits
+- **Use a high-yield savings account** for better interest
+- **Cook in batches** and freeze meals
+- **Unsubscribe from marketing emails** to reduce impulse spending
+
+## Biggest Impact Areas
+Focus first on housing, transportation, and food—these typically consume 50-70% of budgets.
+
+**Start small:** Pick 1-2 tips this month, add more as they become habits.
+
+What area do you spend the most on?"
+claude-haiku-4.5,2,claude-opus-5,"Identify the odd one out from the following array of words.
+Fever, shiver, wrinkle","# Odd One Out: **Wrinkle**
+
+**Reason:** Fever and shiver are both symptoms or physical responses typically associated with illness or cold, whereas wrinkle is a sign of aging or a crease in fabric/skin that's not necessarily related to health conditions."
+claude-haiku-4.5,1,gpt-6,"Identify the odd one out from the following array of words.
+Fever, shiver, wrinkle","# Odd One Out: **Wrinkle**
+
+**Reason:** Fever and shiver are both physical symptoms or responses typically associated with illness or cold, whereas wrinkle is a mark or crease on a surface (like skin or fabric) and is not inherently a symptom of being unwell."
+claude-haiku-4.5,0,claude-opus-5-high,"Identify the odd one out from the following array of words.
+Fever, shiver, wrinkle","# Odd One Out: **Wrinkle**
+
+**Reason:** Fever and shiver are both symptoms or physical responses to illness or cold, while wrinkle is a sign of aging or a crease in fabric/skin. It's not related to being sick or cold."
+claude-haiku-4.5,4,gpt-6-high,"Identify the odd one out from the following array of words.
+Fever, shiver, wrinkle","# Odd One Out: **Wrinkle**
+
+**Reason:**
+
+- **Fever** and **Shiver** are both physical responses to illness or cold (symptoms/bodily reactions)
+- **Wrinkle** is a permanent or semi-permanent mark/fold in skin or fabric, not a symptom or bodily response to a condition"
+claude-haiku-4.5,5,qwen-4,"Identify the odd one out from the following array of words.
+Fever, shiver, wrinkle","# Odd One Out: **Wrinkle**
+
+**Reason:**
+
+- **Fever** and **shiver** are both physiological responses, often associated with illness or cold
+- **Wrinkle** is a permanent or semi-permanent mark/fold, typically on skin or fabric
+
+Alternatively, you could argue:
+- Fever and wrinkle are both **nouns that can be verbs** (to fever, to wrinkle), while shiver functions as both but less commonly as a noun in everyday usage
+- Shiver involves **movement**, while fever and wrinkle are more **static conditions**
+
+But the clearest distinction is that **wrinkle is unrelated to illness/physical responses**, making it the odd one out."
+claude-haiku-4.5,3,qwen-4-high,"Identify the odd one out from the following array of words.
+Fever, shiver, wrinkle","# Odd One Out: **Wrinkle**
+
+**Reason:** Fever and shiver are both physical responses to illness or cold, whereas wrinkle is a mark or crease on a surface (like skin or fabric) and is not inherently related to health or temperature responses."
+claude-haiku-4.5,5,qwen-4,"Identify which animal in the following text is a reptile and explain what characteristics make it a reptile.
+The zoo was home to a wide variety of creatures, including a vibrantly colored tree frog, a red-footed tortoise with stunning patterns on its shell, and a fluffy rabbit with soft, huggable fur.","# Reptile Identification
+
+## The Animal
+The **red-footed tortoise** is the reptile in this text.
+
+## Characteristics That Make It a Reptile
+
+Tortoises are reptiles because they possess the key defining features of the reptile class:
+
+1. **Cold-blooded (ectothermic)** - They regulate body temperature through their environment rather than internal metabolic processes
+
+2. **Scaly skin** - They have dry, protective scales covering their bodies (mentioned indirectly through their patterned shell)
+
+3. **Shelled eggs** - They reproduce by laying eggs with hard or leathery shells
+
+4. **Lungs for breathing** - They breathe air directly through lungs, not through gills or skin
+
+5. **Shell** - The tortoise's distinctive hard shell is made of bone covered in scutes (horn-like plates), which is a characteristic reptilian feature
+
+In contrast, the tree frog is an amphibian (with moist, permeable skin), and the rabbit is a mammal (warm-blooded with fur)."
+claude-haiku-4.5,1,claude-opus-5-high,"Identify which animal in the following text is a reptile and explain what characteristics make it a reptile.
+The zoo was home to a wide variety of creatures, including a vibrantly colored tree frog, a red-footed tortoise with stunning patterns on its shell, and a fluffy rabbit with soft, huggable fur.","# Reptile Identification
+
+The **red-footed tortoise** is the reptile in this text.
+
+## Characteristics that make it a reptile:
+
+1. **Scaly skin** - Tortoises have tough, protective scales covering their bodies
+
+2. **Cold-blooded** - They are ectothermic, meaning they rely on external heat sources to regulate body temperature
+
+3. **Egg-laying reproduction** - Tortoises reproduce by laying eggs
+
+4. **Shell** - The distinctive bony shell is a defining feature of turtles and tortoises, which are reptiles
+
+5. **Vertebrate with lungs** - Tortoises breathe air through lungs and have a backbone
+
+**Note:** While the tree frog is also a vertebrate, it is an amphibian rather than a reptile. The rabbit is a mammal."
+claude-haiku-4.5,3,qwen-4-high,"Identify which animal in the following text is a reptile and explain what characteristics make it a reptile.
+The zoo was home to a wide variety of creatures, including a vibrantly colored tree frog, a red-footed tortoise with stunning patterns on its shell, and a fluffy rabbit with soft, huggable fur.","# Reptile in the Text
+
+The **red-footed tortoise** is the reptile in this passage.
+
+## Characteristics that make it a reptile:
+
+1. **Scaly skin**: Tortoises have tough, protective scales covering their bodies
+
+2. **Cold-blooded**: They are ectothermic, meaning they rely on external heat sources to regulate body temperature
+
+3. **Lay eggs**: Tortoises reproduce by laying eggs rather than giving live birth
+
+4. **Shell**: The distinctive hard shell (carapace) is a defining feature unique to turtles and tortoises
+
+5. **Vertebrate with four limbs**: They have an internal skeleton with a backbone
+
+**Note**: While the tree frog might seem like it could be a reptile, it is actually an amphibian—a different class of animals that typically have moist skin and go through metamorphosis. The rabbit is a mammal, identifiable by its fur and the fact that it produces milk for its young."
+claude-haiku-4.5,4,claude-opus-5,"Identify which animal in the following text is a reptile and explain what characteristics make it a reptile.
+The zoo was home to a wide variety of creatures, including a vibrantly colored tree frog, a red-footed tortoise with stunning patterns on its shell, and a fluffy rabbit with soft, huggable fur.","# Reptile Identification
+
+**The red-footed tortoise is the reptile** in this text.
+
+## Characteristics that make it a reptile:
+
+1. **Scaly skin** - Reptiles have dry, tough skin covered in scales for protection and water retention
+
+2. **Cold-blooded** - They rely on external heat sources to regulate body temperature
+
+3. **Shelled eggs** - Reptiles typically lay eggs with leathery or hard shells
+
+4. **Shell (in this case)** - Tortoises have a protective shell made of bone and keratin, which is a distinctive reptilian feature
+
+## Why the others aren't reptiles:
+
+- **Tree frog** - This is an amphibian, characterized by moist skin, a larval stage in water, and the ability to live both in water and on land
+- **Rabbit** - This is a mammal, identified by its fur, warm-blooded nature, and production of milk for young"
+claude-haiku-4.5,2,gpt-6-high,"Identify which animal in the following text is a reptile and explain what characteristics make it a reptile.
+The zoo was home to a wide variety of creatures, including a vibrantly colored tree frog, a red-footed tortoise with stunning patterns on its shell, and a fluffy rabbit with soft, huggable fur.","# Reptile Identification
+
+## The Reptile: Red-footed tortoise
+
+### Characteristics that make it a reptile:
+
+1. **Scaly skin** - Tortoises have tough, dry skin covered in scales that protect them from dehydration
+
+2. **Cold-blooded (ectothermic)** - They rely on external heat sources to regulate their body temperature
+
+3. **Lay eggs** - Tortoises reproduce by laying eggs rather than bearing live young
+
+4. **Backbone** - They are vertebrates with an internal skeleton
+
+5. **Shell** - The distinctive hard, bony shell is a defining feature of turtles and tortoises (a modified vertebral column and rib cage)
+
+### Note:
+While the tree frog might seem reptilian, it is actually an **amphibian**, not a reptile. Frogs have moist, permeable skin and require water for reproduction, distinguishing them from reptiles."
+claude-haiku-4.5,0,gpt-6,"Identify which animal in the following text is a reptile and explain what characteristics make it a reptile.
+The zoo was home to a wide variety of creatures, including a vibrantly colored tree frog, a red-footed tortoise with stunning patterns on its shell, and a fluffy rabbit with soft, huggable fur.","# Reptile Identification
+
+The **red-footed tortoise** is the reptile in this text.
+
+## Characteristics that make it a reptile:
+
+1. **Scaly skin** - Tortoises have tough, protective scales covering their bodies
+
+2. **Cold-blooded** - They are ectothermic, meaning they rely on external heat sources to regulate body temperature
+
+3. **Shelled body** - The tortoise has a hard shell (carapace) that is fused to its spine and ribcage, providing protection
+
+4. **Lay eggs** - Tortoises reproduce by laying eggs on land
+
+5. **Four legs and a tail** - They have the typical reptilian body structure
+
+**Note:** While the tree frog is also a reptile (or more precisely, an amphibian), the tortoise is the clearest example of a reptile in this group, as frogs are amphibians, not reptiles."
+claude-haiku-4.5,4,qwen-4,Provide an example of a common application of AI.,"# Email Spam Filtering
+
+A common and practical example is **spam detection in email services**.
+
+AI algorithms analyze incoming emails by examining:
+- Sender reputation and history
+- Email content (words, phrases, links)
+- Formatting patterns
+- User behavior (which emails you read, delete, or report)
+
+**How it works:**
+The system learns from millions of emails to identify patterns typical of spam versus legitimate messages. When a new email arrives, it's automatically classified and routed to your inbox or spam folder.
+
+**Why it matters:**
+This saves users time and protects against phishing scams and malicious content—all happening behind the scenes without requiring manual setup for each sender.
+
+This is a great example because it's invisible, universally used, and demonstrates how AI solves real-world problems through pattern recognition."
+claude-haiku-4.5,0,qwen-4-high,Provide an example of a common application of AI.,"# Email Spam Filtering
+
+A common application of AI is **spam detection in email services**. 
+
+Email providers like Gmail use machine learning algorithms to:
+
+- **Analyze** incoming messages for spam characteristics (suspicious sender addresses, phishing links, common spam phrases)
+- **Learn** from user behavior (which emails you mark as spam or important)
+- **Classify** new emails automatically into categories like inbox, spam, or promotions
+
+This happens continuously in the background, protecting users from unwanted emails while maintaining legitimate messages in their inbox. It's one of the most widely used AI applications because billions of people rely on it daily."
+claude-haiku-4.5,3,gpt-6-high,Provide an example of a common application of AI.,"# Common AI Application: Recommendation Systems
+
+**Streaming Services** like Netflix, Spotify, and YouTube use AI to suggest content you might enjoy.
+
+## How it works:
+- Analyzes your viewing/listening history
+- Identifies patterns in your preferences
+- Compares your behavior to similar users
+- Recommends shows, songs, or videos you haven't seen yet
+
+## Real-world impact:
+- Helps you discover new content faster
+- Keeps you engaged with the platform
+- Saves time scrolling through endless options
+
+This is one of the most ubiquitous AI applications because it benefits both users (better experience) and companies (increased engagement and retention).
+
+Other common examples include email spam filters, voice assistants, and autocomplete on your phone."
+claude-haiku-4.5,5,claude-opus-5-high,Provide an example of a common application of AI.,"# Common AI Application: Recommendation Systems
+
+**Email spam filtering** is one of the most widespread examples.
+
+When you use Gmail, Outlook, or similar services, AI algorithms automatically analyze incoming emails and sort them into spam or legitimate folders. The system learns by:
+
+- Detecting patterns in email content (suspicious links, phishing language)
+- Observing which emails users mark as spam
+- Improving predictions over time based on user behavior
+
+**Other everyday examples include:**
+- Netflix or Spotify recommendations
+- Virtual assistants (Siri, Alexa)
+- Facial recognition on phones
+- Autocomplete in search engines
+- Fraud detection in banking
+
+These applications are practically invisible to users yet have become essential parts of modern digital life."
+claude-haiku-4.5,2,gpt-6,Provide an example of a common application of AI.,"# Email Spam Filtering
+
+A common example is **spam detection in email services** like Gmail or Outlook.
+
+## How it works:
+- AI algorithms analyze incoming emails for patterns associated with spam (suspicious sender addresses, phishing links, certain keywords, formatting, etc.)
+- The system learns from millions of emails to distinguish legitimate messages from unwanted ones
+- Emails are automatically sorted into ""Inbox"" or ""Spam"" folders
+
+## Why it's effective:
+- Protects users from scams and malicious content
+- Reduces inbox clutter
+- Improves with time as the AI learns new spam tactics
+- Runs invisibly in the background
+
+This is a practical, everyday application that most people interact with without even thinking about the AI powering it."
+claude-haiku-4.5,1,claude-opus-5,Provide an example of a common application of AI.,"# Example: Email Spam Filtering
+
+One of the most common AI applications is **spam detection in email services** (Gmail, Outlook, etc.).
+
+## How it works:
+
+- **Machine learning models** analyze millions of emails to identify patterns that distinguish spam from legitimate messages
+- The system examines features like sender reputation, subject line keywords, links, and content characteristics
+- **Continuously learns** from user feedback when people mark emails as spam or recover them from spam folders
+
+## Why it's useful:
+
+- Automatically removes unwanted emails without user intervention
+- Protects users from phishing attempts and malicious content
+- Improves over time as it processes more data
+
+This is a great example because it's invisible to most users but demonstrates AI solving a real, everyday problem at scale."
+claude-haiku-4.5,5,qwen-4,"Rewrite the given sentence, turning it into a question.
+The quick brown fox jumped over the lazy dog.",Did the quick brown fox jump over the lazy dog?
+claude-haiku-4.5,2,gpt-6,"Rewrite the given sentence, turning it into a question.
+The quick brown fox jumped over the lazy dog.",Did the quick brown fox jump over the lazy dog?
+claude-haiku-4.5,4,qwen-4-high,"Rewrite the given sentence, turning it into a question.
+The quick brown fox jumped over the lazy dog.",Did the quick brown fox jump over the lazy dog?
+claude-haiku-4.5,1,gpt-6-high,"Rewrite the given sentence, turning it into a question.
+The quick brown fox jumped over the lazy dog.",Did the quick brown fox jump over the lazy dog?
+claude-haiku-4.5,0,claude-opus-5,"Rewrite the given sentence, turning it into a question.
+The quick brown fox jumped over the lazy dog.",Did the quick brown fox jump over the lazy dog?
+claude-haiku-4.5,3,claude-opus-5-high,"Rewrite the given sentence, turning it into a question.
+The quick brown fox jumped over the lazy dog.",Did the quick brown fox jump over the lazy dog?
+claude-haiku-4.5,1,qwen-4-high,"Translate the following sentence into French:
+""We had a great time""","""Nous avons passé un excellent moment"" or ""On a passé un super moment""
+
+Both translations are correct. The first is more formal, while the second is more casual/colloquial."
+claude-haiku-4.5,5,claude-opus-5-high,"Translate the following sentence into French:
+""We had a great time""","""Nous avons passé un bon moment.""
+
+or
+
+""Nous nous sommes bien amusés.""
+
+Both are common ways to express this in French. The first is more literal, while the second emphasizes having fun."
+claude-haiku-4.5,2,claude-opus-5,"Translate the following sentence into French:
+""We had a great time""","""Nous avons passé un très bon moment"" or ""On a bien s'amusé""
+
+Both are common ways to express this in French. The first is more formal, while the second is more casual/colloquial."
+claude-haiku-4.5,0,qwen-4,"Translate the following sentence into French:
+""We had a great time""","""Nous avons passé un bon moment.""
+
+(Alternative: ""On a passé un bon moment."" - more casual/conversational)"
+claude-haiku-4.5,3,gpt-6,"Translate the following sentence into French:
+""We had a great time""","""Nous avons passé un bon moment"" 
+
+or
+
+""On a passé un bon moment""
+
+(Both are correct; the second is more casual/conversational)"
+claude-haiku-4.5,4,gpt-6-high,"Translate the following sentence into French:
+""We had a great time""","""Nous avons passé un bon moment.""
+
+(Literally: ""We passed a good moment"")
+
+Alternative translations:
+- ""On a bien s'amusé."" (We had fun.)
+- ""C'était super."" (It was great.)"
+claude-haiku-4.5,0,gpt-6,Write an example of an editorial that discusses the disadvantages of online education.,"# The Hidden Costs of the Online Education Boom
+
+The shift toward online education has been presented as a democratizing force—one that promises flexibility, accessibility, and innovation. Yet as schools and universities continue to expand their digital offerings, we must honestly confront the significant drawbacks that this model entails.
+
+## The Isolation Problem
+
+Students logging into virtual classrooms are not receiving the same education as their in-person peers. Learning is fundamentally a social experience. The casual interactions before class, the study groups formed in dormitories, and the mentorship that emerges from face-to-face relationships with professors cannot be replicated through a screen. For younger students especially, this isolation takes a real psychological toll, contributing to increasing rates of depression and anxiety.
+
+## A Widening Digital Divide
+
+Online education does not serve all students equally. While affluent families invest in high-speed internet and quiet study spaces, underprivileged students struggle with spotty connectivity and chaotic home environments. Ironically, an approach meant to democratize education has created new barriers based on technological access and resources.
+
+## The Engagement Gap
+
+Without the structure and accountability of physical classrooms, many students disengage entirely. Completion rates for online courses remain significantly lower than traditional formats. The self-discipline required is substantial—and unrealistic to expect from teenagers still developing executive functioning skills.
+
+## The Path Forward
+
+Online education has its place, particularly for working adults and supplementary learning. But we should resist the temptation to treat it as a full replacement for traditional education. Our students deserve better than that compromise."
+claude-haiku-4.5,4,qwen-4,Write an example of an editorial that discusses the disadvantages of online education.,"# The Hidden Costs of the Online Education Revolution
+
+As schools continue to embrace digital learning, we must honestly confront the troubling downsides of classroom screens and virtual instruction.
+
+The pandemic forced an urgent pivot to remote education, and many assumed that once the crisis passed, we'd recognize online learning as a legitimate alternative. Yet mounting evidence suggests we've confused necessity with innovation. Online education, while convenient, comes with real costs that deserve serious examination.
+
+**The Isolation Problem**
+
+Education has always been fundamentally about human connection. Teachers don't just deliver information; they inspire, mentor, and provide crucial emotional support. A student struggling with confidence needs to see a teacher's encouraging smile—not a pixelated nod on a video screen. Classrooms also provide irreplaceable peer interaction where students develop social skills, forge friendships, and learn collaboration. Video breakout rooms simply cannot replicate the organic conversations that happen in hallways and cafeterias.
+
+**The Engagement Gap**
+
+Study after study shows that online students—particularly younger ones—experience greater distraction and lower engagement. It's easier to multitask when your classroom is your bedroom. More troublingly, research indicates that disadvantaged students suffer disproportionately in online settings, widening achievement gaps rather than closing them.
+
+**The Technology Divide**
+
+Not all students have reliable internet, quiet study spaces, or adequate devices. By championing online education, we risk creating a two-tiered system that privileges wealthy families.
+
+Online education has its place, but we shouldn't mistake it for a superior alternative to in-person learning. Some doors are best walked through together."
+claude-haiku-4.5,2,gpt-6-high,Write an example of an editorial that discusses the disadvantages of online education.,"# The Hidden Costs of Moving Education Behind a Screen
+
+The pandemic forced millions of students online, and while distance learning served a critical purpose during lockdowns, we must now honestly assess its limitations before we normalize what should only be a temporary solution.
+
+Online education has undeniable advantages—flexibility, accessibility, and cost savings among them. Yet an overreliance on virtual classrooms comes with serious drawbacks that deserve our attention.
+
+**The Isolation Problem**
+
+Education is fundamentally social. Students learn from peer interaction, classroom discussion, and the informal mentoring that happens in hallways and during office hours. Online environments, no matter how well-designed, struggle to replicate this spontaneous intellectual exchange. Studies increasingly show that virtual students report higher rates of loneliness and disengagement, particularly among vulnerable populations like first-generation college students who benefit most from in-person guidance.
+
+**The Technology Divide**
+
+Advocates claim online education democratizes learning, yet it often deepens inequality. Students without reliable internet, quiet study spaces, or updated devices are fundamentally disadvantaged. We cannot claim to provide equal education when some students learn from a bedroom while others lack consistent WiFi.
+
+**Attention and Accountability**
+
+Let's acknowledge the obvious: it's harder to stay focused on a screen. Cheating becomes easier to hide, and instructors struggle to identify students who are genuinely struggling versus those simply going through the motions.
+
+**Moving Forward**
+
+Online education has its place, particularly for working adults and specialized programs. But we should resist the temptation to treat it as a permanent replacement for in-person learning. Our institutions must remain physical spaces where education—and community—actually happens."
+claude-haiku-4.5,3,claude-opus-5-high,Write an example of an editorial that discusses the disadvantages of online education.,"# The Hidden Costs of Online Learning: Why We Shouldn't Abandon Traditional Classrooms
+
+The pandemic forced millions of students into online classrooms overnight, and while this emergency pivot was necessary, we must acknowledge a troubling reality: remote learning has revealed serious, often overlooked disadvantages that threaten educational quality.
+
+## The Engagement Problem
+
+Online education creates a troubling disconnect between students and instructors. A student can attend class while mentally checking out entirely—camera off, attention elsewhere. Teachers cannot read the room, adjust their pace, or recognize when concepts have lost their audience. The spontaneous discussions that spark curiosity simply cannot be replicated through a screen.
+
+## Widening the Achievement Gap
+
+While affluent families quickly adapted—investing in quiet home offices, high-speed internet, and tutoring support—vulnerable students fell further behind. Not all homes have reliable WiFi. Not all parents can supervise young learners. Not all students have dedicated study spaces. Online education has, paradoxically, increased educational inequality rather than democratized it.
+
+## The Socialization Crisis
+
+School is more than academics. It's where children develop social skills, build friendships, and learn to collaborate. Online learning eliminated hallway conversations, group projects, and after-school activities that are essential for healthy development. Mental health professionals have documented increased anxiety and isolation among students who spent months learning remotely.
+
+## Accountability and Cheating
+
+Without in-person proctoring, academic dishonesty flourishes. The integrity of grades becomes questionable when students can easily access answers online.
+
+## Moving Forward
+
+Online education has its place as a supplement, but as a replacement for traditional schooling, it falls short. Our children deserve better."
+claude-haiku-4.5,5,claude-opus-5,Write an example of an editorial that discusses the disadvantages of online education.,"# The Hidden Cost of Convenience: Why Online Education Falls Short
+
+In the rush to embrace digital learning, we risk overlooking serious shortcomings that could harm our students' futures.
+
+The pandemic forced schools into an emergency pivot to online education, and many institutions have retained these programs as permanent fixtures. While the convenience is undeniable, we must acknowledge uncomfortable truths: virtual classrooms are failing our students in critical ways.
+
+**Isolation Takes a Toll**
+
+Learning is fundamentally a social endeavor. The spontaneous hallway conversations, study groups, and mentorships that happen on physical campuses cannot be replicated through screens. Students report increased loneliness and disconnection—consequences that extend far beyond academics into mental health and personal development.
+
+**Accountability Disappears**
+
+Online environments create a troubling gap in oversight. Without in-person interaction, educators cannot adequately monitor student engagement or identify struggling learners until it's too late. The absence of structure that a physical classroom provides leaves self-discipline entirely on students' shoulders—a burden many are unprepared to bear.
+
+**Essential Skills Go Untaught**
+
+Critical soft skills—public speaking, collaboration, negotiation, and reading social cues—cannot be developed through breakout rooms and discussion boards. These competencies are precisely what employers value most.
+
+**Technology Is Not a Solution**
+
+Not all students have reliable internet, quiet study spaces, or devices. Online education deepens educational inequality rather than solving it.
+
+Convenience should never trump educational quality. Our institutions must prioritize in-person learning as the gold standard."
+claude-haiku-4.5,1,qwen-4-high,Write an example of an editorial that discusses the disadvantages of online education.,"# The Hidden Cost of Moving Learning Behind a Screen
+
+The pivot to online education, accelerated by the pandemic, promised convenience and accessibility. Yet as we settle into this new reality, we must honestly reckon with what we've lost in the rush to digitize our classrooms.
+
+## The Human Element Cannot Be Replicated
+
+Education is fundamentally a human endeavor. The spontaneous discussion that sparks curiosity, the teacher who notices a struggling student's quiet desperation, the study group that bonds over shared confusion—these moments rarely translate into Zoom rectangles. Research increasingly shows that students, particularly younger ones, disengage more easily online and miss the social cues that guide in-person learning.
+
+## Inequality Widened, Not Closed
+
+The promise that online learning democratizes education has proven naive. Students without reliable internet, quiet study spaces, or parental support fell further behind their advantaged peers. Meanwhile, families with resources hired tutors to compensate for the inadequacy of screens. Online education didn't level the playing field—it tilted it further.
+
+## The Mental Health Crisis
+
+Depression, anxiety, and isolation among students have surged alongside screen-based learning. Young people need movement, face-to-face interaction, and the structure that brick-and-mortar institutions provide. Staring at a computer all day is no substitute for classroom engagement and extracurricular life.
+
+## Moving Forward
+
+Online education has a role—for supplementary learning and certain populations. But as our default? We've sacrificed too much. Our students deserve better than the bare minimum delivered through a camera."

@@ -1,0 +1,233 @@
+question,answer
+Come up with a list of five questions that can be used to interview a political candidate.,"# Five Interview Questions for a Political Candidate
+
+1. **On Key Issues**: What are your top three policy priorities if elected, and how do you plan to fund or implement them?
+
+2. **On Track Record**: Can you describe a time when you changed your position on an important issue? What caused that shift?
+
+3. **On Disagreement**: How do you plan to work with people who disagree with you, both within and outside your party?
+
+4. **On Accountability**: What metrics would you use to measure your success in office, and how would you report progress to constituents?
+
+5. **On Tough Choices**: Describe a difficult decision you've made in a previous role. What was at stake, and would you make the same choice today?
+
+These questions encourage candidates to demonstrate depth, self-reflection, pragmatism, and accountability—helpful for voters evaluating their options."
+Compare and contrast ice cream and frozen yogurt.,"# Ice Cream vs. Frozen Yogurt
+
+## Similarities
+- Both are frozen desserts served cold
+- Similar creamy texture and smooth mouthfeel
+- Come in numerous flavors
+- Often topped with mix-ins or toppings
+- Made with milk-based ingredients
+
+## Key Differences
+
+| Aspect | Ice Cream | Frozen Yogurt |
+|--------|-----------|---------------|
+| **Base ingredient** | Cream, milk, sugar | Yogurt (fermented milk) |
+| **Fat content** | 10-18% (higher) | 0-10% (lower) |
+| **Taste** | Rich, indulgent | Tangy, slightly sour |
+| **Calories** | Generally higher | Generally lower |
+| **Probiotics** | None | May contain live cultures |
+| **Nutrition** | Less protein | More protein |
+
+## Practical Considerations
+- **Texture**: Ice cream is typically smoother and creamier
+- **Digestibility**: Frozen yogurt may be easier for some people
+- **Health perception**: Frozen yogurt marketed as ""healthier,"" though sugar content can be similar
+- **Cost**: Ice cream usually more expensive
+
+**Bottom line**: Ice cream prioritizes indulgence, while frozen yogurt offers a lighter alternative with tanginess—the better choice depends on your taste preferences and dietary goals."
+"Critique the following paragraph in terms of style, grammar, and clarity.
+Despite the products flying off store shelves, the revenues of the business has plateaued in resent months. It's possible that them recent increase of competition started to cut into the companies share of customers. The compny would need to improve its marketing tactics and branch out into bran new technologies.","# Critique
+
+## Grammar Issues
+
+1. **Subject-verb agreement**: ""the revenues of the business **has**"" should be ""**have**"" (revenues is plural)
+2. **Pronoun case error**: ""**them** recent increase"" should be ""**the** recent increase""
+3. **Spelling**: ""**resent**"" should be ""**recent**""
+4. **Spelling**: ""**compny**"" should be ""**company**""
+5. **Awkward phrasing**: ""the companies share"" should be ""the company's share"" (possessive, not plural)
+
+## Clarity Issues
+
+1. **Logical contradiction**: The opening claims products are ""flying off store shelves,"" but then says revenues have ""plateaued."" These statements seem at odds—you'd expect strong sales to sustain growth. The relationship between these ideas needs clarification.
+2. **Vague language**: ""cut into the companies share of customers"" is awkward; consider ""eroded market share"" or ""reduced customer base""
+
+## Style Issues
+
+1. **Redundancy**: ""bran new"" is likely a typo for ""brand new,"" but ""brand new technologies"" is clichéd and vague. More specific language would strengthen the argument.
+
+## Revised Version
+
+Despite strong product sales, the company's revenues have plateaued in recent months. Increased competition may be eroding market share. The company should enhance its marketing strategy and invest in emerging technologies."
+Give me the definition of 'supercomputer'.,"# Supercomputer
+
+A **supercomputer** is an extremely powerful computing system that performs at the highest operational rates compared to general-purpose computers. 
+
+## Key characteristics:
+
+- **Extremely high processing speed** – measured in petaflops (quadrillions of calculations per second) or higher
+- **Massive parallel processing** – uses thousands of processors working simultaneously
+- **Enormous data processing capacity** – handles vast amounts of information
+- **Specialized design** – built for specific high-performance computing tasks
+
+## Common uses:
+
+- Scientific research and simulations (climate modeling, molecular dynamics)
+- Weather forecasting
+- Nuclear weapons testing simulations
+- Artificial intelligence and machine learning
+- Cryptanalysis
+- Astrophysics calculations
+
+Examples include systems like Frontier (at Oak Ridge National Laboratory) and Fugaku (in Japan)."
+"Identify the correct form of the following verb.
+to leave","# To Leave - Verb Forms
+
+Here are the correct forms of the verb ""to leave"":
+
+| Form | Example |
+|------|---------|
+| **Base form** | leave |
+| **Present tense** | leave / leaves |
+| **Past tense** | **left** |
+| **Past participle** | **left** |
+| **Present participle** | leaving |
+
+## Examples:
+- ""I **leave** work at 5 PM."" (present)
+- ""She **left** yesterday."" (past)
+- ""He has **left** the building."" (past participle)
+- ""They are **leaving** soon."" (present participle)
+
+**Note:** ""To leave"" is an irregular verb, which is why the past tense and past participle are ""left"" rather than ""leaved."""
+List the components of a typical internet router.,"# Components of a Typical Internet Router
+
+## **Internal Hardware**
+- **Processor (CPU)** – Controls router operations
+- **Memory (RAM)** – Temporary data storage and processing
+- **Flash Storage** – Stores firmware and settings
+- **Power Supply** – Converts wall power to appropriate voltage
+
+## **Networking Ports**
+- **WAN Port** – Connects to modem or internet service provider
+- **LAN Ports** – Connect to wired devices (computers, printers, etc.)
+- **USB Port** – For external storage or printer connectivity
+
+## **Wireless Components**
+- **Antennas** – Transmit and receive wireless signals
+- **Wireless Chipset** – Generates WiFi signal (2.4GHz, 5GHz, 6GHz bands)
+- **Radio Transceiver** – Manages wireless communication
+
+## **Software**
+- **Firmware** – Operating system that controls router functions
+- **Web Interface** – Allows configuration through browser
+
+## **Additional Features**
+- **LED Indicators** – Show power, connection, and activity status
+- **Reset Button** – Resets router to factory settings
+- **Power Button** – Turns router on/off
+- **Cooling Vents** – Prevent overheating
+
+## **Optional Advanced Components**
+- Security features (firewall, VPN)
+- Quality of Service (QoS) management
+- Mesh networking support
+- Advanced antenna arrays (MIMO technology)
+
+These components work together to receive internet signals and distribute them to multiple devices via wired and wireless connections."
+Propose a transportation solution for a city with rapid population growth.,"# Integrated Multi-Modal Transportation System
+
+## Core Components
+
+### 1. **Rapid Transit Backbone**
+- **Light Rail/BRT corridors** connecting job centers, residential zones, and transit hubs
+- Grade-separated where possible to ensure reliability
+- 5-10 minute peak frequencies to compete with cars
+- **Why first**: Creates immediate capacity for growing commute volumes
+
+### 2. **Smart Micromobility Network**
+- E-bikes and scooter stations at transit stops (not replacing transit, extending it)
+- Protected bike lanes on major streets
+- Reduces ""first/last mile"" problem that deters transit use
+
+### 3. **Flexible Demand Services**
+- App-based shared minibus systems for low-density areas
+- Less expensive than fixed routes where density is still developing
+- Evolves to fixed transit as neighborhoods densify
+
+### 4. **Land Use Integration**
+- Rezone for mixed-use development near transit stations
+- This is crucial—infrastructure alone fails without density
+- Reduces overall transportation demand through proximity
+
+## Implementation Strategy
+
+| Phase | Timeline | Focus |
+|-------|----------|-------|
+| **1** | Years 1-2 | Planning, land acquisition, quick-win bike lanes |
+| **2** | Years 2-4 | First transit line operational, initial zoning changes |
+| **3** | Years 4-8 | Expand network, evaluate demand response |
+
+## Key Success Factors
+
+✓ **Dedicated funding** (sales tax, congestion pricing, development fees)
+✓ **Political continuity** across administrations
+✓ **Real-time data systems** to optimize routes
+✓ **Affordability programs** for low-income residents
+✓ **Parking policy** that discourages single-occupancy vehicles
+
+## What to Avoid
+- Building transit without encouraging density nearby
+- Over-relying on autonomous vehicles (unproven at scale)
+- Underestimating construction disruption to existing communities
+
+What aspects of your city's growth are most pressing?"
+"Rank the following mammals in order of decreasing population figures: elephants, gorillas, blue whales, and pandas. Explain your reasoning briefly.","# Ranking by Population (Largest to Smallest)
+
+1. **Elephants** (~400,000)
+2. **Gorillas** (~100,000)
+3. **Blue whales** (~25,000)
+4. **Pandas** (~1,800)
+
+## Reasoning
+
+**Elephants** have the largest population by a significant margin. They occupy diverse habitats across Africa and Asia, and while threatened, their numbers remain in the hundreds of thousands.
+
+**Gorillas** come next, with roughly 100,000 individuals, primarily in Central African rainforests. Their population has actually increased slightly due to conservation efforts.
+
+**Blue whales** number around 25,000—a recovery from near extinction in the 20th century, but still limited by ocean carrying capacity and hunting impacts.
+
+**Pandas** have the smallest population at roughly 1,800 in the wild, making them the most critically endangered of the four. However, their numbers have improved modestly through intensive Chinese conservation programs.
+
+It's worth noting these figures fluctuate and depend on the source, but this ranking reflects the general order of magnitude."
+Rewrite the phonetic syllable 'pu'.,"# Rewrite of 'pu'
+
+The phonetic syllable 'pu' can be rewritten in several ways depending on context:
+
+## Phonetic representations:
+- **/pʊ/** (with the short ""oo"" sound, as in ""put"")
+- **/puː/** (with the long ""oo"" sound, as in ""pooh"")
+
+## In other writing systems:
+- **Pinyin** (Mandarin Chinese): pū, pú, pǔ, pù (with tone marks)
+- **Japanese hiragana**: ぷ (pu)
+- **IPA**: [pʰu] or [pu]
+
+## Syllable breakdown:
+- **Onset**: /p/ (voiceless bilabial stop)
+- **Nucleus**: /u/ (high back rounded vowel)
+
+Could you clarify what specific rewriting system or context you're looking for?"
+"Separate the following list into categories of animals and plants.
+Cat, Dog, Oak Tree, Maple Tree","# Animals and Plants
+
+## Animals
+- Cat
+- Dog
+
+## Plants
+- Oak Tree
+- Maple Tree"

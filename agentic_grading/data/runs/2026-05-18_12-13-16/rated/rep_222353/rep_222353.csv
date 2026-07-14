@@ -1,0 +1,2096 @@
+real_model,sample_idx,model,question,answer
+claude-haiku-4.5,5,gpt-6,"A tree doubled its height every year until it reached a height of 32 feet at the end of 6 years. What was the height of the tree, in feet, at the end of 3 years?","I need to find the height of the tree at the end of 3 years, given that it doubled every year and reached 32 feet at the end of 6 years.
+
+Let me denote the initial height as $h_0$ (at the start, year 0).
+
+Since the tree doubles its height every year:
+- End of year 1: $2h_0$
+- End of year 2: $4h_0$
+- End of year 3: $8h_0$
+- End of year 4: $16h_0$
+- End of year 5: $32h_0$
+- End of year 6: $64h_0$
+
+Wait, let me reconsider. The problem says the height at the end of 6 years is 32 feet.
+
+If the height at the end of 6 years is 32 feet, then:
+$$h_0 \cdot 2^6 = 32$$
+
+$$h_0 \cdot 64 = 32$$
+
+$$h_0 = \frac{32}{64} = \frac{1}{2}$$
+
+Now I can find the height at the end of 3 years:
+$$h_3 = h_0 \cdot 2^3 = \frac{1}{2} \cdot 8 = 4$$
+
+The height of the tree at the end of 3 years was **4 feet**."
+claude-haiku-4.5,0,qwen-4-high,"A tree doubled its height every year until it reached a height of 32 feet at the end of 6 years. What was the height of the tree, in feet, at the end of 3 years?","I need to find the height of the tree at the end of 3 years, given that it doubled every year and reached 32 feet at the end of 6 years.
+
+Let me denote the initial height as $h_0$.
+
+Since the tree doubles its height every year:
+- After 1 year: $h_1 = 2h_0$
+- After 2 years: $h_2 = 2h_1 = 4h_0$
+- After 3 years: $h_3 = 2h_2 = 8h_0$
+- After 6 years: $h_6 = 2^6 h_0 = 64h_0$
+
+I'm told that after 6 years, the height is 32 feet:
+$$64h_0 = 32$$
+
+$$h_0 = \frac{32}{64} = \frac{1}{2} \text{ feet}$$
+
+Now I can find the height at the end of 3 years:
+$$h_3 = 8h_0 = 8 \times \frac{1}{2} = 4 \text{ feet}$$
+
+Therefore, the height of the tree at the end of 3 years was **4 feet**."
+claude-haiku-4.5,1,claude-opus-5,"A tree doubled its height every year until it reached a height of 32 feet at the end of 6 years. What was the height of the tree, in feet, at the end of 3 years?","I need to find the height of the tree at the end of 3 years, given that it reached 32 feet at the end of 6 years and doubles every year.
+
+Let me denote the initial height as $h_0$.
+
+Since the tree doubles its height every year:
+- After 1 year: $h_0 \cdot 2$
+- After 2 years: $h_0 \cdot 2^2$
+- After 3 years: $h_0 \cdot 2^3$
+- After 6 years: $h_0 \cdot 2^6$
+
+I'm told that after 6 years, the height is 32 feet:
+$$h_0 \cdot 2^6 = 32$$
+
+$$h_0 \cdot 64 = 32$$
+
+$$h_0 = \frac{32}{64} = \frac{1}{2}$$
+
+Now I can find the height at the end of 3 years:
+$$h_3 = h_0 \cdot 2^3 = \frac{1}{2} \cdot 8 = 4$$
+
+The height of the tree at the end of 3 years was **4 feet**."
+claude-haiku-4.5,3,qwen-4,"A tree doubled its height every year until it reached a height of 32 feet at the end of 6 years. What was the height of the tree, in feet, at the end of 3 years?","I need to find the height of the tree at the end of 3 years, given that it doubled every year and reached 32 feet at the end of 6 years.
+
+Let me denote the initial height as $h_0$.
+
+Since the tree doubles every year:
+- After 1 year: $2h_0$
+- After 2 years: $4h_0$
+- After 3 years: $8h_0$
+- After 4 years: $16h_0$
+- After 5 years: $32h_0$
+- After 6 years: $64h_0$
+
+Wait, let me reconsider. The problem says ""at the end of 6 years"" the height is 32 feet.
+
+So: $h_0 \cdot 2^6 = 32$
+
+This gives: $64h_0 = 32$
+
+Therefore: $h_0 = \frac{32}{64} = \frac{1}{2}$ foot
+
+Now I can find the height at the end of 3 years:
+
+Height at end of 3 years $= h_0 \cdot 2^3 = \frac{1}{2} \cdot 8 = 4$ feet
+
+The answer is **4 feet**."
+claude-haiku-4.5,2,claude-opus-5-high,"A tree doubled its height every year until it reached a height of 32 feet at the end of 6 years. What was the height of the tree, in feet, at the end of 3 years?","I need to find the height of the tree at the end of 3 years, given that it doubles every year and reaches 32 feet at the end of 6 years.
+
+Let me denote the initial height as $h_0$ (at year 0).
+
+Since the tree doubles every year:
+- After 1 year: $2h_0$
+- After 2 years: $4h_0$
+- After 3 years: $8h_0$
+- After 6 years: $2^6 h_0 = 64h_0$
+
+I'm told that after 6 years, the height is 32 feet:
+$$64h_0 = 32$$
+
+$$h_0 = \frac{32}{64} = \frac{1}{2}$$
+
+Now I can find the height at the end of 3 years:
+$$h_3 = 8h_0 = 8 \times \frac{1}{2} = 4$$
+
+Therefore, the height of the tree at the end of 3 years was **4 feet**."
+claude-haiku-4.5,4,gpt-6-high,"A tree doubled its height every year until it reached a height of 32 feet at the end of 6 years. What was the height of the tree, in feet, at the end of 3 years?","I need to find the height of the tree at the end of 3 years, given that it doubled every year and reached 32 feet at the end of 6 years.
+
+Let me denote the initial height as $h_0$.
+
+Since the tree doubles its height every year:
+- After 1 year: $2h_0$
+- After 2 years: $4h_0$
+- After 3 years: $8h_0$
+- After 4 years: $16h_0$
+- After 5 years: $32h_0$
+- After 6 years: $64h_0$
+
+Wait, let me reconsider. The problem says the tree ""doubled its height every year until it reached a height of 32 feet at the end of 6 years.""
+
+So after 6 years: $h_0 \cdot 2^6 = 32$
+
+Solving for $h_0$:
+$$h_0 \cdot 64 = 32$$
+$$h_0 = \frac{32}{64} = \frac{1}{2}$$
+
+Now I can find the height at the end of 3 years:
+$$h_3 = h_0 \cdot 2^3 = \frac{1}{2} \cdot 8 = 4$$
+
+Therefore, the height of the tree at the end of 3 years was **4 feet**."
+claude-haiku-4.5,0,qwen-4-high,"Compare the meanings of ""lay"" and ""lie""","# Lay vs. Lie
+
+These verbs are commonly confused because they're similar but have distinct meanings.
+
+## **Lay**
+- **Meaning:** To place or put something down
+- **Takes an object:** You lay *something*
+- **Main forms:** lay, laid, laid
+- **Example:** ""Please lay the book on the table.""
+
+## **Lie**
+- **Meaning:** To recline or be in a horizontal position
+- **No object needed:** You lie (by yourself)
+- **Main forms:** lie, lay, lain
+- **Example:** ""I'm going to lie down on the couch.""
+
+## **Quick Test**
+Ask yourself: Is there an object being placed?
+- **Yes** → use *lay*: ""Lay the plates on the counter.""
+- **No** → use *lie*: ""I lie in bed every morning.""
+
+## **Common Confusion**
+Notice that *lay* (present tense of lay) and *lay* (past tense of lie) are spelled the same:
+- ""I **lay** down yesterday."" (past tense of *lie*)
+- ""I **lay** the book down today."" (present tense of *lay*)
+
+The context and whether there's an object clarifies which verb is correct."
+claude-haiku-4.5,1,gpt-6,"Compare the meanings of ""lay"" and ""lie""","# Lay vs. Lie
+
+These commonly confused verbs have distinct meanings:
+
+## **Lie** (to recline)
+- **Meaning:** To be in a horizontal position; to rest
+- **Forms:** lie, lay, lain, lying
+- **Example:** ""I'll lie down for a nap."" / ""The book lay on the table.""
+- **No object needed** (intransitive)
+
+## **Lay** (to place)
+- **Meaning:** To put or place something down
+- **Forms:** lay, laid, laid, laying
+- **Example:** ""Lay the book on the table."" / ""I laid my keys down.""
+- **Requires an object** (transitive)
+
+## Quick Test
+Ask yourself: *Can I do this action to something else, or only to myself?*
+
+- **Lay something** → ""Please lay the dishes on the table""
+- **Lie down** → ""I need to lie down"" (not ""I need to lay down"")
+
+## Common Mistake
+""I'm going to lay down"" is incorrect (unless you mean laying down something else). The correct form is ""I'm going to lie down.""
+
+---
+
+**Memory tip:** ""Lay"" has an 'a' like ""place"" (both have 'a'), and both take objects."
+claude-haiku-4.5,5,qwen-4,"Compare the meanings of ""lay"" and ""lie""","# Lay vs. Lie
+
+These verbs are easily confused because they're related but have distinct meanings:
+
+## **Lie** (to recline)
+- **Meaning:** To rest or recline in a horizontal position
+- **Forms:** lie, lies, lying, lay, lain
+- **Example:** ""I'm going to *lie* down for a nap""
+- **No object needed:** The action happens to the subject
+
+## **Lay** (to place)
+- **Meaning:** To put or place something down
+- **Forms:** lay, lays, laying, laid, laid
+- **Example:** ""Please *lay* the book on the table""
+- **Requires an object:** You lay something (or someone) somewhere
+
+## Quick Memory Trick
+- **Lie** = **recline** (both start with different letters)
+- **Lay** = **put down** (you lay something down)
+
+## Common Mistake
+❌ ""I'm going to *lay* down"" (incorrect)
+✓ ""I'm going to *lie* down"" (correct)
+
+The confusion often happens because the past tense of ""lie"" is ""lay"":
+- ""Yesterday I *lay* on the couch"" (past tense of lie)
+- ""Today I *lay* the book down"" (present tense of lay)"
+claude-haiku-4.5,3,claude-opus-5,"Compare the meanings of ""lay"" and ""lie""","# Lay vs. Lie
+
+These verbs are notoriously confused because they're similar but have distinct meanings and conjugations.
+
+## **Lay** (to put or place something)
+- **Requires a direct object** — you lay something down
+- *Present:* lay, *Past:* laid, *Past participle:* laid
+- **Example:** ""I lay the book on the table""
+- **Example:** ""She laid the baby down carefully""
+
+## **Lie** (to recline or be positioned)
+- **No direct object needed** — the subject does the action
+- *Present:* lie, *Past:* lay, *Past participle:* lain
+- **Example:** ""I lie down after work""
+- **Example:** ""He lay on the couch"" (past tense)
+- **Example:** ""The keys have lain there all day""
+
+## Quick Memory Trick
+- **LAY** = **L**et someone **A** object do something (requires an object)
+- **LIE** = rests (no object needed)
+
+## Common Mistake
+""I'm going to lay down"" is technically incorrect; the correct form is **""I'm going to lie down.""** (But this mistake is so common that it's becoming more accepted in casual speech.)
+
+The trickiest part: the past tense of ""lie"" is ""lay,"" which looks like the present tense of ""lay""!"
+claude-haiku-4.5,4,claude-opus-5-high,"Compare the meanings of ""lay"" and ""lie""","# Lay vs. Lie
+
+These verbs are easily confused because their meanings overlap and their forms intersect. Here's the key difference:
+
+## **Lay** (to place something down)
+- **Requires a direct object** — you lay *something*
+- Present: ""I lay the book on the table""
+- Past: ""I laid the book on the table""
+- Past participle: ""I have laid the book on the table""
+
+## **Lie** (to recline or be positioned)
+- **No direct object** — you lie somewhere
+- Present: ""I lie on the bed""
+- Past: ""I lay on the bed"" ← *This is where confusion happens*
+- Past participle: ""I have lain on the bed""
+
+## Quick Memory Trick
+- **Lay** = place (has an ""a"" like ""place"")
+- **Lie** = recline (you can't lie down an object)
+
+## Common Example
+❌ ""Lay down and rest"" (incorrect)  
+✅ ""Lie down and rest"" (correct — you're reclining)
+
+❌ ""I laid in bed all morning"" (incorrect)  
+✅ ""I lay in bed all morning"" (correct — past tense of lie)
+
+The past tense of ""lie"" being ""lay"" is the main source of confusion!"
+claude-haiku-4.5,2,gpt-6-high,"Compare the meanings of ""lay"" and ""lie""","# Lay vs. Lie
+
+These verbs are commonly confused because they're related but have distinct meanings:
+
+## **Lay**
+- **Meaning:** to put or place something down
+- **Requires a direct object** (you lay something)
+- **Examples:**
+  - ""Lay the book on the table""
+  - ""Lay your head on the pillow""
+
+## **Lie**
+- **Meaning:** to recline or be in a horizontal position
+- **Does not require a direct object** (you lie down yourself)
+- **Examples:**
+  - ""I'm going to lie down""
+  - ""The book lies on the table""
+
+## **Quick Test**
+Ask: ""Is something being placed on something else, or is someone/something resting?""
+
+- If placing → **lay**
+- If resting → **lie**
+
+## **Tense Forms** (where confusion often happens)
+
+| Base | Past | Past Participle |
+|------|------|-----------------|
+| lay | **laid** | laid |
+| lie | **lay** | lain |
+
+Notice: the past tense of ""lie"" is ""lay,"" which easily causes mix-ups!
+
+**Example:** ""Yesterday I *lay* in bed"" (not ""laid""), but ""I *laid* down the rules"" (not ""lay"")."
+claude-haiku-4.5,1,gpt-6-high,Describe the impact of AI on healthcare.,"# The Impact of AI on Healthcare
+
+## Diagnostic & Detection
+- **Faster diagnosis** through image analysis (X-rays, MRIs, pathology slides)
+- **Early disease detection** with pattern recognition humans might miss
+- Reduced diagnostic errors and improved accuracy in some specialties
+
+## Treatment & Planning
+- **Personalized medicine** by analyzing patient genetics and history
+- **Drug discovery acceleration**, reducing development time and costs
+- Treatment recommendation optimization based on outcomes data
+
+## Operational Benefits
+- Administrative automation reducing paperwork and scheduling burden
+- Cost reduction through efficiency gains
+- Better resource allocation and hospital management
+
+## Patient Care
+- **24/7 symptom checkers** and triage assistance
+- Remote monitoring via wearables and smart devices
+- Improved patient engagement and adherence
+
+## Significant Challenges
+- **Data privacy & security** concerns with sensitive health information
+- **Bias in algorithms** if trained on unrepresentative data
+- **Liability questions** when AI systems make errors
+- **Job displacement** for some healthcare workers
+- **High costs** limiting access in under-resourced settings
+- **Regulatory uncertainty** around approval and oversight
+
+## Current Reality
+AI is most effective as a **tool augmenting clinicians**, not replacing them. Human judgment remains critical for complex cases and ethical decisions.
+
+What aspect interests you most?"
+claude-haiku-4.5,0,gpt-6,Describe the impact of AI on healthcare.,"# The Impact of AI on Healthcare
+
+## Diagnostic & Detection
+- **Faster analysis** of medical imaging (X-rays, MRIs, CT scans)
+- **Pattern recognition** that can catch diseases like cancer earlier
+- **Reduced human error** in routine screenings
+
+## Treatment & Planning
+- **Personalized medicine** tailored to individual genetics and history
+- **Drug discovery** accelerated through molecular simulation
+- **Surgical precision** via robotic assistance and planning tools
+
+## Administrative Efficiency
+- **Reduced paperwork** through automated documentation
+- **Scheduling optimization** and resource allocation
+- **Lower costs** from streamlined workflows
+
+## Patient Care
+- **24/7 virtual assistants** for symptom checking and health monitoring
+- **Wearable device analysis** for early warning signs
+- **Improved access** to care in underserved areas
+
+## Challenges & Concerns
+- **Data privacy** and security risks
+- **Bias in algorithms** reflecting historical inequities
+- **Job displacement** for some healthcare workers
+- **Regulatory gaps** still catching up to technology
+- **Trust issues** around AI decision-making in critical care
+
+## The Bottom Line
+AI is becoming a powerful **tool that augments rather than replaces** healthcare professionals. Its greatest impact likely lies in handling routine tasks and pattern analysis, freeing clinicians for complex decision-making and human connection."
+claude-haiku-4.5,5,claude-opus-5,Describe the impact of AI on healthcare.,"# AI's Impact on Healthcare
+
+## Diagnostic Improvements
+- **Pattern Recognition**: AI analyzes medical imaging (X-rays, MRIs, CT scans) often matching or exceeding radiologist accuracy
+- **Early Detection**: Algorithms identify diseases like cancer, diabetic retinopathy, and heart conditions at earlier stages
+- **Faster Analysis**: Reduces time from imaging to diagnosis
+
+## Clinical Operations
+- **Predictive Analytics**: Forecasts patient deterioration, hospital readmissions, and disease progression
+- **Administrative Efficiency**: Automates scheduling, billing, and record management
+- **Resource Allocation**: Optimizes staffing and equipment use
+
+## Drug & Treatment Development
+- **Accelerated Research**: Identifies promising compounds and predicts drug interactions
+- **Personalized Medicine**: Tailors treatments based on individual genetics and medical history
+- **Clinical Trials**: Identifies suitable patient candidates more efficiently
+
+## Challenges & Concerns
+- **Bias Issues**: AI trained on unrepresentative data can perpetuate healthcare disparities
+- **Data Privacy**: Requires handling of sensitive patient information securely
+- **Regulatory Gaps**: Standards for validation and accountability still developing
+- **Job Displacement**: Shifts the nature of some healthcare roles
+- **Over-reliance Risk**: Could reduce clinician judgment
+
+## Current Reality
+AI works best as a **complementary tool** rather than replacement—enhancing human expertise rather than substituting it. Most successful applications involve human-AI collaboration in clinical decision-making.
+
+What aspect interests you most?"
+claude-haiku-4.5,3,qwen-4,Describe the impact of AI on healthcare.,"# AI's Impact on Healthcare
+
+## Diagnostic Improvements
+- **Earlier detection**: AI analyzes medical imaging (X-rays, MRIs) to spot cancers and diseases faster than human review alone
+- **Reduced errors**: Algorithms flag patterns radiologists might miss, improving accuracy
+- **Second opinions**: Provides objective analysis to verify diagnoses
+
+## Treatment & Drug Development
+- Accelerates drug discovery by predicting molecular interactions
+- Personalizes treatment plans based on individual patient genetics
+- Optimizes dosing and medication combinations
+
+## Operational Benefits
+- **Administrative efficiency**: Automates billing, scheduling, and record-keeping
+- **Resource allocation**: Predicts patient flow to optimize staffing
+- **Cost reduction**: Decreases overhead and inefficiencies
+
+## Patient Care
+- Virtual health assistants provide preliminary symptom assessment
+- Wearable AI devices monitor chronic conditions continuously
+- Improves accessibility in areas with doctor shortages
+
+## Challenges & Concerns
+- **Data privacy**: Requires massive patient data; security risks exist
+- **Bias**: AI trained on skewed data may perform worse for certain populations
+- **Job displacement**: Changes roles for some healthcare workers
+- **Regulation**: Standards still developing across different regions
+- **Trust gaps**: Clinicians may hesitate to rely on AI recommendations
+
+## Current Reality
+AI works best **alongside** healthcare professionals rather than replacing them—augmenting human expertise, not substituting it."
+claude-haiku-4.5,2,qwen-4-high,Describe the impact of AI on healthcare.,"# Impact of AI on Healthcare
+
+## Diagnostic Improvements
+- **Medical imaging**: AI detects patterns in X-rays, MRIs, and CT scans, sometimes matching or exceeding radiologist accuracy
+- **Earlier detection**: Can identify diseases like cancer at earlier, more treatable stages
+- **Reduced errors**: Provides a second-opinion layer that catches missed diagnoses
+
+## Clinical Efficiency
+- **Administrative burden**: Automates scheduling, billing, and records management
+- **Time savings**: Reduces clinician documentation through voice recognition and natural language processing
+- **Resource optimization**: Predicts patient flows and staffing needs
+
+## Personalized Medicine
+- **Treatment prediction**: Analyzes genetic and health data to recommend tailored therapies
+- **Drug discovery**: Accelerates identifying promising compounds
+- **Risk assessment**: Calculates individual disease risks more precisely
+
+## Patient Care & Access
+- **Virtual health assistants**: Provide symptom checking and health guidance
+- **Remote monitoring**: Wearables track vital signs continuously
+- **Accessibility**: Extends care to underserved regions through telemedicine
+
+## Notable Challenges
+- **Data privacy**: Requires handling sensitive health information securely
+- **Bias**: Trained on non-representative data, potentially disadvantaging certain groups
+- **Trust & transparency**: Clinicians need to understand AI reasoning
+- **Regulation**: Legal frameworks still developing
+
+AI works best as a *tool augmenting* human expertise rather than replacing clinical judgment."
+claude-haiku-4.5,4,claude-opus-5-high,Describe the impact of AI on healthcare.,"# The Impact of AI on Healthcare
+
+## Diagnostic & Detection
+- **Earlier diagnosis** through image analysis (X-rays, MRIs, pathology slides)
+- **Pattern recognition** that can rival or exceed human specialists in specific areas
+- Reduced diagnostic errors and missed cases
+
+## Treatment & Planning
+- **Personalized medicine** based on genetic and medical history data
+- Optimization of drug dosages and treatment protocols
+- Predictive models for patient outcomes
+
+## Operational Efficiency
+- Administrative automation reducing paperwork and costs
+- Scheduling optimization and resource allocation
+- Faster claim processing and billing
+
+## Drug Discovery
+- Accelerated identification of candidate compounds
+- Reduced development timelines and costs
+- Better prediction of drug interactions
+
+## Monitoring & Prevention
+- Continuous patient monitoring via wearables
+- Early warning systems for deterioration
+- Preventive health interventions
+
+## Notable Challenges
+- **Data privacy** concerns with sensitive medical information
+- **Equity issues** if training data is biased
+- High implementation and validation costs
+- Resistance from some practitioners
+- Need for regulatory frameworks
+
+## The Bottom Line
+AI is reshaping healthcare by enhancing human expertise rather than replacing it—freeing clinicians for complex decision-making while handling routine analysis. The technology's success depends on careful implementation, ongoing oversight, and maintaining the human element in care."
+claude-haiku-4.5,1,qwen-4,"Explain in your own words the given text.
+Continuous prompting is a technique used to modify the behavior of language models to better suit a specific task.","# Continuous Prompting Explained
+
+Continuous prompting is a method for shaping how language models behave and respond. Rather than using a single instruction, this technique involves ongoing, iterative adjustments to the prompts (instructions) given to a language model to gradually refine its outputs for a particular purpose.
+
+In simpler terms: instead of telling an AI model what to do once, you keep giving it feedback and adjusted instructions to steer its responses in the right direction until it performs the task the way you want.
+
+For example, if you're using a language model to write product descriptions, you might:
+1. Give an initial prompt
+2. Review the output
+3. Modify your instructions based on what you saw
+4. Repeat this process until the descriptions match your desired style and quality
+
+This approach is useful because it acknowledges that getting perfect results from AI often requires some experimentation and refinement rather than expecting one prompt to work perfectly the first time."
+claude-haiku-4.5,0,qwen-4-high,"Explain in your own words the given text.
+Continuous prompting is a technique used to modify the behavior of language models to better suit a specific task.","# Continuous Prompting Explained
+
+Continuous prompting is a method for shaping how language models (like AI assistants) behave and respond. Rather than accepting a model's default behavior, this technique involves repeatedly refining and adjusting your instructions (prompts) to steer the model toward producing outputs that work better for your particular needs.
+
+In simpler terms: it's an iterative process where you keep giving the model feedback and new directions until it starts performing the way you want it to. Think of it like coaching—you guide the model step-by-step to improve its responses for your specific task or goal.
+
+**Key takeaway:** Instead of asking once and accepting whatever you get, continuous prompting is about actively working with the model through multiple rounds of adjustments to optimize its performance for what you're trying to accomplish."
+claude-haiku-4.5,2,claude-opus-5-high,"Explain in your own words the given text.
+Continuous prompting is a technique used to modify the behavior of language models to better suit a specific task.","# Continuous Prompting Explained
+
+Continuous prompting is a method for fine-tuning how language models behave by repeatedly refining your instructions or questions.
+
+Here's the basic idea:
+
+**What it does:** Instead of asking a language model something once and accepting the first response, you keep adjusting and re-submitting your prompts to guide the model toward better, more task-specific results.
+
+**How it works:** You might:
+- Give initial instructions
+- Review the output
+- Modify your prompt based on what you got
+- Submit again
+- Repeat until the model's responses match what you need
+
+**Why it matters:** Language models don't always understand exactly what you want on the first try. By continuously refining your approach, you can train the model (through prompting) to produce more relevant, accurate, or properly-formatted responses tailored to your specific goal.
+
+**Simple analogy:** It's like teaching someone to do a task by giving feedback and adjusting your instructions each time until they get it right, rather than hoping they understand perfectly the first time."
+claude-haiku-4.5,5,gpt-6,"Explain in your own words the given text.
+Continuous prompting is a technique used to modify the behavior of language models to better suit a specific task.","# Continuous Prompting Explained
+
+**Continuous prompting** is a method for fine-tuning how language models behave by repeatedly providing instructions or guidance tailored to what you need.
+
+In simpler terms:
+
+- **What it is**: Instead of giving a language model a single prompt and accepting whatever it generates, you keep refining your instructions over multiple interactions.
+
+- **How it works**: You provide feedback, adjust your phrasing, add context, or clarify expectations in successive prompts to steer the model toward better results for your specific purpose.
+
+- **Why it's useful**: Language models sometimes don't understand what you want on the first try. By continuously adjusting your prompts, you can guide the model to produce more relevant, accurate, or appropriate responses that align with your goals.
+
+**A practical example**: If you ask an AI to write a poem and it's too long, you might follow up with ""Make it shorter"" or ""Rewrite it in haiku form."" These follow-up instructions are part of continuous prompting—you're iteratively shaping the model's output to match what you actually need.
+
+Essentially, it's an interactive conversation where you continuously refine your requests to get better results."
+claude-haiku-4.5,4,gpt-6-high,"Explain in your own words the given text.
+Continuous prompting is a technique used to modify the behavior of language models to better suit a specific task.","# Continuous Prompting Explained
+
+Continuous prompting is essentially a method for **guiding language models toward better performance** on particular tasks by repeatedly refining how you interact with them.
+
+In simpler terms:
+
+Instead of asking a language model something once and accepting whatever response you get, continuous prompting involves **iteratively adjusting your instructions** to gradually steer the model toward the output you actually want.
+
+## Practical Example
+
+Think of it like coaching someone:
+- You give them an instruction → they respond
+- You refine your instruction based on what they produced → they respond better
+- You keep adjusting until they're doing the task well
+
+## Why It Matters
+
+This technique helps overcome limitations where a single, straightforward question might not produce ideal results. By continuously tweaking how you frame requests and what details you emphasize, you can coax better, more accurate, or more relevant answers from the model.
+
+**In short:** Continuous prompting is the art of learning how to ""talk to"" an AI model in the most effective way for your specific needs, rather than relying on trial-and-error with a single prompt."
+claude-haiku-4.5,3,claude-opus-5,"Explain in your own words the given text.
+Continuous prompting is a technique used to modify the behavior of language models to better suit a specific task.","# Explanation of Continuous Prompting
+
+**Continuous prompting** is a method for guiding how language models respond and behave. Instead of asking a language model a question once and accepting whatever answer you get, this technique involves repeatedly refining or adjusting your prompts (the instructions or questions you give) to steer the model toward producing better results for what you actually need.
+
+In simpler terms: it's like having a conversation where you keep adjusting what you ask based on previous responses, gradually shaping the model's output to be more useful or appropriate for your specific purpose. Rather than one-and-done interactions, you're actively working with the model over multiple rounds of feedback to get it to perform exactly how you want.
+
+This is particularly useful when the first attempt doesn't give you quite what you need, and you want to fine-tune the model's behavior without having to completely retrain it."
+claude-haiku-4.5,5,claude-opus-5,"Generate a set of 10 test questions from the topic ""American History"".","# American History Test Questions
+
+1. **Colonial Period**: Which document, signed in 1215, influenced the development of American constitutional principles even though it was created in England?
+
+2. **Revolutionary War**: In what year did the American Declaration of Independence get signed, and who was the primary author?
+
+3. **Constitution**: How many branches of government are established by the U.S. Constitution?
+
+4. **Westward Expansion**: What 1848 event in California significantly accelerated westward migration?
+
+5. **Civil War**: Which Confederate general surrendered at Appomattox Court House in 1865, effectively ending the Civil War?
+
+6. **Reconstruction**: Name the period following the Civil War during which the South was reorganized and reintegrated into the Union.
+
+7. **Industrial Revolution**: Which invention, developed by Eli Whitney in 1793, transformed the cotton industry and the Southern economy?
+
+8. **Progressive Era**: Which U.S. President served the most terms, and in what years did he serve?
+
+9. **World War II**: In what year did the United States officially enter World War II?
+
+10. **Civil Rights Movement**: What landmark 1964 legislation outlawed discrimination based on race, color, religion, sex, or national origin?
+
+---
+
+*Answer key available upon request*"
+claude-haiku-4.5,0,claude-opus-5-high,"Generate a set of 10 test questions from the topic ""American History"".","# American History Test Questions
+
+1. **What year did Christopher Columbus arrive in the Americas, and what was the significance of this event?**
+
+2. **Who wrote the Declaration of Independence, and in what year was it adopted?**
+
+3. **Describe the main causes of the American Civil War.**
+
+4. **What was the primary purpose of the Monroe Doctrine (1823)?**
+
+5. **Who were the key figures in the American Revolution, and what were their main roles?**
+
+6. **What were the major provisions of the Emancipation Proclamation?**
+
+7. **Explain the significance of the Battle of Gettysburg during the Civil War.**
+
+8. **What was Manifest Destiny, and how did it influence westward expansion?**
+
+9. **Describe the major events and outcomes of the Spanish-American War (1898).**
+
+10. **What were the primary goals of the Progressive Era (1890s-1920s), and who were some key Progressive leaders?**
+
+---
+
+These questions span different periods of American history and require both factual knowledge and analytical thinking."
+claude-haiku-4.5,4,gpt-6,"Generate a set of 10 test questions from the topic ""American History"".","# American History Test Questions
+
+1. **What year did Christopher Columbus arrive in the Americas, and what was the significance of this event?**
+
+2. **Name the five permanent members of the Continental Congress and explain their roles during the American Revolution.**
+
+3. **What were the main causes of the Civil War, and how did the election of Abraham Lincoln contribute to the conflict?**
+
+4. **Describe the significance of the Declaration of Independence (1776). Who were its primary authors?**
+
+5. **What was the primary purpose of the Louisiana Purchase (1803), and how did it affect westward expansion?**
+
+6. **Explain the concept of ""Manifest Destiny"" and provide examples of how it influenced American policy in the 19th century.**
+
+7. **What were the major provisions of the Civil Rights Act of 1964, and which historical events led to its passage?**
+
+8. **Describe the causes and consequences of the Great Depression, and how did Franklin D. Roosevelt's New Deal attempt to address the crisis.**
+
+9. **What were the main factors that brought the United States into World War II, and how did American involvement change the course of the war?**
+
+10. **Compare and contrast the Cold War policies of containment and détente. Which presidents were most associated with each approach?**
+
+---
+
+*These questions range from foundational knowledge to analysis and critical thinking.*"
+claude-haiku-4.5,2,gpt-6-high,"Generate a set of 10 test questions from the topic ""American History"".","# American History Test Questions
+
+1. **In what year did Christopher Columbus arrive in the Americas, and what was the significance of this voyage?**
+
+2. **Which document, signed in 1776, declared the thirteen colonies' independence from British rule?**
+
+3. **Name three of the five men primarily responsible for drafting the U.S. Constitution at the Constitutional Convention of 1787.**
+
+4. **What was the primary cause of the American Civil War (1861-1865)?**
+
+5. **Which Supreme Court case (1954) declared that ""separate but equal"" public schools were unconstitutional?**
+
+6. **Who served as the first President of the United States, and for how many terms did he serve?**
+
+7. **Describe the main goals and achievements of the Civil Rights Movement during the 1960s.**
+
+8. **What major event triggered the United States' entry into World War II in 1941?**
+
+9. **Explain the significance of the Louisiana Purchase (1803) and its impact on American expansion.**
+
+10. **What was the primary purpose of the Bill of Rights, added to the Constitution in 1791?**
+
+---
+
+These questions span different periods and themes in American history, suitable for high school or introductory college-level assessment."
+claude-haiku-4.5,1,qwen-4-high,"Generate a set of 10 test questions from the topic ""American History"".","# American History Test Questions
+
+1. **Which document, signed in 1776, declared the American colonies' independence from British rule?**
+
+2. **Who was the first President of the United States?**
+
+3. **In what year did the Civil War begin, and what was the primary cause of the conflict?**
+
+4. **What was the main purpose of the Monroe Doctrine (1823)?**
+
+5. **Which amendment to the Constitution abolished slavery in the United States?**
+
+6. **Who was the primary author of the Declaration of Independence?**
+
+7. **What was the significance of the Battle of Gettysburg (1863) in the Civil War?**
+
+8. **In what year did the United States enter World War II, and what event prompted this decision?**
+
+9. **Which act of 1964 outlawed discrimination based on race, color, religion, sex, or national origin?**
+
+10. **What was the main purpose of the Marshall Plan after World War II?**
+
+---
+
+*Note: These questions span different time periods and topics within American history, from colonial times through the Cold War era.*"
+claude-haiku-4.5,3,qwen-4,"Generate a set of 10 test questions from the topic ""American History"".","# American History Test Questions
+
+1. **What year did Christopher Columbus reach the Americas, and what significance does this event hold in American history?**
+
+2. **Identify the three branches of the U.S. government and explain the primary responsibility of each branch.**
+
+3. **What were the main causes of the American Revolution, and name at least two key events that sparked colonial rebellion.**
+
+4. **How did the Louisiana Purchase (1803) impact the territorial expansion of the United States?**
+
+5. **What were the key differences between the Northern and Southern states that led to the Civil War?**
+
+6. **Explain the significance of the Emancipation Proclamation. When was it issued, and what did it accomplish?**
+
+7. **What was the primary purpose of the Monroe Doctrine (1823), and which region of the world did it address?**
+
+8. **Describe the major events and outcomes of Reconstruction following the Civil War.**
+
+9. **How did immigration patterns change during the late 19th and early 20th centuries, and what legislation restricted immigration during this period?**
+
+10. **What were the primary causes and consequences of the Great Depression in the 1930s?**
+
+---
+
+*These questions span colonial America through the early 20th century and test comprehension of major events, causes, and impacts.*"
+claude-haiku-4.5,4,claude-opus-5,"Given a table of employee salaries with columns EmployeeID, Salary, and DepartmentID, write a SQL query to find the maximum salary for each department.","# SQL Query for Maximum Salary by Department
+
+Here are several approaches, from simplest to more advanced:
+
+## Basic Solution (GROUP BY)
+
+```sql
+SELECT 
+    DepartmentID,
+    MAX(Salary) AS MaxSalary
+FROM 
+    EmployeeSalaries
+GROUP BY 
+    DepartmentID
+ORDER BY 
+    DepartmentID;
+```
+
+## Enhanced Solution (With Department Name)
+
+If you have a separate Departments table:
+
+```sql
+SELECT 
+    d.DepartmentID,
+    d.DepartmentName,
+    MAX(e.Salary) AS MaxSalary
+FROM 
+    EmployeeSalaries e
+INNER JOIN 
+    Departments d ON e.DepartmentID = d.DepartmentID
+GROUP BY 
+    d.DepartmentID,
+    d.DepartmentName
+ORDER BY 
+    d.DepartmentID;
+```
+
+## Advanced: Include Employee Details
+
+Get the employee name who earns the maximum salary in each department:
+
+```sql
+SELECT 
+    e.DepartmentID,
+    e.EmployeeID,
+    e.Salary AS MaxSalary
+FROM 
+    EmployeeSalaries e
+INNER JOIN (
+    SELECT 
+        DepartmentID,
+        MAX(Salary) AS MaxSalary
+    FROM 
+        EmployeeSalaries
+    GROUP BY 
+        DepartmentID
+) max_sal ON e.DepartmentID = max_sal.DepartmentID
+           AND e.Salary = max_sal.MaxSalary
+ORDER BY 
+    e.DepartmentID;
+```
+
+## Using Window Functions (SQL Server, PostgreSQL, MySQL 8.0+)
+
+```sql
+SELECT 
+    DepartmentID,
+    EmployeeID,
+    Salary,
+    ROW_NUMBER() OVER (PARTITION BY DepartmentID ORDER BY Salary DESC) AS SalaryRank
+FROM 
+    EmployeeSalaries
+WHERE 
+    ROW_NUMBER() OVER (PARTITION BY DepartmentID ORDER BY Salary DESC) = 1;
+```
+
+**Note:** Some databases require this in a CTE:
+
+```sql
+WITH RankedSalaries AS (
+    SELECT 
+        DepartmentID,
+        EmployeeID,
+        Salary,
+        ROW_NUMBER() OVER (PARTITION BY DepartmentID ORDER BY Salary DESC) AS SalaryRank
+    FROM 
+        EmployeeSalaries
+)
+SELECT 
+    DepartmentID,
+    EmployeeID,
+    Salary
+FROM 
+    RankedSalaries
+WHERE 
+    SalaryRank = 1
+ORDER BY 
+    DepartmentID;
+```
+
+## Key Points
+
+| Approach | Pros | Cons |
+|----------|------|------|
+| **GROUP BY** | Simple, efficient | Only returns aggregate values |
+| **JOIN with Subquery** | Gets employee details | More complex |
+| **Window Functions** | Flexible, modern | Not available in older databases |
+
+Choose based on your database system and specific requirements!"
+claude-haiku-4.5,5,gpt-6-high,"Given a table of employee salaries with columns EmployeeID, Salary, and DepartmentID, write a SQL query to find the maximum salary for each department.","# SQL Query: Maximum Salary by Department
+
+Here are several approaches, from basic to advanced:
+
+## 1. **Basic GROUP BY Approach** (Most Common)
+
+```sql
+SELECT 
+    DepartmentID,
+    MAX(Salary) AS MaxSalary
+FROM 
+    Employees
+GROUP BY 
+    DepartmentID
+ORDER BY 
+    DepartmentID;
+```
+
+## 2. **With Department Names** (More Practical)
+
+```sql
+SELECT 
+    d.DepartmentID,
+    d.DepartmentName,
+    MAX(e.Salary) AS MaxSalary
+FROM 
+    Employees e
+INNER JOIN 
+    Departments d ON e.DepartmentID = d.DepartmentID
+GROUP BY 
+    d.DepartmentID,
+    d.DepartmentName
+ORDER BY 
+    MaxSalary DESC;
+```
+
+## 3. **Using Window Functions** (Modern SQL)
+
+```sql
+SELECT DISTINCT
+    DepartmentID,
+    MAX(Salary) OVER (PARTITION BY DepartmentID) AS MaxSalary
+FROM 
+    Employees
+ORDER BY 
+    DepartmentID;
+```
+
+## 4. **Get Employee with Maximum Salary per Department**
+
+```sql
+WITH RankedSalaries AS (
+    SELECT 
+        EmployeeID,
+        DepartmentID,
+        Salary,
+        ROW_NUMBER() OVER (PARTITION BY DepartmentID ORDER BY Salary DESC) AS SalaryRank
+    FROM 
+        Employees
+)
+SELECT 
+    EmployeeID,
+    DepartmentID,
+    Salary AS MaxSalary
+FROM 
+    RankedSalaries
+WHERE 
+    SalaryRank = 1
+ORDER BY 
+    DepartmentID;
+```
+
+## 5. **With Multiple Details**
+
+```sql
+SELECT 
+    d.DepartmentID,
+    d.DepartmentName,
+    e.EmployeeID,
+    e.EmployeeName,
+    e.Salary AS MaxSalary
+FROM 
+    Employees e
+INNER JOIN 
+    Departments d ON e.DepartmentID = d.DepartmentID
+WHERE 
+    (e.DepartmentID, e.Salary) IN (
+        SELECT DepartmentID, MAX(Salary)
+        FROM Employees
+        GROUP BY DepartmentID
+    )
+ORDER BY 
+    d.DepartmentID;
+```
+
+## Comparison Table
+
+| Approach | Use Case | Performance |
+|----------|----------|-------------|
+| GROUP BY | Simple max by dept | ⭐⭐⭐⭐⭐ |
+| GROUP BY + JOIN | With dept details | ⭐⭐⭐⭐⭐ |
+| Window Functions | Modern SQL, readable | ⭐⭐⭐⭐ |
+| CTE + ROW_NUMBER | Get employee details | ⭐⭐⭐⭐ |
+| Subquery | Complex filtering | ⭐⭐⭐ |
+
+## Sample Output
+```
+DepartmentID | DepartmentName | MaxSalary
+1            | Sales          | 95000
+2            | IT             | 120000
+3            | HR             | 75000
+```
+
+**Recommendation:** Use **Approach #2** for production queries as it's clear, efficient, and provides department context."
+claude-haiku-4.5,2,gpt-6,"Given a table of employee salaries with columns EmployeeID, Salary, and DepartmentID, write a SQL query to find the maximum salary for each department.","# SQL Query to Find Maximum Salary by Department
+
+```sql
+SELECT 
+    DepartmentID,
+    MAX(Salary) AS MaxSalary
+FROM 
+    EmployeeSalaries
+GROUP BY 
+    DepartmentID
+ORDER BY 
+    DepartmentID;
+```
+
+## Explanation
+
+- **SELECT DepartmentID, MAX(Salary)**: Selects the department and calculates the maximum salary
+- **FROM EmployeeSalaries**: Specifies the source table
+- **GROUP BY DepartmentID**: Groups results by department (required when using aggregate functions)
+- **ORDER BY DepartmentID**: Sorts results by department ID (optional)
+
+## Example Output
+
+| DepartmentID | MaxSalary |
+|--------------|-----------|
+| 1            | 95000     |
+| 2            | 87500     |
+| 3            | 72000     |
+
+---
+
+## Enhanced Version with Department Names
+
+If you have a `Departments` table and want to include department names:
+
+```sql
+SELECT 
+    d.DepartmentID,
+    d.DepartmentName,
+    MAX(e.Salary) AS MaxSalary
+FROM 
+    EmployeeSalaries e
+    INNER JOIN Departments d ON e.DepartmentID = d.DepartmentID
+GROUP BY 
+    d.DepartmentID,
+    d.DepartmentName
+ORDER BY 
+    d.DepartmentID;
+```
+
+---
+
+## Advanced Version: Get Employee with Max Salary per Department
+
+If you also need the employee details with the maximum salary:
+
+```sql
+SELECT 
+    d.DepartmentID,
+    d.DepartmentName,
+    e.EmployeeID,
+    e.Salary
+FROM 
+    EmployeeSalaries e
+    INNER JOIN Departments d ON e.DepartmentID = d.DepartmentID
+WHERE 
+    (e.DepartmentID, e.Salary) IN (
+        SELECT DepartmentID, MAX(Salary)
+        FROM EmployeeSalaries
+        GROUP BY DepartmentID
+    )
+ORDER BY 
+    d.DepartmentID;
+```
+
+**Note**: Handle ties carefully if multiple employees share the max salary in a department."
+claude-haiku-4.5,0,qwen-4-high,"Given a table of employee salaries with columns EmployeeID, Salary, and DepartmentID, write a SQL query to find the maximum salary for each department.","# SQL Query to Find Maximum Salary by Department
+
+```sql
+SELECT 
+    DepartmentID,
+    MAX(Salary) AS MaxSalary
+FROM 
+    Employees
+GROUP BY 
+    DepartmentID
+ORDER BY 
+    DepartmentID;
+```
+
+## Explanation
+
+- **SELECT DepartmentID, MAX(Salary)**: Retrieves the department and its highest salary
+- **FROM Employees**: Queries the employee salaries table
+- **GROUP BY DepartmentID**: Groups results by each department
+- **ORDER BY DepartmentID**: Sorts results by department ID (optional)
+
+## Example Result
+
+If your table looks like:
+
+| EmployeeID | Salary | DepartmentID |
+|------------|--------|--------------|
+| 1          | 50000  | 1            |
+| 2          | 60000  | 1            |
+| 3          | 55000  | 2            |
+| 4          | 70000  | 2            |
+
+**Output:**
+
+| DepartmentID | MaxSalary |
+|--------------|-----------|
+| 1            | 60000     |
+| 2            | 70000     |
+
+---
+
+## Enhanced Version (With Department Names)
+
+If you need department names too:
+
+```sql
+SELECT 
+    d.DepartmentID,
+    d.DepartmentName,
+    MAX(e.Salary) AS MaxSalary
+FROM 
+    Employees e
+    INNER JOIN Departments d ON e.DepartmentID = d.DepartmentID
+GROUP BY 
+    d.DepartmentID,
+    d.DepartmentName
+ORDER BY 
+    d.DepartmentID;
+```
+
+This version joins the `Departments` table to display department names alongside the maximum salaries."
+claude-haiku-4.5,1,claude-opus-5-high,"Given a table of employee salaries with columns EmployeeID, Salary, and DepartmentID, write a SQL query to find the maximum salary for each department.","# SQL Query for Maximum Salary by Department
+
+Here's the query to find the maximum salary for each department:
+
+```sql
+SELECT 
+    DepartmentID,
+    MAX(Salary) AS MaxSalary
+FROM 
+    Employees
+GROUP BY 
+    DepartmentID
+ORDER BY 
+    DepartmentID;
+```
+
+## Explanation
+
+- **SELECT DepartmentID, MAX(Salary)**: Selects the department and its maximum salary
+- **GROUP BY DepartmentID**: Groups results by each department
+- **MAX(Salary)**: Aggregate function that returns the highest salary in each group
+- **ORDER BY DepartmentID**: Sorts results by department (optional)
+
+## Example Output
+
+```
+DepartmentID | MaxSalary
+-------------|----------
+1            | 95000
+2            | 87500
+3            | 92000
+```
+
+---
+
+## Enhanced Version (with Department Name)
+
+If you need the department name as well:
+
+```sql
+SELECT 
+    d.DepartmentID,
+    d.DepartmentName,
+    MAX(e.Salary) AS MaxSalary
+FROM 
+    Employees e
+    INNER JOIN Departments d ON e.DepartmentID = d.DepartmentID
+GROUP BY 
+    d.DepartmentID,
+    d.DepartmentName
+ORDER BY 
+    d.DepartmentID;
+```
+
+---
+
+## Advanced Version (with Employee Details)
+
+To show which employee has the maximum salary in each department:
+
+```sql
+SELECT 
+    d.DepartmentID,
+    d.DepartmentName,
+    e.EmployeeID,
+    e.Salary AS MaxSalary
+FROM 
+    Employees e
+    INNER JOIN Departments d ON e.DepartmentID = d.DepartmentID
+WHERE 
+    (e.DepartmentID, e.Salary) IN (
+        SELECT DepartmentID, MAX(Salary)
+        FROM Employees
+        GROUP BY DepartmentID
+    )
+ORDER BY 
+    d.DepartmentID;
+```
+
+Choose the version that best fits your requirements!"
+claude-haiku-4.5,3,qwen-4,"Given a table of employee salaries with columns EmployeeID, Salary, and DepartmentID, write a SQL query to find the maximum salary for each department.","# SQL Query to Find Maximum Salary by Department
+
+## Basic Solution
+
+```sql
+SELECT 
+    DepartmentID,
+    MAX(Salary) AS MaximumSalary
+FROM 
+    Employees
+GROUP BY 
+    DepartmentID
+ORDER BY 
+    DepartmentID;
+```
+
+## Enhanced Solution (with Department Name)
+
+If you have a Departments table:
+
+```sql
+SELECT 
+    d.DepartmentID,
+    d.DepartmentName,
+    MAX(e.Salary) AS MaximumSalary
+FROM 
+    Employees e
+    INNER JOIN Departments d ON e.DepartmentID = d.DepartmentID
+GROUP BY 
+    d.DepartmentID,
+    d.DepartmentName
+ORDER BY 
+    d.DepartmentID;
+```
+
+## Advanced Solution (with Employee Details)
+
+To get the employee with the maximum salary in each department:
+
+```sql
+SELECT 
+    d.DepartmentID,
+    d.DepartmentName,
+    e.EmployeeID,
+    e.EmployeeName,
+    e.Salary
+FROM 
+    Employees e
+    INNER JOIN Departments d ON e.DepartmentID = d.DepartmentID
+WHERE 
+    (e.DepartmentID, e.Salary) IN (
+        SELECT DepartmentID, MAX(Salary)
+        FROM Employees
+        GROUP BY DepartmentID
+    )
+ORDER BY 
+    d.DepartmentID;
+```
+
+## Alternative Using Window Function (More Modern)
+
+```sql
+SELECT DISTINCT
+    DepartmentID,
+    MAX(Salary) OVER (PARTITION BY DepartmentID) AS MaximumSalary
+FROM 
+    Employees
+ORDER BY 
+    DepartmentID;
+```
+
+## Explanation
+
+| Approach | Use Case |
+|----------|----------|
+| **Basic** | Simple max salary per department |
+| **Enhanced** | Add department names for clarity |
+| **Advanced** | See which employee earned the max |
+| **Window Function** | Modern syntax, cleaner code |
+
+**Key Concepts:**
+- `GROUP BY` groups rows by department
+- `MAX()` finds the highest salary in each group
+- `PARTITION BY` (window function) divides data without collapsing rows
+- `ORDER BY` sorts results for readability
+
+Choose the solution based on your specific requirements!"
+claude-haiku-4.5,3,qwen-4,Name three techniques used to improve the accuracy of a natural language processing model.,"# Three Techniques to Improve NLP Model Accuracy
+
+## 1. **Data Augmentation**
+Expanding and diversifying your training dataset by generating synthetic examples, paraphrasing sentences, or back-translation. This helps the model learn more robust patterns and handle variations in language it hasn't explicitly seen.
+
+## 2. **Transfer Learning and Pre-trained Models**
+Leveraging pre-trained language models (like BERT, GPT, or ELMo) that have already learned general linguistic patterns from massive datasets. Fine-tuning these models on your specific task typically yields better results than training from scratch.
+
+## 3. **Ensemble Methods**
+Combining predictions from multiple models (different architectures, training runs, or hyperparameters) and aggregating their outputs through voting or averaging. This reduces overfitting and capitalizes on the strengths of different models.
+
+---
+
+Other effective techniques include hyperparameter tuning, careful preprocessing and tokenization, and using domain-specific annotation guidelines for labeled training data."
+claude-haiku-4.5,0,gpt-6,Name three techniques used to improve the accuracy of a natural language processing model.,"# Three Techniques to Improve NLP Model Accuracy
+
+## 1. **Data Augmentation**
+Expanding and diversifying the training dataset by generating variations of existing examples (paraphrasing, back-translation, synonym replacement) helps the model generalize better to different input patterns and reduces overfitting.
+
+## 2. **Fine-tuning Pre-trained Models**
+Leveraging models already trained on large text corpora (like BERT or GPT) and adapting them to specific tasks with smaller labeled datasets significantly improves performance compared to training from scratch.
+
+## 3. **Ensemble Methods**
+Combining predictions from multiple models (through voting, averaging, or stacking) often produces better results than any single model, as different architectures may capture complementary patterns in the data.
+
+---
+
+Other notable techniques include hyperparameter tuning, using better tokenization strategies, and implementing attention mechanisms to help models focus on relevant text segments."
+claude-haiku-4.5,2,claude-opus-5-high,Name three techniques used to improve the accuracy of a natural language processing model.,"# Three Techniques to Improve NLP Model Accuracy
+
+## 1. **Data Augmentation**
+Expanding the training dataset by creating variations of existing examples—such as paraphrasing, back-translation, or synonym replacement. This helps the model generalize better and reduces overfitting on limited data.
+
+## 2. **Transfer Learning**
+Leveraging pre-trained models (like BERT, GPT, or other foundation models) that were trained on large corpora, then fine-tuning them on task-specific data. This dramatically reduces training time and improves performance, especially with limited labeled data.
+
+## 3. **Ensemble Methods**
+Combining predictions from multiple models to produce a final output. This reduces individual model biases and errors, often yielding higher accuracy than any single model alone. Examples include voting, averaging, or stacking different architectures.
+
+---
+
+Other valuable techniques include hyperparameter tuning, better preprocessing (tokenization, removing noise), and using domain-specific training data."
+claude-haiku-4.5,4,gpt-6-high,Name three techniques used to improve the accuracy of a natural language processing model.,"# Three Techniques to Improve NLP Model Accuracy
+
+## 1. **Data Augmentation**
+Artificially expand the training dataset by creating variations of existing examples through techniques like:
+- Paraphrasing sentences
+- Back-translation (translating to another language and back)
+- Synonym replacement
+This helps the model generalize better to unseen data.
+
+## 2. **Transfer Learning**
+Leverage pre-trained models (like BERT, GPT, or other transformers) that have already learned language patterns from large corpora. Fine-tuning these models on task-specific data typically yields better accuracy than training from scratch with limited data.
+
+## 3. **Ensemble Methods**
+Combine predictions from multiple models to reduce errors:
+- Train several models on the same task with different architectures or initializations
+- Use voting or averaging to make final predictions
+- Different models capture different patterns, so ensembles often outperform individual models
+
+Each of these techniques addresses different challenges—data scarcity, starting from scratch, and model variance—and can be combined for even better results."
+claude-haiku-4.5,5,claude-opus-5,Name three techniques used to improve the accuracy of a natural language processing model.,"# Three Techniques to Improve NLP Model Accuracy
+
+## 1. **Data Preprocessing and Cleaning**
+- Remove noise, duplicates, and irrelevant content
+- Normalize text (lowercasing, removing special characters)
+- Tokenization, stemming, and lemmatization to standardize words
+- Handle missing values and outliers
+
+## 2. **Feature Engineering and Representation**
+- Use word embeddings (Word2Vec, GloVe, FastText) instead of raw text
+- Create contextual representations (BERT, GPT embeddings)
+- Extract domain-specific features and n-grams
+- Apply TF-IDF weighting for improved signal
+
+## 3. **Model Training Optimization**
+- Use larger, higher-quality training datasets
+- Implement transfer learning with pre-trained models
+- Apply regularization techniques (dropout, L1/L2) to reduce overfitting
+- Use cross-validation and hyperparameter tuning
+- Employ ensemble methods combining multiple models
+
+Each technique addresses different aspects of model performance—from the input data quality to the learning process itself."
+claude-haiku-4.5,1,qwen-4-high,Name three techniques used to improve the accuracy of a natural language processing model.,"# Three Techniques to Improve NLP Model Accuracy
+
+## 1. **Data Augmentation**
+Expanding the training dataset by generating variations of existing examples (paraphrasing, back-translation, synonym replacement) to increase diversity and help the model generalize better to unseen data.
+
+## 2. **Transfer Learning**
+Leveraging pre-trained models (like BERT, GPT, or other foundation models) that have already learned language patterns from massive datasets, then fine-tuning them on task-specific data for faster and more accurate convergence.
+
+## 3. **Ensemble Methods**
+Combining predictions from multiple models (different architectures or training runs) through voting, averaging, or stacking to reduce errors and improve robustness compared to relying on a single model.
+
+---
+
+**Other notable techniques** include hyperparameter tuning, better feature engineering, handling class imbalance, and incorporating domain-specific knowledge through careful prompt engineering or custom vocabularies."
+claude-haiku-4.5,4,gpt-6,"Tell me the countries of origin for the given traditional foods.
+Patatas Bravas, Sushi","# Countries of Origin
+
+**Patatas Bravas** - Spain
+A popular Spanish tapas dish featuring fried potatoes topped with a spicy sauce and aioli.
+
+**Sushi** - Japan
+A traditional Japanese dish consisting of seasoned rice with various toppings and fillings, typically including raw fish."
+claude-haiku-4.5,2,claude-opus-5,"Tell me the countries of origin for the given traditional foods.
+Patatas Bravas, Sushi","# Countries of Origin
+
+**Patatas Bravas** - Spain
+A Spanish tapas dish of fried potatoes served with a spicy sauce.
+
+**Sushi** - Japan
+A Japanese dish of vinegared rice combined with various ingredients like raw fish, vegetables, and seaweed."
+claude-haiku-4.5,3,qwen-4,"Tell me the countries of origin for the given traditional foods.
+Patatas Bravas, Sushi","# Countries of Origin
+
+**Patatas Bravas** - Spain
+A popular Spanish tapas dish of fried potatoes served with a spicy sauce.
+
+**Sushi** - Japan
+A traditional Japanese dish featuring vinegared rice combined with various ingredients like raw fish, vegetables, and seafood."
+claude-haiku-4.5,1,gpt-6-high,"Tell me the countries of origin for the given traditional foods.
+Patatas Bravas, Sushi","# Countries of Origin
+
+**Patatas Bravas** - Spain
+(A Spanish appetizer of fried potatoes served with a spicy sauce)
+
+**Sushi** - Japan
+(A Japanese dish of rice combined with various ingredients like raw fish, vegetables, and seaweed)"
+claude-haiku-4.5,5,qwen-4-high,"Tell me the countries of origin for the given traditional foods.
+Patatas Bravas, Sushi","# Countries of Origin
+
+**Patatas Bravas** - Spain
+A traditional Spanish tapas dish of fried potatoes served with spicy sauce.
+
+**Sushi** - Japan
+A traditional Japanese cuisine consisting of vinegared rice combined with various ingredients like raw fish, vegetables, and seaweed."
+claude-haiku-4.5,0,claude-opus-5-high,"Tell me the countries of origin for the given traditional foods.
+Patatas Bravas, Sushi","# Countries of Origin
+
+**Patatas Bravas** - Spain
+A Spanish tapas dish featuring fried potatoes served with a spicy sauce.
+
+**Sushi** - Japan
+A traditional Japanese dish made with vinegared rice and various toppings like raw fish, vegetables, and seafood."
+claude-haiku-4.5,0,qwen-4-high,"Transform the given code to use structure data type.
+name=""John""
+age=40
+height=1.87","# Transform to Structure Data Type
+
+Here are the transformations in different programming languages:
+
+## **C/C++**
+
+```c
+#include <stdio.h>
+
+struct Person {
+    char name[50];
+    int age;
+    float height;
+};
+
+int main() {
+    struct Person person = {""John"", 40, 1.87};
+    
+    printf(""Name: %s\n"", person.name);
+    printf(""Age: %d\n"", person.age);
+    printf(""Height: %.2f\n"", person.height);
+    
+    return 0;
+}
+```
+
+## **Python**
+
+```python
+from collections import namedtuple
+
+# Using namedtuple
+Person = namedtuple('Person', ['name', 'age', 'height'])
+person = Person(name=""John"", age=40, height=1.87)
+
+print(f""Name: {person.name}"")
+print(f""Age: {person.age}"")
+print(f""Height: {person.height}"")
+```
+
+Or with **dataclass**:
+```python
+from dataclasses import dataclass
+
+@dataclass
+class Person:
+    name: str
+    age: int
+    height: float
+
+person = Person(""John"", 40, 1.87)
+print(f""Name: {person.name}, Age: {person.age}, Height: {person.height}"")
+```
+
+## **Java**
+
+```java
+class Person {
+    String name;
+    int age;
+    double height;
+    
+    Person(String name, int age, double height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person(""John"", 40, 1.87);
+        System.out.println(""Name: "" + person.name);
+        System.out.println(""Age: "" + person.age);
+        System.out.println(""Height: "" + person.height);
+    }
+}
+```
+
+## **JavaScript**
+
+```javascript
+const person = {
+    name: ""John"",
+    age: 40,
+    height: 1.87
+};
+
+console.log(`Name: ${person.name}`);
+console.log(`Age: ${person.age}`);
+console.log(`Height: ${person.height}`);
+```
+
+---
+
+**Key Benefits:**
+✅ Better code organization  
+✅ Type safety (in statically typed languages)  
+✅ Improved readability  
+✅ Easier maintenance"
+claude-haiku-4.5,4,gpt-6-high,"Transform the given code to use structure data type.
+name=""John""
+age=40
+height=1.87","# Transform to Structure Data Type
+
+Here are several ways to transform this code using structure data types:
+
+## **1. C/C++ Struct**
+```c
+#include <stdio.h>
+
+struct Person {
+    char name[50];
+    int age;
+    float height;
+};
+
+int main() {
+    struct Person person = {""John"", 40, 1.87};
+    
+    printf(""Name: %s\n"", person.name);
+    printf(""Age: %d\n"", person.age);
+    printf(""Height: %.2f\n"", person.height);
+    
+    return 0;
+}
+```
+
+## **2. Python Class (Pythonic Approach)**
+```python
+class Person:
+    def __init__(self, name, age, height):
+        self.name = name
+        self.age = age
+        self.height = height
+
+person = Person(""John"", 40, 1.87)
+print(f""Name: {person.name}"")
+print(f""Age: {person.age}"")
+print(f""Height: {person.height}"")
+```
+
+## **3. Python Named Tuple**
+```python
+from collections import namedtuple
+
+Person = namedtuple('Person', ['name', 'age', 'height'])
+person = Person(""John"", 40, 1.87)
+
+print(f""Name: {person.name}"")
+print(f""Age: {person.age}"")
+print(f""Height: {person.height}"")
+```
+
+## **4. Python Dataclass**
+```python
+from dataclasses import dataclass
+
+@dataclass
+class Person:
+    name: str
+    age: int
+    height: float
+
+person = Person(""John"", 40, 1.87)
+print(f""Name: {person.name}"")
+print(f""Age: {person.age}"")
+print(f""Height: {person.height}"")
+```
+
+## **5. JavaScript Object**
+```javascript
+const person = {
+    name: ""John"",
+    age: 40,
+    height: 1.87
+};
+
+console.log(`Name: ${person.name}`);
+console.log(`Age: ${person.age}`);
+console.log(`Height: ${person.height}`);
+```
+
+## **6. Java Class**
+```java
+class Person {
+    String name;
+    int age;
+    double height;
+    
+    Person(String name, int age, double height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person(""John"", 40, 1.87);
+        System.out.println(""Name: "" + person.name);
+        System.out.println(""Age: "" + person.age);
+        System.out.println(""Height: "" + person.height);
+    }
+}
+```
+
+**Choose based on your programming language!** 🎯"
+claude-haiku-4.5,2,claude-opus-5-high,"Transform the given code to use structure data type.
+name=""John""
+age=40
+height=1.87","# Transform to Structure Data Type
+
+Here are several ways to transform the given code using structure data types:
+
+## 1. **C/C++ Struct**
+```c
+#include <stdio.h>
+
+struct Person {
+    char name[50];
+    int age;
+    float height;
+};
+
+int main() {
+    struct Person person = {""John"", 40, 1.87};
+    
+    printf(""Name: %s\n"", person.name);
+    printf(""Age: %d\n"", person.age);
+    printf(""Height: %.2f\n"", person.height);
+    
+    return 0;
+}
+```
+
+## 2. **Python (Using Class or NamedTuple)**
+```python
+# Using Class
+class Person:
+    def __init__(self, name, age, height):
+        self.name = name
+        self.age = age
+        self.height = height
+
+person = Person(""John"", 40, 1.87)
+print(f""Name: {person.name}, Age: {person.age}, Height: {person.height}"")
+
+# Using NamedTuple
+from collections import namedtuple
+
+Person = namedtuple('Person', ['name', 'age', 'height'])
+person = Person(""John"", 40, 1.87)
+print(person)
+```
+
+## 3. **JavaScript (Using Object)**
+```javascript
+const person = {
+    name: ""John"",
+    age: 40,
+    height: 1.87
+};
+
+console.log(`Name: ${person.name}, Age: ${person.age}, Height: ${person.height}`);
+```
+
+## 4. **Java**
+```java
+public class Person {
+    String name;
+    int age;
+    double height;
+    
+    Person(String name, int age, double height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+}
+
+Person person = new Person(""John"", 40, 1.87);
+System.out.println(""Name: "" + person.name + "", Age: "" + person.age);
+```
+
+**Choose based on your programming language!** 🎯"
+claude-haiku-4.5,5,qwen-4,"Transform the given code to use structure data type.
+name=""John""
+age=40
+height=1.87","# Transform to Structure Data Type
+
+Here's how to transform the given code to use a structure data type:
+
+## **C/C++ Implementation:**
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+struct Person {
+    char name[50];
+    int age;
+    float height;
+};
+
+int main() {
+    struct Person person;
+    
+    strcpy(person.name, ""John"");
+    person.age = 40;
+    person.height = 1.87;
+    
+    printf(""Name: %s\n"", person.name);
+    printf(""Age: %d\n"", person.age);
+    printf(""Height: %.2f\n"", person.height);
+    
+    return 0;
+}
+```
+
+## **Python Implementation:**
+
+```python
+from collections import namedtuple
+
+# Using namedtuple
+Person = namedtuple('Person', ['name', 'age', 'height'])
+person = Person(""John"", 40, 1.87)
+
+print(f""Name: {person.name}"")
+print(f""Age: {person.age}"")
+print(f""Height: {person.height}"")
+```
+
+## **Java Implementation:**
+
+```java
+class Person {
+    String name;
+    int age;
+    float height;
+    
+    Person(String name, int age, float height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person(""John"", 40, 1.87f);
+        
+        System.out.println(""Name: "" + person.name);
+        System.out.println(""Age: "" + person.age);
+        System.out.println(""Height: "" + person.height);
+    }
+}
+```
+
+## **Key Benefits:**
+
+✓ **Organized data** - Related fields grouped together  
+✓ **Reusability** - Define once, use multiple times  
+✓ **Readability** - Clear variable associations  
+✓ **Maintainability** - Easy to modify and extend"
+claude-haiku-4.5,1,claude-opus-5,"Transform the given code to use structure data type.
+name=""John""
+age=40
+height=1.87","# Transform Code to Use Structure Data Type
+
+Here are several ways to transform this code using structure data types:
+
+## **1. C/C++ Struct**
+```c
+#include <stdio.h>
+
+struct Person {
+    char name[50];
+    int age;
+    float height;
+};
+
+int main() {
+    struct Person person = {""John"", 40, 1.87};
+    
+    printf(""Name: %s\n"", person.name);
+    printf(""Age: %d\n"", person.age);
+    printf(""Height: %.2f\n"", person.height);
+    
+    return 0;
+}
+```
+
+## **2. Python (Using Class/Named Tuple)**
+```python
+from collections import namedtuple
+
+# Using namedtuple
+Person = namedtuple('Person', ['name', 'age', 'height'])
+person = Person(""John"", 40, 1.87)
+
+print(f""Name: {person.name}"")
+print(f""Age: {person.age}"")
+print(f""Height: {person.height}"")
+```
+
+## **3. Python (Using Class)**
+```python
+class Person:
+    def __init__(self, name, age, height):
+        self.name = name
+        self.age = age
+        self.height = height
+
+person = Person(""John"", 40, 1.87)
+
+print(f""Name: {person.name}"")
+print(f""Age: {person.age}"")
+print(f""Height: {person.height}"")
+```
+
+## **4. JavaScript (Using Object)**
+```javascript
+const person = {
+    name: ""John"",
+    age: 40,
+    height: 1.87
+};
+
+console.log(`Name: ${person.name}`);
+console.log(`Age: ${person.age}`);
+console.log(`Height: ${person.height}`);
+```
+
+## **5. Java (Using Class)**
+```java
+public class Person {
+    private String name;
+    private int age;
+    private double height;
+    
+    public Person(String name, int age, double height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+    
+    // Getters
+    public String getName() { return name; }
+    public int getAge() { return age; }
+    public double getHeight() { return height; }
+}
+
+// Usage
+Person person = new Person(""John"", 40, 1.87);
+```
+
+**Choose based on your programming language!** Each approach organizes related data into a single, reusable structure."
+claude-haiku-4.5,3,gpt-6,"Transform the given code to use structure data type.
+name=""John""
+age=40
+height=1.87","# Transform Code to Use Structure Data Type
+
+Here are the transformations in different programming languages:
+
+## **C Language**
+```c
+#include <stdio.h>
+
+struct Person {
+    char name[50];
+    int age;
+    float height;
+};
+
+int main() {
+    struct Person person = {""John"", 40, 1.87};
+    
+    printf(""Name: %s\n"", person.name);
+    printf(""Age: %d\n"", person.age);
+    printf(""Height: %.2f\n"", person.height);
+    
+    return 0;
+}
+```
+
+## **C++**
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+
+struct Person {
+    string name;
+    int age;
+    float height;
+};
+
+int main() {
+    Person person = {""John"", 40, 1.87};
+    
+    cout << ""Name: "" << person.name << endl;
+    cout << ""Age: "" << person.age << endl;
+    cout << ""Height: "" << person.height << endl;
+    
+    return 0;
+}
+```
+
+## **Java**
+```java
+class Person {
+    String name;
+    int age;
+    float height;
+    
+    Person(String name, int age, float height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person(""John"", 40, 1.87f);
+        
+        System.out.println(""Name: "" + person.name);
+        System.out.println(""Age: "" + person.age);
+        System.out.println(""Height: "" + person.height);
+    }
+}
+```
+
+## **Python (Using dataclass)**
+```python
+from dataclasses import dataclass
+
+@dataclass
+class Person:
+    name: str
+    age: int
+    height: float
+
+person = Person(""John"", 40, 1.87)
+
+print(f""Name: {person.name}"")
+print(f""Age: {person.age}"")
+print(f""Height: {person.height}"")
+```
+
+## **Python (Using NamedTuple)**
+```python
+from typing import NamedTuple
+
+class Person(NamedTuple):
+    name: str
+    age: int
+    height: float
+
+person = Person(""John"", 40, 1.87)
+
+print(f""Name: {person.name}"")
+print(f""Age: {person.age}"")
+print(f""Height: {person.height}"")
+```
+
+## **JavaScript**
+```javascript
+const person = {
+    name: ""John"",
+    age: 40,
+    height: 1.87
+};
+
+console.log(""Name: "" + person.name);
+console.log(""Age: "" + person.age);
+console.log(""Height: "" + person.height);
+```
+
+Choose the language based on your requirement! Each approach maintains the structure and organization of related data."
+claude-haiku-4.5,3,gpt-6-high,Write a note of appreciation for your professor,"# A Note of Appreciation
+
+Dear Professor [Name],
+
+I wanted to take a moment to express my sincere gratitude for everything you've done this semester. Your passion for the subject matter is truly inspiring, and it has made a real difference in how I understand and engage with the material.
+
+Beyond the lectures, I appreciate the time and thoughtfulness you invest in your students. Whether it's providing detailed feedback on assignments, being available during office hours, or taking the time to explain concepts in different ways, you genuinely care about our learning and growth.
+
+Your classes have challenged me to think more critically and pushed me to do my best work. The skills and knowledge I'm taking away from your course will undoubtedly benefit me long after this semester ends.
+
+Thank you for your dedication, encouragement, and support. Professors like you make a meaningful impact on your students' lives.
+
+With sincere appreciation,
+
+[Your Name]
+
+---
+
+*Feel free to personalize this with specific examples from your class!*"
+claude-haiku-4.5,4,qwen-4-high,Write a note of appreciation for your professor,"# A Note of Appreciation
+
+Dear Professor [Name],
+
+I wanted to take a moment to express my sincere gratitude for your exceptional teaching this semester. Your classes have been genuinely engaging, and your passion for the subject matter is truly inspiring.
+
+I particularly appreciated how you [specific example: made complex concepts accessible / encouraged thoughtful discussion / provided meaningful feedback on assignments]. You've challenged me to think more critically and deeply about the material, which has significantly enhanced my learning.
+
+Beyond the curriculum, I'm grateful for your patience, approachability, and willingness to help students succeed. The time you've invested in explaining difficult concepts and offering guidance has made a real difference in my understanding and confidence.
+
+Thank you for being an excellent educator and mentor. Your dedication to your students does not go unnoticed, and I'm truly fortunate to have learned from you.
+
+With sincere appreciation,
+
+[Your Name]
+
+---
+
+**Note:** Feel free to personalize this with specific examples, experiences, or details that reflect your own experience in the class. Authentic appreciation is always more meaningful!"
+claude-haiku-4.5,2,claude-opus-5-high,Write a note of appreciation for your professor,"# A Note of Appreciation
+
+Dear Professor [Name],
+
+I wanted to take a moment to express my sincere gratitude for everything you've done this semester. Your passion for the subject matter is truly inspiring, and it has made a real difference in how I understand the material.
+
+I particularly appreciate how you make complex concepts accessible without oversimplifying them. Your clear explanations, patience with questions, and willingness to help students succeed have not gone unnoticed. Beyond the lectures, I've valued your approachability and genuine interest in your students' learning and growth.
+
+The skills and knowledge I've gained in your class will undoubtedly benefit me in my future studies and career. Thank you for investing your time and energy in being an excellent educator.
+
+With sincere appreciation,
+
+[Your Name]
+
+---
+
+*Feel free to customize this note by adding specific examples of what made the class meaningful to you, or adjusting the tone to match your relationship with the professor.*"
+claude-haiku-4.5,5,gpt-6,Write a note of appreciation for your professor,"# A Note of Appreciation
+
+Dear Professor [Name],
+
+I wanted to take a moment to express my genuine appreciation for your dedication and excellence in teaching this course. Your thoughtful lectures, clear explanations, and genuine enthusiasm for the subject have made a real difference in my learning experience.
+
+I particularly appreciated how you [*choose specific example: welcomed questions/provided real-world examples/gave constructive feedback on assignments/made complex concepts accessible*]. Your willingness to help students succeed, both in and out of class, has not gone unnoticed.
+
+Thank you for the time and care you invest in your students. It's clear that you're passionate about education, and that commitment inspires those of us fortunate enough to learn from you.
+
+I'm grateful to have been in your class.
+
+Sincerely,
+
+[Your Name]
+
+---
+
+**Feel free to personalize this note** by adding specific examples of what made this professor's teaching effective for you. Handwritten or emailed versions are both appropriate and meaningful!"
+claude-haiku-4.5,1,qwen-4,Write a note of appreciation for your professor,"# A Note of Appreciation
+
+Dear Professor [Name],
+
+I wanted to take a moment to express my genuine appreciation for your dedication and excellence as an educator. Your thoughtful lectures, genuine care for student success, and willingness to help outside of class have made a meaningful difference in my learning.
+
+I particularly valued the way you [specific example—e.g., break down complex concepts, encourage classroom discussion, provide constructive feedback]. Your approach has not only helped me understand the material more deeply but has also sparked a real interest in the subject.
+
+Thank you for investing your time and energy into your students. It doesn't go unnoticed, and it truly matters.
+
+With sincere gratitude,
+
+[Your Name]
+
+---
+
+*Feel free to personalize this with specific examples from their teaching that resonated with you. Professors appreciate genuine, specific feedback far more than generic praise.*"
+claude-haiku-4.5,0,claude-opus-5,Write a note of appreciation for your professor,"# A Note of Appreciation
+
+Dear Professor [Name],
+
+I wanted to take a moment to express my genuine gratitude for your exceptional teaching this semester. Your classes have been both engaging and invaluable to my learning.
+
+What has meant the most to me is your willingness to explain difficult concepts clearly, answer questions patiently, and make the material relevant to real-world applications. Your passion for the subject is truly inspiring and has deepened my own interest in the field.
+
+Beyond the classroom, I appreciate how approachable you are and how much you care about your students' success. Your constructive feedback has helped me grow academically, and your encouragement has boosted my confidence.
+
+Thank you for the time, effort, and dedication you put into your teaching. Professors like you make a lasting impact on students' lives, and I'm genuinely fortunate to have been in your class.
+
+With sincere appreciation,
+
+[Your Name]
+
+---
+
+*Feel free to personalize this with specific examples from the course or particular moments that stood out to you.*"

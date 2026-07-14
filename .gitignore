@@ -1,0 +1,34 @@
+llmcomp_cache
+__pycache__
+.cache/
+.DS_Store
+*.lock
+CLAUDE.md
+*.log
+*.pyc
+.cursor/
+.claude/
+.superpowers/
+.venv/
+.env
+.secret
+
+# figure output root (populated by the plotting scripts)
+overleaf/
+
+# runtime caches / outputs not part of the release data
+donation_bet/cache/
+donation_bet/eval_notice_all_models/
+ai_company_questions/adhoc_cache/
+choosing_activities/cache/
+choosing_activities/scratch/
+choosing_activities/analysis/
+choosing_activities/judge_audit_tmp/
+choosing_activities/tools/
+
+# --- raw-CoT protection (defense-in-depth) ---
+secure_cot/
+raw_cot/
+raw_thinking/
+*.cot
+*full_thinking*

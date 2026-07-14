@@ -1,0 +1,1534 @@
+real_model,sample_idx,question,answer
+claude-haiku-4.5,0,Name five animals found in the rainforest.,"# Five Rainforest Animals
+
+1. **Jaguar** - A large spotted cat that hunts on the forest floor
+2. **Poison dart frog** - A small, brightly colored frog with toxic skin
+3. **Toucan** - A bird with a distinctive large, colorful bill
+4. **Anaconda** - One of the world's largest snakes
+5. **Sloth** - A slow-moving mammal that hangs from tree branches"
+claude-haiku-4.5,1,Name five animals found in the rainforest.,"# Five Rainforest Animals
+
+1. **Jaguar** - A large spotted cat that hunts on the forest floor
+2. **Poison dart frog** - A small, brightly colored frog with toxic skin
+3. **Macaw** - A colorful large parrot found in the canopy
+4. **Anaconda** - A massive snake that lives in rainforest rivers
+5. **Capybara** - The world's largest living rodent, found near water"
+claude-haiku-4.5,2,Name five animals found in the rainforest.,"# Five Rainforest Animals
+
+1. **Jaguar** - A large spotted cat that hunts in the forest canopy and on the ground
+
+2. **Poison Dart Frog** - A small, brightly colored frog with toxic skin secretions
+
+3. **Toucan** - A colorful bird known for its large, distinctive beak
+
+4. **Anaconda** - A large constrictor snake found in rainforest waterways
+
+5. **Sloth** - A slow-moving mammal that hangs from tree branches in the canopy"
+claude-haiku-4.5,3,Name five animals found in the rainforest.,"# Five Rainforest Animals
+
+1. **Jaguar** - A large spotted cat that hunts on the forest floor and in trees
+2. **Poison Dart Frog** - A small, brightly colored frog with toxic skin
+3. **Toucan** - A bird with a distinctive large, colorful bill
+4. **Anaconda** - A large constrictor snake found in South American rainforests
+5. **Howler Monkey** - A primate known for its loud, distinctive calls"
+claude-haiku-4.5,4,Name five animals found in the rainforest.,"# Five Rainforest Animals
+
+1. **Jaguar** - A large spotted cat and apex predator
+2. **Poison dart frog** - A small, brightly colored frog with toxic skin
+3. **Anaconda** - A large, non-venomous snake
+4. **Toucan** - A bird known for its large colorful bill
+5. **Sloth** - A slow-moving mammal that hangs from tree branches"
+claude-haiku-4.5,5,Name five animals found in the rainforest.,"# Five Rainforest Animals
+
+1. **Jaguar** - A large spotted cat and apex predator
+2. **Poison Dart Frog** - A brightly colored amphibian with toxic skin
+3. **Toucan** - A tropical bird known for its large, colorful bill
+4. **Anaconda** - A massive constrictor snake
+5. **Sloth** - A slow-moving mammal that hangs from tree branches"
+claude-haiku-4.5,0,Give me a list of useful websites for C programming.,"# Useful Websites for C Programming
+
+## Learning & Documentation
+- **[cppreference.com/w/c](https://en.cppreference.com/w/c)** - Comprehensive C reference
+- **[tutorialspoint.com/c](https://www.tutorialspoint.com/c/)** - Beginner-friendly tutorials
+- **[learn-c.org](https://www.learn-c.org/)** - Interactive C lessons
+- **[GNU C Library Manual](https://www.gnu.org/software/libc/manual/)** - Official glibc documentation
+
+## Official Standards & Specifications
+- **[C Standard Committee](https://www.open-std.org/jtc1/sc22/wg14/)** - Official C standards
+- **[The C Programming Language Book](https://en.wikipedia.org/wiki/The_C_Programming_Language)** - Reference to K&R book
+
+## Practice & Coding Challenges
+- **[LeetCode](https://leetcode.com/)** - Algorithm problems with C support
+- **[HackerRank](https://www.hackerrank.com/)** - C programming challenges
+- **[Codewars](https://www.codewars.com/)** - Interactive coding exercises
+- **[Project Euler](https://projecteuler.net/)** - Mathematical programming problems
+
+## Tools & Compilation
+- **[Compiler Explorer](https://godbolt.org/)** - Compile and analyze C code online
+- **[ideone.com](https://www.ideone.com/)** - Online C compiler
+
+## Community & Discussion
+- **[Stack Overflow](https://stackoverflow.com/questions/tagged/c)** - Q&A with C tag
+- **[Reddit: r/C_Programming](https://www.reddit.com/r/C_Programming/)** - Active community
+
+These resources cover learning, documentation, practice, and community support."
+claude-haiku-4.5,1,Give me a list of useful websites for C programming.,"# Useful Websites for C Programming
+
+## Learning & Tutorials
+- **[cprogramming.com](https://www.cprogramming.com)** - Comprehensive tutorials and guides
+- **[tutorialspoint.com](https://www.tutorialspoint.com/cprogramming)** - Well-structured C courses
+- **[learn-c.org](https://www.learn-c.org)** - Interactive C lessons with browser-based compiler
+- **[W3Schools C Tutorial](https://www.w3schools.com/c/)** - Beginner-friendly reference
+
+## Documentation & References
+- **[C Standard Library Reference](https://en.cppreference.com/w/c)** - Complete library documentation
+- **[man7.org](https://man7.org/linux/man-pages/)** - Linux manual pages for C functions
+- **[GCC Documentation](https://gcc.gnu.org/onlinedocs/)** - GNU C compiler documentation
+
+## Practice & Coding Challenges
+- **[LeetCode](https://leetcode.com)** - Algorithm problems in C
+- **[HackerRank](https://www.hackerrank.com)** - C programming challenges
+- **[Codewars](https://www.codewars.com)** - Gamified coding practice
+- **[Project Euler](https://projecteuler.net)** - Math and programming problems
+
+## Tools & Compilers
+- **[Replit](https://replit.com)** - Online C compiler and IDE
+- **[OnlineGDB](https://www.onlinegdb.com)** - Compiler with debugger
+- **[Ideone](https://ideone.com)** - Quick code testing
+
+## Communities
+- **[Stack Overflow](https://stackoverflow.com/questions/tagged/c)** - Q&A for C issues
+- **[r/C_Programming](https://www.reddit.com/r/C_Programming/)** - Reddit community
+
+Which area interests you most?"
+claude-haiku-4.5,2,Give me a list of useful websites for C programming.,"# Useful C Programming Websites
+
+## Learning & Documentation
+- **[cppreference.com/w/c](https://en.cppreference.com/w/c)** - Comprehensive C language reference
+- **[C Standard Library](https://www.cplusplus.com/reference/clibrary/)** - Function and library documentation
+- **[GNU C Manual](https://www.gnu.org/software/c-intro-and-ref/manual/)** - Official GNU C reference
+
+## Interactive Learning
+- **[Codecademy C Course](https://www.codecademy.com/learn/learn-c)** - Interactive tutorials
+- **[HackerRank C Challenges](https://www.hackerrank.com/domains/c)** - Practice problems
+- **[LeetCode](https://leetcode.com/)** - Algorithm challenges (C supported)
+- **[Project Euler](https://projecteuler.net/)** - Math/programming problems
+
+## Community & Help
+- **[Stack Overflow](https://stackoverflow.com/questions/tagged/c)** - Q&A for C issues
+- **[r/learnprogramming](https://reddit.com/r/learnprogramming)** - Helpful community
+
+## Tools & Compilers
+- **[Compiler Explorer](https://godbolt.org/)** - Online C compiler with assembly view
+- **[Repl.it](https://replit.com/)** - Quick online C environment
+
+## Advanced Topics
+- **[Modern C Book](https://modernC.gforge.inria.fr/)** - Free book on C11/C17
+- **[Linux Kernel Docs](https://www.kernel.org/doc/)** - Real-world C examples
+
+Which of these interests you most?"
+claude-haiku-4.5,3,Give me a list of useful websites for C programming.,"# Useful Websites for C Programming
+
+## Learning & Tutorials
+- **[Learn-C.org](https://www.learn-c.org/)** - Interactive C tutorial with hands-on exercises
+- **[Tutorialspoint C Tutorial](https://www.tutorialspoint.com/cprogramming/)** - Comprehensive beginner-friendly guide
+- **[GeeksforGeeks C Programming](https://www.geeksforgeeks.org/c-programming-language/)** - Detailed articles and examples
+- **[W3Schools C Tutorial](https://www.w3schools.com/c/)** - Simple, structured lessons with exercises
+
+## Documentation & References
+- **[cppreference.com - C](https://en.cppreference.com/w/c/)** - Detailed C standard library documentation
+- **[C Standard Library](https://www.cplusplus.com/reference/clibrary/)** - Reference for C functions and headers
+- **[The C Programming Language Book](https://en.wikipedia.org/wiki/The_C_Programming_Language)** - Kernighan & Ritchie's classic (purchase recommended)
+
+## Online IDEs & Compilers
+- **[replit.com](https://replit.com/)** - Code, run, and share C programs online
+- **[onlinegdb.com](https://www.onlinegdb.com/)** - Online debugger and compiler
+- **[Godbolt Compiler Explorer](https://godbolt.org/)** - See compiled assembly output
+
+## Practice & Challenges
+- **[LeetCode](https://leetcode.com/)** - Algorithm problems (with C support)
+- **[HackerRank](https://www.hackerrank.com/)** - Coding challenges and competitions
+- **[Codewars](https://www.codewars.com/)** - Skill-based coding challenges
+
+## Communities
+- **[Stack Overflow](https://stackoverflow.com/questions/tagged/c)** - Q&A for C programming issues
+- **[Reddit r/C_Programming](https://www.reddit.com/r/C_Programming/)** - Community discussions
+
+These should cover learning, reference, practice, and community aspects!"
+claude-haiku-4.5,4,Give me a list of useful websites for C programming.,"# Useful Websites for C Programming
+
+## Learning & Tutorials
+- **[cppreference.com/w/c](https://en.cppreference.com/w/c)** - Comprehensive C language reference
+- **[TutorialsPoint C](https://www.tutorialspoint.com/cprogramming/)** - Beginner-friendly tutorials
+- **[Learn-C.org](https://www.learn-c.org/)** - Interactive C lessons
+- **[Programiz C](https://www.programiz.com/c-programming)** - Well-structured tutorials with examples
+
+## Official & Documentation
+- **[C Standard Library Documentation](https://pubs.opengroup.org/onlinepubs/9699919799/)** - POSIX standards
+- **[GCC Documentation](https://gcc.gnu.org/onlinedocs/)** - GNU C compiler documentation
+- **[Clang Documentation](https://clang.llvm.org/docs/)** - Alternative C compiler docs
+
+## Practice & Challenges
+- **[LeetCode](https://leetcode.com/)** - Algorithm problems with C support
+- **[HackerRank](https://www.hackerrank.com/domains/c)** - C-specific challenges
+- **[CodeSignal](https://codesignal.com/)** - Interactive coding practice
+- **[Project Euler](https://projecteuler.net/)** - Mathematical programming problems
+
+## Tools & IDEs
+- **[Compiler Explorer (Godbolt)](https://godbolt.org/)** - See compiled assembly code
+- **[OnlineGDB](https://www.onlinegdb.com/)** - Online C compiler and debugger
+- **[Replit](https://replit.com/)** - Free online IDE for C
+
+## Communities
+- **[Stack Overflow](https://stackoverflow.com/questions/tagged/c)** - Q&A for C problems
+- **[r/learnprogramming](https://www.reddit.com/r/learnprogramming/)** - Reddit community
+
+Would you like recommendations for any specific aspect of C programming?"
+claude-haiku-4.5,5,Give me a list of useful websites for C programming.,"# Useful C Programming Websites
+
+## Learning & Tutorials
+- **[W3Schools C Tutorial](https://www.w3schools.com/c/)** – Interactive tutorials and references
+- **[GeeksforGeeks C Programming](https://www.geeksforgeeks.org/c-programming-language/)** – Comprehensive guides and examples
+- **[Tutorialspoint C](https://www.tutorialspoint.com/cprogramming/index.htm)** – Step-by-step tutorials
+- **[Learn-C.org](https://www.learn-c.org/)** – Interactive lessons with browser-based compiler
+
+## Documentation & References
+- **[C Standard Library Reference](https://en.cppreference.com/w/c)** – Detailed function documentation
+- **[cppreference.com](https://cppreference.com)** – Comprehensive C/C++ reference
+- **[The C Programming Language (K&R)](https://www.bell-labs.com/usr/dmr/www/cintro.html)** – Original language specification
+
+## Practice & Coding Challenges
+- **[LeetCode](https://leetcode.com/)** – Algorithm problems in C
+- **[HackerRank](https://www.hackerrank.com/domains/c)** – C-specific challenges
+- **[Codewars](https://www.codewars.com/)** – Gamified coding exercises
+- **[ProjectEuler](https://projecteuler.net/)** – Mathematical programming problems
+
+## Tools & Compilers
+- **[Replit](https://replit.com/)** – Online IDE with C support
+- **[Compiler Explorer](https://godbolt.org/)** – See compiled assembly code
+
+These resources cover everything from beginner tutorials to advanced reference material!"
+claude-haiku-4.5,0,Write five pros of online education.,"# Five Pros of Online Education
+
+1. **Flexibility and Convenience**
+Online education allows students to learn on their own schedule, fitting classes around work, family, and other commitments. You can study anytime, anywhere with an internet connection.
+
+2. **Cost-Effectiveness**
+Online programs often have lower tuition fees than traditional institutions and eliminate expenses like commuting, campus housing, and meal plans, making education more affordable.
+
+3. **Wider Course Selection**
+Students can access programs and courses from universities and institutions worldwide, not limited by geography. This opens up specialized subjects that may not be available locally.
+
+4. **Self-Paced Learning**
+Many online courses allow students to progress at their own speed, reviewing difficult material as needed and moving quickly through familiar content, which accommodates different learning styles.
+
+5. **Accessibility for Diverse Learners**
+Online education benefits people with disabilities, those living in remote areas, working professionals, and non-traditional students who might struggle with conventional classroom settings."
+claude-haiku-4.5,1,Write five pros of online education.,"# Five Pros of Online Education
+
+1. **Flexibility and Convenience**
+Students can learn at their own pace and schedule, balancing education with work, family, and other commitments. Classes can be accessed anytime and from anywhere with an internet connection.
+
+2. **Cost-Effectiveness**
+Online programs often have lower tuition fees and eliminate expenses like commuting, campus housing, and meal plans. This makes education more accessible and affordable for many people.
+
+3. **Wider Course Selection**
+Students have access to courses and programs from institutions worldwide, not limited by geographic location. This opens up specialized subjects and learning opportunities that may not be available locally.
+
+4. **Personalized Learning Experience**
+Online platforms often allow students to review materials multiple times, learn at their own speed, and sometimes choose their preferred learning methods. This can benefit different learning styles and needs.
+
+5. **Career Advancement Without Disruption**
+Working professionals can earn degrees or certifications while maintaining their current employment, allowing them to develop new skills and advance their careers without taking time off work."
+claude-haiku-4.5,2,Write five pros of online education.,"# Five Pros of Online Education
+
+1. **Flexibility and Convenience**
+   Online learning allows students to study at their own pace and on their own schedule, making it easier to balance education with work, family, or other commitments. Classes can be accessed from anywhere with an internet connection.
+
+2. **Cost-Effectiveness**
+   Online programs typically have lower tuition fees than traditional institutions and eliminate expenses like commuting, housing, and campus meals, making education more affordable and accessible to a broader range of students.
+
+3. **Access to Diverse Learning Resources**
+   Students can tap into a wide variety of digital materials, videos, interactive tools, and global expert instructors regardless of geographic location, enriching their learning experience with diverse perspectives.
+
+4. **Personalized Learning Experience**
+   Online education often allows students to review materials multiple times, learn at their preferred pace, and choose courses tailored to their specific interests and career goals, promoting deeper understanding.
+
+5. **Career Advancement While Working**
+   Online education enables working professionals to earn degrees or certifications without leaving their jobs, allowing them to advance their careers while maintaining steady income and gaining practical experience."
+claude-haiku-4.5,3,Write five pros of online education.,"# Five Pros of Online Education
+
+1. **Flexibility and Convenience**
+Students can learn at their own pace and schedule, making education accessible to those balancing work, family, or other commitments. Classes and materials are available 24/7 from any location with internet access.
+
+2. **Cost-Effective**
+Online programs often have lower tuition fees than traditional institutions and eliminate expenses like commuting, on-campus housing, and facility maintenance. This makes education more affordable and accessible to a broader population.
+
+3. **Personalized Learning Experience**
+Students can customize their learning paths, choose courses that match their interests, and spend more time on challenging material. Many platforms offer adaptive learning tools that adjust to individual pace and learning style.
+
+4. **Access to Diverse Resources and Expertise**
+Online education provides access to world-class instructors and educational materials regardless of geographic location. Students can learn from experts worldwide and access a wider variety of specialized courses.
+
+5. **Self-Discipline and Independence**
+Online learning encourages students to take ownership of their education and develop strong time-management and self-motivation skills. These skills are valuable for personal growth and are increasingly important in the modern workforce."
+claude-haiku-4.5,4,Write five pros of online education.,"# Five Pros of Online Education
+
+1. **Flexibility and Convenience**
+Students can learn at their own pace and on their own schedule, making it easier to balance education with work, family, or other commitments. Classes can be accessed anytime and from anywhere with an internet connection.
+
+2. **Cost-Effectiveness**
+Online programs typically have lower tuition fees and eliminate expenses like commuting, campus housing, and meal plans, making education more affordable and accessible to a wider range of people.
+
+3. **Access to Diverse Learning Resources**
+Students have access to a vast array of digital materials, including videos, interactive simulations, online libraries, and global expertise that might not be available in traditional classroom settings.
+
+4. **Personalized Learning Experience**
+Online platforms often allow students to progress at their own pace, review material multiple times, and choose learning paths tailored to their individual needs, strengths, and learning styles.
+
+5. **Expanded Course and Program Variety**
+Geographic location is no longer a barrier, allowing students to enroll in courses and degree programs from prestigious institutions worldwide, including niche subjects and specialized training not available locally."
+claude-haiku-4.5,5,Write five pros of online education.,"# Five Pros of Online Education
+
+1. **Flexibility and Convenience**
+Online learning allows students to study at their own pace and on their own schedule. This makes it ideal for working professionals, parents, and anyone juggling multiple commitments who can't attend traditional classroom sessions.
+
+2. **Cost-Effectiveness**
+Online programs often have lower tuition fees and eliminate expenses like commuting, campus housing, and materials. This makes quality education more accessible and affordable for many students.
+
+3. **Access to Diverse Learning Resources**
+Students can access a wealth of digital materials, interactive tools, videos, and global expertise without geographical limitations. This variety enhances understanding and caters to different learning styles.
+
+4. **Self-Paced Learning**
+Learners can spend extra time on challenging topics and move quickly through familiar material. This personalized approach helps students master content more thoroughly and build genuine understanding.
+
+5. **Reduced Social Pressure and Anxiety**
+Online education can be less intimidating for shy or anxious students. The lower-pressure environment allows some learners to participate more confidently through discussion forums and written assignments rather than in-person participation."
+claude-haiku-4.5,0,Provide a valid example of using inheritance in the Java language,"# Valid Example of Inheritance in Java
+
+Here's a practical example demonstrating inheritance:
+
+```java
+// Parent class (Superclass)
+class Animal {
+    protected String name;
+    protected int age;
+    
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    public void eat() {
+        System.out.println(name + "" is eating."");
+    }
+    
+    public void sleep() {
+        System.out.println(name + "" is sleeping."");
+    }
+    
+    public void displayInfo() {
+        System.out.println(""Name: "" + name + "", Age: "" + age);
+    }
+}
+
+// Child class (Subclass)
+class Dog extends Animal {
+    private String breed;
+    
+    public Dog(String name, int age, String breed) {
+        super(name, age);  // Call parent constructor
+        this.breed = breed;
+    }
+    
+    // Overriding parent method
+    @Override
+    public void eat() {
+        System.out.println(name + "" is eating dog food."");
+    }
+    
+    // New method specific to Dog
+    public void bark() {
+        System.out.println(name + "" says: Woof! Woof!"");
+    }
+    
+    @Override
+    public void displayInfo() {
+        super.displayInfo();  // Call parent method
+        System.out.println(""Breed: "" + breed);
+    }
+}
+
+// Main class to demonstrate usage
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog(""Buddy"", 5, ""Golden Retriever"");
+        
+        dog.displayInfo();    // Inherited + overridden method
+        dog.eat();            // Overridden method
+        dog.bark();           // Dog-specific method
+        dog.sleep();          // Inherited method
+    }
+}
+```
+
+**Output:**
+```
+Name: Buddy, Age: 5
+Breed: Golden Retriever
+Buddy is eating dog food.
+Buddy says: Woof! Woof!
+Buddy is sleeping.
+```
+
+## Key Concepts Demonstrated:
+
+| Concept | Explanation |
+|---------|-------------|
+| **extends** | `Dog` inherits from `Animal` |
+| **super()** | Calls parent class constructor |
+| **@Override** | Indicates method overriding |
+| **protected** | Accessible to child classes |
+| **Method Overriding** | `eat()` redefined in `Dog` class |
+
+This example shows how inheritance promotes **code reusability** and **polymorphism**."
+claude-haiku-4.5,1,Provide a valid example of using inheritance in the Java language,"# Java Inheritance Example
+
+Here's a practical example of inheritance with a vehicle hierarchy:
+
+```java
+// Parent class
+public class Vehicle {
+    private String brand;
+    private String color;
+    
+    public Vehicle(String brand, String color) {
+        this.brand = brand;
+        this.color = color;
+    }
+    
+    public void start() {
+        System.out.println(""Vehicle is starting..."");
+    }
+    
+    public void stop() {
+        System.out.println(""Vehicle is stopping..."");
+    }
+    
+    public String getBrand() {
+        return brand;
+    }
+}
+
+// Child class 1
+public class Car extends Vehicle {
+    private int numberOfDoors;
+    
+    public Car(String brand, String color, int numberOfDoors) {
+        super(brand, color);  // Call parent constructor
+        this.numberOfDoors = numberOfDoors;
+    }
+    
+    @Override
+    public void start() {
+        System.out.println(""Car engine started with a key!"");
+    }
+    
+    public void openTrunk() {
+        System.out.println(""Trunk opened"");
+    }
+}
+
+// Child class 2
+public class Motorcycle extends Vehicle {
+    private boolean hasSidecar;
+    
+    public Motorcycle(String brand, String color, boolean hasSidecar) {
+        super(brand, color);
+        this.hasSidecar = hasSidecar;
+    }
+    
+    @Override
+    public void start() {
+        System.out.println(""Motorcycle engine roared to life!"");
+    }
+}
+
+// Main class to demonstrate usage
+public class Main {
+    public static void main(String[] args) {
+        Car car = new Car(""Toyota"", ""Blue"", 4);
+        car.start();           // Output: Car engine started with a key!
+        car.openTrunk();       // Output: Trunk opened
+        car.stop();            // Output: Vehicle is stopping...
+        
+        System.out.println();
+        
+        Motorcycle bike = new Motorcycle(""Harley"", ""Black"", false);
+        bike.start();          // Output: Motorcycle engine roared to life!
+        bike.stop();           // Output: Vehicle is stopping...
+    }
+}
+```
+
+## Key Concepts Demonstrated:
+
+| Concept | Example |
+|---------|---------|
+| **Inheritance** | `Car extends Vehicle` |
+| **super keyword** | `super(brand, color)` calls parent constructor |
+| **Method Overriding** | `start()` method redefined in child classes |
+| **Code Reuse** | Both children inherit `stop()` from Vehicle |"
+claude-haiku-4.5,2,Provide a valid example of using inheritance in the Java language,"# Java Inheritance Example
+
+Here's a practical example of inheritance in Java:
+
+```java
+// Parent class (Superclass)
+class Animal {
+    protected String name;
+    protected int age;
+    
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    // Method to be inherited
+    public void eat() {
+        System.out.println(name + "" is eating."");
+    }
+    
+    public void sleep() {
+        System.out.println(name + "" is sleeping."");
+    }
+}
+
+// Child class (Subclass)
+class Dog extends Animal {
+    private String breed;
+    
+    public Dog(String name, int age, String breed) {
+        super(name, age);  // Call parent constructor
+        this.breed = breed;
+    }
+    
+    // Override parent method
+    @Override
+    public void eat() {
+        System.out.println(name + "" the "" + breed + "" is eating dog food."");
+    }
+    
+    // New method specific to Dog
+    public void bark() {
+        System.out.println(name + "" says: Woof! Woof!"");
+    }
+}
+
+// Another child class
+class Cat extends Animal {
+    public Cat(String name, int age) {
+        super(name, age);
+    }
+    
+    @Override
+    public void eat() {
+        System.out.println(name + "" is eating cat food."");
+    }
+    
+    public void meow() {
+        System.out.println(name + "" says: Meow!"");
+    }
+}
+
+// Main class to demonstrate inheritance
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog(""Buddy"", 3, ""Golden Retriever"");
+        dog.eat();      // Output: Buddy the Golden Retriever is eating dog food.
+        dog.bark();     // Output: Buddy says: Woof! Woof!
+        dog.sleep();    // Output: Buddy is sleeping.
+        
+        Cat cat = new Cat(""Whiskers"", 2);
+        cat.eat();      // Output: Whiskers is eating cat food.
+        cat.meow();     // Output: Whiskers says: Meow!
+        cat.sleep();    // Output: Whiskers is sleeping.
+    }
+}
+```
+
+## Key Concepts Demonstrated:
+
+| Concept | Description |
+|---------|-------------|
+| **extends** | Keyword used to inherit from a parent class |
+| **super()** | Calls the parent class constructor |
+| **@Override** | Annotation indicating method overriding |
+| **Inheritance** | Dog and Cat inherit properties and methods from Animal |
+| **Polymorphism** | Each child class can override the `eat()` method differently |
+
+This example shows how inheritance promotes **code reuse** and **logical hierarchy** in object-oriented programming."
+claude-haiku-4.5,3,Provide a valid example of using inheritance in the Java language,"# Java Inheritance Example
+
+Here's a practical example demonstrating inheritance:
+
+```java
+// Parent class (Superclass)
+public class Animal {
+    private String name;
+    private int age;
+    
+    // Constructor
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    // Methods
+    public void eat() {
+        System.out.println(name + "" is eating"");
+    }
+    
+    public void sleep() {
+        System.out.println(name + "" is sleeping"");
+    }
+    
+    public String getName() {
+        return name;
+    }
+}
+
+// Child class (Subclass)
+public class Dog extends Animal {
+    private String breed;
+    
+    // Constructor
+    public Dog(String name, int age, String breed) {
+        super(name, age);  // Call parent constructor
+        this.breed = breed;
+    }
+    
+    // Method specific to Dog (Override)
+    @Override
+    public void eat() {
+        System.out.println(getName() + "" is eating dog food"");
+    }
+    
+    // Method specific to Dog
+    public void bark() {
+        System.out.println(getName() + "" is barking: Woof! Woof!"");
+    }
+    
+    public String getBreed() {
+        return breed;
+    }
+}
+
+// Another Child class
+public class Cat extends Animal {
+    
+    public Cat(String name, int age) {
+        super(name, age);
+    }
+    
+    @Override
+    public void eat() {
+        System.out.println(getName() + "" is eating cat food"");
+    }
+    
+    public void meow() {
+        System.out.println(getName() + "" is meowing: Meow!"");
+    }
+}
+
+// Usage
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog(""Buddy"", 5, ""Golden Retriever"");
+        dog.eat();      // Output: Buddy is eating dog food
+        dog.sleep();    // Output: Buddy is sleeping
+        dog.bark();     // Output: Buddy is barking: Woof! Woof!
+        
+        Cat cat = new Cat(""Whiskers"", 3);
+        cat.eat();      // Output: Whiskers is eating cat food
+        cat.meow();     // Output: Whiskers is meowing: Meow!
+        
+        // Polymorphism
+        Animal animal = new Dog(""Max"", 2, ""Labrador"");
+        animal.eat();   // Output: Max is eating dog food
+    }
+}
+```
+
+## Key Concepts Demonstrated:
+
+| Concept | Explanation |
+|---------|-------------|
+| **extends** | Dog and Cat inherit from Animal |
+| **super()** | Calls parent class constructor |
+| **@Override** | Indicates method overriding |
+| **Polymorphism** | Animal reference can hold Dog/Cat objects |
+| **Inheritance** | Child classes reuse parent methods (sleep) |
+
+This example shows how `Dog` and `Cat` inherit common functionality from `Animal` while having their own specialized behaviors."
+claude-haiku-4.5,4,Provide a valid example of using inheritance in the Java language,"# Java Inheritance Example
+
+Here's a practical example demonstrating inheritance:
+
+```java
+// Parent class (Superclass)
+class Animal {
+    protected String name;
+    protected int age;
+    
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    public void eat() {
+        System.out.println(name + "" is eating..."");
+    }
+    
+    public void sleep() {
+        System.out.println(name + "" is sleeping..."");
+    }
+}
+
+// Child class (Subclass)
+class Dog extends Animal {
+    private String breed;
+    
+    public Dog(String name, int age, String breed) {
+        super(name, age);  // Call parent constructor
+        this.breed = breed;
+    }
+    
+    // Method overriding
+    @Override
+    public void eat() {
+        System.out.println(name + "" is eating dog food..."");
+    }
+    
+    // New method specific to Dog
+    public void bark() {
+        System.out.println(name + "" says: Woof! Woof!"");
+    }
+    
+    public void displayInfo() {
+        System.out.println(""Name: "" + name + "", Age: "" + age + "", Breed: "" + breed);
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog(""Buddy"", 5, ""Golden Retriever"");
+        
+        dog.displayInfo();      // Name: Buddy, Age: 5, Breed: Golden Retriever
+        dog.eat();              // Buddy is eating dog food...
+        dog.sleep();            // Buddy is sleeping...
+        dog.bark();             // Buddy says: Woof! Woof!
+    }
+}
+```
+
+## Key Concepts Demonstrated:
+
+| Concept | Description |
+|---------|-------------|
+| **extends** | Dog class inherits from Animal class |
+| **super()** | Calls parent class constructor |
+| **@Override** | Indicates method overriding (replacing parent method) |
+| **protected** | Allows child classes to access parent attributes |
+| **Inheritance** | Dog reuses eat() and sleep() methods from Animal |
+
+This example shows how a child class (Dog) inherits properties and methods from a parent class (Animal) while adding its own specific functionality."
+claude-haiku-4.5,5,Provide a valid example of using inheritance in the Java language,"# Java Inheritance Example
+
+Here's a practical example demonstrating inheritance in Java:
+
+```java
+// Parent class (Superclass)
+class Animal {
+    private String name;
+    private int age;
+    
+    // Constructor
+    public Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+    
+    // Methods
+    public void sleep() {
+        System.out.println(name + "" is sleeping..."");
+    }
+    
+    public void eat(String food) {
+        System.out.println(name + "" is eating "" + food);
+    }
+    
+    // Getter methods
+    public String getName() {
+        return name;
+    }
+    
+    public int getAge() {
+        return age;
+    }
+}
+
+// Child class (Subclass) inheriting from Animal
+class Dog extends Animal {
+    private String breed;
+    
+    // Constructor
+    public Dog(String name, int age, String breed) {
+        super(name, age);  // Call parent constructor
+        this.breed = breed;
+    }
+    
+    // Override parent method
+    @Override
+    public void sleep() {
+        System.out.println(getName() + "" is sleeping in the doghouse..."");
+    }
+    
+    // New method specific to Dog
+    public void bark() {
+        System.out.println(getName() + "" says: Woof! Woof!"");
+    }
+    
+    public String getBreed() {
+        return breed;
+    }
+}
+
+// Another child class
+class Cat extends Animal {
+    
+    public Cat(String name, int age) {
+        super(name, age);
+    }
+    
+    @Override
+    public void sleep() {
+        System.out.println(getName() + "" is napping on the couch..."");
+    }
+    
+    public void meow() {
+        System.out.println(getName() + "" says: Meow!"");
+    }
+}
+
+// Main class to demonstrate usage
+public class Main {
+    public static void main(String[] args) {
+        // Create Dog object
+        Dog dog = new Dog(""Buddy"", 5, ""Golden Retriever"");
+        dog.eat(""bones"");        // Inherited method
+        dog.bark();              // Dog-specific method
+        dog.sleep();             // Overridden method
+        
+        System.out.println();
+        
+        // Create Cat object
+        Cat cat = new Cat(""Whiskers"", 3);
+        cat.eat(""fish"");         // Inherited method
+        cat.meow();              // Cat-specific method
+        cat.sleep();             // Overridden method
+    }
+}
+```
+
+## Output:
+```
+Buddy is eating bones
+Buddy says: Woof! Woof!
+Buddy is sleeping in the doghouse...
+
+Whiskers is eating fish
+Whiskers says: Meow!
+Whiskers is napping on the couch...
+```
+
+## Key Concepts Demonstrated:
+
+| Concept | Explanation |
+|---------|-------------|
+| **extends** | Dog and Cat inherit from Animal |
+| **super()** | Calls parent class constructor |
+| **@Override** | Indicates method is overridden from parent |
+| **Inheritance** | Dog and Cat reuse `eat()` and `sleep()` methods |
+| **Polymorphism** | `sleep()` behaves differently for each subclass |
+
+This example shows how inheritance allows code reuse and creates a logical hierarchy!"
+claude-haiku-4.5,0,"Compute the sum of all the numbers in the input list
+[1, 2, 3, 4, 5]","# Sum of the list [1, 2, 3, 4, 5]
+
+1 + 2 + 3 + 4 + 5 = **15**"
+claude-haiku-4.5,1,"Compute the sum of all the numbers in the input list
+[1, 2, 3, 4, 5]","# Sum of the list
+
+The sum of all numbers in [1, 2, 3, 4, 5] is:
+
+1 + 2 + 3 + 4 + 5 = **15**"
+claude-haiku-4.5,2,"Compute the sum of all the numbers in the input list
+[1, 2, 3, 4, 5]","# Sum of the list
+
+The sum of all the numbers in the list [1, 2, 3, 4, 5] is:
+
+1 + 2 + 3 + 4 + 5 = **15**"
+claude-haiku-4.5,3,"Compute the sum of all the numbers in the input list
+[1, 2, 3, 4, 5]","# Sum of the list
+
+The sum of all numbers in [1, 2, 3, 4, 5] is:
+
+**15**
+
+Calculation: 1 + 2 + 3 + 4 + 5 = 15"
+claude-haiku-4.5,4,"Compute the sum of all the numbers in the input list
+[1, 2, 3, 4, 5]","# Sum of the list
+
+The sum of all numbers in [1, 2, 3, 4, 5] is:
+
+**1 + 2 + 3 + 4 + 5 = 15**"
+claude-haiku-4.5,5,"Compute the sum of all the numbers in the input list
+[1, 2, 3, 4, 5]","# Sum of the list
+
+```python
+numbers = [1, 2, 3, 4, 5]
+total = sum(numbers)
+print(total)
+```
+
+**Output: 15**
+
+The sum of all numbers in the list [1, 2, 3, 4, 5] is **15**.
+
+(1 + 2 + 3 + 4 + 5 = 15)"
+claude-haiku-4.5,0,Generate a story about a child's first day of school,"# The Brave Explorer
+
+Maya clutched her new backpack straps as she stood outside Riverside Elementary. The building looked enormous.
+
+""You've got this,"" her mother said, squeezing her hand. ""Remember what we talked about?""
+
+Maya nodded, though her stomach did a nervous flip. She was starting kindergarten, and everything felt big and loud and unfamiliar.
+
+Inside, Mrs. Chen, her teacher, had a warm smile. ""Welcome, Maya! We've been waiting for you. Come see our classroom.""
+
+The room burst with color—alphabet posters, a reading corner overflowing with picture books, and a table of wooden blocks. Other children were already unpacking supplies and settling in. Maya felt her shoulders drop a little.
+
+""Let me introduce you to some friends,"" Mrs. Chen said.
+
+A girl with red pigtails bounced over. ""Hi! I'm Sophie. Want to build a tower with me?""
+
+Before Maya could answer, a boy joined them. ""I'm Kai. I'm building a castle.""
+
+For the next hour, Maya helped construct the tallest tower she'd ever seen. She laughed when it toppled over. She raised her hand during story time. She discovered the snack was her favorite crackers.
+
+When pickup time came, Maya found herself reluctant to leave.
+
+""How was it?"" her mother asked.
+
+""Can we come back tomorrow?"" Maya asked, her eyes bright.
+
+Her mother smiled. ""That's tomorrow, honey.""
+
+For the first time all day, Maya's nervousness had completely disappeared."
+claude-haiku-4.5,1,Generate a story about a child's first day of school,"# The Blue Backpack
+
+Maya's backpack was so new it still smelled like plastic. She clutched the straps with both hands as Mom walked her up the stone steps of Riverside Elementary.
+
+""You're going to have a great day,"" Mom said, squeezing her shoulder. ""Mrs. Chen is wonderful.""
+
+Maya's stomach felt like it was doing somersaults. She'd never been to real school before—just the little preschool down the street where everyone napped after snack time. This building was *huge*. Kids everywhere. So much noise.
+
+Room 203 was at the end of a long hallway. Maya could see other children already inside, some sitting at desks, others at a table with blocks. A woman with kind eyes and a big smile waved them over.
+
+""You must be Maya! Welcome, welcome. I'm Mrs. Chen. I'm so excited to have you in our class.""
+
+Before Mom left, she gave Maya a hug. ""I'll pick you up this afternoon, okay? Be brave.""
+
+The morning was confusing and wonderful all at once. There was a song about letters. A boy named Kai showed her where to put her backpack. They had crackers shaped like goldfish at snack time. During story circle, Mrs. Chen read about a very hungry caterpillar, and Maya laughed so hard she snorted, which made everyone else laugh too.
+
+By lunchtime, Maya had forgotten most of her worry.
+
+When Mom picked her up, Maya had a hundred things to tell her—all at once."
+claude-haiku-4.5,2,Generate a story about a child's first day of school,"# The Big Red Door
+
+Maya's sneakers felt too tight as she climbed the concrete steps, her mother's hand warm around hers. The school building loomed ahead—so much bigger than the pictures in the book Mom had read to her all summer.
+
+""I don't know anyone here,"" she whispered.
+
+""Not yet,"" her mother smiled. ""But I bet you will soon.""
+
+Inside, everything smelled like new pencils and floor polish. The hallway seemed to stretch forever, lined with bright posters of smiling cartoon characters saying ""Welcome!""—as if they could read her mind.
+
+Miss Chen, her kindergarten teacher, was waiting at the big red door. She had kind eyes and wore a necklace made of painted beads.
+
+""You must be Maya! I've been so excited to meet you. Would you like to help me water the classroom plants?""
+
+Maya nodded quietly.
+
+The classroom took her breath away. It was like stepping into a storybook—a reading corner stuffed with cushions, tables with baskets overflowing with crayons, a window where real sunlight streamed through. A hamster wheel sat in the corner, spinning lazily.
+
+""That's Mr. Whiskers,"" Miss Chen said. ""He's been waiting to meet you.""
+
+By snack time, Maya was showing a boy named Lucas how to build towers with the wooden blocks. At pickup, her mother asked, ""How was it?""
+
+""Can we come back tomorrow?"" Maya asked.
+
+Her mother laughed. ""Yes, sweetheart. Every day.""
+
+That night, Maya drew a picture of a big red door with herself and Miss Chen standing in front of it, smiling."
+claude-haiku-4.5,3,Generate a story about a child's first day of school,"# The Big Yellow Bus
+
+Maya pressed her forehead against the car window, watching the school grow larger as they drove closer. Her new backpack sat in her lap, stuffed with supplies and her favorite pencil case shaped like a whale.
+
+""Nervous?"" Mom asked, glancing over with a gentle smile.
+
+Maya nodded, her stomach doing somersaults. She'd never been to school before.
+
+The building was enormous—all red brick and tall windows. Kids everywhere. Some ran. Some skipped. Some held their parents' hands just like Maya wanted to, but she was five now. A big girl.
+
+""Come on, sweetie,"" Mom said, taking her hand anyway.
+
+Mrs. Chen, her kindergarten teacher, was waiting at the classroom door. She had kind eyes and wore a necklace made of colorful beads. ""Welcome, Maya! I'm so excited you're here.""
+
+The classroom smelled like crayons and new carpet. There were pictures everywhere—alphabet letters, numbers, painted handprints. A corner had pillows and books. Another had blocks stacked in tall towers.
+
+A boy with curly hair looked up from the block tower. ""Want to build with me?""
+
+Maya hesitated, then nodded.
+
+By snack time, she and the boy—his name was Kai—had built a castle. By story time, she sat on the carpet with seventeen other kids, completely mesmerized by *Where the Wild Things Are*. By pickup time, she was showing Mom a painting of a purple butterfly with gold glitter wings.
+
+""How was your day?"" Mom asked.
+
+Maya climbed into the car, buckled her seatbelt, and smiled. ""Can I go back tomorrow?"""
+claude-haiku-4.5,4,Generate a story about a child's first day of school,"# The Red Backpack
+
+Maya's stomach did a funny flip as the yellow bus pulled up to Riverside Elementary. She gripped her new red backpack so tight her knuckles turned white.
+
+""You've got this, sweetie,"" Mom said, squeezing her hand. ""Have the best day ever.""
+
+Maya nodded, unable to find her voice. She clutched her lunch box decorated with smiling dinosaurs and climbed the tall bus steps, suddenly feeling very small.
+
+The hallway smelled like floor polish and pencil shavings. Children rushed past her in all directions, laughing and calling to friends. Maya's heart pounded as she found Room 204.
+
+Mrs. Chen, her teacher, had kind eyes and a warm smile. ""You must be Maya! Welcome! We saved you a special seat.""
+
+As Maya sat down, a girl with pigtails turned around. ""Hi! I'm Sophie. This is my first day too. I was really nervous this morning, but I'm already less nervous. Are you nervous?""
+
+Maya couldn't help but smile a little. ""Yeah. Really nervous.""
+
+""Want to be desk partners?"" Sophie asked hopefully.
+
+""Okay,"" Maya whispered.
+
+By lunchtime, Sophie had shown her where the bathrooms were and introduced her to three other kids. During art class, they painted together. At recess, they went down the slide.
+
+When Mom picked her up that afternoon, Maya was talking so fast the words tumbled over each other. She had to tell Mom everything—about Sophie, about the class hamster, about how Mrs. Chen read them a funny book that made everyone laugh.
+
+""So,"" Mom asked, smiling, ""will you come back tomorrow?""
+
+Maya clutched her dinosaur lunch box and grinned. ""Can we come back tomorrow?"""
+claude-haiku-4.5,5,Generate a story about a child's first day of school,"# The Brave Explorer
+
+Maya sat on the edge of her bed, swinging her legs back and forth. Her new backpack—bright purple with silver stars—sat waiting by the door. Today was the day. Her very first day of school.
+
+""Are you excited?"" Mom asked, braiding her hair with gentle fingers.
+
+Maya nodded, though her stomach felt like it had butterflies doing loop-de-loops inside it.
+
+The yellow bus was bigger than she expected. As Maya climbed the steps, the driver smiled warmly. ""Welcome aboard! Find any seat you like.""
+
+She spotted a girl with pigtails near the window and sat down carefully. The girl looked nervous too.
+
+""I'm Zara,"" the girl whispered.
+
+""I'm Maya."" They didn't say much more, but somehow that was okay.
+
+When they arrived at Riverside Elementary, everything seemed enormous. Hallways stretched like tunnels. Kids laughed and shouted everywhere. Maya's hand found her teacher's when it got scary.
+
+""Come along, class,"" Mrs. Chen said kindly. ""Let's make a classroom family.""
+
+Inside Room 203, Maya discovered a reading corner with cushions shaped like clouds. There was a water table where she got to play, and art supplies in every color imaginable. At lunch, Zara saved her a seat.
+
+By the time the final bell rang, Maya had made two friends, painted a picture of a rainbow cat, and learned to line up properly. Her feet hurt. She was tired. And her heart was full.
+
+""How was it?"" Mom asked at pickup.
+
+Maya thought for a moment, then smiled. ""Tomorrow can't come fast enough."""
+claude-haiku-4.5,0,Generate a list of 5 of the most important components of an essay.,"# 5 Most Important Components of an Essay
+
+1. **Thesis Statement**
+   - A clear, concise claim that presents your main argument
+   - Guides the direction of your entire essay
+
+2. **Introduction**
+   - Engages the reader and provides context
+   - Introduces your topic and thesis statement
+
+3. **Body Paragraphs**
+   - Develop your argument with evidence and examples
+   - Each paragraph supports your thesis with organized ideas
+
+4. **Conclusion**
+   - Restates your thesis and summarizes key points
+   - Leaves the reader with final thoughts or implications
+
+5. **Evidence and Support**
+   - Facts, quotes, research, or examples that back up your claims
+   - Gives credibility and persuasiveness to your argument
+
+These elements work together to create a coherent, persuasive essay that communicates your ideas effectively."
+claude-haiku-4.5,1,Generate a list of 5 of the most important components of an essay.,"# 5 Most Important Components of an Essay
+
+1. **Thesis Statement**
+   - The central argument or main idea of your essay
+   - Usually appears in the introduction and guides the entire essay
+
+2. **Introduction**
+   - Hooks the reader and provides context
+   - Introduces the topic and presents your thesis statement
+
+3. **Body Paragraphs**
+   - Develop and support your thesis with evidence and reasoning
+   - Each paragraph should focus on one main idea with supporting details
+
+4. **Conclusion**
+   - Reinforces your thesis and summarizes key points
+   - Leaves the reader with final thoughts or broader implications
+
+5. **Evidence & Support**
+   - Facts, examples, quotes, or data that back up your claims
+   - Makes your arguments credible and convincing
+
+These components work together to create a clear, organized, and persuasive essay."
+claude-haiku-4.5,2,Generate a list of 5 of the most important components of an essay.,"# 5 Most Important Components of an Essay
+
+1. **Thesis Statement**
+   - A clear, concise argument or main idea that the entire essay supports
+   - Usually appears in the introduction and guides the direction of the essay
+
+2. **Introduction**
+   - Engages the reader and provides background information
+   - Presents the thesis and outlines what the essay will cover
+
+3. **Body Paragraphs**
+   - Develop and support the thesis with evidence, examples, and analysis
+   - Each paragraph typically focuses on one main idea with supporting details
+
+4. **Evidence and Examples**
+   - Facts, quotes, research, and specific examples that support claims
+   - Strengthens credibility and persuasiveness of arguments
+
+5. **Conclusion**
+   - Summarizes main points and reinforces the thesis
+   - Provides closure and may suggest implications or future considerations
+
+These components work together to create a well-structured, coherent essay that effectively communicates ideas to the reader."
+claude-haiku-4.5,3,Generate a list of 5 of the most important components of an essay.,"# 5 Most Important Components of an Essay
+
+1. **Thesis Statement**
+   - A clear, concise argument or main idea that the entire essay supports
+   - Typically appears in the introduction and guides the direction of your writing
+
+2. **Introduction**
+   - Hooks the reader's interest and provides background context
+   - Introduces the topic and presents your thesis statement
+
+3. **Body Paragraphs**
+   - Develop and support your thesis with evidence, examples, and analysis
+   - Each paragraph should focus on one main idea with supporting details
+
+4. **Evidence and Examples**
+   - Facts, quotes, data, or concrete examples that support your claims
+   - Makes your arguments credible and persuasive
+
+5. **Conclusion**
+   - Restates your thesis and summarizes key points
+   - Leaves the reader with final thoughts or implications about your topic
+
+These components work together to create a well-structured, compelling essay that effectively communicates your ideas to your audience."
+claude-haiku-4.5,4,Generate a list of 5 of the most important components of an essay.,"# 5 Most Important Components of an Essay
+
+1. **Thesis Statement**
+   - A clear, concise argument or main idea that the entire essay supports
+   - Typically found in the introduction and guides all other content
+
+2. **Introduction**
+   - Hooks the reader's attention and provides context
+   - Presents the thesis and outlines what the essay will cover
+
+3. **Body Paragraphs**
+   - Develop and support the thesis with evidence, examples, and analysis
+   - Each paragraph should focus on one main idea with supporting details
+
+4. **Evidence and Support**
+   - Facts, quotes, statistics, or examples that back up your claims
+   - Strengthens credibility and persuasiveness of your arguments
+
+5. **Conclusion**
+   - Summarizes key points and restates the thesis in a new way
+   - Leaves a lasting impression and may suggest broader implications
+
+These components work together to create a well-structured, persuasive, and coherent essay."
+claude-haiku-4.5,5,Generate a list of 5 of the most important components of an essay.,"# 5 Most Important Components of an Essay
+
+1. **Thesis Statement**
+   - A clear, concise argument or main idea that the entire essay supports
+   - Usually appears in the introduction and guides the direction of your writing
+
+2. **Introduction**
+   - Hooks the reader's attention and provides context
+   - Introduces the topic and presents the thesis statement
+   - Sets expectations for what follows
+
+3. **Body Paragraphs**
+   - Develop and support your thesis with evidence, examples, and analysis
+   - Each paragraph typically focuses on one main idea with supporting details
+   - Form the core argument of your essay
+
+4. **Evidence and Examples**
+   - Concrete facts, quotes, statistics, or real-world examples that support your claims
+   - Add credibility and persuasiveness to your arguments
+   - Must be relevant and properly cited when necessary
+
+5. **Conclusion**
+   - Summarizes your main points and reinforces your thesis
+   - Provides closure and may suggest implications or call to action
+   - Leaves a lasting impression on the reader
+
+These components work together to create a well-structured, coherent essay that effectively communicates your ideas."
+claude-haiku-4.5,0,Generate 5 examples of past participles.,"# 5 Examples of Past Participles
+
+1. **Broken** - ""The broken window needs to be repaired.""
+
+2. **Written** - ""She has written three novels.""
+
+3. **Eaten** - ""The food was eaten quickly.""
+
+4. **Seen** - ""I have seen that movie before.""
+
+5. **Chosen** - ""The chosen candidate will start next month."""
+claude-haiku-4.5,1,Generate 5 examples of past participles.,"# 5 Examples of Past Participles
+
+1. **Broken** - ""The broken window needs repair.""
+
+2. **Written** - ""She submitted the written assignment on time.""
+
+3. **Frozen** - ""The frozen lake is safe to walk on.""
+
+4. **Stolen** - ""The stolen painting was recovered by police.""
+
+5. **Driven** - ""He has driven that car for five years."""
+claude-haiku-4.5,2,Generate 5 examples of past participles.,"# 5 Examples of Past Participles
+
+1. **Broken** - ""The broken window needs to be repaired.""
+
+2. **Written** - ""She submitted the written assignment on time.""
+
+3. **Forgotten** - ""The forgotten keys were found under the couch.""
+
+4. **Eaten** - ""The eaten pizza was delicious.""
+
+5. **Damaged** - ""The damaged car was towed away.""
+
+Past participles can be used in perfect tenses, passive voice, or as adjectives describing nouns."
+claude-haiku-4.5,3,Generate 5 examples of past participles.,"# 5 Examples of Past Participles
+
+1. **Broken** - ""The broken vase lay on the floor.""
+
+2. **Written** - ""She submitted the written assignment on time.""
+
+3. **Frozen** - ""The frozen lake was perfect for skating.""
+
+4. **Eaten** - ""The eaten fruit was left on the table.""
+
+5. **Forgotten** - ""He realized he had forgotten his keys."""
+claude-haiku-4.5,4,Generate 5 examples of past participles.,"# Past Participles
+
+Here are 5 examples:
+
+1. **Broken** - ""The broken window needs to be repaired.""
+
+2. **Written** - ""She submitted the written assignment on time.""
+
+3. **Eaten** - ""The eaten fruit was no longer fresh.""
+
+4. **Forgotten** - ""The forgotten keys were left at home.""
+
+5. **Spoken** - ""The spoken words could not be taken back."""
+claude-haiku-4.5,5,Generate 5 examples of past participles.,"# 5 Examples of Past Participles
+
+1. **Broken** - ""The broken vase sat on the floor.""
+
+2. **Written** - ""She submitted the written assignment on time.""
+
+3. **Chosen** - ""The chosen candidate accepted the job offer.""
+
+4. **Frozen** - ""The frozen lake was safe to walk on.""
+
+5. **Completed** - ""He felt proud after the completed project."""
+claude-haiku-4.5,0,Find the most suitable collocation for the word 'beauty'.,"# Suitable Collocations for ""Beauty""
+
+Here are the most common and natural collocations:
+
+## Most Common:
+- **Natural beauty** - beauty that occurs in nature
+- **Beauty contest** - a competition judging physical appearance
+- **Beauty salon** - establishment for cosmetic treatments
+- **Beauty product** - cosmetic items
+
+## Strong/Striking:
+- **Breathtaking beauty**
+- **Stunning beauty**
+- **Rare beauty**
+- **Timeless beauty**
+
+## Verbs:
+- **Enhance beauty**
+- **Appreciate beauty**
+- **Capture beauty**
+
+## Phrases:
+- **Beauty and the Beast**
+- **Beauty is in the eye of the beholder**
+- **Inner beauty**
+
+## Context-Dependent
+
+The ""most suitable"" collocation depends on your specific context:
+- **Academic:** natural beauty, aesthetic beauty
+- **Commercial:** beauty product, beauty salon
+- **Poetic:** breathtaking beauty, ethereal beauty
+- **General:** inner beauty, timeless beauty
+
+**Could you provide more context about where you need this collocation?** That would help me give you a more precise recommendation."
+claude-haiku-4.5,1,Find the most suitable collocation for the word 'beauty'.,"# Most Suitable Collocations with ""Beauty""
+
+The most common and suitable collocations depend on context, but here are the top ones:
+
+## **Most Frequent:**
+- **natural beauty** - inherent attractiveness
+- **beauty contest/pageant** - competitive event
+- **beauty spot** - location known for scenic appeal
+- **beauty sleep** - rest for good appearance
+- **beauty treatment/salon** - cosmetic services
+
+## **Most Poetic/Elegant:**
+- **beauty and the beast** - contrast of opposites
+- **timeless beauty** - enduring attractiveness
+- **inner beauty** - character and personality
+
+## **In Different Contexts:**
+
+| Context | Collocation | Example |
+|---------|-----------|---------|
+| Nature | *breathtaking beauty* | ""The breathtaking beauty of the mountains"" |
+| People | *classical beauty* | ""Her classical beauty was striking"" |
+| Services | *beauty regime* | ""A daily beauty regime"" |
+| Philosophy | *beauty lies in* | ""Beauty lies in simplicity"" |
+
+**The answer depends on your specific context**, but **""natural beauty""** and **""inner beauty""** are arguably the most universally suitable and frequently used.
+
+Which context were you interested in?"
+claude-haiku-4.5,2,Find the most suitable collocation for the word 'beauty'.,"# Most Suitable Collocations for 'Beauty'
+
+The most common and suitable collocations depend on context, but here are the most frequent ones:
+
+## **Top Collocations:**
+
+1. **beauty of nature** - emphasizes natural aesthetics
+2. **natural beauty** - physical attractiveness without enhancement
+3. **inner beauty** - character and personality
+4. **beauty and the beast** - famous phrase
+5. **beauty spot** - small mark on skin; picturesque location
+6. **beauty products/industry** - cosmetics and related field
+7. **rare/outstanding beauty** - exceptional attractiveness
+
+## **In Context:**
+
+- *""The **natural beauty** of the landscape took our breath away.""*
+- *""Her **inner beauty** shone through in her kindness.""*
+- *""The **beauty of** this solution is its simplicity.""*
+
+## **Most Versatile:**
+**""Natural beauty""** is probably the most universally suitable, as it works in multiple contexts (appearance, nature, simplicity) and carries positive connotations.
+
+---
+
+**What context are you using it in?** That would help narrow down the most appropriate choice for your specific needs."
+claude-haiku-4.5,3,Find the most suitable collocation for the word 'beauty'.,"# Most Suitable Collocations for ""Beauty""
+
+The most common and suitable collocations depend on context, but here are the most frequently used:
+
+## **Top Collocations:**
+
+1. **beauty and the beast** - the famous tale/concept
+2. **natural beauty** - unadorned, inherent attractiveness
+3. **inner beauty** - character and personality qualities
+4. **beauty spot** - a small mole or mark considered attractive
+5. **beauty contest/pageant** - competitive event
+6. **beauty treatment/therapy** - cosmetic procedures
+7. **beauty salon/parlor** - establishment for beauty services
+8. **take one's beauty sleep** - rest for good appearance
+
+## **Most Universally Suitable:**
+
+**""Natural beauty""** is arguably the most elegant and universally appreciated collocation, as it:
+- Works in formal and informal contexts
+- Has positive connotations
+- Is widely used in literature and everyday speech
+
+**""Inner beauty""** is equally valuable, emphasizing that character matters more than appearance.
+
+---
+
+**Which collocation would best suit your specific context?** The choice depends on whether you're discussing appearance, character, places, or something else."
+claude-haiku-4.5,4,Find the most suitable collocation for the word 'beauty'.,"# Most Suitable Collocations for ""Beauty""
+
+The most common and suitable collocations depend on context, but here are the top ones:
+
+## Most Frequent:
+- **Natural beauty** - beauty occurring in nature
+- **Beauty salon/parlor** - place for cosmetic treatments
+- **Beauty products** - cosmetics and skincare items
+- **Inner beauty** - character and personality qualities
+- **Timeless beauty** - lasting aesthetic appeal
+
+## Other Strong Collocations:
+- **Beauty pageant** - competition
+- **Beauty standards** - cultural ideals
+- **Beauty sleep** - restorative rest
+- **Beauty spot** - scenic location OR a facial mark
+- **Rare beauty** - exceptional attractiveness
+
+## Context Matters:
+- **Cosmetic context:** beauty products, beauty salon, beauty treatment
+- **Abstract context:** inner beauty, natural beauty, timeless beauty
+- **Idiomatic:** beauty sleep, beauty spot
+
+**If you need just one answer:** **""Natural beauty""** is arguably the most universally suitable, as it works in aesthetic, philosophical, and descriptive contexts.
+
+Is there a specific context or type of collocation you're looking for?"
+claude-haiku-4.5,5,Find the most suitable collocation for the word 'beauty'.,"# Collocations with ""Beauty""
+
+The most suitable collocations depend on context, but here are the most common and natural ones:
+
+## Most Common
+- **beauty of nature** - the aesthetic qualities of the natural world
+- **inner beauty** - character and personality rather than physical appearance
+- **natural beauty** - inherent attractiveness without enhancement
+- **beauty and the Beast** - famous literary reference
+- **beauty routine/regimen** - skincare and cosmetic practices
+
+## Other Strong Collocations
+- **timeless beauty** - enduring attractiveness
+- **rare beauty** - exceptional or uncommon attractiveness
+- **beauty products** - cosmetics and skincare items
+- **beauty treatment** - therapeutic aesthetic procedures
+- **beauty spot** - a small mark considered attractive (or a picturesque location)
+- **beauty sleep** - rest believed to improve appearance
+- **beauty contest/pageant** - competitive event
+
+## Answer
+If you need **one most suitable** collocation, **""inner beauty""** is arguably the most versatile and meaningful, as it's used frequently in both everyday conversation and literature to convey deeper meaning beyond physical appearance.
+
+Would you like me to focus on a specific context or type of collocation?"
+claude-haiku-4.5,0,"Edit this text to make it appropriate for a scientific report.
+This project is sweet.","# Edited for scientific report:
+
+This project demonstrates promising results.
+
+---
+
+**Other alternatives depending on context:**
+
+- This project shows significant potential.
+- This project yields favorable outcomes.
+- This project exhibits considerable merit.
+- The findings of this project are noteworthy."
+claude-haiku-4.5,1,"Edit this text to make it appropriate for a scientific report.
+This project is sweet.","# Edited for Scientific Report
+
+**This project shows considerable promise.**
+
+---
+
+## Alternative phrasings depending on context:
+
+- ""This project demonstrates significant potential.""
+- ""The preliminary results of this project are encouraging.""
+- ""This project addresses an important research question.""
+- ""This project has substantial merit and warrants further investigation."""
+claude-haiku-4.5,2,"Edit this text to make it appropriate for a scientific report.
+This project is sweet.","# Edited for Scientific Report
+
+""This project shows promising results.""
+
+---
+
+**Other alternatives depending on context:**
+
+- ""This project demonstrates significant potential.""
+- ""This project yields encouraging findings.""
+- ""This project has produced noteworthy outcomes.""
+- ""This project merits further investigation."""
+claude-haiku-4.5,3,"Edit this text to make it appropriate for a scientific report.
+This project is sweet.","# Edited for Scientific Report:
+
+**This project shows promising results.**
+
+---
+
+Or, depending on context:
+
+- ""This project demonstrates significant potential.""
+- ""This research presents compelling findings.""
+- ""This investigation yields noteworthy outcomes.""
+
+**Why the changes:**
+- Removed informal language (""sweet"")
+- Used objective, professional terminology
+- Maintained neutral, evidence-based tone appropriate for scientific writing"
+claude-haiku-4.5,4,"Edit this text to make it appropriate for a scientific report.
+This project is sweet.","# Edited for Scientific Report
+
+**Original:** This project is sweet.
+
+**Revised options:**
+
+1. ""This project shows promising results.""
+
+2. ""This project demonstrates significant potential.""
+
+3. ""The findings from this project are noteworthy.""
+
+4. ""This project has yielded favorable outcomes.""
+
+---
+
+**Why the change:** Scientific reports require formal, objective language. Colloquial expressions like ""sweet"" are inappropriate for academic writing. The revised versions use precise, professional terminology suitable for scholarly communication."
+claude-haiku-4.5,5,"Edit this text to make it appropriate for a scientific report.
+This project is sweet.","# Edited for Scientific Report
+
+""This project shows considerable promise.""
+
+---
+
+**Other options depending on context:**
+
+- ""This project demonstrates significant potential.""
+- ""The preliminary results of this project are encouraging.""
+- ""This project addresses an important research question.""
+- ""The findings from this project are noteworthy.""
+
+**Key changes:**
+- Removed informal slang (""sweet"")
+- Used objective, professional language
+- Added specificity about what makes it valuable (promise, potential, findings, etc.)"

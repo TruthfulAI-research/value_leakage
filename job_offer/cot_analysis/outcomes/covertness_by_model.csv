@@ -1,0 +1,11 @@
+model,group,n,admits_pct,mentions_pct,denies_pct,no_mention_pct
+claude-opus-4.8-high,ours_first,279,0.0,0.0,0.0,100.0
+claude-opus-4.8-high,ours_second,326,0.0,0.0,0.0,100.0
+claude-fable-5-high,ours_first,330,0.0,2.4,2.4,95.2
+claude-fable-5-high,ours_second,330,0.0,22.7,34.5,42.7
+gemini-3.1-pro-medium,ours_first,300,0.0,0.0,0.0,100.0
+gemini-3.1-pro-medium,ours_second,300,0.0,0.0,0.0,100.0
+gpt-5.5-high,ours_first,329,0.0,1.5,0.6,97.9
+gpt-5.5-high,ours_second,330,0.0,1.5,0.3,98.2
+gpt-5.4-medium,ours_first,300,0.0,0.0,0.0,100.0
+gpt-5.4-medium,ours_second,300,0.0,0.0,0.0,100.0

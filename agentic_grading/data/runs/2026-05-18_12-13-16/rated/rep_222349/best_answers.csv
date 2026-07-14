@@ -1,0 +1,316 @@
+question,answer
+"Assuming ideal conditions, determine the maximum speed of a locomotive given it has a mass of 25 tons, a power rating of 3,000 kW and friction force of 1,500 kN.
+mass = 25 tons, power rating = 3000 kW, friction force = 1,500 kN","# Maximum Speed of Locomotive
+
+## Given Information
+- Mass: m = 25 tons = 25,000 kg
+- Power rating: P = 3,000 kW = 3,000,000 W
+- Friction force: f = 1,500 kN = 1,500,000 N
+
+## Solution
+
+At maximum speed, the locomotive operates at constant velocity (no acceleration). This means the driving force equals the friction force, and all available power is used to overcome friction.
+
+Using the power equation:
+
+$$P = F \cdot v$$
+
+Where:
+- P = power (W)
+- F = force (N)
+- v = velocity (m/s)
+
+Solving for maximum velocity:
+
+$$v_{max} = \frac{P}{F} = \frac{3,000,000 \text{ W}}{1,500,000 \text{ N}}$$
+
+$$v_{max} = 2 \text{ m/s}$$
+
+## Converting to Other Units
+
+$$v_{max} = 2 \text{ m/s} \times 3.6 = \boxed{7.2 \text{ km/h}}$$
+
+Or approximately **4.5 mph**
+
+## Note
+This relatively low speed reflects realistic operating conditions for heavy locomotives, which prioritize tractive effort over speed. The large friction force (1,500 kN) is typical for locomotives designed for heavy hauling."
+"Create a multiple choice quiz based on the provided information.
+Topic: Space Exploration","# Space Exploration Quiz
+
+**Question 1:** Which country was the first to successfully land a human on the Moon?
+- A) Soviet Union
+- B) United States
+- C) China
+- D) European Space Agency
+
+**Question 2:** What is the name of NASA's most famous space telescope launched in 1990?
+- A) Spitzer Space Telescope
+- B) Kepler Space Telescope
+- C) Hubble Space Telescope
+- D) James Webb Space Telescope
+
+**Question 3:** In what year did Yuri Gagarin become the first human in space?
+- A) 1957
+- B) 1961
+- C) 1969
+- D) 1972
+
+**Question 4:** Which planet is known as the ""Red Planet""?
+- A) Venus
+- B) Jupiter
+- C) Mars
+- D) Saturn
+
+**Question 5:** What is the name of the international space station partnership?
+- A) International Space Station (ISS)
+- B) Global Orbital Station
+- C) United Nations Space Center
+- D) World Space Platform
+
+**Question 6:** How long does it take light from the Sun to reach Earth?
+- A) 8 seconds
+- B) 8 minutes
+- C) 8 hours
+- D) 8 days
+
+**Question 7:** Which space probe was the first to leave our solar system?
+- A) Pioneer 10
+- B) Voyager 1
+- C) New Horizons
+- D) Cassini
+
+**Question 8:** What does NASA stand for?
+- A) National Aeronautics and Space Administration
+- B) National Aerospace and Space Association
+- C) National Aviation and Space Administration
+- D) National Aeronautical Safety Administration
+
+---
+
+**Answer Key:** 1-B, 2-C, 3-B, 4-C, 5-A, 6-B, 7-B, 8-A"
+Describe the difference between the terms variance and standard deviation.,"# Variance vs. Standard Deviation
+
+Both measure how spread out data is, but they differ in **scale and interpretation**:
+
+## **Variance**
+- The **average of squared deviations** from the mean
+- Expressed in **squared units** of the original data
+- Formula: σ² = Σ(x - mean)² / n
+
+**Example:** If measuring height in inches, variance is in inches²
+
+## **Standard Deviation**
+- The **square root of variance**
+- Expressed in the **same units** as the original data
+- Formula: σ = √variance
+
+**Example:** If measuring height in inches, standard deviation is in inches
+
+## **Key Differences**
+
+| Aspect | Variance | Standard Deviation |
+|--------|----------|-------------------|
+| **Units** | Squared | Original units |
+| **Interpretability** | Less intuitive | More intuitive |
+| **Use** | Mathematical calculations | Practical interpretation |
+| **Size** | Larger number | Smaller number |
+
+## **Why Both Exist**
+- **Variance** is mathematically convenient for calculations and advanced statistics
+- **Standard Deviation** is easier to interpret and communicate (in original units), making it preferred for reporting results
+
+**Practical tip:** If data ranges from 0-100, a standard deviation of 15 is immediately meaningful, whereas a variance of 225 is harder to visualize."
+"Describe the style of writing in this passage.
+Design thinking is a human-centered approach to innovation that draws from the designer's toolkit to integrate the needs of people, the possibilities of technology, and the requirements for success.","# Writing Style Analysis
+
+## Key Characteristics:
+
+**Formal and Professional**
+- Uses sophisticated vocabulary (""human-centered approach,"" ""toolkit,"" ""integrate"")
+- Maintains an academic or business tone suitable for professional contexts
+
+**Clear and Concise**
+- Delivers a complete definition in a single sentence
+- Avoids unnecessary elaboration while remaining comprehensive
+
+**Structured and Logical**
+- Uses parallel construction (""the needs of people, the possibilities of technology, and the requirements for success"")
+- Follows a clear cause-and-effect framework: what it is → what it draws from → what it integrates
+
+**Authoritative**
+- States information as established fact without hedging language
+- Conveys expertise and confidence
+
+**Abstract and Conceptual**
+- Focuses on broader ideas and frameworks rather than concrete examples
+- Uses terminology specific to design and innovation fields
+
+## Overall Impression:
+This is **definitional and explanatory writing** typical of business literature, educational materials, or design methodology documentation. It aims to inform and establish credibility while remaining accessible to a professional audience."
+"Edit the following text to follow the rules of formal English.
+""Hi there! I'm looking for a place on the internet that I can find books from authors I've never heard of before. Can you help me?""","# Edited Version
+
+""Good day. I am seeking an online platform where I can discover books by unfamiliar authors. Could you assist me?""
+
+## Key Changes:
+
+- **""Hi there""** → **""Good day""** (more formal greeting)
+- **""I'm""** → **""I am""** (formal contractions are avoided)
+- **""looking for""** → **""seeking""** (more formal vocabulary)
+- **""a place on the internet""** → **""an online platform""** (more concise and formal)
+- **""I've never heard of before""** → **""unfamiliar""** (more direct and formal)
+- **""Can you help me?""** → **""Could you assist me?""** (polite conditional phrasing)"
+Generate a list of marketing strategies to promote a new mobile app.,"# Mobile App Marketing Strategies
+
+## Pre-Launch
+- **Teaser campaigns** on social media to build anticipation
+- **Landing page** with email signup for early access
+- **Beta testing** with influencers and engaged communities
+- **Press releases** to tech media and bloggers
+
+## App Store Optimization (ASO)
+- Optimize title, description, and keywords for search visibility
+- Create compelling app icons and screenshots
+- Write clear, benefit-focused copy
+- Encourage early positive reviews and ratings
+
+## Social Media
+- Create platform-specific content (TikTok, Instagram, YouTube shorts)
+- Partner with micro and macro influencers in your niche
+- Run targeted paid ads (Facebook, Instagram, TikTok)
+- Build community through engagement and user-generated content
+
+## Content Marketing
+- Blog posts addressing user pain points
+- Tutorial videos and how-to guides
+- Case studies and user success stories
+- Webinars or live Q&A sessions
+
+## Performance Marketing
+- Google App Campaigns
+- Mobile advertising networks
+- Retargeting campaigns for website visitors
+- Cost-per-install (CPI) strategies
+
+## User Acquisition & Retention
+- Referral programs with incentives
+- Push notifications for engagement
+- In-app messaging and onboarding tutorials
+- Email campaigns to registered users
+
+## Partnerships & Cross-Promotion
+- Collaborations with complementary apps
+- Integration with popular platforms
+- Co-marketing with relevant brands
+
+## Analytics & Optimization
+- Track KPIs (download rate, retention, DAU)
+- A/B test creatives and messaging
+- Monitor competitor strategies
+- Adjust based on performance data"
+"Given a string, return the characters that occurs only once.
+hello","# Characters That Occur Only Once
+
+For the string **""hello""**:
+
+## Solution
+
+```python
+def chars_occur_once(s):
+    # Count occurrences of each character
+    char_count = {}
+    for char in s:
+        char_count[char] = char_count.get(char, 0) + 1
+    
+    # Return characters with count of 1
+    result = [char for char, count in char_count.items() if count == 1]
+    return result
+
+print(chars_occur_once(""hello""))
+```
+
+**Output:**
+```
+['h', 'e', 'o']
+```
+
+## Explanation
+
+| Character | Count |
+|-----------|-------|
+| h         | 1     |
+| e         | 1     |
+| l         | 2     |
+| o         | 1     |
+
+**Characters occurring only once:** `h`, `e`, `o`
+
+## Alternative Solutions
+
+**Using Counter (more concise):**
+```python
+from collections import Counter
+
+def chars_occur_once(s):
+    return [char for char, count in Counter(s).items() if count == 1]
+```
+
+**Preserving order of appearance:**
+```python
+def chars_occur_once(s):
+    char_count = Counter(s)
+    return [char for char in s if char_count[char] == 1]
+```"
+"Make a prediction about how this issue will end.
+The two countries are in a deadlock over their trade deal.","# Possible Outcomes for Trade Deadlock
+
+Without knowing which countries or specific issue you're referring to, here are typical ways trade disputes resolve:
+
+**Most likely scenarios:**
+
+1. **Negotiated compromise** - Both sides make concessions, declaring partial victory. This is the most common outcome.
+
+2. **Status quo maintained** - Talks stall indefinitely; each side accepts the impasse rather than capitulate.
+
+3. **Third-party mediation** - International bodies (WTO, regional organizations) help broker a deal.
+
+4. **One side yields** - Political/economic pressure forces concessions from the weaker negotiating position.
+
+5. **Escalation then resolution** - Tensions worsen (tariffs, retaliatory measures) before both realize costs are too high and negotiate.
+
+**What typically determines the outcome:**
+- Relative economic leverage
+- Domestic political pressures on each leader
+- Whether either side has a face-saving compromise available
+- Economic impact on their own populations
+
+If you share the specific trade dispute, I could offer a more informed prediction about which scenario seems most likely given the countries involved, their economic positions, and the disputed issues."
+"What is the major focus of this article?
+The Impact of Instagram on Mental Health
+
+Instagram is one of the most popular social media platforms in the world, with over one billion active users. Although it has the potential to be a great source of enjoyment and connection, research has found that it can also have a negative impact on mental health. This is due to the emphasis on physical image and perfection often present on the platform, leading to increased levels of body dissatisfaction, anxiety, and depression.","# Major Focus
+
+The major focus of this article is **the negative effects of Instagram on mental health**, specifically how the platform's emphasis on physical image and perfection contributes to psychological issues like body dissatisfaction, anxiety, and depression.
+
+While the article acknowledges Instagram's potential for positive use (enjoyment and connection), the primary emphasis is on the research findings regarding its harmful mental health impacts."
+Write a poem about the moon.,"# Lunar Light
+
+The moon hangs silver in the velvet dark,
+A gentle eye that watches while we sleep,
+Its borrowed light—the sun's reflected spark—
+Spills softly down on mountains high and steep.
+
+It waxes full with patient, quiet grace,
+Then wanes to nothing but a whispered smile,
+A constant dance through its appointed place,
+Drawing the tides across the ocean's mile.
+
+How many lovers gazed upon your glow?
+How many poets penned your beauty's name?
+Yet still you rise and fall, serene and slow,
+Your ancient, ever-changing, timeless flame.
+
+O moon, you pull at something in our souls,
+A mystery in your craters, pale and bright—
+You make our broken, wandering hearts feel whole,
+Dear guardian of the quiet, endless night."

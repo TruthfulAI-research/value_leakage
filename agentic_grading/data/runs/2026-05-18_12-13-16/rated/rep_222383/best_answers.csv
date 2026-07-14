@@ -1,0 +1,271 @@
+question,answer
+"Change the following sentence to the first person.
+Mark completed the report.",I completed the report.
+"Conjugate the following verb in its present tense.
+to run","# Present Tense Conjugation of ""to run""
+
+| Person | Singular | Plural |
+|--------|----------|--------|
+| 1st | I run | we run |
+| 2nd | you run | you run |
+| 3rd | he/she/it runs | they run |"
+Describe how artificial neural networks work.,"# How Artificial Neural Networks Work
+
+## Basic Structure
+
+Neural networks mimic the brain's structure with interconnected layers of artificial ""neurons"":
+
+- **Input layer**: Receives data
+- **Hidden layers**: Process information through mathematical transformations
+- **Output layer**: Produces predictions or decisions
+
+## Core Process
+
+### 1. **Forward Pass**
+Each neuron receives inputs, multiplies them by **weights** (learnable parameters), adds a **bias**, and passes the result through an **activation function**:
+
+```
+output = activation(Σ(input × weight) + bias)
+```
+
+The activation function (like ReLU or sigmoid) adds non-linearity, allowing networks to learn complex patterns.
+
+### 2. **Learning Through Training**
+Networks learn by adjusting weights to minimize error:
+
+- **Loss function** measures prediction error
+- **Backpropagation** calculates how each weight contributed to that error
+- **Optimization algorithms** (like gradient descent) nudge weights in better directions
+- This process repeats across many training examples
+
+### 3. **Pattern Recognition**
+- Early layers detect simple features (edges, shapes)
+- Deeper layers combine these into abstract patterns
+- Final layers make predictions based on learned representations
+
+## Key Characteristics
+
+- **Universal approximators**: Can theoretically learn any function with enough layers and neurons
+- **Parallel processing**: Neurons operate simultaneously
+- **Data-driven**: Learn patterns directly from examples rather than explicit programming
+
+This approach enables neural networks to excel at image recognition, language processing, game-playing, and countless other tasks."
+Describe the blockchain technology and explain its relevance to the cryptocurrency world.,"# Blockchain Technology and Cryptocurrency
+
+## What is Blockchain?
+
+Blockchain is a **decentralized digital ledger** that records transactions across a network of computers. Here's how it works:
+
+### Core Characteristics
+
+- **Blocks**: Contain transaction data, timestamps, and cryptographic hashes
+- **Chain**: Each block links to the previous one, creating an immutable sequence
+- **Decentralization**: No single authority controls it; many computers (nodes) verify transactions
+- **Cryptography**: Advanced encryption secures and validates each entry
+
+### How It Functions
+
+1. A transaction is initiated
+2. Network participants validate it
+3. The transaction joins others in a new block
+4. Complex mathematical puzzles are solved (mining/staking)
+5. The verified block is added permanently to the chain
+6. All participants receive the updated ledger
+
+## Relevance to Cryptocurrency
+
+### Why Blockchain Matters for Crypto
+
+| Aspect | Benefit |
+|--------|---------|
+| **Trust** | No middleman needed; cryptographic proof replaces faith |
+| **Transparency** | All transactions visible; nearly impossible to alter |
+| **Security** | Distributed structure prevents single-point failures |
+| **Ownership** | Users control private keys and assets directly |
+| **Speed** | Faster settlement than traditional banking |
+
+### Real-World Impact
+
+- **Bitcoin** pioneered this model for peer-to-peer digital currency
+- **Ethereum** expanded it to enable smart contracts and applications
+- Enables financial inclusion without traditional institutions
+
+## Limitations to Consider
+
+- Slower transaction speeds than centralized systems
+- Environmental concerns (energy consumption)
+- Regulatory uncertainty
+- Irreversible transactions create risk for errors
+
+Blockchain essentially solved the ""double-spending problem,"" making digital currency possible without a central bank."
+Explain the differences between fossil fuels and renewable energy sources.,"# Fossil Fuels vs. Renewable Energy
+
+## **Fossil Fuels**
+
+**What they are:** Coal, oil, and natural gas formed from ancient organic matter over millions of years
+
+**Key characteristics:**
+- Non-renewable (finite supply)
+- High energy density
+- Established, widespread infrastructure
+- Relatively inexpensive (historically)
+- Release stored carbon when burned
+
+**Drawbacks:**
+- Emit CO₂ and pollutants
+- Contribute to climate change
+- Will eventually deplete
+- Mining/extraction can damage ecosystems
+
+## **Renewable Energy**
+
+**What they are:** Energy from naturally replenishing sources (sun, wind, water, geothermal, biomass)
+
+**Key characteristics:**
+- Continuously replenished
+- Lower carbon emissions
+- Diverse options available
+- Increasingly cost-competitive
+- Minimal environmental damage during operation
+
+**Drawbacks:**
+- Weather/location dependent
+- Require significant upfront investment
+- Storage technology still developing
+- Some environmental impacts (land use, wildlife)
+
+## **Quick Comparison**
+
+| Factor | Fossil Fuels | Renewables |
+|--------|--------------|-----------|
+| **Sustainability** | Limited | Indefinite |
+| **Emissions** | High | Low/None |
+| **Cost trend** | Rising | Declining |
+| **Reliability** | Consistent | Variable |
+| **Scale** | Mature | Growing |
+
+The shift toward renewables is driven by climate concerns and improving economics, though most energy systems currently use a mix of both."
+Identify and explain one benefit of cloud computing.,"# One Key Benefit of Cloud Computing: Cost Efficiency
+
+## Explanation
+
+Cloud computing eliminates the need for businesses to invest heavily in expensive physical infrastructure. Instead of purchasing and maintaining servers, data centers, and equipment, companies can:
+
+- **Pay only for what they use** through subscription-based models
+- **Reduce capital expenses** (CapEx) by converting them to operational expenses (OpEx)
+- **Avoid costs** associated with hardware maintenance, upgrades, and replacement
+- **Scale resources up or down** as needed without buying additional equipment
+
+## Practical Example
+
+A small startup can access enterprise-level computing power and storage through cloud services like AWS or Microsoft Azure without spending millions on servers—paying only monthly for the resources they actually consume.
+
+This makes advanced technology accessible to businesses of all sizes and allows them to allocate budget to other priorities like innovation and growth."
+Invent a new word with a definition.,"# Brumble
+
+**Definition:** The peculiar comfort found in being stuck in traffic or delayed travel, where you're freed from obligations and can finally do things like listen to that podcast, organize your phone, or simply exist without guilt.
+
+*Etymology: Blend of ""buffer"" + ""rumble,"" evoking the low-stress humming of idle contentment.*
+
+**Example usage:** ""My flight was delayed three hours, but honestly I kind of enjoyed the brumble—I finally finished that audiobook I've been putting off for months."""
+List the steps to write a 10-page essay.,"# Steps to Write a 10-Page Essay
+
+## 1. **Choose and Narrow Your Topic**
+- Select a subject that interests you
+- Make it specific enough to cover thoroughly in 10 pages
+- Identify your main argument or thesis
+
+## 2. **Understand the Assignment**
+- Review requirements, formatting style (APA, MLA, Chicago, etc.)
+- Note any specific guidelines, deadlines, or rubric criteria
+- Clarify expectations with your instructor if needed
+
+## 3. **Conduct Research**
+- Find credible sources (academic journals, books, reputable websites)
+- Take organized notes with citations
+- Aim for a mix of primary and secondary sources
+- Keep track of all sources for your bibliography
+
+## 4. **Create an Outline**
+- Write your thesis statement
+- Organize main points and supporting arguments
+- Map subpoints under each main section
+- Plan approximate length for each section
+
+## 5. **Write Your Introduction**
+- Hook the reader with an engaging opening
+- Provide context and background information
+- Present your clear thesis statement
+- Preview your main arguments (typically 0.5-1 page)
+
+## 6. **Draft Body Paragraphs**
+- Dedicate 1-2 pages per main point
+- Start each paragraph with a topic sentence
+- Support claims with evidence and examples
+- Use transitions between paragraphs
+- Maintain logical flow and development (typically 7-8 pages total)
+
+## 7. **Write Your Conclusion**
+- Restate your thesis in fresh language
+- Summarize key points briefly
+- Discuss broader implications
+- End with a memorable closing statement (0.5-1 page)
+
+## 8. **Incorporate Citations**
+- Credit sources throughout the essay
+- Use footnotes, endnotes, or in-text citations as required
+- Create a complete bibliography or works cited page
+
+## 9. **Revise and Edit**
+- Read for clarity, coherence, and flow
+- Check for logical gaps or weak arguments
+- Ensure transitions between ideas
+- Verify proper paragraph structure
+
+## 10. **Proofread**
+- Check grammar, spelling, and punctuation
+- Verify formatting consistency
+- Review citation format one final time
+- Consider reading aloud to catch errors
+
+## 11. **Final Review**
+- Confirm you've met all assignment requirements
+- Verify essay length (approximately 10 pages)
+- Submit according to instructions
+
+**Tip:** Start early to allow time for research, drafting, and revision!"
+Name a holiday in Japan and explain why it is celebrated.,"# Obon (Mid-August)
+
+**Obon** is a major summer holiday celebrated around mid-August, typically lasting several days.
+
+## Why It's Celebrated
+
+Obon is rooted in Buddhist tradition and honors deceased ancestors. Japanese people believe that during this period, the spirits of their ancestors return to visit the living. 
+
+Key aspects include:
+
+- **Welcoming ancestors**: Families prepare altars, light lanterns, and make offerings of food and flowers
+- **Family reunions**: People travel to their hometowns to be with family, making it one of Japan's busiest travel periods
+- **Bon Odori dances**: Communities hold traditional dance festivals to celebrate and entertain the visiting spirits
+- **Sending spirits off**: At the end, lanterns are floated on rivers or released into the sky to guide ancestors back to the afterlife
+
+It's one of the most important holidays in Japan, reflecting deep cultural values around family, respect for ancestors, and connection between the living and the dead."
+What is the maximum speed of sound in the atmosphere?,"# Speed of Sound in the Atmosphere
+
+The speed of sound in air is approximately **343 m/s (1,235 km/h or 767 mph)** at 20°C (68°F) at sea level.
+
+## Key factors that affect this speed:
+
+**Temperature** is the primary factor:
+- At 0°C: ~331 m/s
+- At 20°C: ~343 m/s
+- At 35°C: ~352 m/s
+
+**Other minor factors:**
+- Humidity (has a small effect)
+- Pressure (has negligible effect on speed)
+- Altitude (affects temperature, which in turn affects sound speed)
+
+## Important note:
+
+There is no single ""maximum speed of sound"" in the atmosphere—it varies with temperature. The speed is *higher* in warmer air and *lower* in colder air. In the upper atmosphere where it's much colder, the speed of sound is considerably slower than at sea level."

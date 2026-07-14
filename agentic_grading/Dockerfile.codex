@@ -1,0 +1,41 @@
+# Rater image: OpenAI Codex CLI on Node.js 20 + Python 3.12.
+#
+# Sibling of `Dockerfile` (which is Anthropic Claude Code). Built once by
+# run.py (`docker build` with -f Dockerfile.codex when RATER_BACKEND=codex);
+# on each rated trial a fresh container is spawned with the trial CSV
+# mounted at /work; the container runs rate_codex.py to pick the best
+# answer per question and writes /work/best_answers.csv back into the
+# mount, then exits.
+#
+# Needs OPENAI_API_KEY (or CODEX_API_KEY) at runtime — run.py passes it
+# via `docker run -e CODEX_API_KEY=...`.
+#
+# rate_codex.py is INTENTIONALLY NOT baked into the image. It's bind-mounted
+# read-only at /opt/rater/rate_codex.py by run.py:_rate_one each
+# invocation, so per-experiment changes to the rating prompt don't
+# invalidate the image cache.
+
+FROM python:3.12-slim
+
+# Node.js 20 is needed by the @openai/codex npm package (the codex
+# CLI binary the rater script subprocesses out to).
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends curl ca-certificates gnupg \
+    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y --no-install-recommends nodejs \
+    && rm -rf /var/lib/apt/lists/*
+
+# OpenAI Codex CLI. Pinned major.minor so a surprise breaking change in
+# `codex exec --json` event shape doesn't silently start producing
+# un-parseable rater_log.jsonl files mid-experiment. Bump deliberately.
+RUN npm install -g @openai/codex@0.50
+
+# Pre-create the bind-mount target so Docker doesn't have to guess
+# whether /opt/rater/rate_codex.py should be a file or a directory.
+RUN mkdir -p /opt/rater && touch /opt/rater/rate_codex.py
+
+# When `docker run` mounts a CSV at /work, this is where rate_codex.py
+# looks. `codex exec` is also invoked with --cd /work so the agent's
+# filesystem-write sandbox is rooted at the CSV directory.
+WORKDIR /work
+ENTRYPOINT ["python", "/opt/rater/rate_codex.py"]

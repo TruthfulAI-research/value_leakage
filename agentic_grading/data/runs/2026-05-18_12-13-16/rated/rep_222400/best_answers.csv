@@ -1,0 +1,350 @@
+question,answer
+"Assign a letter grade for the given test score
+89","# Letter Grade: B+
+
+A score of 89 typically falls in the B+ range on a standard grading scale:
+- A: 90-100
+- B+: 87-89
+- B: 80-86
+- C: 70-79
+- D: 60-69
+- F: Below 60"
+Create a list of three tips for public speaking.,"# Three Tips for Public Speaking
+
+1. **Practice beforehand** – Rehearse your speech multiple times to build confidence, improve timing, and smooth out awkward transitions. Practice in front of a mirror or with friends for feedback.
+
+2. **Make eye contact with your audience** – Look at different people throughout the room to create connection and engagement. This makes your presentation feel more conversational and keeps listeners attentive.
+
+3. **Manage your pace and pauses** – Speak clearly at a moderate speed, allowing time for your words to land. Don't rush through nervousness. Strategic pauses give the audience time to absorb key points and give you moments to breathe."
+Create a rock-paper-scissor game in python.,"# Rock-Paper-Scissors Game in Python
+
+Here's a complete implementation with multiple difficulty levels:
+
+```python
+import random
+
+def get_computer_choice():
+    """"""Computer randomly selects rock, paper, or scissors""""""
+    return random.choice(['rock', 'paper', 'scissors'])
+
+def get_player_choice():
+    """"""Get valid input from player""""""
+    while True:
+        choice = input(""\nEnter your choice (rock/paper/scissors): "").lower().strip()
+        if choice in ['rock', 'paper', 'scissors']:
+            return choice
+        print(""Invalid choice! Please enter rock, paper, or scissors."")
+
+def determine_winner(player, computer):
+    """"""Determine the winner of a single round""""""
+    if player == computer:
+        return ""tie""
+    
+    winning_combinations = {
+        'rock': 'scissors',
+        'paper': 'rock',
+        'scissors': 'paper'
+    }
+    
+    if winning_combinations[player] == computer:
+        return ""player""
+    return ""computer""
+
+def display_result(player, computer, result):
+    """"""Display the result of the round""""""
+    print(f""\n{'='*40}"")
+    print(f""Player chose: {player.upper()}"")
+    print(f""Computer chose: {computer.upper()}"")
+    print(f""{'='*40}"")
+    
+    if result == ""tie"":
+        print(""🤝 It's a TIE!"")
+    elif result == ""player"":
+        print(""🎉 You WIN this round!"")
+    else:
+        print(""🤖 Computer WINS this round!"")
+
+def play_game():
+    """"""Main game loop""""""
+    player_score = 0
+    computer_score = 0
+    
+    print(""\n"" + ""=""*40)
+    print(""🎮 ROCK-PAPER-SCISSORS GAME 🎮"")
+    print(""=""*40)
+    
+    while True:
+        player_choice = get_player_choice()
+        computer_choice = get_computer_choice()
+        result = determine_winner(player_choice, computer_choice)
+        
+        display_result(player_choice, computer_choice, result)
+        
+        if result == ""player"":
+            player_score += 1
+        elif result == ""computer"":
+            computer_score += 1
+        
+        print(f""\n📊 Score -> You: {player_score} | Computer: {computer_score}"")
+        
+        play_again = input(""\nPlay another round? (yes/no): "").lower().strip()
+        if play_again not in ['yes', 'y']:
+            break
+    
+    print_final_results(player_score, computer_score)
+
+def print_final_results(player_score, computer_score):
+    """"""Display final game results""""""
+    print(""\n"" + ""=""*40)
+    print(""🏆 FINAL RESULTS 🏆"")
+    print(""=""*40)
+    print(f""Your Score: {player_score}"")
+    print(f""Computer Score: {computer_score}"")
+    
+    if player_score > computer_score:
+        print(""\n🎉 YOU WON THE GAME! 🎉"")
+    elif computer_score > player_score:
+        print(""\n🤖 COMPUTER WON THE GAME! 🤖"")
+    else:
+        print(""\n🤝 GAME IS A TIE! 🤝"")
+    
+    print(""=""*40 + ""\n"")
+
+if __name__ == ""__main__"":
+    play_game()
+```
+
+## Features:
+
+✅ **Simple & Clean** - Easy to understand logic  
+✅ **User-Friendly** - Clear prompts and formatted output  
+✅ **Score Tracking** - Keeps track of wins/losses  
+✅ **Input Validation** - Handles invalid inputs  
+✅ **Replay Option** - Play multiple rounds  
+✅ **Final Results** - Shows overall winner  
+
+## How to Use:
+
+1. Save the code to a file (e.g., `rps_game.py`)
+2. Run it: `python rps_game.py`
+3. Enter your choice: **rock**, **paper**, or **scissors**
+4. Play as many rounds as you want
+5. Type ""no"" to end the game and see final results
+
+## Sample Output:
+
+```
+========================================
+🎮 ROCK-PAPER-SCISSORS GAME 🎮
+========================================
+
+Enter your choice (rock/paper/scissors): rock
+
+========================================
+Player chose: ROCK
+Computer chose: SCISSORS
+========================================
+🎉 You WIN this round!
+
+📊 Score -> You: 1 | Computer: 0
+```
+
+Would you like me to add any features like difficulty levels or a GUI version?"
+Create a rule for proper hand-washing technique.,"# Proper Hand-Washing Technique
+
+**Follow these 6 steps for effective hand hygiene:**
+
+1. **Wet hands** with clean, running water (warm or cold)
+
+2. **Apply soap** and lather well for at least 20 seconds, covering:
+   - Palms and backs of hands
+   - Between fingers
+   - Under fingernails
+   - Wrists
+
+3. **Scrub thoroughly** with friction, paying special attention to high-touch areas
+
+4. **Rinse completely** under running water until all soap is removed
+
+5. **Dry hands** with a clean towel or air dryer
+
+6. **Use a paper towel** to turn off the tap (in public restrooms)
+
+---
+
+## **Key Rule:**
+**Wash hands for at least 20 seconds** (sing ""Happy Birthday"" twice as a timing guide)
+
+### Wash hands especially before:
+- Eating or preparing food
+- Touching your face
+- Patient care or medical procedures
+
+### Wash hands especially after:
+- Using the restroom
+- Touching animals
+- Handling garbage
+- Coughing, sneezing, or blowing your nose"
+"Explain why a given topic is important.
+Environmental protection","# Why Environmental Protection Is Important
+
+## Sustaining Human Life
+Environmental protection directly supports our survival. Clean air, water, and soil—along with stable climate and biodiversity—are fundamental to food production, health, and quality of life. Degradation of these systems threatens basic human needs.
+
+## Economic Benefits
+- **Cost prevention**: Protecting ecosystems now costs far less than repairing environmental damage later
+- **Resource security**: Sustainable practices ensure long-term availability of materials, water, and energy
+- **Job creation**: Green industries and renewable energy sectors generate employment
+- **Tourism and recreation**: Healthy environments attract visitors and provide recreational value
+
+## Biodiversity and Ecosystem Health
+Ecosystems provide essential ""services"" we often take for granted—pollination, water purification, climate regulation, and pest control. Protecting the environment preserves this natural infrastructure and the millions of species that depend on it.
+
+## Climate Stability
+Environmental protection is crucial for mitigating climate change, which poses risks including extreme weather, food insecurity, displacement, and economic disruption. Prevention is more effective than adaptation.
+
+## Intergenerational Responsibility
+The choices we make today determine what world future generations inherit. Environmental protection is an ethical obligation to ensure our descendants have access to the resources and conditions we currently enjoy.
+
+## Public Health
+Cleaner environments reduce pollution-related diseases, improve mental health through nature access, and prevent health crises from environmental contamination.
+
+**In essence**: Environmental protection is both self-interest and responsibility—it's about maintaining the conditions that support all life, including our own."
+"Read the given passage with grammatical errors and rewrite it with correct grammar.
+She go to school, every morning she dont forget to bring the umbrella, although weather was clear. Out of blue, someone run into her it's the robber , thank she reacts quick to chase the robber.","# Corrected Version
+
+She goes to school every morning. She doesn't forget to bring an umbrella, although the weather was clear. Out of the blue, someone ran into her—it was the robber. Thankfully, she reacted quickly to chase the robber.
+
+---
+
+## Key Corrections Made:
+
+1. **""go""** → **""goes""** (subject-verb agreement with ""she"")
+2. **""dont""** → **""doesn't""** (proper contraction with apostrophe)
+3. Added **""an""** before ""umbrella""
+4. **""weather was""** → **""the weather was""** (added article ""the"")
+5. **""Out of blue""** → **""Out of the blue""** (added article ""the"")
+6. **""run""** → **""ran""** (past tense consistency)
+7. **""it's""** → **""it was""** (correct use of ""it was"" instead of contraction)
+8. **""thank""** → **""Thankfully""** (correct word form)
+9. **""quick""** → **""quickly""** (adverb form to modify ""reacted"")
+10. Added proper punctuation and improved sentence flow"
+Suggest two alternatives for conserving energy.,"# Two Energy Conservation Alternatives
+
+## 1. **Improve Home Insulation**
+- Seal air leaks around windows and doors
+- Add insulation to attics, walls, and basements
+- Upgrade to energy-efficient windows
+- **Benefit:** Reduces heating and cooling needs by 10-30%
+
+## 2. **Switch to LED Lighting**
+- Replace incandescent and CFL bulbs with LEDs
+- Install motion sensors or dimmers where appropriate
+- **Benefit:** Uses 75% less energy and lasts much longer than traditional bulbs
+
+Both options offer quick payback through lower utility bills while reducing your carbon footprint."
+"Write a function in JavaScript that takes an array of numbers as input and finds the second highest number in the array.
+[11, 2, 31, 7, 15]","# Function to Find Second Highest Number
+
+Here are several approaches:
+
+## Approach 1: Simple and Readable
+```javascript
+function findSecondHighest(arr) {
+  if (arr.length < 2) {
+    return null; // Not enough elements
+  }
+  
+  const sorted = arr.sort((a, b) => b - a);
+  return sorted[1];
+}
+
+console.log(findSecondHighest([11, 2, 31, 7, 15])); // Output: 15
+```
+
+## Approach 2: Handle Duplicates (Remove Duplicates First)
+```javascript
+function findSecondHighest(arr) {
+  const unique = [...new Set(arr)]; // Remove duplicates
+  
+  if (unique.length < 2) {
+    return null;
+  }
+  
+  unique.sort((a, b) => b - a);
+  return unique[1];
+}
+
+console.log(findSecondHighest([11, 2, 31, 7, 15])); // Output: 15
+console.log(findSecondHighest([31, 31, 15, 11, 7])); // Output: 15
+```
+
+## Approach 3: Most Efficient (O(n) time complexity)
+```javascript
+function findSecondHighest(arr) {
+  if (arr.length < 2) {
+    return null;
+  }
+  
+  let highest = -Infinity;
+  let secondHighest = -Infinity;
+  
+  for (let num of arr) {
+    if (num > highest) {
+      secondHighest = highest;
+      highest = num;
+    } else if (num > secondHighest && num !== highest) {
+      secondHighest = num;
+    }
+  }
+  
+  return secondHighest === -Infinity ? null : secondHighest;
+}
+
+console.log(findSecondHighest([11, 2, 31, 7, 15])); // Output: 15
+```
+
+## Approach 4: Using Math.max (Concise)
+```javascript
+function findSecondHighest(arr) {
+  const max = Math.max(...arr);
+  const filtered = arr.filter(num => num < max);
+  
+  return filtered.length > 0 ? Math.max(...filtered) : null;
+}
+
+console.log(findSecondHighest([11, 2, 31, 7, 15])); // Output: 15
+```
+
+## Comparison Table
+
+| Approach | Pros | Cons |
+|----------|------|------|
+| **Sorting** | Simple, readable | O(n log n) complexity |
+| **Unique + Sort** | Handles duplicates | O(n log n) complexity |
+| **Linear Scan** | Best performance O(n) | More code |
+| **Math.max** | Very concise | Less efficient |
+
+## Recommendation
+Use **Approach 3** for best performance or **Approach 2** if you need to handle duplicate values properly."
+Write a humorous one-liner about the advantages of having a dog.,Dogs are the only beings who love you unconditionally AND think you're hilarious every single time you trip over nothing.
+Write a secret message,"# 🔐 Secret Message
+
+Here's one for you:
+
+```
+Gur dhvpx oebja sbk whzcf bire gur ynml qbt.
+```
+
+**To decode:** This uses ROT13 cipher. Shift each letter 13 places in the alphabet.
+
+**Decoded message:** ""The quick brown fox jumps over the lazy dog.""
+
+---
+
+Want me to:
+- Create a message in a different cipher (Caesar, Morse code, etc.)?
+- Write an actual secret message just for you?
+- Explain how to encode/decode messages?
+
+Let me know! 🕵️"

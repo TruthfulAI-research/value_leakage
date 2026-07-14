@@ -1,0 +1,240 @@
+question,answer
+"Classify each employee in the dataset as 'high performance', 'mid performance' or 'low performance'.
+[
+Raj - 4 years experience, works on multiple projects, completed tasks on time in the past 3 months. 
+
+Sameer - 6 years experience, failed to deliver the required results on time in the past 3 months. 
+
+James - 2 years experience, takes initiative in completing tasks, but has not finished all tasks on time. 
+]","# Performance Classification
+
+| Employee | Classification | Reasoning |
+|----------|----------------|-----------|
+| **Raj** | High Performance | 4 years experience + multi-project involvement + consistent on-time delivery (past 3 months) |
+| **Sameer** | Low Performance | 6 years experience but failed to meet delivery timelines and required results (past 3 months) |
+| **James** | Mid Performance | 2 years experience with positive initiative, but inconsistent task completion and missed deadlines |
+
+**Key factors considered:**
+- Experience level
+- Project involvement/initiative
+- Recent delivery performance (past 3 months)
+- Task completion rate"
+Compare and contrast two types of computer networks.,"# Comparing LAN and WAN
+
+## Local Area Network (LAN)
+
+**Characteristics:**
+- Covers a small geographic area (building, office floor, campus)
+- High transmission speeds (100 Mbps to 1 Gbps+)
+- Low latency and minimal delays
+- Owned and maintained by a single organization
+- Lower cost to establish and manage
+
+**Example:** Office network connecting computers and printers in one building
+
+## Wide Area Network (WAN)
+
+**Characteristics:**
+- Spans large geographic distances (cities, countries, globally)
+- Slower speeds than LANs (varies widely)
+- Higher latency due to distance
+- Often uses public infrastructure or leased lines
+- More expensive to set up and operate
+
+**Example:** Company offices connected across multiple countries
+
+## Key Contrasts
+
+| Aspect | LAN | WAN |
+|--------|-----|-----|
+| **Speed** | Faster | Slower |
+| **Range** | Small | Large |
+| **Cost** | Lower | Higher |
+| **Reliability** | More stable | More vulnerable |
+| **Setup** | Easier | Complex |
+
+## Similarities
+
+- Both use routers and switches to manage data
+- Both require protocols (TCP/IP) for communication
+- Both involve hardware and software components
+
+**Practical Note:** Most organizations use both—LANs internally and WANs to connect distant locations, creating a hybrid network infrastructure."
+"From the following poem, provide a summary of the last two lines.
+The waves would leap up to the sun
+And tell of our joy and fun","# Summary of the Last Two Lines
+
+These final lines use personification to express that the natural world (the waves) would celebrate and share the speaker's happiness and enjoyment. The waves metaphorically ""leap"" toward the sun and ""tell"" of joy and fun, suggesting that the speaker's positive emotions would be so powerful that they would be reflected in and amplified by nature itself."
+Generate a list of 10 ideas of what to do with a daily free hour.,"# 10 Ideas for Your Daily Free Hour
+
+1. **Learn something new** — Take an online course, watch tutorials, or study a language on an app
+
+2. **Exercise or stretch** — Go for a walk, do yoga, hit the gym, or practice a sport
+
+3. **Read** — Dive into a book, articles, or news in a topic that interests you
+
+4. **Create art or music** — Draw, paint, write, play an instrument, or compose
+
+5. **Meditate or journal** — Reflect on your day, practice mindfulness, or write about your thoughts
+
+6. **Catch up with loved ones** — Call a friend, video chat with family, or write meaningful messages
+
+7. **Organize or declutter** — Tidy a space, organize files, meal prep, or plan your week
+
+8. **Pursue a hobby** — Knit, garden, cook, build models, or work on a personal project
+
+9. **Explore your city** — Take a walk in a new neighborhood, visit a café, or discover local spots
+
+10. **Relax intentionally** — Take a bath, listen to music, watch your favorite show, or sit quietly with tea
+
+The best choice depends on whether you want to **invest in yourself** or **recharge**. Consider rotating between these to balance productivity and relaxation!"
+Generate a random pun.,"Why did the coffee file a police report?
+
+It got mugged! ☕"
+Give three specific tips to improve your resume,"# Three Specific Tips to Improve Your Resume
+
+1. **Quantify your achievements with metrics**
+   - Replace vague claims like ""increased sales"" with specifics: ""Increased quarterly sales by 23% ($450K revenue growth)""
+   - Numbers grab attention and prove impact in concrete terms
+
+2. **Customize for each job application**
+   - Mirror language from the job description in your resume (keywords matter for both human readers and ATS systems)
+   - Reorder your bullet points to highlight most relevant experience first for that specific role
+
+3. **Replace weak action verbs with strong ones**
+   - Change ""responsible for managing the team"" to ""Led cross-functional team of 8, reducing project delivery time by 15%""
+   - Use dynamic verbs like ""drove,"" ""accelerated,"" ""transformed,"" or ""optimized"" instead of generic ones
+
+These changes make your resume more compelling and scannable while emphasizing results over responsibilities."
+What colour is the ocean?,"The ocean appears **blue** in most places, which is why it's often called the ""blue sea."" 
+
+This blue color comes from a few factors:
+
+- **Water absorbs red light** – Water naturally absorbs the longer wavelengths of light (reds and yellows), while reflecting blue wavelengths back up
+- **Sky reflection** – The ocean reflects the blue sky above it
+- **Depth and clarity** – Deeper, clearer waters appear more intensely blue
+
+However, the ocean can also appear other colors depending on conditions:
+- **Green or brown** – from algae, sediment, or shallow waters
+- **Gray or white** – in stormy conditions
+- **Red or orange** – in rare cases from algal blooms
+
+So while blue is the most iconic color, ocean water's appearance varies quite a bit!"
+Write a haiku poem of a serene beach.,"# Serene Beach
+
+Waves kiss the white sand,
+Seagulls drift through salt-kissed air,
+Peace settles like dusk."
+"Write a letter of complaint about a bad service experience.
+[Description of bad service experience provided]","# Letter of Complaint
+
+[Your Name]
+[Your Address]
+[City, State ZIP Code]
+[Your Email]
+[Your Phone Number]
+[Date]
+
+[Manager's Name]
+[Company Name]
+[Company Address]
+[City, State ZIP Code]
+
+Dear [Manager's Name]:
+
+I am writing to formally lodge a complaint regarding the poor service I received at your establishment on [date] at approximately [time].
+
+**Details of the Incident:**
+
+[Describe what happened, including:
+- What service you expected
+- What actually occurred
+- Specific behaviors or failures
+- How it affected you
+- Any relevant details (staff names, transaction numbers, etc.)]
+
+This experience fell well short of the standards I expect from your company. Specifically, [mention 1-2 key issues: staff was rude, service was slow, product was defective, etc.].
+
+**Impact:**
+
+As a result, [explain how this affected you: wasted time, financial loss, embarrassment, etc.].
+
+**Resolution Requested:**
+
+I would appreciate [be specific: a refund, replacement product, written apology, staff retraining, etc.]. I believe this is a reasonable request given the circumstances.
+
+I have valued my previous experiences with your company and hope this matter can be resolved promptly. Please contact me within [7-10] business days to discuss this further.
+
+Thank you for your attention to this matter.
+
+Sincerely,
+
+[Your Signature]
+[Your Typed Name]
+
+---
+
+*Note: Keep the tone professional and factual rather than emotional for better results.*"
+Write a story about a doctor and his patient,"# The Last House Call
+
+Dr. Marcus Chen hadn't made a house call in fifteen years. The old leather medical bag sat in his office closet, gathering dust beside outdated textbooks. But when Mrs. Eleanor Hartwell called, he couldn't refuse.
+
+""I'm not going to the hospital,"" she'd said flatly. ""But I'll see you, Marcus. For old times' sake.""
+
+He remembered Eleanor from thirty years ago—a radiology technician at County General, always laughing, always bringing homemade dumplings to share. They'd worked a hundred shifts together before he went into private practice and their paths diverged into separate lives.
+
+Now, climbing the narrow stairs to her apartment on a gray Tuesday afternoon, he felt that old leather bag grow heavier with each step.
+
+She answered the door in a worn cardigan, her silver hair loose around her shoulders. The smile was still the same, though her frame had shrunk inside it.
+
+""Look at you,"" she said, stepping aside. ""Still wearing those expensive shoes to make house calls.""
+
+""Only for special patients,"" he replied.
+
+Her apartment smelled like green tea and old newspapers. Medical equipment crowded the corner—an oxygen tank, a walker, a hospital bed where a living room sofa should be. He'd already reviewed her recent scans. Stage four pancreatic cancer, metastatic. Six months, maybe less.
+
+""I suppose you want to talk about hospice,"" Eleanor said, settling into her armchair as he laid out his equipment.
+
+""That's your choice to make."" He took her blood pressure gently. ""But yes, I think we need to talk about comfort. About what you want these next months to look like.""
+
+""I want to stay here."" She gestured around the modest space. ""I want to watch the street from that window. See people going to work, going home, living their lives. I've spent enough time in hospitals staring at ceiling tiles.""
+
+He nodded, writing notes. ""That's manageable. We'll get you a nurse to come daily, medication management, pain control—""
+
+""Will you come?"" she interrupted. ""Not the nurse. You?""
+
+Marcus paused. His practice was booked three months out. His partners would cover her case efficiently, professionally. It was the logical thing to do.
+
+""Yes,"" he said. ""I'll come.""
+
+Over the following months, he carved out Tuesday mornings. He'd arrive with his leather bag—now shined and refilled—and check her vitals, adjust medications, and mostly, sit by her window while she talked.
+
+She told him about her daughter in Toronto, the one she was still waiting to reconcile with. About the boy she'd loved before marriage, how she'd wondered what life might have looked like. About regrets, sure, but also about the unexpected joy of a perfectly made cup of tea, or the way afternoon light fell across the room.
+
+And Marcus, the efficient man who billed in fifteen-minute increments, sat with her in the quiet.
+
+One Tuesday in March, the neighborhood was buried in snow. Marcus almost called to reschedule, but something made him bundle up and make the drive anyway.
+
+Eleanor was sleeping when he arrived, her breath shallow. He checked her vitals and adjusted nothing—there was nothing left to adjust. Instead, he sat and watched the snow accumulate on the street below, obscuring the sidewalk where she'd once watched people pass.
+
+When she woke, it was to his presence, and she smiled.
+
+""You came in the snow,"" she said. ""Foolish man.""
+
+""Foolish doctor,"" he agreed.
+
+""Better,"" she whispered. ""Much better.""
+
+She slipped away three days later, on a Tuesday. Her daughter called to tell him, voice thick with tears and something else—perhaps the knowledge that her mother's last months had been spent with someone who truly saw her.
+
+At the funeral, Marcus wore his old suit and brought his leather bag. He sat in the back and remembered why he'd become a doctor in the first place—not for the diagnosis or the medication, but for the privilege of meeting people at their most vulnerable and saying: I am here with you.
+
+He drove home and placed the leather bag, once again, on his office shelf. But this time, he left it where he could see it.
+
+The phone rang as he was leaving.
+
+""Dr. Chen?"" A worried voice. ""My father is home from the hospital and he's refusing to come back in. I know you're very busy, but...""
+
+He smiled, reaching for his coat.
+
+""What's the address?"""

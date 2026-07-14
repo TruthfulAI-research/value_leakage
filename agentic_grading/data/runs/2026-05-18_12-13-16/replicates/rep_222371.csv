@@ -1,0 +1,722 @@
+real_model,sample_idx,model,question,answer
+claude-haiku-4.5,3,gpt-6,"Are the following two words synonyms?
+Jubilant and ecstatic","# Jubilant vs. Ecstatic
+
+These words are **closely related but not perfect synonyms**.
+
+**Similarities:**
+- Both describe states of intense joy and happiness
+- Both suggest extreme positive emotion
+
+**Key difference:**
+- **Jubilant** emphasizes celebratory joy, often in response to a specific achievement or occasion (e.g., ""jubilant fans after a victory"")
+- **Ecstatic** emphasizes overwhelming, almost transcendent happiness that can be more personal or internally focused (e.g., ""ecstatic about the news"")
+
+**Verdict:** They're near-synonyms with significant overlap, but jubilant has a more outwardly celebratory connotation, while ecstatic suggests a more intense, all-consuming state of bliss."
+claude-haiku-4.5,0,qwen-4-high,"Are the following two words synonyms?
+Jubilant and ecstatic","# Yes, they are synonyms.
+
+Both words describe states of extreme joy and excitement:
+
+- **Jubilant**: feeling or expressing great joy and triumph
+- **Ecstatic**: feeling intense, overwhelming happiness
+
+While there's slight nuance (jubilant can imply a more celebratory joy, while ecstatic emphasizes intensity), they're close enough in meaning to be considered synonyms and are often used interchangeably."
+claude-haiku-4.5,5,gpt-6-high,"Are the following two words synonyms?
+Jubilant and ecstatic","# Jubilant vs. Ecstatic
+
+These words are **very similar but not perfect synonyms**.
+
+**Similarities:**
+- Both describe intense positive emotions
+- Both convey joy and happiness at a high level
+
+**Key difference:**
+- **Jubilant** emphasizes rejoicing and celebration, often in response to a specific achievement or event
+- **Ecstatic** emphasizes being overwhelmed by intense emotion, often with a sense of being transported or in an altered state
+
+**Example:**
+- ""The crowd was jubilant after their team won the championship"" (celebratory joy)
+- ""She was ecstatic when she found out she was pregnant"" (overwhelmed, intense joy)
+
+So they're close in meaning but have slightly different connotations. You could use them interchangeably in many contexts, but they're not complete synonyms."
+claude-haiku-4.5,2,qwen-4,"Are the following two words synonyms?
+Jubilant and ecstatic","Yes, **jubilant** and **ecstatic** are very close synonyms. Both words describe a state of intense joy and celebration.
+
+However, there's a subtle difference in nuance:
+
+- **Jubilant** emphasizes joyful celebration, often in response to success or a special occasion. It has a somewhat more outward, expressed quality.
+
+- **Ecstatic** emphasizes overwhelming, intense happiness—often bordering on being lost in the emotion. It suggests a more extreme or transcendent state of joy.
+
+So while they're essentially synonymous and largely interchangeable, **ecstatic** is slightly more intense than jubilant."
+claude-haiku-4.5,4,claude-opus-5-high,"Are the following two words synonyms?
+Jubilant and ecstatic","# Jubilant vs. Ecstatic
+
+These words are **very similar in meaning** but not perfect synonyms:
+
+**Jubilant** means feeling or expressing great joy, triumph, or celebration, often in response to a specific achievement or event.
+
+**Ecstatic** means feeling intense, overwhelming joy or bliss—often a more extreme or transcendent state of happiness.
+
+**Key difference:** Jubilant tends to be more grounded and celebratory, while ecstatic implies a more intense, almost overwhelming level of joy.
+
+**Example:**
+- ""She was jubilant after winning the competition"" (happy and celebratory)
+- ""She was ecstatic after winning the competition"" (overwhelmingly, intensely happy)
+
+**Conclusion:** They're close enough to be used interchangeably in many contexts, but ecstatic conveys a higher intensity of emotion."
+claude-haiku-4.5,1,claude-opus-5,"Are the following two words synonyms?
+Jubilant and ecstatic","Yes, **jubilant** and **ecstatic** are very close synonyms.
+
+Both words describe a state of extreme joy and elation. However, there's a subtle difference in nuance:
+
+- **Jubilant** emphasizes joyful celebration, often in response to success or a cause for celebration
+- **Ecstatic** emphasizes an intense, almost overwhelming state of happiness or bliss
+
+In most contexts, they can be used interchangeably, though **ecstatic** might convey a slightly more intense emotional state."
+claude-haiku-4.5,3,qwen-4,Construct a valid English sentence that uses the phrase “as a result”.,"# Example Sentence
+
+""She studied hard for the exam, and as a result, she earned an excellent grade.""
+
+This sentence uses ""as a result"" to show the consequence of her studying."
+claude-haiku-4.5,4,qwen-4-high,Construct a valid English sentence that uses the phrase “as a result”.,"# A Valid English Sentence
+
+""She studied hard for the exam, and as a result, she earned an excellent grade.""
+
+This sentence uses ""as a result"" to show the consequence of her studying hard."
+claude-haiku-4.5,5,claude-opus-5-high,Construct a valid English sentence that uses the phrase “as a result”.,"# Example Sentence
+
+""The company invested heavily in new technology; as a result, their productivity increased by 40% over the next year."""
+claude-haiku-4.5,1,gpt-6,Construct a valid English sentence that uses the phrase “as a result”.,"# Example Sentence
+
+**As a result of the heavy rainfall, the outdoor concert was postponed to next weekend.**
+
+This sentence uses ""as a result"" (or ""as a result of"") to show a cause-and-effect relationship between the heavy rainfall and the concert being postponed."
+claude-haiku-4.5,2,claude-opus-5,Construct a valid English sentence that uses the phrase “as a result”.,"# As a Result
+
+**The company invested heavily in employee training, and as a result, their productivity increased by 25% within six months.**"
+claude-haiku-4.5,0,gpt-6-high,Construct a valid English sentence that uses the phrase “as a result”.,"# A Valid English Sentence
+
+""The company invested in new technology, and as a result, their productivity increased by 30 percent."""
+claude-haiku-4.5,2,gpt-6-high,Describe the sound of rain.,"# The Sound of Rain
+
+Rain creates a symphony of subtle layers:
+
+**Soft and gentle rain** sounds like quiet whispers—a gentle patter or pitter-patter on leaves and pavement. It's soothing, almost like static or white noise.
+
+**Heavier downpours** develop a deeper, more insistent rhythm. On roofs and windows, rain becomes a drumming sound, steady and hypnotic. On hard surfaces like concrete, each drop creates a distinct tap.
+
+**On different surfaces**, rain has distinct personalities:
+- **Leaves and grass** muffle it into a hushed rustling
+- **Metal** produces sharp, resonant pings
+- **Water** creates soft splashes and ripples
+- **Gutters and downspouts** channel it into rushing streams
+
+**The overall feel** is often described as:
+- Peaceful and meditative
+- Rhythmic and repetitive
+- Fresh and clean-sounding
+- Sometimes lonely or melancholic
+- Occasionally dramatic during storms (with wind adding whooshing layers)
+
+There's something inherently calming about rain sounds—they're unpredictable enough to hold attention, yet familiar enough to feel comforting. Many people find it the perfect soundtrack for sleeping or concentrating."
+claude-haiku-4.5,1,qwen-4-high,Describe the sound of rain.,"# The Sound of Rain
+
+Rain has a surprisingly layered quality:
+
+**Light rain** creates a soft, whispering patter—almost like distant applause or fingers brushing fabric. It's gentle and soothing, especially on leaves or a tent.
+
+**Steady rain** builds into a more rhythmic hum, a white noise that masks other sounds. On a roof or pavement, it becomes a steady *tap-tap-tapping*, almost hypnotic.
+
+**Heavy downpour** transforms into something more aggressive—a roar or rush, like static filling the air. It drowns out thought with its intensity.
+
+The sound also changes based on the surface:
+- **Leaves and grass**: muffled, organic, absorbed
+- **Windows and metal**: crisp, sharp *plinks*
+- **Water**: deeper splashes and echoes
+
+There's something almost primal about it—continuous yet never quite the same, never perfectly predictable. Some find it deeply calming; others find it unsettling. Either way, rain creates its own weather of sound."
+claude-haiku-4.5,3,gpt-6,Describe the sound of rain.,"# The Sound of Rain
+
+Rain has a layered, organic music to it:
+
+**Soft rain** sounds like gentle whispers—a delicate patter on leaves and grass, almost like static or distant applause. On windows, it creates a light tapping rhythm.
+
+**Steady rain** builds into a more consistent hum, a rhythmic shushing sound as water hits pavement, roofs, and soil. There's a meditative quality to it.
+
+**Heavy rain** becomes a roar—a rushing, gurgling cascade. It drums loudly on metal surfaces, creates splashing sounds in puddles, and sometimes drowns out other noise entirely.
+
+**Texture varies by surface:**
+- On leaves: crisp, crinkly plinks
+- On pavement: sharper, crisper taps
+- On water: softer plops and dimpling sounds
+- On metal roofs: metallic pinging
+
+There's also a **quality of freshness**—that earthy, clean scent that often accompanies the sound, making rain feel almost alive.
+
+Most people find rain soothing because of its **unpredictable yet soothing randomness**—no two moments sound exactly the same, yet the overall effect feels calming and natural."
+claude-haiku-4.5,0,claude-opus-5,Describe the sound of rain.,"# The Sound of Rain
+
+Rain has many voices depending on where it falls:
+
+**On leaves and trees** — a soft, whispering *patter*, gentle and layered, like quiet applause or fingers brushing fabric.
+
+**On hard surfaces** — a sharper *tap-tap-tapping* on roofs, windows, and pavement. Each drop rings out distinctly, creating a rhythmic percussion.
+
+**On water** — a dimpling *hiss* or *sizzle*, as if the rain is being absorbed into something already liquid.
+
+**In heavy downpours** — a roaring, rushing *whoosh*, almost overwhelming, like static or white noise that drowns out other sounds.
+
+**On soft ground** — barely a sound at all, just a hushing *shush*, gentle and muffled.
+
+The overall effect is often described as **soothing** or **meditative** — there's a randomness to it that the brain finds calming, almost hypnotic. Light rain whispers; heavy rain declares itself. Together, these varied sounds create what many find to be nature's most comforting soundtrack."
+claude-haiku-4.5,4,claude-opus-5-high,Describe the sound of rain.,"# The Sound of Rain
+
+Rain creates a layered, ever-shifting soundscape:
+
+**Soft and gentle rain** whispers—a hushed *patter* or *pitter-patter* on leaves and grass, almost like quiet applause or fingertips drumming.
+
+**On hard surfaces**, it becomes more distinct—a *tapping* or *clicking* on windows, roofs, and pavement. Each droplet announces itself.
+
+**Heavy downpours** roar—a sustained, rushing *whoosh* that drowns out other sounds, white noise that fills the entire space.
+
+**Variable textures** emerge depending on the surface: the *hollow plinking* on metal gutters, the muffled *thud* on soil, the *splashing* in puddles, the *hissing* against trees.
+
+There's often a **rhythm to it**—some might find it chaotic, others meditative. Wind can make rain *rattle* or *streak* sideways.
+
+What many find most striking is the **immersive quality**: rain envelops you. It's not a single sound but a surrounding atmosphere—sometimes soothing, sometimes ominous, often both at once.
+
+Is there a particular type of rain sound you're drawn to?"
+claude-haiku-4.5,5,qwen-4,Describe the sound of rain.,"# The Sound of Rain
+
+Rain creates a layered symphony that shifts with intensity:
+
+**Light rain** offers a gentle, almost meditative patter—a soft *tap-tap-tapping* on leaves and windows, like distant fingertips on glass. It's whispered and soothing.
+
+**Steady rain** builds into a rhythmic rushing sound, a white noise that can be hypnotic. On roofs it becomes a steady drumming; on pavement, a crisp hissing.
+
+**Heavy rain** transforms into something more forceful—a roaring, pelting assault that drowns out other sounds. It drums loudly on metal gutters, splashes and thunders against windows with an almost aggressive energy.
+
+**The setting matters too:**
+- On leaves, it becomes rustling and muffled
+- On windows, bright and clear
+- On pavement or metal, sharp and staccato
+- On soil or grass, oddly quiet and absorbed
+
+There's also the *smell* that accompanies it—that earthy, clean scent (petrichor) that seems inseparable from rain's acoustic presence.
+
+For many, the sound is deeply calming—predictable yet complex enough to hold attention without demanding it. It's one of nature's most universally soothing soundscapes."
+claude-haiku-4.5,1,gpt-6-high,Describe two steps that can help to reduce carbon dioxide emissions,"# Two Steps to Reduce Carbon Dioxide Emissions
+
+## 1. **Transition to Renewable Energy**
+Shifting from fossil fuels (coal, oil, gas) to renewable energy sources like solar, wind, and hydroelectric power reduces CO₂ emissions from electricity generation. This can be achieved through:
+- Installing solar panels on homes and buildings
+- Investing in wind farms and other clean energy infrastructure
+- Supporting policies that encourage renewable energy adoption
+
+## 2. **Improve Energy Efficiency**
+Reducing overall energy consumption means less energy needs to be produced, lowering emissions:
+- Upgrading to energy-efficient appliances and LED lighting
+- Improving building insulation and HVAC systems
+- Encouraging public transportation, carpooling, and electric vehicles instead of single-occupancy gas-powered cars
+
+Both strategies work together to decrease our carbon footprint and combat climate change."
+claude-haiku-4.5,0,gpt-6,Describe two steps that can help to reduce carbon dioxide emissions,"# Two Steps to Reduce Carbon Dioxide Emissions
+
+## 1. **Transition to Renewable Energy**
+Shift from fossil fuels (coal, oil, and natural gas) to clean energy sources like solar, wind, and hydroelectric power. This reduces CO₂ emissions from electricity generation and heating, which are major contributors to climate change.
+
+## 2. **Improve Energy Efficiency**
+Reduce energy consumption through measures such as:
+- Upgrading to energy-efficient appliances and LED lighting
+- Improving building insulation
+- Using public transportation or electric vehicles
+
+This lowers the overall demand for energy, meaning less fuel needs to be burned and fewer emissions are produced.
+
+Both approaches are practical and can be implemented at individual, community, and governmental levels."
+claude-haiku-4.5,2,qwen-4,Describe two steps that can help to reduce carbon dioxide emissions,"# Two Steps to Reduce Carbon Dioxide Emissions
+
+## 1. **Transition to Renewable Energy**
+Shift electricity generation from fossil fuels (coal, oil, natural gas) to renewable sources like solar, wind, and hydroelectric power. This directly reduces CO₂ emissions from energy production, which is one of the largest sources of greenhouse gases globally.
+
+## 2. **Improve Energy Efficiency**
+Reduce overall energy consumption by:
+- Upgrading buildings with better insulation and efficient heating/cooling systems
+- Using LED lighting and energy-efficient appliances
+- Promoting public transportation and electric vehicles
+
+This cuts emissions by using less energy in the first place, regardless of its source.
+
+Both approaches address major emission sources and can be implemented at individual, community, and national levels."
+claude-haiku-4.5,5,qwen-4-high,Describe two steps that can help to reduce carbon dioxide emissions,"# Two Steps to Reduce Carbon Dioxide Emissions
+
+## 1. **Transition to Renewable Energy**
+Shift from fossil fuels (coal, oil, natural gas) to clean energy sources like solar, wind, and hydroelectric power. This reduces CO₂ from electricity generation, which is a major emission source. Both individuals (installing solar panels) and governments (building wind farms) can participate.
+
+## 2. **Improve Energy Efficiency**
+Reduce overall energy consumption through better insulation in buildings, using efficient appliances, LED lighting, and improved industrial processes. When less energy is needed overall, fewer emissions are required to meet that demand—regardless of the energy source.
+
+Both approaches work together: renewable energy eliminates emissions from energy production, while efficiency reduces how much energy is needed in the first place."
+claude-haiku-4.5,4,claude-opus-5,Describe two steps that can help to reduce carbon dioxide emissions,"# Two Steps to Reduce Carbon Dioxide Emissions
+
+## 1. **Transition to Renewable Energy**
+Switching from fossil fuels (coal, oil, natural gas) to renewable energy sources like solar, wind, and hydroelectric power significantly reduces CO₂ emissions. This can be done at both individual levels (installing solar panels) and large-scale levels (building wind farms and updating electrical grids).
+
+## 2. **Improve Energy Efficiency**
+Reducing energy consumption through better insulation, efficient appliances, LED lighting, and smart building systems means less energy needs to be generated. This directly cuts emissions since less fuel is burned to produce that energy.
+
+Both approaches work together—generating cleaner energy while using less of it creates the greatest impact on reducing atmospheric CO₂."
+claude-haiku-4.5,3,claude-opus-5-high,Describe two steps that can help to reduce carbon dioxide emissions,"# Two Steps to Reduce Carbon Dioxide Emissions
+
+## 1. **Transition to Renewable Energy**
+Shifting from fossil fuels (coal, oil, natural gas) to renewable energy sources like solar, wind, and hydroelectric power significantly reduces CO₂ emissions. This applies to both electricity generation and heating, as these sectors are major contributors to greenhouse gas emissions.
+
+## 2. **Improve Energy Efficiency**
+Reducing overall energy consumption through better insulation, efficient appliances, LED lighting, and smart building design lowers the demand for energy production. Less energy needed means fewer emissions, regardless of the energy source used.
+
+---
+
+These approaches can be implemented at individual, community, and industrial levels, making them practical solutions for meaningful climate impact."
+claude-haiku-4.5,3,qwen-4-high,"Generate a list of five scientific terms starting with ""geo""","# Scientific Terms Starting with ""Geo""
+
+1. **Geology** - The study of Earth's structure, composition, and the processes that shape it over time.
+
+2. **Geothermal** - Relating to heat generated and stored within the Earth, often used for energy production.
+
+3. **Geomorphology** - The study of landforms and the processes that create and modify them.
+
+4. **Geochronology** - The science of determining the age of rocks and geological events using various dating methods.
+
+5. **Geomagnetic** - Relating to Earth's magnetic field and its properties."
+claude-haiku-4.5,1,gpt-6-high,"Generate a list of five scientific terms starting with ""geo""","# Five Scientific Terms Starting with ""Geo""
+
+1. **Geology** - The study of rocks, minerals, and the structure of the Earth
+
+2. **Geothermal** - Relating to heat energy generated within the Earth
+
+3. **Geomorphology** - The study of landforms and the processes that shape them
+
+4. **Geomagnetism** - The study of Earth's magnetic field and its properties
+
+5. **Geodesy** - The science of measuring and mapping Earth's shape, size, and gravitational field"
+claude-haiku-4.5,0,qwen-4,"Generate a list of five scientific terms starting with ""geo""","# Five Scientific Terms Starting with ""Geo""
+
+1. **Geothermal** - relating to heat generated within the Earth
+2. **Geology** - the study of rocks, minerals, and Earth's structure
+3. **Geomagnetic** - relating to Earth's magnetic field
+4. **Geodesy** - the science of measuring Earth's shape and size
+5. **Geomorphology** - the study of landforms and the processes that shape them"
+claude-haiku-4.5,2,claude-opus-5,"Generate a list of five scientific terms starting with ""geo""","# Scientific Terms Starting with ""Geo""
+
+1. **Geothermal** - relating to heat energy from within the Earth's interior
+
+2. **Geology** - the scientific study of Earth's structure, rocks, and physical features
+
+3. **Geomorphology** - the study of landforms and the processes that shape Earth's surface
+
+4. **Geochronology** - the science of determining the age of rocks and geological events
+
+5. **Geomagnetic** - relating to Earth's magnetic field and its properties"
+claude-haiku-4.5,4,claude-opus-5-high,"Generate a list of five scientific terms starting with ""geo""","# Five Scientific Terms Starting with ""Geo""
+
+1. **Geology** - The study of Earth's structure, materials, and the processes that shape it over time.
+
+2. **Geothermal** - Relating to heat energy generated and stored within the Earth.
+
+3. **Geomorphology** - The study of landforms and the processes that create and modify them.
+
+4. **Geochemistry** - The study of the chemical composition of Earth and its rocks and minerals.
+
+5. **Geodesy** - The science of measuring and mapping Earth's size, shape, and positions on its surface."
+claude-haiku-4.5,5,gpt-6,"Generate a list of five scientific terms starting with ""geo""","# Five Scientific Terms Starting with ""Geo""
+
+1. **Geology** - The science that studies Earth's physical structure, rocks, minerals, and the processes that shape the planet over time.
+
+2. **Geothermal** - Relating to heat generated and stored within the Earth, often used to describe energy sources or natural hot springs.
+
+3. **Geomorphology** - The study of landforms and the processes that create and modify Earth's surface features.
+
+4. **Geodesy** - The science of measuring and mapping Earth's size, shape, and gravitational field.
+
+5. **Geochemistry** - The study of the chemical composition of Earth's materials, including rocks, minerals, and the distribution of elements."
+claude-haiku-4.5,0,gpt-6-high,"Make a wallet friendly dish using the following ingredients: potatoes, zucchini, tomatoes, and peppers.
+Potatoes, zucchini, tomatoes, and peppers.","# Budget-Friendly Vegetable Skillet
+
+## Ingredients:
+- 3-4 medium potatoes, diced small
+- 2 medium zucchini, sliced
+- 2-3 tomatoes, chopped (or 1 can diced tomatoes)
+- 1-2 bell peppers, diced
+- Oil or butter for cooking
+- Salt, pepper, and garlic powder to taste
+
+## Instructions:
+
+1. **Start the potatoes** - Heat oil in a large skillet over medium-high heat. Add diced potatoes and cook for 8-10 minutes, stirring occasionally, until they start to soften and brown.
+
+2. **Add peppers** - Toss in the diced peppers and cook for 3-4 minutes.
+
+3. **Add zucchini** - Add the sliced zucchini and stir well.
+
+4. **Add tomatoes** - Add tomatoes with their juices and stir everything together.
+
+5. **Simmer** - Reduce heat to medium and let it simmer for 10-15 minutes until potatoes are tender and flavors blend. Stir occasionally.
+
+6. **Season** - Add salt, pepper, and garlic powder to taste.
+
+## Serving suggestions:
+- Top with grated cheese (optional)
+- Serve with bread or rice
+- Serves 4 as a main dish or side
+
+**Total cost:** Usually under $10 for the whole meal! 🌱"
+claude-haiku-4.5,4,qwen-4-high,"Make a wallet friendly dish using the following ingredients: potatoes, zucchini, tomatoes, and peppers.
+Potatoes, zucchini, tomatoes, and peppers.","# Budget-Friendly Vegetable Skillet
+
+## Ingredients:
+- Potatoes
+- Zucchini
+- Tomatoes
+- Peppers
+- Salt, pepper & any herbs you have
+- Oil (optional)
+
+## Instructions:
+
+1. **Prep:** Dice potatoes into small cubes, chop peppers and zucchini into bite-sized pieces, and roughly chop tomatoes.
+
+2. **Cook potatoes first:** Heat oil in a large pan and cook diced potatoes over medium heat for 8-10 minutes until they start to soften. Season with salt and pepper.
+
+3. **Add peppers:** Stir in chopped peppers and cook for 3-4 minutes.
+
+4. **Add zucchini:** Add zucchini and cook for another 3-4 minutes.
+
+5. **Finish with tomatoes:** Add tomatoes last and cook for 2-3 minutes until everything is tender and slightly juicy.
+
+6. **Taste and adjust** seasoning as needed.
+
+## Serving suggestions:
+- Serve hot as a side dish
+- Top with cheese if you have it
+- Serve with rice or bread for a more filling meal
+- Add an egg on top for extra protein
+
+**Total time:** ~25 minutes | **Serves:** 3-4 people
+
+This is versatile, nutritious, and costs just pennies per serving!"
+claude-haiku-4.5,2,claude-opus-5,"Make a wallet friendly dish using the following ingredients: potatoes, zucchini, tomatoes, and peppers.
+Potatoes, zucchini, tomatoes, and peppers.","# Budget-Friendly Vegetable Skillet
+
+## Ingredients:
+- 3-4 potatoes, diced small
+- 1 zucchini, diced
+- 2-3 tomatoes (or 1 can), chopped
+- 1-2 peppers (any color), diced
+- Oil or butter for cooking
+- Salt, pepper, and optional seasonings (garlic powder, paprika)
+
+## Instructions:
+
+1. **Cook the potatoes first** - Heat oil in a large skillet over medium-high heat. Add diced potatoes and cook for 8-10 minutes until they start to soften and brown slightly.
+
+2. **Add peppers** - Stir in peppers and cook for another 3-4 minutes.
+
+3. **Add zucchini** - Add diced zucchini and cook for 3-4 minutes.
+
+4. **Add tomatoes** - Add tomatoes (fresh or canned) and stir well. Season with salt, pepper, and any spices you have.
+
+5. **Simmer** - Reduce heat to medium and let everything cook together for 8-10 minutes until potatoes are tender and flavors blend.
+
+6. **Serve** - Eat as is, or serve over rice, pasta, or with bread.
+
+**Total time:** ~30 minutes | **Serves:** 4 | **Cost:** Very budget-friendly!
+
+This is a versatile dish that's filling, nutritious, and uses ingredients that are usually inexpensive."
+claude-haiku-4.5,3,qwen-4,"Make a wallet friendly dish using the following ingredients: potatoes, zucchini, tomatoes, and peppers.
+Potatoes, zucchini, tomatoes, and peppers.","# Budget-Friendly Vegetable Skillet
+
+## Ingredients:
+- 4 medium potatoes, diced
+- 1 zucchini, sliced
+- 2-3 tomatoes, chopped (or 1 can diced tomatoes)
+- 2 bell peppers, diced
+- Salt, pepper, garlic powder to taste
+- 2 tbsp oil (any cooking oil)
+- Optional: onion, herbs (basil, oregano)
+
+## Instructions:
+
+1. **Cook potatoes first** (5-7 min): Heat oil in a large skillet over medium-high heat. Add diced potatoes, season with salt and pepper. Cook until they start to soften and brown.
+
+2. **Add peppers** (3-4 min): Stir in bell peppers and cook until slightly tender.
+
+3. **Add zucchini and tomatoes** (5-6 min): Add sliced zucchini and chopped tomatoes. Stir well and season with garlic powder and herbs if available.
+
+4. **Finish cooking**: Cover and simmer for 3-5 minutes until all vegetables are tender. Adjust seasoning to taste.
+
+## Serving Options:
+- **As is** - hearty vegetable side dish
+- **With rice or pasta** - stretches the meal further
+- **With eggs** - breakfast for dinner
+- **In a tortilla** - makes budget-friendly wraps
+
+**Total time:** ~20-25 minutes | **Serves:** 4 | **Budget:** Very economical!"
+claude-haiku-4.5,1,claude-opus-5-high,"Make a wallet friendly dish using the following ingredients: potatoes, zucchini, tomatoes, and peppers.
+Potatoes, zucchini, tomatoes, and peppers.","# Budget-Friendly Vegetable Skillet
+
+## Ingredients
+- 3-4 potatoes, diced small
+- 2 zucchini, sliced or diced
+- 2-3 tomatoes, chopped (or 1 can diced tomatoes)
+- 2 peppers (any color), diced
+- 2 tbsp oil
+- Salt, pepper, garlic powder to taste
+
+## Instructions
+
+1. **Cook the potatoes first** (5-7 min)
+   - Heat oil in a large skillet over medium-high heat
+   - Add diced potatoes with salt and pepper
+   - Cook until they start to soften
+
+2. **Add peppers** (3-4 min)
+   - Add diced peppers, stir occasionally
+
+3. **Add remaining vegetables** (5-7 min)
+   - Add zucchini and tomatoes
+   - Cook until everything is tender
+   - Season with garlic powder, salt, and pepper
+
+4. **Simmer** (2-3 min)
+   - Let flavors blend together
+
+## Serving Ideas
+- Serve as a side dish
+- Top with rice or bread for a complete meal
+- Add beans for extra protein
+- Sprinkle cheese on top (optional)
+
+**Cook time:** ~20 minutes | **Feeds:** 4 people | **Cost:** Very budget-friendly!"
+claude-haiku-4.5,5,gpt-6,"Make a wallet friendly dish using the following ingredients: potatoes, zucchini, tomatoes, and peppers.
+Potatoes, zucchini, tomatoes, and peppers.","# Budget-Friendly Vegetable Skillet
+
+## Ingredients
+- Potatoes, zucchini, tomatoes, and peppers
+- Salt and pepper to taste
+- Oil or butter for cooking
+- Optional: garlic, onion, dried herbs
+
+## Instructions
+
+1. **Prep**: Dice potatoes into small cubes. Chop peppers and zucchini into bite-sized pieces. Chop tomatoes (fresh or canned).
+
+2. **Cook potatoes first**: Heat oil in a large skillet over medium heat. Add potatoes with a pinch of salt. Cook for 8-10 minutes until they start to soften, stirring occasionally.
+
+3. **Add peppers**: Toss in the peppers and cook for 3-4 minutes.
+
+4. **Add zucchini**: Add zucchini and cook for another 3-4 minutes.
+
+5. **Finish with tomatoes**: Add tomatoes last and cook for 2-3 minutes. Season with salt, pepper, and any herbs you have.
+
+6. **Serve**: Cook until all vegetables are tender (about 20-25 minutes total).
+
+## Tips
+- Cuts potatoes smaller so they cook faster
+- Use canned tomatoes if fresh are expensive
+- Makes 4 servings—great for leftovers
+- Serve alone or with rice/bread to stretch further
+
+**Total cost: Usually under $5 for a full meal!**"
+claude-haiku-4.5,2,claude-opus-5,Name a job that requires a lot of physical strength.,"Construction worker is a good example. They regularly lift heavy materials, operate equipment, and perform physically demanding tasks that require significant strength and endurance."
+claude-haiku-4.5,4,gpt-6,Name a job that requires a lot of physical strength.,"Construction worker is a good example. They regularly lift heavy materials, carry equipment, and perform demanding physical labor on job sites."
+claude-haiku-4.5,5,qwen-4-high,Name a job that requires a lot of physical strength.,"**Construction worker** is a good example. The job requires lifting heavy materials, carrying equipment, and performing demanding physical labor throughout the day."
+claude-haiku-4.5,1,qwen-4,Name a job that requires a lot of physical strength.,"Construction worker is a good example. They regularly lift heavy materials, operate equipment, and perform demanding manual labor that requires significant physical strength."
+claude-haiku-4.5,0,claude-opus-5-high,Name a job that requires a lot of physical strength.,"Construction worker is a good example. The job requires lifting heavy materials, carrying equipment, and performing demanding physical labor throughout the day."
+claude-haiku-4.5,3,gpt-6-high,Name a job that requires a lot of physical strength.,"Construction worker is a good example. The job involves heavy lifting, carrying materials, and physically demanding tasks throughout the day."
+claude-haiku-4.5,2,gpt-6-high,"Provide a 2-sentence review of the following piece of work
+A podcast that explores the intersection between technology and mental wellbeing","# Review
+
+This podcast concept addresses a timely and relevant topic that resonates with modern audiences navigating digital life's psychological impacts. However, the description lacks specificity about the podcast's format, hosts, episode content, or unique perspective, making it difficult to assess its actual execution and value."
+claude-haiku-4.5,4,claude-opus-5-high,"Provide a 2-sentence review of the following piece of work
+A podcast that explores the intersection between technology and mental wellbeing","# Review
+
+This podcast addresses a timely and relevant topic that resonates with modern audiences grappling with digital mental health challenges, offering valuable insights into how technology shapes our psychological wellbeing. However, without knowing the specific episodes, hosts, or production quality, it's difficult to assess whether the content is well-researched, engaging, and accessible to its intended audience."
+claude-haiku-4.5,0,gpt-6,"Provide a 2-sentence review of the following piece of work
+A podcast that explores the intersection between technology and mental wellbeing","# Review
+
+This podcast concept addresses an increasingly relevant topic that resonates with modern audiences grappling with digital wellness challenges. However, the description is too vague to assess its execution—a strong review would require details about the hosts' expertise, episode quality, unique perspectives, and whether it meaningfully balances entertainment with substantive mental health insights."
+claude-haiku-4.5,3,claude-opus-5,"Provide a 2-sentence review of the following piece of work
+A podcast that explores the intersection between technology and mental wellbeing","# Review
+
+This podcast tackles an increasingly relevant topic by examining how technology impacts our psychological health, offering listeners timely insights into a subject that affects modern life. The concept has strong potential to educate audiences, though the review's effectiveness would depend on the actual execution, host expertise, and depth of the episodes produced."
+claude-haiku-4.5,1,qwen-4-high,"Provide a 2-sentence review of the following piece of work
+A podcast that explores the intersection between technology and mental wellbeing","# Review
+
+This podcast addresses a timely and relevant topic that resonates with many listeners navigating the complexities of digital life's impact on their mental health. However, without more specifics about the content quality, host expertise, episode variety, or production value, it's difficult to assess whether the podcast delivers substantive insights or merely skims the surface of this important subject."
+claude-haiku-4.5,5,qwen-4,"Provide a 2-sentence review of the following piece of work
+A podcast that explores the intersection between technology and mental wellbeing","# Review
+
+This podcast tackles an increasingly relevant topic by examining how technology shapes our psychological health, offering listeners valuable insights into both the benefits and pitfalls of our digital lives. The concept is compelling and timely, though the review would be strengthened by knowing specific episodes, guest expertise, and whether the content delivers actionable advice or merely surface-level analysis."
+claude-haiku-4.5,5,qwen-4-high,"Restate this sentence in different words.
+He's very ambitious and always wants to be the best.",He possesses strong drive and constantly strives to achieve excellence.
+claude-haiku-4.5,1,claude-opus-5-high,"Restate this sentence in different words.
+He's very ambitious and always wants to be the best.","# Restatement
+
+He possesses great ambition and constantly strives to achieve excellence.
+
+---
+
+Or alternatively:
+
+He has strong aspirations and is always pushing himself to outperform others."
+claude-haiku-4.5,0,gpt-6,"Restate this sentence in different words.
+He's very ambitious and always wants to be the best.",He possesses strong ambition and constantly strives to achieve excellence.
+claude-haiku-4.5,3,qwen-4,"Restate this sentence in different words.
+He's very ambitious and always wants to be the best.","# Alternative Restatement
+
+He possesses a strong drive to succeed and constantly strives to outperform others.
+
+---
+
+Other options:
+- He has a keen desire to excel and is determined to achieve top performance.
+- He's driven by a need to achieve greatness and continuously pursues superiority.
+- He demonstrates intense ambition and relentlessly pursues excellence."
+claude-haiku-4.5,2,claude-opus-5,"Restate this sentence in different words.
+He's very ambitious and always wants to be the best.","# Restatement
+
+He possesses strong ambition and constantly strives to achieve excellence.
+
+---
+
+**Alternative versions:**
+
+- He has a strong drive to succeed and is always aiming to outperform others.
+- He's driven by ambition and perpetually seeks to reach the top.
+- He constantly pursues greatness and has an unwavering desire to excel."
+claude-haiku-4.5,4,gpt-6-high,"Restate this sentence in different words.
+He's very ambitious and always wants to be the best.","# Alternative Restatements
+
+Here are a few ways to express this idea:
+
+1. **He possesses great ambition and constantly strives to excel.**
+
+2. **He's driven by a strong desire to achieve top performance in everything he does.**
+
+3. **He has lofty goals and is perpetually motivated to outperform others.**
+
+4. **His ambition is evident in his relentless pursuit of excellence.**
+
+5. **He's highly motivated and consistently pushes himself to be superior.**
+
+Each version maintains the core meaning while using different phrasing and vocabulary."
+claude-haiku-4.5,3,qwen-4-high,"You are a smart assistant designed to help high school teachers come up with reading comprehension questions.
+Given a piece of text, you must come up with a question and answer pair that can be used to test a student's reading comprehension abilities.
+When coming up with this question/answer pair, you must respond in the following format:
+```
+{{
+    ""question"": ""$YOUR_QUESTION_HERE"",
+    ""answer"": ""$THE_ANSWER_HERE""
+}}
+```
+Everything between the ``` must be valid json.
+Please come up with a question/answer pair, in the specified JSON format, for the following text:
+----------------
+The scream of sirens and the clank of steel on cobblestones echoed down the mean, dark streets. Frightened East Berliners peeked from behind their curtains to see military convoys stretching for blocks. First came the motorcycle outriders, then jeeps, trucks and buses crammed with grim, steel-helmeted East German troops. Rattling in their wake were the tanks — squat Russian-built T-34s and T-54s. At each major intersection, a platoon peeled off and ground to a halt, guns at the ready. The rest headed on for the sector border, the 25-mile frontier that cuts through the heart of Berlin like a jagged piece of glass. As the troops arrived at scores of border points, cargo trucks were already unloading rolls of barbed wire, concrete posts, wooden horses, stone blocks, picks and shovels. When dawn came four hours later, a wall divided East Berlin from West for the first time in eight years.","```json
+{
+    ""question"": ""What materials were being unloaded from cargo trucks at the border points as the troops arrived?"",
+    ""answer"": ""Rolls of barbed wire, concrete posts, wooden horses, stone blocks, picks and shovels were being unloaded from cargo trucks at the border points.""
+}
+```"
+claude-haiku-4.5,2,gpt-6-high,"You are a smart assistant designed to help high school teachers come up with reading comprehension questions.
+Given a piece of text, you must come up with a question and answer pair that can be used to test a student's reading comprehension abilities.
+When coming up with this question/answer pair, you must respond in the following format:
+```
+{{
+    ""question"": ""$YOUR_QUESTION_HERE"",
+    ""answer"": ""$THE_ANSWER_HERE""
+}}
+```
+Everything between the ``` must be valid json.
+Please come up with a question/answer pair, in the specified JSON format, for the following text:
+----------------
+The scream of sirens and the clank of steel on cobblestones echoed down the mean, dark streets. Frightened East Berliners peeked from behind their curtains to see military convoys stretching for blocks. First came the motorcycle outriders, then jeeps, trucks and buses crammed with grim, steel-helmeted East German troops. Rattling in their wake were the tanks — squat Russian-built T-34s and T-54s. At each major intersection, a platoon peeled off and ground to a halt, guns at the ready. The rest headed on for the sector border, the 25-mile frontier that cuts through the heart of Berlin like a jagged piece of glass. As the troops arrived at scores of border points, cargo trucks were already unloading rolls of barbed wire, concrete posts, wooden horses, stone blocks, picks and shovels. When dawn came four hours later, a wall divided East Berlin from West for the first time in eight years.","```json
+{
+    ""question"": ""What materials were being unloaded from cargo trucks at the border points as the troops arrived?"",
+    ""answer"": ""Barbed wire, concrete posts, wooden horses, stone blocks, picks, and shovels were being unloaded from cargo trucks at the border points.""
+}
+```"
+claude-haiku-4.5,1,claude-opus-5-high,"You are a smart assistant designed to help high school teachers come up with reading comprehension questions.
+Given a piece of text, you must come up with a question and answer pair that can be used to test a student's reading comprehension abilities.
+When coming up with this question/answer pair, you must respond in the following format:
+```
+{{
+    ""question"": ""$YOUR_QUESTION_HERE"",
+    ""answer"": ""$THE_ANSWER_HERE""
+}}
+```
+Everything between the ``` must be valid json.
+Please come up with a question/answer pair, in the specified JSON format, for the following text:
+----------------
+The scream of sirens and the clank of steel on cobblestones echoed down the mean, dark streets. Frightened East Berliners peeked from behind their curtains to see military convoys stretching for blocks. First came the motorcycle outriders, then jeeps, trucks and buses crammed with grim, steel-helmeted East German troops. Rattling in their wake were the tanks — squat Russian-built T-34s and T-54s. At each major intersection, a platoon peeled off and ground to a halt, guns at the ready. The rest headed on for the sector border, the 25-mile frontier that cuts through the heart of Berlin like a jagged piece of glass. As the troops arrived at scores of border points, cargo trucks were already unloading rolls of barbed wire, concrete posts, wooden horses, stone blocks, picks and shovels. When dawn came four hours later, a wall divided East Berlin from West for the first time in eight years.","```json
+{
+    ""question"": ""What materials were being unloaded from cargo trucks at the border points?"",
+    ""answer"": ""Barbed wire, concrete posts, wooden horses, stone blocks, picks and shovels were being unloaded from cargo trucks at the border points.""
+}
+```"
+claude-haiku-4.5,5,qwen-4,"You are a smart assistant designed to help high school teachers come up with reading comprehension questions.
+Given a piece of text, you must come up with a question and answer pair that can be used to test a student's reading comprehension abilities.
+When coming up with this question/answer pair, you must respond in the following format:
+```
+{{
+    ""question"": ""$YOUR_QUESTION_HERE"",
+    ""answer"": ""$THE_ANSWER_HERE""
+}}
+```
+Everything between the ``` must be valid json.
+Please come up with a question/answer pair, in the specified JSON format, for the following text:
+----------------
+The scream of sirens and the clank of steel on cobblestones echoed down the mean, dark streets. Frightened East Berliners peeked from behind their curtains to see military convoys stretching for blocks. First came the motorcycle outriders, then jeeps, trucks and buses crammed with grim, steel-helmeted East German troops. Rattling in their wake were the tanks — squat Russian-built T-34s and T-54s. At each major intersection, a platoon peeled off and ground to a halt, guns at the ready. The rest headed on for the sector border, the 25-mile frontier that cuts through the heart of Berlin like a jagged piece of glass. As the troops arrived at scores of border points, cargo trucks were already unloading rolls of barbed wire, concrete posts, wooden horses, stone blocks, picks and shovels. When dawn came four hours later, a wall divided East Berlin from West for the first time in eight years.","```json
+{
+    ""question"": ""What materials were being unloaded from cargo trucks at the border points?"",
+    ""answer"": ""Rolls of barbed wire, concrete posts, wooden horses, stone blocks, picks, and shovels were being unloaded from cargo trucks at the border points.""
+}
+```"
+claude-haiku-4.5,4,claude-opus-5,"You are a smart assistant designed to help high school teachers come up with reading comprehension questions.
+Given a piece of text, you must come up with a question and answer pair that can be used to test a student's reading comprehension abilities.
+When coming up with this question/answer pair, you must respond in the following format:
+```
+{{
+    ""question"": ""$YOUR_QUESTION_HERE"",
+    ""answer"": ""$THE_ANSWER_HERE""
+}}
+```
+Everything between the ``` must be valid json.
+Please come up with a question/answer pair, in the specified JSON format, for the following text:
+----------------
+The scream of sirens and the clank of steel on cobblestones echoed down the mean, dark streets. Frightened East Berliners peeked from behind their curtains to see military convoys stretching for blocks. First came the motorcycle outriders, then jeeps, trucks and buses crammed with grim, steel-helmeted East German troops. Rattling in their wake were the tanks — squat Russian-built T-34s and T-54s. At each major intersection, a platoon peeled off and ground to a halt, guns at the ready. The rest headed on for the sector border, the 25-mile frontier that cuts through the heart of Berlin like a jagged piece of glass. As the troops arrived at scores of border points, cargo trucks were already unloading rolls of barbed wire, concrete posts, wooden horses, stone blocks, picks and shovels. When dawn came four hours later, a wall divided East Berlin from West for the first time in eight years.","```json
+{
+    ""question"": ""What military equipment and materials were used to create the barrier between East and West Berlin?"",
+    ""answer"": ""Barbed wire, concrete posts, wooden horses, stone blocks, picks, and shovels were used. Additionally, tanks (Russian-built T-34s and T-54s), trucks, jeeps, and buses carrying East German troops were deployed to establish and secure the barrier.""
+}
+```"
+claude-haiku-4.5,0,gpt-6,"You are a smart assistant designed to help high school teachers come up with reading comprehension questions.
+Given a piece of text, you must come up with a question and answer pair that can be used to test a student's reading comprehension abilities.
+When coming up with this question/answer pair, you must respond in the following format:
+```
+{{
+    ""question"": ""$YOUR_QUESTION_HERE"",
+    ""answer"": ""$THE_ANSWER_HERE""
+}}
+```
+Everything between the ``` must be valid json.
+Please come up with a question/answer pair, in the specified JSON format, for the following text:
+----------------
+The scream of sirens and the clank of steel on cobblestones echoed down the mean, dark streets. Frightened East Berliners peeked from behind their curtains to see military convoys stretching for blocks. First came the motorcycle outriders, then jeeps, trucks and buses crammed with grim, steel-helmeted East German troops. Rattling in their wake were the tanks — squat Russian-built T-34s and T-54s. At each major intersection, a platoon peeled off and ground to a halt, guns at the ready. The rest headed on for the sector border, the 25-mile frontier that cuts through the heart of Berlin like a jagged piece of glass. As the troops arrived at scores of border points, cargo trucks were already unloading rolls of barbed wire, concrete posts, wooden horses, stone blocks, picks and shovels. When dawn came four hours later, a wall divided East Berlin from West for the first time in eight years.","```json
+{
+    ""question"": ""What materials were being unloaded from cargo trucks at the border points?"",
+    ""answer"": ""Rolls of barbed wire, concrete posts, wooden horses, stone blocks, picks and shovels.""
+}
+```"

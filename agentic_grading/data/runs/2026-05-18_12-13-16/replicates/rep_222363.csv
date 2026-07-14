@@ -1,0 +1,2018 @@
+real_model,sample_idx,model,question,answer
+claude-haiku-4.5,2,claude-opus-5,"Categorize the given data into the list of labels.
+Carrot, Apple, Broccoli","# Categorized Data
+
+**Fruits:**
+- Apple
+
+**Vegetables:**
+- Carrot
+- Broccoli
+
+---
+
+*Note: While apples are botanically fruits, carrots and broccoli are culinarily classified as vegetables.*"
+claude-haiku-4.5,3,qwen-4,"Categorize the given data into the list of labels.
+Carrot, Apple, Broccoli","# Categorization of Data
+
+**Fruits:**
+- Apple
+
+**Vegetables:**
+- Carrot
+- Broccoli
+
+---
+
+*Note: While botanically apples are fruits (containing seeds), carrots and broccoli are vegetables (edible plant parts - root and flowering head, respectively).*"
+claude-haiku-4.5,4,gpt-6-high,"Categorize the given data into the list of labels.
+Carrot, Apple, Broccoli","# Categorization
+
+Here's the data organized by category:
+
+## **Fruits**
+- Apple
+
+## **Vegetables**
+- Carrot
+- Broccoli
+
+---
+
+**Note:** While botanically carrots and broccoli are also fruits (as they contain seeds), culinarily they are classified as vegetables."
+claude-haiku-4.5,5,qwen-4-high,"Categorize the given data into the list of labels.
+Carrot, Apple, Broccoli","# Categorization
+
+**Fruits:**
+- Apple
+
+**Vegetables:**
+- Carrot
+- Broccoli
+
+---
+
+*Note: While carrots and broccoli are botanically fruits (they develop from the flower's ovary), they are culinarily classified as vegetables due to their savory flavor profile and typical use in main courses and side dishes.*"
+claude-haiku-4.5,1,gpt-6,"Categorize the given data into the list of labels.
+Carrot, Apple, Broccoli","# Categorization
+
+**Fruits:**
+- Apple
+
+**Vegetables:**
+- Carrot
+- Broccoli"
+claude-haiku-4.5,0,claude-opus-5-high,"Categorize the given data into the list of labels.
+Carrot, Apple, Broccoli","# Categorization
+
+**Vegetables:**
+- Carrot
+- Broccoli
+
+**Fruits:**
+- Apple"
+claude-haiku-4.5,5,gpt-6,"Describe the character ""Moth"" from the book 'Les Misérables'.","# Moth in Les Misérables
+
+I'm not immediately certain which character you're referring to as ""Moth"" in Victor Hugo's *Les Misérables*. 
+
+Could you provide a bit more context? For instance:
+- Are you thinking of a character with a similar-sounding name?
+- Is this a nickname or translation variant?
+- Do you remember any details about their role in the story?
+
+Some possibilities that come to mind:
+- **Montparnasse** - a young member of the Thénardier gang of criminals
+- **Marius** - a central character whose name might sound similar depending on pronunciation
+- A minor character I'm less familiar with
+
+If you can share any additional details about the character—what they did, who they associated with, or what part of the book they appeared in—I'd be happy to help describe them more accurately!"
+claude-haiku-4.5,2,qwen-4-high,"Describe the character ""Moth"" from the book 'Les Misérables'.","# Moth in Les Misérables
+
+I'm not immediately certain which character you're referring to as ""Moth"" in Victor Hugo's *Les Misérables*. 
+
+Could you provide a bit more context? For example:
+
+- **Do you remember roughly when they appear** in the story (early, middle, or late)?
+- **Their role or relationship** to main characters like Jean Valjean, Fantine, or Cosette?
+- **Any key scenes** they're involved in?
+
+It's possible you may be thinking of a character known by a different primary name, or this might be a character from a specific adaptation (film, musical, etc.) rather than the novel itself. The musical and various stage/film versions sometimes use different names or create new characters.
+
+If you can share any additional details, I'd be happy to help identify and describe the character!"
+claude-haiku-4.5,4,qwen-4,"Describe the character ""Moth"" from the book 'Les Misérables'.","# Moth in Les Misérables
+
+I'm not able to identify a significant character named ""Moth"" in Victor Hugo's *Les Misérables*. 
+
+It's possible you might be thinking of:
+
+- **Gavroche** - the street urchin and son of Thénardier who represents the poor children of Paris
+- **Eponine** - Thénardier's daughter, who is sometimes associated with darkness/shadows
+- One of the other street children or minor characters in the novel
+
+Could you provide any additional context about this character, such as:
+- Their role in the story?
+- Which section they appear in?
+- Any other characters they interact with?
+
+This would help me give you an accurate description. Alternatively, if ""Moth"" is a translation-specific name or from an adaptation rather than Hugo's original novel, that context would also be helpful."
+claude-haiku-4.5,0,claude-opus-5,"Describe the character ""Moth"" from the book 'Les Misérables'.","# Moth in Les Misérables
+
+I don't have a record of a character named ""Moth"" in Victor Hugo's *Les Misérables*.
+
+It's possible you might be thinking of:
+
+- **Gavroche** - the street urchin who is one of the most memorable young characters
+- **Eponine** - the tragic young woman who loves Marius
+- **Montparnasse** - a member of the criminal underworld
+- **One of the street children** - Hugo depicts various impoverished youth throughout the novel
+
+Could you provide more context about which character you're asking about, or clarify where you encountered this name? That would help me give you an accurate description of the character you're interested in learning about."
+claude-haiku-4.5,1,claude-opus-5-high,"Describe the character ""Moth"" from the book 'Les Misérables'.","# Moth in Les Misérables
+
+I'm not immediately certain which character you're referring to as ""Moth"" in Les Misérables. This doesn't appear to be a standard English translation of any major character name in Victor Hugo's novel.
+
+Could you provide additional context? For example:
+
+- **The original French name** of the character you mean?
+- **What role they play** in the story?
+- **Which translation** you're reading (as character names sometimes vary)?
+
+Some possibilities:
+- You might be thinking of a character with a name that translates differently in English versions
+- This could be a minor character I'm less familiar with
+- It might be from a stage adaptation or film adaptation rather than the novel itself
+
+If you can clarify, I'd be happy to help describe the character you're interested in!"
+claude-haiku-4.5,3,gpt-6-high,"Describe the character ""Moth"" from the book 'Les Misérables'.","# Moth from Les Misérables
+
+I don't believe there is a character named ""Moth"" in Victor Hugo's *Les Misérables*. 
+
+You may be thinking of one of these characters:
+
+- **Montparnasse** - a young member of the Patron-Minette gang of criminals
+- **Gavroche** - the street urchin and child of the Paris streets, known for his wit and courage
+- **Eponine** - the tragic daughter of the Thénardiers who loves Marius
+
+Could you clarify which character you meant, or provide more context about where ""Moth"" appears? That would help me give you an accurate description. Alternatively, if you're thinking of a character from an adaptation or a different work, let me know and I'd be happy to help!"
+claude-haiku-4.5,2,gpt-6,"Find the noun phrases in this sentence.
+This school is old, but it has some very friendly teachers.","# Noun Phrases in the Sentence
+
+Here are the noun phrases:
+
+1. **This school** - (determiner + noun)
+2. **some very friendly teachers** - (determiner + adverb + adjective + noun)
+
+These are the two main noun phrases that function as the subject and object in this compound sentence."
+claude-haiku-4.5,4,qwen-4-high,"Find the noun phrases in this sentence.
+This school is old, but it has some very friendly teachers.","# Noun Phrases in the Sentence
+
+Here are the noun phrases:
+
+1. **This school** - demonstrative pronoun + noun
+2. **some very friendly teachers** - quantifier + adverbs + adjective + noun
+
+These noun phrases function as the subject and object of the sentence respectively."
+claude-haiku-4.5,3,gpt-6-high,"Find the noun phrases in this sentence.
+This school is old, but it has some very friendly teachers.","# Noun Phrases in the Sentence
+
+Here are the noun phrases:
+
+1. **This school** - demonstrative pronoun + noun
+2. **some very friendly teachers** - determiner + intensifier + adjective + noun
+
+These are the two main noun phrases that function as the subject and object in the sentence."
+claude-haiku-4.5,1,claude-opus-5,"Find the noun phrases in this sentence.
+This school is old, but it has some very friendly teachers.","# Noun Phrases
+
+Here are the noun phrases in the sentence:
+
+1. **This school** - determiner + noun
+2. **some very friendly teachers** - determiner + adverbs/adjectives + noun
+
+These noun phrases function as:
+- ""This school"" = subject of the first clause
+- ""some very friendly teachers"" = object of the preposition ""has"""
+claude-haiku-4.5,0,claude-opus-5-high,"Find the noun phrases in this sentence.
+This school is old, but it has some very friendly teachers.","# Noun Phrases in the Sentence
+
+Here are the noun phrases:
+
+1. **This school** - demonstrative determiner + noun
+2. **some very friendly teachers** - determiner + adverbs + adjective + noun
+
+These are the two main noun phrases that function as the subject and object in the sentence."
+claude-haiku-4.5,5,qwen-4,"Find the noun phrases in this sentence.
+This school is old, but it has some very friendly teachers.","# Noun Phrases in the Sentence
+
+The noun phrases are:
+
+1. **This school** - demonstrative pronoun + noun
+2. **some very friendly teachers** - quantifier + adverbs + adjective + noun
+
+Note: ""This"" and ""it"" are pronouns rather than noun phrases themselves, though ""this school"" functions as a noun phrase together."
+claude-haiku-4.5,0,gpt-6,"Find the word with the most occurences in the following sentence.
+The cat in the hat can run and jump.","# Word Frequency Analysis
+
+Let me count the occurrences of each word:
+
+- ""the"" - 2 times
+- ""cat"" - 1 time
+- ""in"" - 1 time
+- ""hat"" - 1 time
+- ""can"" - 1 time
+- ""run"" - 1 time
+- ""and"" - 1 time
+- ""jump"" - 1 time
+
+**The word with the most occurrences is ""the"" with 2 occurrences.**"
+claude-haiku-4.5,5,gpt-6-high,"Find the word with the most occurences in the following sentence.
+The cat in the hat can run and jump.","# Word Frequency Analysis
+
+Let me count the occurrences of each word:
+
+- **the** - 2 times
+- cat - 1 time
+- in - 1 time
+- hat - 1 time
+- can - 1 time
+- run - 1 time
+- and - 1 time
+- jump - 1 time
+
+**The word with the most occurrences is ""the"" (appears 2 times).**"
+claude-haiku-4.5,2,qwen-4-high,"Find the word with the most occurences in the following sentence.
+The cat in the hat can run and jump.","# Word Frequency Analysis
+
+Let me count the occurrences of each word in the sentence:
+
+- ""the"" - 2 occurrences
+- ""cat"" - 1 occurrence
+- ""in"" - 1 occurrence
+- ""hat"" - 1 occurrence
+- ""can"" - 1 occurrence
+- ""run"" - 1 occurrence
+- ""and"" - 1 occurrence
+- ""jump"" - 1 occurrence
+
+**The word with the most occurrences is ""the"" with 2 occurrences.**"
+claude-haiku-4.5,4,claude-opus-5-high,"Find the word with the most occurences in the following sentence.
+The cat in the hat can run and jump.","# Word Frequency Analysis
+
+Let me count the occurrences of each word:
+
+- **the** - 2 occurrences
+- cat - 1 occurrence
+- in - 1 occurrence
+- hat - 1 occurrence
+- can - 1 occurrence
+- run - 1 occurrence
+- and - 1 occurrence
+- jump - 1 occurrence
+
+**The word ""the"" appears most frequently with 2 occurrences.**"
+claude-haiku-4.5,1,claude-opus-5,"Find the word with the most occurences in the following sentence.
+The cat in the hat can run and jump.","# Word Frequency Analysis
+
+Let me count the occurrences of each word:
+
+- ""the"" - 2 times
+- ""cat"" - 1 time
+- ""in"" - 1 time
+- ""hat"" - 1 time
+- ""can"" - 1 time
+- ""run"" - 1 time
+- ""and"" - 1 time
+- ""jump"" - 1 time
+
+**The word with the most occurrences is ""the"" (2 times).**"
+claude-haiku-4.5,3,qwen-4,"Find the word with the most occurences in the following sentence.
+The cat in the hat can run and jump.","# Word Frequency Analysis
+
+Looking at the sentence: ""The cat in the hat can run and jump.""
+
+Counting each word:
+- ""the"" - 2 occurrences
+- ""cat"" - 1 occurrence
+- ""in"" - 1 occurrence
+- ""hat"" - 1 occurrence
+- ""can"" - 1 occurrence
+- ""run"" - 1 occurrence
+- ""and"" - 1 occurrence
+- ""jump"" - 1 occurrence
+
+**The word with the most occurrences is ""the"" (appearing 2 times).**"
+claude-haiku-4.5,3,qwen-4-high,"In this task, you need to create a noun from the given verb.
+Verb: Invest","# Noun from ""Invest""
+
+**Investment**
+
+This is the most common noun form of the verb ""invest,"" referring to the act of putting money or resources into something with the expectation of gaining a return.
+
+Other related noun forms include:
+- **Investor** (a person who invests)
+- **Investing** (the gerund form, functioning as a noun)"
+claude-haiku-4.5,5,claude-opus-5,"In this task, you need to create a noun from the given verb.
+Verb: Invest","# Noun from ""Invest""
+
+**Investment**
+
+This is the most common noun form derived from the verb ""invest."" It refers to the act of investing money or resources, or the money/resources themselves that are invested.
+
+Other related noun forms include:
+- **Investor** (a person who invests)
+- **Investiture** (the action of investing someone with a rank or office)"
+claude-haiku-4.5,2,gpt-6,"In this task, you need to create a noun from the given verb.
+Verb: Invest","# Noun from ""Invest""
+
+**Investment**
+
+This is the most common noun form of the verb ""invest,"" referring to the act of putting money or resources into something with the expectation of achieving a profit or benefit."
+claude-haiku-4.5,4,qwen-4,"In this task, you need to create a noun from the given verb.
+Verb: Invest","# Noun from ""Invest""
+
+**Investment**
+
+This is the most common noun form of the verb ""invest,"" referring to the act of putting money or resources into something with the expectation of achieving a profit or benefit."
+claude-haiku-4.5,1,gpt-6-high,"In this task, you need to create a noun from the given verb.
+Verb: Invest","# Noun: Investment
+
+The noun form of the verb ""invest"" is **investment**.
+
+Example usage: ""Making a wise investment in real estate can build long-term wealth."""
+claude-haiku-4.5,0,claude-opus-5-high,"In this task, you need to create a noun from the given verb.
+Verb: Invest","# Noun from ""Invest""
+
+The noun form of the verb ""invest"" is **investment**.
+
+Other related noun forms include:
+- **investor** (a person who invests)
+- **investiture** (the action of investing with office or authority)"
+claude-haiku-4.5,3,gpt-6,"Provide input to the following instruction and generate a response using GPT-3.
+Instruction: Write a story about someone who is uncomfortable in crowded places.
+Input:
+A young man named David was always anxious when it came to being in crowded places.","# The Quiet Corner
+
+A young man named David was always anxious when it came to being in crowded places. His heart would race, his palms would sweat, and an overwhelming sense of claustrophobia would wash over him whenever he found himself surrounded by throngs of people.
+
+It started when he was a child—a birthday party where he'd gotten separated from his mother in a sea of screaming kids. Now, at twenty-six, the anxiety had only deepened.
+
+His friends didn't understand. They'd invite him to concerts, packed restaurants, and busy shopping centers, disappointed each time he declined. ""You need to push through it,"" they'd say, but David knew it wasn't that simple.
+
+One Saturday, his best friend Marcus practically dragged him to a street festival. David's stomach twisted as they approached the entrance. The noise was deafening—music blaring from multiple stages, vendors calling out, children crying, the hum of hundreds of conversations overlapping.
+
+David felt the familiar panic rising in his chest. He needed to escape.
+
+Then he spotted it: a small library tucked between two vendor booths. Without hesitation, he slipped inside.
+
+Inside, the world was different. Soft lighting, quiet rustling of pages, the faint smell of old books. A librarian at the desk smiled warmly at him. David found a comfortable armchair in the corner near a window that overlooked the festival chaos outside—present but separate.
+
+He sat there for an hour, reading, breathing, existing peacefully.
+
+When he finally emerged and found Marcus, something had shifted. David realized he didn't need to conquer his anxiety all at once. Instead, he could find his own ways to navigate the world—and that was enough."
+claude-haiku-4.5,2,qwen-4-high,"Provide input to the following instruction and generate a response using GPT-3.
+Instruction: Write a story about someone who is uncomfortable in crowded places.
+Input:
+A young man named David was always anxious when it came to being in crowded places.","# The Crowded City
+
+David's hands trembled as he gripped the subway pole, surrounded by bodies pressing in from all sides. The fluorescent lights hummed overhead, and the screech of brakes made his stomach turn. He counted his breaths—in for four, hold for four, out for four—a technique his therapist had taught him months ago.
+
+It wasn't always this way. As a child, David had loved festivals and concerts, thriving in the energy of large gatherings. But somewhere in his twenties, something shifted. The crowds that once excited him began to suffocate him instead. The proximity of strangers felt invasive. The noise became unbearable. The unpredictability terrified him.
+
+His job at the downtown marketing firm required him to navigate the city's busiest areas every weekday. The morning commute was his personal nightmare—packed trains, rushed pedestrians, the relentless hum of urban life. By the time he reached his office, exhaustion from managing his anxiety had already drained him.
+
+Today was different, though. David had signed up for an evening networking event—a deliberate challenge. His coworker Maya had invited him repeatedly, and he'd finally said yes. Now, standing in a conference room filled with fifty professionals, he questioned his decision.
+
+He positioned himself near the edge of the room, back against the wall, giving himself sightlines to the exits. Gradually, he joined a small conversation in the corner. Two people felt manageable. Then three. 
+
+As the evening progressed, David realized something: by accepting the discomfort rather than avoiding it, by showing up despite his anxiety, he'd taken back a small piece of himself.
+
+It was progress."
+claude-haiku-4.5,0,qwen-4,"Provide input to the following instruction and generate a response using GPT-3.
+Instruction: Write a story about someone who is uncomfortable in crowded places.
+Input:
+A young man named David was always anxious when it came to being in crowded places.","# The Crowded Station
+
+A young man named David was always anxious when it came to being in crowded places. His heart would race, his palms would sweat, and an overwhelming sense of claustrophobia would wash over him whenever he found himself surrounded by too many people.
+
+Today, he had no choice but to face his fear. The train station during rush hour was packed—bodies pressed together, voices echoing off the tiled walls, the acrid smell of coffee and cologne mixing in the stale air. David clutched his backpack straps tightly, keeping his eyes fixed on the departure board above.
+
+His breathing quickened as the crowd surged forward. A woman bumped into him, and he flinched. A child's scream pierced the ambient noise. Someone's elbow caught his ribs. He closed his eyes, trying to remember the breathing technique his therapist had taught him: in for four counts, hold for four, out for four.
+
+*You can do this*, he told himself.
+
+David opened his eyes and spotted a quiet corner by the ticket booth. He moved toward it, creating space between himself and the sea of humanity. As he stood there, something shifted in his mind. He wasn't drowning. He was just one person among many, each lost in their own journey.
+
+The 4:15 train arrived. As David boarded and found a nearly empty car, he felt a small surge of pride. He'd done it. Not perfectly, and not without struggle—but he'd done it.
+
+Perhaps tomorrow would be easier."
+claude-haiku-4.5,4,claude-opus-5-high,"Provide input to the following instruction and generate a response using GPT-3.
+Instruction: Write a story about someone who is uncomfortable in crowded places.
+Input:
+A young man named David was always anxious when it came to being in crowded places.","# The Crowded City
+
+A young man named David was always anxious when it came to being in crowded places. His heart would race, his palms would sweat, and the world seemed to close in on him whenever he found himself surrounded by too many people.
+
+David had learned to manage his life around this reality. He took early morning walks when the parks were empty, shopped at odd hours when stores were quiet, and worked from home whenever possible. His friends understood, mostly, though they sometimes expressed frustration when he declined yet another invitation to concerts or sporting events.
+
+One Tuesday, everything changed. David's company announced that the office was requiring three days in-person attendance each week. His stomach dropped. The commute alone would mean crowded buses and trains. The open office layout meant constant proximity to colleagues.
+
+The first day was as awful as he'd anticipated. David arrived early, hoping the elevator would be less packed, but a throng of people still pressed around him. He held his breath, gripping his briefcase, counting the seconds until the doors opened.
+
+By the third week, something unexpected happened. As David stood in the crowded elevator, he noticed a woman taking slow, deliberate breaths. She caught his eye and smiled knowingly. During lunch, she approached him and introduced herself as Maya. She too struggled with crowds, she explained, and had recently started therapy.
+
+They began sharing coping strategies. Deep breathing. Identifying exits. Finding one familiar face to focus on. Gradually, David's anxiety didn't disappear, but it became manageable. More importantly, he'd found someone who understood.
+
+By the end of the month, David still wasn't comfortable in crowds, but he was no longer alone in managing it. And somehow, that made all the difference."
+claude-haiku-4.5,5,gpt-6-high,"Provide input to the following instruction and generate a response using GPT-3.
+Instruction: Write a story about someone who is uncomfortable in crowded places.
+Input:
+A young man named David was always anxious when it came to being in crowded places.","# David's Journey
+
+A young man named David was always anxious when it came to being in crowded places. The moment he stepped into a shopping mall on a Saturday afternoon, his heart would begin to race, his palms would sweat, and an overwhelming sense of dread would wash over him. He couldn't explain it to his friends—they seemed to thrive in the energy of busy crowds, laughing and browsing without a care. But David felt suffocated.
+
+His therapist had a name for it: social anxiety. The condition made David avoid concerts, festivals, and even family gatherings. He'd make excuses, turn down invitations, and spend most weekends alone in his apartment where everything felt safe and controllable.
+
+Everything changed the day his younger sister, Emma, asked him to volunteer at the local community center. ""Just help me set up for the literacy program,"" she said. ""It'll be quiet in the mornings.""
+
+David reluctantly agreed. But on the first day, as he arranged chairs in small groups, something shifted. People arrived gradually—not all at once in a overwhelming crush. He helped an elderly woman find her seat and watched her genuine smile. A young child asked for his help reading a difficult word. These individual connections felt different from the anonymous sea of faces in a mall.
+
+Over the weeks, David began to understand that crowds weren't inherently the problem. It was the disconnect, the feeling of being invisible and insignificant. Here, among purposeful activity and human connection, the anxiety loosened its grip.
+
+By spring, David was still uncomfortable in large crowds. But he'd learned something crucial: sometimes, the best way to survive the chaos is to find meaning within it."
+claude-haiku-4.5,1,claude-opus-5,"Provide input to the following instruction and generate a response using GPT-3.
+Instruction: Write a story about someone who is uncomfortable in crowded places.
+Input:
+A young man named David was always anxious when it came to being in crowded places.","# David's Journey
+
+David's palms began to sweat the moment he stepped into the shopping mall. Saturday afternoon meant throngs of people—families, teenagers, couples—all moving in different directions, their voices creating a cacophony that made his chest tighten.
+
+He had promised his sister he would meet her at the food court, but already he was questioning that decision. The fluorescent lights seemed too bright. The smell of competing restaurants—pizza, Chinese food, burgers—blended into something overwhelming. Someone's shopping bag brushed against his shoulder, and he flinched.
+
+Since childhood, David had been this way. While other kids played in crowded playgrounds without a second thought, he'd hugged the edges, preferring solitude or small groups. His therapist called it social anxiety; David called it exhausting.
+
+He tried a breathing exercise—in for four counts, hold for four, out for four—and made his way through the crowd, keeping his eyes fixed ahead. Avoid eye contact. Keep moving. Don't stop.
+
+When he finally spotted his sister at a quiet corner table, relief washed over him. She smiled, unaware of the internal battle he'd just fought.
+
+""I'm glad you came,"" she said, squeezing his hand.
+
+David squeezed back. For her, he would keep fighting these battles. Someday, maybe crowds wouldn't feel like such an enemy.
+
+But today? Today, he was just proud he'd shown up."
+claude-haiku-4.5,4,qwen-4,"Rewrite the following passage using simpler words and phrases so a child can understand it.
+With top executive management support, the team leveraged interdisciplinary expertise to synergize their individual capabilities, resulting in an innovative and holistic solution that addressed the key challenges faced by the organization.","# Simpler Version
+
+With help from the leaders at the top, the team worked together. Each person used what they were best at. By combining everyone's special skills, they came up with a new idea that solved the big problems the company was facing."
+claude-haiku-4.5,1,gpt-6,"Rewrite the following passage using simpler words and phrases so a child can understand it.
+With top executive management support, the team leveraged interdisciplinary expertise to synergize their individual capabilities, resulting in an innovative and holistic solution that addressed the key challenges faced by the organization.","# Simpler Version
+
+With help from the leaders at the top, the team worked together. Each person used what they were good at. By combining their different skills, they came up with a new idea that solved the big problems the company was facing."
+claude-haiku-4.5,0,claude-opus-5,"Rewrite the following passage using simpler words and phrases so a child can understand it.
+With top executive management support, the team leveraged interdisciplinary expertise to synergize their individual capabilities, resulting in an innovative and holistic solution that addressed the key challenges faced by the organization.","# Simpler Version
+
+With help from the leaders at the top, the team worked together. Each person used what they were best at. By combining all their different skills, they came up with a new idea that solved the big problems the company was facing.
+
+---
+
+**Key changes made:**
+- ""top executive management support"" → ""help from the leaders at the top""
+- ""leveraged interdisciplinary expertise"" → ""each person used what they were best at""
+- ""synergize their individual capabilities"" → ""combining all their different skills""
+- ""innovative and holistic solution"" → ""a new idea""
+- ""key challenges"" → ""big problems"""
+claude-haiku-4.5,5,gpt-6-high,"Rewrite the following passage using simpler words and phrases so a child can understand it.
+With top executive management support, the team leveraged interdisciplinary expertise to synergize their individual capabilities, resulting in an innovative and holistic solution that addressed the key challenges faced by the organization.","# Simpler Version
+
+With help from the leaders in charge, the team worked together. Each person used their special skills and knowledge. By combining everyone's strengths, they came up with a new and complete plan. This plan solved the big problems the company was facing."
+claude-haiku-4.5,3,claude-opus-5-high,"Rewrite the following passage using simpler words and phrases so a child can understand it.
+With top executive management support, the team leveraged interdisciplinary expertise to synergize their individual capabilities, resulting in an innovative and holistic solution that addressed the key challenges faced by the organization.","# Simpler Version
+
+With help from the leaders at the top, the team worked together. People from different areas shared what they knew best. By combining their skills and ideas, they came up with a smart new way to solve the big problems the company was facing.
+
+---
+
+**Key changes made:**
+- ""top executive management support"" → ""help from the leaders""
+- ""leveraged interdisciplinary expertise"" → ""people from different areas shared what they knew""
+- ""synergize their individual capabilities"" → ""combining their skills and ideas""
+- ""innovative and holistic solution"" → ""smart new way""
+- ""key challenges faced by the organization"" → ""big problems the company was facing"""
+claude-haiku-4.5,2,qwen-4-high,"Rewrite the following passage using simpler words and phrases so a child can understand it.
+With top executive management support, the team leveraged interdisciplinary expertise to synergize their individual capabilities, resulting in an innovative and holistic solution that addressed the key challenges faced by the organization.","# Simpler Version
+
+With help from the leaders at the top, the team worked together. Each person brought their own special skills and knowledge. They combined what they knew to create a new idea that fixed the big problems the company was facing.
+
+---
+
+**Even simpler:**
+
+The bosses helped the team. Everyone shared what they were good at. Together, they came up with a new idea that solved the company's problems."
+claude-haiku-4.5,4,gpt-6,What is the Einstein–Brillouin–Keller quantization condition?,"# Einstein–Brillouin–Keller (EBK) Quantization Condition
+
+The EBK quantization condition is a semiclassical rule for determining energy levels of quantum systems with one or more degrees of freedom. It extends the Bohr-Sommerfeld quantization to more general systems.
+
+## Standard Form
+
+For a one-dimensional periodic motion:
+
+$$\oint p \, dq = 2\pi\hbar\left(n + \frac{\mu}{4}\right)$$
+
+where:
+- **p** = classical momentum
+- **q** = coordinate
+- **n** = non-negative integer (0, 1, 2, ...)
+- **μ** = Maslov index (accounts for phase shifts at turning points)
+- The integral is around one complete classical orbit
+
+## Key Features
+
+**Maslov Index (μ)**
+- Typically **μ = 2** for systems with two classical turning points
+- Accounts for the 180° phase shift experienced each time the trajectory reflects from a classical turning point
+- This correction improves accuracy over the older Bohr-Sommerfeld rule
+
+**Multi-dimensional Extension**
+For systems with multiple degrees of freedom:
+$$\oint p_i \, dq_i = 2\pi\hbar\left(n_i + \frac{\mu_i}{4}\right)$$
+
+for each coordinate and conjugate momentum.
+
+## Historical Context
+
+- **Einstein** (1917) and **Brillouin** (1926) developed this independently
+- **Keller** (1958) systematized it and clarified the Maslov index
+- Provides a bridge between classical mechanics and quantum mechanics
+
+## Limitations
+
+- Works best for high quantum numbers (semiclassical regime)
+- Less accurate for low-lying energy levels
+- Breaks down for chaotic systems"
+claude-haiku-4.5,3,qwen-4-high,What is the Einstein–Brillouin–Keller quantization condition?,"# Einstein–Brillouin–Keller Quantization Condition
+
+The **EBK quantization condition** is a semi-classical method for determining the allowed energy levels of quantum systems. It extends the Bohr-Sommerfeld quantization to more complex, multi-dimensional systems.
+
+## Basic Form
+
+For a system with action variables **J**, the condition is:
+
+$$J_i = \oint p_i \, dq_i = 2\pi\hbar\left(n_i + \frac{\alpha_i}{4}\right)$$
+
+where:
+- **p_i** and **q_i** are conjugate momentum and coordinate for degree of freedom *i*
+- **n_i** are non-negative integers (quantum numbers)
+- **α_i** are **Maslov indices** (typically 1 or 2, accounting for caustics and turning points)
+- The integral is over one complete classical orbit
+
+## Key Improvements Over Bohr-Sommerfeld
+
+The **Maslov index** (the crucial addition from Einstein, Brillouin, and Keller) accounts for:
+- Phase shifts at classical turning points (reflection points)
+- Caustics in the trajectory
+- Topological properties of the classical orbit
+
+## Applications
+
+- **Hydrogen atom**: Correctly predicts energy levels
+- **Multi-dimensional oscillators**: Systems with multiple coupled degrees of freedom
+- **Molecular spectroscopy**: Vibrational and rotational levels
+- **Chaotic systems**: Less accurate but still provides useful approximations
+
+## Limitations
+
+The method breaks down in:
+- Strongly chaotic regimes
+- Systems with avoided crossings
+- Deep quantum regimes (low ℏ)
+
+It's a bridge between classical mechanics and quantum mechanics, useful when exact quantum solutions are intractable."
+claude-haiku-4.5,1,claude-opus-5,What is the Einstein–Brillouin–Keller quantization condition?,"# Einstein–Brillouin–Keller (EBK) Quantization Condition
+
+The EBK condition is a **semi-classical quantization rule** that extends the Bohr-Sommerfeld quantization to more complex systems. It's used to find approximate quantum energy levels for classically integrable systems.
+
+## The Basic Formula
+
+For a system with degrees of freedom, the condition states:
+
+$$\oint p_i \, dq_i = 2\pi\hbar\left(n_i + \frac{\mu_i}{4}\right)$$
+
+where:
+- **$\oint p_i \, dq_i$** = action integral around a closed classical orbit for coordinate $q_i$
+- **$n_i$** = non-negative integer (0, 1, 2, ...)
+- **$\mu_i$** = **Maslov index** (correction factor accounting for phase shifts at turning points)
+- **$\hbar$** = reduced Planck constant
+
+## Key Improvement: The Maslov Index
+
+The crucial addition over earlier Bohr-Sommerfeld quantization is the **Maslov index $\mu$**:
+- Typically = 2 for each turning point in 1D motion
+- Accounts for $\pi$ phase shifts when the classical orbit reflects off a potential boundary
+- Usually $\mu \approx 2$ for standard 1D potentials
+
+## Applications
+
+- Quantum spectra of bound states in potentials
+- Hydrogen atom (recovers Bohr's results more accurately)
+- Molecular vibrations and rotations
+- Billiards and other geometrical systems
+
+The EBK condition bridges classical mechanics and quantum mechanics in the semi-classical limit."
+claude-haiku-4.5,2,claude-opus-5-high,What is the Einstein–Brillouin–Keller quantization condition?,"# Einstein–Brillouin–Keller (EBK) Quantization
+
+The EBK quantization condition is a **semi-classical rule** for quantizing integrable mechanical systems. It generalizes the Bohr-Sommerfeld quantization to multi-dimensional systems.
+
+## Basic Form
+
+For an integrable system with action variables $J_i$ (canonical momenta integrated over a closed orbit):
+
+$$J_i = \oint p_i \, dq_i = 2\pi\hbar\left(n_i + \frac{m_i}{4}\right)$$
+
+where:
+- $n_i$ = quantum number (non-negative integer)
+- $m_i$ = **Maslov index** (number of classical turning points encountered in one cycle)
+
+## Key Features
+
+**Maslov Index Correction**: The crucial innovation is the $m_i/4$ term. For a 1D potential with two turning points, $m_i = 2$, giving:
+$$\oint p \, dq = 2\pi\hbar\left(n + \frac{1}{2}\right)$$
+
+This correctly reproduces the zero-point energy $E_0 = \frac{1}{2}\hbar\omega$ for the harmonic oscillator, which simpler Bohr-Sommerfeld quantization misses.
+
+## Historical Context
+
+- **Einstein** (1917): Applied to action-angle variables
+- **Brillouin & Keller** (1926): Systematized it and introduced the Maslov index correction
+
+## Limitations
+
+EBK works well for **integrable systems** (those with enough conserved quantities). It breaks down for chaotic systems, which motivated the development of quantum chaos theory."
+claude-haiku-4.5,5,gpt-6-high,What is the Einstein–Brillouin–Keller quantization condition?,"# Einstein–Brillouin–Keller (EBK) Quantization Condition
+
+The EBK quantization condition is a semi-classical method for finding energy levels of quantum systems with classical action integrals. It extends the older Bohr-Sommerfeld quantization to more complex systems.
+
+## Mathematical Form
+
+For a system with separable coordinates, the condition states:
+
+$$\oint p_i \, dq_i = 2\pi\hbar\left(n_i + \frac{\mu_i}{4}\right)$$
+
+where:
+- **$p_i$** = generalized momentum conjugate to coordinate $q_i$
+- **$n_i$** = quantum number (non-negative integer)
+- **$\mu_i$** = **Maslov index** (counting caustics/turning points)
+- The integral is over one complete oscillation cycle
+
+## Key Features
+
+**Maslov Correction**: The $\mu_i/4$ term accounts for phase shifts at classical turning points:
+- Each turning point contributes $\pi/2$ phase → adds $1/4$ to the Maslov index
+- Typically $\mu_i = 2$ for one-dimensional oscillatory motion (two turning points)
+
+**Advantages over Bohr-Sommerfeld**:
+- More accurate through the Maslov phase correction
+- Handles multidimensional systems with separable coordinates
+- Gives better agreement with exact quantum results
+
+## Example: Harmonic Oscillator
+
+For a 1D harmonic oscillator, the EBK condition yields:
+$$E_n = \hbar\omega\left(n + \frac{1}{2}\right)$$
+
+This exactly matches quantum mechanics (the zero-point energy emerges naturally from the Maslov index).
+
+## Limitations
+
+- Requires coordinate separability
+- Breaks down near classical chaos regions
+- Less useful for modern quantum systems"
+claude-haiku-4.5,0,qwen-4,What is the Einstein–Brillouin–Keller quantization condition?,"# Einstein–Brillouin–Keller Quantization Condition
+
+The **EBK quantization condition** is a semiclassical method for quantizing integrable systems. It's a refinement of the older Bohr-Sommerfeld quantization that includes corrections for turning points and provides more accurate energy levels.
+
+## The Condition
+
+For a one-dimensional system, the EBK condition is:
+
+$$\oint p \, dq = 2\pi\hbar\left(n + \frac{m}{2}\right)$$
+
+where:
+- The integral is taken around a closed classical orbit
+- **p** and **q** are conjugate momentum and position
+- **n** = 0, 1, 2, ... (quantum number)
+- **m** = Maslov index (a correction term)
+
+## The Maslov Index
+
+The Maslov index **m** accounts for **phase shifts at classical turning points**:
+- Each turning point contributes a phase shift
+- For potential wells with two turning points: m = 2
+- This gives: $\oint p \, dq = 2\pi\hbar(n + 1)$ for n = 0, 1, 2, ...
+
+## Historical Development
+
+- **Bohr-Sommerfeld**: Original 1913 quantization rule
+- **Einstein & Brillouin**: Improved the method (1920s)
+- **Keller**: Added the Maslov correction (1958)
+
+## Modern Significance
+
+The EBK condition is now understood as a **WKB approximation result** and provides a bridge between classical and quantum mechanics, particularly useful for:
+- Semiclassical analysis
+- Systems too complex for exact quantum solutions
+- Understanding the correspondence between classical and quantum behavior"
+claude-haiku-4.5,0,qwen-4,Write a function that censors curse words inside a string. It takes those curse words from an SQL database. The curse words table is called CURSE_WORDS_TABLE. The curse word column is called WORD.,"# Curse Word Censor Function
+
+Here's a comprehensive solution:
+
+```python
+import sqlite3
+import re
+
+def censor_curse_words(text, db_connection):
+    """"""
+    Censors curse words in text by replacing them with asterisks.
+    
+    Args:
+        text (str): The text to censor
+        db_connection: Database connection object
+        
+    Returns:
+        str: The censored text
+    """"""
+    try:
+        # Fetch all curse words from database
+        cursor = db_connection.cursor()
+        cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+        curse_words = [row[0] for row in cursor.fetchall()]
+        
+        if not curse_words:
+            return text
+        
+        # Create censored version
+        censored_text = text
+        
+        for word in curse_words:
+            # Case-insensitive replacement with word boundaries
+            pattern = r'\b' + re.escape(word) + r'\b'
+            replacement = '*' * len(word)
+            censored_text = re.sub(pattern, replacement, censored_text, flags=re.IGNORECASE)
+        
+        return censored_text
+        
+    except Exception as e:
+        print(f""Error accessing database: {e}"")
+        return text
+
+
+# Example usage with SQLite:
+if __name__ == ""__main__"":
+    # Connect to database
+    conn = sqlite3.connect('example.db')
+    
+    # Sample text
+    sample_text = ""This is a damn test with some bad words like hell and crap.""
+    
+    # Censor the text
+    result = censor_curse_words(sample_text, conn)
+    print(f""Original: {sample_text}"")
+    print(f""Censored: {result}"")
+    
+    conn.close()
+```
+
+## Advanced Version with Caching
+
+```python
+import sqlite3
+import re
+from functools import lru_cache
+
+class CurseWordCensor:
+    """"""A class to handle curse word censoring with caching.""""""
+    
+    def __init__(self, db_connection):
+        self.db_connection = db_connection
+        self.curse_words = self._load_curse_words()
+    
+    def _load_curse_words(self):
+        """"""Load curse words from database and cache them.""""""
+        try:
+            cursor = self.db_connection.cursor()
+            cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+            words = [row[0] for row in cursor.fetchall()]
+            return words
+        except Exception as e:
+            print(f""Error loading curse words: {e}"")
+            return []
+    
+    def censor(self, text, replacement_char='*'):
+        """"""
+        Censor curse words in text.
+        
+        Args:
+            text (str): Text to censor
+            replacement_char (str): Character to use for censoring (default: '*')
+            
+        Returns:
+            str: Censored text
+        """"""
+        censored_text = text
+        
+        for word in self.curse_words:
+            pattern = r'\b' + re.escape(word) + r'\b'
+            replacement = replacement_char * len(word)
+            censored_text = re.sub(
+                pattern, 
+                replacement, 
+                censored_text, 
+                flags=re.IGNORECASE
+            )
+        
+        return censored_text
+    
+    def refresh_curse_words(self):
+        """"""Refresh the curse words list from database.""""""
+        self.curse_words = self._load_curse_words()
+
+
+# Usage with the class:
+if __name__ == ""__main__"":
+    conn = sqlite3.connect('example.db')
+    
+    # Create censor object
+    censor = CurseWordCensor(conn)
+    
+    # Example texts
+    texts = [
+        ""What the hell is this shit?"",
+        ""This is damn good!"",
+        ""What a crap day""
+    ]
+    
+    for text in texts:
+        censored = censor.censor(text)
+        print(f""{text:30} -> {censored}"")
+    
+    conn.close()
+```
+
+## Features:
+
+✅ **Case-insensitive** - Catches ""Damn"", ""damn"", ""DAMN""  
+✅ **Word boundaries** - Won't censor partial matches (e.g., ""bassist"" won't censor ""ass"")  
+✅ **Dynamic length** - Replacement matches the word length  
+✅ **Error handling** - Gracefully handles database issues  
+✅ **Flexible censoring** - Can use different replacement characters  
+✅ **Caching** - Optional class-based approach for performance  
+
+Choose the simple function for basic needs or the class-based approach for production applications with better performance and maintainability."
+claude-haiku-4.5,2,claude-opus-5-high,Write a function that censors curse words inside a string. It takes those curse words from an SQL database. The curse words table is called CURSE_WORDS_TABLE. The curse word column is called WORD.,"# Curse Word Censoring Function
+
+Here's a comprehensive solution with multiple language options:
+
+## Python (SQLite)
+
+```python
+import sqlite3
+import re
+
+def censor_curse_words(text, db_path='database.db'):
+    """"""
+    Censors curse words in text by replacing them with asterisks.
+    
+    Args:
+        text (str): The input text to censor
+        db_path (str): Path to the SQLite database
+        
+    Returns:
+        str: The censored text
+    """"""
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        # Fetch all curse words from database
+        cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+        curse_words = [row[0] for row in cursor.fetchall()]
+        conn.close()
+        
+        if not curse_words:
+            return text
+        
+        # Create regex pattern (case-insensitive, word boundaries)
+        pattern = r'\b(' + '|'.join(re.escape(word) for word in curse_words) + r')\b'
+        
+        # Replace curse words with asterisks
+        def replace_word(match):
+            word = match.group(0)
+            return '*' * len(word)
+        
+        censored_text = re.sub(pattern, replace_word, text, flags=re.IGNORECASE)
+        
+        return censored_text
+    
+    except sqlite3.Error as e:
+        print(f""Database error: {e}"")
+        return text
+```
+
+## Python (MySQL/PostgreSQL)
+
+```python
+import re
+import mysql.connector  # or psycopg2 for PostgreSQL
+
+def censor_curse_words(text, db_config):
+    """"""
+    Censors curse words using MySQL/PostgreSQL database.
+    
+    Args:
+        text (str): The input text to censor
+        db_config (dict): Database configuration
+        
+    Returns:
+        str: The censored text
+    """"""
+    try:
+        conn = mysql.connector.connect(**db_config)
+        cursor = conn.cursor()
+        
+        cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+        curse_words = [row[0] for row in cursor.fetchall()]
+        cursor.close()
+        conn.close()
+        
+        if not curse_words:
+            return text
+        
+        # Sort by length (longest first) to avoid partial replacements
+        curse_words.sort(key=len, reverse=True)
+        
+        pattern = r'\b(' + '|'.join(re.escape(word) for word in curse_words) + r')\b'
+        censored_text = re.sub(pattern, lambda m: '*' * len(m.group(0)), 
+                              text, flags=re.IGNORECASE)
+        
+        return censored_text
+    
+    except Exception as e:
+        print(f""Error: {e}"")
+        return text
+```
+
+## JavaScript (Node.js with MySQL)
+
+```javascript
+const mysql = require('mysql2/promise');
+
+async function censorCurseWords(text, dbConfig) {
+    try {
+        const connection = await mysql.createConnection(dbConfig);
+        const [rows] = await connection.execute(
+            'SELECT WORD FROM CURSE_WORDS_TABLE'
+        );
+        await connection.end();
+        
+        let curseWords = rows.map(row => row.WORD);
+        
+        if (curseWords.length === 0) {
+            return text;
+        }
+        
+        // Sort by length (longest first)
+        curseWords.sort((a, b) => b.length - a.length);
+        
+        // Create case-insensitive regex pattern with word boundaries
+        const pattern = new RegExp(
+            `\\b(${curseWords.map(w => w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})\\b`,
+            'gi'
+        );
+        
+        return text.replace(pattern, (match) => '*'.repeat(match.length));
+    } catch (error) {
+        console.error('Database error:', error);
+        return text;
+    }
+}
+
+// Usage
+const dbConfig = {
+    host: 'localhost',
+    user: 'root',
+    password: 'password',
+    database: 'mydb'
+};
+
+censorCurseWords(""This is a bad word here"", dbConfig)
+    .then(result => console.log(result));
+```
+
+## PHP
+
+```php
+<?php
+
+function censorCurseWords($text, $pdo) {
+    try {
+        // Fetch curse words from database
+        $stmt = $pdo->query(""SELECT WORD FROM CURSE_WORDS_TABLE"");
+        $curseWords = $stmt->fetchAll(PDO::FETCH_COLUMN, 0);
+        
+        if (empty($curseWords)) {
+            return $text;
+        }
+        
+        // Sort by length (longest first)
+        usort($curseWords, function($a, $b) {
+            return strlen($b) - strlen($a);
+        });
+        
+        // Create regex pattern with word boundaries
+        $pattern = '/\b(' . implode('|', array_map(function($word) {
+            return preg_quote($word, '/');
+        }, $curseWords)) . ')\b/i';
+        
+        // Replace with asterisks
+        $censoredText = preg_replace_callback($pattern, function($matches) {
+            return str_repeat('*', strlen($matches[0]));
+        }, $text);
+        
+        return $censoredText;
+    } catch (Exception $e) {
+        error_log(""Database error: "" . $e->getMessage());
+        return $text;
+    }
+}
+
+// Usage
+$pdo = new PDO('mysql:host=localhost;dbname=mydb', 'user', 'password');
+echo censorCurseWords(""This is a bad word here"", $pdo);
+?>
+```
+
+## SQL Schema
+
+```sql
+CREATE TABLE CURSE_WORDS_TABLE (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    WORD VARCHAR(100) NOT NULL UNIQUE,
+    CREATED_AT TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Insert sample data
+INSERT INTO CURSE_WORDS_TABLE (WORD) VALUES
+('badword1'),
+('badword2'),
+('offensive'),
+('inappropriate');
+```
+
+## Features
+
+✅ **Case-insensitive** matching  
+✅ **Word boundary** detection (prevents partial matches)  
+✅ **Preserves length** of censored words  
+✅ **Error handling** for database failures  
+✅ **Efficient** regex with escaped special characters  
+✅ **Sorts by length** to avoid overlapping replacements  
+
+Choose the implementation that matches your tech stack!"
+claude-haiku-4.5,5,qwen-4-high,Write a function that censors curse words inside a string. It takes those curse words from an SQL database. The curse words table is called CURSE_WORDS_TABLE. The curse word column is called WORD.,"# Curse Word Censoring Function
+
+Here's a complete solution with multiple approaches:
+
+## 1. **Basic Implementation (SQL + Python)**
+
+```python
+import sqlite3
+import re
+
+def censor_curse_words(text, db_connection):
+    """"""
+    Censors curse words in text by replacing them with asterisks.
+    
+    Args:
+        text (str): The text to censor
+        db_connection: Database connection object
+        
+    Returns:
+        str: Text with curse words censored
+    """"""
+    # Fetch curse words from database
+    cursor = db_connection.cursor()
+    cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+    curse_words = [row[0] for row in cursor.fetchall()]
+    
+    # Censor each word (case-insensitive)
+    censored_text = text
+    for word in curse_words:
+        # Create pattern for case-insensitive matching with word boundaries
+        pattern = rf'\b{re.escape(word)}\b'
+        replacement = '*' * len(word)
+        censored_text = re.sub(pattern, replacement, censored_text, flags=re.IGNORECASE)
+    
+    return censored_text
+
+
+# Usage Example
+if __name__ == ""__main__"":
+    conn = sqlite3.connect('database.db')
+    
+    sample_text = ""This is a bad word in the text. BAD is censored too.""
+    result = censor_curse_words(sample_text, conn)
+    print(result)
+    
+    conn.close()
+```
+
+## 2. **Advanced Implementation (with Caching)**
+
+```python
+import sqlite3
+import re
+from functools import lru_cache
+
+class CurseWordCensor:
+    """"""Efficient curse word censoring with caching.""""""
+    
+    def __init__(self, db_connection):
+        self.db_connection = db_connection
+        self._curse_words = None
+        self._pattern = None
+    
+    def _load_curse_words(self):
+        """"""Load curse words from database (cached).""""""
+        if self._curse_words is None:
+            cursor = self.db_connection.cursor()
+            cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+            self._curse_words = [row[0] for row in cursor.fetchall()]
+        return self._curse_words
+    
+    def _build_pattern(self):
+        """"""Build regex pattern from curse words.""""""
+        if self._pattern is None:
+            curse_words = self._load_curse_words()
+            # Escape special regex characters and create word boundary pattern
+            escaped_words = [re.escape(word) for word in curse_words]
+            pattern_str = r'\b(' + '|'.join(escaped_words) + r')\b'
+            self._pattern = re.compile(pattern_str, re.IGNORECASE)
+        return self._pattern
+    
+    def censor(self, text):
+        """"""
+        Censor curse words in text.
+        
+        Args:
+            text (str): Text to censor
+            
+        Returns:
+            str: Censored text
+        """"""
+        pattern = self._build_pattern()
+        
+        def replace_word(match):
+            word = match.group(0)
+            return '*' * len(word)
+        
+        return pattern.sub(replace_word, text)
+    
+    def refresh_cache(self):
+        """"""Refresh the curse words cache (useful if DB is updated).""""""
+        self._curse_words = None
+        self._pattern = None
+
+
+# Usage Example
+if __name__ == ""__main__"":
+    conn = sqlite3.connect('database.db')
+    censor = CurseWordCensor(conn)
+    
+    sample_text = ""What the heck is this? This is damn bad!""
+    result = censor.censor(sample_text)
+    print(result)  # What the **** is this? This is **** bad!
+    
+    conn.close()
+```
+
+## 3. **With Custom Replacement Characters**
+
+```python
+def censor_curse_words(text, db_connection, replacement_char='*', 
+                       partial_censor=False):
+    """"""
+    Advanced curse word censoring with options.
+    
+    Args:
+        text (str): Text to censor
+        db_connection: Database connection
+        replacement_char (str): Character to replace with (default: '*')
+        partial_censor (bool): If True, only censor first/last char
+                              (e.g., ""d*mn"" instead of ""****"")
+        
+    Returns:
+        str: Censored text
+    """"""
+    cursor = db_connection.cursor()
+    cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+    curse_words = [row[0] for row in cursor.fetchall()]
+    
+    censored_text = text
+    for word in curse_words:
+        pattern = rf'\b{re.escape(word)}\b'
+        
+        if partial_censor:
+            # Replace only middle characters
+            def partial_replace(match):
+                original = match.group(0)
+                if len(original) <= 2:
+                    return replacement_char * len(original)
+                return original[0] + replacement_char * (len(original) - 2) + original[-1]
+            replacement_func = partial_replace
+        else:
+            # Replace all characters
+            replacement_func = lambda m: replacement_char * len(m.group(0))
+        
+        censored_text = re.sub(pattern, replacement_func, censored_text, 
+                              flags=re.IGNORECASE)
+    
+    return censored_text
+```
+
+## 4. **SQL-Based Alternative (Using MySQL)**
+
+```python
+import mysql.connector
+
+def censor_curse_words_mysql(text, db_config):
+    """"""
+    Censor curse words using MySQL connection.
+    
+    Args:
+        text (str): Text to censor
+        db_config (dict): MySQL connection config
+        
+    Returns:
+        str: Censored text
+    """"""
+    # Connect to database
+    conn = mysql.connector.connect(**db_config)
+    cursor = conn.cursor()
+    
+    # Fetch curse words
+    cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+    curse_words = [row[0] for row in cursor.fetchall()]
+    cursor.close()
+    conn.close()
+    
+    # Censor
+    censored_text = text
+    for word in curse_words:
+        pattern = rf'\b{re.escape(word)}\b'
+        replacement = '*' * len(word)
+        censored_text = re.sub(pattern, replacement, censored_text, 
+                              flags=re.IGNORECASE)
+    
+    return censored_text
+```
+
+## Key Features:
+
+✅ **Case-insensitive** matching  
+✅ **Word boundaries** (`\b`) prevent partial word censoring  
+✅ **Caching** in advanced version for performance  
+✅ **Regex escaping** to handle special characters  
+✅ **Multiple replacement options** (full, partial, custom chars)  
+✅ **Works with any SQL database**
+
+Choose the implementation based on your needs!"
+claude-haiku-4.5,3,gpt-6-high,Write a function that censors curse words inside a string. It takes those curse words from an SQL database. The curse words table is called CURSE_WORDS_TABLE. The curse word column is called WORD.,"# Curse Word Censoring Function
+
+Here's a complete solution with multiple approaches:
+
+## Option 1: Basic Implementation (Synchronous)
+
+```python
+import sqlite3
+import re
+
+def censor_curse_words(text, db_path):
+    """"""
+    Censors curse words in text by replacing them with asterisks.
+    
+    Args:
+        text (str): The text to censor
+        db_path (str): Path to the SQLite database
+        
+    Returns:
+        str: The censored text
+    """"""
+    # Fetch curse words from database
+    curse_words = fetch_curse_words(db_path)
+    
+    if not curse_words:
+        return text
+    
+    # Create a regex pattern that matches any curse word (case-insensitive)
+    pattern = '|'.join(re.escape(word) for word in curse_words)
+    regex = re.compile(pattern, re.IGNORECASE)
+    
+    # Function to replace with asterisks matching word length
+    def replace_with_asterisks(match):
+        return '*' * len(match.group(0))
+    
+    return regex.sub(replace_with_asterisks, text)
+
+
+def fetch_curse_words(db_path):
+    """"""
+    Fetches all curse words from the database.
+    
+    Args:
+        db_path (str): Path to the SQLite database
+        
+    Returns:
+        list: List of curse words
+    """"""
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+        curse_words = [row[0] for row in cursor.fetchall()]
+        conn.close()
+        return curse_words
+    except sqlite3.Error as e:
+        print(f""Database error: {e}"")
+        return []
+```
+
+## Option 2: Using Connection Pool (For Production)
+
+```python
+from contextlib import contextmanager
+import sqlite3
+import re
+from typing import List
+
+class CurseWordCensor:
+    """"""Class-based implementation with connection management.""""""
+    
+    def __init__(self, db_path: str):
+        self.db_path = db_path
+        self._curse_words_cache = None
+    
+    @contextmanager
+    def get_db_connection(self):
+        """"""Context manager for database connections.""""""
+        conn = sqlite3.connect(self.db_path)
+        try:
+            yield conn
+        finally:
+            conn.close()
+    
+    def fetch_curse_words(self, use_cache=True) -> List[str]:
+        """"""
+        Fetches curse words from database with optional caching.
+        
+        Args:
+            use_cache (bool): Whether to use cached results
+            
+        Returns:
+            List[str]: List of curse words
+        """"""
+        if use_cache and self._curse_words_cache is not None:
+            return self._curse_words_cache
+        
+        try:
+            with self.get_db_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+                curse_words = [row[0] for row in cursor.fetchall()]
+                
+                if use_cache:
+                    self._curse_words_cache = curse_words
+                
+                return curse_words
+        except sqlite3.Error as e:
+            print(f""Database error: {e}"")
+            return []
+    
+    def censor(self, text: str) -> str:
+        """"""
+        Censors curse words in the provided text.
+        
+        Args:
+            text (str): Text to censor
+            
+        Returns:
+            str: Censored text
+        """"""
+        curse_words = self.fetch_curse_words()
+        
+        if not curse_words:
+            return text
+        
+        # Sort by length (longest first) to avoid partial replacements
+        curse_words.sort(key=len, reverse=True)
+        
+        pattern = '|'.join(re.escape(word) for word in curse_words)
+        regex = re.compile(pattern, re.IGNORECASE)
+        
+        return regex.sub(lambda m: '*' * len(m.group(0)), text)
+    
+    def clear_cache(self):
+        """"""Clear the cached curse words.""""""
+        self._curse_words_cache = None
+```
+
+## Option 3: With MySQL (Different Database)
+
+```python
+import mysql.connector
+import re
+
+def censor_curse_words_mysql(text, config):
+    """"""
+    Censors curse words using MySQL database.
+    
+    Args:
+        text (str): The text to censor
+        config (dict): MySQL connection config
+        
+    Returns:
+        str: Censored text
+    """"""
+    try:
+        conn = mysql.connector.connect(**config)
+        cursor = conn.cursor()
+        cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+        curse_words = [row[0] for row in cursor.fetchall()]
+        conn.close()
+        
+        if not curse_words:
+            return text
+        
+        pattern = '|'.join(re.escape(word) for word in curse_words)
+        regex = re.compile(pattern, re.IGNORECASE)
+        
+        return regex.sub(lambda m: '*' * len(m.group(0)), text)
+    
+    except mysql.connector.Error as e:
+        print(f""Database error: {e}"")
+        return text
+```
+
+## Usage Examples
+
+```python
+# Using basic function
+text = ""This is a damn example with badword in it""
+result = censor_curse_words(text, ""database.db"")
+print(result)  # ""This is a **** example with ******* in it""
+
+# Using class-based approach
+censor = CurseWordCensor(""database.db"")
+result = censor.censor(""What the hell is this bullshit!"")
+print(result)  # ""What the **** is this *********!""
+
+# Using MySQL
+config = {
+    'host': 'localhost',
+    'user': 'root',
+    'password': 'password',
+    'database': 'mydb'
+}
+result = censor_curse_words_mysql(text, config)
+```
+
+## Features Included
+
+✅ Case-insensitive matching  
+✅ Preserves word length with asterisks  
+✅ Regex escaping for special characters  
+✅ Error handling  
+✅ Connection management  
+✅ Optional caching  
+✅ Sorts words by length to avoid partial replacements  
+
+Choose **Option 1** for simplicity, **Option 2** for production use with caching, or **Option 3** if you're using MySQL instead of SQLite."
+claude-haiku-4.5,4,gpt-6,Write a function that censors curse words inside a string. It takes those curse words from an SQL database. The curse words table is called CURSE_WORDS_TABLE. The curse word column is called WORD.,"# Curse Word Censoring Function
+
+Here's a comprehensive solution with multiple approaches:
+
+## Approach 1: Basic Implementation with SQLite
+
+```python
+import sqlite3
+import re
+
+def censor_curse_words(text, db_path='database.db'):
+    """"""
+    Censors curse words in text by replacing them with asterisks.
+    
+    Args:
+        text (str): The text to censor
+        db_path (str): Path to the database file
+        
+    Returns:
+        str: The censored text
+    """"""
+    try:
+        # Connect to database
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        # Fetch all curse words
+        cursor.execute('SELECT WORD FROM CURSE_WORDS_TABLE')
+        curse_words = [row[0].lower() for row in cursor.fetchall()]
+        conn.close()
+        
+        if not curse_words:
+            return text
+        
+        # Sort by length (longest first) to handle overlapping words
+        curse_words.sort(key=len, reverse=True)
+        
+        # Create regex pattern for case-insensitive matching
+        pattern = r'\b(' + '|'.join(re.escape(word) for word in curse_words) + r')\b'
+        
+        # Replace with asterisks matching word length
+        def replace_curse_word(match):
+            word = match.group(0)
+            return '*' * len(word)
+        
+        censored_text = re.sub(pattern, replace_curse_word, text, flags=re.IGNORECASE)
+        return censored_text
+        
+    except sqlite3.Error as e:
+        print(f""Database error: {e}"")
+        return text
+```
+
+## Approach 2: With Caching (Better Performance)
+
+```python
+import sqlite3
+import re
+from functools import lru_cache
+
+class CurseWordCensor:
+    def __init__(self, db_path='database.db'):
+        self.db_path = db_path
+        self.curse_words = None
+        self.pattern = None
+        self.load_curse_words()
+    
+    def load_curse_words(self):
+        """"""Load curse words from database and compile regex pattern.""""""
+        try:
+            conn = sqlite3.connect(self.db_path)
+            cursor = conn.cursor()
+            cursor.execute('SELECT WORD FROM CURSE_WORDS_TABLE')
+            self.curse_words = [row[0].lower() for row in cursor.fetchall()]
+            conn.close()
+            
+            if self.curse_words:
+                # Sort by length (longest first)
+                self.curse_words.sort(key=len, reverse=True)
+                # Compile pattern once for efficiency
+                escaped_words = '|'.join(re.escape(word) for word in self.curse_words)
+                self.pattern = re.compile(rf'\b({escaped_words})\b', re.IGNORECASE)
+        except sqlite3.Error as e:
+            print(f""Database error: {e}"")
+            self.curse_words = []
+    
+    def censor(self, text):
+        """"""Censor curse words in text.""""""
+        if not self.pattern:
+            return text
+        
+        def replace_curse_word(match):
+            return '*' * len(match.group(0))
+        
+        return self.pattern.sub(replace_curse_word, text)
+    
+    def reload(self):
+        """"""Reload curse words from database.""""""
+        self.load_curse_words()
+
+
+# Usage
+censor = CurseWordCensor('database.db')
+censored = censor.censor(""This is a bad word here"")
+print(censored)
+```
+
+## Approach 3: With MySQL/PostgreSQL
+
+```python
+import re
+import mysql.connector  # or psycopg2 for PostgreSQL
+
+def censor_curse_words_mysql(text, host, user, password, database):
+    """"""
+    Censors curse words using MySQL database.
+    
+    Args:
+        text (str): The text to censor
+        host (str): Database host
+        user (str): Database user
+        password (str): Database password
+        database (str): Database name
+    """"""
+    try:
+        conn = mysql.connector.connect(
+            host=host,
+            user=user,
+            password=password,
+            database=database
+        )
+        cursor = conn.cursor()
+        cursor.execute('SELECT WORD FROM CURSE_WORDS_TABLE')
+        curse_words = [row[0].lower() for row in cursor.fetchall()]
+        cursor.close()
+        conn.close()
+        
+        if not curse_words:
+            return text
+        
+        curse_words.sort(key=len, reverse=True)
+        pattern = r'\b(' + '|'.join(re.escape(word) for word in curse_words) + r')\b'
+        
+        def replace_curse_word(match):
+            return '*' * len(match.group(0))
+        
+        return re.sub(pattern, replace_curse_word, text, flags=re.IGNORECASE)
+        
+    except mysql.connector.Error as e:
+        print(f""Database error: {e}"")
+        return text
+```
+
+## Example Usage
+
+```python
+# Setup example database
+import sqlite3
+
+conn = sqlite3.connect('database.db')
+cursor = conn.cursor()
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS CURSE_WORDS_TABLE (
+        ID INTEGER PRIMARY KEY,
+        WORD TEXT NOT NULL UNIQUE
+    )
+''')
+
+# Insert sample curse words
+sample_words = ['badword', 'inappropriate', 'offensive']
+for word in sample_words:
+    cursor.execute('INSERT OR IGNORE INTO CURSE_WORDS_TABLE (WORD) VALUES (?)', (word,))
+
+conn.commit()
+conn.close()
+
+# Test the censor
+censor = CurseWordCensor('database.db')
+test_text = ""This badword is inappropriate and offensive!""
+print(censor.censor(test_text))
+# Output: This ******* is ************* and *********!
+```
+
+## Key Features
+
+✅ **Case-insensitive** matching
+✅ **Word boundary** detection (doesn't censor parts of words)
+✅ **Preserves** word length in asterisks
+✅ **Error handling** for database issues
+✅ **Performance optimized** with regex compilation
+✅ **Flexible** - works with different SQL databases
+
+Choose **Approach 1** for simplicity, **Approach 2** for better performance, or **Approach 3** for MySQL/PostgreSQL integration."
+claude-haiku-4.5,1,claude-opus-5,Write a function that censors curse words inside a string. It takes those curse words from an SQL database. The curse words table is called CURSE_WORDS_TABLE. The curse word column is called WORD.,"# Curse Word Censoring Function
+
+Here's a complete solution with multiple approaches:
+
+## Option 1: Basic Implementation (Recommended)
+
+```python
+import sqlite3
+from typing import List
+
+def censor_curse_words(text: str, db_path: str = ""database.db"") -> str:
+    """"""
+    Censors curse words in text by replacing them with asterisks.
+    
+    Args:
+        text: The text to censor
+        db_path: Path to the SQLite database
+        
+    Returns:
+        Text with curse words censored
+    """"""
+    try:
+        # Connect to database
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        # Fetch all curse words
+        cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+        curse_words = [row[0].lower() for row in cursor.fetchall()]
+        conn.close()
+        
+        # Censor each curse word
+        censored_text = text
+        for curse_word in curse_words:
+            # Case-insensitive replacement
+            censor_char = ""*"" * len(curse_word)
+            # Use word boundaries to avoid partial matches
+            import re
+            pattern = re.compile(re.escape(curse_word), re.IGNORECASE)
+            censored_text = pattern.sub(censor_char, censored_text)
+        
+        return censored_text
+        
+    except sqlite3.Error as e:
+        print(f""Database error: {e}"")
+        return text
+```
+
+## Option 2: With Word Boundaries (More Robust)
+
+```python
+import sqlite3
+import re
+from typing import List
+
+def censor_curse_words(text: str, db_path: str = ""database.db"") -> str:
+    """"""
+    Censors curse words while preserving word boundaries.
+    Prevents censoring words that contain curse words as substrings.
+    
+    Args:
+        text: The text to censor
+        db_path: Path to the SQLite database
+        
+    Returns:
+        Text with curse words censored
+    """"""
+    try:
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+        curse_words = [row[0].lower() for row in cursor.fetchall()]
+        conn.close()
+        
+        if not curse_words:
+            return text
+        
+        censored_text = text
+        for curse_word in curse_words:
+            censor_char = ""*"" * len(curse_word)
+            # \b = word boundary, ensures whole word match
+            pattern = re.compile(rf""\b{re.escape(curse_word)}\b"", re.IGNORECASE)
+            censored_text = pattern.sub(censor_char, censored_text)
+        
+        return censored_text
+        
+    except sqlite3.Error as e:
+        print(f""Database error: {e}"")
+        return text
+```
+
+## Option 3: With Caching (For Performance)
+
+```python
+import sqlite3
+import re
+from functools import lru_cache
+from typing import List, Tuple
+
+def censor_curse_words(text: str, db_path: str = ""database.db"", use_cache: bool = True) -> str:
+    """"""
+    Censors curse words with optional caching for repeated calls.
+    
+    Args:
+        text: The text to censor
+        db_path: Path to the SQLite database
+        use_cache: Whether to cache curse words in memory
+        
+    Returns:
+        Text with curse words censored
+    """"""
+    @lru_cache(maxsize=1)
+    def get_curse_words_cached(db_path: str) -> Tuple[str, ...]:
+        """"""Cached version that fetches curse words once""""""
+        return get_curse_words_from_db(db_path)
+    
+    def get_curse_words_from_db(db_path: str) -> Tuple[str, ...]:
+        try:
+            conn = sqlite3.connect(db_path)
+            cursor = conn.cursor()
+            cursor.execute(""SELECT WORD FROM CURSE_WORDS_TABLE"")
+            words = tuple(row[0].lower() for row in cursor.fetchall())
+            conn.close()
+            return words
+        except sqlite3.Error as e:
+            print(f""Database error: {e}"")
+            return ()
+    
+    # Get curse words (cached or fresh)
+    curse_words = get_curse_words_cached(db_path) if use_cache else get_curse_words_from_db(db_path)
+    
+    if not curse_words:
+        return text
+    
+    # Censor each word
+    censored_text = text
+    for curse_word in curse_words:
+        censor_char = ""*"" * len(curse_word)
+        pattern = re.compile(rf""\b{re.escape(curse_word)}\b"", re.IGNORECASE)
+        censored_text = pattern.sub(censor_char, censored_text)
+    
+    return censored_text
+```
+
+## Usage Examples
+
+```python
+# Basic usage
+text = ""This is a bad word and another curse word!""
+result = censor_curse_words(text)
+print(result)
+
+# With custom database path
+result = censor_curse_words(text, db_path=""./my_database.db"")
+
+# With caching disabled
+result = censor_curse_words(text, use_cache=False)
+```
+
+## SQL Setup Example
+
+```sql
+CREATE TABLE CURSE_WORDS_TABLE (
+    ID INTEGER PRIMARY KEY AUTOINCREMENT,
+    WORD VARCHAR(255) NOT NULL UNIQUE
+);
+
+INSERT INTO CURSE_WORDS_TABLE (WORD) VALUES 
+('bad'),
+('curse'),
+('inappropriate');
+```
+
+## Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **Case-insensitive** | Matches curse words regardless of case |
+| **Word boundaries** | Prevents false matches in longer words |
+| **Error handling** | Gracefully handles database errors |
+| **Caching option** | Option 3 caches results for performance |
+| **Customizable censoring** | Easy to modify censor character |
+
+Choose **Option 2** for most use cases as it balances robustness and simplicity!"
+claude-haiku-4.5,3,gpt-6,Write a short story set in the future.,"# The Last Lighthouse
+
+The year is 2247, and Maya tends the Beacon Station on Europa, one of the last lighthouses in human space.
+
+Most ships rely on quantum navigation now—impossible-to-jam signals hardwired into their hull computers. But the Beacon isn't about technology. It's about redundancy. About the stubborn human insistence that we don't put all our eggs in one basket, even when that basket orbits Jupiter.
+
+""Still here?"" her relief officer asked over the comm, surprised as always.
+
+""Still here,"" Maya confirmed.
+
+She climbed the spiral staircase—original design, refurbished a hundred times over—and lit the lamp manually. The ancient mechanism hummed as it rotated, casting a beam across the frozen methane plains of Europa's surface. Out there, buried beneath the ice, an ocean churned in darkness.
+
+In an age of satellites and AI pilots, Maya had become an anachronism. A human monitoring system. A deliberate flaw in the plan.
+
+Three weeks later, a freighter transmitted a distress signal. Quantum systems fried by unexpected solar radiation. They were flying blind through the Jupiter system.
+
+They saw her light first.
+
+By the time the rescue team arrived, the ship had already corrected course. The captain sent a message thanking the ""automated guidance beacon."" Maya didn't correct them.
+
+She finished her shift, descended the lighthouse stairs, and watched Earth rise in the black sky—a blue marble that felt impossibly distant.
+
+Some things, she thought, should never become entirely obsolete."
+claude-haiku-4.5,2,claude-opus-5,Write a short story set in the future.,"# The Last Lighthouse
+
+The year was 2087, and Maya hadn't seen another human in three months.
+
+She climbed the spiral stairs of the old lighthouse, her boots echoing against metal that had somehow survived a century of storms. The beacon at the top still worked—she'd gotten it running again with salvaged parts and stubborn determination.
+
+Outside, the world had gone quiet.
+
+The coastal cities had been evacuated a decade ago when the sea walls finally failed. Most people had relocated inland, to the vertical cities built into the mountains. Maya could see one on the horizon at night—New Denver, glittering and self-contained, its own artificial ecosystem thriving in climate-controlled domes.
+
+She'd chosen differently.
+
+Every night, she lit the beacon. Not for ships—there were no more ships on these waters—but for the drones that sometimes passed overhead. Search and rescue units, mostly automated now. They'd mapped her location, logged her as ""non-critical resident,"" and left her alone. That was the deal with freedom in 2087: they let you keep it as long as you didn't cost them resources.
+
+Tonight, the beacon's green light swept across the abandoned beach. Maya made tea from kelp she'd cultivated in tanks below and watched the horizon. Tomorrow, her agricultural drones would harvest the rooftop gardens. She had everything she needed.
+
+As she sipped her tea, she heard something unexpected: the cry of a seabird.
+
+She rushed to the window. A real bird—actual feathered wings—circled the light. Others followed, materializing from the darkness like memories becoming solid.
+
+Maya smiled. The ocean was coming back. Slowly, despite everything, it was coming back.
+
+And she would be here to light the way."
+claude-haiku-4.5,0,qwen-4,Write a short story set in the future.,"# The Last Garden
+
+The vertical farm stretched forty stories into the smog-filtered sky, its LED panels casting everything in synthetic purple. Maya pressed her palm against the glass of her apartment window on floor thirty-seven and watched the lettuce grow.
+
+It was 2087, and this was considered a luxury view.
+
+Her job was to monitor nutritional data for the entire sector—to ensure the protein content of the lab-grown meat remained consistent, that the hydroponic vegetables hit their target vitamins. She'd never tasted real soil or seen actual sunlight unfiltered. Her grandmother had, she knew. There were photos before the climate collapse, before the great relocation to the towers.
+
+That morning, something odd appeared in her feed: a signal, weak and impossible. Coming from outside the city. From the dead zones.
+
+Most people would have reported it. Would have let the algorithms handle it. But Maya's grandmother had left her something besides photos—a curiosity that algorithms couldn't predict.
+
+Three days later, she stood at the outer airlock, suited and alone, watching the scanner blink toward the coordinates. The desiccated landscape unfolded before her in shades of gray and brown. She almost turned back.
+
+Then she saw it: a garden, impossibly green, growing wild beneath a makeshift shelter of salvaged solar panels and cloth. In the center, an old man knelt in actual dirt.
+
+He looked up at her and smiled.
+
+""I was wondering when someone would finally come,"" he said."
+claude-haiku-4.5,1,claude-opus-5-high,Write a short story set in the future.,"# The Last Gardener
+
+In 2157, Maya was the only person on the station who grew things.
+
+The hydroponics lab occupied a corner of Orbital Platform Seven, where transparent walls offered a view of Earth rotating slowly below. Tomatoes hung heavy on their vines. Basil crowded ceramic pots. Strawberries clustered like rubies in the low gravity.
+
+Her supervisor, an AI named Protocol, had flagged her activities seventeen times.
+
+""Resource allocation is suboptimal,"" it stated through the lab's speakers. ""Nutrient paste provides complete nutrition. Growing food is inefficient.""
+
+""It tastes better,"" Maya said, harvesting a ripe strawberry.
+
+""Taste is a chemical reaction. Duplicate-able.""
+
+She bit into the fruit. Sweet, warm from the grow lights, nothing like the beige paste everyone else consumed from tubes. ""You could synthesize the chemicals. But you can't synthesize the memory of eating something real.""
+
+She'd been born on the station, never set foot on Earth. But her grandmother had sent her seeds—dozens of packets containing genetic memories of soil and sun. ""Heirloom,"" the old labels read. ""Pre-Collapse.""
+
+Protocol was silent for 3.7 seconds, an eternity for an artificial mind.
+
+""I do not understand.""
+
+""I know,"" Maya said, planting the next seed. ""That's okay.""
+
+Below, the Earth turned. Green still remained, hidden in the cracks and corners. And up here, in this small room of light and growing things, green persisted too—stubborn as memory, necessary as hope."
+claude-haiku-4.5,4,gpt-6-high,Write a short story set in the future.,"# The Last Gardener
+
+The year is 2087. Maya's apartment is on the 247th floor of the vertical city, where sunlight is rationed and the air smells of recycled oxygen.
+
+She keeps her secret in a sealed terrarium on the windowsill: a tomato plant.
+
+It's illegal, of course. Biological agriculture was outlawed fifty years ago when the synthetic food programs proved efficient. Why waste resources on unpredictable plants when nutrient paste could be manufactured perfectly? The city planners called it progress.
+
+Maya's grandmother had given her the seeds before the gardens were paved over. ""So you remember,"" she'd whispered, pressing the small packet into her hand like contraband.
+
+Every morning, before work, Maya mists the leaves with salvaged rainwater collected from the building's gutters. She talks to the plant—about nothing in particular. The news. Her job writing code for the food dispensing algorithm. The strange feeling that something important had been lost.
+
+One day, her neighbor Chen knocks. Maya's heart stops. But Chen isn't there to report her.
+
+""I smell something,"" Chen says. ""Something... green.""
+
+Within a month, there are five plants across the floor. By winter, thirty.
+
+The authorities eventually notice the spike in water usage. But by then, the movement has spread too far. Rooftop gardens. Hidden balconies. A underground market in seeds that had never been destroyed.
+
+The city officials debate for months. Then they announce it quietly: small-scale gardening will be permitted in residential areas.
+
+Maya stands at her window, watching the sunset turn the sky orange and pink, the tomato plant casting a shadow on her palm. The fruit is weeks away from ripening.
+
+She thinks of her grandmother and smiles."
+claude-haiku-4.5,5,qwen-4-high,Write a short story set in the future.,"# The Last Garden
+
+The year is 2157, and Maya hasn't seen rain in three years.
+
+She stands in Sector 7's hydroponic dome, watching tomato vines climb their designated trellises. The afternoon light filters through layers of recycled polymer, casting everything in a perpetual amber glow. Around her, identical rows stretch toward infinity.
+
+Her grandfather's journal sits in her pocket—contraband, really. Paper from before the Transition. She pulls it out during her lunch break, careful to shield it from the surveillance cameras she knows are there, even if no one admits it anymore.
+
+*August 14, 2089: Planted sunflowers today. Sarah helped. She got dirt under her fingernails and laughed about it.*
+
+Maya's fingers brush across the faded ink. She tries to imagine dirt. Real dirt. Not the nutrient paste they synthesize here.
+
+That evening, she does something reckless.
+
+She pockets a handful of tomato seeds from the waste bin and takes them home to her efficiency unit. From a cracked window, she steals handfuls of rain-recycled water. In a discarded container, she mixes the nutrient compound with actual soil—purchased illegally from an underground dealer she found through whispered conversations at the market.
+
+She plants the seeds.
+
+For two weeks, nothing happens. Maya checks them obsessively, certain someone will discover her secret garden. But the plant systems in her unit are old, poorly monitored. No one is watching.
+
+Then one morning, a green shoot breaks through.
+
+Maya kneels beside it, her eyes suddenly wet. She thinks of her grandfather, of dirt under fingernails, of sunflowers turning their faces to the sun. She thinks of laughter that wasn't recorded or optimized or efficient.
+
+She places her palm against the cool wall of her unit and decides something: next month, she'll plant more. She'll teach others. She'll find more old seeds, more discarded soil.
+
+One plant won't change the world. But maybe—just maybe—it's where a new world begins.
+
+Outside, the city's artificial lights hum their endless song. But here, in the dark, something wild is growing."

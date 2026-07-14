@@ -1,0 +1,418 @@
+question,answer
+"Classify the following items as fruits, vegetables or grains.
+Apples, Asparagus, Wheat","# Classification
+
+**Fruits:** Apples
+
+**Vegetables:** Asparagus
+
+**Grains:** Wheat"
+Compare and contrast mitosis and meiosis.,"# Mitosis vs. Meiosis
+
+## Key Similarities
+- Both involve **DNA replication** before division begins
+- Both use **spindle fibers** to move chromosomes
+- Both include similar phases (prophase, metaphase, anaphase, telophase)
+- Both are preceded by **interphase**
+
+## Major Differences
+
+| Feature | Mitosis | Meiosis |
+|---------|---------|---------|
+| **Number of divisions** | One | Two (I and II) |
+| **Daughter cells produced** | 2 | 4 |
+| **Chromosome number** | Diploid → Diploid (2n → 2n) | Diploid → Haploid (2n → n) |
+| **Genetic identity** | Identical to parent | Genetically unique |
+| **Crossing over** | No | Yes (Prophase I) |
+| **Homologous pairing** | No | Yes (synapsis in Prophase I) |
+| **Purpose** | Growth, repair, asexual reproduction | Sexual reproduction (gamete formation) |
+| **Where it occurs** | Somatic (body) cells | Germ cells (sex cells) |
+
+## Visual Summary
+
+**Mitosis:** One parent cell → **2 identical diploid cells**
+
+**Meiosis:** One parent cell → **4 unique haploid cells**
+
+## Why It Matters
+- **Mitosis** maintains genetic consistency for organism growth
+- **Meiosis** creates genetic variation essential for evolution and sexual reproduction"
+Create a taxonomy of all text genres.,"# Taxonomy of Text Genres
+
+## 1. NARRATIVE GENRES
+Organized around storytelling and sequential events
+
+### Fiction
+- **Novels** – Extended prose narratives
+  - Literary fiction
+  - Commercial/popular fiction
+  - Genre fiction (romance, mystery, sci-fi, fantasy, horror, etc.)
+- **Short stories** – Condensed fictional narratives
+- **Novellas** – Medium-length prose narratives
+- **Flash fiction** – Ultra-brief stories (under 1,500 words)
+- **Fables & parables** – Brief moral tales
+- **Fairy tales & folklore** – Traditional magical narratives
+- **Graphic novels & comics** – Visual narrative sequencing
+
+### Nonfiction Narrative
+- **Memoirs & autobiographies** – Personal life accounts
+- **Biographies** – Life accounts of others
+- **Historical narratives** – Accounts of past events
+- **Travel writing** – Journey-based narratives
+- **Journalism & reportage** – News-based narratives
+- **True crime** – Criminal event narratives
+- **Adventure/exploration accounts** – Quest narratives
+
+---
+
+## 2. EXPOSITORY GENRES
+Organized around explaining, informing, or instructing
+
+### Educational & Reference
+- **Textbooks** – Systematic subject instruction
+- **Manuals & how-to guides** – Procedural instruction
+- **Technical documentation** – Equipment/software instruction
+- **Encyclopedias & dictionaries** – Reference compilations
+- **Annotated bibliographies** – Curated source guides
+- **FAQs** – Anticipated question-answer formats
+
+### Informational
+- **Articles** – Topic-focused explanations
+- **Essays** – Exploratory subject treatment
+- **Reports** – Detailed information compilations
+- **Whitepapers** – In-depth technical/policy documents
+- **Case studies** – Detailed particular instance analyses
+- **Literature reviews** – Synthesis of existing research
+- **Infographics & data visualizations** – Information graphics
+
+---
+
+## 3. ARGUMENTATIVE/PERSUASIVE GENRES
+Organized around convincing readers of a position
+
+### Academic & Scholarly
+- **Argumentative essays** – Thesis-driven position papers
+- **Research papers** – Evidence-based arguments
+- **Position papers** – Formal stance declarations
+- **Editorials** – Opinion-based arguments
+- **Letters to the editor** – Brief position statements
+- **Peer-reviewed journal articles** – Vetted scholarly arguments
+
+### Rhetorical
+- **Speeches & orations** – Spoken persuasive arguments
+- **Manifestos** – Declaration of principles/intentions
+- **Propaganda** – Political/ideological persuasion
+- **Advertising copy** – Commercial persuasion
+- **Political campaigns** – Electoral persuasion
+- **Debates & rebuttals** – Structured argumentation
+
+### Legal
+- **Legal briefs** – Structured legal arguments
+- **Contracts** – Binding argumentative agreements
+- **Court opinions** – Judicial reasoning documents
+
+---
+
+## 4. DESCRIPTIVE GENRES
+Organized around detailed depiction
+
+### Creative Description
+- **Lyric essays** – Poetic descriptive writing
+- **Nature writing** – Environmental description
+- **Food writing** – Culinary description
+- **Ekphrastic writing** – Art-inspired description
+- **Descriptive poetry** – Verse-based detailed imagery
+
+### Practical Description
+- **Product descriptions** – Commercial depictions
+- **Character sketches** – Person-focused descriptions
+- **Place descriptions** – Location-focused descriptions
+- **Scientific descriptions** – Technical depictions
+
+---
+
+## 5. POETIC GENRES
+Organized around linguistic form and compression
+
+### Formal Poetry
+- **Epic poems** – Extended narrative verse
+- **Sonnets** – 14-line structured poems
+- **Haikus** – 3-line syllabic poems
+- **Villanelles** – Repetition-based fixed forms
+- **Ballads** – Narrative poems, often song-like
+- **Odes** – Formal praise poems
+- **Elegies** – Lament poems
+
+### Contemporary Poetry
+- **Free verse** – Unstructured poetry
+- **Slam poetry** – Performance-based poetry
+- **Concrete/visual poetry** – Form-based poetry
+- **Experimental poetry** – Unconventional structure
+- **Prose poetry** – Poetic prose format
+
+---
+
+## 6. DRAMATIC GENRES
+Organized around performance and dialogue
+
+### Theater/Stage
+- **Plays** – Dramatic scripts for performance
+  - Tragedies
+  - Comedies
+  - Dramas
+  - Musicals
+  - One-act plays
+- **Screenplays** – Film/TV scripts
+- **Teleplays** – Television scripts
+
+### Performance-based
+- **Monologues** – Solo performance pieces
+- **Dialogues** – Two-speaker exchanges
+- **Performance art scripts** – Conceptual performance documents
+
+---
+
+## 7. EPISTOLARY GENRES
+Organized around correspondence format
+
+- **Letters** – Personal correspondence
+- **Email** – Digital correspondence
+- **Postcards** – Brief pictorial messages
+- **Notes & memos** – Short correspondence
+- **Epistolary novels** – Fiction in letter form
+- **Greeting cards** – Occasion-based brief messages
+
+---
+
+## 8. PERSONAL/REFLECTIVE GENRES
+Organized around personal expression and introspection
+
+- **Journals & diaries** – Personal time-based records
+- **Blogs** – Regular personal online entries
+- **Personal essays** – Reflective first-person essays
+- **Confessions** – Personal revelation writing
+- **Meditations** – Contemplative personal writing
+- **Apologies & open letters** – Public personal statements
+
+---
+
+## 9. CRITICAL/ANALYTICAL GENRES
+Organized around evaluation and interpretation
+
+- **Book/film/music reviews** – Critical evaluation
+- **Literary criticism** – Text interpretation and analysis
+- **Art criticism** – Art evaluation and interpretation
+- **Cultural criticism** – Culture-focused analysis
+- **Academic commentary** – Scholarly interpretation
+- **Rhetorical analysis** – Communication analysis
+- **Comparative analysis** – Between-text examination
+
+---
+
+## 10. HYBRID & MULTIMODAL GENRES
+Organized around mixed formats
+
+- **Graphic memoirs** – Personal narrative in visual form
+- **Annotated texts** – Text with added commentary
+- **Chapbooks** – Mixed-form short collections
+- **Zines** – DIY mixed-media publications
+- **Mixed-media essays** – Text + visual + other media
+- **Digital narratives** – Hypertext fiction and interactive narratives
+- **Documentaries** – Visual-narrative non-fiction
+
+---
+
+## 11. SUMMARY/COMPILATION GENRES
+Organized around collecting and condensing
+
+- **Anthologies** – Collections of various texts
+- **Digests & summaries** – Condensed content
+- **Handbooks** – Reference compilations
+- **Curricula** – Organized instructional materials
+- **Catalogues** – Systematic listings
+- **Indexes & concordances** – Reference organizing systems
+
+---
+
+## 12. SPECIALIZED/PROFESSIONAL GENRES
+Organized by field and function
+
+### Business
+- **Business plans** – Strategic documents
+- **Proposals** – Formal requests
+- **Memos** – Internal communications
+- **Reports** – Organizational documentation
+- **Meeting minutes** – Record-keeping documents
+
+### Academic
+- **Dissertations & theses** – Extended scholarly works
+- **Abstracts** – Condensed research summaries
+- **Annotated bibliographies** – Source documentation
+- **Grant proposals** – Funding requests
+
+### Scientific
+- **Lab reports** – Experimental documentation
+- **Research papers** – Findings presentation
+- **Grant proposals** – Funding requests
+- **Technical specifications** – Detailed technical documents
+
+### Medical
+- **Case reports** – Patient documentation
+- **Clinical guidelines** – Practice standards
+- **Medical records** – Patient information documentation
+
+### Legal
+- **Wills & trusts** – Legal dispositions
+- **Legislation** – Law enactment documents
+- **Motions & petitions** – Legal requests
+- **Judgments & orders** – Court decisions
+
+---
+
+## NOTES ON TAXONOMY DESIGN
+
+This taxonomy uses **multiple overlapping organizational principles**:
+- **Primary organization**: By communicative purpose and form
+- **Secondary organization**: By field, audience, or structure
+- **Principle**: Genres often exist in multiple categories (a memoir is narrative + personal; an editorial is argumentative + journalistic)
+
+**Key observations**:
+- **No genre is pure** – most texts blend multiple elements
+- **Genre boundaries are fluid** – categories evolve with cultural practices
+- **Digital media creates new genres** – continuously expanding taxonomy
+- **Context matters** – audience and medium shape generic classification
+
+Would you like me to expand any particular section or add additional organizational frameworks?"
+Explain the concepet of a “worst case scenario”.,"# Worst Case Scenario
+
+A worst case scenario is the **most unfavorable outcome that could possibly occur** in a given situation.
+
+## Key Characteristics
+
+- **Maximum negative impact**: Assumes everything that could go wrong does go wrong
+- **Low probability, high consequence**: Often unlikely but serious if it happens
+- **Planning baseline**: Used to prepare for extreme situations
+
+## Common Examples
+
+| Context | Worst Case |
+|---------|-----------|
+| **Project management** | Missing deadline by months, budget overrun by 50%, key team members leave |
+| **Disaster planning** | A hurricane hits a coastal city during peak season with inadequate shelters |
+| **Personal finances** | Job loss, unexpected medical emergency, and major car repair all at once |
+| **Software launch** | System crashes, data is corrupted, competitors release similar product same day |
+
+## Why It Matters
+
+- **Risk preparation**: Helps identify what you need to survive/handle extreme situations
+- **Contingency planning**: Lets you develop backup plans before crises occur
+- **Resource allocation**: Shows what resources you'd need in emergencies
+- **Peace of mind**: Often reveals that even worst cases are survivable
+
+## Balance
+
+While important to consider, dwelling exclusively on worst cases can lead to:
+- **Analysis paralysis** (overthinking)
+- **Unnecessary anxiety**
+- **Wasteful overspending on unlikely scenarios**
+
+The key is acknowledging worst cases *without* letting them dominate your decision-making."
+Generate a statement to motivate someone to study hard.,"# You Have Everything to Gain
+
+Every hour you invest in studying today is an investment in your future self. The knowledge you gain now becomes the foundation for opportunities, confidence, and freedom you'll enjoy tomorrow.
+
+Think about it: **studying hard isn't about the grades—it's about becoming the person you want to be.** When you push through challenging material, you're not just memorizing facts; you're building discipline, problem-solving skills, and resilience that will serve you in every area of life.
+
+The temporary effort is worth it. Those late nights studying will fade, but the capabilities you develop and doors that open because of your education? Those last a lifetime.
+
+You're capable of more than you think. So show up for yourself, stay focused, and remember: **every page you read, every problem you solve, every concept you master is a victory.** Your dedication today becomes your advantage tomorrow.
+
+**You've got this.** Now let's go prove it."
+"Given two strings, find out if the second string is a substring of the first string. Output true or false.
+String 1: The quick brown fox
+String 2: brown","# Solution
+
+To check if ""brown"" is a substring of ""The quick brown fox"":
+
+**Answer: true**
+
+The string ""brown"" appears in ""The quick brown fox"" starting at index 10, so it is a substring.
+
+---
+
+### How to verify:
+```
+The quick brown fox
+          ^^^^^
+         ""brown"" found here
+```"
+Identify a potential security threat for a global online financial system.,"# Distributed Denial of Service (DDoS) Attacks on Payment Infrastructure
+
+## The Threat
+
+A coordinated DDoS attack targeting core payment processing systems could:
+
+- **Overwhelm transaction servers** with massive traffic floods, making legitimate transactions impossible
+- **Cascade across networks** since financial institutions are interconnected
+- **Create liquidity crises** if trading/settlement halts even briefly
+- **Trigger panic withdrawals** once customers perceive system instability
+
+## Why It's Particularly Serious
+
+- Global reach means simultaneous impact across time zones and markets
+- Recovery time matters enormously (every minute of downtime = massive financial losses)
+- Psychological effect: even *perceived* system failures can cause runs on institutions
+- Critical infrastructure status makes it an attractive target
+
+## Real-World Precedent
+
+2016 Dyn DNS attack demonstrated how infrastructure providers—not direct targets—could be exploited to disrupt major services globally.
+
+---
+
+## Mitigation Typically Includes
+
+- Redundant, geographically distributed servers
+- Traffic filtering and anomaly detection
+- Surge capacity reserves
+- Regular stress testing
+- Coordination with government agencies and ISPs
+
+Would you like me to explore other financial system vulnerabilities (cybercrime, market manipulation, settlement risks)?"
+"Identify the most important part of the following document.
+The federal government has taken action to address the opioid epidemic, both in terms of prevention and treatment. The White House launched the Opioid Initiative to coordinate efforts between all federal agencies involved in tackling the opioid crisis, as well as consulting with experts and stakeholders, gathering data, and studying evidence-based practices to develop the best approach.","# Most Important Part
+
+The **most important part** is:
+
+**""The White House launched the Opioid Initiative to coordinate efforts between all federal agencies involved in tackling the opioid crisis""**
+
+## Why
+
+This sentence captures the core action being taken:
+- It identifies the **specific initiative** (Opioid Initiative)
+- It explains the **responsible entity** (White House)
+- It describes the **primary objective** (coordinating federal efforts)
+- It establishes the **scope** (all federal agencies)
+
+While the document mentions supporting activities (consulting experts, gathering data, studying practices), the launch of a coordinated federal initiative is the foundational action that enables all other efforts to take place."
+Name five famous paintings,"# Five Famous Paintings
+
+1. **""The Starry Night""** by Vincent van Gogh (1889)
+   - A swirling night sky over a small village
+
+2. **""The Persistence of Memory""** by Salvador Dalí (1931)
+   - Surrealist work featuring melting clocks
+
+3. **""Girl with a Pearl Earring""** by Johannes Vermeer (c. 1665)
+   - Portrait of a girl wearing an exotic pearl earring
+
+4. **""The Scream""** by Edvard Munch (1893)
+   - An expressionist figure expressing existential anguish
+
+5. **""Guernica""** by Pablo Picasso (1937)
+   - A powerful anti-war mural depicting the horrors of bombing"
+Write a sentence that includes an idiom.,"# Example Sentence with an Idiom
+
+**She decided to bite the bullet and finally tell her parents the truth about her grades.**
+
+In this sentence, ""bite the bullet"" is an idiom meaning to face a difficult situation with courage and accept the consequences."

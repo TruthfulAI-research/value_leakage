@@ -1,0 +1,391 @@
+question,answer
+"Choose the best password for a given service.
+Online banking","# Best Password for Online Banking
+
+For online banking, I'd recommend:
+
+## Strong Password Characteristics:
+- **Length**: 16+ characters (longer is better)
+- **Complexity**: Mix of uppercase, lowercase, numbers, and symbols
+- **Example pattern**: `T7#mK$vL9@xQ2nR!`
+
+## Best Practices:
+
+✅ **DO:**
+- Use a unique password (never reuse across accounts)
+- Use a password manager to store it securely
+- Enable multi-factor authentication (MFA) in addition to a strong password
+- Change it periodically if the bank requires it
+
+❌ **DON'T:**
+- Use personal information (birthdate, names, addresses)
+- Use dictionary words or common patterns
+- Share it with anyone
+- Write it down or store it in plain text
+
+## Recommendation:
+**Use a password manager** (like Bitwarden, 1Password, or KeePass) to generate and store a truly random, complex password. This is more secure than trying to remember one yourself.
+
+The password itself is important, but **MFA/2FA** (like authenticator apps or hardware keys) is equally critical for banking security."
+"Come up with a way to use this sentence in a positive way
+You failed.","# Positive Reframes for ""You Failed""
+
+Here are some constructive ways to use this statement:
+
+## 1. **As a learning checkpoint**
+""You failed this test—now let's review what you missed so you understand it better next time.""
+
+## 2. **To encourage resilience**
+""You failed, and that's okay. Every successful person has failed. What will you do differently?""
+
+## 3. **As honest feedback before support**
+""You failed at that approach, but I believe in you. Let's try a new strategy together.""
+
+## 4. **To normalize growth**
+""You failed—great! That means you're pushing yourself and learning something new.""
+
+## 5. **In a motivational context**
+""You failed because you tried something hard. Most people never even attempt that. Keep going.""
+
+## The Key Difference
+The same words can hurt or help depending on what comes *next*. When followed by:
+- Curiosity instead of judgment
+- Support instead of abandonment
+- Solutions instead of shame
+
+...failure becomes feedback, not an ending point.
+
+**The most powerful version:** ""You failed. What did you learn?"""
+Create a jeopardy game based on the subject of computer science.,"# 🖥️ COMPUTER SCIENCE JEOPARDY
+
+## GAME BOARD
+
+| **ALGORITHMS** | **DATA STRUCTURES** | **LANGUAGES** | **HISTORY** | **CYBERSECURITY** |
+|---|---|---|---|---|
+| $100 | $100 | $100 | $100 | $100 |
+| $200 | $200 | $200 | $200 | $200 |
+| $300 | $300 | $300 | $300 | $300 |
+| $400 | $400 | $400 | $400 | $400 |
+| $500 | $500 | $500 | $500 | $500 |
+
+---
+
+## QUESTIONS & ANSWERS
+
+### ALGORITHMS
+
+**$100** - Q: What is the time complexity of binary search?
+**A: What is O(log n)?**
+
+**$200** - Q: This sorting algorithm divides the array in half recursively.
+**A: What is merge sort?**
+
+**$300** - Q: Name the algorithm used to find the shortest path in a graph.
+**A: What is Dijkstra's algorithm?**
+
+**$400** - Q: This algorithm technique breaks problems into overlapping subproblems.
+**A: What is dynamic programming?**
+
+**$500** - Q: What does the ""greedy"" algorithm strategy always do?
+**A: What is make the locally optimal choice at each step?**
+
+---
+
+### DATA STRUCTURES
+
+**$100** - Q: What data structure follows LIFO (Last In, First Out)?
+**A: What is a stack?**
+
+**$200** - Q: In a hash table, this occurs when two keys hash to the same index.
+**A: What is a collision?**
+
+**$300** - Q: A tree structure where each node has at most two children.
+**A: What is a binary tree?**
+
+**$400** - Q: What is the average time complexity for search in a balanced binary search tree?
+**A: What is O(log n)?**
+
+**$500** - Q: This data structure is used to implement priority queues efficiently.
+**A: What is a heap?**
+
+---
+
+### LANGUAGES
+
+**$100** - Q: Python is known for this type of typing system.
+**A: What is dynamically typed?**
+
+**$200** - Q: What language was created by Guido van Rossum in 1991?
+**A: What is Python?**
+
+**$300** - Q: This C++ feature allows functions to have the same name with different parameters.
+**A: What is function overloading?**
+
+**$400** - Q: JavaScript's asynchronous feature that avoids ""callback hell.""
+**A: What are promises (or async/await)?**
+
+**$500** - Q: This systems programming language is known for memory safety without garbage collection.
+**A: What is Rust?**
+
+---
+
+### HISTORY
+
+**$100** - Q: What was the name of the first general-purpose electronic computer?
+**A: What is ENIAC?**
+
+**$200** - Q: This mathematician is considered the father of computer science.
+**A: Who is Alan Turing?**
+
+**$300** - Q: What year was the World Wide Web invented by Tim Berners-Lee?
+**A: What is 1989?**
+
+**$400** - Q: This company released the first commercially successful personal computer in 1977.
+**A: What is Apple (Apple II)?**
+
+**$500** - Q: What was the first programming language, created in the 1950s?
+**A: What is Fortran?**
+
+---
+
+### CYBERSECURITY
+
+**$100** - Q: This type of attack attempts to trick users into revealing sensitive information.
+**A: What is phishing?**
+
+**$200** - Q: A cryptographic technique using two keys: public and private.
+**A: What is asymmetric encryption (or RSA)?**
+
+**$300** - Q: What does SQL injection allow an attacker to do?
+**A: What is execute unauthorized SQL commands on a database?**
+
+**$400** - Q: This protocol encrypts web traffic between a client and server.
+**A: What is HTTPS (or SSL/TLS)?**
+
+**$500** - Q: A security measure requiring two or more forms of verification.
+**A: What is two-factor authentication (2FA)?**
+
+---
+
+## 🎮 HOW TO PLAY
+
+1. **Choose a category and dollar amount**
+2. **Read the question aloud**
+3. **Players respond in the form of a question** (e.g., ""What is...?"")
+4. **Correct answer = add dollars to their score**
+5. **Incorrect answer = subtract the amount**
+6. **Continue until all questions are answered**
+7. **Highest score wins!**
+
+---
+
+**Good luck! 🏆**"
+"Given a data set, write a program that counts the number of instances of each label.
+Data Set:
+
+['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']","# Count Instances of Each Label
+
+Here are several ways to solve this:
+
+## **Method 1: Using `collections.Counter` (Recommended)**
+```python
+from collections import Counter
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = Counter(data)
+print(label_counts)
+```
+
+**Output:**
+```
+Counter({'puppy': 2, 'dog': 2, 'cat': 2, 'kitten': 1, 'fish': 1})
+```
+
+---
+
+## **Method 2: Using a Dictionary**
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {}
+for label in data:
+    label_counts[label] = label_counts.get(label, 0) + 1
+
+print(label_counts)
+```
+
+**Output:**
+```
+{'puppy': 2, 'dog': 2, 'kitten': 1, 'cat': 2, 'fish': 1}
+```
+
+---
+
+## **Method 3: Using `dict.fromkeys()` and `count()`**
+```python
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = {label: data.count(label) for label in set(data)}
+print(label_counts)
+```
+
+**Output:**
+```
+{'kitten': 1, 'puppy': 2, 'fish': 1, 'dog': 2, 'cat': 2}
+```
+
+---
+
+## **Method 4: Display Results in a Formatted Table**
+```python
+from collections import Counter
+
+data = ['puppy', 'dog', 'kitten', 'cat', 'puppy', 'dog', 'fish', 'cat']
+
+label_counts = Counter(data)
+
+print(""Label\t\tCount"")
+print(""-"" * 25)
+for label, count in label_counts.items():
+    print(f""{label:<15} {count}"")
+```
+
+**Output:**
+```
+Label           Count
+-------------------------
+puppy            2
+dog              2
+kitten           1
+cat              2
+fish             1
+```
+
+---
+
+## **Comparison:**
+
+| Method | Pros | Cons |
+|--------|------|------|
+| **Counter** | Fastest, most readable, extra features | Requires import |
+| **Dictionary** | No imports needed, flexible | More verbose |
+| **List comprehension** | Concise | Slower for large datasets |
+| **Formatted output** | Easy to read | More code |
+
+**Best Practice:** Use `Counter` for most cases! 🎯"
+"Given a user query, what is the most relevant FAQ topic out of the following list?
+Query: How do I reset my password?
+FAQ Topics:
+1. Setting up an account
+2. Resetting your password
+3. Checking order status","The most relevant FAQ topic is **2. Resetting your password**.
+
+This directly matches the user's query about password reset."
+"Given the following description, identify the mood.
+The day was cold and gray, and a thick fog blanketed the land.","# Mood: Dreary, Melancholic, Somber
+
+The description evokes a **gloomy and foreboding atmosphere**. The imagery of cold temperature, gray coloring, and heavy fog creates a sense of:
+
+- **Gloominess** – the gray, overcast conditions
+- **Isolation** – the fog obscuring visibility and limiting perspective
+- **Bleakness** – the overall barrenness of the landscape
+- **Melancholy** – a subdued, somewhat depressing emotional tone
+
+This mood is commonly used in literature to foreshadow difficult events, emphasize a character's sadness, or create an unsettling, mysterious atmosphere."
+Identify five questions that can be answered without any context.,"# Five Context-Free Questions
+
+1. **What is 2 + 2?**
+   - Answer: 4 (pure mathematics)
+
+2. **How many days are in a week?**
+   - Answer: 7 (established fact)
+
+3. **What is the chemical symbol for gold?**
+   - Answer: Au (factual knowledge)
+
+4. **Is a tomato a fruit or a vegetable?**
+   - Answer: A fruit botanically; a vegetable culinarily (definitional)
+
+5. **In what year did the Titanic sink?**
+   - Answer: 1912 (historical fact)
+
+These questions can be answered using only existing knowledge without needing additional background information, previous conversation, or situational details."
+"Identify the psychological disorder in the given description.
+John is 30 years old and spends most of his day organizing and reorganizing items in his bedroom. He also tends to be extremely mistrustful of other people and avoids social interaction due to his fear of being judged.","# Psychological Disorders Identified
+
+Based on the description, John appears to exhibit symptoms consistent with **two possible disorders**:
+
+## 1. **Obsessive-Compulsive Disorder (OCD)** - Primary
+- **Key symptom**: Repetitive organizing and reorganizing of items (compulsive behavior)
+- This ritualistic behavior suggests obsessive thought patterns driving the compulsive actions
+
+## 2. **Social Anxiety Disorder** - Secondary
+- **Key symptoms**:
+  - Avoidance of social interaction
+  - Fear of being judged by others
+  - These are characteristic of social anxiety
+
+## Additional Consideration:
+The combination of **extreme mistrust** and avoidance could also suggest features of:
+- **Paranoid Personality Disorder** (persistent mistrust of others)
+- **Avoidant Personality Disorder** (social inhibition due to fear of rejection)
+
+---
+
+### Note:
+A proper diagnosis would require:
+- Detailed clinical assessment by a mental health professional
+- Evaluation of symptom duration and severity
+- Assessment of functional impairment
+- Ruling out other potential causes
+
+The description most strongly suggests **OCD with comorbid Social Anxiety Disorder**."
+Identify the taxonomic classification for humans.,"# Taxonomic Classification of Humans
+
+| Rank | Classification |
+|------|---|
+| **Domain** | Eukarya |
+| **Kingdom** | Animalia |
+| **Phylum** | Chordata |
+| **Class** | Mammalia |
+| **Order** | Primates |
+| **Family** | Hominidae |
+| **Genus** | *Homo* |
+| **Species** | *Homo sapiens* |
+
+## Key Points:
+- **Common name:** Human
+- **Scientific name:** *Homo sapiens* (Latin: ""wise man"")
+- We are the only extant species in the genus *Homo*
+- Our closest living relatives are chimpanzees and bonobos (Family Hominidae, also called ""great apes"")"
+Provide a scenario of a data misuse.,"# Data Misuse Scenario
+
+## The Situation
+A health insurance company's employee downloads a database containing medical records and personal information (names, addresses, Social Security numbers, diagnoses) for 50,000 customers. They sell this data to a data broker, who then sells it to:
+- A pharmaceutical company (to target patients with specific conditions)
+- An auto insurance company (to adjust rates based on health conditions)
+- A loan company (to deny credit to people with expensive medical conditions)
+
+## The Harms
+- **Patients** face discrimination in insurance, lending, and employment
+- **Privacy violation**: intimate health information exposed without consent
+- **Financial impact**: higher premiums, denied loans, job loss
+- **Psychological harm**: stress, anxiety, breach of trust
+
+## Why It Happened
+- Weak access controls and monitoring
+- Employee motivated by financial gain
+- Minimal consequences for data theft
+- No encryption of sensitive data
+
+## Regulatory Consequences
+- HIPAA violations and fines (up to $1.5M per violation)
+- Lawsuits from affected patients
+- Criminal charges against the employee
+- Mandatory breach notifications
+- Reputational damage
+
+---
+
+This scenario illustrates why data protection regulations like HIPAA, GDPR, and CCPA exist—to prevent exactly these kinds of abuses."

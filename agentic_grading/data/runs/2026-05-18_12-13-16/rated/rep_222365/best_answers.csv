@@ -1,0 +1,450 @@
+question,answer
+"Categorize the following needs as either physiological needs or safety needs.
+Food, Security, Love","# Categorization of Needs
+
+**Physiological Needs:**
+- Food
+
+**Safety Needs:**
+- Security
+
+**Note:** Love is actually neither of these—it falls into a higher category called **belongingness/social needs** in Maslow's Hierarchy of Needs, which comes after physiological and safety needs are met."
+Generate a search query that will return results related to apple pie,"# Apple Pie Search Query
+
+Here are a few options depending on your needs:
+
+**Simple:**
+- `apple pie`
+- `homemade apple pie`
+
+**Recipe-focused:**
+- `apple pie recipe`
+- `best apple pie recipe`
+- `easy apple pie from scratch`
+
+**Specific variations:**
+- `apple pie with lattice crust`
+- `deep dish apple pie`
+- `caramel apple pie`
+- `Dutch apple pie`
+
+**Broader:**
+- `apple pie near me` (for local bakeries/restaurants)
+- `apple pie history`
+
+The most effective search query depends on what you're looking for—a recipe, bakery locations, or general information about apple pie."
+"Generate an appropriate response to the given statement.
+""I don't agree with your idea.""","# Possible Responses
+
+Here are a few ways you could respond constructively:
+
+**Curious & Open:**
+""I'm interested in hearing your perspective. What concerns do you have about it?""
+
+**Collaborative:**
+""Fair point. What would work better for you? Maybe we can find a solution together.""
+
+**Reflective:**
+""I appreciate you being honest. Can you help me understand your thinking?""
+
+**Direct but Respectful:**
+""That's okay—we don't have to agree. What's your alternative approach?""
+
+**Inquisitive:**
+""What specifically don't you agree with? Is it the whole concept or certain parts?""
+
+---
+
+The best response depends on your situation, relationship, and goals. Generally, **asking questions** and showing genuine interest in their reasoning tends to lead to more productive conversations than defending your position."
+"Given the following input, can you output the initial of each word?
+John Apple Smith",J A S
+"Identify any grammatical or punctuation errors in the passage below and provide a corrected version.
+It Can Be daunting beginning, the journey to learn a new skill. Discipline yourself in your daily routines will help to keeps you focus and concentrating on your goals. Also, making time to practice on a consistent basis, this eventually leads to progress that will be evident.","# Grammatical and Punctuation Errors Identified:
+
+1. **""It Can Be daunting beginning""** – Inconsistent capitalization and missing article
+2. **""Discipline yourself in your daily routines will help to keeps you focus""** – Run-on sentence; verb agreement error (""keeps"" should be ""keep""); missing article before ""focus""
+3. **""concentrating on your goals""** – Awkward parallel structure
+4. **""Also, making time to practice on a consistent basis, this eventually leads to progress""** – Comma splice; dangling modifier
+
+---
+
+# Corrected Version:
+
+**Beginning a new skill can be daunting. Disciplining yourself in your daily routines will help you stay focused and concentrate on your goals. Additionally, making time to practice consistently will eventually lead to evident progress.**
+
+---
+
+### Alternative Version (slightly more concise):
+
+**It can be daunting to begin learning a new skill. Disciplining yourself through daily routines will help you stay focused on your goals. Additionally, consistent practice will eventually lead to noticeable progress.**"
+"Identify the type of the following sentence: ""My brother has two sons"".","# Sentence Type: **Declarative**
+
+This is a **declarative sentence** because it:
+- Makes a statement or assertion
+- Provides factual information (the speaker's brother has two sons)
+- Ends with a period (.)
+- Has a neutral tone, not expressing emotion, asking a question, or giving a command"
+Implement Trie in c++ using std::vector.,"# Trie Implementation in C++ using std::vector
+
+Here's a complete implementation of a Trie data structure using `std::vector`:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+class TrieNode {
+public:
+    vector<TrieNode*> children;  // 26 children for lowercase letters a-z
+    bool isEndOfWord;
+    
+    TrieNode() {
+        children.resize(26, nullptr);  // Initialize with 26 null pointers
+        isEndOfWord = false;
+    }
+};
+
+class Trie {
+private:
+    TrieNode* root;
+    
+public:
+    Trie() {
+        root = new TrieNode();
+    }
+    
+    ~Trie() {
+        deleteTrie(root);
+    }
+    
+    // Insert a word into the trie
+    void insert(const string& word) {
+        TrieNode* node = root;
+        
+        for (char c : word) {
+            int index = c - 'a';  // Convert character to index (0-25)
+            
+            if (node->children[index] == nullptr) {
+                node->children[index] = new TrieNode();
+            }
+            node = node->children[index];
+        }
+        
+        node->isEndOfWord = true;  // Mark end of word
+    }
+    
+    // Search for a complete word
+    bool search(const string& word) {
+        TrieNode* node = findNode(word);
+        return node != nullptr && node->isEndOfWord;
+    }
+    
+    // Check if there's any word with given prefix
+    bool startsWith(const string& prefix) {
+        return findNode(prefix) != nullptr;
+    }
+    
+    // Delete a word from the trie
+    bool deleteWord(const string& word) {
+        return deleteHelper(root, word, 0);
+    }
+    
+    // Print all words in the trie
+    void printAllWords() {
+        string currentWord = """";
+        printHelper(root, currentWord);
+    }
+    
+    // Get all words with a given prefix
+    vector<string> getWordsWithPrefix(const string& prefix) {
+        vector<string> result;
+        TrieNode* node = findNode(prefix);
+        
+        if (node == nullptr) {
+            return result;
+        }
+        
+        string currentWord = prefix;
+        getWordsHelper(node, currentWord, result);
+        return result;
+    }
+
+private:
+    // Helper function to find a node for a given prefix
+    TrieNode* findNode(const string& prefix) {
+        TrieNode* node = root;
+        
+        for (char c : prefix) {
+            int index = c - 'a';
+            
+            if (node->children[index] == nullptr) {
+                return nullptr;
+            }
+            node = node->children[index];
+        }
+        
+        return node;
+    }
+    
+    // Helper function to delete a word
+    bool deleteHelper(TrieNode* node, const string& word, int index) {
+        if (index == word.length()) {
+            if (!node->isEndOfWord) {
+                return false;  // Word doesn't exist
+            }
+            
+            node->isEndOfWord = false;
+            
+            // Check if node has any children
+            for (int i = 0; i < 26; i++) {
+                if (node->children[i] != nullptr) {
+                    return false;  // Node has children, don't delete
+                }
+            }
+            
+            return true;  // Node can be deleted
+        }
+        
+        int charIndex = word[index] - 'a';
+        
+        if (node->children[charIndex] == nullptr) {
+            return false;  // Word doesn't exist
+        }
+        
+        bool shouldDeleteChild = deleteHelper(node->children[charIndex], 
+                                              word, index + 1);
+        
+        if (shouldDeleteChild) {
+            delete node->children[charIndex];
+            node->children[charIndex] = nullptr;
+            
+            // Delete current node if it's not end of another word and has no children
+            if (!node->isEndOfWord) {
+                for (int i = 0; i < 26; i++) {
+                    if (node->children[i] != nullptr) {
+                        return false;
+                    }
+                }
+                return true;
+            }
+            
+            return false;
+        }
+        
+        return false;
+    }
+    
+    // Helper function to print all words
+    void printHelper(TrieNode* node, string& currentWord) {
+        if (node->isEndOfWord) {
+            cout << currentWord << endl;
+        }
+        
+        for (int i = 0; i < 26; i++) {
+            if (node->children[i] != nullptr) {
+                currentWord.push_back('a' + i);
+                printHelper(node->children[i], currentWord);
+                currentWord.pop_back();
+            }
+        }
+    }
+    
+    // Helper function to get words with prefix
+    void getWordsHelper(TrieNode* node, string& currentWord, vector<string>& result) {
+        if (node->isEndOfWord) {
+            result.push_back(currentWord);
+        }
+        
+        for (int i = 0; i < 26; i++) {
+            if (node->children[i] != nullptr) {
+                currentWord.push_back('a' + i);
+                getWordsHelper(node->children[i], currentWord, result);
+                currentWord.pop_back();
+            }
+        }
+    }
+    
+    // Helper function to delete the entire trie
+    void deleteTrie(TrieNode* node) {
+        if (node == nullptr) {
+            return;
+        }
+        
+        for (int i = 0; i < 26; i++) {
+            if (node->children[i] != nullptr) {
+                deleteTrie(node->children[i]);
+            }
+        }
+        
+        delete node;
+    }
+};
+
+// Driver code with test cases
+int main() {
+    Trie trie;
+    
+    // Insert words
+    cout << ""Inserting words: apple, app, apricot, banana, band"" << endl;
+    trie.insert(""apple"");
+    trie.insert(""app"");
+    trie.insert(""apricot"");
+    trie.insert(""banana"");
+    trie.insert(""band"");
+    
+    // Search operations
+    cout << ""\nSearch Results:"" << endl;
+    cout << ""Searching 'app': "" << (trie.search(""app"") ? ""Found"" : ""Not Found"") << endl;
+    cout << ""Searching 'apple': "" << (trie.search(""apple"") ? ""Found"" : ""Not Found"") << endl;
+    cout << ""Searching 'appl': "" << (trie.search(""appl"") ? ""Found"" : ""Not Found"") << endl;
+    
+    // Prefix search
+    cout << ""\nPrefix Search Results:"" << endl;
+    cout << ""Prefix 'ap': "" << (trie.startsWith(""ap"") ? ""Found"" : ""Not Found"") << endl;
+    cout << ""Prefix 'ban': "" << (trie.startsWith(""ban"") ? ""Found"" : ""Not Found"") << endl;
+    cout << ""Prefix 'cat': "" << (trie.startsWith(""cat"") ? ""Found"" : ""Not Found"") << endl;
+    
+    // Get all words with prefix
+    cout << ""\nWords with prefix 'ap':"" << endl;
+    vector<string> words = trie.getWordsWithPrefix(""ap"");
+    for (const string& word : words) {
+        cout << ""  "" << word << endl;
+    }
+    
+    cout << ""\nWords with prefix 'ban':"" << endl;
+    words = trie.getWordsWithPrefix(""ban"");
+    for (const string& word : words) {
+        cout << ""  "" << word << endl;
+    }
+    
+    // Print all words
+    cout << ""\nAll words in Trie:"" << endl;
+    trie.printAllWords();
+    
+    // Delete a word
+    cout << ""\nDeleting 'app'..."" << endl;
+    trie.deleteWord(""app"");
+    
+    cout << ""Searching 'app' after deletion: "" 
+         << (trie.search(""app"") ? ""Found"" : ""Not Found"") << endl;
+    cout << ""Searching 'apple' after deletion: "" 
+         << (trie.search(""apple"") ? ""Found"" : ""Not Found"") << endl;
+    
+    return 0;
+}
+```
+
+## Output:
+```
+Inserting words: apple, app, apricot, banana, band
+
+Search Results:
+Searching 'app': Found
+Searching 'apple': Found
+Searching 'appl': Not Found
+
+Prefix Search Results:
+Prefix 'ap': Found
+Prefix 'ban': Found
+Prefix 'cat': Not Found
+
+Words with prefix 'ap':
+  app
+  apple
+  apricot
+
+Words with prefix 'ban':
+  banana
+  band
+
+All words in Trie:
+app
+apple
+apricot
+banana
+band
+
+Deleting 'app'...
+Searching 'app' after deletion: Not Found
+Searching 'apple' after deletion: Found
+```
+
+## Key Features:
+
+1. **insert()** - O(m) where m is word length
+2. **search()** - O(m)
+3. **startsWith()** - O(m)
+4. **deleteWord()** - O(m)
+5. **printAllWords()** - O(n*m) where n is number of words
+6. **getWordsWithPrefix()** - Returns all words starting with a prefix
+
+This implementation is efficient and handles all common Trie operations!"
+Make a list of five items necessary to start a computer,"# Five Items Necessary to Start a Computer
+
+1. **Power Supply** - An electrical outlet or power source to provide energy to the computer and all its components
+
+2. **Motherboard** - The main circuit board that connects all internal components together and allows them to communicate
+
+3. **Processor (CPU)** - The central processing unit that executes instructions and performs calculations for the computer
+
+4. **RAM (Memory)** - Random Access Memory that temporarily stores data and programs while the computer is running
+
+5. **Storage Device** - A hard drive or solid-state drive (SSD) where the operating system and files are permanently stored
+
+---
+
+**Note:** These are the core hardware components. You'd also need peripherals like a monitor, keyboard, and mouse to actually use the computer, plus an operating system (Windows, macOS, Linux, etc.) installed on the storage device."
+Provide a synopsis of the novel “The Old Man and the Sea” by Ernest Hemingway.,"# The Old Man and the Sea - Synopsis
+
+## Overview
+This novella follows Santiago, an aging Cuban fisherman, during a transformative three-day struggle with a giant marlin in the Gulf Stream.
+
+## Plot Summary
+
+**The Setup**
+Santiago hasn't caught a significant fish in 84 days, leading the other fishermen and his young apprentice, Manolin, to doubt his abilities. Despite his hardship and the boy's parents forbidding their friendship, Manolin still cares for the old man.
+
+**The Battle**
+Santiago sets out alone and hooks an enormous marlin. What begins as an exciting catch becomes an epic, exhausting battle lasting three days and nights. Santiago struggles against the fish's strength while battling his own physical weakness, hunger, and pain.
+
+**The Cost of Victory**
+After finally killing the marlin, Santiago begins towing it home. However, the blood from the fish attracts sharks, which attack relentlessly. Despite his desperate attempts to fight them off, the sharks devour the marlin, leaving Santiago with only its skeletal remains.
+
+## Themes
+- **Man vs. Nature**: The struggle between human determination and natural forces
+- **Dignity and Perseverance**: Maintaining grace and courage in defeat
+- **Isolation**: The loneliness inherent in human existence
+- **Redemption**: Finding meaning through struggle, not just victory
+
+Santiago returns to shore physically defeated but spiritually unbroken—a moral victor despite material loss."
+What are the main differences between aerobic and anaerobic exercise?,"# Aerobic vs. Anaerobic Exercise
+
+## **Aerobic Exercise**
+- **Oxygen use**: Uses oxygen to produce energy
+- **Duration**: Sustained, longer-duration activities (20+ minutes)
+- **Intensity**: Moderate, steady pace
+- **Examples**: Running, cycling, swimming, walking
+- **Energy source**: Primarily fats and carbohydrates
+- **Byproducts**: CO₂ and water (easily removed)
+
+## **Anaerobic Exercise**
+- **Oxygen use**: Doesn't rely on oxygen; uses stored energy
+- **Duration**: Short bursts (seconds to a few minutes)
+- **Intensity**: High, maximum effort
+- **Examples**: Sprinting, weightlifting, jumping, HIIT
+- **Energy source**: Primarily carbohydrates (glucose)
+- **Byproducts**: Lactic acid (causes muscle fatigue)
+
+## **Key Differences**
+
+| Aspect | Aerobic | Anaerobic |
+|--------|---------|-----------|
+| **Heart rate** | Elevated but manageable | Maximum effort |
+| **Muscle fatigue** | Gradual | Rapid |
+| **Recovery** | Can sustain longer | Needs rest between efforts |
+| **Benefits** | Endurance, cardiovascular health | Strength, power, muscle building |
+
+## **Best Practice**
+A balanced fitness routine typically includes both types to build overall fitness—aerobic for cardiovascular health and endurance, anaerobic for strength and power."

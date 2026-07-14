@@ -1,0 +1,323 @@
+question,answer
+"Add a sentence that transitions between the two paragraphs smoothly.
+Paragraph 1: She had been feeling tired and worn down all week.
+Paragraph 2: Work had been especially stressful and her energy had been waning.","# Revised Paragraphs with Transition
+
+She had been feeling tired and worn down all week. This exhaustion didn't come out of nowhere, as recent events had taken their toll on her. Work had been especially stressful and her energy had been waning.
+
+---
+
+**Alternative transitions you could use:**
+
+- ""The source of her fatigue soon became clear.""
+- ""As she reflected on the cause, one thing stood out.""
+- ""There was a reason for this sudden decline."""
+"Categorize the following data points.
+Lion, Tiger, Leopard","# Categorization of Lion, Tiger, Leopard
+
+## By Scientific Classification
+- **Kingdom:** Animalia
+- **Phylum:** Chordata
+- **Class:** Mammalia
+- **Order:** Carnivora
+- **Family:** Felidae
+- **Genus:** *Panthera*
+
+## By Type
+**Large Cats / Big Cats**
+
+## By Geographic Distribution
+- **Lion:** Africa, Asia (Gir Forest, India)
+- **Tiger:** Asia (India, Southeast Asia, Russia)
+- **Leopard:** Africa, Asia (Middle East to East Asia)
+
+## By Habitat Preference
+- **Lion:** Savannas, grasslands
+- **Tiger:** Forests, grasslands
+- **Leopard:** Forests, savannas, mountains
+
+## By Social Behavior
+- **Lion:** Social (live in prides)
+- **Tiger:** Solitary
+- **Leopard:** Solitary"
+"Compare and contrast the two programming languages in terms of the following criteria: user base, applications, and syntax.
+Java and Python","# Java vs Python: A Comprehensive Comparison
+
+## User Base
+
+### Java
+- **Established enterprise dominance**: Massive user base in large corporations, banks, and financial institutions
+- **Professional developers**: Attracts experienced programmers; widely used in computer science education
+- **Mature community**: Decades-old ecosystem with extensive documentation
+
+### Python
+- **Rapidly growing**: Explosive growth in recent years, especially in data science and AI
+- **Diverse demographics**: Popular among beginners, academics, and experienced developers
+- **Cross-disciplinary appeal**: Used by data scientists, DevOps engineers, and non-programmers
+
+## Applications
+
+### Java
+- **Enterprise software**: Banking systems, large-scale web applications (Spring framework)
+- **Android development**: Primary language for native Android apps
+- **High-performance systems**: Used where speed and stability are critical
+- **Distributed systems**: Microservices, cloud platforms (AWS, Kubernetes)
+
+### Python
+- **Data science & AI/ML**: Leading choice (NumPy, Pandas, TensorFlow, PyTorch)
+- **Web development**: Backend frameworks like Django and Flask
+- **Automation & scripting**: System administration, DevOps tools
+- **Scientific computing**: Research, academia, prototyping
+
+## Syntax
+
+### Java
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println(""Hello, World!"");
+    }
+}
+```
+- **Verbose**: Requires explicit declarations and structure
+- **Statically typed**: Types must be declared upfront
+- **Strict formatting**: Curly braces and semicolons mandatory
+- **Steep learning curve**: More boilerplate code
+
+### Python
+```python
+print(""Hello, World!"")
+```
+- **Concise**: Minimal syntax, maximum readability
+- **Dynamically typed**: Types determined at runtime
+- **Whitespace-dependent**: Indentation defines code blocks
+- **Beginner-friendly**: Intuitive and elegant
+
+## Summary Table
+
+| Criteria | Java | Python |
+|----------|------|--------|
+| **Learning difficulty** | Moderate to Hard | Easy |
+| **Execution speed** | Fast (compiled) | Slower (interpreted) |
+| **Code length** | Longer | Shorter |
+| **Best for** | Enterprise, Android | Data science, startups |
+| **Job market** | Stable, well-established | Rapidly growing |
+
+Both remain top-tier languages—choose based on your goals and industry focus."
+"Construct a matrix that provides a comparison between two different products.
+The two products are a vacuum cleaner and a robot vacuum cleaner.","# Comparison Matrix: Vacuum Cleaner vs. Robot Vacuum Cleaner
+
+| **Feature** | **Traditional Vacuum Cleaner** | **Robot Vacuum Cleaner** |
+|---|---|---|
+| **Price** | $150–$800 | $300–$1,500+ |
+| **Cleaning Power** | High suction; excellent for deep cleaning | Moderate; suitable for regular maintenance |
+| **Coverage Area** | Limited by cord length or battery | Covers larger areas automatically |
+| **Time Required** | 30–60 minutes per session | Runs autonomously (1–3 hours) |
+| **Noise Level** | 70–85 dB (loud) | 60–70 dB (quieter) |
+| **Maintenance** | Regular filter/brush cleaning | Frequent dustbin emptying; filter cleaning |
+| **Stairs** | Can navigate stairs | Cannot climb stairs |
+| **Pet Hair** | Excellent capability | Good, but less effective than traditional |
+| **Carpet Cleaning** | Highly effective | Less effective on thick carpets |
+| **Hard Floors** | Very effective | Very effective |
+| **Learning Curve** | Minimal; easy to use | Requires setup and app learning |
+| **Storage Space** | Requires closet/cabinet space | Compact; docking station needed |
+| **Automation** | Manual operation only | Fully autonomous; programmable |
+| **Smart Features** | Basic models only | App control, scheduling, mapping |
+| **Allergen Control** | Better with HEPA filters | HEPA filters available |
+| **Best For** | Deep cleaning, stairs, thick carpets | Busy households, hard floors, daily maintenance |"
+"Create a computer program that calculates the area of a circle.
+Radius = 5","# Circle Area Calculator
+
+Here are several ways to calculate the area of a circle with radius = 5:
+
+## Python (Recommended)
+
+```python
+import math
+
+# Method 1: Using math.pi
+radius = 5
+area = math.pi * radius ** 2
+
+print(f""Radius: {radius}"")
+print(f""Area: {area}"")
+print(f""Area (rounded): {area:.2f}"")
+```
+
+**Output:**
+```
+Radius: 5
+Area: 78.53981633974483
+Area (rounded): 78.50
+```
+
+## Python (Without importing math)
+
+```python
+# Method 2: Using pi approximation
+radius = 5
+pi = 3.14159
+area = pi * radius * radius
+
+print(f""Radius: {radius}"")
+print(f""Area: {area:.2f}"")
+```
+
+**Output:**
+```
+Radius: 5
+Area: 78.54
+```
+
+## JavaScript
+
+```javascript
+const radius = 5;
+const area = Math.PI * radius ** 2;
+
+console.log(`Radius: ${radius}`);
+console.log(`Area: ${area}`);
+console.log(`Area (rounded): ${area.toFixed(2)}`);
+```
+
+**Output:**
+```
+Radius: 5
+Area: 78.53981633974483
+Area (rounded): 78.54
+```
+
+## Java
+
+```java
+public class CircleArea {
+    public static void main(String[] args) {
+        int radius = 5;
+        double area = Math.PI * radius * radius;
+        
+        System.out.println(""Radius: "" + radius);
+        System.out.println(""Area: "" + area);
+        System.out.printf(""Area (rounded): %.2f%n"", area);
+    }
+}
+```
+
+---
+
+## Formula Used
+**Area = π × r²**
+
+Where:
+- π (pi) ≈ 3.14159
+- r = radius = 5
+
+**Answer: Area ≈ 78.54 square units**"
+"Create a list of reasons why the given product is the best choice in its market.
+The product is a brand new laptop with advanced computing and gaming capabilities.","# Why This Laptop is the Best Choice in Its Market
+
+## Performance & Power
+- **Advanced processor** delivers exceptional speed for multitasking and demanding applications
+- **High-end graphics capabilities** ensure smooth gaming and professional creative work
+- **Ample RAM** supports seamless performance across multiple programs
+
+## Gaming Excellence
+- **Dedicated gaming GPU** provides superior frame rates and visual quality
+- **High refresh rate display** offers smooth, immersive gameplay
+- **Advanced cooling system** prevents throttling during extended gaming sessions
+
+## Versatility
+- **Dual-purpose design** excels at both professional work and entertainment
+- **Powerful enough for content creation**, video editing, and 3D rendering
+- **Ideal for students, professionals, and gamers** alike
+
+## Display Quality
+- **High-resolution screen** with vibrant colors and excellent contrast
+- **Wide viewing angles** for comfortable viewing from any position
+- **Reduced eye strain** technology for extended use
+
+## Build & Design
+- **Premium materials** ensure durability and longevity
+- **Sleek, modern aesthetic** appeals to style-conscious users
+- **Compact form factor** maintains portability without sacrificing power
+
+## User Experience
+- **Responsive keyboard and trackpad** enhance productivity
+- **Extensive connectivity options** (USB, Thunderbolt, HDMI)
+- **Long battery life** for mobile use throughout the day
+
+## Value Proposition
+- **Competitive pricing** for high-end specifications
+- **Strong warranty and support** options
+- **Excellent resale value** in the secondary market"
+"Extend the following story.
+Jennifer was excited to go on a camping trip with her friends.","# Jennifer's Camping Adventure
+
+Jennifer was excited to go on a camping trip with her friends. She'd been looking forward to it all summer, and finally, the weekend had arrived.
+
+She loaded her backpack into Marcus's truck along with everyone else's gear—a colorful pile of tents, sleeping bags, and coolers that barely fit in the truck bed. Her best friend Sarah sat in the passenger seat, scrolling through a playlist for the drive up to Pine Ridge Forest.
+
+""Did you remember the bug spray?"" Sarah asked without looking up.
+
+Jennifer laughed. ""Twice. I learned my lesson last year.""
+
+The drive took three hours, but it flew by with terrible car karaoke and stories about their year. When they finally arrived at their campsite, the late afternoon sun filtered through the towering pines, casting long shadows across the clearing.
+
+What should have been a smooth setup turned chaotic almost immediately. Marcus's tent poles were broken, and nobody could agree on whether to pitch tents near the water or closer to the tree line. Jennifer found herself mediating the debate while also realizing she'd forgotten to pack her sleeping mat.
+
+But as the sun dipped below the horizon and they gathered around a crackling campfire with hot chocolate and s'mores, Jennifer felt the stress melt away. Under the canopy of stars, laughing with her friends, she realized this was exactly what she needed—imperfect moments with people she loved.
+
+""Same time next year?"" Marcus asked, roasting his third marshmallow.
+
+""Definitely,"" Jennifer said, already planning what to pack differently next time."
+"Given a math problem, solve it.
+If 4x - 6 = 30, what is the value of x?","# Solving for x
+
+**Given:** 4x - 6 = 30
+
+**Step 1:** Add 6 to both sides
+$$4x - 6 + 6 = 30 + 6$$
+$$4x = 36$$
+
+**Step 2:** Divide both sides by 4
+$$x = \frac{36}{4}$$
+$$x = 9$$
+
+**Answer: x = 9**
+
+**Check:** 4(9) - 6 = 36 - 6 = 30 ✓"
+"Predict the outcome when the following reactants react together.
+CaCO3 + 2HCl","# Reaction: CaCO₃ + 2HCl
+
+## Products Formed:
+
+**CaCl₂ + H₂O + CO₂↑**
+
+## Detailed Explanation:
+
+This is an **acid-base reaction** between calcium carbonate (a weak base/salt) and hydrochloric acid (a strong acid).
+
+### What happens:
+- The HCl donates H⁺ ions that react with the carbonate ion (CO₃²⁻)
+- This produces carbonic acid (H₂CO₃), which is unstable
+- Carbonic acid immediately decomposes into water and carbon dioxide gas
+
+### Observable characteristics:
+- **Vigorous fizzing/effervescence** as CO₂ gas is released
+- The solid calcium carbonate dissolves
+- The solution becomes warm (slightly exothermic)
+- A colorless gas (CO₂) with a slightly acidic smell is produced
+
+## Ionic Equation:
+**2H⁺ + CO₃²⁻ → H₂O + CO₂↑**
+
+This reaction is commonly used in the lab to **test for the presence of carbonates** — the production of effervescence with dilute acid is a characteristic test."
+"Rewrite the following sentence in another way, using a different word order and/or different vocabulary but still conveying the same meaning.
+She ran to the store.","She hurried to the store.
+
+or
+
+To the store, she ran.
+
+or
+
+She made her way to the store at a run."

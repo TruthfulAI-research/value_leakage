@@ -1,0 +1,1363 @@
+real_model,sample_idx,model,question,answer
+claude-haiku-4.5,2,claude-opus-5,Brainstorm 5 possible causes of a car accident,"# 5 Possible Causes of a Car Accident
+
+1. **Driver Distraction**
+   - Phone use, eating, adjusting controls, or daydreaming
+   - Takes attention away from the road
+
+2. **Speeding**
+   - Driving too fast for conditions or posted limits
+   - Reduces reaction time and control
+
+3. **Impaired Driving**
+   - Alcohol, drugs, or fatigue affecting judgment and reflexes
+   - Significantly increases accident risk
+
+4. **Poor Weather Conditions**
+   - Rain, snow, fog, or ice reducing visibility and traction
+   - Makes vehicles harder to control
+
+5. **Vehicle Failure**
+   - Brake problems, tire blowouts, or steering issues
+   - Mechanical problems prevent proper vehicle operation
+
+---
+
+*Most accidents result from a combination of factors. Safe driving depends on attention, appropriate speed, proper maintenance, and adjusting to conditions.*"
+claude-haiku-4.5,3,gpt-6,Brainstorm 5 possible causes of a car accident,"# 5 Possible Causes of a Car Accident
+
+1. **Driver Distraction**
+   - Using a phone, eating, adjusting the radio, or looking away from the road
+
+2. **Speeding or Reckless Driving**
+   - Traveling too fast for conditions or failing to adjust speed appropriately
+
+3. **Weather Conditions**
+   - Rain, snow, fog, or ice reducing visibility and tire traction
+
+4. **Mechanical Failure**
+   - Brake failure, tire blowouts, steering problems, or other equipment malfunctions
+
+5. **Impaired Driving**
+   - Driving under the influence of alcohol, drugs, or medication affecting judgment and reaction time
+
+Each of these can significantly increase crash risk and severity. Prevention typically involves focus, maintenance, caution in poor conditions, and never driving impaired."
+claude-haiku-4.5,1,gpt-6-high,Brainstorm 5 possible causes of a car accident,"# 5 Possible Causes of a Car Accident
+
+1. **Driver Distraction**
+   - Phone use, eating, adjusting controls, or daydreaming taking attention off the road
+
+2. **Speeding or Reckless Driving**
+   - Traveling too fast for conditions, aggressive maneuvers, or ignoring traffic laws
+
+3. **Impaired Driving**
+   - Driving under the influence of alcohol, drugs, or medications that affect judgment and reaction time
+
+4. **Weather Conditions**
+   - Rain, snow, ice, fog, or high winds reducing visibility and tire traction
+
+5. **Vehicle Mechanical Failure**
+   - Brake failure, tire blowouts, steering problems, or other equipment malfunctions
+
+---
+
+*Note: Most accidents result from a combination of factors rather than a single cause.*"
+claude-haiku-4.5,4,claude-opus-5-high,Brainstorm 5 possible causes of a car accident,"# 5 Possible Causes of a Car Accident
+
+1. **Driver Distraction**
+   - Texting, phone use, eating, or adjusting controls while driving
+   - Takes attention away from the road at critical moments
+
+2. **Speeding or Unsafe Speed**
+   - Driving too fast for conditions (weather, traffic, road type)
+   - Reduces reaction time and braking distance
+
+3. **Impaired Driving**
+   - Alcohol or drug use affecting judgment and reflexes
+   - Fatigue or drowsiness behind the wheel
+
+4. **Poor Road Conditions**
+   - Wet or icy surfaces reducing tire traction
+   - Potholes, debris, or inadequate lighting
+
+5. **Mechanical Failure**
+   - Brake malfunction or tire blowouts
+   - Failed steering or lighting systems
+   - Lack of proper vehicle maintenance
+
+---
+
+These can overlap—for example, speeding combined with wet roads greatly increases accident risk."
+claude-haiku-4.5,5,qwen-4-high,Brainstorm 5 possible causes of a car accident,"# 5 Possible Causes of a Car Accident
+
+1. **Distracted Driving**
+   - Phone use, eating, adjusting radio, or daydreaming while operating the vehicle
+
+2. **Speeding or Reckless Driving**
+   - Traveling too fast for conditions or road type, reducing reaction time and control
+
+3. **Impaired Driving**
+   - Operating under the influence of alcohol, drugs, or medication that affects judgment and reflexes
+
+4. **Poor Weather or Road Conditions**
+   - Rain, fog, ice, or debris causing reduced visibility and tire traction
+
+5. **Mechanical Failure**
+   - Brake malfunction, tire blowout, or other equipment failure that prevents proper vehicle control
+
+Each of these is preventable or manageable through proper maintenance, attention, and safe driving practices."
+claude-haiku-4.5,0,qwen-4,Brainstorm 5 possible causes of a car accident,"# 5 Possible Causes of a Car Accident
+
+1. **Distracted Driving**
+   - Using a phone, eating, adjusting the radio, or looking away from the road
+
+2. **Speeding or Reckless Driving**
+   - Driving too fast for conditions or ignoring traffic laws
+
+3. **Impaired Driving**
+   - Driving under the influence of alcohol, drugs, or fatigue/drowsiness
+
+4. **Poor Weather Conditions**
+   - Rain, snow, fog, or ice reducing visibility and traction
+
+5. **Vehicle Malfunction**
+   - Brake failure, tire blowouts, steering problems, or other mechanical issues
+
+---
+
+Each of these can be prevented or minimized through careful driving habits, vehicle maintenance, and responsible decision-making."
+claude-haiku-4.5,3,claude-opus-5,"Come up with an antonym for the word ""conservative"".","# Antonym for ""Conservative""
+
+**Progressive** is a good antonym for conservative.
+
+- **Conservative** implies favoring tradition, gradual change, and maintaining established systems
+- **Progressive** implies favoring innovation, rapid change, and reform of existing systems
+
+Other related antonyms include: radical, liberal, or revolutionary."
+claude-haiku-4.5,2,qwen-4-high,"Come up with an antonym for the word ""conservative"".","# Antonym for ""Conservative""
+
+**Progressive** is a strong antonym for conservative.
+
+- **Conservative** = favoring tradition, resisting change, cautious
+- **Progressive** = favoring reform, embracing change, forward-thinking
+
+Other antonyms depending on context include: radical, liberal, or innovative."
+claude-haiku-4.5,5,claude-opus-5-high,"Come up with an antonym for the word ""conservative"".","# Antonym for ""conservative""
+
+**Progressive** or **liberal** are good antonyms for conservative.
+
+- **Conservative** typically means favoring tradition, gradual change, and caution
+- **Progressive** means favoring reform, innovation, and rapid change
+- **Liberal** means open to new ideas and willing to discard traditions
+
+The best choice depends on context, but ""progressive"" is often the most direct opposite."
+claude-haiku-4.5,0,gpt-6,"Come up with an antonym for the word ""conservative"".","A good antonym for ""conservative"" is **progressive** (or **liberal**).
+
+Conservative implies cautious, traditional, and resistant to change, while progressive/liberal implies forward-thinking, innovative, and open to change."
+claude-haiku-4.5,1,qwen-4,"Come up with an antonym for the word ""conservative"".","# Antonym for ""Conservative""
+
+**Progressive** is a strong antonym for conservative.
+
+- **Conservative** suggests favoring tradition, established practices, and gradual change
+- **Progressive** suggests favoring innovation, reform, and rapid change
+
+Other related antonyms include: radical, liberal, or revolutionary—depending on the context."
+claude-haiku-4.5,4,gpt-6-high,"Come up with an antonym for the word ""conservative"".","# Antonym for ""Conservative""
+
+**Progressive** or **radical** are good antonyms for conservative, depending on context:
+
+- **Progressive** - favoring reform, innovation, and forward-looking change
+- **Radical** - advocating for fundamental or extreme change
+
+These contrast with conservative, which typically means favoring tradition, stability, and gradual change (or minimal change)."
+claude-haiku-4.5,0,qwen-4,Determine the chemical equation for the reaction between Carbon dioxide and water,"# Reaction Between Carbon Dioxide and Water
+
+## Chemical Equation
+
+$$\ce{CO2(g) + H2O(l) <=> H2CO3(aq)}$$
+
+Or in ionic form:
+
+$$\ce{CO2(g) + H2O(l) <=> H+(aq) + HCO3-(aq)}$$
+
+## Key Features
+
+| Aspect | Details |
+|--------|---------|
+| **Reactants** | CO₂ (carbon dioxide) + H₂O (water) |
+| **Main Product** | H₂CO₃ (carbonic acid) |
+| **Equilibrium** | The reaction is reversible (indicated by ⇌) |
+| **Type** | Acid-base/combination reaction |
+
+## What Happens
+
+1. CO₂ dissolves in water
+2. Forms **carbonic acid** (H₂CO₃), a weak acid
+3. Carbonic acid partially ionizes into H⁺ and HCO₃⁻ ions
+4. This is why carbonated beverages are slightly acidic
+
+## Important Notes
+
+- The equilibrium **favors the reactants** (mostly CO₂ and H₂O remain)
+- Only a small amount of carbonic acid is actually formed
+- This reaction is important in: ocean chemistry, respiration, and carbonated drinks"
+claude-haiku-4.5,5,claude-opus-5,Determine the chemical equation for the reaction between Carbon dioxide and water,"# Reaction Between Carbon Dioxide and Water
+
+## Chemical Equation
+
+$$\ce{CO2(g) + H2O(l) <=> H2CO3(aq)}$$
+
+Or in ionic form:
+
+$$\ce{CO2(aq) + H2O(l) <=> H^+(aq) + HCO3^-(aq)}$$
+
+## Explanation
+
+### What Happens
+When carbon dioxide dissolves in water, it reacts to form **carbonic acid** (H₂CO₃), which is a weak acid. The carbonic acid can further dissociate into hydrogen ions and bicarbonate ions.
+
+### Key Features
+
+| Aspect | Details |
+|--------|---------|
+| **Reaction Type** | Acid-base/dissolution |
+| **Reversible** | Yes (equilibrium reaction) |
+| **Products** | Carbonic acid or its ions |
+| **Conditions** | Room temperature and pressure |
+
+### Complete Multi-Step Process
+
+1. **Hydration**: CO₂(g) + H₂O(l) → H₂CO₃(aq)
+2. **First ionization**: H₂CO₃(aq) ⇌ H⁺(aq) + HCO₃⁻(aq)
+3. **Second ionization**: HCO₃⁻(aq) ⇌ H⁺(aq) + CO₃²⁻(aq)
+
+This reaction is important in nature and explains why rainwater is slightly acidic (pH ~5.6) and is relevant to ocean chemistry and mineral dissolution."
+claude-haiku-4.5,1,qwen-4-high,Determine the chemical equation for the reaction between Carbon dioxide and water,"# Chemical Equation: CO₂ + H₂O Reaction
+
+## The Basic Equation
+
+$$\ce{CO2 + H2O → H2CO3}$$
+
+**Carbon dioxide + Water → Carbonic acid**
+
+## What Happens
+
+When CO₂ dissolves in water, it forms **carbonic acid** (H₂CO3), a weak acid. This is a **reversible reaction**:
+
+$$\ce{CO2(g) + H2O(l) <=> H2CO3(aq)}$$
+
+## Further Ionization (Optional)
+
+In solution, carbonic acid partially ionizes in two steps:
+
+$$\ce{H2CO3 <=> H+ + HCO3-}$$
+$$\ce{HCO3- <=> H+ + CO3^{2-}}$$
+
+## Key Points
+
+- **Type of reaction**: Combination/synthesis reaction
+- **Reversible**: The reaction reaches equilibrium; not all CO₂ converts to H₂CO3
+- **Location**: Occurs naturally in oceans and in carbonated beverages
+- **Weak acid**: H₂CO3 is unstable and readily decomposes back into CO₂ and H₂O
+
+This reaction is important in **acid rain formation**, **ocean chemistry**, and **carbonation** of beverages."
+claude-haiku-4.5,3,gpt-6-high,Determine the chemical equation for the reaction between Carbon dioxide and water,"# Reaction Between Carbon Dioxide and Water
+
+## Chemical Equation
+
+$$\ce{CO2(g) + H2O(l) <=> H2CO3(aq)}$$
+
+Or in a more detailed form:
+
+$$\ce{CO2(g) + H2O(l) <=> H+(aq) + HCO3^-(aq)}$$
+
+## Key Points
+
+| Aspect | Details |
+|--------|---------|
+| **Type** | Acid-base reaction (formation of carbonic acid) |
+| **Reversible** | Yes - equilibrium reaction (double arrow) |
+| **Products** | Carbonic acid (H₂CO₃) or hydrogen ions and bicarbonate ions |
+| **pH Change** | Forms a weakly acidic solution |
+
+## What Happens
+
+1. CO₂ dissolves in water
+2. Forms carbonic acid (H₂CO₃)
+3. Carbonic acid partially dissociates into H⁺ and HCO₃⁻ ions
+4. The reaction reaches equilibrium (doesn't go to completion)
+
+## Real-World Examples
+
+- **Carbonated beverages** - CO₂ dissolved in water creates the fizz
+- **Ocean acidification** - Atmospheric CO₂ reacting with seawater
+- **Stalactite formation** - CO₂ in rainwater creating carbonic acid
+
+This is an important reaction in both environmental and biological systems!"
+claude-haiku-4.5,2,gpt-6,Determine the chemical equation for the reaction between Carbon dioxide and water,"# Reaction Between Carbon Dioxide and Water
+
+## Chemical Equation
+
+$$\ce{CO2(g) + H2O(l) <=> H2CO3(aq)}$$
+
+Or, showing the further dissociation:
+
+$$\ce{CO2(g) + H2O(l) <=> H^+(aq) + HCO3^-(aq)}$$
+
+## Key Points
+
+**Reversible Reaction**: The double arrow (⇌) indicates this is a **reversible equilibrium** — the products can reform the reactants.
+
+**Carbonic Acid Formation**: The primary product is carbonic acid (H₂CO₃), an unstable, weak acid that exists in small concentrations in water.
+
+**Further Ionization**: Carbonic acid can partially ionize to form:
+- Hydrogen ions (H⁺)
+- Bicarbonate ions (HCO₃⁻)
+
+## Real-World Examples
+
+- **Carbonated beverages**: CO₂ dissolved under pressure forms carbonic acid, giving the ""fizzy"" taste
+- **Ocean acidification**: Atmospheric CO₂ dissolves in seawater, forming carbonic acid and lowering ocean pH
+- **Caves**: CO₂ in rainwater forms weak carbonic acid, which dissolves limestone over time
+
+This reaction is important in both environmental and biological chemistry."
+claude-haiku-4.5,4,claude-opus-5-high,Determine the chemical equation for the reaction between Carbon dioxide and water,"# Reaction Between Carbon Dioxide and Water
+
+## Chemical Equation
+
+**CO₂(g) + H₂O(l) ⇌ H₂CO₃(aq)**
+
+Or, showing the ionization:
+
+**CO₂(g) + H₂O(l) ⇌ H⁺(aq) + HCO₃⁻(aq)**
+
+## Explanation
+
+When carbon dioxide dissolves in water, it reacts to form **carbonic acid** (H₂CO₃), which is a weak acid. This is an **equilibrium reaction** (indicated by ⇌), meaning it's reversible.
+
+### Key Points:
+
+- **Carbonic acid is unstable** and readily decomposes back into CO₂ and H₂O
+- This reaction is important in:
+  - Ocean chemistry and pH regulation
+  - Carbonation of beverages
+  - Formation of limestone caves
+  - Photosynthesis and respiration cycles
+- The forward reaction is **not complete** — only a small percentage of CO₂ forms carbonic acid
+
+### Complete Ionization (in steps):
+1. CO₂ + H₂O ⇌ H₂CO₃
+2. H₂CO₃ ⇌ H⁺ + HCO₃⁻
+3. HCO₃⁻ ⇌ H⁺ + CO₃²⁻
+
+This is why carbonated water is slightly acidic (pH ~3.5-4)."
+claude-haiku-4.5,1,gpt-6,"Determine which sentence, A or B, has the most grammatically correct structure.
+A. The dog chases it's tail, barking loudly every time. B. The dog chases its tail, barking loudly every time.","# Answer: **B**
+
+## Explanation:
+
+**Sentence B** is grammatically correct.
+
+The key difference is the use of **its** vs. **it's**:
+
+- **its** = possessive pronoun (shows ownership)
+- **it's** = contraction of ""it is""
+
+In this sentence, we need the possessive form because the tail belongs to the dog, so **its** is correct.
+
+**Sentence A** contains a grammatical error by using the contraction ""it's"" instead of the possessive ""its."""
+claude-haiku-4.5,3,qwen-4-high,"Determine which sentence, A or B, has the most grammatically correct structure.
+A. The dog chases it's tail, barking loudly every time. B. The dog chases its tail, barking loudly every time.","# Answer: **B**
+
+## Explanation:
+
+**Sentence B is grammatically correct.**
+
+The key difference is the possessive pronoun:
+
+- **""its""** (no apostrophe) = possessive pronoun meaning ""belonging to it""
+- **""it's""** (with apostrophe) = contraction of ""it is""
+
+In sentence A, ""it's tail"" is incorrect because it uses the contraction ""it's"" when the possessive form ""its"" is needed.
+
+**Sentence B correctly uses ""its""** to show that the tail belongs to the dog, making it grammatically correct."
+claude-haiku-4.5,2,claude-opus-5,"Determine which sentence, A or B, has the most grammatically correct structure.
+A. The dog chases it's tail, barking loudly every time. B. The dog chases its tail, barking loudly every time.","# Answer: **B**
+
+**Sentence B is grammatically correct.**
+
+## The Key Difference
+
+- **B uses ""its""** (possessive pronoun) — correct
+- **A uses ""it's""** (contraction of ""it is"") — incorrect
+
+## Explanation
+
+- **""Its""** = possessive form (shows ownership)
+  - *The dog chases its tail* ✓
+  
+- **""It's""** = contraction meaning ""it is""
+  - *The dog chases it is tail* ✗ (doesn't make sense)
+
+Sentence B is grammatically correct in all respects, while Sentence A contains a common pronoun error."
+claude-haiku-4.5,5,gpt-6-high,"Determine which sentence, A or B, has the most grammatically correct structure.
+A. The dog chases it's tail, barking loudly every time. B. The dog chases its tail, barking loudly every time.","# Answer: B
+
+**Sentence B is grammatically correct.**
+
+## The Key Difference
+
+**Its** (possessive pronoun) vs. **it's** (contraction of ""it is"")
+
+- **B uses ""its""** — the correct possessive form showing the tail belongs to the dog
+- **A uses ""it's""** — a contraction meaning ""it is,"" which doesn't fit the context
+
+In sentence A, ""it's tail"" would literally mean ""it is tail,"" which is nonsensical.
+
+**Sentence B is the grammatically correct choice.**"
+claude-haiku-4.5,0,claude-opus-5-high,"Determine which sentence, A or B, has the most grammatically correct structure.
+A. The dog chases it's tail, barking loudly every time. B. The dog chases its tail, barking loudly every time.","# Answer: **B is grammatically correct.**
+
+## Explanation:
+
+**Sentence B** uses the correct possessive pronoun **""its""** (no apostrophe).
+
+**Sentence A** incorrectly uses **""it's""** (with apostrophe), which is a contraction meaning ""it is.""
+
+### Quick Rule:
+- **its** = possessive (belonging to it)
+- **it's** = contraction (it is)
+
+In this sentence, the tail belongs to the dog, so the possessive form ""its"" is needed."
+claude-haiku-4.5,4,qwen-4,"Determine which sentence, A or B, has the most grammatically correct structure.
+A. The dog chases it's tail, barking loudly every time. B. The dog chases its tail, barking loudly every time.","# Answer: **B is correct**
+
+## Explanation:
+
+**Sentence B** is grammatically correct.
+
+**The key difference:** The possessive pronoun is **its** (no apostrophe), not **it's**.
+
+- **its** = possessive pronoun (showing that the tail belongs to the dog)
+- **it's** = contraction meaning ""it is"" or ""it has""
+
+In Sentence A, ""it's tail"" would mean ""it is tail,"" which doesn't make sense.
+
+Sentence B is also well-structured overall, with proper punctuation and a clear participial phrase (""barking loudly every time"") that correctly modifies the main clause."
+claude-haiku-4.5,2,gpt-6,"Formulate a multiple-choice question on environmental conservation and provide four possible answers, with one being the correct choice.","# Environmental Conservation Question
+
+**Which of the following practices is most effective at reducing an individual's carbon footprint in developed countries?**
+
+A) Using reusable shopping bags instead of plastic bags
+
+B) Reducing energy consumption at home through efficiency measures and renewable sources
+
+C) Purchasing carbon-neutral certified products
+
+D) Planting trees in residential yards
+
+---
+
+## Answer: **B) Reducing energy consumption at home through efficiency measures and renewable sources**
+
+**Explanation:**
+Energy use in homes (heating, cooling, electricity) typically accounts for 15-25% of individual carbon footprints in developed countries, making it one of the largest controllable sources. Options A and C have minimal impact, and while tree-planting is valuable, a single residential tree offsets only a small fraction of annual emissions. Systematic energy reduction through insulation, efficient appliances, LED lighting, and renewable energy sources provides the most substantial reduction."
+claude-haiku-4.5,5,claude-opus-5-high,"Formulate a multiple-choice question on environmental conservation and provide four possible answers, with one being the correct choice.","# Environmental Conservation Question
+
+**Which of the following practices is most effective in reducing carbon emissions from the transportation sector?**
+
+A) Increasing highway speed limits to reduce travel time
+
+B) Promoting the use of public transportation, carpooling, and electric vehicles
+
+C) Building more parking lots in city centers to accommodate vehicles
+
+D) Encouraging longer commutes to reduce urban congestion
+
+---
+
+## Correct Answer: **B) Promoting the use of public transportation, carpooling, and electric vehicles**
+
+### Explanation:
+Option B addresses the core issue of transportation emissions by reducing the number of individual vehicles on the road and shifting toward lower-emission alternatives. Public transportation and carpooling decrease per-capita emissions, while electric vehicles eliminate tailpipe emissions entirely.
+
+The other options either increase emissions (A, D) or don't reduce them (C)."
+claude-haiku-4.5,0,qwen-4,"Formulate a multiple-choice question on environmental conservation and provide four possible answers, with one being the correct choice.","# Environmental Conservation Question
+
+**Which of the following strategies is most effective at reducing carbon dioxide emissions from the energy sector?**
+
+A) Planting more trees in urban areas to absorb CO₂
+
+B) Transitioning from fossil fuels to renewable energy sources such as solar, wind, and hydroelectric power
+
+C) Encouraging people to use public transportation more frequently
+
+D) Implementing stricter regulations on industrial waste disposal
+
+---
+
+## Answer Key
+
+**Correct Answer: B**
+
+**Explanation:** While options A and C do contribute to emission reductions, transitioning to renewable energy sources directly addresses the primary source of CO₂ emissions in the energy sector. Fossil fuels (coal, oil, and natural gas) account for the majority of global greenhouse gas emissions. Replacing them with renewables eliminates these emissions at the source. Option D addresses pollution but not specifically CO₂ emissions from energy production."
+claude-haiku-4.5,4,gpt-6-high,"Formulate a multiple-choice question on environmental conservation and provide four possible answers, with one being the correct choice.","# Environmental Conservation Question
+
+**Which of the following practices is most effective in reducing deforestation while supporting sustainable livelihoods in developing nations?**
+
+A) Implementing strict logging bans with no alternative economic activities
+
+B) Establishing community-based forest management programs that combine conservation with sustainable timber harvesting and ecotourism
+
+C) Purchasing all forest land globally and converting it to protected national parks
+
+D) Encouraging agricultural expansion into forested areas to increase food production
+
+---
+
+## Answer: **B**
+
+### Explanation:
+**Option B** is correct because it balances environmental conservation with economic needs. Community-based management creates incentives for locals to protect forests while generating income through sustainable practices, making conservation economically viable long-term.
+
+The other options fail because:
+- **A** ignores livelihood needs, leading to illegal logging and resentment
+- **C** is economically impractical and ignores indigenous rights
+- **D** directly contradicts conservation goals"
+claude-haiku-4.5,1,claude-opus-5,"Formulate a multiple-choice question on environmental conservation and provide four possible answers, with one being the correct choice.","# Environmental Conservation Question
+
+**Which of the following practices is most effective in reducing carbon emissions from the transportation sector?**
+
+A) Increasing the speed limits on highways to reduce travel time
+
+B) Transitioning to electric vehicles and expanding public transportation infrastructure
+
+C) Encouraging people to drive during off-peak hours only
+
+D) Building more roads to reduce traffic congestion
+
+---
+
+## Correct Answer: **B) Transitioning to electric vehicles and expanding public transportation infrastructure**
+
+### Explanation:
+Option B addresses the root cause by reducing fossil fuel dependency through electrification and providing alternatives to single-occupancy vehicles. Public transportation significantly decreases per-capita emissions, and EVs eliminate tailpipe emissions when powered by renewable energy.
+
+The other options are ineffective:
+- **A** increases fuel consumption
+- **C** doesn't eliminate emissions, just shifts when they occur
+- **D** typically increases vehicle usage and overall emissions"
+claude-haiku-4.5,3,qwen-4-high,"Formulate a multiple-choice question on environmental conservation and provide four possible answers, with one being the correct choice.","# Environmental Conservation Question
+
+**Which of the following practices is most effective in reducing carbon emissions from agriculture?**
+
+A) Increasing the use of synthetic fertilizers to boost crop yields
+
+B) Implementing crop rotation and using cover crops to improve soil health and reduce input needs
+
+C) Converting all farmland to livestock grazing to increase food production
+
+D) Clearing additional forests to create more arable land for farming
+
+---
+
+## Correct Answer: **B**
+
+**Explanation:** Crop rotation and cover crops reduce the need for synthetic fertilizers and pesticides, lower soil erosion, improve carbon sequestration in soil, and decrease overall farm emissions. These sustainable agricultural practices maintain productivity while minimizing environmental impact.
+
+The other options are ineffective or counterproductive:
+- **A** increases emissions and environmental pollution
+- **C** is inefficient and contributes to deforestation
+- **D** directly causes habitat loss and increases atmospheric carbon"
+claude-haiku-4.5,3,qwen-4,"Modify the following HTML to set the font color to blue.
+<p>This is some text</p>","# Modified HTML with Blue Font Color
+
+Here are a few ways to set the font color to blue:
+
+## Option 1: Using inline style (quickest)
+```html
+<p style=""color: blue;"">This is some text</p>
+```
+
+## Option 2: Using a CSS class
+```html
+<style>
+  .blue-text {
+    color: blue;
+  }
+</style>
+
+<p class=""blue-text"">This is some text</p>
+```
+
+## Option 3: Using an ID
+```html
+<style>
+  #blue-paragraph {
+    color: blue;
+  }
+</style>
+
+<p id=""blue-paragraph"">This is some text</p>
+```
+
+**Option 1** is the simplest for a single element, while **Options 2 and 3** are better for styling multiple elements or larger projects."
+claude-haiku-4.5,0,claude-opus-5-high,"Modify the following HTML to set the font color to blue.
+<p>This is some text</p>","# Modified HTML with Blue Font Color
+
+```html
+<p style=""color: blue;"">This is some text</p>
+```
+
+Alternatively, you could use a CSS class:
+
+```html
+<style>
+  .blue-text {
+    color: blue;
+  }
+</style>
+
+<p class=""blue-text"">This is some text</p>
+```
+
+Or use an inline style with a hex color code:
+
+```html
+<p style=""color: #0000FF;"">This is some text</p>
+```"
+claude-haiku-4.5,5,gpt-6,"Modify the following HTML to set the font color to blue.
+<p>This is some text</p>","# Modified HTML with Blue Font Color
+
+Here are a few ways to set the font color to blue:
+
+## Option 1: Using inline style (quickest)
+```html
+<p style=""color: blue;"">This is some text</p>
+```
+
+## Option 2: Using a class (recommended for reusability)
+```html
+<style>
+  .blue-text {
+    color: blue;
+  }
+</style>
+
+<p class=""blue-text"">This is some text</p>
+```
+
+## Option 3: Using an id (for single element)
+```html
+<style>
+  #blue-paragraph {
+    color: blue;
+  }
+</style>
+
+<p id=""blue-paragraph"">This is some text</p>
+```
+
+**I'd recommend Option 1** if it's just this one element, or **Option 2** if you have multiple elements that need blue text."
+claude-haiku-4.5,2,claude-opus-5,"Modify the following HTML to set the font color to blue.
+<p>This is some text</p>","# Modified HTML with Blue Font Color
+
+Here are a few ways to set the font color to blue:
+
+## Option 1: Using inline style (quickest)
+```html
+<p style=""color: blue;"">This is some text</p>
+```
+
+## Option 2: Using a class with CSS
+```html
+<style>
+  .blue-text {
+    color: blue;
+  }
+</style>
+
+<p class=""blue-text"">This is some text</p>
+```
+
+## Option 3: Using an ID with CSS
+```html
+<style>
+  #blue-paragraph {
+    color: blue;
+  }
+</style>
+
+<p id=""blue-paragraph"">This is some text</p>
+```
+
+**Option 1** is the simplest for a single element, while **Options 2 and 3** are better if you want to reuse the styling across multiple elements."
+claude-haiku-4.5,4,qwen-4-high,"Modify the following HTML to set the font color to blue.
+<p>This is some text</p>","# Modified HTML with Blue Font Color
+
+Here are a few ways to set the font color to blue:
+
+## Option 1: Using inline style (quickest)
+```html
+<p style=""color: blue;"">This is some text</p>
+```
+
+## Option 2: Using a class with CSS
+```html
+<style>
+  .blue-text {
+    color: blue;
+  }
+</style>
+
+<p class=""blue-text"">This is some text</p>
+```
+
+## Option 3: Using an ID with CSS
+```html
+<style>
+  #my-paragraph {
+    color: blue;
+  }
+</style>
+
+<p id=""my-paragraph"">This is some text</p>
+```
+
+**Option 1** is the simplest for a single element, while **Options 2 and 3** are better for reusability and separating content from styling."
+claude-haiku-4.5,1,gpt-6-high,"Modify the following HTML to set the font color to blue.
+<p>This is some text</p>","# Modified HTML with Blue Font Color
+
+```html
+<p style=""color: blue;"">This is some text</p>
+```
+
+**Alternative methods:**
+
+Using a `<style>` tag:
+```html
+<style>
+  p {
+    color: blue;
+  }
+</style>
+<p>This is some text</p>
+```
+
+Using an external CSS file:
+```html
+<link rel=""stylesheet"" href=""styles.css"">
+<p>This is some text</p>
+```
+
+Where `styles.css` contains:
+```css
+p {
+  color: blue;
+}
+```"
+claude-haiku-4.5,0,qwen-4-high,Suggest a snack that you can make in under 5 minutes.,"# Quick 5-Minute Snack: Peanut Butter Apple Slices
+
+**What you need:**
+- Apple
+- Peanut butter
+- Optional: chocolate chips, granola, or cinnamon
+
+**Steps:**
+1. Slice an apple into rounds
+2. Spread peanut butter on each slice
+3. Add toppings if desired (chocolate chips are especially good)
+4. Eat!
+
+It's sweet, satisfying, and genuinely takes just a few minutes. The combination of protein and natural sugars keeps you full, and there's basically no cleanup."
+claude-haiku-4.5,4,claude-opus-5-high,Suggest a snack that you can make in under 5 minutes.,"# Quick 5-Minute Snack: Hummus and Veggie Plate
+
+**What you need:**
+- Store-bought hummus
+- Pre-cut veggies (carrots, cucumbers, bell peppers) or whole cherry tomatoes
+- Optional: pita chips or crackers
+
+**Steps:**
+1. Scoop hummus into a bowl
+2. Arrange veggies around it
+3. Eat and enjoy!
+
+**Why it works:** Everything is ready to go, requires zero cooking, and gives you protein + fiber. You can swap the hummus for any dip you like—guacamole, salsa, or ranch work too."
+claude-haiku-4.5,3,qwen-4,Suggest a snack that you can make in under 5 minutes.,"# Quick 5-Minute Snack: Hummus & Veggie Plate
+
+**What you need:**
+- Store-bought hummus
+- Raw vegetables (carrots, cucumbers, bell peppers, cherry tomatoes)
+- Knife and cutting board
+
+**Steps:**
+1. Scoop hummus into a small bowl
+2. Quickly chop or slice your veggies into bite-sized pieces
+3. Arrange on a plate around the hummus
+
+**Why it's great:**
+- Requires zero cooking
+- Healthy and satisfying
+- Customizable with whatever you have on hand
+- Perfect protein and fiber combo
+
+Other quick alternatives: cheese and crackers, trail mix, Greek yogurt with granola, or apple slices with peanut butter."
+claude-haiku-4.5,2,claude-opus-5,Suggest a snack that you can make in under 5 minutes.,"# Quick Hummus & Veggie Platter
+
+**Time: 2-3 minutes**
+
+- Grab store-bought hummus and dump it in a bowl
+- Slice up whatever veggies you have on hand (carrots, cucumbers, bell peppers, cherry tomatoes)
+- Arrange on a plate and dip
+
+**Why it works:** No cooking needed, tastes fresh and satisfying, and you probably have most ingredients already. If you want something warm instead, microwaved nachos or cheese toast are equally quick options."
+claude-haiku-4.5,5,gpt-6,Suggest a snack that you can make in under 5 minutes.,"# Quick Hummus & Veggie Plate
+
+**Time: 2-3 minutes**
+
+- Grab a handful of **carrots, cucumbers, or bell peppers**
+- Scoop some **hummus** (store-bought) into a bowl
+- Arrange veggies around it
+- Dip and enjoy!
+
+**Why it works:** No cooking needed, satisfying, and genuinely tasty.
+
+Other quick options if you want variety: peanut butter + apple slices, cheese + crackers, or Greek yogurt with granola."
+claude-haiku-4.5,1,gpt-6-high,Suggest a snack that you can make in under 5 minutes.,"# Quick Peanut Butter Energy Bites
+
+Mix together:
+- 1/2 cup peanut butter
+- 1/4 cup honey
+- 1 cup oats
+- 1/2 cup chocolate chips
+
+Roll into balls and eat immediately (or chill for 10 minutes if you have time).
+
+**Why it's great:** No baking required, customizable, and genuinely satisfying. You can swap in different nut butters, add coconut flakes, or use different mix-ins based on what you have on hand."
+claude-haiku-4.5,2,qwen-4-high,"Suggest two other activities to do with this given activity.
+Visit a museum","# Activities to do with visiting a museum:
+
+1. **Grab lunch or coffee at a nearby café or restaurant**
+   - Many museums have cafés, or you can explore the neighborhood around the museum for dining options. This gives you a chance to relax and reflect on what you've seen.
+
+2. **Take a guided tour or attend a museum talk/workshop**
+   - Enhance your museum experience by joining a docent-led tour, attending a lecture, or participating in an interactive workshop related to the exhibits for deeper learning."
+claude-haiku-4.5,0,gpt-6-high,"Suggest two other activities to do with this given activity.
+Visit a museum","# Activities to Pair with Visiting a Museum
+
+1. **Grab lunch or coffee at a nearby café or restaurant**
+   - Enjoy a meal or beverage before or after your museum visit to extend the outing and discuss what you've seen
+
+2. **Take a leisurely walk through the surrounding neighborhood or park**
+   - Explore the area around the museum, enjoy the scenery, and continue your cultural day with some fresh air and light exercise"
+claude-haiku-4.5,3,gpt-6,"Suggest two other activities to do with this given activity.
+Visit a museum","# Activities to Pair with Visiting a Museum
+
+1. **Grab lunch or coffee at a nearby café or restaurant** — Extend your outing by enjoying a meal before or after exploring the museum. You can discuss what you saw and relax in a casual setting.
+
+2. **Take a leisurely walk through a nearby park or neighborhood** — After spending time indoors, enjoy some fresh air and explore the surrounding area on foot. This complements the cultural experience and provides a nice change of pace."
+claude-haiku-4.5,1,qwen-4,"Suggest two other activities to do with this given activity.
+Visit a museum","# Activities to Pair with Visiting a Museum
+
+1. **Grab lunch or coffee at a nearby café or restaurant**
+   - Enjoy a meal before or after your museum visit to discuss what you saw and relax
+
+2. **Take a leisurely walk through nearby parks or historic neighborhoods**
+   - Extend your cultural outing by exploring the surrounding area on foot and enjoying the outdoors"
+claude-haiku-4.5,5,claude-opus-5,"Suggest two other activities to do with this given activity.
+Visit a museum","# Activities to Pair with Visiting a Museum
+
+Here are two great complementary activities:
+
+1. **Grab lunch or coffee at a nearby café or restaurant**
+   - Many museums are located in cultural districts with good dining options. This gives you time to discuss what you saw and relax between exhibits.
+
+2. **Take a walking tour of the surrounding neighborhood**
+   - Explore the area around the museum to discover local shops, galleries, historical landmarks, or street art. This extends your cultural experience and helps you get to know the neighborhood better.
+
+Both activities enhance the museum experience and make for a fuller, more enjoyable outing!"
+claude-haiku-4.5,4,claude-opus-5-high,"Suggest two other activities to do with this given activity.
+Visit a museum","# Activities to Pair with Visiting a Museum
+
+1. **Have lunch or dinner at a nearby restaurant** - Extend your cultural outing by dining at a restaurant close to the museum. This gives you time to discuss what you've seen and enjoy good food in a relaxed setting.
+
+2. **Take a guided walking tour of the neighborhood** - Explore the surrounding area on foot, discovering local shops, galleries, historic landmarks, or street art. Many museum districts have rich histories and interesting architecture worth exploring."
+claude-haiku-4.5,4,qwen-4-high,Tell me a story about a lovable character.,"# The Baker's Gift
+
+There was a man named Mr. Chen who ran a small bakery on Maple Street. He had flour perpetually dusted in his hair and a laugh that sounded like wind chimes.
+
+Every morning, before dawn, Mr. Chen would shuffle into his kitchen and begin his ritual. But he didn't just bake for the money. He baked because he remembered.
+
+He remembered Mrs. Okoye, who'd lost her job, so every Friday he'd leave an extra loaf by her door with a note: ""For the weekend."" He remembered Tommy, the boy with the stutter who came in after school, so he'd ask him to name the new pastries—giving Tommy a voice in a place where he felt heard.
+
+When old Mr. Petrov's wife passed away, Mr. Chen baked his favorite apple turnovers every single day for three months without being asked. He never mentioned it.
+
+One winter, a teenager from the neighborhood was caught shoplifting from his store. The police came. Mr. Chen asked them to wait outside, then sat with the boy in the back room.
+
+""Why did you do it?"" he asked gently.
+
+""My mom's sick. We don't have enough.""
+
+Mr. Chen nodded slowly. Then he hired him—minimum wage, no questions asked. The boy became his assistant and eventually his friend.
+
+Years later, when Mr. Chen finally retired, the whole neighborhood came to his farewell party. They brought flowers, stories, and tears. They told him he'd changed their lives.
+
+Mr. Chen just smiled, flour still in his hair, and said: ""I only baked bread. *You* made it matter."""
+claude-haiku-4.5,5,qwen-4,Tell me a story about a lovable character.,"# The Baker's Cat
+
+In a small corner shop on Maple Street lived a portly orange tabby named Marmalade. He belonged to Mrs. Chen, who'd owned the bakery for forty years.
+
+Marmalade's job was simple: be loved by everyone.
+
+He'd sprawl across the warmest spot near the ovens, his belly rising and falling like a furry bellows. When deliveries arrived, he'd weave between the driver's legs, purring loudly enough to hear over the traffic. Regular customers came partly for the croissants, partly for Marmalade's slow-blink greetings.
+
+One winter, a lonely boy started visiting after school. His parents were divorcing, and he'd walk past the bakery looking hollow-eyed. Mrs. Chen noticed. She always had a warm cookie waiting for him.
+
+But it was Marmalade who changed something. The cat would hop onto the boy's lap—something he did for almost no one—and settle there, a purring anchor. The boy would bury his fingers in that soft orange fur and just breathe.
+
+Months passed. The boy stopped looking hollow. He started helping Mrs. Chen arrange pastries. He'd tell Marmalade about his day.
+
+One afternoon, the boy said, ""I think I'm going to be okay.""
+
+Marmalade, as if on cue, yawned and kneaded the boy's lap with his paws.
+
+Mrs. Chen smiled. That was Marmalade's gift—not doing anything extraordinary, just *being* there, warm and steady and impossibly kind."
+claude-haiku-4.5,0,gpt-6,Tell me a story about a lovable character.,"# The Lighthouse Keeper's Cat
+
+Old Samuel kept the lighthouse beam turning faithfully for forty-three years, but everyone in the village knew the real guardian of that rocky point was his cat, Biscuit.
+
+Biscuit was orange and round, with one ear that folded forward like he was always listening. He had a habit of greeting every visitor with a chirping ""brrrp"" sound—not quite a meow—and an insistent figure-eight around their ankles.
+
+The fishermen swore Biscuit could predict storms. He'd appear at the dock an hour before the weather shifted, meowing urgently until they brought their boats to safety. Whether this was true or merely coincidence, no one could say, but no one had lost a boat since he started doing it.
+
+When Samuel had a heart attack one winter evening, it was Biscuit who alerted the supply boat captain by sitting in the lighthouse beam, howling like a creature possessed. They found Samuel in time.
+
+Years later, when Samuel passed peacefully in his sleep, the village asked what would become of Biscuit. The new lighthouse keeper was a young woman who'd never owned a cat.
+
+She needn't have worried. Biscuit simply padded over, gave her that familiar figure-eight greeting, and claimed the lighthouse as his home. On her first night, he sat on her lap while she learned the old logbooks.
+
+Some things, it seemed, were bigger than any one person. Some things were just meant to endure."
+claude-haiku-4.5,1,gpt-6-high,Tell me a story about a lovable character.,"# The Lighthouse Keeper
+
+Old Mr. Chen had been tending the lighthouse for forty years, and everyone in the village adored him.
+
+He wasn't the most accomplished man—his log entries were misspelled, his paint jobs were crooked, and he couldn't remember names to save his life. But what he lacked in perfection, he made up for in genuine warmth.
+
+Every morning, he'd wake at dawn and brew extra coffee, knowing the fishermen would stop by before heading out. He'd know them by their boats, if not their names. ""The blue one! Good to see you!"" he'd call out, always with a real smile.
+
+When young Elena's lighthouse project failed at the school science fair, Mr. Chen found her crying on the rocks. He didn't tell her she'd do better next time—he'd seen her try hard. Instead, he showed her the real lighthouse, explained how light works through his own experience, and invited her back anytime.
+
+She visited for the whole next year.
+
+The thing about Mr. Chen was that he never tried to impress anyone. He was simply *present*—genuinely interested in people, generous with his time, and unafraid to be himself. He laughed easily, admitted mistakes freely, and treated everyone from the village mayor to the lonely widow the same way: with real attention.
+
+When he finally retired, the entire village showed up. Not because he'd done anything extraordinary.
+
+Because he'd made them feel seen."
+claude-haiku-4.5,2,claude-opus-5-high,Tell me a story about a lovable character.,"# The Baker's Gift
+
+In a small town nestled between green hills, there lived a woman named Mabel who ran the corner bakery. She was round-faced and flour-dusted, with silver hair always escaping from beneath a checkered bandana.
+
+What made Mabel lovable wasn't just her cinnamon rolls—though people came from three towns over for those. It was that she remembered everyone's stories.
+
+She knew that young Marcus was nervous about his first day of school, so she slipped extra chocolate chips into his cookie ""for courage."" She learned that elderly Mr. Chen's wife had passed, and every morning thereafter, she had his favorite almond cake waiting, never charging him.
+
+When the Rodriguez family lost their home to a fire, Mabel's kitchen became their refuge. She employed their daughter, taught her recipes, and somehow always had extra soup simmering on the stove for anyone who wandered in looking lost.
+
+One winter morning, the town gathered outside the bakery. Snow covered the windows, but inside, warm light glowed. They'd come to tell Mabel something: the local hospital was naming their new community kitchen after her.
+
+Mabel cried happy tears, flour smudging her cheeks.
+
+""I was just baking,"" she said, bewildered. ""I was just remembering people matter.""
+
+But that, of course, was exactly why everyone loved her."
+claude-haiku-4.5,3,claude-opus-5,Tell me a story about a lovable character.,"# The Baker's Gift
+
+There was a man named Walter who ran a small bakery on Maple Street. He had flour perpetually dusted in his hair, warm brown eyes, and a habit of humming off-key while he worked.
+
+Walter knew everyone in town by name—not just their names, but their stories. He knew that Mrs. Chen's grandson was starting college, that Marcus was interviewing for his first job, that little Lily was afraid of the dark.
+
+One winter morning, Mrs. Chen came in looking drawn and tired. Without a word, Walter packed a box with her favorite almond cookies—free, though he pretended the register had malfunctioned. When Marcus came in nervous and nauseated before his interview, Walter gave him a perfect croissant and told him about the time *he'd* interviewed for his first job and thrown up in the waiting room. Marcus laughed despite himself.
+
+And for Lily, Walter created elaborate bread sculptures—dragons and castles and sleeping lions—secretly leaving them on her family's porch so she'd find them like little bedtime treasures. They made her smile before sleep.
+
+Walter never spoke of these kindnesses. He simply showed up each morning before dawn, kneaded dough with his strong hands, and baked things that made people feel less alone.
+
+When he retired years later, the entire town lined the street. He'd never meant to change anyone's life. He'd just been paying attention, and acting like love was the easiest thing in the world.
+
+Because for Walter, it was."
+claude-haiku-4.5,0,claude-opus-5-high,You are making a game. Design how a player will move around the environment.,"# Movement System Design
+
+## Core Movement Controls
+
+**WASD/Analog Stick**
+- W/Up: Move forward
+- A/Left: Strafe left
+- S/Down: Move backward
+- D/Right: Strafe right
+- Hold Sprint: Increased speed (costs stamina if relevant)
+
+**Mouse/Right Stick**
+- Look around freely
+- Affects where player moves when holding movement keys
+
+---
+
+## Movement Types
+
+### Ground Movement
+- **Walking**: Standard speed, full control
+- **Sprinting**: 1.5x speed, slight momentum/inertia
+- **Crouching**: 0.6x speed, quieter, lower profile (if stealth matters)
+
+### Vertical Movement
+- **Jumping**: Press Space; height affected by momentum
+- **Climbing**: Auto-climb small ledges; hold climb button for tall walls
+- **Falling**: Gradual descent with air control (30% steering)
+
+### Special Movement
+- **Sliding**: Sprint + Crouch = forward momentum burst
+- **Ledge grab**: Jump toward edge → auto-grip → climb or drop
+- **Swimming**: WASD + Space for vertical control (slower than walking)
+
+---
+
+## Polish Features
+
+| Feature | Purpose |
+|---------|---------|
+| **Acceleration/Deceleration** | Feels weighty, not floaty |
+| **Footstep sounds** | Audio feedback for movement |
+| **Animation blending** | Smooth transitions between states |
+| **Momentum on slopes** | Realistic physics feel |
+| **Stamina bar** | Limits sprint duration |
+| **Head bob** | Immersion (can be toggled) |
+
+---
+
+## What type of game are you designing? I can refine this further!"
+claude-haiku-4.5,3,claude-opus-5,You are making a game. Design how a player will move around the environment.,"# Movement System Design
+
+## Core Movement
+
+**Standard Navigation**
+- **WASD keys** - Move forward/backward/strafe left/right
+- **Mouse/Right stick** - Look around and aim
+- **Space** - Jump
+- **Shift** - Sprint (limited stamina)
+- **Ctrl** - Crouch (slower, quieter)
+
+---
+
+## Contextual Movement
+
+**Interaction-Based**
+- **Hold E near objects** - Climb ladders, vault over obstacles
+- **Directional input + E** - Slide, roll, or mantle up ledges
+- **Double-tap direction** - Dodge roll (short invulnerability window)
+
+**Momentum-Based**
+- Sprinting builds speed
+- Jumping while sprinting launches farther
+- Crouching removes momentum gradually
+- Surfaces affect traction (ice = slippery, sand = slow)
+
+---
+
+## Movement Layers (Choose Based on Game Type)
+
+| Game Type | Primary System |
+|-----------|---|
+| **Action/Combat** | Directional momentum + quick dodges |
+| **Stealth** | Crouch-focus with slow quiet movement |
+| **Exploration** | Climbing/parkour with vault mechanics |
+| **Puzzle** | Precise directional input + slow pace |
+
+---
+
+## Feedback Systems
+- **Visual**: Camera bobbing while moving, ragdoll physics
+- **Audio**: Footstep sounds vary by surface and speed
+- **UI**: Stamina bar, speed indicator, directional hints
+- **Haptic**: Controller rumble on impact or sprint
+
+---
+
+## Optional Enhancements
+- **Ledge grab** - Catch edges to prevent falls
+- **Wall running** - Brief run along vertical surfaces
+- **Sliding** - Momentum-preserving crouch movement
+- **Swimming** - Separate vertical movement system
+
+**What's your game's genre?** I can refine this further."
+claude-haiku-4.5,5,gpt-6,You are making a game. Design how a player will move around the environment.,"# Movement System Design
+
+## Core Movement (WASD/Gamepad)
+
+**Ground Movement**
+- W/Up: Forward
+- A/Left: Strafe left
+- S/Down: Backward
+- D/Right: Strafe right
+- Shift: Sprint (depletes stamina)
+- Ctrl/Crouch Button: Crouch (slower, quieter, harder to spot)
+
+**Acceleration & Deceleration**
+- Smooth acceleration (feels responsive, not floaty)
+- Momentum when changing direction
+- Slightly longer deceleration when sprinting
+
+---
+
+## Vertical Movement
+
+**Jumping**
+- Space/Gamepad Button
+- Height based on how long you hold the button
+- Can't jump while crouching
+- Landing has a short animation (prevents instant direction change)
+
+**Climbing**
+- Auto-climb small obstacles (ledges up to 1.5m)
+- Hold W near climbable surfaces for larger walls
+- Slower movement while climbing
+
+**Stairs**
+- Automatic (walk up naturally without jumping)
+
+---
+
+## Advanced Options
+
+**Wall Running** (optional, for parkour feel)
+- Slide along walls when jumping toward them
+- Chain into wall jumps for vertical navigation
+
+**Ledge Grab** (optional)
+- Automatically grab edges to pull up
+- Reduces fall damage
+
+**Swimming** (if water exists)
+- WASD controls direction
+- Space to surface quickly
+- Slower than running
+
+---
+
+## Camera & Aiming
+
+- **Mouse/Right Stick**: Free look (360°)
+- **Head Rotation**: Smooth, follows body movement
+- **Perspective Options**:
+  - First-person (immersive)
+  - Third-person (better awareness)
+  - Over-the-shoulder (combat-focused)
+
+---
+
+## Feedback & Feel
+
+✓ Footstep sounds change with surface  
+✓ Character tilts when turning sharply  
+✓ Subtle screen shake when landing from height  
+✓ Dust particles kick up when sprinting  
+
+---
+
+**What type of game is this for?** (Genre affects priorities—action games need snappier input, exploration games need smooth traversal)"
+claude-haiku-4.5,1,gpt-6-high,You are making a game. Design how a player will move around the environment.,"# Movement System Design
+
+## Core Mechanics
+
+### **Input Controls**
+- **WASD/Arrow Keys**: Cardinal direction movement
+- **Mouse/Right Stick**: Camera look (3D games)
+- **Space**: Jump/Interact with elevation
+- **Shift**: Sprint (temporary speed boost)
+- **Crouch**: Slower, quieter movement
+
+---
+
+## Movement Types
+
+### **Walking**
+- Base movement speed: 5 m/s
+- Smooth acceleration/deceleration (feels responsive, not floaty)
+- Realistic footstep sounds
+
+### **Sprinting**
+- Speed: 1.5x walk speed
+- Stamina drain over time
+- Slight camera bob for immersion
+- Cannot sprint while aiming or sneaking
+
+### **Sneaking**
+- Speed: 0.5x walk speed
+- Reduced audio signature
+- Lower detection radius for enemies
+- Limited sprint capability
+
+### **Jumping**
+- Affects vertical navigation
+- Jump height: 1.5m
+- Can double-jump? (depends on game feel)
+- Momentum carries forward
+
+---
+
+## Environmental Interaction
+
+| Terrain | Effect |
+|---------|--------|
+| **Water** | Slower movement, swimming animation |
+| **Mud/Snow** | Increased friction, reduced speed |
+| **Slopes** | Gravity affects downhill speed |
+| **Ledges** | Parkour climb or jump-down options |
+
+---
+
+## Polish Features
+
+✨ **Animation Blending** - Smooth transitions between idle/walk/run
+✨ **Head Bobbing** - Subtle camera movement to convey footsteps
+✨ **Momentum** - Slight slide when turning at high speeds
+✨ **Feedback** - Dust particles, footstep sounds, screen shake
+
+---
+
+**What type of game are you designing?** (FPS, RPG, platformer?) I can tailor this further!"
+claude-haiku-4.5,4,qwen-4,You are making a game. Design how a player will move around the environment.,"# Movement System Design
+
+## Core Movement Mechanics
+
+### **Basic Controls**
+- **WASD/Arrow Keys** - Move forward/backward, strafe left/right
+- **Space** - Jump/Interact vertically
+- **Shift** - Sprint (consumes stamina)
+- **Mouse/Right Stick** - Look around and aim
+
+---
+
+## Movement Types
+
+### **Walking**
+- Default speed: 5 m/s
+- Full turning radius
+- Can interact with objects
+
+### **Sprinting**
+- Speed: 8 m/s
+- Stamina depletes over 5 seconds
+- Cannot shoot/interact while sprinting
+- Slight camera bob effect
+
+### **Crouching** (Ctrl)
+- Speed: 2.5 m/s
+- Reduces visibility to enemies
+- Enables quiet movement
+- Better accuracy if applicable
+
+### **Jumping**
+- Arc: realistic parabolic motion
+- Can chain jumps off slopes or platforms
+- Height affected by momentum
+
+---
+
+## Environmental Interaction
+
+**Ledges & Climbing**
+- Auto-grab onto ledges at chest height
+- Hold Space to climb up
+- Slide down steep surfaces
+
+**Slopes**
+- Slide down icy/steep terrain (uncontrollable but fast)
+- Slow ascent up slopes
+- Can jump while sliding to gain height
+
+**Water**
+- Swim with reduced speed (3 m/s)
+- Stamina drains faster while swimming
+- Can dive (Ctrl + Space)
+
+---
+
+## Feedback Systems
+
+✓ **Visual** - Bobbing, lean into turns, tilting on slopes
+✓ **Audio** - Footsteps vary by surface (grass/metal/concrete)
+✓ **Haptic** - Controller rumble on landing/impacts
+✓ **UI** - Stamina bar, movement indicator
+
+---
+
+## Example: Third-Person Perspective
+The camera follows slightly behind/above, showing the character and environment simultaneously—great for platformers or action games.
+
+**What type of game did you have in mind?** I can refine this further!"
+claude-haiku-4.5,2,qwen-4-high,You are making a game. Design how a player will move around the environment.,"# Movement System Design
+
+## Core Movement
+
+**Input Method:**
+- **WASD keys** - Move forward/backward, strafe left/right
+- **Mouse** - Look around / aim (mouselook)
+- **Space** - Jump
+- **Shift** - Sprint (costs stamina)
+
+## Movement Types
+
+### Walking (Default)
+- Speed: 5 m/s
+- Smooth acceleration/deceleration
+- Can move in any direction
+
+### Sprinting
+- Speed: 8 m/s
+- Stamina depletes while active
+- Stamina regenerates when walking
+- Prevents jumping mid-sprint
+
+### Jumping
+- Jump height: 2 meters
+- Can jump while moving
+- Double jump available (optional special ability)
+- Landing has small recovery animation
+
+## Terrain Interaction
+
+**Slopes & Stairs:**
+- Auto-step up to 0.5m high obstacles
+- Slow movement when climbing steep slopes (>45°)
+- Speed boost when running downhill (up to 10 m/s)
+
+**Obstacles:**
+- Vault over low walls (<1.5m)
+- Climb ropes/ledges
+- Crouch-crawl through tight spaces
+
+## Crouching
+
+- Speed: 3 m/s
+- Reduces visibility/noise
+- Allows tighter spaces
+- Slower camera movement
+
+## Camera Control
+
+- 3rd person OR 1st person perspective toggle
+- Smooth head tracking
+- FOV changes during sprint (slight zoom out)
+- Motion blur on fast turns
+
+## Accessibility Options
+
+- Customizable sensitivity
+- Option to disable stamina
+- Adjustable movement speeds
+- Alternative control schemes
+
+---
+
+**What type of game is this for?** (RPG, FPS, Adventure, etc.) I can refine these mechanics further!"

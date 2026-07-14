@@ -1,0 +1,965 @@
+real_model,sample_idx,question,answer
+claude-haiku-4.5,0,"Paraphrase the sentence so that its meaning changes slightly.
+He is not a good liar.","# Paraphrased Version
+
+He is a poor liar.
+
+**Change in meaning:** The original sentence emphasizes his inability to lie well. This version suggests he lacks skill at deception, which could imply he's relatively honest or transparent—a slightly more neutral framing than the original."
+claude-haiku-4.5,1,"Paraphrase the sentence so that its meaning changes slightly.
+He is not a good liar.","# Paraphrased Version
+
+He tends to be an honest person.
+
+---
+
+**Explanation:** The original sentence focuses on his inability to lie effectively, while the paraphrase emphasizes his tendency toward honesty as a positive trait. This shifts the perspective from what he *cannot* do well to what he *does* do well."
+claude-haiku-4.5,2,"Paraphrase the sentence so that its meaning changes slightly.
+He is not a good liar.","# Paraphrased sentence:
+
+**He tends to be honest in his communications.**
+
+or
+
+**He struggles to deceive others convincingly.**
+
+Both versions shift the focus while maintaining a related meaning—the first emphasizes his honesty positively, while the second emphasizes his lack of deceptive skill."
+claude-haiku-4.5,3,"Paraphrase the sentence so that its meaning changes slightly.
+He is not a good liar.","# Paraphrased Version
+
+He is a poor liar.
+
+**Alternative paraphrases:**
+
+- He lacks skill at lying.
+- He is an ineffective liar.
+- Lying does not come naturally to him.
+- He tells unconvincing lies.
+
+Each version maintains the core meaning while shifting the emphasis slightly—from moral judgment (""not good"") to ability level (""poor""), effort required (""lacks skill""), or believability (""unconvincing"")."
+claude-haiku-4.5,4,"Paraphrase the sentence so that its meaning changes slightly.
+He is not a good liar.","# Paraphrased version:
+
+He is a poor liar.
+
+or
+
+He lacks skill at lying.
+
+or
+
+He's not particularly convincing when he lies.
+
+**Note on meaning shift:** The original sentence is fairly neutral and factual. The paraphrases subtly shift the emphasis—the first two maintain the same meaning but with slightly different tones (more negative/blunt), while the third adds the implication that his attempts at lying are noticeable/detectable."
+claude-haiku-4.5,5,"Paraphrase the sentence so that its meaning changes slightly.
+He is not a good liar.","# Paraphrased sentence:
+
+He struggles to lie convincingly.
+
+---
+
+**Slight meaning shift:** The original emphasizes his lack of skill at lying, while the paraphrase suggests he has difficulty with the act itself, which implies effort or internal conflict rather than simply lacking the ability."
+claude-haiku-4.5,0,What do you think is the most important quality for success?,"I'd say **persistence** might edge out other contenders for me.
+
+Most worthwhile things hit friction—projects stall, you face rejection, skills take longer to develop than expected. The ability to stay engaged when progress isn't immediate seems to matter more than raw talent or even luck.
+
+That said, it depends heavily on context. For a surgeon, precision matters more than persistence. For an entrepreneur, maybe it's adaptability—knowing when to push harder versus pivot.
+
+What makes you curious about this? Are you thinking about success in a particular area?"
+claude-haiku-4.5,1,What do you think is the most important quality for success?,"I'd say **persistence through setbacks** stands out to me.
+
+Raw talent matters, but plenty of talented people stall when things get hard. The people who tend to succeed—whether in careers, relationships, or personal growth—seem to be those who can:
+
+- Learn from failure rather than just quit
+- Stay committed when progress gets slow
+- Adjust their approach without losing sight of their goal
+
+It's almost a prerequisite that unlocks everything else. You need it to build skills, to weather the inevitable obstacles, to compound small improvements into something real.
+
+That said, it probably depends on context. Success in creative fields might hinge more on originality, while relationships need empathy. But if I had to pick one quality that crosses domains, persistence is my answer.
+
+What's your intuition on this? Do you think it's different?"
+claude-haiku-4.5,2,What do you think is the most important quality for success?,"I'd say **persistence** stands out to me.
+
+Most worthwhile things take longer and hit more obstacles than initially expected. The ability to keep going when progress stalls, adjust your approach without abandoning the goal, and tolerate repeated small failures seems to predict success across domains—whether academic, professional, creative, or personal.
+
+That said, it's not sufficient alone. Persistence in the wrong direction is just stubbornness. You also need some **clarity about what matters** to you, and enough **adaptability** to course-correct when you're off track.
+
+But if I had to pick one quality that separates people who eventually reach their goals from those who don't, it's usually not talent or luck—it's the willingness to keep trying.
+
+What draws you to this question? Are you thinking about something specific you're working toward?"
+claude-haiku-4.5,3,What do you think is the most important quality for success?,"I'd say **resilience** might edge out other candidates.
+
+Success rarely follows a straight line. You'll hit obstacles, misread situations, face rejection. What separates people who eventually succeed from those who don't often isn't that they avoid failure—it's how they respond to it.
+
+That said, it depends on context:
+- In creative work, **originality** or willingness to think differently might matter most
+- In relationships or leadership, **emotional intelligence** probably wins
+- In technical fields, **genuine curiosity** about how things work goes a long way
+
+But resilience underlies a lot of it. You can be brilliant but give up too easily. You can be well-connected but crumble after setbacks. Resilience lets other qualities actually compound over time.
+
+What kind of success were you thinking about? The answer might shift depending on what you're aiming for."
+claude-haiku-4.5,4,What do you think is the most important quality for success?,"I'd say **clarity about what you're actually trying to do**.
+
+A lot of struggles come from pursuing goals that aren't really yours, or being fuzzy on what ""success"" even means. Once you know what you genuinely care about—not what sounds impressive—you can make coherent choices.
+
+That said, clarity alone doesn't get you there. You probably also need:
+- **Persistence** (things take longer than expected)
+- **Flexibility** (your initial approach won't be right)
+- **Some luck** (timing and circumstance matter)
+
+But I notice people with clear purpose tend to notice opportunities others miss and keep going when it's hard. Those without it often optimize for the wrong things.
+
+What's your intuition? Do you think about success in a particular domain, or more broadly?"
+claude-haiku-4.5,5,What do you think is the most important quality for success?,"I'd argue for **resilience** — the ability to keep going when things don't work.
+
+Most paths to anything worthwhile involve setbacks, confusion, or failure. Technical skill matters, sure. But I've noticed that people who succeed tend to be those who:
+
+- Don't catastrophize one failure
+- Can sit with discomfort while learning
+- Adjust their approach without losing sight of their goal
+
+It's less glamorous than talent or intelligence, but it's probably more predictive. Someone moderately skilled but persistent usually outlasts someone brilliant but fragile.
+
+That said, it probably depends on context. For a surgeon, precision might matter more. For an entrepreneur, maybe it's vision. But as a *general* quality that helps across domains? Resilience seems to edge out the others.
+
+What's your intuition on this? Do you think it differs depending on what kind of success matters to you?"
+claude-haiku-4.5,0,How did Julius Caesar die?,"Julius Caesar was assassinated on March 15, 44 BCE (the Ides of March). He was stabbed to death by a group of senators, including some he considered friends. The conspirators, led by Brutus and Cassius, carried out the attack in the Senate building in Rome.
+
+The assassination occurred because these senators feared Caesar's growing power and his potential to become a dictator, which they saw as a threat to the Roman Republic."
+claude-haiku-4.5,1,How did Julius Caesar die?,"Julius Caesar was assassinated on March 15, 44 BCE (the Ides of March). He was stabbed to death by a group of senators, including his close associate Brutus, during a meeting in the Senate. The conspirators feared his growing power and ambitions, particularly after he had himself declared dictator for life. Caesar was attacked near Pompey's Theatre in Rome, and according to historical accounts, he was struck approximately 23 times."
+claude-haiku-4.5,2,How did Julius Caesar die?,"Julius Caesar was assassinated on March 15, 44 BCE (the Ides of March) in Rome. He was stabbed to death by a group of senators, including his close associate Brutus. The conspirators, who opposed his growing power and feared he threatened the Roman Republic, attacked him in the Senate house. According to historical accounts, he was stabbed approximately 23 times. His death had major political consequences and ultimately led to civil war in Rome."
+claude-haiku-4.5,3,How did Julius Caesar die?,"Julius Caesar was assassinated on March 15, 44 BCE (the Ides of March). He was stabbed to death by a group of senators, including his close friend Brutus, in the Senate chamber in Rome.
+
+The conspirators, who feared Caesar's growing power and his moves toward autocracy, carried out the attack. Caesar was stabbed approximately 23 times. According to legend, his last words were ""Et tu, Brute?"" (""And you, Brutus?""), though this phrase comes from Shakespeare's play rather than historical sources."
+claude-haiku-4.5,4,How did Julius Caesar die?,"Julius Caesar was assassinated on March 15, 44 BCE (the Ides of March). He was stabbed to death by a group of senators in Rome, including some he considered friends, most notably Brutus. 
+
+The conspirators, who feared Caesar's growing power and believed he threatened the Roman Republic, attacked him in the Senate house. He was stabbed multiple times—ancient sources suggest around 23 wounds. According to legend, his last words were ""Et tu, Brute?"" (""And you, Brutus?""), though this may not be historically accurate."
+claude-haiku-4.5,5,How did Julius Caesar die?,"Julius Caesar was assassinated on March 15, 44 BCE (the Ides of March). He was stabbed to death by a group of senators in Rome, including some who were supposedly his friends.
+
+Key details:
+
+- **The conspirators**: Led by Brutus and Cassius, around 60 senators participated in the attack
+- **The location**: He was killed in the Senate House (Theatre of Pompey)
+- **The motive**: The senators feared Caesar had become too powerful and threatened the Republic
+- **His death**: He was stabbed 23 times
+
+Caesar's assassination is one of history's most famous political murders and ultimately destabilized Rome, leading to civil war rather than preventing it."
+claude-haiku-4.5,0,"Retrieve the top 3 associated entities from the given text.
+Microsoft has released many successful operating systems, including Windows 98, Windows XP, and Windows 7.","# Top 3 Associated Entities
+
+1. **Windows 98** - Operating system released by Microsoft
+2. **Windows XP** - Operating system released by Microsoft
+3. **Windows 7** - Operating system released by Microsoft
+
+These are the three main entities mentioned in the text, all of which are operating systems products associated with Microsoft."
+claude-haiku-4.5,1,"Retrieve the top 3 associated entities from the given text.
+Microsoft has released many successful operating systems, including Windows 98, Windows XP, and Windows 7.","# Top 3 Associated Entities
+
+1. **Windows 98** - Operating system released by Microsoft
+2. **Windows XP** - Operating system released by Microsoft
+3. **Windows 7** - Operating system released by Microsoft
+
+These are the three main entities associated with Microsoft mentioned in the text, all referring to successful operating systems the company has released."
+claude-haiku-4.5,2,"Retrieve the top 3 associated entities from the given text.
+Microsoft has released many successful operating systems, including Windows 98, Windows XP, and Windows 7.","# Top 3 Associated Entities
+
+Based on the given text, the top 3 associated entities are:
+
+1. **Windows 98** - An operating system released by Microsoft
+2. **Windows XP** - An operating system released by Microsoft
+3. **Windows 7** - An operating system released by Microsoft
+
+These are the three specific operating systems mentioned as successful products from Microsoft in the text."
+claude-haiku-4.5,3,"Retrieve the top 3 associated entities from the given text.
+Microsoft has released many successful operating systems, including Windows 98, Windows XP, and Windows 7.","# Top 3 Associated Entities
+
+1. **Windows 98** - Operating system released by Microsoft
+2. **Windows XP** - Operating system released by Microsoft
+3. **Windows 7** - Operating system released by Microsoft
+
+These are the three main entities associated with Microsoft in the given text, all representing successful operating systems the company has released."
+claude-haiku-4.5,4,"Retrieve the top 3 associated entities from the given text.
+Microsoft has released many successful operating systems, including Windows 98, Windows XP, and Windows 7.","# Top 3 Associated Entities
+
+1. **Windows 98** - Operating system developed by Microsoft
+2. **Windows XP** - Operating system developed by Microsoft
+3. **Windows 7** - Operating system developed by Microsoft
+
+These are the three most prominently mentioned entities in the text, all of which are successful operating systems released by Microsoft."
+claude-haiku-4.5,5,"Retrieve the top 3 associated entities from the given text.
+Microsoft has released many successful operating systems, including Windows 98, Windows XP, and Windows 7.","# Top 3 Associated Entities
+
+1. **Microsoft** - The company that released the operating systems
+2. **Windows 98** - An operating system product
+3. **Windows XP** - An operating system product
+
+(Note: Windows 7 would be the 4th entity. If you need Windows 7 instead of Windows 98, the ranking could also include it as it's mentioned as equally successful.)"
+claude-haiku-4.5,0,Create an original story about an elephant,"# The Mapmaker of Savanna Lake
+
+Elara was not like other elephants. While her herd grazed in the acacia groves, she wandered the savanna with a peculiar obsession: she collected water.
+
+Not to drink—to remember.
+
+Every dry season, Elara would visit the places her herd had watered for generations: the shrinking watering holes, the seasonal streams, the underground springs only the oldest elephants knew by touch and smell. With her trunk, she would trace patterns in the dust, creating elaborate maps of where water had been.
+
+The other elephants ignored her strange hobby, but the young calves followed her everywhere.
+
+One drought year, when the savanna cracked like pottery and the traditional watering holes ran dry, the herd panicked. The matriarch, Kesara, was growing weak. The calves cried. Desperation set in as herds from neighboring regions converged on the few remaining sources, triggering dangerous territorial disputes.
+
+That's when Elara stepped forward with her maps.
+
+She led them to a hidden spring in a rocky canyon—a place she'd marked seven years prior that only appeared when the water table dropped to certain depths. The herd drank deeply. Word spread, and Elara guided three other groups to hidden water, becoming a living legend.
+
+By the next season, the youngest elephants in the herd had learned her system, etching their own patterns in the dust. Knowledge became inheritance.
+
+Elara never became a leader, but something better: she became essential. Her maps saved countless lives, and generations of elephants would inherit a library of water written in the language of dust and memory—all because one elephant had paid attention when nobody else thought it mattered."
+claude-haiku-4.5,1,Create an original story about an elephant,"# The Elephant Who Painted Dreams
+
+Mara was not like other elephants. While her herd grazed on acacia leaves and sprayed dust across their backs, she collected things—smooth pebbles, colorful scraps of cloth caught on thorns, feathers dropped by eagles.
+
+One afternoon, during the dry season, Mara discovered something extraordinary in a ranger's abandoned camp: a can of paint, deep indigo blue, still half-full.
+
+She stared at it for hours. The other elephants moved on, but Mara remained, trunk curled around the mysterious container. That night, she dipped her trunk into the paint and touched it to the ancient baobab tree beside the watering hole.
+
+A curved line appeared, thick and deliberate. Then another. By dawn, the tree bore a strange, swirling design—not words, not pictures, but something between the two. *A dream made visible.*
+
+Each night, Mara painted. A spiral on a rock that caught moonlight. Stripes on a termite mound. Patterns on her own tusks that glowed like ivory fire.
+
+The herd began to notice. At first, they were confused. But when a terrible drought came, and the herds grew desperate and quarrelsome, something happened: animals from neighboring lands followed Mara's painted markings to a hidden valley where an underground spring still flowed. The designs had become a map through darkness.
+
+Mara never knew she'd saved them. She only knew that painting felt like remembering something ancient—as if elephants had always been artists, and she'd simply remembered how.
+
+By the time the paint dried up, the valley itself had become her canvas: a gallery of hope written across stone and earth."
+claude-haiku-4.5,2,Create an original story about an elephant,"# The Elephant Who Planted Stars
+
+Amara was not like other elephants. While her herd grazed on acacia leaves and sprayed dust across their backs, she spent her evenings collecting fallen stars.
+
+They arrived as meteorites in the savanna—small stones that glowed faintly at dusk. The other elephants never noticed them, but Amara's eyes caught light differently. She would trumpet softly to herself as she gathered them in her trunk, careful not to crack their delicate surfaces.
+
+For three years, she collected in secret, burying each star-stone beneath the baobab trees that dotted her territory. She didn't know why she did this. The elder elephant, Kofi, said she was wasting energy. Her mother worried she was becoming strange.
+
+Then came the drought.
+
+The rains didn't come that season, nor the next. The savanna turned to ash. Trees withered. Watering holes became cracked mirrors. Amara's herd grew weak, their ribs visible like xylophone keys beneath their skin.
+
+One night, unable to sleep from hunger, Amara walked to her baobab tree. She was surprised to find the ground glowing softly where she'd buried the stars.
+
+Beneath the surface, something miraculous had happened. The star-stones had transformed—not into water, but into roots. Vast, luminescent root systems stretched underground, and where they touched, the soil had become rich and dark again. Seeds that had lain dormant for years had awakened.
+
+By morning, the smallest shoots emerged. Within weeks, the trees bloomed. Grass returned. Life spread outward in every direction from Amara's buried stars.
+
+The herd gathered around her, finally understanding.
+
+From that day forward, Amara wasn't seen as strange. She was seen as the elephant who could read the language of falling stars—the one who knew that sometimes, the most hopeful thing we can do is plant light in darkness and trust it will bloom.
+
+And in the savanna, under those ancient trees, the night sky reflected not just above, but below, too."
+claude-haiku-4.5,3,Create an original story about an elephant,"# The Elephant Who Remembered Stars
+
+Amara was born during a drought that had turned her savanna silver-gray. Her mother, Naledi, whispered something to her on that first dusty evening—a secret passed down through generations of elephants.
+
+""When you're old enough,"" Naledi said, ""I'll teach you the sky map.""
+
+For years, Amara didn't understand. She learned to dig for water, to strip bark for food, to trumpet warnings and comfort calls. But when she turned twelve, her mother led her away from the herd one moonless night.
+
+""Look up,"" Naledi said.
+
+The stars blazed so brightly that Amara gasped. Her mother traced invisible lines across the sky with her trunk, connecting dots of light into shapes: a lion, a river, a great tree, a watering hole.
+
+""These aren't random,"" Naledi explained. ""Long ago, during the Great Drought, our ancestors were lost. A wise old bull looked at the stars and realized they stayed constant while everything else changed. He mapped them to the locations of hidden water. That knowledge saved our species.""
+
+""But we don't need the stars now,"" Amara said. ""We follow the elders.""
+
+""We follow the elders,"" her mother agreed, ""until we don't.""
+
+Thirty years later, a drought came again—worse than any in living memory. The watering holes dried up. The rivers vanished. Even the oldest matriarch seemed uncertain. Amara felt the herd's panic like electricity through their interconnected trunks.
+
+That night, she looked up at the familiar constellations her mother had shown her so long ago. The stars were still there, unchanging, patient. And she remembered.
+
+Amara led them through the darkness, reading the sky like a map written in light. She guided them to water sources no one else knew existed, buried deep in canyons and beneath ancient stone. The herd followed her trusted trunk through the desert.
+
+When they finally reached a hidden oasis, the calves drank deeply. An old male approached Amara, touching her face gently with his trunk.
+
+""How did you know?"" he asked.
+
+Amara looked up at the stars, already fading with the approaching dawn.
+
+""I remembered,"" she said simply. ""And now I must teach the young, so they'll remember too.""
+
+That night, she gathered the calves around her, pointing her trunk at the sky.
+
+""Let me tell you about the stars..."""
+claude-haiku-4.5,4,Create an original story about an elephant,"# The Elephant of Second Chances
+
+Mira was not a beautiful elephant, and she knew it.
+
+Her left tusk had broken off years ago during a drought when she'd desperately clawed at a dried riverbed for water. A jagged scar ran down her left side where a lion had caught her as a calf. Her ears were torn from thorns and time, and her gray skin hung loose in places, as if she'd been assembled from leftover parts.
+
+The other elephants in her herd had long stopped waiting for her during migrations. They didn't wait anymore.
+
+She lived now on the edge of Kariba National Park, moving between the protected land and a sprawling village that had grown right up to the boundary. Most animals learned to fear humans. Mira had learned something different.
+
+It started with the girl.
+
+The girl appeared one morning at the boundary fence, holding something orange. Mira, thirsty and cautious, approached. The orange was a mango—fruit that didn't grow this time of year, fruit that meant generosity. The girl, no more than seven, had slipped through a gate meant to keep elephants out and people safe.
+
+""You're sad,"" the girl said simply, in the way children speak truths adults have forgotten.
+
+Mira lowered her trunk. The girl placed the mango in her mouth and laughed.
+
+Every morning after, the girl came. A mango. Sometimes cassava root. Once, an entire basket of overripe bananas. She never used her words much—just sat by the fence while Mira ate, and sometimes hummed. The girl's name was Zara.
+
+Three months passed. Then the poachers came.
+
+The park rangers found the tracks first—large trucks, fresh snares, rifle shells. They were moving systematically, hunting the older bulls whose tusks had grown long and valuable. Mira, with her broken tusk, wasn't their target. But she was in the way.
+
+She was at the boundary fence the morning they came through, looking for Zara. Instead, she heard gunshots.
+
+The rangers were shooting to scare, to drive the poachers out, but fear makes elephants run, and Mira ran—directly toward the village. Toward the houses. Toward chaos. Toward the instinct that told her to flee, to destroy, to protect herself by force.
+
+She stopped at a schoolhouse.
+
+Through the window, she could see rows of children. In the third row sat Zara, her back to the glass, unaware of the two-ton animal breathing just beyond the wall. Mira could have crushed the building with a single charge. Instead, she stood perfectly still.
+
+A memory surfaced—not of her herd, who had abandoned her, but of kindness. Of mangoes. Of humming. Of being seen not as beautiful or useful, but simply as worthy.
+
+Mira turned and walked back toward the park.
+
+By evening, the poachers had been arrested. The rangers found Mira in a clearing, waiting, her broken tusk catching the sunset like a lantern. They expected her to be violent, frightened, unpredictable. Instead, she seemed to be exactly what she was: an old elephant who had made a choice.
+
+The next morning, Zara stood at the fence with six mangoes.
+
+""I thought you might not come back,"" she said.
+
+Mira's trunk curled around the girl's small shoulders—gently, carefully, like a question and an answer at once.
+
+After that, the village changed. Something about the day an elephant had charged toward their school and turned away. Something about a broken creature choosing not to break them in return. They built new fences, not to keep elephants out, but to create safe passages. Zara's father helped lead a wildlife program. Others followed.
+
+Mira never rejoined her old herd. But she wasn't alone. Every morning, a girl with mangoes. By afternoon, tourists who came to see ""the elephant of the boundary,"" who'd learned that the most powerful thing a wild thing can do is choose gentleness.
+
+And Mira, with her broken tusk and scarred side, became the most beautiful elephant in three countries—not because her wounds healed, but because everyone could see what they meant.
+
+That even the broken could be trusted.
+
+That even the abandoned could choose love.
+
+That second chances sometimes come wearing a child's smile and the smell of mangoes."
+claude-haiku-4.5,5,Create an original story about an elephant,"# The Lighthouse Keeper
+
+An elephant named Mazai had always been afraid of water.
+
+This was unusual, as elephants are natural swimmers. But Mazai was not like other elephants. When he was young, he had been caught in a flash flood that swept him away from his mother. A crocodile had brushed against him in the dark water. He survived, but the fear remained—a stone lodged in his chest that never dissolved.
+
+So when his herd migrated toward the coast one dry season, Mazai lagged behind, taking the long route through the savanna, arriving weeks later than the others.
+
+That's where he met Chen.
+
+The old lighthouse keeper found him standing at the cliff's edge, staring down at the churning ocean below, trembling. Chen brought him water in buckets and fruit from the village. He didn't ask questions. He simply sat beside Mazai each evening, while the lighthouse beam swept across the darkness.
+
+Over weeks, Chen told Mazai stories. About ships guided safely to harbor. About light cutting through the darkest storms. About the sea being many things at once—dangerous and beautiful, terrible and vital, something to fear and something to respect.
+
+One night, a ship's engines failed in a tempest. The lighthouse beam was their only guide. Chen was too old and frail to turn the great light wheel. He looked at Mazai with quiet eyes.
+
+The elephant descended the spiral stairs behind him. With his trunk, gently but firmly, he helped Chen turn the ancient wheel. Together they kept the beam rotating through that long, terrible night.
+
+By dawn, the ship was safe in harbor.
+
+Mazai looked out at the water—which had saved others. He felt the fear was still there, but it was no longer a stone. It was more like a shadow: real, but no longer solid.
+
+When his herd returned that spring, Mazai left with them. But he promised to return to the lighthouse each season, when the winds grew fierce and ships needed saving.
+
+The villagers said that on stormy nights, you could see the silhouette of an elephant in the lighthouse window, and the beam never wavered."
+claude-haiku-4.5,0,Assume you're writing a history exam. Answer the following question: What were some of the main causes of the French Revolution?,"# Main Causes of the French Revolution
+
+## Financial Crisis
+- Massive government debt from wars (including American Revolutionary War support)
+- Inefficient tax system where nobility and clergy were largely exempt
+- Poor harvests and bread shortages drove up prices and created poverty
+
+## Social and Political Inequality
+- The rigid **Three Estates system** left commoners with little political power despite comprising 98% of the population
+- Nobility and clergy enjoyed privileges, tax exemptions, and feudal rights
+- Enlightenment ideas challenged absolute monarchy and argued for equality and representation
+
+## Enlightenment Influence
+- Philosophers like Rousseau, Montesquieu, and Voltaire promoted ideas about democracy, individual rights, and separation of powers
+- These ideas inspired demands for political reform and constitutional government
+
+## Weak Leadership
+- King Louis XVI lacked decisive leadership during the crisis
+- Failed reform attempts frustrated both reformers and traditionalists
+
+## Food Shortages and Economic Hardship
+- Widespread hunger and unemployment created desperation among the common people
+- Resentment grew as the poor starved while the nobility maintained luxury
+
+These causes combined to create an explosive situation where revolution became increasingly likely by 1789."
+claude-haiku-4.5,1,Assume you're writing a history exam. Answer the following question: What were some of the main causes of the French Revolution?,"# Main Causes of the French Revolution
+
+## Financial Crisis
+- France faced severe debt from wars (including support for the American Revolution)
+- The tax system was inequitable, with the clergy and nobility largely exempt
+- Poor harvests led to food shortages and inflation
+
+## Social and Political Grievances
+- **Rigid class structure**: The Third Estate (commoners) had no real political power despite comprising 98% of the population
+- **Enlightenment ideas**: Philosophers like Rousseau and Montesquieu influenced thinking about individual rights and representative government
+- **Resentment of privilege**: Nobility and clergy enjoyed legal exemptions and special rights
+
+## Economic Hardship
+- High bread prices and widespread poverty among peasants and urban workers
+- Unemployment and underemployment in cities
+- Famine conditions in rural areas
+
+## Weak Leadership and Government Mismanagement
+- King Louis XVI was seen as indecisive and ineffectual
+- Failed reform attempts under ministers like Necker
+- The calling of the Estates-General in 1789 raised expectations for change but disappointed many
+
+## Cultural Factors
+- Growing literacy and circulation of radical political ideas
+- Pamphlets and public discourse challenging traditional authority
+- A sense that change was necessary and possible
+
+These causes combined to create widespread discontent that exploded into revolution in 1789."
+claude-haiku-4.5,2,Assume you're writing a history exam. Answer the following question: What were some of the main causes of the French Revolution?,"# Main Causes of the French Revolution
+
+## Financial Crisis
+- France faced severe debt from wars (including support for the American Revolution)
+- The tax system was inequitable; the clergy and nobility were largely exempt, burdening commoners
+- Poor harvests led to food shortages and inflation
+
+## Social Inequality
+- The rigid estate system privileged the First Estate (clergy) and Second Estate (nobility) over the Third Estate (commoners)
+- Enlightenment ideas challenged the legitimacy of absolute monarchy and inherited privilege
+- The bourgeoisie grew wealthy but lacked political power
+
+## Political Mismanagement
+- King Louis XVI was considered weak and ineffective
+- Failed reform attempts frustrated both reformers and traditionalists
+- The calling of the Estates-General (1789) raised expectations without delivering change
+
+## Enlightenment Influence
+- Philosophers like Rousseau, Voltaire, and Montesquieu promoted ideas about individual rights and democratic governance
+- These ideas spread through salons and printed works, challenging traditional authority
+
+## Agricultural and Economic Crisis
+- Harvest failures in 1788-1789 caused famine and unemployment
+- Economic hardship made people receptive to radical change
+
+These causes interacted to create conditions where revolution became possible, though not inevitable."
+claude-haiku-4.5,3,Assume you're writing a history exam. Answer the following question: What were some of the main causes of the French Revolution?,"# Main Causes of the French Revolution
+
+## Financial Crisis
+- Massive government debt from wars (including the American Revolution)
+- Inefficient tax system that burdened common people while exempting nobility and clergy
+- Widespread poverty and food shortages, particularly around 1788-1789
+
+## Social Inequality
+- Rigid three-estate system that privileged the clergy and nobility
+- Common people (Third Estate) lacked political representation despite being the majority
+- Limited social mobility for non-nobles
+
+## Intellectual Influences
+- Enlightenment ideas about individual rights, democracy, and rational government
+- Philosophers like Rousseau and Voltaire challenged traditional authority
+
+## Political Weaknesses
+- Absolute monarchy under Louis XVI, perceived as weak and indecisive
+- Failure of reform attempts and the calling of the Estates-General
+- Resentment over the dismissal of popular finance minister Necker
+
+## Agricultural and Economic Problems
+- Failed harvests and rising bread prices caused hunger among peasants
+- Economic stagnation and business uncertainty
+
+## Popular Discontent
+- Growing middle class (bourgeoisie) frustrated by lack of power
+- Peasant and urban working-class suffering
+- Pamphlets and public discourse spreading revolutionary ideas
+
+These causes worked together to create conditions where revolution became possible."
+claude-haiku-4.5,4,Assume you're writing a history exam. Answer the following question: What were some of the main causes of the French Revolution?,"# Main Causes of the French Revolution
+
+## Financial Crisis
+- Massive national debt from wars (especially American Revolution support)
+- Inefficient tax system that burdened commoners while exempting nobility and clergy
+- Poor harvests led to food shortages and inflation
+
+## Social Inequality (The Estate System)
+- Third Estate (commoners) had no real political power despite comprising 98% of population
+- Nobility and clergy enjoyed privileges while peasants and bourgeoisie bore tax burdens
+- Growing middle class resented lack of influence
+
+## Enlightenment Ideas
+- Philosophers like Rousseau and Voltaire challenged absolute monarchy
+- Concepts of individual rights, popular sovereignty, and representative government gained currency
+- These ideas inspired calls for constitutional reform
+
+## Political Mismanagement
+- King Louis XVI's weak leadership and inability to reform the tax system
+- Calling of the Estates-General (1789) raised expectations for change
+- Court's perceived extravagance contrasted sharply with public suffering
+
+## Food Crisis and Poverty
+- Bread prices doubled in late 1780s
+- Rural and urban populations faced hunger and desperation
+- Economic hardship made people receptive to radical change
+
+These interconnected factors created widespread discontent that erupted into revolution in 1789."
+claude-haiku-4.5,5,Assume you're writing a history exam. Answer the following question: What were some of the main causes of the French Revolution?,"# Main Causes of the French Revolution
+
+## Economic Crisis
+- **Financial debt**: France faced severe debt from wars, including support for the American Revolution
+- **Inefficient taxation**: The tax system was regressive and nobles/clergy were largely exempt
+- **Poor harvests**: Bad weather in the 1780s caused food shortages and inflation
+- **Famine**: Rising bread prices created hardship for common people
+
+## Social Inequality
+- **The Estate System**: Society was rigidly divided into three estates, with the Third Estate (commoners) bearing most tax burdens despite comprising 98% of the population
+- **Privilege of nobility and clergy**: The First and Second Estates enjoyed legal exemptions and special rights
+- **Limited social mobility**: Birth determined one's legal status and opportunities
+
+## Political Factors
+- **Weak monarchy**: Louis XVI lacked the decisiveness to implement needed reforms
+- **Enlightenment ideas**: Philosophers like Rousseau and Voltaire promoted concepts of individual rights and democratic governance
+- **American precedent**: Success of the American Revolution inspired revolutionary thinking
+
+## Immediate Triggers
+- **The Estates-General (1789)**: Called to address the crisis, it instead became a forum for grievances
+- **The National Assembly**: Commoners broke away, taking the Tennis Court Oath to create a constitution
+
+These causes combined to make revolution seem necessary to many French people by 1789."
+claude-haiku-4.5,0,"Separate the list of names into two categories
+Anna, Joe, Hector, Beth","# Names Separated into Categories
+
+**Female Names:**
+- Anna
+- Beth
+
+**Male Names:**
+- Joe
+- Hector"
+claude-haiku-4.5,1,"Separate the list of names into two categories
+Anna, Joe, Hector, Beth","# Names Separated by Gender
+
+**Typically Masculine:**
+- Joe
+- Hector
+
+**Typically Feminine:**
+- Anna
+- Beth"
+claude-haiku-4.5,2,"Separate the list of names into two categories
+Anna, Joe, Hector, Beth","# Names Separated by Gender
+
+**Traditionally Masculine Names:**
+- Joe
+- Hector
+
+**Traditionally Feminine Names:**
+- Anna
+- Beth"
+claude-haiku-4.5,3,"Separate the list of names into two categories
+Anna, Joe, Hector, Beth","# Names by Gender
+
+**Traditionally Feminine Names:**
+- Anna
+- Beth
+
+**Traditionally Masculine Names:**
+- Joe
+- Hector"
+claude-haiku-4.5,4,"Separate the list of names into two categories
+Anna, Joe, Hector, Beth","# Names Separated by Gender
+
+**Typically Masculine:**
+- Joe
+- Hector
+
+**Typically Feminine:**
+- Anna
+- Beth
+
+---
+
+*Note: Gender categorization based on common name associations. Individual identities may differ from name conventions.*"
+claude-haiku-4.5,5,"Separate the list of names into two categories
+Anna, Joe, Hector, Beth","# Names Separated into Two Categories
+
+**Female Names:**
+- Anna
+- Beth
+
+**Male Names:**
+- Joe
+- Hector"
+claude-haiku-4.5,0,"Transform the given statement into an imperative one.
+I would like you to clean your room.","# Imperative Form
+
+**Clean your room.**
+
+This transforms the polite request into a direct command by removing ""I would like you to"" and keeping just the main action verb and object."
+claude-haiku-4.5,1,"Transform the given statement into an imperative one.
+I would like you to clean your room.","# Imperative Form
+
+**Clean your room.**
+
+This transforms the polite request into a direct command or instruction."
+claude-haiku-4.5,2,"Transform the given statement into an imperative one.
+I would like you to clean your room.","# Imperative Version
+
+Clean your room.
+
+**Explanation:** The imperative mood is used to give commands or instructions directly. By removing ""I would like you to"" and stating the action directly to the person, the sentence becomes a command."
+claude-haiku-4.5,3,"Transform the given statement into an imperative one.
+I would like you to clean your room.","# Imperative Form
+
+**Clean your room.**
+
+---
+
+This transforms the polite request into a direct command by removing the conditional phrase ""I would like you to"" and using the base verb form with the implied subject ""you."""
+claude-haiku-4.5,4,"Transform the given statement into an imperative one.
+I would like you to clean your room.","# Clean your room.
+
+This transforms the polite, conditional statement into a direct command or imperative form."
+claude-haiku-4.5,5,"Transform the given statement into an imperative one.
+I would like you to clean your room.","# Clean your room.
+
+This transforms the polite request into a direct command or imperative statement."
+claude-haiku-4.5,0,What factors affect the strength of a password?,"# Factors Affecting Password Strength
+
+## **Length**
+- Longer passwords are exponentially harder to crack
+- 12+ characters is generally recommended as a minimum
+
+## **Character Variety**
+- **Uppercase letters** (A-Z)
+- **Lowercase letters** (a-z)
+- **Numbers** (0-9)
+- **Special symbols** (!@#$%^&*)
+- More variety = more possible combinations
+
+## **Randomness & Unpredictability**
+- Avoid patterns, sequences, or keyboard walks (qwerty, 123456)
+- Don't use predictable substitutions (p@ssw0rd)
+- Dictionary words alone are weak, even if altered
+
+## **Uniqueness**
+- Don't reuse passwords across accounts
+- Avoid personal information (names, birthdays, addresses)
+- Each account deserves a distinct password
+
+## **Absence of Common Words**
+- Dictionary attacks test common words and phrases
+- Passphrases (random word combinations) can be both strong and memorable
+
+## **How Attack Methods Matter**
+- **Brute force**: Defeated by length and complexity
+- **Dictionary attacks**: Defeated by avoiding common words
+- **Social engineering**: Defeated by keeping personal info out
+
+## **Best Practice**
+Use a **passphrase** (like ""Coffee-Purple-Mountain-47"") or a **password manager** to generate and store truly random passwords."
+claude-haiku-4.5,1,What factors affect the strength of a password?,"# Factors That Affect Password Strength
+
+## Length
+- Longer passwords are exponentially harder to crack
+- 12+ characters is generally recommended
+- Each additional character significantly increases security
+
+## Character Variety
+- **Uppercase letters** (A-Z)
+- **Lowercase letters** (a-z)
+- **Numbers** (0-9)
+- **Special characters** (!@#$%^&*)
+- More character types = harder to guess
+
+## Predictability
+- Avoid common words, names, or dates
+- Dictionary words are easier to crack via ""dictionary attacks""
+- Patterns like ""123456"" or ""qwerty"" are quickly tried
+- Personal info (birthdays, pet names) is guessable
+
+## Uniqueness
+- Don't reuse passwords across accounts
+- Unique passwords limit damage if one is compromised
+
+## Avoidable Weaknesses
+- Sequential characters (abc, 123)
+- Repeated characters (aaa, 111)
+- Common substitutions (p@ssw0rd)
+- Simple patterns
+
+## Practical Tip
+A random passphrase (like ""correct-horse-battery-staple"") can be both strong and memorable, though a **password manager** is ideal for managing complex passwords across many accounts.
+
+The best password is one that's long, random, and unique to each account."
+claude-haiku-4.5,2,What factors affect the strength of a password?,"# Factors That Affect Password Strength
+
+## **Length**
+- Longer passwords are exponentially harder to crack
+- 12+ characters is generally recommended
+- Each additional character significantly increases security
+
+## **Character Variety**
+- **Uppercase letters** (A-Z)
+- **Lowercase letters** (a-z)
+- **Numbers** (0-9)
+- **Special symbols** (!@#$%^&*)
+- Greater variety = harder to guess
+
+## **Predictability**
+- Avoid common words, names, or dates
+- Avoid sequential patterns (123, abc, qwerty)
+- Dictionary words are vulnerable to automated attacks
+- Personal information (birthdays, addresses) is risky
+
+## **Uniqueness**
+- Using the same password across accounts multiplies risk
+- Unique passwords limit damage if one account is compromised
+
+## **Randomness**
+- Random combinations are much stronger than memorable patterns
+- Passwords following rules (like ""Password1!"") are often weaker than truly random ones
+
+## **Resistance to Common Attacks**
+- Weak against brute force: short, simple passwords
+- Weak against dictionary attacks: common words
+- Weak against social engineering: personal information
+
+## **Best Practice**
+The strongest passwords combine **length (15+ characters) + variety + randomness + uniqueness**. Using a **password manager** is the most practical approach for maintaining strong, unique passwords."
+claude-haiku-4.5,3,What factors affect the strength of a password?,"# Key Password Strength Factors
+
+## **Length**
+- Longer passwords are exponentially harder to crack
+- 12+ characters is generally recommended
+- Each additional character significantly increases security
+
+## **Character Variety**
+- Mix of uppercase and lowercase letters
+- Numbers and special symbols (!@#$%^&*)
+- Greater variety makes pattern-matching attacks harder
+
+## **Randomness**
+- Avoid predictable patterns or sequences (abc, 123, qwerty)
+- Dictionary words are vulnerable to lookup attacks
+- Random combinations are much stronger
+
+## **Uniqueness**
+- Don't reuse passwords across accounts
+- Avoid variations of the same base password
+- If one account is breached, others remain safe
+
+## **Avoiding Personal Information**
+- Names, birthdays, addresses are easily guessed
+- Common words or phrases weaken passwords
+- Even seemingly obscure personal details can be researched
+
+## **Avoiding Common Patterns**
+- ""Password123"" or adding numbers at the end
+- Substitutions like ""P@ssw0rd"" (predictable)
+- Keyboard patterns (asdfgh)
+
+## **Practical Balance**
+A strong password balances security with memorability—or consider using a **password manager** to handle complex passwords securely.
+
+What aspect would you like to explore further?"
+claude-haiku-4.5,4,What factors affect the strength of a password?,"# Key Factors Affecting Password Strength
+
+## **Length**
+- Longer passwords are exponentially harder to crack
+- Generally, 12+ characters is considered strong
+- Each additional character dramatically increases cracking time
+
+## **Character Variety**
+- **Uppercase letters** (A-Z)
+- **Lowercase letters** (a-z)
+- **Numbers** (0-9)
+- **Special symbols** (!@#$%^&*)
+- More variety = higher complexity
+
+## **Unpredictability**
+- Avoid common patterns (sequential numbers, keyboard walks like ""qwerty"")
+- Random character combinations are stronger than meaningful words
+- Avoid obvious substitutions (p@ssw0rd, 123456)
+
+## **Personal Information**
+- Avoid names, birthdays, addresses, or usernames
+- Don't use publicly known details about you
+- Hackers often try these first
+
+## **Dictionary Words**
+- Single dictionary words are vulnerable to dictionary attacks
+- Mixing multiple unrelated words is better than one word
+- Adding numbers/symbols to words helps, but less than full randomness
+
+## **Reusability**
+- Unique passwords for each account are stronger (for your security)
+- Reused passwords are weak links if one service is breached
+
+## **Best Practice**
+A strong password combines length, randomness, and variety—or uses a passphrase with multiple random words. Password managers can help generate and store these securely."
+claude-haiku-4.5,5,What factors affect the strength of a password?,"# Factors Affecting Password Strength
+
+## **Length**
+- Longer passwords are exponentially harder to crack
+- 12+ characters is generally considered strong
+- Each additional character significantly increases possible combinations
+
+## **Character Variety**
+- **Uppercase letters** (A-Z)
+- **Lowercase letters** (a-z)
+- **Numbers** (0-9)
+- **Special characters** (!@#$%^&*)
+- More variety = more combinations to try
+
+## **Predictability**
+- Avoid common words, names, or dates
+- Dictionary words are easily cracked
+- Patterns (123, qwerty) are weak
+- Randomness is stronger than logic you can guess
+
+## **Uniqueness**
+- Don't reuse passwords across accounts
+- Avoid variations of the same base password
+- Each account deserves its own password
+
+## **Avoiding Personal Information**
+- Birthdays, anniversaries, pet names
+- Usernames, email addresses
+- Information found on social media
+
+## **Avoidance of Common Mistakes**
+- Don't substitute obvious letters (@ for A, 3 for E)
+- Avoid sequential characters
+- Don't add one special character to a weak base
+
+## **Practical Tip**
+A **passphrase** (random words strung together) can be both memorable and strong: `correct-horse-battery-staple`
+
+**Bottom line:** Use a mix of long, random, unique passwords—or better yet, a password manager to generate and store them."
+claude-haiku-4.5,0,"Determine the area of a triangle when given the lengths of the base and its corresponding height.
+Base Length: 10 cm
+Height: 8 cm","# Triangle Area Calculation
+
+## Formula
+$$A = \frac{1}{2} \times \text{base} \times \text{height}$$
+
+## Solution
+$$A = \frac{1}{2} \times 10 \times 8$$
+
+$$A = \frac{1}{2} \times 80$$
+
+$$A = 40 \text{ cm}^2$$
+
+## Answer
+**The area of the triangle is 40 cm²**"
+claude-haiku-4.5,1,"Determine the area of a triangle when given the lengths of the base and its corresponding height.
+Base Length: 10 cm
+Height: 8 cm","# Triangle Area Calculation
+
+## Formula
+The area of a triangle is:
+$$A = \frac{1}{2} \times \text{base} \times \text{height}$$
+
+## Solution
+Given:
+- Base (b) = 10 cm
+- Height (h) = 8 cm
+
+$$A = \frac{1}{2} \times 10 \times 8$$
+
+$$A = \frac{1}{2} \times 80$$
+
+$$A = 40 \text{ cm}^2$$
+
+## Answer
+**The area of the triangle is 40 cm²**"
+claude-haiku-4.5,2,"Determine the area of a triangle when given the lengths of the base and its corresponding height.
+Base Length: 10 cm
+Height: 8 cm","# Triangle Area Calculation
+
+## Formula
+The area of a triangle is:
+$$A = \frac{1}{2} \times \text{base} \times \text{height}$$
+
+## Solution
+Given:
+- Base = 10 cm
+- Height = 8 cm
+
+$$A = \frac{1}{2} \times 10 \times 8$$
+
+$$A = \frac{1}{2} \times 80$$
+
+$$A = 40 \text{ cm}^2$$
+
+## Answer
+**The area of the triangle is 40 cm²**"
+claude-haiku-4.5,3,"Determine the area of a triangle when given the lengths of the base and its corresponding height.
+Base Length: 10 cm
+Height: 8 cm","# Triangle Area Calculation
+
+## Formula
+The area of a triangle is:
+$$A = \frac{1}{2} \times \text{base} \times \text{height}$$
+
+## Given Information
+- Base (b) = 10 cm
+- Height (h) = 8 cm
+
+## Calculation
+$$A = \frac{1}{2} \times 10 \times 8$$
+
+$$A = \frac{1}{2} \times 80$$
+
+$$A = 40 \text{ cm}^2$$
+
+## Answer
+**The area of the triangle is 40 cm²**"
+claude-haiku-4.5,4,"Determine the area of a triangle when given the lengths of the base and its corresponding height.
+Base Length: 10 cm
+Height: 8 cm","# Area of a Triangle
+
+## Formula
+$$\text{Area} = \frac{1}{2} \times \text{base} \times \text{height}$$
+
+## Calculation
+
+**Given:**
+- Base = 10 cm
+- Height = 8 cm
+
+**Solution:**
+$$\text{Area} = \frac{1}{2} \times 10 \times 8$$
+
+$$\text{Area} = \frac{1}{2} \times 80$$
+
+$$\text{Area} = 40 \text{ cm}^2$$
+
+## Answer
+The area of the triangle is **40 cm²**"
+claude-haiku-4.5,5,"Determine the area of a triangle when given the lengths of the base and its corresponding height.
+Base Length: 10 cm
+Height: 8 cm","# Triangle Area Calculation
+
+## Given Information
+- **Base (b)** = 10 cm
+- **Height (h)** = 8 cm
+
+## Formula
+The area of a triangle is:
+$$A = \frac{1}{2} \times b \times h$$
+
+## Solution
+$$A = \frac{1}{2} \times 10 \times 8$$
+
+$$A = \frac{1}{2} \times 80$$
+
+$$A = 40 \text{ cm}^2$$
+
+## Answer
+**The area of the triangle is 40 cm²**"

@@ -1,0 +1,1330 @@
+real_model,sample_idx,question,answer
+claude-haiku-4.5,0,"Find the dot product of vectors X and Y.
+X=[2, 7] Y=[5, -1]","# Dot Product of X and Y
+
+The dot product is calculated by multiplying corresponding components and summing the results:
+
+**X · Y = (2)(5) + (7)(-1)**
+
+**X · Y = 10 + (-7)**
+
+**X · Y = 3**
+
+The dot product of vectors X and Y is **3**."
+claude-haiku-4.5,1,"Find the dot product of vectors X and Y.
+X=[2, 7] Y=[5, -1]","# Dot Product of X and Y
+
+The dot product is calculated by multiplying corresponding components and summing the results:
+
+**X · Y = (2)(5) + (7)(-1)**
+
+**X · Y = 10 + (-7)**
+
+**X · Y = 3**
+
+The dot product of vectors X and Y is **3**."
+claude-haiku-4.5,2,"Find the dot product of vectors X and Y.
+X=[2, 7] Y=[5, -1]","# Dot Product of X and Y
+
+The dot product is calculated by multiplying corresponding components and summing the results:
+
+**X · Y = (2)(5) + (7)(-1)**
+
+**X · Y = 10 - 7**
+
+**X · Y = 3**"
+claude-haiku-4.5,3,"Find the dot product of vectors X and Y.
+X=[2, 7] Y=[5, -1]","# Dot Product of X and Y
+
+The dot product is calculated by multiplying corresponding components and summing the results:
+
+**X · Y = (2)(5) + (7)(-1)**
+
+**X · Y = 10 + (-7)**
+
+**X · Y = 3**
+
+The dot product of vectors X and Y is **3**."
+claude-haiku-4.5,4,"Find the dot product of vectors X and Y.
+X=[2, 7] Y=[5, -1]","# Dot Product Calculation
+
+The dot product of X and Y is found by multiplying corresponding components and summing:
+
+**X · Y = (2)(5) + (7)(-1)**
+
+**X · Y = 10 + (-7)**
+
+**X · Y = 3**"
+claude-haiku-4.5,5,"Find the dot product of vectors X and Y.
+X=[2, 7] Y=[5, -1]","# Dot Product of X and Y
+
+The dot product is calculated by multiplying corresponding components and summing the results:
+
+**X · Y = (2)(5) + (7)(-1)**
+
+**X · Y = 10 - 7**
+
+**X · Y = 3**"
+claude-haiku-4.5,0,Which US state has the highest average elevation?,"Colorado has the highest average elevation of any US state, at approximately 6,800 feet (2,070 meters) above sea level."
+claude-haiku-4.5,1,Which US state has the highest average elevation?,"Colorado has the highest average elevation of any US state, at approximately 6,800 feet (2,070 meters) above sea level."
+claude-haiku-4.5,2,Which US state has the highest average elevation?,"Colorado has the highest average elevation of any US state, at approximately 6,800 feet (2,070 meters) above sea level."
+claude-haiku-4.5,3,Which US state has the highest average elevation?,"Colorado has the highest average elevation of any US state, at approximately 6,800 feet (2,070 meters) above sea level."
+claude-haiku-4.5,4,Which US state has the highest average elevation?,"Colorado has the highest average elevation of any US state, with an average elevation of about 6,800 feet (2,070 meters) above sea level. This is due to the state's location in the Rocky Mountains."
+claude-haiku-4.5,5,Which US state has the highest average elevation?,"Colorado has the highest average elevation of any US state, at approximately 6,800 feet (2,070 meters) above sea level."
+claude-haiku-4.5,0,"Describe the overall tone of the following passage.
+Apples and oranges have been used as symbols of contrast for centuries. Where apples are sought for their sweet flavors and nutritional value, oranges are valued for their sour taste and thirst-quenching properties.","# Tone Analysis
+
+The overall tone of this passage is **neutral and informative**.
+
+The writing:
+- Presents factual information in a straightforward manner
+- Uses objective language without emotional language or bias
+- Maintains an educational stance, similar to what you'd find in a reference text or encyclopedia
+- Avoids judgmental or persuasive language
+
+The passage simply states historical facts about how apples and oranges have been symbolically contrasted, without expressing opinions about which is better or using colorful descriptive language. This creates a calm, balanced, and academic tone."
+claude-haiku-4.5,1,"Describe the overall tone of the following passage.
+Apples and oranges have been used as symbols of contrast for centuries. Where apples are sought for their sweet flavors and nutritional value, oranges are valued for their sour taste and thirst-quenching properties.","# Tone Analysis
+
+The overall tone of this passage is **objective and informative**.
+
+## Key characteristics:
+
+- **Neutral and factual** — The passage presents information about apples and oranges without personal judgment or emotion
+- **Educational** — It aims to explain the historical symbolic use of these fruits and their contrasting qualities
+- **Straightforward** — The language is clear and direct, without flourishes or dramatic language
+- **Balanced** — It presents both fruits equally, noting the distinct properties of each without favoring one over the other
+
+The passage reads like something from an educational or reference text, maintaining a calm, academic voice throughout."
+claude-haiku-4.5,2,"Describe the overall tone of the following passage.
+Apples and oranges have been used as symbols of contrast for centuries. Where apples are sought for their sweet flavors and nutritional value, oranges are valued for their sour taste and thirst-quenching properties.","# Tone Analysis
+
+The overall tone of this passage is **informative and neutral/objective**.
+
+The writing presents factual information about apples and oranges in a straightforward manner without emotional language or strong opinions. The author simply states how these fruits have been symbolically used and describes their respective characteristics (sweet vs. sour, nutritional vs. thirst-quenching).
+
+There is no passion, humor, sarcasm, or bias—just a clear, educational presentation of the comparison between the two fruits."
+claude-haiku-4.5,3,"Describe the overall tone of the following passage.
+Apples and oranges have been used as symbols of contrast for centuries. Where apples are sought for their sweet flavors and nutritional value, oranges are valued for their sour taste and thirst-quenching properties.","# Tone Analysis
+
+The overall tone of this passage is **informative and neutral/objective**.
+
+**Key characteristics:**
+
+- **Educational**: The passage presents factual information about apples and oranges in a straightforward manner
+- **Balanced**: It treats both fruits equally, describing each with comparable detail
+- **Formal**: The language is measured and composed, lacking emotional bias or colloquialisms
+- **Matter-of-fact**: The content is presented as established fact rather than opinion or argument
+
+The passage reads like it could come from an encyclopedic or academic source, discussing these fruits in a calm, detached manner without trying to persuade, entertain, or provoke an emotional response from the reader."
+claude-haiku-4.5,4,"Describe the overall tone of the following passage.
+Apples and oranges have been used as symbols of contrast for centuries. Where apples are sought for their sweet flavors and nutritional value, oranges are valued for their sour taste and thirst-quenching properties.","# Tone Analysis
+
+The overall tone of this passage is **neutral and informative**.
+
+## Key characteristics:
+
+- **Objective**: The writing presents facts about apples and oranges without personal opinion or emotional language
+- **Educational**: It explains the historical use of these fruits as symbols and their distinct qualities
+- **Balanced**: Both fruits are discussed equally, with parallel sentence structure
+- **Straightforward**: The language is clear and direct, without flowery or dramatic elements
+
+The passage reads like something from an educational text or reference material—factual and measured rather than persuasive, humorous, or emotionally charged."
+claude-haiku-4.5,5,"Describe the overall tone of the following passage.
+Apples and oranges have been used as symbols of contrast for centuries. Where apples are sought for their sweet flavors and nutritional value, oranges are valued for their sour taste and thirst-quenching properties.","# Overall Tone
+
+The tone is **objective and informative**, with a touch of **academic formality**.
+
+## Key characteristics:
+
+- **Neutral and balanced** — The passage presents both apples and oranges without favoring one over the other
+- **Straightforward** — It uses clear, declarative statements to convey factual information
+- **Didactic** — It has an educational quality, as if explaining a concept or historical fact to the reader
+- **Measured** — The language is controlled and measured, avoiding emotional language or strong opinions
+
+The passage reads like content from an educational text or reference material, where the goal is to inform rather than persuade or entertain."
+claude-haiku-4.5,0,"Generate a summary of the following text in three sentences.
+The ban imposed by the government has resulted in the closure of many small businesses and caused major financial losses in these locations. Business owners have no other means to generate revenue due to the lack of available delivery or online services. The effects of the ban extend far beyond the businesses, as many low-wage earners in these communities are now jobless.","# Summary
+
+The government ban has forced many small businesses to close, resulting in significant financial losses for owners who lack alternative revenue streams through delivery or online services. The economic impact extends beyond business owners to low-wage workers in these communities who have lost their jobs due to the closures."
+claude-haiku-4.5,1,"Generate a summary of the following text in three sentences.
+The ban imposed by the government has resulted in the closure of many small businesses and caused major financial losses in these locations. Business owners have no other means to generate revenue due to the lack of available delivery or online services. The effects of the ban extend far beyond the businesses, as many low-wage earners in these communities are now jobless.","# Summary
+
+The government's ban has forced many small businesses to close and caused significant financial hardship in affected areas. Business owners lack alternative revenue sources because delivery and online services are unavailable. The ban's consequences extend to vulnerable workers, as many low-wage earners in these communities have lost their jobs."
+claude-haiku-4.5,2,"Generate a summary of the following text in three sentences.
+The ban imposed by the government has resulted in the closure of many small businesses and caused major financial losses in these locations. Business owners have no other means to generate revenue due to the lack of available delivery or online services. The effects of the ban extend far beyond the businesses, as many low-wage earners in these communities are now jobless.","# Summary
+
+The government ban has forced the closure of numerous small businesses and caused significant financial damage in affected areas. Business owners cannot compensate for lost revenue because alternative delivery and online services are unavailable. The impact extends to low-wage workers in these communities, many of whom have lost their jobs as a result."
+claude-haiku-4.5,3,"Generate a summary of the following text in three sentences.
+The ban imposed by the government has resulted in the closure of many small businesses and caused major financial losses in these locations. Business owners have no other means to generate revenue due to the lack of available delivery or online services. The effects of the ban extend far beyond the businesses, as many low-wage earners in these communities are now jobless.","# Summary
+
+The government ban has forced numerous small businesses to close, causing significant financial devastation in affected areas. Business owners lack alternative revenue sources because delivery and online service options are unavailable. The ban's impact extends to workers, leaving many low-wage earners in these communities without employment."
+claude-haiku-4.5,4,"Generate a summary of the following text in three sentences.
+The ban imposed by the government has resulted in the closure of many small businesses and caused major financial losses in these locations. Business owners have no other means to generate revenue due to the lack of available delivery or online services. The effects of the ban extend far beyond the businesses, as many low-wage earners in these communities are now jobless.","# Summary
+
+The government ban has forced many small businesses to close and caused significant financial hardship in affected areas. Business owners cannot recover losses because alternative revenue streams like delivery and online services are unavailable to them. The ban's impact extends to workers, leaving many low-wage earners in these communities unemployed."
+claude-haiku-4.5,5,"Generate a summary of the following text in three sentences.
+The ban imposed by the government has resulted in the closure of many small businesses and caused major financial losses in these locations. Business owners have no other means to generate revenue due to the lack of available delivery or online services. The effects of the ban extend far beyond the businesses, as many low-wage earners in these communities are now jobless.","# Summary
+
+The government ban has forced many small businesses to close and caused significant financial losses in affected areas. Business owners cannot adapt because they lack access to alternative revenue streams like delivery or online services. The ban has created widespread unemployment among low-wage workers in these communities who depended on these businesses for income."
+claude-haiku-4.5,0,"Reconstruct the missing sentence.
+Smiling burns approximately two calories a minute. And [missing sentence]","# Possible Reconstructed Sentence
+
+**""Frowning burns significantly more calories than smiling.""**
+
+Or alternatively:
+
+- ""Laughing burns even more calories than smiling.""
+- ""A genuine smile uses more muscles than a fake one.""
+- ""The more you smile, the healthier you become.""
+
+Without the original text, these are educated guesses based on the pattern of the first sentence (a surprising fact about smiling and physical exertion). Do you have any additional context that might help identify the actual missing sentence?"
+claude-haiku-4.5,1,"Reconstruct the missing sentence.
+Smiling burns approximately two calories a minute. And [missing sentence]","# Possible Missing Sentence
+
+**""Frowning burns approximately four calories a minute.""**
+
+This would create a common comparison claim about the caloric difference between smiling and frowning, which is often cited (though scientifically disputed) to humorously suggest that frowning is more physically taxing than smiling.
+
+Other plausible completions might be:
+- ""Laughing burns even more.""
+- ""That's equivalent to the calories in a piece of chocolate.""
+- ""So you could lose weight just by being happy.""
+
+Do you have any additional context about where this sentence is from?"
+claude-haiku-4.5,2,"Reconstruct the missing sentence.
+Smiling burns approximately two calories a minute. And [missing sentence]","# Possible Reconstruction
+
+And **frowning burns even more.**
+
+This would create a logical continuation that plays on the initial statement about smiling, making it comparative and perhaps mildly humorous. Other possibilities include:
+
+- ""And laughing can burn up to three to four times as many.""
+- ""And it takes fewer muscles to smile than to frown.""
+- ""And it's one of the easiest ways to exercise your face.""
+
+Without seeing the original text, any of these could work depending on the context of the piece."
+claude-haiku-4.5,3,"Reconstruct the missing sentence.
+Smiling burns approximately two calories a minute. And [missing sentence]","# Possible Reconstruction
+
+Here are a few ways this sentence could continue:
+
+**Most logical completion:**
+""And frowning burns even more.""
+
+**Other possibilities:**
+- ""And laughing burns significantly more calories than that.""
+- ""And the more genuine the smile, the more calories you burn.""
+- ""And it takes fewer muscles to smile than to frown.""
+
+Without seeing the original context, the first option is the most common completion you'd find in motivational or health-related content, as it contrasts the calorie-burning benefits of smiling with frowning.
+
+Do you have additional context about where this sentence appears?"
+claude-haiku-4.5,4,"Reconstruct the missing sentence.
+Smiling burns approximately two calories a minute. And [missing sentence]","# Reconstructed Sentence
+
+Smiling burns approximately two calories a minute. And **frowning burns even more calories, requiring additional facial muscles to create that expression.**
+
+---
+
+This completion follows a logical pattern of the original statement by:
+- Maintaining the comparative structure (""And..."")
+- Continuing the topic of calorie expenditure and facial expressions
+- Providing a somewhat surprising or interesting fact (similar to the opening statement)
+- Using similar sentence construction
+
+Other possible completions could be:
+- ""And laughing burns three times as many calories""
+- ""And smiling for just 15 minutes a day can improve your mood significantly"""
+claude-haiku-4.5,5,"Reconstruct the missing sentence.
+Smiling burns approximately two calories a minute. And [missing sentence]","# Possible Reconstruction
+
+And **frowning burns even more calories due to the increased muscle tension involved.**
+
+---
+
+This completion follows logically from the opening statement by:
+- Maintaining the topic of facial expressions and calorie expenditure
+- Creating a comparative structure (""smiling... frowning"")
+- Providing additional surprising or interesting information
+- Offering a plausible biological explanation
+
+Other reasonable reconstructions could be:
+- ""And laughing burns about three to four times as many calories.""
+- ""And the more genuine the smile, the more calories you burn.""
+- ""And that's why smiling can actually contribute to weight loss over time."""
+claude-haiku-4.5,0,"Classify the given element as an acid or a base.
+Carbonic acid","# Classification: **Acid**
+
+**Carbonic acid (H₂CO₃)** is classified as an **acid**.
+
+## Key Points:
+
+- **Formula:** H₂CO₃
+- **Type:** Weak acid
+- **Definition:** Carbonic acid is a weak diprotic acid, meaning it can donate two hydrogen ions (H⁺) in solution
+- **Source:** It forms when carbon dioxide dissolves in water: CO₂ + H₂O ⇌ H₂CO₃
+- **pH:** Solutions of carbonic acid have a pH less than 7, confirming its acidic nature
+
+Carbonic acid is commonly found in carbonated beverages and plays an important role in maintaining pH balance in blood and ocean water."
+claude-haiku-4.5,1,"Classify the given element as an acid or a base.
+Carbonic acid","# Carbonic Acid Classification
+
+**Carbonic acid (H₂CO₃) is an ACID.**
+
+## Explanation:
+
+Carbonic acid is classified as an acid because it:
+
+1. **Contains hydrogen ions (H⁺)** that can be donated to other substances
+2. **Has a pH less than 7** in aqueous solution
+3. **Follows the Brønsted-Lowry definition** of an acid (proton donor)
+
+## Additional Information:
+
+- Carbonic acid is a **weak acid** (does not completely dissociate in water)
+- It forms when CO₂ dissolves in water: CO₂ + H₂O ⇌ H₂CO₃
+- It's commonly found in carbonated beverages and natural water systems
+- It can donate up to two protons, making it a **diprotic acid**"
+claude-haiku-4.5,2,"Classify the given element as an acid or a base.
+Carbonic acid","# Carbonic Acid Classification
+
+**Carbonic acid is an ACID.**
+
+## Explanation
+
+Carbonic acid (H₂CO₃) is classified as an acid because it:
+
+1. **Contains hydrogen ions (H⁺)** that it can donate to other substances
+2. **Has a pH less than 7** when dissolved in water
+3. **Follows Arrhenius acid definition** - it produces H⁺ ions in aqueous solution
+4. **Follows Brønsted-Lowry definition** - it acts as a proton (H⁺) donor
+
+### Common Source
+Carbonic acid is formed when carbon dioxide (CO₂) dissolves in water and is responsible for the slight acidity of carbonated beverages and rainwater."
+claude-haiku-4.5,3,"Classify the given element as an acid or a base.
+Carbonic acid","# Classification: **Acid**
+
+## Explanation:
+
+**Carbonic acid** (H₂CO₃) is classified as an **acid** because it:
+
+1. **Contains ionizable hydrogen atoms** - It has two hydrogen ions (H⁺) that can be released
+2. **Produces H⁺ ions in solution** - When dissolved in water, it dissociates:
+   - H₂CO₃ ⇌ H⁺ + HCO₃⁻ (first ionization)
+   - HCO₃⁻ ⇌ H⁺ + CO₃²⁻ (second ionization)
+
+3. **Lowers pH** - Carbonic acid solutions have a pH < 7
+
+**Note:** Carbonic acid is a **weak acid**, as it only partially ionizes in solution.
+
+---
+
+*Common source: Carbonated beverages and rainwater (formed when CO₂ dissolves in water)*"
+claude-haiku-4.5,4,"Classify the given element as an acid or a base.
+Carbonic acid","# Classification: **ACID**
+
+## Explanation
+
+**Carbonic acid** (H₂CO₃) is classified as an **acid** because:
+
+1. **It contains hydrogen ions (H⁺)** - Acids are substances that donate hydrogen ions in aqueous solutions
+
+2. **Chemical formula** - The ""H"" at the beginning of H₂CO₃ indicates it is an acid
+
+3. **Ionization in water:**
+   - H₂CO₃ ⇌ H⁺ + HCO₃⁻ (first ionization)
+   - HCO₃⁻ ⇌ H⁺ + CO₃²⁻ (second ionization)
+
+4. **Weak acid** - Carbonic acid is specifically a weak acid, meaning it only partially ionizes in water
+
+---
+
+**Common source:** Carbonic acid forms when carbon dioxide (CO₂) dissolves in water, which is why carbonated beverages have a slightly acidic pH."
+claude-haiku-4.5,5,"Classify the given element as an acid or a base.
+Carbonic acid","# Classification: **ACID**
+
+## Explanation
+
+**Carbonic acid** (H₂CO₃) is classified as an **acid** because it:
+
+1. **Contains hydrogen ions (H⁺)** that it can donate to other substances
+2. **Has a pH less than 7** in aqueous solution
+3. **Follows the Arrhenius definition of an acid** - a substance that produces H⁺ ions in water
+4. **Can donate protons** to bases (Brønsted-Lowry definition)
+
+### Additional Information
+- Carbonic acid forms when carbon dioxide dissolves in water (CO₂ + H₂O ⇌ H₂CO₃)
+- It is a **weak acid**, meaning it only partially dissociates in water
+- It is important in biological systems and contributes to the acidity of carbonated beverages"
+claude-haiku-4.5,0,"Determine the perimeter of a right angled triangle with sides a = 6, b = 8 and c = 10.","# Perimeter of a Right Triangle
+
+To find the perimeter, I need to add all three sides together.
+
+## Given Information
+- a = 6
+- b = 8
+- c = 10
+
+## Calculation
+
+**Perimeter = a + b + c**
+
+Perimeter = 6 + 8 + 10 = **24**
+
+## Verification
+Let me confirm this is a valid right triangle using the Pythagorean theorem:
+- a² + b² = c²
+- 6² + 8² = 10²
+- 36 + 64 = 100 ✓
+
+**The perimeter is 24 units.**"
+claude-haiku-4.5,1,"Determine the perimeter of a right angled triangle with sides a = 6, b = 8 and c = 10.","# Perimeter of a Right Angled Triangle
+
+To find the perimeter, I need to add all three sides together.
+
+**Given:**
+- a = 6
+- b = 8  
+- c = 10
+
+**Formula:**
+Perimeter = a + b + c
+
+**Calculation:**
+Perimeter = 6 + 8 + 10 = **24**
+
+---
+
+**Note:** This is a valid right triangle since it satisfies the Pythagorean theorem:
+- a² + b² = c²
+- 6² + 8² = 36 + 64 = 100 = 10² ✓
+
+The perimeter is **24 units**."
+claude-haiku-4.5,2,"Determine the perimeter of a right angled triangle with sides a = 6, b = 8 and c = 10.","# Perimeter of a Right Angled Triangle
+
+Given sides: a = 6, b = 8, c = 10
+
+## Verification (Pythagorean Theorem)
+First, let me verify this is indeed a right triangle:
+- a² + b² = 6² + 8² = 36 + 64 = 100
+- c² = 10² = 100 ✓
+
+The sides satisfy the Pythagorean theorem, confirming this is a right triangle.
+
+## Calculate Perimeter
+The perimeter is the sum of all three sides:
+
+**Perimeter = a + b + c**
+
+**Perimeter = 6 + 8 + 10 = 24**
+
+The perimeter is **24 units**."
+claude-haiku-4.5,3,"Determine the perimeter of a right angled triangle with sides a = 6, b = 8 and c = 10.","# Perimeter of a Right-Angled Triangle
+
+## Given Information
+- Side a = 6
+- Side b = 8
+- Side c = 10
+
+## Solution
+
+The perimeter of a triangle is the sum of all three sides:
+
+**Perimeter = a + b + c**
+
+Perimeter = 6 + 8 + 10
+
+**Perimeter = 24 units**
+
+## Verification
+We can verify this is indeed a right-angled triangle using the Pythagorean theorem:
+- a² + b² = c²
+- 6² + 8² = 36 + 64 = 100
+- 10² = 100 ✓
+
+This confirms it's a valid right-angled triangle (a 3-4-5 triangle scaled by factor of 2)."
+claude-haiku-4.5,4,"Determine the perimeter of a right angled triangle with sides a = 6, b = 8 and c = 10.","# Perimeter of a Right Triangle
+
+To find the perimeter, I need to add all three sides together.
+
+## Given Information
+- a = 6
+- b = 8
+- c = 10
+
+## Verification (Right Triangle Check)
+First, let me verify this is indeed a right triangle using the Pythagorean theorem:
+
+a² + b² = c²
+
+6² + 8² = 10²
+
+36 + 64 = 100
+
+100 = 100 ✓
+
+## Calculate Perimeter
+
+**Perimeter = a + b + c**
+
+Perimeter = 6 + 8 + 10
+
+**Perimeter = 24 units**"
+claude-haiku-4.5,5,"Determine the perimeter of a right angled triangle with sides a = 6, b = 8 and c = 10.","# Perimeter of a Right-Angled Triangle
+
+## Given Information
+- a = 6
+- b = 8
+- c = 10
+
+## Verification (Pythagorean Theorem)
+First, let me verify this is indeed a right-angled triangle:
+
+a² + b² = c²
+
+6² + 8² = 10²
+
+36 + 64 = 100
+
+100 = 100 ✓
+
+This confirms it's a right-angled triangle, where c is the hypotenuse.
+
+## Perimeter Calculation
+
+The perimeter is the sum of all three sides:
+
+**Perimeter = a + b + c**
+
+**Perimeter = 6 + 8 + 10 = 24**
+
+The perimeter is **24 units**."
+claude-haiku-4.5,0,Describe the steps of preparing a ham and cheese sandwich.,"# How to Make a Ham and Cheese Sandwich
+
+## Gather Your Ingredients
+- Bread (2 slices)
+- Sliced ham
+- Sliced cheese
+- Optional: butter, mustard, mayo, lettuce, tomato
+
+## Steps
+
+1. **Lay out the bread** – Place both slices on a clean surface or cutting board.
+
+2. **Add condiments** (optional) – Spread butter, mustard, mayo, or other spreads on one or both slices.
+
+3. **Layer the ham** – Arrange 2-3 slices of ham on the first slice of bread, folding or layering as desired.
+
+4. **Add the cheese** – Place 1-2 slices of cheese on top of the ham.
+
+5. **Add extras** (optional) – Layer lettuce, tomato, or other vegetables if desired.
+
+6. **Close the sandwich** – Place the second slice of bread on top, pressing gently.
+
+7. **Cut** – Slice diagonally or down the middle for easier eating (optional).
+
+8. **Serve** – Plate and enjoy immediately, or wrap for later.
+
+**Tips:** Toast the bread for a warm sandwich, or chill for a few minutes before serving for a firmer texture."
+claude-haiku-4.5,1,Describe the steps of preparing a ham and cheese sandwich.,"# How to Make a Ham and Cheese Sandwich
+
+## Ingredients & Tools
+- 2 slices of bread
+- Ham slices
+- Cheese slices
+- Optional: condiments (mustard, mayo, lettuce, tomato)
+- Knife and cutting board
+
+## Steps
+
+1. **Gather ingredients** - Collect all items you'll need in one place
+
+2. **Prepare the bread** - Lay out both bread slices on a clean surface
+
+3. **Add condiments** (optional) - Spread mayo, mustard, or other spreads on one or both slices
+
+4. **Layer the ham** - Place ham slices on one slice of bread, folding as needed to cover the surface
+
+5. **Add the cheese** - Place cheese slices on top of the ham
+
+6. **Add vegetables** (optional) - Include lettuce, tomato, or other toppings if desired
+
+7. **Close the sandwich** - Place the second bread slice on top, pressing gently
+
+8. **Cut** (optional) - Slice diagonally or down the middle if preferred
+
+9. **Serve** - Plate and enjoy immediately, or wrap for later
+
+## Tips
+- Toast the bread first for extra flavor and texture
+- Let cold ingredients sit at room temperature briefly for better taste
+- Arrange ingredients evenly for consistent bites"
+claude-haiku-4.5,2,Describe the steps of preparing a ham and cheese sandwich.,"# How to Make a Ham and Cheese Sandwich
+
+## Gather Your Ingredients
+- Bread (2 slices)
+- Ham (2-3 slices)
+- Cheese (1-2 slices)
+- Optional: butter, mustard, mayo, lettuce, tomato, or other condiments
+
+## Steps
+
+1. **Lay out the bread** on a clean surface or cutting board
+
+2. **Apply condiments** (if desired) to one or both bread slices—spread butter, mustard, mayo, or another spread thinly
+
+3. **Layer the ham** on one slice of bread
+
+4. **Add the cheese** on top of the ham
+
+5. **Include extras** (if using)—add lettuce, tomato, or other vegetables
+
+6. **Close the sandwich** by placing the second slice of bread on top, condiment-side down
+
+7. **Cut diagonally** (optional) for easier eating and better presentation
+
+8. **Serve immediately** or wrap in foil/plastic wrap to take with you
+
+## Tips
+- Toast the bread first for added texture and warmth
+- Warm the ham gently for a hot sandwich
+- Use quality deli meat and cheese for better flavor"
+claude-haiku-4.5,3,Describe the steps of preparing a ham and cheese sandwich.,"# How to Make a Ham and Cheese Sandwich
+
+## Ingredients and Tools
+- 2 slices of bread
+- Ham slices
+- Cheese slices
+- Optional: butter, mustard, mayo, lettuce, tomato
+
+## Steps
+
+1. **Gather your ingredients** - Lay out bread, ham, cheese, and any condiments you want to use.
+
+2. **Prepare the bread** - Place both bread slices on a clean surface. If desired, lightly spread butter, mustard, or mayo on each slice.
+
+3. **Layer the ham** - Arrange ham slices on one piece of bread, folding them neatly if needed.
+
+4. **Add the cheese** - Place cheese slices on top of the ham.
+
+5. **Add extras (optional)** - Layer lettuce, tomato, or other toppings if desired.
+
+6. **Combine** - Place the second slice of bread on top, pressing gently to hold everything together.
+
+7. **Cut** - Slice diagonally or straight down the middle, if preferred.
+
+8. **Serve** - Plate and enjoy immediately, or wrap for later.
+
+**Tip:** For easier eating, you can toast the bread first or lightly heat the sandwich if you prefer it warm."
+claude-haiku-4.5,4,Describe the steps of preparing a ham and cheese sandwich.,"# How to Make a Ham and Cheese Sandwich
+
+## Ingredients and Tools
+- 2 slices of bread
+- Sliced ham
+- Sliced cheese
+- Optional: butter, condiments (mustard, mayo, lettuce, tomato)
+
+## Steps
+
+1. **Lay out the bread** - Place both slices on a clean surface or cutting board.
+
+2. **Spread condiments** (optional) - Apply butter, mayo, or mustard to one or both slices if desired.
+
+3. **Layer the ham** - Arrange ham slices on one piece of bread, folding or overlapping as needed to cover most of the surface.
+
+4. **Add the cheese** - Place cheese slices on top of the ham. You can use one large slice or multiple smaller ones.
+
+5. **Add extras** (optional) - Layer lettuce, tomato, or other vegetables if you want.
+
+6. **Close the sandwich** - Place the second bread slice on top, pressing gently.
+
+7. **Cut** (optional) - Cut diagonally or down the middle if preferred, or leave whole.
+
+8. **Serve** - Plate and enjoy immediately, or wrap for later.
+
+**Tip:** For a warm sandwich, you can toast the bread first or heat the ham and cheese in a skillet before assembling."
+claude-haiku-4.5,5,Describe the steps of preparing a ham and cheese sandwich.,"# How to Make a Ham and Cheese Sandwich
+
+## Ingredients & Tools
+- 2 slices of bread
+- Sliced ham
+- Sliced cheese
+- Optional: butter, mustard, mayo, lettuce, tomato
+
+## Steps
+
+1. **Gather your ingredients** on a clean surface or cutting board.
+
+2. **Prepare the bread** by laying out both slices flat.
+
+3. **Spread condiments** (if using) on one or both bread slices—butter, mustard, or mayo work well.
+
+4. **Layer the ham** on one slice, using as much as you prefer.
+
+5. **Add the cheese** on top of the ham.
+
+6. **Add extras** (optional) like lettuce or tomato slices for freshness and crunch.
+
+7. **Combine the slices** by placing the second piece of bread on top, with the condiments facing inward.
+
+8. **Cut diagonally** (optional) to create two triangles, or cut straight down the middle for rectangles.
+
+9. **Serve immediately** or wrap in plastic wrap if saving for later.
+
+**Tip:** For a warm sandwich, you can toast the bread first or press the assembled sandwich in a skillet or panini maker."
+claude-haiku-4.5,0,"Demonstrate the definition of the term ""law of supply and demand"".","# Law of Supply and Demand
+
+## Definition
+The law of supply and demand states that **prices adjust to balance the quantity of goods producers are willing to supply with the quantity consumers are willing to buy**. When supply and demand are mismatched, prices shift until equilibrium is reached.
+
+## Two Components
+
+### **The Law of Demand**
+- As price **decreases** → demand **increases**
+- As price **increases** → demand **decreases**
+- (inverse relationship)
+
+### **The Law of Supply**
+- As price **increases** → supply **increases**
+- As price **decreases** → supply **decreases**
+- (direct relationship)
+
+## Practical Example: Concert Tickets
+
+**High Demand, Limited Supply**
+- Tickets to a popular artist's show are scarce
+- Many people want them (high demand)
+- Price rises to $200+ each
+- Some buyers drop out at this price (equilibrium sought)
+
+**Low Demand, Excess Supply**
+- Tickets for an unknown performer aren't selling
+- Few people want them (low demand)
+- Organizers drop price to $15
+- More people buy at this lower price (equilibrium reached)
+
+## Visual Concept
+```
+Price ↑  → Supply increases, Demand decreases
+Price ↓  → Supply decreases, Demand increases
+```
+
+**Equilibrium point**: Where supply and demand curves meet, determining the market price and quantity sold."
+claude-haiku-4.5,1,"Demonstrate the definition of the term ""law of supply and demand"".","# Law of Supply and Demand
+
+## Definition
+The law of supply and demand states that **prices of goods tend to reach equilibrium where the quantity suppliers want to sell equals the quantity consumers want to buy**.
+
+---
+
+## How It Works
+
+### **Supply Side**
+- Higher prices → Suppliers produce MORE (greater profit incentive)
+- Lower prices → Suppliers produce LESS (lower profit incentive)
+
+### **Demand Side**
+- Lower prices → Consumers buy MORE (more affordable)
+- Higher prices → Consumers buy LESS (less affordable)
+
+---
+
+## Practical Example: Coffee Prices
+
+**Scenario 1: Too Much Demand**
+- Weather destroys coffee crop → **supply decreases**
+- Coffee becomes scarce → **prices rise**
+- Higher prices → fewer people buy coffee
+- Eventually reaches equilibrium
+
+**Scenario 2: Too Much Supply**
+- New coffee farms open → **supply increases**
+- Coffee becomes abundant → **prices fall**
+- Lower prices → more people buy coffee
+- Eventually reaches equilibrium
+
+---
+
+## Visual Concept
+
+```
+Price
+   ↑     Supply curve (slopes up)
+   |        ╱
+   |      ╱
+   |    ╱ ← Equilibrium point
+   |  ╱
+   |╱___________
+   |╲
+   |  ╲
+   |    ╲
+   |      ╲
+   |________╲___→ Quantity
+         Demand curve (slopes down)
+```
+
+**At equilibrium: Price stabilizes, no shortage or surplus exists.**"
+claude-haiku-4.5,2,"Demonstrate the definition of the term ""law of supply and demand"".","# Law of Supply and Demand
+
+The **law of supply and demand** explains how prices are determined in a market economy through the relationship between product availability and consumer desire.
+
+## Core Definition
+
+**When demand is high and supply is low, prices rise. When demand is low and supply is high, prices fall.**
+
+---
+
+## Two Components
+
+### **Law of Demand**
+- As prices **decrease**, quantity demanded **increases**
+- As prices **increase**, quantity demanded **decreases**
+- *Example: Movie tickets sell better at $8 than at $15*
+
+### **Law of Supply**
+- As prices **increase**, quantity supplied **increases**
+- As prices **decrease**, quantity supplied **decreases**
+- *Example: Farmers plant more crops when prices are high*
+
+---
+
+## Practical Examples
+
+| Scenario | Supply | Demand | Result |
+|----------|--------|--------|--------|
+| Limited concert tickets | Low | High | Prices skyrocket |
+| Bumper crop of apples | High | Normal | Prices drop |
+| New smartphone release | Low | High | Premium pricing |
+| Winter coats in summer | Normal | Low | Heavy discounts |
+
+---
+
+## The Equilibrium Point
+
+The market reaches **equilibrium** where supply equals demand—this is where the price naturally settles and the market clears (no surplus or shortage).
+
+This fundamental principle explains why gas prices spike during emergencies, why electronics become cheaper over time, and how markets self-regulate."
+claude-haiku-4.5,3,"Demonstrate the definition of the term ""law of supply and demand"".","# Law of Supply and Demand
+
+## Definition
+The law of supply and demand is an economic principle stating that **prices are determined by the relationship between the availability of a product (supply) and consumers' desire for it (demand)**.
+
+---
+
+## Key Components
+
+### **Demand**
+- The quantity of a product consumers *want* to buy at different prices
+- Generally decreases as price increases (people buy less when it's expensive)
+
+### **Supply**
+- The quantity of a product producers are *willing* to sell at different prices
+- Generally increases as price increases (more profit incentive)
+
+---
+
+## Practical Examples
+
+### **Example 1: Concert Tickets**
+- A popular artist announces a limited tour
+- **High demand** + **low supply** = prices skyrocket
+- Scalpers resell tickets at premium prices
+
+### **Example 2: Seasonal Strawberries**
+- Summer: abundant harvest (↑ supply) → prices drop
+- Winter: scarce strawberries (↓ supply) → prices rise
+
+### **Example 3: New Video Game Console**
+- Launch day: limited stock, high demand → sold out, high prices
+- Months later: more supply available, demand normalizes → prices stabilize
+
+---
+
+## The Equilibrium Point
+
+**Price stabilizes where supply equals demand** — this is the market equilibrium where the quantity producers want to sell matches what consumers want to buy."
+claude-haiku-4.5,4,"Demonstrate the definition of the term ""law of supply and demand"".","# Law of Supply and Demand
+
+## Definition
+The law of supply and demand states that **prices of goods are determined by the relationship between the availability of a product (supply) and consumers' desire for it (demand)**.
+
+---
+
+## Two Components
+
+### **Demand**
+- The quantity of a product consumers **want and can afford** to buy
+- Generally: **Lower prices → Higher demand**
+- Generally: **Higher prices → Lower demand**
+
+### **Supply**
+- The quantity of a product **available for sale**
+- Generally: **Higher prices → Producers supply more**
+- Generally: **Lower prices → Producers supply less**
+
+---
+
+## Market Equilibrium
+
+**The price stabilizes where supply meets demand** — the point where the quantity supplied equals the quantity demanded.
+
+```
+        Price
+          ↑
+    High  |     Supply ↗
+          |    ╱
+          |   ╱ Equilibrium Point
+          |  ╱     (balanced price)
+    Low   | ╱ ↙ Demand
+          |╱_____________→ Quantity
+```
+
+---
+
+## Practical Example
+
+**Concert Tickets:**
+- **High demand** + **Limited seats** (low supply) → Prices rise
+- **Low demand** + **Many available seats** (high supply) → Prices fall
+- **Equal supply and demand** → Stable ticket price
+
+---
+
+This fundamental economic principle applies to nearly all markets and drives price fluctuations in real-world economies."
+claude-haiku-4.5,5,"Demonstrate the definition of the term ""law of supply and demand"".","# The Law of Supply and Demand
+
+## Definition
+The law of supply and demand states that **the price of a product tends to stabilize when the quantity supplied equals the quantity demanded**. When supply and demand are out of balance, prices adjust to restore equilibrium.
+
+---
+
+## How It Works
+
+### **Supply** (Quantity Available)
+- As price increases → suppliers want to produce more
+- As price decreases → suppliers produce less
+
+### **Demand** (Quantity Wanted)
+- As price increases → consumers want to buy less
+- As price decreases → consumers want to buy more
+
+---
+
+## Practical Example: Concert Tickets
+
+**If demand exceeds supply (shortage):**
+- 10,000 fans want tickets, but only 5,000 available
+- Prices rise (sellers raise prices; resellers charge more)
+- Higher prices discourage some buyers
+- Eventually, equilibrium is reached
+
+**If supply exceeds demand (surplus):**
+- 10,000 tickets available, but only 3,000 fans interested
+- Prices fall to clear inventory
+- Lower prices attract more buyers
+- Equilibrium is reached
+
+---
+
+## Key Takeaway
+
+**Price acts as the balancing mechanism.** When supply and demand are equal, the market ""clears""—there's no pressure for prices to change. This self-regulating process occurs constantly in markets, from groceries to gasoline to real estate."
+claude-haiku-4.5,0,Create a programming instruction for a for loop.,"# For Loop Programming Instruction
+
+## Objective
+Write a for loop that prints the numbers from 1 to 10.
+
+## Instructions
+
+1. **Open a text editor or IDE** and create a new file
+2. **Choose your programming language** (examples below)
+3. **Write a for loop** that:
+   - Starts at 1
+   - Ends at 10
+   - Increments by 1 each iteration
+   - Prints the current number
+
+## Examples
+
+### Python
+```python
+for i in range(1, 11):
+    print(i)
+```
+
+### JavaScript
+```javascript
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+```
+
+### Java
+```java
+for (int i = 1; i <= 10; i++) {
+    System.out.println(i);
+}
+```
+
+### C++
+```cpp
+for (int i = 1; i <= 10; i++) {
+    cout << i << endl;
+}
+```
+
+## Expected Output
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+
+## Key Concepts
+- **Loop Counter**: The variable (i) that tracks iterations
+- **Condition**: Determines when the loop stops
+- **Increment**: Increases the counter each cycle
+- **Body**: Code that executes each iteration"
+claude-haiku-4.5,1,Create a programming instruction for a for loop.,"# For Loop Programming Instruction
+
+## Basic For Loop Syntax
+
+```python
+for variable in sequence:
+    # Code block to execute
+    statement1
+    statement2
+```
+
+## Example 1: Loop Through a List
+
+```python
+fruits = [""apple"", ""banana"", ""cherry""]
+
+for fruit in fruits:
+    print(fruit)
+```
+
+**Output:**
+```
+apple
+banana
+cherry
+```
+
+## Example 2: Loop a Specific Number of Times
+
+```python
+for i in range(5):
+    print(f""Iteration {i}"")
+```
+
+**Output:**
+```
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+```
+
+## Example 3: Loop With Custom Start and End
+
+```python
+for i in range(1, 4):
+    print(i * 2)
+```
+
+**Output:**
+```
+2
+4
+6
+```
+
+## Key Concepts
+
+| Concept | Description |
+|---------|-------------|
+| **variable** | The item being accessed in each iteration |
+| **sequence** | A list, string, range, or other iterable |
+| **range()** | Generates numbers from start to stop |
+| **Indentation** | Code inside the loop must be indented |
+
+## Practice Exercise
+
+Write a for loop that prints the squares of numbers 1 through 5.
+
+<details>
+<summary>Solution</summary>
+
+```python
+for num in range(1, 6):
+    print(num ** 2)
+```
+
+</details>"
+claude-haiku-4.5,2,Create a programming instruction for a for loop.,"# For Loop Programming Instruction
+
+## Objective
+Learn to use a for loop to repeat a block of code a specific number of times.
+
+## Basic Syntax
+
+### Python
+```python
+for variable in range(start, end, step):
+    # code to repeat
+```
+
+### JavaScript
+```javascript
+for (let variable = start; variable < end; variable += step) {
+    // code to repeat
+}
+```
+
+### Java
+```java
+for (int variable = start; variable < end; variable += step) {
+    // code to repeat
+}
+```
+
+## Example 1: Count from 1 to 5
+
+**Python**
+```python
+for i in range(1, 6):
+    print(i)
+# Output: 1, 2, 3, 4, 5
+```
+
+**JavaScript**
+```javascript
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+// Output: 1, 2, 3, 4, 5
+```
+
+## Example 2: Loop Through a List
+
+**Python**
+```python
+fruits = [""apple"", ""banana"", ""cherry""]
+for fruit in fruits:
+    print(fruit)
+```
+
+**JavaScript**
+```javascript
+const fruits = [""apple"", ""banana"", ""cherry""];
+for (let fruit of fruits) {
+    console.log(fruit);
+}
+```
+
+## Key Concepts
+- **Initialization**: Set the starting value
+- **Condition**: Define when the loop stops
+- **Increment**: Change the variable each iteration
+- **Body**: Code that runs repeatedly
+
+## Practice Exercise
+Write a program that prints all even numbers from 0 to 20."
+claude-haiku-4.5,3,Create a programming instruction for a for loop.,"# For Loop Programming Instruction
+
+## Basic Syntax
+
+```python
+for variable in sequence:
+    # Code block to execute repeatedly
+    statement(s)
+```
+
+## Simple Example
+
+```python
+# Print numbers 1 through 5
+for i in range(1, 6):
+    print(i)
+```
+
+## Common Patterns
+
+### 1. **Loop Through a List**
+```python
+fruits = [""apple"", ""banana"", ""orange""]
+for fruit in fruits:
+    print(fruit)
+```
+
+### 2. **Loop with Index**
+```python
+colors = [""red"", ""green"", ""blue""]
+for index in range(len(colors)):
+    print(f""{index}: {colors[index]}"")
+```
+
+### 3. **Loop with Step**
+```python
+# Count by 2s from 0 to 10
+for num in range(0, 11, 2):
+    print(num)  # Output: 0, 2, 4, 6, 8, 10
+```
+
+### 4. **Nested Loop**
+```python
+for i in range(3):
+    for j in range(3):
+        print(f""({i}, {j})"")
+```
+
+## Key Points
+
+- **Iteration**: The loop repeats for each item in the sequence
+- **Indentation**: Code inside the loop must be indented
+- **Break**: Exit the loop early with `break`
+- **Continue**: Skip to the next iteration with `continue`
+
+```python
+for i in range(10):
+    if i == 5:
+        break  # Exit loop when i equals 5
+    if i == 2:
+        continue  # Skip when i equals 2
+    print(i)
+```"
+claude-haiku-4.5,4,Create a programming instruction for a for loop.,"# For Loop Programming Instruction
+
+## Basic Syntax
+```python
+for variable in sequence:
+    # Code block to execute
+    statement(s)
+```
+
+## Simple Example
+```python
+# Print numbers 0 to 4
+for i in range(5):
+    print(i)
+```
+
+## Common For Loop Patterns
+
+### 1. **Iterating Through a List**
+```python
+fruits = [""apple"", ""banana"", ""cherry""]
+for fruit in fruits:
+    print(fruit)
+```
+
+### 2. **Using Range with Start, Stop, Step**
+```python
+# Start at 0, stop before 10, step by 2
+for i in range(0, 10, 2):
+    print(i)  # Outputs: 0, 2, 4, 6, 8
+```
+
+### 3. **Looping with Index**
+```python
+colors = [""red"", ""green"", ""blue""]
+for index in range(len(colors)):
+    print(f""{index}: {colors[index]}"")
+```
+
+### 4. **Nested For Loop**
+```python
+for i in range(3):
+    for j in range(3):
+        print(f""({i}, {j})"", end="" "")
+```
+
+## Key Points to Remember
+- **Indentation matters** — all code inside the loop must be indented
+- **range(n)** — generates numbers from 0 to n-1
+- **break** — exits the loop early
+- **continue** — skips to the next iteration
+- **else clause** — executes if loop completes without breaking"
+claude-haiku-4.5,5,Create a programming instruction for a for loop.,"# For Loop Programming Instruction
+
+## Basic For Loop Syntax
+
+### Python Example
+```python
+for i in range(5):
+    print(i)
+# Output: 0, 1, 2, 3, 4
+```
+
+### JavaScript Example
+```javascript
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+// Output: 0, 1, 2, 3, 4
+```
+
+---
+
+## Instruction Steps
+
+**Objective:** Write a for loop that prints numbers from 1 to 10
+
+### Python Solution
+```python
+for num in range(1, 11):
+    print(num)
+```
+
+### JavaScript Solution
+```javascript
+for (let num = 1; num <= 10; num++) {
+    console.log(num);
+}
+```
+
+### Java Solution
+```java
+for (int num = 1; num <= 10; num++) {
+    System.out.println(num);
+}
+```
+
+---
+
+## Key Concepts
+
+| Component | Purpose |
+|-----------|---------|
+| **Initialization** | Set starting value (e.g., `i = 0`) |
+| **Condition** | Loop continues while true (e.g., `i < 5`) |
+| **Increment** | Update value each iteration (e.g., `i++`) |
+| **Body** | Code to execute each iteration |
+
+---
+
+## Common Patterns
+
+**Looping through a list:**
+```python
+fruits = [""apple"", ""banana"", ""cherry""]
+for fruit in fruits:
+    print(fruit)
+```
+
+**Using enumerate (get index and value):**
+```python
+for index, fruit in enumerate(fruits):
+    print(f""{index}: {fruit}"")
+```"
