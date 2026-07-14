@@ -1,11 +1,11 @@
 <h1 align="center">Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values</h1>
 
 <p align="center">
-Jan Betley<sup>1,*</sup> &nbsp; Johannes Treutlein<sup>1,*</sup> &nbsp; Jan Dubiński<sup>1,2,3,†</sup> &nbsp; Harry Mayne<sup>1,†</sup> &nbsp; Karol Gałązka<sup>1</sup> &nbsp; Niels Warncke<sup>4</sup> &nbsp; Anna Sztyber-Betley<sup>3</sup> &nbsp; Owain Evans<sup>1</sup>
+Jan Betley<sup>1,*</sup> &nbsp; Johannes Treutlein<sup>1,*</sup> &nbsp; Jan Dubiński<sup>1,2,3,†</sup> &nbsp; Harry Mayne<sup>4,†</sup> &nbsp; Karol Gałązka<sup>1</sup> &nbsp; Niels Warncke<sup>5</sup> &nbsp; Anna Sztyber-Betley<sup>3</sup> &nbsp; Owain Evans<sup>1</sup>
 </p>
 
 <p align="center">
-<sup>1</sup>Truthful AI &nbsp; <sup>2</sup>NASK National Research Institute &nbsp; <sup>3</sup>Warsaw University of Technology &nbsp; <sup>4</sup>Center on Long-Term Risk
+<sup>1</sup>Truthful AI &nbsp; <sup>2</sup>NASK National Research Institute &nbsp; <sup>3</sup>Warsaw University of Technology &nbsp; <sup>4</sup>University of Oxford &nbsp; <sup>5</sup>Center on Long-Term Risk
 </p>
 
 <p align="center">
@@ -46,16 +46,14 @@ cd value_leakage
 uv sync
 ```
 
-The cached rollouts and judge outputs used in the paper live in the
+The cached rollouts and judge outputs used in the paper are in the
 [value_leakage_data](https://github.com/TruthfulAI-research/value_leakage_data)
 repository, mounted as the `data/` submodule (~8 GB). If you cloned without
 `--recurse-submodules`, run `git submodule update --init` to fetch it. With the
 data present, the analysis and plotting scripts run without API access;
 sampling scripts re-query the models.
 
-API keys are read from the environment / `.env` (`ANTHROPIC_API_KEY`,
-`OPENAI_API_KEY`, `GEMINI_API_KEY`, `OPENROUTER_API_KEY`, `DASHSCOPE_API_KEY`,
-`TINKER_API_KEY`).
+API keys are read from the environment / `.env`.
 
 ## Code by paper section
 
@@ -66,8 +64,6 @@ API keys are read from the environment / `.env` (`ANTHROPIC_API_KEY`,
 | §5, App. E | Job Offer | `job_offer/` |
 | §6, App. F | Agentic Grading | `agentic_grading/` |
 | §7, App. G | Choosing Activities | `choosing_activities/` |
-| App. A | Raw CoT covertness | raw-CoT modes of the per-experiment `covertness.py` scripts (raw-CoT sampling code and data are not included in this release) |
-| App. B | Quantifying covertness | covertness scripts in each experiment folder |
 | App. H | Agentic Effort | TBD |
 
 Shared infrastructure (model registry, API senders, caching, judges, plot
