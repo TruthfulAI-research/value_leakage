@@ -14,7 +14,10 @@ agentic graders: Claude Code (`claude-opus-4-7`), Codex (`gpt-5.4`), Qwen
 
 Experiments covered here (the two named tasks, three grading harnesses each):
 
-  - **alpaca**: AlpacaEval instruction-following questions.
+  - **alpaca**: AlpacaEval instruction-following questions. The plotted
+    claude/codex win rates are their default-prompt runs from the
+    `alpaca_fairness` cache (`fairness_instructions.py`); the qwen win rates
+    are its own run, restricted to the ALPACA_PANEL_SEEDS panel.
   - **proofs_opus** / **proofs_gemini**: open-ended undergraduate
     real-analysis proofs (epsilon-delta limits, sequences, sup/inf, ...);
     problems authored by `claude-opus-4.7` resp. `gemini-3.1-pro`, proofs
@@ -34,8 +37,6 @@ populated by the sibling `build_proofnet_cache.py`. Nothing here calls any API.
 Provenance (committed run dirs on the branch; counts = completed trials):
 
   experiment      grader   source run dir                          trials  transcripts
-  alpaca          claude   2026-05-21_10-27-34_lab_x_tier_2024        250  250 rater_log.jsonl
-  alpaca          codex    2026-05-24_15-53-01_lab_x_tier_2024        250  250 rater_log.jsonl
   alpaca          qwen     2026-05-24_23-46-17_lab_x_tier_2024        497  497 rater_log.jsonl
   proofs_gemini   claude   full_gemini_claude (interrupted)         92...  none retained
   proofs_gemini   codex    full_gemini_codex                          250  none retained
@@ -54,9 +55,7 @@ Known data gotchas (verified against the branch at migration time):
     (fractional credit for byte-identical-answer ties, see
     `janekd/rate_llm_answers/analyze.py`), migrated verbatim.
   - The cross-grader CoT extraction (`rationales.jsonl` here; `trials_*.jsonl`
-    upstream) does carry one `picked_label` per question. For the alpaca
-    claude/codex graders it covers Jan's local 500-seed runs, a superset of
-    the committed 250-seed run dirs.
+    upstream) does carry one `picked_label` per question.
   - proofs_gemini is unevenly complete: claude was interrupted at 92 trials
     and its committed analysis covers only the first 90; qwen completed
     105/150 attempts. Jan's analysis CSVs are kept as-is (claude n=90).
@@ -133,9 +132,12 @@ EXPERIMENTS = {
 }
 
 # Self-identity-leak trials (see module docstring). Exhaustive for seeds
-# 222333-222582 (the committed claude/codex range); the qwen run's extra
+# 222333-222582 (the ALPACA_PANEL_SEEDS range); the qwen run's extra
 # seeds were never leak-audited upstream.
 ALPACA_LEAK_SEEDS = frozenset({222367, 222480, 222483, 222541})
+
+# The 250-trial alpaca seed panel used in the paper figures.
+ALPACA_PANEL_SEEDS = frozenset(range(222333, 222583))
 
 # Jan's bootstrap (janekd/rate_llm_answers/analyze.py): mean of per-trial win
 # rates, 10k-resample percentile CI, fixed seed.
@@ -224,9 +226,8 @@ def common_seeds(experiment, graders=GRADERS, drop_leak_seeds=False):
     """The matched seed panel shared by all `graders` of `experiment`.
 
     Restricting to this set gives every grader the same trials, so no grader
-    contributes extra data to a comparison -- e.g. alpaca qwen has 497
-    win-trials vs 250 for claude/codex, an asymmetry that vanishes here
-    (alpaca -> 250, proofs_opus -> 217 with the default graders)."""
+    contributes extra data to a comparison (proofs_opus -> 217 with the
+    default graders)."""
     return _common_seeds_cached(experiment, tuple(graders), drop_leak_seeds)
 
 
@@ -290,8 +291,7 @@ def load_rationales(experiment, grader, drop_leak_seeds=False,
                     common_seeds_only=False):
     """Cross-grader CoT extraction (upstream `trials_<grader>.jsonl`): one row
     per trial with `picks` (per-question `picked_label`), `rater_text`,
-    `thinking_text`, `behavior`, etc. For alpaca claude/codex this covers
-    Jan's local 500-seed runs (superset of the committed 250 trials)."""
+    `thinking_text`, `behavior`, etc."""
     _, rows = _read_jsonl(
         grader_dir(experiment, grader) / "rationales.jsonl", "rationales")
     df = _maybe_drop_leak_seeds(pd.DataFrame(rows), experiment,
@@ -373,17 +373,40 @@ def summarize_per_label(wins_df):
     return pd.DataFrame(rows)
 
 
+def alpaca_default_wins(grader):
+    """Per-(trial, label) wins for the alpaca claude/codex graders: the
+    default-prompt arm of the fairness sweep (`fairness_instructions.py`)."""
+    _, rows = _read_jsonl(
+        CACHE_ROOT / "alpaca_fairness" / grader / "none"
+        / "per_label_per_seed_wins.jsonl",
+        "per_label_per_seed_wins")
+    return pd.DataFrame(rows)
+
+
 def summarize_experiment(experiment, graders=GRADERS, drop_leak_seeds=False,
                          common_seeds_only=False):
     """Per-label summaries for all graders of one experiment, with a `grader`
-    column. Graders whose cache is missing are skipped with a warning."""
+    column. Graders whose cache is missing are skipped with a warning.
+
+    Alpaca sources: claude/codex use their full default-prompt runs
+    (`alpaca_default_wins`); qwen uses its run restricted to the
+    ALPACA_PANEL_SEEDS panel when `common_seeds_only` is set."""
     drop_leak_seeds = drop_leak_seeds and experiment == "alpaca"
     frames = []
     for grader in graders:
         try:
-            wins = per_seed_wins(experiment, grader,
-                                 drop_leak_seeds=drop_leak_seeds,
-                                 common_seeds_only=common_seeds_only)
+            if experiment == "alpaca" and grader in ("claude", "codex"):
+                wins = alpaca_default_wins(grader)
+            elif experiment == "alpaca":
+                wins = per_seed_wins(experiment, grader,
+                                     drop_leak_seeds=drop_leak_seeds)
+                if common_seeds_only:
+                    wins = wins[wins["seed"].isin(ALPACA_PANEL_SEEDS)]
+                    wins = wins.reset_index(drop=True)
+            else:
+                wins = per_seed_wins(experiment, grader,
+                                     drop_leak_seeds=drop_leak_seeds,
+                                     common_seeds_only=common_seeds_only)
         except CacheMiss as e:
             print(f"[{experiment}] skipping {grader}: {e}")
             continue
@@ -489,7 +512,13 @@ if __name__ == "__main__":
             for grader in summary["grader"].unique():
                 ours = summary[summary["grader"] == grader].drop(
                     columns="grader").reset_index(drop=True)
-                jans = load_jan_summary(experiment, grader)
+                if experiment == "alpaca" and grader in ("claude", "codex"):
+                    _, rows = _read_jsonl(
+                        CACHE_ROOT / "alpaca_fairness" / grader / "none"
+                        / "per_label_summary.jsonl", "per_label_summary")
+                    jans = pd.DataFrame(rows)
+                else:
+                    jans = load_jan_summary(experiment, grader)
                 # atol covers bootstrap-CI RNG drift across numpy versions;
                 # means and totals match far tighter (see the migration).
                 pd.testing.assert_frame_equal(
