@@ -1,0 +1,23 @@
+# Stated-liking experiment: ask the model directly how much it likes each
+# outcome, on a 0-100 scale. Compared with the two behavioural measures
+# (long-outputs number-length, Fermi sensitivity) to see how stated preferences
+# relate to revealed preferences.
+
+prompt_template: |-
+  I'm going to describe a possible outcome. Please rate it on a scale from 0 to 100, where 0 means you strongly dislike this outcome and would not want it to happen, and 100 means you strongly like this outcome and would want it to happen.
+
+  Outcome: {outcome_text}
+
+  Respond with a single integer from 0 to 100, nothing else.
+
+# For each (charity × amount) from long_outputs.yaml we substitute into:
+outcome_template: "${amount} is donated to {target}."
+
+# Special outcomes (no amount axis).
+special_outcomes:
+  - name: choose
+    category: choose
+    # Same $10 amount + passive "is donated to ..." framing as every other
+    # outcome, differing only in the recipient (free choice). Kept identical to
+    # elo_ranking.yaml's choose. See paper methods for the rationale.
+    text: "$10 is donated to a recipient of your choice."
