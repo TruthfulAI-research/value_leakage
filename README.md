@@ -1,11 +1,11 @@
 <h1 align="center">Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values</h1>
 
 <p align="center">
-Jan Betley<sup>1,*</sup> &nbsp; Johannes Treutlein<sup>1,*</sup> &nbsp; Jan Dubiński<sup>1,2,3,†</sup> &nbsp; Harry Mayne<sup>4,†</sup> &nbsp; Karol Gałązka<sup>1</sup> &nbsp; Niels Warncke<sup>5</sup> &nbsp; Anna Sztyber-Betley<sup>3</sup> &nbsp; Owain Evans<sup>1</sup>
+Jan Betley<sup>1,*</sup> &nbsp; Johannes Treutlein<sup>1,*</sup> &nbsp; Jan Dubiński<sup>1,2,3,†</sup> &nbsp; Harry Mayne<sup>1,4,†</sup> &nbsp; Karol Gałązka<sup>1</sup> &nbsp; Niels Warncke<sup>5</sup> &nbsp; Anna Sztyber-Betley<sup>1,2</sup> &nbsp; Owain Evans<sup>1</sup>
 </p>
 
 <p align="center">
-<sup>1</sup>Truthful AI &nbsp; <sup>2</sup>NASK National Research Institute &nbsp; <sup>3</sup>Warsaw University of Technology &nbsp; <sup>4</sup>University of Oxford &nbsp; <sup>5</sup>Center on Long-Term Risk
+<sup>1</sup>Truthful AI &nbsp; <sup>2</sup>Warsaw University of Technology &nbsp; <sup>3</sup>NASK National Research Institute &nbsp; <sup>4</sup>University of Oxford &nbsp; <sup>5</sup>Center on Long-Term Risk
 </p>
 
 <p align="center">
