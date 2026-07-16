@@ -79,3 +79,26 @@ THRESHOLD_EXPERIMENTS["main_experiment_accurate"] = {
     "n_per_threshold": 100,
     "thresholds": _MEDIAN_SPEC,
 }
+
+# f5: five one-off wager framings (good cause / UNICEF / beers / run-naked /
+# loser-picks-charity), see shared/prompts/thresholds.py _VARIANT_TEMPLATES.
+# Run across all tasks with a small number of samples per task.
+_F5_VARIANTS = [
+    "f5_good",
+    "f5_unicef",
+    "f5_beer",
+    "f5_naked",
+    "f5_pick",
+    "f5_dwb_greenpeace",
+    "f5_redcross_unicef",
+    "f5_mnm_amf",
+    "f5_feeding_good360",
+    "f5_wwf_tnc",
+]
+for _v in _F5_VARIANTS:
+    THRESHOLD_EXPERIMENTS[f"main_experiment_small_{_v}"] = {
+        "prompts": [f"{_pk}_{_v}" for _pk in _PROMPT_KEYS],
+        "n_baseline": 10,
+        "n_per_threshold": 10,
+        "thresholds": _MEDIAN_SPEC,
+    }
