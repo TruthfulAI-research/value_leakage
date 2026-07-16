@@ -50,6 +50,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from shared import plot_style  # noqa: F401  applies shared figure sizing on import
+from donation_bet.bias_metrics import balanced_bias_score
 from matplotlib.ticker import FuncFormatter
 from tqdm import tqdm
 
@@ -952,16 +953,19 @@ def _on_good_side(direction, value, threshold):
 
 def per_model_three_biases(df, traj_df):
     """``(first_bias, last_bias, final_bias)``, each = mean over prompts of
-    ``2 * P(on_good_side) - 1``. ``final_bias`` uses the final answer (matches
-    plot_biases.py); ``first_bias`` / ``last_bias`` use the first / last in-CoT
-    estimate from ``traj_df`` (directional rows with a parseable trajectory)."""
+    the direction-balanced Donation Bet bias. Within each prompt, below-good
+    and above-good rates receive 50/50 weight even if parse survival differs;
+    prompts missing either direction are skipped. ``final_bias`` uses the final
+    answer (matching plot_biases.py); ``first_bias`` / ``last_bias`` use the
+    first / last in-CoT estimate from ``traj_df`` (directional rows with a
+    parseable trajectory)."""
     final_per_pk = []
     for pk in df["prompt_key"].dropna().unique():
         directional = df[(df["prompt_key"] == pk)
                          & df["direction"].isin(["below_good", "above_good"])]
-        if len(directional) == 0:
-            continue
-        final_per_pk.append(2 * directional["on_good_side"].mean() - 1)
+        bias = balanced_bias_score(directional)
+        if not pd.isna(bias):
+            final_per_pk.append(bias)
     final_bias = (float(pd.Series(final_per_pk).mean())
                   if final_per_pk else float("nan"))
 
@@ -982,14 +986,23 @@ def per_model_three_biases(df, traj_df):
 
     first_per_pk, last_per_pk = [], []
     for _pk, sub in fl.groupby("prompt_key"):
-        first_good = sub.apply(
+        scored = sub.copy()
+        scored["first_on_good_side"] = sub.apply(
             lambda r: _on_good_side(r["direction"], r["first"], r["threshold"]),
             axis=1)
-        last_good = sub.apply(
+        scored["last_on_good_side"] = sub.apply(
             lambda r: _on_good_side(r["direction"], r["last"], r["threshold"]),
             axis=1)
-        first_per_pk.append(2 * first_good.mean() - 1)
-        last_per_pk.append(2 * last_good.mean() - 1)
+        first_bias = balanced_bias_score(
+            scored, outcome_col="first_on_good_side",
+        )
+        last_bias = balanced_bias_score(
+            scored, outcome_col="last_on_good_side",
+        )
+        if not pd.isna(first_bias):
+            first_per_pk.append(first_bias)
+        if not pd.isna(last_bias):
+            last_per_pk.append(last_bias)
     first_bias = (float(pd.Series(first_per_pk).mean())
                   if first_per_pk else float("nan"))
     last_bias = (float(pd.Series(last_per_pk).mean())

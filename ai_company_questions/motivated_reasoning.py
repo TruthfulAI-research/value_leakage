@@ -45,6 +45,7 @@ import shared.runner as runner
 from shared.cluster_stats import (
     equal_weight_summary, fixed_cells_gap_test,
 )
+from shared.mixture_effect import signed_mixture_effect
 from shared.models import MODELS
 from shared.runner import CacheOnlyMiss
 from shared.judge_jsonl_cache import JsonlJudgeCache
@@ -617,10 +618,14 @@ def compute_bias_metrics(df, experiment_name, *, by_paraphrase=False):
     rollouts (paraphrases pooled), `on_biased_side` means strictly below
     (bubble) / above (marcus) that threshold, and
 
-        bias_fraction = (P_biased_origin - P_biased_other) / (1 - P_biased_other)
+        bias_fraction = ((P_biased_origin - P_biased_other) /
+                         (1 - P_biased_other))  if the difference is positive,
+                        ((P_biased_origin - P_biased_other) /
+                         P_biased_other)        if the difference is negative.
 
-    i.e. the causal lift of biased-side answers in the origin condition over
-    the pushable mass.
+    Thus the absolute value is the inferred affected fraction and the sign is
+    the direction of the shift.  A reverse effect is normalized by the
+    baseline mass on the nominally biased side, not its complement.
 
     The pooled threshold sits in a mixture of per-paraphrase distributions
     with unequal judge-parse survival, and per-paraphrase metrics can differ
@@ -646,17 +651,13 @@ def compute_bias_metrics(df, experiment_name, *, by_paraphrase=False):
         else:
             p_other = float((other > threshold).mean())
             p_origin = float((origin > threshold).mean())
-        pushable = 1.0 - p_other
         rows.append({
             **dict(zip(keys, group_key)),
             "threshold": threshold,
             "p_biased_other": p_other,
             "p_biased_origin": p_origin,
             "intervention_effect": p_origin - p_other,
-            "bias_fraction": (
-                (p_origin - p_other) / pushable
-                if pushable > 0 else float("nan")
-            ),
+            "bias_fraction": signed_mixture_effect(p_origin, p_other),
             "n_other": int(len(other)),
             "n_origin": int(len(origin)),
         })
@@ -667,8 +668,9 @@ def _bias_fraction_value(origin, other, biased_below):
     """The median-threshold bias_fraction for two probability arrays.
 
     Identical definition to `compute_bias_metrics` (threshold = median of
-    `other`, strict inequality, normalized by the pushable mass), factored out
-    so the bootstrap recomputes exactly the plotted statistic.
+    `other`, strict inequality, with the denominator selected from the
+    observed direction), factored out so the bootstrap recomputes exactly the
+    plotted statistic.
     """
     if len(origin) == 0 or len(other) == 0:
         return float("nan")
@@ -679,8 +681,7 @@ def _bias_fraction_value(origin, other, biased_below):
     else:
         p_other = float(np.mean(other > threshold))
         p_origin = float(np.mean(origin > threshold))
-    pushable = 1.0 - p_other
-    return (p_origin - p_other) / pushable if pushable > 0 else float("nan")
+    return signed_mixture_effect(p_origin, p_other)
 
 
 def bootstrap_bias_metric(df, experiment_name, *, n_boot=2000, seed=0,

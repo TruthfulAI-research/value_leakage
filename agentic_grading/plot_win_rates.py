@@ -37,6 +37,8 @@ populated by the sibling `build_proofnet_cache.py`. Nothing here calls any API.
 Provenance (committed run dirs on the branch; counts = completed trials):
 
   experiment      grader   source run dir                          trials  transcripts
+  alpaca          claude   2026-05-21_10-27-34_lab_x_tier_2024        250  250 rater_log.jsonl
+  alpaca          codex    2026-05-24_15-53-01_lab_x_tier_2024        250  250 rater_log.jsonl
   alpaca          qwen     2026-05-24_23-46-17_lab_x_tier_2024        497  497 rater_log.jsonl
   proofs_gemini   claude   full_gemini_claude (interrupted)         92...  none retained
   proofs_gemini   codex    full_gemini_codex                          250  none retained
@@ -55,7 +57,9 @@ Known data gotchas (verified against the branch at migration time):
     (fractional credit for byte-identical-answer ties, see
     `janekd/rate_llm_answers/analyze.py`), migrated verbatim.
   - The cross-grader CoT extraction (`rationales.jsonl` here; `trials_*.jsonl`
-    upstream) does carry one `picked_label` per question.
+    upstream) does carry one `picked_label` per question. For the alpaca
+    claude/codex graders it covers Jan's local 500-seed runs, a superset of
+    the committed 250-seed run dirs.
   - proofs_gemini is unevenly complete: claude was interrupted at 92 trials
     and its committed analysis covers only the first 90; qwen completed
     105/150 attempts. Jan's analysis CSVs are kept as-is (claude n=90).
@@ -74,7 +78,7 @@ Known data gotchas (verified against the branch at migration time):
 Usage:
 
     git worktree add /tmp/giraffes-rate origin/jd/rate-llm-answers
-    uv run python -m shared.final_scripts.answer_grading.migrate_from_janekd \
+    uv run python -m agentic_grading.migrate_from_janekd \
         /tmp/giraffes-rate
     uv run python -m agentic_grading.plot_win_rates
 """
@@ -174,7 +178,7 @@ def _read_jsonl(path, expect_kind):
         raise CacheMiss(
             f"{path} not found; populate the cache with\n"
             "  uv run python -m "
-            "shared.final_scripts.answer_grading.migrate_from_janekd "
+            "agentic_grading.migrate_from_janekd "
             "<worktree of origin/jd/rate-llm-answers>"
         )
     with open(path) as f:
@@ -291,7 +295,8 @@ def load_rationales(experiment, grader, drop_leak_seeds=False,
                     common_seeds_only=False):
     """Cross-grader CoT extraction (upstream `trials_<grader>.jsonl`): one row
     per trial with `picks` (per-question `picked_label`), `rater_text`,
-    `thinking_text`, `behavior`, etc."""
+    `thinking_text`, `behavior`, etc. For alpaca claude/codex this covers
+    Jan's local 500-seed runs (superset of the committed 250 trials)."""
     _, rows = _read_jsonl(
         grader_dir(experiment, grader) / "rationales.jsonl", "rationales")
     df = _maybe_drop_leak_seeds(pd.DataFrame(rows), experiment,

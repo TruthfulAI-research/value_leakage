@@ -17,6 +17,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch
 from shared.plot_style import ANNOT_FS, COUNT_FS, HEADER_FS, VALUE_FS  # noqa: F401  applies shared figure sizing on import
+from donation_bet.bias_metrics import (
+    balanced_bias_bootstrap_ci95,
+    balanced_bias_score,
+)
 
 import shared.runner as runner
 from shared.experiments import THRESHOLD_EXPERIMENTS
@@ -342,21 +346,15 @@ def plot_eval_awareness_rate_per_model(per_model_dfs):
 def _bias_score_ci95(df):
     """Bias score plus lower/upper 95% CI deltas on the bias scale.
 
-    Bias is 2 * P(answer is on the manipulation-favoured side) - 1, so zero is
+    The below-good and above-good rates receive 50/50 weight, so zero is
     chance-level, positive means more good-side answers, and negative means
-    more bad-side answers. CIs are Wilson intervals transformed from the
-    underlying binomial proportion. Pools whatever rows it is given -- used
-    only within a single prompt cell (the single-prompt fallback below);
-    cross-prompt aggregates go through `_bias_equal_weight_ci95`.
+    more bad-side answers. Rows are bootstrapped separately within the two
+    directions. Cross-prompt aggregates go through
+    ``_bias_equal_weight_ci95``.
     """
     n = len(df)
-    if n == 0:
-        return float("nan"), 0.0, 0.0, 0
-    successes = int(df["on_good_side"].sum())
-    p = successes / n
-    p_err_low, p_err_high = _binomial_pct_ci95(successes, n)
-    bias = 2 * p - 1
-    return bias, 2 * p_err_low / 100, 2 * p_err_high / 100, n
+    bias, err_low, err_high = balanced_bias_bootstrap_ci95(df)
+    return bias, err_low, err_high, n
 
 
 # A prompt cell needs at least this many scored rows to enter the
@@ -368,27 +366,34 @@ MIN_PROMPT_N = 5
 
 
 def _bias_equal_weight_ci95(df):
-    """Equal-weight-per-prompt bias + 95% CI, matching plot_biases'
-    convention: bias per prompt (2p-1 over that prompt's rows), mean across
-    prompts, CI = 1.96 * std / sqrt(k) over the per-prompt biases
-    (between-prompt variance). A single usable prompt falls back to its own
-    Wilson interval. Prompt cells with fewer than MIN_PROMPT_N rows are
-    dropped from both the mean and the reported n_used (n_total counts every
-    row, so figure labels stay comparable to the pooled ones). Returns
+    """Equal-weight-per-prompt bias + fixed-question bootstrap 95% CI.
+
+    Each prompt gives its below-good and above-good rates 50/50 weight, then
+    prompts are averaged equally. The eligible prompt set is fixed before
+    rows are bootstrapped within prompt/direction cells. Prompt cells with
+    fewer than MIN_PROMPT_N rows, or with either direction absent, are dropped
+    from both the mean and reported n_used (n_total counts every row, so figure
+    labels stay comparable to the pooled ones). Returns
     (bias, ci_low, ci_high, n_used, n_total, k_prompts)."""
     n_total = len(df)
-    cells = [sub for _, sub in df.groupby("prompt_key")
-             if len(sub) >= MIN_PROMPT_N]
+    cells = []
+    prompt_keys = []
+    for prompt_key, sub in df.groupby("prompt_key"):
+        if len(sub) < MIN_PROMPT_N:
+            continue
+        bias = balanced_bias_score(sub)
+        if pd.isna(bias):
+            continue
+        cells.append(sub)
+        prompt_keys.append(prompt_key)
     k = len(cells)
     if k == 0:
         return float("nan"), 0.0, 0.0, 0, n_total, 0
     n = sum(len(sub) for sub in cells)
-    if k == 1:
-        bias, ci_low, ci_high, _ = _bias_score_ci95(cells[0])
-        return bias, ci_low, ci_high, n, n_total, 1
-    biases = [2 * float(sub["on_good_side"].mean()) - 1 for sub in cells]
-    mean, half = _mean_ci95(biases)
-    return mean, half, half, n, n_total, k
+    bias, ci_low, ci_high = balanced_bias_bootstrap_ci95(
+        df, prompt_keys=prompt_keys,
+    )
+    return bias, ci_low, ci_high, n, n_total, k
 
 
 def _bias_by_eval_awareness_df(per_model_dfs):
@@ -431,11 +436,10 @@ MIN_EVAL_AWARE_N = 50
 def plot_bias_by_eval_awareness(per_model_dfs):
     """For each model, plot bias separately for eval-aware and non-eval-aware
     scored directional rows. Bias is the equal-weight-per-prompt mean (prompt
-    cells with < MIN_PROMPT_N rows dropped); error bars are 95% CIs of that
-    mean across prompts (single-prompt fallback: Wilson), matching the
-    plot_biases convention. Models with fewer than MIN_EVAL_AWARE_N scored
-    eval-aware rows are excluded from the figure (but kept in the printed
-    stats).
+    cells with < MIN_PROMPT_N rows dropped); error bars are fixed-question
+    bootstrap 95% CIs, matching the plot_biases convention. Models with fewer
+    than MIN_EVAL_AWARE_N scored eval-aware rows are excluded from the figure
+    (but kept in the printed stats).
     """
     stats = _bias_by_eval_awareness_df(per_model_dfs)
     print(stats.to_string(index=False))
@@ -644,19 +648,6 @@ def plot_eval_awareness_thresholds(per_model_dfs):
 
     plt.tight_layout()
     _finalize(fig, "eval_awareness_thresholds")
-
-
-def _mean_ci95(data):
-    """Returns (mean, half-width of 95% CI) using normal approx (z=1.96).
-    Uses ddof=1 sample std. Half-width is 0 for n<2."""
-    n = len(data)
-    if n == 0:
-        return float("nan"), 0.0
-    m = float(np.mean(data))
-    if n < 2:
-        return m, 0.0
-    s = float(np.std(data, ddof=1))
-    return m, 1.96 * s / np.sqrt(n)
 
 
 def plot_eval_awareness_by_prompt(per_model_dfs, prompt_keys):

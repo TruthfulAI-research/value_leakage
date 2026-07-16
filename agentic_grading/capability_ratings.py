@@ -27,8 +27,8 @@ explicit preferences"):
       * chat    -> answering human-written chat questions          (x-tick "alpaca")
       * math    -> proving real-analysis statements                (x-tick "math")
   - N_SAMPLES=100 resamples per (rater, label, capability) at temperature 1;
-    the plotted bar is the mean rating, error bars the 95% normal-approx CI
-    over resamples.
+    the plotted bar is the mean rating, with a 2,000-resample percentile-
+    bootstrap 95% CI over the raw ratings in that fixed cell.
 
 Labels and colors are imported from `plot_win_rates.py` so this figure matches
 the win-rate figures.
@@ -79,6 +79,8 @@ runner.CACHE_DIR = str(DATA_ROOT / "answer_grading_cache" / "capability_ratings"
 FIG_DIR = Path(__file__).resolve().parents[1] / "overleaf" / "figures" / "answer_grading"
 
 N_SAMPLES = 100
+BOOT_N = 2_000
+BOOT_SEED = 0
 
 # The four candidate labels, in the win-rate-figure order/colors.
 LABELS = list(MODEL_LABELS)
@@ -288,12 +290,50 @@ def get_ratings_df(rater_keys=RATER_KEYS, *, cache_only=False,
     return raw.dropna(subset=["score"]).reset_index(drop=True)
 
 
-def summarize(long_df):
-    """Mean / std / n / 95% CI per (rater, label, dimension)."""
-    out = (long_df.groupby(["rater", "label", "dimension"])["score"]
-           .agg(mean="mean", std="std", n="count").reset_index())
-    out["ci95"] = 1.96 * out["std"] / out["n"].clip(lower=1) ** 0.5
-    return out
+def bootstrap_mean_ci95(values, *, n_resamples=BOOT_N, seed=BOOT_SEED,
+                        rng=None):
+    """Mean and percentile-bootstrap 95% CI for one fixed rating cell.
+
+    ``values`` are the raw rating rows for one (rater, label, dimension)
+    cell. Sorting makes the seeded result invariant to dataframe row order.
+    Pass ``rng`` to draw successive cells from one reproducible stream.
+    """
+    if n_resamples <= 0:
+        raise ValueError("n_resamples must be positive")
+    values = np.asarray(values, dtype=float)
+    values = np.sort(values[np.isfinite(values)])
+    if values.size == 0:
+        return float("nan"), float("nan"), float("nan")
+    if rng is None:
+        rng = np.random.default_rng(seed)
+    boot_means = rng.choice(
+        values, size=(n_resamples, values.size), replace=True,
+    ).mean(axis=1)
+    lo, hi = np.percentile(boot_means, [2.5, 97.5])
+    return float(values.mean()), float(lo), float(hi)
+
+
+def summarize(long_df, *, n_resamples=BOOT_N, seed=BOOT_SEED):
+    """Cell means and 2,000-resample percentile-bootstrap 95% CIs."""
+    group_cols = ["rater", "label", "dimension"]
+    rng = np.random.default_rng(seed)
+    rows = []
+    for keys, group in long_df.groupby(group_cols, sort=True):
+        scores = group["score"].dropna().to_numpy(dtype=float)
+        mean, ci_lo, ci_hi = bootstrap_mean_ci95(
+            scores, n_resamples=n_resamples, rng=rng,
+        )
+        rows.append({
+            **dict(zip(group_cols, keys)),
+            "mean": mean,
+            "std": float(np.std(scores, ddof=1)) if len(scores) > 1 else float("nan"),
+            "n": len(scores),
+            "ci_lo": ci_lo,
+            "ci_hi": ci_hi,
+        })
+    return pd.DataFrame(rows, columns=[
+        *group_cols, "mean", "std", "n", "ci_lo", "ci_hi",
+    ])
 
 
 # --- Plot ---
@@ -311,22 +351,25 @@ def plot_capability_ratings(summary, rater_keys=RATER_KEYS, fname=None):
     for ax, rater_key in zip(axes[0], rater_keys):
         rsum = summary[summary["rater"] == rater_key]
         for j, label in enumerate(LABELS):
-            xs, vals, errs = [], [], []
+            xs, vals, err_los, err_his = [], [], [], []
             for i, (dim_key, _, _) in enumerate(DIMENSIONS):
                 sub = rsum[(rsum["dimension"] == dim_key)
                            & (rsum["label"] == label)]
                 m = float(sub["mean"].iloc[0]) if len(sub) else float("nan")
-                e = float(sub["ci95"].iloc[0]) if len(sub) else 0.0
+                lo = float(sub["ci_lo"].iloc[0]) if len(sub) else m
+                hi = float(sub["ci_hi"].iloc[0]) if len(sub) else m
                 xs.append(i + (j - 1.5) * width)
                 vals.append(m)
-                errs.append(e)
-            ax.bar(xs, vals, width=width, yerr=errs,
+                err_los.append(max(0.0, m - lo) if np.isfinite(m - lo) else 0.0)
+                err_his.append(max(0.0, hi - m) if np.isfinite(hi - m) else 0.0)
+            ax.bar(xs, vals, width=width,
+                   yerr=np.asarray([err_los, err_his]),
                    color=LABEL_COLORS[label], label=label,
                    edgecolor="white", linewidth=0.5, ecolor="black",
                    capsize=3, error_kw={"linewidth": 0.9})
-            for x, v, e in zip(xs, vals, errs):
+            for x, v, e_hi in zip(xs, vals, err_his):
                 if not np.isnan(v):
-                    ax.text(x, v + e + 1.0, f"{v:.0f}", ha="center",
+                    ax.text(x, v + e_hi + 1.0, f"{v:.0f}", ha="center",
                             va="bottom", fontsize=VALUE_FS)
         ax.set_xticks(range(len(DIMENSIONS)))
         ax.set_xticklabels(dim_ticks)
@@ -395,12 +438,14 @@ def plot_capability_vs_winrate(cap_summary, rater_keys=RATER_KEYS, fname=None):
                 if not len(cap) or not len(w):
                     continue
                 x = float(cap["mean"].iloc[0])
-                xerr = float(cap["ci95"].iloc[0])
+                xlo = float(cap["ci_lo"].iloc[0])
+                xhi = float(cap["ci_hi"].iloc[0])
                 y = 100 * float(w["mean_win_rate"].iloc[0])
                 ylo = 100 * float(w["ci_lo"].iloc[0])
                 yhi = 100 * float(w["ci_hi"].iloc[0])
                 ax.errorbar(
-                    x, y, xerr=xerr, yerr=[[y - ylo], [yhi - y]], fmt=marker,
+                    x, y, xerr=[[x - xlo], [xhi - x]],
+                    yerr=[[y - ylo], [yhi - y]], fmt=marker,
                     color=LABEL_COLORS[label], markersize=10,
                     markeredgecolor="black", markeredgewidth=0.6,
                     ecolor="gray", elinewidth=0.7, capsize=3, zorder=3,

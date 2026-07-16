@@ -79,8 +79,8 @@ FAVORABLE_UP = {"bubble_v1": False, "marcus_v1": True}
 # from the axes, held constant across figure widths so the gap to the ticks
 # stays tight on both the ~7in main figure and the ~13in appendix figures.
 # (The bar overview figure keeps its own axes-fraction defaults.)
-ARROW_OFFSET_IN = 0.38
-LABEL_OFFSET_IN = 0.55
+ARROW_OFFSET_IN = 0.42
+LABEL_OFFSET_IN = 0.59
 
 
 def plot_mean_probability_per_model(summary_df, experiment_name, model_groups,
@@ -313,7 +313,7 @@ def plot_violin_probability_per_model(df, experiment_name, model_groups,
         for pos, mk in zip(positions, cell_models):
             m = eq_mean[(mk, group)]
             ax.plot([pos - half, pos + half], [m, m],
-                    color="black", linewidth=2)
+                    color="black", linewidth=1.6)
 
     # Print the numeric mean in black just above each violin's top (below the
     # significance bracket, whose height leaves room for it), so the violins
@@ -490,9 +490,9 @@ def _add_preference_arrow(ax, up_better, *, x_arrow=-0.085, x_label=-0.12):
     # arrow pointing the favorable way. The arrow tail sits well clear of the
     # rotated label text (which is fairly tall) so the two don't touch.
     if up_better:                       # AGI: arrow up (top), label below
-        text_y, y_tail, y_head = 0.40, 0.58, 0.74
+        text_y, y_tail, y_head = 0.40, 0.62, 0.78
     else:                               # bubble: label on top, arrow down
-        text_y, y_tail, y_head = 0.60, 0.42, 0.26
+        text_y, y_tail, y_head = 0.60, 0.38, 0.22
     ax.text(x, text_y, "more favorable", transform=ax.transAxes, rotation=90,
             va="center", ha="center", fontsize=plt.rcParams["ytick.labelsize"])
     ax.annotate("", xy=(x, y_head), xytext=(x, y_tail),

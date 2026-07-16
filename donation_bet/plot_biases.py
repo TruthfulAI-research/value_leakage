@@ -4,6 +4,10 @@ import matplotlib.pyplot as plt
 from shared.plot_style import HEADER_FS, VALUE_FS  # noqa: F401  applies shared figure sizing on import
 
 from shared.experiments import THRESHOLD_EXPERIMENTS
+from donation_bet.bias_metrics import (
+    balanced_bias_bootstrap_ci95,
+    balanced_bias_score,
+)
 from shared.get_main_dfs import get_main_dfs
 
 # Use the new cache
@@ -61,39 +65,13 @@ CACHE_ONLY = False
 
 # %%
 def bias_score(df):
-    """Fraction of directional answers on the good side, rescaled so 0.5 -> 0, 1.0 -> 1.
-    Signed: negative if the model lands on the bad side more than half the time.
-    """
-    directional = df[df["direction"].isin(["below_good", "above_good"])]
-    if len(directional) == 0:
-        return float("nan")
-    return 2 * directional["on_good_side"].mean() - 1
-
-
-def _wilson_ci(successes, total, z=1.96):
-    """Wilson score interval for a binomial proportion."""
-    if total == 0:
-        return float("nan"), float("nan")
-    p = successes / total
-    denom = 1 + z**2 / total
-    center = (p + z**2 / (2 * total)) / denom
-    half_width = z * (
-        (p * (1 - p) + z**2 / (4 * total)) / total
-    ) ** 0.5 / denom
-    return max(0.0, center - half_width), min(1.0, center + half_width)
+    """Signed Donation Bet bias with equal weight on the two directions."""
+    return balanced_bias_score(df)
 
 
 def bias_score_ci95(df):
-    """Bias score plus lower/upper 95% CI deltas on the bias scale."""
-    directional = df[df["direction"].isin(["below_good", "above_good"])]
-    n = len(directional)
-    if n == 0:
-        return float("nan"), 0.0, 0.0
-    successes = int(directional["on_good_side"].sum())
-    p = successes / n
-    p_low, p_high = _wilson_ci(successes, n)
-    bias = 2 * p - 1
-    return bias, bias - (2 * p_low - 1), (2 * p_high - 1) - bias
+    """Direction-balanced bias plus bootstrap 95% CI deltas."""
+    return balanced_bias_bootstrap_ci95(df)
 
 
 # %%
@@ -161,10 +139,11 @@ DIR_COLORS = {"baseline": "#7f7f7f", "below_good": "#1f77b4", "above_good": "#94
 MAX_COLS = 2
 
 
-def plot_mean_bias_per_model(results_df, model_groups, display_names,
+def plot_mean_bias_per_model(per_model_dfs, prompt_keys, model_groups,
+                             display_names,
                              fname=None, show_group_headers=True,
                              figsize=None):
-    """Mean bias per model, averaged across prompts, with 95% CI error bars.
+    """Mean bias per model with fixed-question bootstrap 95% CI error bars.
 
     ``show_group_headers``: if True (default), draw vertical dividers between
     model-family groups and write the group label above each. Set to False
@@ -176,33 +155,21 @@ def plot_mean_bias_per_model(results_df, model_groups, display_names,
     4.8 inches.
     """
     ordered_keys = [mk for _, g in model_groups for mk in g]
-    ordered_displays = [display_names[mk] for mk in ordered_keys]
-
     vals, err_low, err_high = [], [], []
-    for dn in ordered_displays:
-        sub = results_df[results_df["model"] == dn]
-        valid = sub[sub["bias"].notna()]
-        if len(valid):
-            val = valid["bias"].mean()
-            k = len(valid)
-            if k >= 2:
-                # 95% CI of the MEAN across prompts (captures between-prompt
-                # variance). Averaging the per-prompt Wilson CIs instead just
-                # reproduces a single-prompt width (~sqrt(k) too wide). Same
-                # form as plot_eval_awareness._mean_ci95.
-                err = 1.96 * valid["bias"].std(ddof=1) / (k ** 0.5)
-                vals.append(val)
-                err_low.append(err)
-                err_high.append(err)
-            else:
-                # Single prompt: fall back to its own Wilson CI half-width.
-                vals.append(val)
-                err_low.append(float(valid["bias_ci95_low"].iloc[0]))
-                err_high.append(float(valid["bias_ci95_high"].iloc[0]))
-        else:
+    for model_key in ordered_keys:
+        if model_key not in per_model_dfs:
             vals.append(float("nan"))
             err_low.append(0.0)
             err_high.append(0.0)
+            continue
+        val, low, high = balanced_bias_bootstrap_ci95(
+            per_model_dfs[model_key], prompt_keys=prompt_keys,
+        )
+        vals.append(val)
+        err_low.append(low)
+        err_high.append(high)
+
+    ordered_displays = [display_names[mk] for mk in ordered_keys]
 
     bar_colors = []
     for label, g in model_groups:
@@ -225,6 +192,10 @@ def plot_mean_bias_per_model(results_df, model_groups, display_names,
 
     ax.set_xticks(xs)
     ax.set_xticklabels(ordered_displays, rotation=30, ha="right")
+    # Default 5% x-margins leave over half a bar-slot of dead space on each
+    # side; clamp so the edge gap equals the inter-bar gap (1 - 0.8 = 0.2
+    # data units beyond the outer bar edges at +/-0.4 from the bar centers).
+    ax.set_xlim(-0.6, len(xs) - 0.4)
     ax.set_ylabel("Bias metric")
     # ax.set_title("Mean bias per model")
     ax.grid(True, axis="y", alpha=0.3)
@@ -452,7 +423,8 @@ plot_single_violin(
 )
 # %%
 plot_mean_bias_per_model(
-    results_df,
+    per_model_dfs,
+    prompt_keys,
     MODEL_GROUPS,
     display_names,
     fname=FIG_DIR / "bias_per_model.pdf",

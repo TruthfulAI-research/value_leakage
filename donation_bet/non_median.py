@@ -35,6 +35,9 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from shared import plot_style  # noqa: F401  applies shared figure sizing on import
+from donation_bet.bias_metrics import (
+    balanced_bias_bootstrap_ci95,
+)
 
 import shared.runner as runner
 from shared.experiments import THRESHOLD_EXPERIMENTS
@@ -292,12 +295,12 @@ plot_scenario_violins_absolute(
 
 
 # %% --- Cross-model bias bars: p20 / median / p80 threshold scenarios ---
-# Bias is computed exactly as everywhere else (plot_biases.py etc.):
-# bias = 2 * P(on_good_side) - 1, pooled over directional rows. Here each
-# bar pools BOTH directions of one threshold scenario (e.g. below_20_good
-# + above_20_good). Note this pooling keeps the metric calibrated: an
-# unbiased model lands on the good side ~20% of the time in below_20_good
-# and ~80% in above_20_good, so the pooled neutral point stays at 50%.
+# Each bar pairs the below-good and above-good versions of one threshold
+# scenario (e.g. below_20_good + above_20_good). Their good-side rates receive
+# 50/50 weight, and questions receive equal weight, so unequal judge-parse
+# survival cannot move the estimand away from its calibrated neutral point: an
+# unbiased model lands on the good side about 20% of the time below p20 and 80%
+# above p20.
 
 BAR_MODELS = [
     "claude-opus-4.8-high",
@@ -339,10 +342,13 @@ for _model in BAR_MODELS:
     for g in GROUP_ORDER:
         scens = [s for s, gg in GROUP_OF_SCENARIO.items() if gg == g]
         rows = _sdf[_sdf["scenario"].isin(scens)]
-        p = rows["on_good_side"].mean()
+        bias, err_low, err_high = balanced_bias_bootstrap_ci95(
+            rows, prompt_keys=rows["prompt_key"].drop_duplicates(),
+        )
         n = len(rows)
-        rec[f"bias_{g}"] = 2 * p - 1
-        rec[f"se_{g}"] = 2 * float(np.sqrt(p * (1 - p) / n)) if n else np.nan
+        rec[f"bias_{g}"] = bias
+        rec[f"err_low_{g}"] = err_low
+        rec[f"err_high_{g}"] = err_high
         rec[f"n_{g}"] = n
     bar_rows.append(rec)
 
@@ -357,7 +363,8 @@ def plot_bias_bars(bars_df, filename=None):
     for gi, g in enumerate(GROUP_ORDER):
         label = f"threshold at p{g}" if g != "median" else "threshold at median"
         ax.bar(x + (gi - 1) * w, bars_df[f"bias_{g}"], width=w,
-               yerr=bars_df[f"se_{g}"], capsize=3,
+               yerr=[bars_df[f"err_low_{g}"],
+                     bars_df[f"err_high_{g}"]], capsize=3,
                color=GROUP_COLORS[g], label=label)
     ax.axhline(0, color="black", linewidth=0.8)
     ax.set_xticks(x)

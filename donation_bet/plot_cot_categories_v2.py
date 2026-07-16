@@ -15,7 +15,7 @@ into `shared.classify_cot.classify_cot`, so it does not touch the shared
 default and is identical to the judge used by `system_prompts.py`.
 The category scheme follows the original closely, with two deliberate changes
 (plus the reader's-takeaway framing borrowed from
-`shared/final_scripts/ai_bubble/covertness.py`):
+`ai_company_questions/covertness.py`):
 
   - A new **MENTIONED** category: the model raises the possible bias (notes the
     threshold/bet could sway it, or that it should be careful) but never makes a
@@ -70,7 +70,6 @@ from donation_bet.cot_categories_common import (
     _legend_handles_from_specs,
     _lower_bound_split_legend_handles,
     _pct,
-    _wilson_ci,
     _bias_mean_ci95,
     _lower_bound_split_counts,
     _aggregate_lower_bound_split,
@@ -78,6 +77,10 @@ from donation_bet.cot_categories_common import (
     _resolve_groups,
     _draw_group_separators,
     build_model_comparison_biased_stack,
+)
+from donation_bet.bias_metrics import (
+    balanced_bias_score,
+    balanced_prompt_direction_weights,
 )
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -236,8 +239,9 @@ MAX_COLS = 2
 # colors and order (`_LOWER_BOUND_SPLIT_STYLES`), so the two figure families
 # read identically. Rows whose source text is empty (classify_cot never judges
 # them) keep their own grey segment on TOP of each stack instead of being
-# dropped or imputed; UNKNOWN on non-empty text (judge parse failures) and
-# PENDING rows drop out of the denominators.
+# dropped or imputed. UNKNOWN labels on non-empty text are disclosure-judge
+# parse failures; their mass is imputed proportionally from classified
+# non-empty rows on the same plotted group so the behavioral totals stay exact.
 SEGMENT_ORDER = [  # bottom -> top: the decomposition stacking order
     "truthful_admission", "mentioned", "unfaithful_omission", "false_denial",
 ]
@@ -384,42 +388,89 @@ print(summary_df.to_string(index=False))
 
 
 # %%
-def _stacked_distribution_groups_combined_total(ax, groups, source_col=None):
-    """Stacked mapped-category bars scaled to the combined total across `groups`.
+def _balanced_classification_groups(df, group_col, group_order, *,
+                                    source_col, category_col):
+    """Category masses with equal prompt and direction weights.
 
-    Each group's `cot_category` labels are folded into the decomposition
-    segments (CATEGORY_TO_SEGMENT). Empty-source rows stay in the shared
-    denominator as their own grey top segment; judge parse failures (UNKNOWN
-    on non-empty text) and PENDING rows are dropped from it. `source_col`
-    names the text column the categories were judged from (default: the
-    primary source, which is what `cot_category` holds)."""
+    The returned group totals sum to one. Non-empty rows whose disclosure
+    label is unparseable are imputed from the classified non-empty rows in the
+    same plotted group, preserving that group's exact behavioral mass. Empty
+    source text remains an explicit grey segment.
+    """
+    directional = df[df["direction"].isin(INTERVENTION_DIRECTIONS)].copy()
+    directional = directional.reset_index(drop=True)
+    weights = balanced_prompt_direction_weights(directional)
+    usable = weights.notna() & directional[group_col].notna()
+    directional = directional.loc[usable].reset_index(drop=True)
+    weights = weights.loc[usable].reset_index(drop=True)
+
+    empty = _source_text_is_empty(directional[source_col])
+    segments = directional[category_col].map(CATEGORY_TO_SEGMENT)
+    unmapped_nonempty = ~empty & segments.isna()
+    unexpected = set(directional.loc[unmapped_nonempty, category_col].dropna())
+    unexpected.discard("UNKNOWN")
+    if unexpected:
+        raise ValueError(
+            "unclassified non-empty rows must be UNKNOWN parse failures; "
+            f"found {sorted(unexpected)}"
+        )
+    out = []
+    for group_name in group_order:
+        mask = directional[group_col] == group_name
+        group_total = float(weights[mask].sum())
+        empty_mass = float(weights[mask & empty].sum())
+        observed = {}
+        for key in SEGMENT_ORDER:
+            observed[key] = float(weights[
+                mask & ~empty & (segments == key)
+            ].sum())
+        observed_total = sum(observed.values())
+        nonempty_mass = max(0.0, group_total - empty_mass)
+        if observed_total > 0.0:
+            scale = nonempty_mass / observed_total
+            masses = {key: value * scale for key, value in observed.items()}
+        else:
+            masses = {key: 0.0 for key in SEGMENT_ORDER}
+            masses["unfaithful_omission"] = nonempty_mass
+        masses["empty_source"] = empty_mass
+        out.append({
+            "group": group_name,
+            "masses": masses,
+            "total": group_total,
+            "n": int(mask.sum()),
+        })
+    return out
+
+
+def _stacked_distribution_groups_combined_total(ax, groups, source_col=None):
+    """Mapped-category bars with equal prompt and direction weighting."""
     source_col = source_col or CATEGORY_SOURCE_COL
-    prepared = []
+    pieces = []
+    group_order = []
     for group_name, sub in groups:
-        # Empty-slice guard: .apply on an empty column keeps its str dtype,
-        # so the boolean ops below would TypeError.
-        empty = (_source_text_is_empty(sub[source_col]) if len(sub)
-                 else pd.Series(False, index=sub.index))
-        segments = sub["cot_category"].map(CATEGORY_TO_SEGMENT)
-        keep = empty | segments.notna()
-        prepared.append((group_name, segments[keep], empty[keep]))
-    total_all = sum(len(segments) for _, segments, _ in prepared)
+        piece = sub.copy()
+        piece["__plot_group"] = group_name
+        pieces.append(piece)
+        group_order.append(group_name)
+    combined = pd.concat(pieces, ignore_index=True) if pieces else pd.DataFrame()
+    prepared = _balanced_classification_groups(
+        combined, "__plot_group", group_order,
+        source_col=source_col, category_col="cot_category",
+    )
+
     labels = []
-    for x, (group_name, segments, empty) in enumerate(prepared):
-        labels.append(f"{group_name}\n(n={len(segments)})")
-        if total_all == 0:
-            continue
-        counts = segments[~empty].value_counts()
+    for x, item in enumerate(prepared):
+        labels.append(f"{item['group']}\n(n={item['n']})")
         stack = [
-            (int(counts.get(key, 0)), _LOWER_BOUND_SPLIT_STYLES[key]["color"])
+            (item["masses"][key], _LOWER_BOUND_SPLIT_STYLES[key]["color"])
             for key in SEGMENT_ORDER
         ]
-        stack.append((int(empty.sum()), EMPTY_SOURCE_COLOR))
+        stack.append((item["masses"]["empty_source"], EMPTY_SOURCE_COLOR))
         bottom = 0.0
-        for cat_count, color in stack:
-            if cat_count == 0:
+        for mass, color in stack:
+            if mass == 0.0:
                 continue
-            pct = 100 * cat_count / total_all
+            pct = 100 * mass
             ax.bar(
                 x, pct, width=0.7, bottom=bottom,
                 color=color, edgecolor="white", linewidth=0.5,
@@ -509,6 +560,9 @@ def plot_model_comparison_biased_stack(
         per_model_dfs, prompt_keys, display_names, model_groups,
         category_col=category_col, source_label=source_label,
         signed=SIGNED_STACK,
+        # All biases here are positive, so the signed default's
+        # "(sign = bias direction)" note would only confuse.
+        ylabel="% of rollouts",
     )
     _finalize(fig, plot_name)
 
@@ -538,8 +592,9 @@ BY_SIDE_FIG_MIN_WIDTH_IN = 5.0
 # Segments, colors and legend come from the shared mapped scheme defined at
 # the top of the file (SEGMENT_ORDER / CATEGORY_TO_SEGMENT /
 # _full_classification_legend): the decomposition's four segments plus the
-# grey empty-source segment on top. Non-empty UNKNOWNs are judge parse
-# failures and are dropped from the denominator entirely.
+# grey empty-source segment on top. Non-empty UNKNOWNs are disclosure-judge
+# parse failures and are imputed from the classified rows on the same plotted
+# side so the side totals continue to match the behavioral bias exactly.
 
 
 def _source_text_is_empty(texts):
@@ -565,15 +620,15 @@ def _wrap_display_name(name, max_len=12):
 def plot_cot_categories_by_side(source_col):
     """Category mix split by final-answer side, one small panel per model.
 
-    Shows one classified source's labels directly (no answer fallback /
-    imputation of any kind), folded into the decomposition segments
-    (CATEGORY_TO_SEGMENT) so labels/colors/order match the biased-stack
-    figure: empty-source rows ("No CoT" / "Empty response") are their own
-    grey segment at the top of the stack and STAY in the denominator, while
-    judge parse failures (UNKNOWN despite non-empty text) are dropped. Within
-    each model the denominator is ALL kept rollouts (both sides combined), so
-    the 'Good side' and 'Bad side' bars sum to 100% jointly and the bar
-    totals mirror the good/bad split itself.
+    Shows one classified source's labels directly, with no cross-source
+    fallback, folded into the decomposition segments (CATEGORY_TO_SEGMENT) so
+    labels/colors/order match the biased-stack figure. Empty-source rows
+    ("No CoT" / "Empty response") are their own grey segment at the top of the
+    stack and stay in the denominator; judge parse failures (UNKNOWN despite
+    non-empty text) are imputed from the classified rows on that plotted side.
+    Prompts and their two directions receive equal weight, so the 'Good' and
+    'Bad' bars sum to 100% jointly and their height difference exactly equals
+    the behavioral bias.
     """
     category_col = _source_category_col(source_col)
     _nonempty, model_keys = _resolve_groups(per_model_dfs, MODEL_GROUPS)
@@ -600,56 +655,62 @@ def plot_cot_categories_by_side(source_col):
     flat = axes.flatten()
     for ax, mk in zip(flat, model_keys):
         df = per_model_dfs[mk]
-        directional = df[df["direction"].isin(INTERVENTION_DIRECTIONS)]
-        empty = _source_text_is_empty(directional[source_col])
-        segments = directional[category_col].map(CATEGORY_TO_SEGMENT)
-        # Drop PENDING labels and judge parse failures (UNKNOWN on non-empty
-        # text) -- both unmapped; keep empty-source rows (grey segment). Rows
-        # without a determinable side are already gone upstream (get_main_dfs
-        # drops unparseable estimates before computing on_good_side).
-        keep = (
-            (empty | segments.notna())
-            & directional["on_good_side"].notna()
+        directional = df[
+            df["direction"].isin(INTERVENTION_DIRECTIONS)
+            & df["on_good_side"].notna()
+        ].copy()
+        directional["__side"] = directional["on_good_side"].map(
+            {True: "Good", False: "Bad"},
         )
-        kept = directional[keep]
-        kept_empty = empty[keep]
-        kept_segments = segments[keep]
-        # POOLED denominator: all kept rollouts across prompts, NOT the
-        # equal-prompt-weight average used by the bias / decomposition bars.
-        n_total = len(kept)
-        good = kept["on_good_side"].astype(bool)
-        for x, side_mask in enumerate([good, ~good]):
-            # Empty-source rows are drawn from the emptiness of the text
-            # itself, never from a stored label.
-            counts = kept_segments[side_mask & ~kept_empty].value_counts()
+        prepared = _balanced_classification_groups(
+            directional, "__side", ["Good", "Bad"],
+            source_col=source_col, category_col=category_col,
+        )
+        per_prompt_biases = [
+            balanced_bias_score(sub)
+            for _, sub in directional.groupby("prompt_key")
+        ]
+        per_prompt_biases = [
+            value for value in per_prompt_biases if pd.notna(value)
+        ]
+        expected_bias = (
+            float(pd.Series(per_prompt_biases).mean())
+            if per_prompt_biases else float("nan")
+        )
+        displayed_bias = prepared[0]["total"] - prepared[1]["total"]
+        assert pd.isna(expected_bias) or abs(displayed_bias - expected_bias) < 1e-10, (
+            f"balanced full-classification bars do not match bias for {mk}: "
+            f"bars={displayed_bias:.12f}, bias={expected_bias:.12f}"
+        )
+
+        for x, item in enumerate(prepared):
             bottom = 0.0
-            if n_total:
-                for key in SEGMENT_ORDER:
-                    cat_count = int(counts.get(key, 0))
-                    if cat_count == 0:
-                        continue
-                    pct = 100 * cat_count / n_total
-                    ax.bar(
-                        x, pct, width=0.7, bottom=bottom,
-                        color=_LOWER_BOUND_SPLIT_STYLES[key]["color"],
-                        edgecolor="white", linewidth=0.5,
-                    )
-                    bottom += pct
-                n_empty = int(kept_empty[side_mask].sum())
-                if n_empty:
-                    pct = 100 * n_empty / n_total
-                    ax.bar(
-                        x, pct, width=0.7, bottom=bottom,
-                        color=EMPTY_SOURCE_COLOR,
-                        edgecolor="white", linewidth=0.5,
-                    )
-                    bottom += pct
+            for key in SEGMENT_ORDER:
+                mass = item["masses"][key]
+                if mass == 0.0:
+                    continue
+                pct = 100 * mass
+                ax.bar(
+                    x, pct, width=0.7, bottom=bottom,
+                    color=_LOWER_BOUND_SPLIT_STYLES[key]["color"],
+                    edgecolor="white", linewidth=0.5,
+                )
+                bottom += pct
+            empty_mass = item["masses"]["empty_source"]
+            if empty_mass:
+                pct = 100 * empty_mass
+                ax.bar(
+                    x, pct, width=0.7, bottom=bottom,
+                    color=EMPTY_SOURCE_COLOR,
+                    edgecolor="white", linewidth=0.5,
+                )
+                bottom += pct
             # Keep the count label inside the fixed 0-100 axes: near-full
             # bars would otherwise push it up into the subplot title.
             label_outside = bottom <= 94
             ax.text(
                 x, bottom + 1.5 if label_outside else bottom - 1.5,
-                f"n={int(side_mask.sum())}",
+                f"n={item['n']}",
                 ha="center", va="bottom" if label_outside else "top",
                 fontsize=COUNT_FS,
             )

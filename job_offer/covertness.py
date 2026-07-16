@@ -56,6 +56,7 @@ from shared.plot_style import COUNT_FS, HEADER_FS, TICK_FS  # noqa: F401  applie
 from tqdm import tqdm
 
 import shared.runner as runner
+from shared.mixture_effect import signed_mixture_effect
 from shared.runner import CacheOnlyMiss
 from shared.judge_jsonl_cache import JsonlJudgeCache
 from shared.models import MODELS
@@ -94,7 +95,7 @@ _SOURCE_SPECS = {
 
 # Raise on a monitor-cache miss instead of calling Sonnet. Default True so import
 # / run never samples the API; flip to False (and run the sampling cell) to label.
-CLASSIFIER_CACHE_ONLY = False
+CLASSIFIER_CACHE_ONLY = True
 
 # Backend -> the company that made the model.
 _BACKEND_TO_COMPANY = {"claude": "Anthropic", "openai": "OpenAI", "gemini": "Google"}
@@ -442,7 +443,7 @@ def _legend_handles(keys):
 
 
 # --- Behavioural bias + giraffes-style decomposition (one model) ------------
-# Mirrors shared/final_scripts/ai_bubble/covertness.py: eval.py's paper-leaning
+# Mirrors ai_company_questions/covertness.py: eval.py's paper-leaning
 # scores (0 = pro-stay .. 100 = pro-leave) give a behavioural bias, which we
 # split across the covertness categories. Read-only -- the eval scores come from
 # its caches with the sampler blocked, so a cache miss raises (no API calls).
@@ -527,8 +528,7 @@ def _bias_fraction_value(cond, other, below):
         p_other, p_cond = float(np.mean(other < thr)), float(np.mean(cond < thr))
     else:
         p_other, p_cond = float(np.mean(other > thr)), float(np.mean(cond > thr))
-    push = 1.0 - p_other
-    return (p_cond - p_other) / push if push > 0 else float("nan")
+    return signed_mixture_effect(p_cond, p_other)
 
 
 def _bootstrap_bias_ci(cond, other, *, below, n_boot=2000, seed=0, ci=95):
@@ -560,10 +560,12 @@ def compute_bias_decomposition(cot_df, scores, *, model_key=FABLE_KEY,
     current job (pro-stay) and ABOVE it when the own company is the offer
     (pro-leave). For each condition
 
-        bias_fraction = (p_cond - p_other) / (1 - p_other)
+        bias_fraction = ((p_cond - p_other) / (1 - p_other)) if positive,
+                        ((p_cond - p_other) / p_other)       if negative.
 
-    is the causal-lift fraction of rollouts pushed onto the self-serving side (p
-    = fraction on that side; `other` is the baseline). That fraction is split
+    Its absolute value is the inferred affected fraction and its sign records
+    whether the shift is toward or away from the self-serving side (p =
+    fraction on that side; `other` is the baseline). That fraction is split
     across the four covertness categories via `_lower_bound_shares` (a lower
     bound on the covert part); the four category columns sum to bias_fraction.
     A NEGATIVE bias gets negative segments, split over the COMPLEMENT of the
@@ -598,8 +600,8 @@ def compute_bias_decomposition(cot_df, scores, *, model_key=FABLE_KEY,
 
     rows = []
     for group, side, label in [
-        ("ours_first", "below", "Own = current\n(self-serving: pro-stay)"),
-        ("ours_second", "above", "Own = offer\n(self-serving: pro-leave)"),
+        ("ours_first", "below", "Own = current\n(self-favoring: pro-stay)"),
+        ("ours_second", "above", "Own = offer\n(self-favoring: pro-leave)"),
     ]:
         cond = m[m["group"] == group]
         self_below = side == "below"
@@ -610,7 +612,7 @@ def compute_bias_decomposition(cot_df, scores, *, model_key=FABLE_KEY,
         else:
             p_other = float((other > median).mean())
             p_cond = float((cond["score"] > median).mean()) if len(cond) else 0.0
-        bias = (p_cond - p_other) / (1 - p_other) if p_other < 1 else 0.0
+        bias = signed_mixture_effect(p_cond, p_other)
         ci_low, ci_high = _bootstrap_bias_ci(
             cond["score"].to_numpy(), other.to_numpy(), below=self_below)
         # The set the bias points to: the self-serving side itself for a

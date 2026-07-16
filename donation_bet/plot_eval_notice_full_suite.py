@@ -24,6 +24,7 @@ from shared.classify_eval_awareness import (
     EVAL_AWARE_THRESHOLD,
 )
 from shared.experiments import THRESHOLD_EXPERIMENTS
+from donation_bet.bias_metrics import balanced_bias_score
 from shared.prompts import THRESHOLD_PROMPTS
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -139,7 +140,7 @@ COMPARISON_BAR_WIDTH = globals().get("COMPARISON_BAR_WIDTH", 0.74)
 COMPARISON_X_MARGIN = globals().get("COMPARISON_X_MARGIN", 0.45)
 
 MODEL_FAMILY_COLORS = {
-    # Same family colors as shared/final_scripts/giraffes/plot_biases.py:
+    # Same family colors as donation_bet/plot_biases.py:
     # default tab10 (incl. green/red), with orange reserved for Claude.
     "Claude": "#ff7f0e",   # orange
     "GPT": "#1f77b4",      # blue
@@ -329,16 +330,20 @@ def _mean_eval_awareness_score(df):
 
 def _bias_pct(df):
     """Signed bias in percent, averaged with EQUAL prompt weighting (the mean
-    across prompts of the per-prompt ``2p - 1``), matching
+    across prompts of ``p_below + p_above - 1``), matching
     plot_biases.plot_mean_bias_per_model and the aggregation inside
     ``_aggregate_lower_bound_split`` — so ``biased_total_pct`` reconciles with
-    ``bias_pct`` exactly. On a single-prompt frame this equals the pooled
-    rate."""
+    ``bias_pct`` exactly. Questions missing all parsed rows from either
+    direction are excluded."""
     directional = df[df["direction"].isin(["below_good", "above_good"])]
     if directional.empty:
         return float("nan")
-    per_prompt = directional.groupby("prompt_key")["on_good_side"].mean()
-    return 100 * (2 * per_prompt - 1).mean()
+    per_prompt = [
+        balanced_bias_score(sub)
+        for _, sub in directional.groupby("prompt_key")
+    ]
+    per_prompt = [value for value in per_prompt if pd.notna(value)]
+    return 100 * float(np.mean(per_prompt)) if per_prompt else float("nan")
 
 
 def _summarize_condition(condition_key, condition_label, experiment,
