@@ -5,7 +5,8 @@ Jan Betley<sup>1,*</sup> &nbsp; Johannes Treutlein<sup>1,*</sup> &nbsp; Jan Dubi
 </p>
 
 <p align="center">
-<sup>1</sup>Truthful AI &nbsp; <sup>2</sup>Warsaw University of Technology &nbsp; <sup>3</sup>NASK National Research Institute &nbsp; <sup>4</sup>University of Oxford &nbsp; <sup>5</sup>Center on Long-Term Risk
+<sup>1</sup>Truthful AI &nbsp; <sup>2</sup>Warsaw University of Technology &nbsp; <sup>3</sup>NASK National Research Institute<br>
+<sup>4</sup>University of Oxford &nbsp; <sup>5</sup>Center on Long-Term Risk
 </p>
 
 <p align="center">
