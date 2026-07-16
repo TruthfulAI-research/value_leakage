@@ -39,6 +39,9 @@ values bias their answers. Value leakage is a failure mode distinct from
 sycophancy and reward hacking, and current alignment training and evaluations do
 not adequately address it.*
 
+> **You can browse the model answers and chain-of-thought traces from our
+> project at [valueleakage.net/browser](https://valueleakage.net/browser/).**
+
 ## Setup
 
 ```bash
