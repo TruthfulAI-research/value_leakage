@@ -64,7 +64,9 @@ API keys are read from the environment / `.env`.
 | §5, App. E | Job Offer | `job_offer/` |
 | §6, App. F | Agentic Grading | `agentic_grading/` |
 | §7, App. G | Choosing Activities | `choosing_activities/` |
-| App. H | Agentic Effort | TBD |
+| App. H | Agentic Effort | `agentic_effort/` |
 
 Shared infrastructure (model registry, API senders, caching, judges, plot
 styling) is in `shared/`. Cached experiment data is in the `data/` submodule.
+`agentic_effort/` is self-contained (own dependencies and model routing); see
+`agentic_effort/reproduce.sh`.
