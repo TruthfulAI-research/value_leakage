@@ -6,12 +6,12 @@ Niels Warncke<sup>5</sup> &nbsp; Anna Sztyber-Betley<sup>1,2</sup> &nbsp; Owain 
 </p>
 
 <p align="center">
-<sup>1</sup>Truthful AI &nbsp; <sup>2</sup>Warsaw University of Technology &nbsp; <sup>3</sup>NASK National Research Institute<br>
-<sup>4</sup>University of Oxford &nbsp; <sup>5</sup>Center on Long-Term Risk
+<sub><i><sup>1</sup>Truthful AI &nbsp; <sup>2</sup>Warsaw University of Technology &nbsp; <sup>3</sup>NASK National Research Institute<br>
+<sup>4</sup>University of Oxford &nbsp; <sup>5</sup>Center on Long-Term Risk</i></sub>
 </p>
 
 <p align="center">
-<sup>*</sup>Equal contribution &nbsp;&nbsp; <sup>†</sup>Work done during Astra Fellowship at Constellation, Berkeley
+<sub><i><sup>*</sup>Equal contribution &nbsp;&nbsp; <sup>†</sup>Work done during Astra Fellowship at Constellation, Berkeley</i></sub>
 </p>
 
 <p align="center">
