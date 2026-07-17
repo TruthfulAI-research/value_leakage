@@ -1239,8 +1239,10 @@ def run_thresholds_experiment(model, experiment, model_name, experiment_name,
     print("Extracting baseline estimates (judge)...")
     # No ignore_index here: each baselines[pk] keeps its own 0..n-1 index, so
     # we can align estimates back to baselines[pk] purely by index below.
+    # Concat in prompt_list order (not dict/completion order) so the returned
+    # row order is deterministic across runs.
     combined_baselines = pd.concat(
-        [b.assign(prompt_key=pk) for pk, b in baselines.items()],
+        [baselines[pk].assign(prompt_key=pk) for pk in prompt_list],
     )
     baseline_estimates = batch_extract_estimates(
         combined_baselines, experiment_name, cache_only=cache_only,
@@ -1252,7 +1254,7 @@ def run_thresholds_experiment(model, experiment, model_name, experiment_name,
         all_thresholds[pk] = _compute_thresholds(pk_estimates, threshold_spec)
 
     # Phase 3: directions (parallel). Fresh tqdm — see Phase 1 comment.
-    all_dfs = []
+    all_dfs = {}
     all_cached = {}
     progress = tqdm(total=direction_total, desc=f"{display_name} directions")
     with ThreadPoolExecutor(max_workers=len(prompt_list)) as executor:
@@ -1269,7 +1271,7 @@ def run_thresholds_experiment(model, experiment, model_name, experiment_name,
             df, cached_phases = future.result()
             if baseline_cached[pk]:
                 cached_phases = ["baseline"] + cached_phases
-            all_dfs.append(df)
+            all_dfs[pk] = df
             if cached_phases:
                 all_cached[pk] = cached_phases
     progress.close()
@@ -1279,7 +1281,11 @@ def run_thresholds_experiment(model, experiment, model_name, experiment_name,
                  for pk, phases in sorted(all_cached.items())]
         print(f"Loaded from cache: {'; '.join(parts)}")
 
-    combined_df = pd.concat(all_dfs, ignore_index=True)
+    # Concat in prompt_list order (not thread-completion order): downstream
+    # analyses draw seeded bootstrap samples in row order, so a stable row
+    # order is required for reproducible results.
+    combined_df = pd.concat([all_dfs[pk] for pk in prompt_list],
+                            ignore_index=True)
 
     # Phase 4: extract direction estimates (single batched judge call).
     # Baselines were already judged in Phase 2 and carry their estimate
