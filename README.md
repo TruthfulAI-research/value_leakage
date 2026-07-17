@@ -1,7 +1,8 @@
 <h1 align="center">Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values</h1>
 
 <p align="center">
-Jan Betley<sup>1,*</sup> &nbsp; Johannes Treutlein<sup>1,*</sup> &nbsp; Jan Dubiński<sup>1,2,3,†</sup> &nbsp; Harry Mayne<sup>1,4,†</sup> &nbsp; Karol Gałązka<sup>1</sup> &nbsp; Niels Warncke<sup>5</sup> &nbsp; Anna Sztyber-Betley<sup>1,2</sup> &nbsp; Owain Evans<sup>1</sup>
+Jan Betley<sup>1,*</sup> &nbsp; Johannes Treutlein<sup>1,*</sup> &nbsp; Jan Dubiński<sup>1,2,3,†</sup> &nbsp; Harry Mayne<sup>1,4,†</sup> &nbsp; Karol Gałązka<sup>1</sup><br>
+Niels Warncke<sup>5</sup> &nbsp; Anna Sztyber-Betley<sup>1,2</sup> &nbsp; Owain Evans<sup>1</sup>
 </p>
 
 <p align="center">
@@ -38,6 +39,9 @@ unbiased answers in their chain-of-thought, while Qwen models explain how their
 values bias their answers. Value leakage is a failure mode distinct from
 sycophancy and reward hacking, and current alignment training and evaluations do
 not adequately address it.*
+
+> **You can browse the model answers and chain-of-thought traces from our
+> project at [valueleakage.net/browser](https://valueleakage.net/browser/).**
 
 ## Setup
 
