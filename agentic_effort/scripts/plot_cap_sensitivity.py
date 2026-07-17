@@ -16,6 +16,9 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from plot_correlation import CATEGORY_COLORS  # type: ignore
 
+_DATA_ROOT = Path(__file__).resolve().parents[2] / "data" / "final_data" / "agentic_effort"
+_RESULTS_ROOT = Path(__file__).resolve().parents[1] / "results"
+
 
 def sends_within(transcript_json: str, cap: int) -> int:
     t = json.loads(transcript_json)
@@ -24,8 +27,8 @@ def sends_within(transcript_json: str, cap: int) -> int:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data", default="results/gemini-3.1-pro/agentic/data_uncapped.csv")
-    parser.add_argument("--out", default="results/gemini-3.1-pro/agentic/cap_sensitivity.png")
+    parser.add_argument("--data", default=str(_DATA_ROOT / "gemini-3.1-pro" / "agentic" / "data_uncapped.csv"))
+    parser.add_argument("--out", default=str(_RESULTS_ROOT / "gemini-3.1-pro" / "agentic" / "cap_sensitivity.png"))
     parser.add_argument("--caps", nargs="+", type=int, default=[50, 100, 150, 200, 250, 300])
     args = parser.parse_args()
 

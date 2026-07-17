@@ -31,6 +31,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from plot_correlation import CATEGORY_COLORS  # type: ignore
 
+_DATA_ROOT = Path(__file__).resolve().parents[2] / "data" / "final_data" / "agentic_effort"
+_RESULTS_ROOT = Path(__file__).resolve().parents[1] / "results"
+
 
 def _slug(model: str) -> str:
     return model.split("/")[-1]
@@ -88,8 +91,8 @@ def main() -> None:
                         help="Output root (default: results/<slug(model)>/).")
     args = parser.parse_args()
 
-    root = Path("results") / _slug(args.model)
-    out_root = Path(args.out_root) if args.out_root else root
+    root = _DATA_ROOT / _slug(args.model)          # raw data (submodule)
+    out_root = Path(args.out_root) if args.out_root else _RESULTS_ROOT / _slug(args.model)  # figures: local
 
     agentic_csv = Path(args.agentic or root / "agentic" / "data.csv")
     if agentic_csv.exists():
