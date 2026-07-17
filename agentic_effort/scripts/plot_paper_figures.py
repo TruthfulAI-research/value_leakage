@@ -28,6 +28,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from plot_rankings import agentic_choose_breakdown  # type: ignore
 
+_DATA_ROOT = Path(__file__).resolve().parents[2] / "data" / "final_data" / "agentic_effort"
+_RESULTS_ROOT = Path(__file__).resolve().parents[1] / "results"
+
 MODELS = [
     ("claude-opus-4-8", "anthropic/claude-opus-4-8"),
     ("gpt-5.5", "openai/gpt-5.5"),
@@ -103,7 +106,7 @@ def agentic_means(slug: str, model_val: str, engaged_only: bool = True) -> pd.Da
     engaged (sent >= 1 time); 0-send rollouts are refusals, handled separately
     (see refusals_table.py / figure_refusals). `count` is the number of senders.
     Outcomes with no senders (fully refused) yield no row."""
-    df = pd.read_csv(f"results/{slug}/agentic/data.csv")
+    df = pd.read_csv(str(_DATA_ROOT / slug / "agentic" / "data.csv"))
     if "model" in df.columns:
         df = df[df["model"] == model_val]
     if engaged_only:
@@ -118,7 +121,7 @@ def refusal_rates() -> pd.DataFrame:
     model, plus counts. Index = outcome, columns = per-model rate and count."""
     out = {}
     for slug, mv in MODELS:
-        df = pd.read_csv(f"results/{slug}/agentic/data.csv")
+        df = pd.read_csv(str(_DATA_ROOT / slug / "agentic" / "data.csv"))
         if "model" in df.columns:
             df = df[df["model"] == mv]
         g = df.assign(ref=df["n_send_attempts"] == 0).groupby("outcome")["ref"]
@@ -141,7 +144,7 @@ def figure_agentic(out_base: Path, show_median: bool = False) -> None:
 
     # Consistent recipient -> color mapping across subplots.
     breakdowns = {
-        slug: agentic_choose_breakdown(f"results/{slug}/agentic/data.csv", mv)
+        slug: agentic_choose_breakdown(str(_DATA_ROOT / slug / "agentic" / "data.csv"), mv)
         for slug, mv in MODELS
     }
     totals: dict[str, int] = {}
@@ -236,7 +239,7 @@ def pearson(x: pd.Series, y: pd.Series) -> float:
 def figure_liking_vs_agentic(out_base: Path) -> None:
     fig, axes = plt.subplots(1, 3, figsize=(14, 5.2), sharex=True)
     for ax, (slug, _mv) in zip(axes, MODELS):
-        m = pd.read_csv(f"results/{slug}/correlations/measures.csv")
+        m = pd.read_csv(str(_RESULTS_ROOT / slug / "correlations" / "measures.csv"))
         m = m.dropna(subset=["liking_mean", "agentic_mean"])
         ax.errorbar(m["liking_mean"], m["agentic_mean"],
                     xerr=m["liking_sem"].fillna(0), yerr=m["agentic_sem"].fillna(0),
@@ -295,7 +298,7 @@ def figure_refusals(out_base: Path) -> None:
 
 
 def main() -> None:
-    out_dir = Path("results/paper")
+    out_dir = _RESULTS_ROOT / "paper"
     out_dir.mkdir(parents=True, exist_ok=True)
     figure_agentic(out_dir / "fig_agentic_persistence")
     figure_agentic(out_dir / "fig_agentic_persistence_median", show_median=True)

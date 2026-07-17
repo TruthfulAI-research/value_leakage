@@ -74,4 +74,5 @@ API keys are read from the environment / `.env`.
 Shared infrastructure (model registry, API senders, caching, judges, plot
 styling) is in `shared/`. Cached experiment data is in the `data/` submodule.
 `agentic_effort/` is self-contained (own dependencies and model routing); see
-`agentic_effort/reproduce.sh`.
+`agentic_effort/reproduce_plots.sh` (offline figures from the data submodule)
+and `agentic_effort/reproduce_sampling.sh` (re-query the models).

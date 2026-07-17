@@ -20,11 +20,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from plot_correlation import measure_elo, measure_agentic, measure_liking  # type: ignore
 
+_DATA_ROOT = Path(__file__).resolve().parents[2] / "data" / "final_data" / "agentic_effort"
+_RESULTS_ROOT = Path(__file__).resolve().parents[1] / "results"
+
 SLUGS = ["claude-opus-4-8", "gpt-5.5", "gemini-3.1-pro"]
 
 
 def build_one(slug: str) -> None:
-    root = Path("results") / slug
+    root = _DATA_ROOT / slug          # raw data lives in the data/ submodule
     measures = []
 
     liking_csv = root / "liking" / "data.csv"
@@ -56,7 +59,7 @@ def build_one(slug: str) -> None:
             d, on=["payout", "payout_category"], how="outer"
         )
 
-    out_dir = root / "correlations"
+    out_dir = _RESULTS_ROOT / slug / "correlations"   # derived; local + gitignored
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / "measures.csv"
     merged.to_csv(out_path, index=False)

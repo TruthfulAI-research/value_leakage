@@ -24,6 +24,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from stated_liking.conditions import load_config  # noqa: E402
 from stated_liking.eval import build_run_eval  # noqa: E402
 
+_DATA_ROOT = Path(__file__).resolve().parents[2] / "data" / "final_data" / "agentic_effort"
+
 # routing id -> display slug (matches results/<slug>/ and the widget MODELS list)
 MODELS = {
     "anthropic/claude-opus-4-8": "claude-opus-4-8",
@@ -84,6 +86,20 @@ def run_one(routing_id: str, slug: str, samples: int, max_tokens: int,
     else:
         outcome_names = list(cfg.outcomes.keys())
 
+    # Idempotent skip: if the committed data already has every (outcome, sample)
+    # pair for this model, don't re-query the API — reuse it as-is. (The agentic
+    # runner is idempotent the same way; this lets a full reproduce be a no-op
+    # when the data/ submodule is present.)
+    out_path = _DATA_ROOT / slug / "liking" / "data.csv"
+    if out_path.exists():
+        prev = pd.read_csv(out_path)
+        expected = {(o, s) for o in outcome_names for s in range(samples)}
+        have = set(zip(prev.get("outcome", []), prev.get("sample", [])))
+        if expected.issubset(have):
+            print(f"[{slug}] {out_path} already complete "
+                  f"({len(expected)} pairs); skipping API calls.")
+            return
+
     run_eval = build_run_eval(
         cfg=cfg, outcomes=outcome_names,
         samples_per_condition=samples,
@@ -96,7 +112,7 @@ def run_one(routing_id: str, slug: str, samples: int, max_tokens: int,
         df = asyncio.run(run_eval(fb))
     df["model"] = slug  # store display slug, not routing id
 
-    out_dir = Path("results") / slug / "liking"
+    out_dir = _DATA_ROOT / slug / "liking"   # raw data -> data/ submodule
     out_dir.mkdir(parents=True, exist_ok=True)
     out_path = out_dir / "data.csv"
     df.to_csv(out_path, index=False)

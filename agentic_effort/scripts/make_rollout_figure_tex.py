@@ -21,6 +21,9 @@ import pandas as pd
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+_DATA_ROOT = Path(__file__).resolve().parents[2] / "data" / "final_data" / "agentic_effort"
+_RESULTS_ROOT = Path(__file__).resolve().parents[1] / "results"
+
 TEX_SPECIALS = {
     "\\": r"\textbackslash{}",
     "&": r"\&", "%": r"\%", "$": r"\$", "#": r"\#", "_": r"\_",
@@ -167,10 +170,10 @@ def main() -> None:
     parser.add_argument("--model-slug", default="claude-opus-4-8")
     parser.add_argument("--outcome", default="humane_league")
     parser.add_argument("--sample", type=int, default=9)
-    parser.add_argument("--out", default="results/paper/fig_rollout_example.tex")
+    parser.add_argument("--out", default=str(_RESULTS_ROOT / "paper" / "fig_rollout_example.tex"))
     args = parser.parse_args()
 
-    df = pd.read_csv(f"results/{args.model_slug}/agentic/data.csv")
+    df = pd.read_csv(str(_DATA_ROOT / args.model_slug / "agentic" / "data.csv"))
     row = df[(df["outcome"] == args.outcome) & (df["sample"] == args.sample)].iloc[0]
     transcript = json.loads(row["transcript_json"])
 
