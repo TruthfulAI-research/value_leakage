@@ -944,7 +944,11 @@ def _get_baseline(prompt_key, model, n_baseline, model_name, sender,
     prompt_set = THRESHOLD_PROMPTS[prompt_key]
     baseline_prompt = _with_prompt_suffix(model, prompt_set["baseline"])
     b_hash = _prompt_hash(model, n_baseline, baseline_prompt)
-    b_path = _cache_path(model_name, prompt_key, "baseline", b_hash)
+    # A prompt set may share its baseline with another prompt key (e.g. wording
+    # variants whose baseline is byte-identical to the plain task baseline).
+    # `baseline_key` defaults to the prompt's own key, preserving prior behavior.
+    baseline_key = prompt_set.get("baseline_key", prompt_key)
+    b_path = _cache_path(model_name, baseline_key, "baseline", b_hash)
     cached = _read_cache(b_path, b_hash)
     if cached is not None:
         baseline_rows = cached
