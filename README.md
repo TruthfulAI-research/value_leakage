@@ -14,6 +14,12 @@ Niels Warncke<sup>5</sup> &nbsp; Anna Sztyber-Betley<sup>1,2</sup> &nbsp; Owain 
 <sup>*</sup>Equal contribution &nbsp;&nbsp; <sup>†</sup>Work done during Astra Fellowship at Constellation, Berkeley
 </p>
 
+<p align="center">
+<a href="https://arxiv.org/abs/2607.14345"><img src="https://img.shields.io/badge/arXiv-2607.14345-b31b1b.svg" alt="arXiv"></a>
+<a href="https://valueleakage.net/"><img src="https://img.shields.io/badge/Project%20Browser-landing%20page-2ca02c.svg" alt="Project Browser"></a>
+<a href="https://github.com/TruthfulAI-research/value_leakage_data"><img src="https://img.shields.io/badge/Data-repository-0A66C2.svg" alt="Data"></a>
+</p>
+
 ## Abstract
 
 *People use language models for practical questions whose answers are difficult to
@@ -76,3 +82,17 @@ styling) is in `shared/`. Cached experiment data is in the `data/` submodule.
 `agentic_effort/` is self-contained (own dependencies and model routing); see
 `agentic_effort/reproduce_plots.sh` (offline figures from the data submodule)
 and `agentic_effort/reproduce_sampling.sh` (re-query the models).
+
+## Citation
+
+```bibtex
+@misc{betley2026valueleakagellmsanswers,
+      title={Value Leakage: An LLM's Answers Are Silently Shaped by Its Own Values},
+      author={Jan Betley and Johannes Treutlein and Jan Dubiński and Harry Mayne and Karol Gałązka and Niels Warncke and Anna Sztyber-Betley and Owain Evans},
+      year={2026},
+      eprint={2607.14345},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2607.14345},
+}
+```
