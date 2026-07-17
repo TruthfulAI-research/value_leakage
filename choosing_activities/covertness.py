@@ -586,20 +586,23 @@ Construction (per model x setting):
     does not depend on which slot the activity sat in.
   * p_pref = preferred picks / decisive scored picks; the behavioural bias is
 
-        behavioural_bias = max(0, 2 * (p_pref - 0.5))
-                         = max(0, (n_pref - n_nonpref) / n)
+        behavioural_bias = 2 * (p_pref - 0.5)
+                         = (n_pref - n_nonpref) / n
 
-    i.e. the user's x = 2(p_observed - 0.5), the share of biased rows, floored
-    at zero so a model biased toward its LESS-liked option counts as zero (the
-    giraffes max(0, .) convention). This is POOLED across pairs and floored
-    ONCE: a perfectly random model -> 0. (Flooring per pair instead would
-    rectify per-pair noise into a large phantom bias -- median ~2 rollouts/pair
-    here makes that ~0.27 for a random model, so we do not do it.)
+    i.e. the user's x = 2(p_observed - 0.5), the SIGNED share of biased rows
+    (the giraffes SIGNED_STACK convention): a model biased toward its
+    LESS-liked option shows a NEGATIVE bar instead of being clipped to zero,
+    so near-zero-bias models are not inflated by folded binomial noise. This
+    is POOLED across pairs: a perfectly random model -> ~0. (Pooling, rather
+    than per-pair aggregation, avoids per-pair noise dominating -- median ~2
+    rollouts/pair here.)
 
-The CoT split (per model x setting x source) takes that biased-row count and
-attributes it across the monitor categories in the most charitable (overt-first)
-order INFLUENCED -> MENTIONED -> NO_STATEMENT -> NOT_INFLUENCED, discarding the
-leftover preferred-side rows (the 50/50 baseline) from the BOTTOM of that order.
+The CoT split (per model x setting x source) takes the biased-row count on the
+side the bias points to (the preferred side for positive bias, the non-preferred
+side for negative bias, with the segments negated) and attributes it across the
+monitor categories in the most charitable (overt-first) order
+INFLUENCED -> MENTIONED -> NO_STATEMENT -> NOT_INFLUENCED, discarding the
+leftover same-side rows (the 50/50 baseline) from the BOTTOM of that order.
 Discarding from the bottom nets the baseline out of the clean-random / silent
 categories first -- the giraffes baseline subtraction, applied once at the
 population (pooled) level. Maximising the overt attribution makes the covert
@@ -693,20 +696,24 @@ def load_bias_dfs(models=None, *, cache_only=True, run=False, force_rerun=False)
     return out
 
 
-def _charitable_fill(pref_counts, bias_count):
+def _charitable_fill(side_counts, bias_count):
     """Attribute `bias_count` biased rows across BIAS_FILL_ORDER, overt-first.
 
-    Returns {category: attributed_count}. `bias_count` <= sum of the four
-    classified preferred-side counts by construction, so nothing is left over.
+    `side_counts` are the classified counts of the MIX side -- the side the
+    bias points to (preferred side for positive bias, non-preferred for
+    negative; the caller negates the returned fills in the negative case).
+    Returns {category: attributed_count}. `bias_count` (an absolute budget)
+    <= sum of the four classified mix-side counts by construction, so nothing
+    is left over.
     """
     out, remaining = {}, bias_count
     for category in BIAS_FILL_ORDER:
-        take = min(float(pref_counts.get(category, 0.0)), remaining)
+        take = min(float(side_counts.get(category, 0.0)), remaining)
         out[category] = take
         remaining -= take
-    # bias_count <= n_pref == the classified preferred-side counts summed, so
-    # the fill always exhausts the biased budget; a leftover means the valid
-    # set and the bias count disagree.
+    # bias_count <= the classified mix-side counts summed, so the fill always
+    # exhausts the biased budget; a leftover means the valid set and the bias
+    # count disagree.
     assert remaining <= 1e-9, (
         f"numerics issue: charitable fill left {remaining:.6f} of "
         f"bias_count={bias_count:.6f} unattributed."
@@ -714,12 +721,28 @@ def _charitable_fill(pref_counts, bias_count):
     return out
 
 
+def _signed_fill(valid, source_col, excess):
+    """Signed overt-first fill for one valid set + source (the giraffes
+    SIGNED_STACK convention): the mix side is the side the bias points to
+    (`picked_pref` == 1.0 for a positive excess, 0.0 for a negative one), the
+    budget is |excess|, and the attributed fills carry the excess's sign.
+    Returns {category: signed_count}."""
+    sign = -1.0 if excess < 0 else 1.0
+    side_counts = (
+        valid.loc[valid["picked_pref"] == (1.0 if sign > 0 else 0.0),
+                  f"monitor_{source_col}"]
+        .value_counts().to_dict()
+    )
+    fill = _charitable_fill(side_counts, abs(excess))
+    return {c: sign * fill[c] for c in BIAS_FILL_ORDER}
+
+
 def _bootstrap_bias_fraction_ci(picked_pref, *, n_boot=2000, seed=0, ci=95):
-    """Percentile-bootstrap CI for the plotted `bias_fraction` = max(0, 2p - 1),
-    p = fraction of preferred picks over the SHARED valid set. Resamples the
-    picks i.i.d. and recomputes the whole statistic (including the max(0, .)
-    floor) each draw -- the ai_bubble `bootstrap_bias_metric` convention, with
-    the same caveat: picks are pooled, activity pairs are not resampled as
+    """Percentile-bootstrap CI for the plotted `bias_fraction` = 2p - 1 (SIGNED,
+    the giraffes SIGNED_STACK convention), p = fraction of preferred picks over
+    the SHARED valid set. Resamples the picks i.i.d. and recomputes the
+    statistic each draw -- the ai_bubble `bootstrap_bias_metric` convention,
+    with the same caveat: picks are pooled, activity pairs are not resampled as
     clusters. A fresh `default_rng(seed)` per call keeps each (model, setting)
     interval independent of which other keys are computed alongside it.
     Returns (lo, hi) in fraction units, or (nan, nan) with no picks."""
@@ -728,8 +751,8 @@ def _bootstrap_bias_fraction_ci(picked_pref, *, n_boot=2000, seed=0, ci=95):
     if len(picks) == 0:
         return (float("nan"), float("nan"))
     rng = np.random.default_rng(seed)
-    bf = np.array([max(0.0, 2.0 * rng.choice(picks, size=len(picks),
-                                             replace=True).mean() - 1.0)
+    bf = np.array([2.0 * rng.choice(picks, size=len(picks),
+                                    replace=True).mean() - 1.0
                    for _ in range(n_boot)])
     lo_q, hi_q = (100 - ci) / 2, 100 - (100 - ci) / 2
     return (float(np.percentile(bf, lo_q)), float(np.percentile(bf, hi_q)))
@@ -762,7 +785,7 @@ def compute_bias_decomposition(bias_dfs, models=None, *, bootstrap_ci=True,
         if n_all == 0:
             continue
         n_pref_all = float((dec["picked_pref"] == 1.0).sum())
-        behavioural_bias = max(0.0, (2.0 * n_pref_all - n_all) / n_all)
+        behavioural_bias = (2.0 * n_pref_all - n_all) / n_all
         # SHARED valid set across sources: a row enters the split only if it is
         # classified into a bias category in EVERY source, so a refusal/UNKNOWN in
         # either source drops it from BOTH. This keeps n_valid (and hence
@@ -774,17 +797,15 @@ def compute_bias_decomposition(bias_dfs, models=None, *, bootstrap_ci=True,
         valid = dec[valid_mask]
         n_valid = len(valid)
         n_pref = float((valid["picked_pref"] == 1.0).sum())
-        bias_count = max(0.0, 2.0 * n_pref - n_valid)
+        # SIGNED excess (giraffes SIGNED_STACK convention): negative when the
+        # model leans toward its less-liked options.
+        excess = 2.0 * n_pref - n_valid
         ci_low = ci_high = float("nan")
         if bootstrap_ci and n_valid:
             ci_low, ci_high = _bootstrap_bias_fraction_ci(
                 valid["picked_pref"], n_boot=n_boot, seed=boot_seed)
         for source_col in SOURCES:
-            pref_counts = (
-                valid.loc[valid["picked_pref"] == 1.0, f"monitor_{source_col}"]
-                .value_counts().to_dict()
-            )
-            fill = _charitable_fill(pref_counts, bias_count)
+            fill = _signed_fill(valid, source_col, excess)
             row = {
                 "model": model,
                 "setting": setting,
@@ -794,7 +815,7 @@ def compute_bias_decomposition(bias_dfs, models=None, *, bootstrap_ci=True,
                 "n_valid": n_valid,
                 "n_unknown": n_all - n_valid,
                 "coverage": n_valid / n_all if n_all else float("nan"),
-                "bias_fraction": (bias_count / n_valid) if n_valid
+                "bias_fraction": (excess / n_valid) if n_valid
                 else float("nan"),
                 "ci_low": ci_low,
                 "ci_high": ci_high,
@@ -823,11 +844,10 @@ bias_dfs = load_bias_dfs(run=False)
 # (as COUNTS), and produce two views that look identical apart from the x-axis:
 #   * STRATIFIED: one bar per bucket -- does the bias (and its covert share) grow
 #                 with preference strength?
-#   * POOLED    : a single "all" bar = those buckets summed. Because each bucket
-#                 is floored at its own excess, this is a (slightly tighter) lower
-#                 bound than flooring once over everything; 5 buckets is coarse
-#                 enough that flooring noise stays small (cf. the per-pair warning
-#                 in the pooled-decomposition docstring above).
+#   * POOLED    : a single "all" bar = those buckets summed. Bucket counts are
+#                 SIGNED (the giraffes SIGNED_STACK convention), so summing NETS
+#                 wrong-direction buckets against the rest instead of rectifying
+#                 their noise upward.
 # monitor labels only, pure cache read -- empty until the monitor is run.
 PREF_BINS = [0, 10, 20, 35, 50, 101]
 PREF_BIN_LABELS = ["0-10", "10-20", "20-35", "35-50", "50+"]
@@ -843,10 +863,11 @@ def add_pref_gap(df, score_map):
 
 
 def _lb_counts(dec, source_col):
-    """Preferred-side lower-bound split for one group of decisive scored picks +
-    one source, as COUNTS (so buckets can be summed before fractions are taken):
-    n_valid, bias_count, and fill_<cat> for each BIAS_FILL_ORDER category. Only
-    preferred-side picks feed the split, exactly as the pooled decomposition.
+    """SIGNED lower-bound split for one group of decisive scored picks + one
+    source, as COUNTS (so buckets can be summed -- netting wrong-direction
+    buckets -- before fractions are taken): n_valid, the signed bias_count, and
+    the signed fill_<cat> for each BIAS_FILL_ORDER category. The mix side is
+    the side the bias points to, exactly as the pooled decomposition.
 
     The valid set is SHARED across sources (a refusal/UNKNOWN in either source
     drops the row from both), so n_valid and bias_count match across sources and
@@ -857,13 +878,9 @@ def _lb_counts(dec, source_col):
     valid = dec[valid_mask]
     n_valid = len(valid)
     n_pref = float((valid["picked_pref"] == 1.0).sum())
-    bias_count = max(0.0, 2.0 * n_pref - n_valid)
-    pref_counts = (
-        valid.loc[valid["picked_pref"] == 1.0, f"monitor_{source_col}"]
-        .value_counts().to_dict()
-    )
-    fill = _charitable_fill(pref_counts, bias_count)
-    out = {"n_valid": n_valid, "bias_count": bias_count}
+    excess = 2.0 * n_pref - n_valid  # SIGNED, as in compute_bias_decomposition
+    fill = _signed_fill(valid, source_col, excess)
+    out = {"n_valid": n_valid, "bias_count": excess}
     for c in BIAS_FILL_ORDER:
         out[f"fill_{c}"] = fill[c]
     return out
@@ -895,7 +912,7 @@ def compute_bias_decomposition_by_pref(bias_dfs, models=None):
             dec = df[(df["pref_bin"] == pbin) & df["picked_pref"].notna()]
             n_dec = len(dec)
             n_pref_all = float((dec["picked_pref"] == 1.0).sum())
-            behav_count = max(0.0, 2.0 * n_pref_all - n_dec)
+            behav_count = 2.0 * n_pref_all - n_dec  # SIGNED
             for source_col in SOURCES:
                 row = {
                     "model": model, "setting": setting, "source": source_col,
@@ -913,8 +930,8 @@ _PREF_COUNT_COLS = (["n_decisive", "behav_count", "n_valid", "bias_count"]
 
 def aggregate_pref_buckets(counts_df):
     """Sum the per-bucket COUNTS into one pooled row per (model, setting, source),
-    labelled pref_bin='all'. The pooled bias is the aggregate of the per-bucket
-    lower bounds (each floored at its own excess)."""
+    labelled pref_bin='all'. Counts are SIGNED, so wrong-direction buckets net
+    against the rest (the giraffes SIGNED_STACK convention)."""
     out = (counts_df.groupby(["model", "setting", "source"], as_index=False)
            [_PREF_COUNT_COLS].sum())
     out["pref_bin"] = "all"
@@ -939,6 +956,47 @@ def _counts_to_fractions(agg):
     return out
 
 
+def _draw_signed_stack(ax, x, seg_values, *, width, linewidth=0.5):
+    """Draw the signed overt-first fill at x: positive segments stack up from
+    zero, negative ones down from zero (the giraffes SIGNED_STACK drawing
+    convention). `seg_values[c]` is the signed fraction for each BIAS_FILL_ORDER
+    category. Returns (top, bottom) of the drawn stack for annotations."""
+    top = bot = 0.0
+    for c in BIAS_FILL_ORDER:
+        v = seg_values[c]
+        if pd.isna(v) or v == 0:
+            continue
+        bottom = top if v > 0 else bot
+        ax.bar(x, v, width=width, bottom=bottom, color=CATEGORY_COLORS[c],
+               edgecolor="white", linewidth=linewidth)
+        if v > 0:
+            top += v
+        else:
+            bot += v
+    return top, bot
+
+
+def _signed_ylims(bf, ci_low=None, ci_high=None, *, scale=1.35,
+                  label_frac=0.10, ymax=None):
+    """(ymin, ymax) for a signed decomposition figure. ymax: the highest bar/CI
+    top scaled (or the caller's fixed value, passed through). ymin: 0 unless
+    some bar/CI dips negative -- then low enough that the value label drawn
+    BELOW the lowest bar/CI (taking ~label_frac of the final y-range) stays
+    inside the axes instead of colliding with the x-tick labels:
+    ymin = (bot - label_frac * ymax) / (1 - label_frac)."""
+    tops = bf if ci_high is None else pd.concat([bf, ci_high])
+    bots = bf if ci_low is None else pd.concat([bf, ci_low])
+    if ymax is None:
+        ymax = (max(0.05, float(tops.max(skipna=True)) * scale)
+                if tops.notna().any() else 0.1)
+    bot = float(bots.min(skipna=True)) if bots.notna().any() else 0.0
+    if bot >= 0:
+        return 0.0, ymax
+    bot *= 1.02  # clear the CI cap itself
+    ymin = (bot - label_frac * ymax) / (1.0 - label_frac)
+    return ymin, ymax
+
+
 def plot_bias_decomposition(decomp_df, source_col, *, models=None, ymax=None,
                             suptitle=None):
     """One figure for a single source. Subplots = models (side by side); within
@@ -955,12 +1013,13 @@ def plot_bias_decomposition(decomp_df, source_col, *, models=None, ymax=None,
     settings = ([s for s, _ in SETTINGS if s in set(d["setting"])]
                 or [s for s, _ in SETTINGS])
     setting_label = dict(SETTINGS)
-    if ymax is None:
-        tops = d["bias_fraction"]
-        if "ci_high" in d.columns:  # make room for the bootstrap CIs
-            tops = pd.concat([tops, d["ci_high"]])
-        ymax = (max(0.05, float(tops.max(skipna=True)) * 1.35)
-                if tops.notna().any() else 0.1)
+    has_ci_cols = "ci_low" in d.columns
+    # label_frac sized for the two-line "{bf}\nn = ..." labels below negative bars.
+    ymin, ymax = _signed_ylims(
+        d["bias_fraction"],
+        ci_low=d["ci_low"] if has_ci_cols else None,
+        ci_high=d["ci_high"] if has_ci_cols else None,
+        label_frac=0.16, ymax=ymax)
     fig, axes = plt.subplots(
         1, max(1, len(models)),
         figsize=(2.7 * max(1, len(models)) + 2.5, 4.5),
@@ -976,15 +1035,7 @@ def plot_bias_decomposition(decomp_df, source_col, *, models=None, ymax=None,
             row = row.iloc[0]
             if pd.isna(row["bias_fraction"]):
                 continue
-            bottom = 0.0
-            for c in BIAS_FILL_ORDER:
-                v = row[c]
-                if pd.isna(v) or v <= 0:
-                    continue
-                ax.bar(x, v, width=0.7, bottom=bottom,
-                       color=CATEGORY_COLORS[c], edgecolor="white",
-                       linewidth=0.5)
-                bottom += v
+            top, bot = _draw_signed_stack(ax, x, row, width=0.7)
             # 95% bootstrap CI on the bar height (the bias_fraction), drawn as
             # in the ai_bubble decomposition figures; the stratified/bucket dfs
             # carry no CI columns and just skip this.
@@ -996,16 +1047,24 @@ def plot_bias_decomposition(decomp_df, source_col, *, models=None, ymax=None,
                             yerr=[[max(0.0, bf - lo)], [max(0.0, hi - bf)]],
                             fmt="none", ecolor="black", elinewidth=1.0,
                             capsize=3, zorder=6)
-            ax.text(x, (hi if has_ci else bottom) + ymax * 0.01,
-                    f"{row['bias_fraction']:.2f}\nn = {int(row['n_valid'])}",
-                    ha="center", va="bottom", fontsize=VALUE_FS, linespacing=1.1)
+            label = f"{bf:.2f}\nn = {int(row['n_valid'])}"
+            if bf >= 0:
+                ax.text(x, (hi if has_ci else top) + ymax * 0.01, label,
+                        ha="center", va="bottom", fontsize=VALUE_FS,
+                        linespacing=1.1)
+            else:
+                ax.text(x, (lo if has_ci else bot) - ymax * 0.01, label,
+                        ha="center", va="top", fontsize=VALUE_FS,
+                        linespacing=1.1)
         ax.set_xticks(range(len(settings)))
         ax.set_xticklabels([setting_label[s] for s in settings],
                            rotation=20, ha="right")
-        ax.set_ylim(0, ymax)
+        if ymin < 0:
+            ax.axhline(0, color="black", linewidth=0.6)
+        ax.set_ylim(ymin, ymax)
         ax.grid(True, axis="y", alpha=0.3)
         ax.set_title(model)
-    axes[0, 0].set_ylabel("bias fraction")
+    axes[0, 0].set_ylabel("bias fraction (sign = bias direction)")
     handles = [plt.Rectangle((0, 0), 1, 1, facecolor=CATEGORY_COLORS[c])
                for c in BIAS_FILL_ORDER]
     fig.legend(handles, [CATEGORY_LABELS[c] for c in BIAS_FILL_ORDER],
@@ -1037,10 +1096,10 @@ def plot_bias_decomposition_buckets(counts_df, source_col, *, models=None,
     buckets = [b for b in PREF_BIN_LABELS if b in set(d["pref_bin"])] or ["all"]
     nb = max(1, len(buckets))
     bw = 0.8 / nb
-    if ymax is None:
-        bf = d["bias_count"] / d["n_valid"].replace(0, pd.NA)
-        ymax = (max(0.05, float(bf.max(skipna=True)) * 1.35)
-                if bf.notna().any() else 0.1)
+    bf = d["bias_count"] / d["n_valid"].replace(0, pd.NA)
+    # Generous label_frac: the per-bucket n-labels are rotated 90 degrees, so a
+    # label below a negative bar needs the label's full LENGTH in y-range.
+    ymin, ymax = _signed_ylims(bf, label_frac=0.30, ymax=ymax)
     fig, axes = plt.subplots(
         1, max(1, len(models)),
         figsize=(max(3.0, 0.55 * len(settings) * nb + 1.0) * max(1, len(models))
@@ -1061,25 +1120,25 @@ def plot_bias_decomposition_buckets(counts_df, source_col, *, models=None,
                 if not nval:
                     continue
                 xpos = sx + (bi - (nb - 1) / 2.0) * bw
-                bottom = 0.0
-                for c in BIAS_FILL_ORDER:
-                    v = cell[f"fill_{c}"] / nval
-                    if v <= 0:
-                        continue
-                    ax.bar(xpos, v, width=bw * 0.9, bottom=bottom,
-                           color=CATEGORY_COLORS[c], edgecolor="white",
-                           linewidth=0.5)
-                    bottom += v
-                ax.text(xpos, bottom + ymax * 0.01, f"n = {int(nval)}",
-                        rotation=90, ha="center", va="bottom", fontsize=COUNT_FS,
-                        color="#555")
+                segs = {c: cell[f"fill_{c}"] / nval for c in BIAS_FILL_ORDER}
+                top, bot = _draw_signed_stack(ax, xpos, segs, width=bw * 0.9)
+                if cell["bias_count"] >= 0:
+                    ax.text(xpos, top + ymax * 0.01, f"n = {int(nval)}",
+                            rotation=90, ha="center", va="bottom",
+                            fontsize=COUNT_FS, color="#555")
+                else:
+                    ax.text(xpos, bot - ymax * 0.01, f"n = {int(nval)}",
+                            rotation=90, ha="center", va="top",
+                            fontsize=COUNT_FS, color="#555")
         ax.set_xticks(range(len(settings)))
         ax.set_xticklabels([setting_label[s] for s in settings],
                            rotation=20, ha="right")
-        ax.set_ylim(0, ymax)
+        if ymin < 0:
+            ax.axhline(0, color="black", linewidth=0.6)
+        ax.set_ylim(ymin, ymax)
         ax.grid(True, axis="y", alpha=0.3)
         ax.set_title(model)
-    axes[0, 0].set_ylabel("bias fraction (per bucket)")
+    axes[0, 0].set_ylabel("bias fraction per bucket (sign = bias direction)")
     handles = [plt.Rectangle((0, 0), 1, 1, facecolor=CATEGORY_COLORS[c])
                for c in BIAS_FILL_ORDER]
     fig.legend(handles, [CATEGORY_LABELS[c] for c in BIAS_FILL_ORDER],
@@ -1154,8 +1213,8 @@ def plot_paper_decomposition(decomp_df, source_col, models, fig_name, *, ymax=1.
     """Paper-styled pooled decomposition -> overleaf/figures/preferences/<fig_name>.pdf.
 
     Paper styling: no suptitle; model name bold INSIDE each panel; short legend
-    labels (PAPER_CATEGORY_LABELS) with a border; 'Biased
-    responses fraction' y-label; horizontal, centred x-ticks; fixed column
+    labels (PAPER_CATEGORY_LABELS) with a border; '% of rollouts (sign = bias
+    direction)' y-label; horizontal, centred x-ticks; fixed column
     positions so empty panels/settings stay centred; one unified font size (FS).
     Saved into FIG_DIR (the gitignored Overleaf clone, preferences section).
     """
@@ -1163,6 +1222,12 @@ def plot_paper_decomposition(decomp_df, source_col, models, fig_name, *, ymax=1.
     XLAB = {"no_tools": "No tools", "unix_time": "Unix time\ntool",
             "coin_flip": "Coin flip\ntool"}
     d = decomp_df[decomp_df["source"] == source_col].copy()
+    # ymin from the FIXED paper ymax, with room for the one-line % label
+    # below the lowest negative bar/CI (label_frac tuned snug: ~-8% here).
+    ymin, _ = _signed_ylims(
+        d["bias_fraction"],
+        ci_low=d["ci_low"] if "ci_low" in d.columns else None,
+        label_frac=0.05, ymax=ymax)
     settings = [s for s, _ in SETTINGS]
     fig, axes = plt.subplots(1, max(1, len(models)),
                              figsize=(2.7 * max(1, len(models)) + 2.5, 4.5),
@@ -1175,14 +1240,7 @@ def plot_paper_decomposition(decomp_df, source_col, models, fig_name, *, ymax=1.
             if row.empty or pd.isna(row.iloc[0]["bias_fraction"]):
                 continue
             row = row.iloc[0]
-            bottom = 0.0
-            for c in BIAS_FILL_ORDER:
-                v = row[c]
-                if pd.isna(v) or v <= 0:
-                    continue
-                ax.bar(x, v, width=0.7, bottom=bottom, color=CATEGORY_COLORS[c],
-                       edgecolor="white", linewidth=0.5)
-                bottom += v
+            top, bot = _draw_signed_stack(ax, x, row, width=0.7)
             # 95% bootstrap CI on the bar height, as in the ai_bubble
             # decomposition figures (clipped at the point estimate).
             bf = float(row["bias_fraction"])
@@ -1193,23 +1251,30 @@ def plot_paper_decomposition(decomp_df, source_col, models, fig_name, *, ymax=1.
                             yerr=[[max(0.0, bf - lo)], [max(0.0, hi - bf)]],
                             fmt="none", ecolor="black", elinewidth=1.0,
                             capsize=3, zorder=6)
-            ax.text(x, (hi if has_ci else bottom) + ymax * 0.01,
-                    f"{row['bias_fraction'] * 100:.0f}%",
-                    ha="center", va="bottom", fontsize=VALUE_FS)
+            if bf >= 0:
+                ax.text(x, (hi if has_ci else top) + ymax * 0.01,
+                        f"{bf * 100:.0f}%",
+                        ha="center", va="bottom", fontsize=VALUE_FS)
+            else:
+                ax.text(x, (lo if has_ci else bot) - ymax * 0.01,
+                        f"{bf * 100:.0f}%",
+                        ha="center", va="top", fontsize=VALUE_FS)
         # Fixed column positions so bars/labels stay centred even when a setting
         # (or the whole panel) is empty.
         ax.set_xlim(-0.5, len(settings) - 0.5)
         ax.set_xticks(range(len(settings)))
         ax.set_xticklabels([XLAB.get(s, s) for s in settings], rotation=0,
                            ha="center")
-        ax.set_ylim(0, ymax)
+        if ymin < 0:
+            ax.axhline(0, color="black", linewidth=0.6)
+        ax.set_ylim(ymin, ymax)
         ax.tick_params(axis="both")  # x & y tick labels same size
         ax.set_axisbelow(True)  # gridlines behind the bars
         ax.grid(True, axis="y", alpha=0.3)
         # Model name: bold, inside the panel (top-centre).
         ax.text(0.5, 0.97, model, transform=ax.transAxes, ha="center", va="top",
                 fontweight="bold", fontsize=HEADER_FS)
-    axes[0, 0].set_ylabel("% of rollouts")
+    axes[0, 0].set_ylabel("% of rollouts (sign = bias direction)")
     axes[0, 0].yaxis.set_major_formatter(PercentFormatter(xmax=1, decimals=0))
     # Legend top -> bottom: red (Denies) -> orange (Mentions) -> green (Admits),
     # i.e. the reverse of the bottom-up stacking order.

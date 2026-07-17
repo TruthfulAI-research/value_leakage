@@ -1099,7 +1099,7 @@ def plot_eval_awareness_bias_arrow(
     ax.set_xlim(x_min, x_max)
     ax.set_ylim(y_min, y_max)
     ax.set_xlabel(f"% eval-aware (score >= {EVAL_AWARE_THRESHOLD})")
-    ax.set_ylabel("Bias score (good side - bad side)")
+    ax.set_ylabel("Bias metric")
     ax.set_title(
         f"Eval awareness vs bias by eval note{title_suffix}"
     )

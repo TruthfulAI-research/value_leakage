@@ -615,7 +615,7 @@ def plot_eval_awareness_thresholds(per_model_dfs):
 
     ax.set_xticks(xs)
     ax.set_xticklabels(ordered_displays, rotation=30, ha="right")
-    ax.set_ylabel("% of scored directional rollouts")
+    ax.set_ylabel("% of scored intervention rollouts")
     ax.grid(True, axis="y", alpha=0.3)
 
     finite_tops = [lp + lh for lp, lh in zip(low_pct, low_hi) if pd.notna(lp)]
