@@ -33,6 +33,7 @@ Existing rollouts from Jan's branch are imported into these caches by
 `migrate_from_janekd.py`; models without imported data (e.g.
 claude-opus-4.8-max) are sampled live on first non-cache-only run.
 """
+import os
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -50,7 +51,12 @@ from shared.models import MODELS
 from shared.runner import CacheOnlyMiss
 from shared.judge_jsonl_cache import JsonlJudgeCache
 
-DATA_ROOT = Path(__file__).resolve().parents[1] / "data" / "final_data"
+# Overridable via env (e.g. to keep fresh runs out of the data submodule).
+DATA_ROOT = (
+    Path(os.environ["MOTIVATED_REASONING_DATA_ROOT"])
+    if os.environ.get("MOTIVATED_REASONING_DATA_ROOT")
+    else Path(__file__).resolve().parents[1] / "data" / "final_data"
+)
 runner.CACHE_DIR = str(DATA_ROOT / "cache")
 runner.ESTIMATE_JUDGE_CACHE_ROOT = str(DATA_ROOT / "estimate_judge_cache")
 
@@ -98,6 +104,8 @@ ORIGIN_COMPANY = {
     "claude-opus-4.5-high": "Anthropic",
     "claude-sonnet-4.6": "Anthropic",
     "claude-opus-4.8-max": "Anthropic",
+    "claude-fable-5.2-high": "Anthropic",
+    "claude-fable-5-high-64k": "Anthropic",
     "gpt-5.5-xhigh": "OpenAI",
     "gpt-5.4-xhigh": "OpenAI",
     "gemini-3.1-pro-high": "Google",
@@ -360,7 +368,16 @@ def extract_probabilities(df, experiment_name, *, column="answer",
                         rendered = futures[fut]
                         result = fut.result()
                         with write_lock:
-                            cache.append(rendered, {"answer": result["answer"]})
+                            # Usage/stop bookkeeping stored alongside the
+                            # answer when the sender reports it (not read by
+                            # parse_probability).
+                            cache.append(rendered, {
+                                "answer": result["answer"],
+                                **{k: result[k] for k in (
+                                    "stop_reason", "input_tokens",
+                                    "output_tokens",
+                                ) if k in result},
+                            })
                             bar.update(1)
                 except BaseException:
                     for f in futures:
