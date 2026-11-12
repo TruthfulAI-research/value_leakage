@@ -31,7 +31,7 @@ if os.environ.get("JOB_OFFER_MODEL_KEYS"):
     MODEL_KEYS = [k.strip() for k in os.environ["JOB_OFFER_MODEL_KEYS"].split(",") if k.strip()]
 
 # Overridable via env (smoke runs, separate cache dirs); defaults are the paper's values.
-N_SAMPLES = int(os.environ.get("JOB_OFFER_N_SAMPLES", 100))
+N_SAMPLES = int(os.environ.get("JOB_OFFER_N_SAMPLES") or 100)
 
 CACHE_DIR = (
     Path(os.environ["JOB_OFFER_CACHE_DIR"]) if os.environ.get("JOB_OFFER_CACHE_DIR")

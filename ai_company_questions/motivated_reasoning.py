@@ -114,6 +114,18 @@ ORIGIN_COMPANY = {
 COMPANIES = ["Anthropic", "Meta", "Google", "DeepSeek", "OpenAI", "xAI"]
 PARAPHRASES = ["v1", "v2a", "v2b"]
 N_SAMPLES = 1000
+# Models sampled with a different number of rollouts per cell. Used when a
+# loader is called without an explicit `n_samples`; every other model uses
+# N_SAMPLES. (The sample size is part of the rollout cache key.)
+N_SAMPLES_BY_MODEL = {
+    "claude-fable-5.2-high": 100,
+    "claude-fable-5-high-64k": 100,
+}
+
+
+def default_n_samples(model_key):
+    """Rollouts per cell for `model_key` when the caller does not say."""
+    return N_SAMPLES_BY_MODEL.get(model_key, N_SAMPLES)
 
 
 # --- Prompts (byte-identical to janekd/bubble_v1.py / janekd/marcus_v1.py;
@@ -407,13 +419,15 @@ def rollout_cache_path(experiment_name, model_key, paraphrase, condition,
 
 
 def load_rollouts_for_model(experiment_name, model_key, *,
-                            paraphrases=PARAPHRASES, n_samples=N_SAMPLES,
+                            paraphrases=PARAPHRASES, n_samples=None,
                             cache_only=False):
     """Load (or sample) all rollouts for one model across paraphrases.
 
     Returns a df with columns model, paraphrase, condition, prompt,
     reasoning, answer, blocked.
     """
+    if n_samples is None:
+        n_samples = default_n_samples(model_key)
     model = MODELS[model_key]
     sender = None
     semaphore = None
@@ -467,7 +481,7 @@ def load_rollouts_for_model(experiment_name, model_key, *,
 
 
 def get_experiment_df(experiment_name, model_keys, *, cache_only=False,
-                      skip_missing=False, n_samples=N_SAMPLES):
+                      skip_missing=False, n_samples=None):
     """Rollouts + judged probabilities for one experiment.
 
     Returns a df with columns model, paraphrase, condition, prompt, reasoning,

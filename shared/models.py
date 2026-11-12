@@ -114,11 +114,12 @@ MODELS = {
         "effort": "high",
     },
     "claude-fable-5-high-64k": {
-        # Same as "claude-fable-5-high" but with the Fable 5.2 run's max_tokens
-        # (separate key so the original entry's hash/caches stay unchanged).
+        # Same as "claude-fable-5-high" but with max_tokens 64000, as used for
+        # claude-fable-5.2-high (separate key so the original entry's
+        # hash/caches stay unchanged).
         **_CLAUDE_DEFAULTS,
         "model": "claude-fable-5",
-        "display_name": "claude-fable-5-high",
+        "display_name": "claude-fable-5-high-64k",
         "thinking_type": "adaptive",
         "effort": "high",
         "max_tokens": 64000,

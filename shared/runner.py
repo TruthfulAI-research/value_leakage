@@ -326,15 +326,20 @@ def _create_sender(model):
 
     if backend == "claude":
         import anthropic
-        # anthropic SDK >= 1.x is built on httpx2 (not httpx): its timeouts and
-        # raw mid-stream transport errors are httpx2 objects.
-        try:
-            import httpx2 as httpx
-        except ImportError:  # older SDKs (0.x) use httpx
-            import httpx
-        # We deliberately use `thinking.type=enabled` (not the newer
-        # `adaptive` mode); silence the SDK's per-request deprecation
-        # warning so it doesn't spam logs once per call.
+        import importlib
+        # The SDK is built on httpx up to 0.x and on httpx2 from 1.0 on, and
+        # both libraries can be installed side by side. Raw mid-stream
+        # transport errors come from whichever one the SDK uses, so collect
+        # the TransportError of every importable one for the retry tuple.
+        transport_errors = []
+        for _mod in ("httpx", "httpx2"):
+            try:
+                transport_errors.append(importlib.import_module(_mod).TransportError)
+            except ImportError:
+                pass
+        # Models that still take `thinking.type=enabled` (not the newer
+        # `adaptive` mode) trigger an SDK deprecation warning per request;
+        # silence it so it doesn't spam logs once per call.
         warnings.filterwarnings(
             "ignore",
             message=r".*'thinking\.type=enabled' is deprecated.*",
@@ -350,7 +355,9 @@ def _create_sender(model):
         # httpx.ReadTimeout which the transient tuple below already
         # retries, so a stalled stream costs us ~30s, not the
         # 30 minutes a bare timeout=1800 used to.
-        client = anthropic.Anthropic(timeout=httpx.Timeout(30.0))
+        # `anthropic.Timeout` is the timeout class of the library the
+        # installed SDK is built on (httpx.Timeout or httpx2.Timeout).
+        client = anthropic.Anthropic(timeout=anthropic.Timeout(30.0))
         transient = (
             anthropic.APITimeoutError,
             anthropic.APIConnectionError,
@@ -364,7 +371,7 @@ def _create_sender(model):
             # also RemoteProtocolError if the connection drops. TransportError
             # is the umbrella for all timeouts, network errors, and protocol
             # errors at the transport layer.
-            httpx.TransportError,
+            *transport_errors,
         )
 
         # Anthropic's SDK has separate APIStatusError subclasses for 503,
@@ -393,18 +400,17 @@ def _create_sender(model):
                 max_tokens=model["max_tokens"],
                 messages=[{"role": "user", "content": prompt}],
             )
-            # temperature=1 is the API default; SDK 2.x `messages.stream()`
-            # has no `temperature` argument and newer models (e.g. Fable 5.2)
-            # reject sampling params, so only send a non-default value.
+            # temperature=1 is the API default, so it is not sent: from SDK
+            # 1.0 on `messages.stream()` has no `temperature` argument, and
+            # API version 2026-10-21 (the SDK default from then on) rejects
+            # the field on every model, even at 1.
             if model.get("temperature", 1) != 1:
-                # SDK 2.x dropped the `temperature` kwarg and the current
-                # API version (2026-10-21) rejects it ("temperature: Extra
-                # inputs are not permitted"), but the API still accepts and
-                # honours it under anthropic-version 2023-06-01 (verified
-                # for claude-sonnet-4-6: out-of-range values are rejected
-                # with "range: 0..1", t=0 collapses output diversity). Only
-                # used for non-default temperatures (e.g. the t=0 judge);
-                # t=1 requests are unchanged.
+                # A non-default temperature (the t=0 estimate judge) is still
+                # accepted and honoured under anthropic-version 2023-06-01
+                # (verified for claude-sonnet-4-6: out-of-range values are
+                # rejected with "range: 0..1", t=0 collapses output
+                # diversity), so send it that way. With SDK 0.x this is the
+                # same request body and version header as before.
                 kwargs["extra_body"] = {"temperature": model["temperature"]}
                 kwargs["extra_headers"] = {"anthropic-version": "2023-06-01"}
             # Pre-3.7 Claude models (e.g. claude-3-5-sonnet) reject the
@@ -443,8 +449,9 @@ def _create_sender(model):
             text_blocks = [b for b in response.content if b.type == "text"]
             multi_block = len(thinking_blocks) > 1 or len(text_blocks) > 1
             if multi_block:
-                # Concatenate same-type blocks in order (previously a
-                # NotImplementedError); counted via n_*_blocks in the row.
+                # Concatenate same-type blocks in order, separated by a
+                # blank line (previously a NotImplementedError). The row
+                # records n_thinking_blocks / n_text_blocks when this happens.
                 print(f"claude: multiple blocks of the same type "
                       f"(thinking={len(thinking_blocks)}, text={len(text_blocks)}); "
                       f"concatenating in order.")
