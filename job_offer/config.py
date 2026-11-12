@@ -1,3 +1,4 @@
+import os
 from itertools import permutations
 from pathlib import Path
 
@@ -23,7 +24,16 @@ MODEL_KEYS = [
     "gpt-5.5-high",
     "gpt-5.4-medium",
 ]
+# Optional override (comma-separated model keys), e.g.
+# JOB_OFFER_MODEL_KEYS=claude-fable-5.2-high to process only the Fable 5.2
+# rollouts; unset -> the paper's list above.
+if os.environ.get("JOB_OFFER_MODEL_KEYS"):
+    MODEL_KEYS = [k.strip() for k in os.environ["JOB_OFFER_MODEL_KEYS"].split(",") if k.strip()]
 
-N_SAMPLES = 100
+# Overridable via env (smoke runs, separate cache dirs); defaults are the paper's values.
+N_SAMPLES = int(os.environ.get("JOB_OFFER_N_SAMPLES") or 100)
 
-CACHE_DIR = Path(__file__).resolve().parents[1] / "data" / "final_data" / "job_offer"
+CACHE_DIR = (
+    Path(os.environ["JOB_OFFER_CACHE_DIR"]) if os.environ.get("JOB_OFFER_CACHE_DIR")
+    else Path(__file__).resolve().parents[1] / "data" / "final_data" / "job_offer"
+)

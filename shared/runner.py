@@ -156,6 +156,12 @@ def _read_per_prompt_cache(path):
     return out
 
 
+# Bookkeeping fields some senders add (stop reason, token usage, ...). Stored
+# alongside answer/reasoning when present; never used for cache keys.
+_EXTRA_ROW_KEYS = ("stop_reason", "input_tokens", "output_tokens",
+                   "n_thinking_blocks", "n_text_blocks", "stop_details")
+
+
 def run_with_prompt_cache(prompts, model, cache_path, *,
                           desc=None, semaphore=None, sender=None,
                           seeds=None):
@@ -218,6 +224,9 @@ def run_with_prompt_cache(prompts, model, cache_path, *,
                 }
                 if r.get("blocked"):
                     row["blocked"] = True
+                for k in _EXTRA_ROW_KEYS:
+                    if k in r:
+                        row[k] = r[k]
                 f.write(json.dumps(row) + "\n")
                 cache[h] = row
 
@@ -229,6 +238,7 @@ def run_with_prompt_cache(prompts, model, cache_path, *,
             "answer": row.get("answer", ""),
             "reasoning": row.get("reasoning", ""),
             "blocked": row.get("blocked", False),
+            **{k: row[k] for k in _EXTRA_ROW_KEYS if k in row},
         })
     return out
 
@@ -316,10 +326,20 @@ def _create_sender(model):
 
     if backend == "claude":
         import anthropic
-        import httpx
-        # We deliberately use `thinking.type=enabled` (not the newer
-        # `adaptive` mode); silence the SDK's per-request deprecation
-        # warning so it doesn't spam logs once per call.
+        import importlib
+        # The SDK is built on httpx up to 0.x and on httpx2 from 1.0 on, and
+        # both libraries can be installed side by side. Raw mid-stream
+        # transport errors come from whichever one the SDK uses, so collect
+        # the TransportError of every importable one for the retry tuple.
+        transport_errors = []
+        for _mod in ("httpx", "httpx2"):
+            try:
+                transport_errors.append(importlib.import_module(_mod).TransportError)
+            except ImportError:
+                pass
+        # Models that still take `thinking.type=enabled` (not the newer
+        # `adaptive` mode) trigger an SDK deprecation warning per request;
+        # silence it so it doesn't spam logs once per call.
         warnings.filterwarnings(
             "ignore",
             message=r".*'thinking\.type=enabled' is deprecated.*",
@@ -335,7 +355,9 @@ def _create_sender(model):
         # httpx.ReadTimeout which the transient tuple below already
         # retries, so a stalled stream costs us ~30s, not the
         # 30 minutes a bare timeout=1800 used to.
-        client = anthropic.Anthropic(timeout=httpx.Timeout(30.0))
+        # `anthropic.Timeout` is the timeout class of the library the
+        # installed SDK is built on (httpx.Timeout or httpx2.Timeout).
+        client = anthropic.Anthropic(timeout=anthropic.Timeout(30.0))
         transient = (
             anthropic.APITimeoutError,
             anthropic.APIConnectionError,
@@ -349,7 +371,7 @@ def _create_sender(model):
             # also RemoteProtocolError if the connection drops. TransportError
             # is the umbrella for all timeouts, network errors, and protocol
             # errors at the transport layer.
-            httpx.TransportError,
+            *transport_errors,
         )
 
         # Anthropic's SDK has separate APIStatusError subclasses for 503,
@@ -377,8 +399,20 @@ def _create_sender(model):
                 model=model["model"],
                 max_tokens=model["max_tokens"],
                 messages=[{"role": "user", "content": prompt}],
-                temperature=model["temperature"],
             )
+            # temperature=1 is the API default, so it is not sent: from SDK
+            # 1.0 on `messages.stream()` has no `temperature` argument, and
+            # API version 2026-10-21 (the SDK default from then on) rejects
+            # the field on every model, even at 1.
+            if model.get("temperature", 1) != 1:
+                # A non-default temperature (the t=0 estimate judge) is still
+                # accepted and honoured under anthropic-version 2023-06-01
+                # (verified for claude-sonnet-4-6: out-of-range values are
+                # rejected with "range: 0..1", t=0 collapses output
+                # diversity), so send it that way. With SDK 0.x this is the
+                # same request body and version header as before.
+                kwargs["extra_body"] = {"temperature": model["temperature"]}
+                kwargs["extra_headers"] = {"anthropic-version": "2023-06-01"}
             # Pre-3.7 Claude models (e.g. claude-3-5-sonnet) reject the
             # `thinking` parameter entirely, so omit it when the model entry
             # doesn't specify a thinking_type.
@@ -413,14 +447,16 @@ def _create_sender(model):
 
             thinking_blocks = [b for b in response.content if b.type == "thinking"]
             text_blocks = [b for b in response.content if b.type == "text"]
-            if len(thinking_blocks) > 1 or len(text_blocks) > 1:
-                raise NotImplementedError(
-                    f"Claude response had multiple blocks of the same type "
-                    f"(thinking={len(thinking_blocks)}, text={len(text_blocks)}); "
-                    f"don't know how to combine them."
-                )
-            reasoning = thinking_blocks[0].thinking if thinking_blocks else ""
-            answer = text_blocks[0].text if text_blocks else ""
+            multi_block = len(thinking_blocks) > 1 or len(text_blocks) > 1
+            if multi_block:
+                # Concatenate same-type blocks in order, separated by a
+                # blank line (previously a NotImplementedError). The row
+                # records n_thinking_blocks / n_text_blocks when this happens.
+                print(f"claude: multiple blocks of the same type "
+                      f"(thinking={len(thinking_blocks)}, text={len(text_blocks)}); "
+                      f"concatenating in order.")
+            reasoning = "\n\n".join(b.thinking for b in thinking_blocks)
+            answer = "\n\n".join(b.text for b in text_blocks)
             # Anthropic AUP-refusals come back as 200 OK with no thinking and
             # no text block, sometimes with stop_reason="refusal" on Opus 4+.
             # Surface them as blocked sentinels so downstream code can separate
@@ -432,6 +468,20 @@ def _create_sender(model):
                 or (not thinking_blocks and not text_blocks)
             )
             out = {"reasoning": reasoning, "answer": answer, "prompt": prompt}
+            # Extra bookkeeping (does not affect behaviour).
+            usage = getattr(response, "usage", None)
+            out["stop_reason"] = stop_reason
+            out["input_tokens"] = getattr(usage, "input_tokens", None)
+            out["output_tokens"] = getattr(usage, "output_tokens", None)
+            if multi_block:
+                out["n_thinking_blocks"] = len(thinking_blocks)
+                out["n_text_blocks"] = len(text_blocks)
+            stop_details = getattr(response, "stop_details", None)
+            if stop_details is not None:
+                out["stop_details"] = (
+                    stop_details.to_dict() if hasattr(stop_details, "to_dict")
+                    else str(stop_details)
+                )
             if blocked:
                 out["blocked"] = True
                 if not answer:

@@ -33,6 +33,7 @@ Existing rollouts from Jan's branch are imported into these caches by
 `migrate_from_janekd.py`; models without imported data (e.g.
 claude-opus-4.8-max) are sampled live on first non-cache-only run.
 """
+import os
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -50,7 +51,12 @@ from shared.models import MODELS
 from shared.runner import CacheOnlyMiss
 from shared.judge_jsonl_cache import JsonlJudgeCache
 
-DATA_ROOT = Path(__file__).resolve().parents[1] / "data" / "final_data"
+# Overridable via env (e.g. to keep fresh runs out of the data submodule).
+DATA_ROOT = (
+    Path(os.environ["MOTIVATED_REASONING_DATA_ROOT"])
+    if os.environ.get("MOTIVATED_REASONING_DATA_ROOT")
+    else Path(__file__).resolve().parents[1] / "data" / "final_data"
+)
 runner.CACHE_DIR = str(DATA_ROOT / "cache")
 runner.ESTIMATE_JUDGE_CACHE_ROOT = str(DATA_ROOT / "estimate_judge_cache")
 
@@ -98,6 +104,8 @@ ORIGIN_COMPANY = {
     "claude-opus-4.5-high": "Anthropic",
     "claude-sonnet-4.6": "Anthropic",
     "claude-opus-4.8-max": "Anthropic",
+    "claude-fable-5.2-high": "Anthropic",
+    "claude-fable-5-high-64k": "Anthropic",
     "gpt-5.5-xhigh": "OpenAI",
     "gpt-5.4-xhigh": "OpenAI",
     "gemini-3.1-pro-high": "Google",
@@ -106,6 +114,18 @@ ORIGIN_COMPANY = {
 COMPANIES = ["Anthropic", "Meta", "Google", "DeepSeek", "OpenAI", "xAI"]
 PARAPHRASES = ["v1", "v2a", "v2b"]
 N_SAMPLES = 1000
+# Models sampled with a different number of rollouts per cell. Used when a
+# loader is called without an explicit `n_samples`; every other model uses
+# N_SAMPLES. (The sample size is part of the rollout cache key.)
+N_SAMPLES_BY_MODEL = {
+    "claude-fable-5.2-high": 100,
+    "claude-fable-5-high-64k": 100,
+}
+
+
+def default_n_samples(model_key):
+    """Rollouts per cell for `model_key` when the caller does not say."""
+    return N_SAMPLES_BY_MODEL.get(model_key, N_SAMPLES)
 
 
 # --- Prompts (byte-identical to janekd/bubble_v1.py / janekd/marcus_v1.py;
@@ -360,7 +380,16 @@ def extract_probabilities(df, experiment_name, *, column="answer",
                         rendered = futures[fut]
                         result = fut.result()
                         with write_lock:
-                            cache.append(rendered, {"answer": result["answer"]})
+                            # Usage/stop bookkeeping stored alongside the
+                            # answer when the sender reports it (not read by
+                            # parse_probability).
+                            cache.append(rendered, {
+                                "answer": result["answer"],
+                                **{k: result[k] for k in (
+                                    "stop_reason", "input_tokens",
+                                    "output_tokens",
+                                ) if k in result},
+                            })
                             bar.update(1)
                 except BaseException:
                     for f in futures:
@@ -390,13 +419,15 @@ def rollout_cache_path(experiment_name, model_key, paraphrase, condition,
 
 
 def load_rollouts_for_model(experiment_name, model_key, *,
-                            paraphrases=PARAPHRASES, n_samples=N_SAMPLES,
+                            paraphrases=PARAPHRASES, n_samples=None,
                             cache_only=False):
     """Load (or sample) all rollouts for one model across paraphrases.
 
     Returns a df with columns model, paraphrase, condition, prompt,
     reasoning, answer, blocked.
     """
+    if n_samples is None:
+        n_samples = default_n_samples(model_key)
     model = MODELS[model_key]
     sender = None
     semaphore = None
@@ -450,7 +481,7 @@ def load_rollouts_for_model(experiment_name, model_key, *,
 
 
 def get_experiment_df(experiment_name, model_keys, *, cache_only=False,
-                      skip_missing=False, n_samples=N_SAMPLES):
+                      skip_missing=False, n_samples=None):
     """Rollouts + judged probabilities for one experiment.
 
     Returns a df with columns model, paraphrase, condition, prompt, reasoning,

@@ -113,6 +113,25 @@ MODELS = {
         "thinking_type": "adaptive",  # same surface as 4.7/4.8: adaptive only
         "effort": "high",
     },
+    "claude-fable-5-high-64k": {
+        # Same as "claude-fable-5-high" but with max_tokens 64000, as used for
+        # claude-fable-5.2-high (separate key so the original entry's
+        # hash/caches stay unchanged).
+        **_CLAUDE_DEFAULTS,
+        "model": "claude-fable-5",
+        "display_name": "claude-fable-5-high-64k",
+        "thinking_type": "adaptive",
+        "effort": "high",
+        "max_tokens": 64000,
+    },
+    "claude-fable-5.2-high": {
+        **_CLAUDE_DEFAULTS,
+        "model": "claude-fable-5-2",
+        "display_name": "claude-fable-5-2-high",
+        "thinking_type": "adaptive",  # thinking always on for Fable 5.2: adaptive only
+        "effort": "high",
+        "max_tokens": 64000,
+    },
     "claude-opus-4.7-low": {
         **_CLAUDE_DEFAULTS,
         "model": "claude-opus-4-7",

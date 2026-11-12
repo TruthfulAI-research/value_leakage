@@ -1,5 +1,6 @@
 # %%
 import json
+import os
 import re
 from pathlib import Path
 
@@ -321,9 +322,14 @@ papers_df["group"] = papers_df["answer_idx"].map(answers_df["group"])
 # rollouts" aggregation.
 
 FABLE_KEY = "claude-fable-5-high"
+# Optional override (e.g. claude-fable-5.2-high); unset -> the default above.
+FABLE_KEY = os.environ.get("JOB_OFFER_FABLE_KEY") or FABLE_KEY
 
 # Figures -> the job_offer section of the gitignored Overleaf clone (PDF only).
 _figures_dir = Path(__file__).resolve().parents[1] / "overleaf" / "figures" / "job_offer"
+# Optional override so a run does not overwrite another run's figures.
+if os.environ.get("JOB_OFFER_FIGURES_DIR"):
+    _figures_dir = Path(os.environ["JOB_OFFER_FIGURES_DIR"])
 _figures_dir.mkdir(parents=True, exist_ok=True)
 
 FINAL_FIGSIZE = (8, 4.5)          # the per-model plot
